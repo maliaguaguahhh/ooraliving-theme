@@ -65,6 +65,7 @@
                 <div class="shop-the-look-style-1__content" style="--top_dt: {{ top_dt }}; --left_dt: {{ left_dt }}; --top_mb: {{ top_mb}}; --left_mb: {{ left_mb }} ">
                   {% render 'shop-look-2',
                     product: block.settings.product,
+                    card_type: block.settings.card_type,
                     placement: block.settings.placement,
                     type: point_type,
                     size: point_size,
@@ -519,6 +520,22 @@
         {
           "type": "header",
           "content": "t:sections.shop_the_look_style_1.blocks.settings.header_orther.content"
+        },
+        {
+          "type": "select",
+          "id": "card_type",
+          "label": "Card type",
+          "options": [
+            {
+              "value": "product",
+              "label": "Product card"
+            },
+            {
+              "value": "shortcut",
+              "label": "Shortcut preset card"
+            }
+          ],
+          "default": "product"
         },
         {
           "type": "product",

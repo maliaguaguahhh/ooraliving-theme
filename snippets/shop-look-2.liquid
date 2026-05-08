@@ -3,6 +3,7 @@
 
   Accepts:
   - product: {Object} Product (optional)
+  - card_type: {String} Card type (optional)
   - placement: {string} Placement (optional)
   - shortcut_image: {Object} Image (optional)
   - shortcut_title: {String} Title (optional)
@@ -19,10 +20,7 @@
 {% assign random_offset = 'now' | date: '%N' | modulo: range %}
 {% assign random_number = min | plus: random_offset %}
 {%- assign placeholder_image = 'collection-1' -%}
-{% assign has_shortcut_card = false %}
-{% if shortcut_image != blank or shortcut_title != blank or shortcut_description != blank or shortcut_button_link != blank %}
-  {% assign has_shortcut_card = true %}
-{% endif %}
+{% assign final_card_type = card_type | default: 'product' %}
 {% assign final_shortcut_button_text = shortcut_button_text | default: 'Download' %}
 
 <div class="shop-look-2">
@@ -49,13 +47,13 @@
     xo-portal
     xo-placement="{{ placement | default: 'right-center' }}"
   >
-    {% if has_shortcut_card %}
-      <div class="shop-look-2__shortcut-card{% if settings.enable_border_radius %} shop-look-2__shortcut-card--radius{% endif %}{% if section.settings.card_color_scheme %} color-{{ section.settings.card_color_scheme }}{% endif %}">
+    {% if final_card_type == 'shortcut' %}
+      <div
+        class="shop-look-2__shortcut-card{% if shortcut_image != blank %} shop-look-2__shortcut-card--image{% endif %}{% if settings.enable_border_radius %} shop-look-2__shortcut-card--radius{% endif %}{% if section.settings.card_color_scheme %} color-{{ section.settings.card_color_scheme }}{% endif %}"
         {% if shortcut_image != blank %}
-          <div class="shop-look-2__shortcut-image">
-            {% render 'image', image: shortcut_image %}
-          </div>
+          style="--shortcut-card-image: url('{{ shortcut_image | image_url: width: 900 }}');"
         {% endif %}
+      >
         <div class="shop-look-2__shortcut-content">
           {% if shortcut_title != blank %}
             <h3 class="shop-look-2__shortcut-title">{{ shortcut_title | escape }}</h3>
