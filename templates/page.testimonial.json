@@ -1,0 +1,399 @@
+{
+  "sections": {
+    "testimonial_style_4_qdijA4": {
+      "type": "testimonial-style-4",
+      "blocks": {
+        "testimonial_box_V3Ta6K": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>“I was blown away by the sound quality of this Bluetooth speaker! The clarity and bass are impressive for its size. It's perfect for both indoor and outdoor use.”<\/p>",
+            "customer_name": "Johny Angelo"
+          }
+        },
+        "testimonial_box_HHNMYD": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>I love the design of this speaker – it's sleek and modern. The sound quality is fantastic, and it's super easy to pair with my devices. A great addition to any home audio setup!\"<\/p>",
+            "customer_name": "Michael Goodman"
+          }
+        },
+        "testimonial_box_DQGD6Q": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>\"The sound quality of this high-end speaker is absolutely phenomenal. The audio is crystal clear, with deep bass and crisp highs that fill the room. It's perfect for audiophiles who want the best listening experience.\"<\/p>",
+            "customer_name": "John Hunam"
+          }
+        },
+        "testimonial_box_kTbfk9": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>\"This high-end Bluetooth speaker is incredible. It pairs instantly with my devices and maintains a strong connection even at a distance. The sound quality is superb, and the speakerphone feature works flawlessly\"<\/p>",
+            "customer_name": "Sarah Paige"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_box_V3Ta6K",
+        "testimonial_box_HHNMYD",
+        "testimonial_box_DQGD6Q",
+        "testimonial_box_kTbfk9"
+      ],
+      "settings": {
+        "sub_heading": "TESTIMONIAL",
+        "autoplay_time": 3000,
+        "autoplay": "off",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 130,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 130,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "testimonial_style_3_8hqcUa": {
+      "type": "testimonial-style-3",
+      "blocks": {
+        "testimonial_slide_Emjgz9": {
+          "type": "testimonial-slide",
+          "settings": {
+            "message": "<p>“I was blown away by the sound quality of this Bluetooth speaker! The clarity and bass are impressive for its size. It's perfect for both indoor and outdoor use.”<\/p>",
+            "customer_name": "Johny Angelo",
+            "verified_user": "show",
+            "product": "beolab-19"
+          }
+        },
+        "testimonial_slide_bGb8jy": {
+          "type": "testimonial-slide",
+          "settings": {
+            "message": "<p>I love the design of this speaker – it's sleek and modern. The sound quality is fantastic, and it's super easy to pair with my devices. A great addition to any home audio setup!\"<\/p>",
+            "customer_name": "John Hunam",
+            "verified_user": "show",
+            "product": "beosound-a1"
+          }
+        },
+        "testimonial_slide_RHUnMA": {
+          "type": "testimonial-slide",
+          "settings": {
+            "message": "<p>\"The sound quality of this high-end speaker is absolutely phenomenal. The audio is crystal clear, with deep bass and crisp highs that fill the room. It's perfect for audiophiles who want the best listening experience.\"<\/p>",
+            "customer_name": "Michael Goodman",
+            "verified_user": "show",
+            "product": "beosound-a9"
+          }
+        },
+        "testimonial_slide_mheQXB": {
+          "type": "testimonial-slide",
+          "settings": {
+            "message": "<p>\"This high-end Bluetooth speaker is incredible. It pairs instantly with my devices and maintains a strong connection even at a distance. The sound quality is superb, and the speakerphone feature works flawlessly\"<\/p>",
+            "customer_name": "Johny Angelo",
+            "verified_user": "show",
+            "product": "beosound-2"
+          }
+        },
+        "testimonial_slide_WDpFWM": {
+          "type": "testimonial-slide",
+          "settings": {
+            "message": "<p>I love the design of this speaker – it's sleek and modern. The sound quality is fantastic, and it's super easy to pair with my devices. A great addition to any home audio setup!\"<\/p>",
+            "customer_name": "Sarah Paige",
+            "verified_user": "show",
+            "product": "beosound-a5"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_slide_Emjgz9",
+        "testimonial_slide_bGb8jy",
+        "testimonial_slide_RHUnMA",
+        "testimonial_slide_mheQXB",
+        "testimonial_slide_WDpFWM"
+      ],
+      "settings": {
+        "font_size_heading": "h4",
+        "heading": "Customers love us",
+        "autoplay": "off",
+        "autoplay_time": 3000,
+        "card_color": "",
+        "border_radius": 10,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "testimonial_style_6_KJpg4f": {
+      "type": "testimonial-style-6",
+      "blocks": {
+        "testimonial_box_PycYGa": {
+          "type": "testimonial-box",
+          "settings": {
+            "content_1": "<p>“Finding the right furniture for my small apartment was a challenge until I discovered Wooder. Their space-saving solutions have made a significant difference in my home.”<\/p>",
+            "customer_name_1": "John Hunam",
+            "content_2": "<p>“As we’ve mentioned, sharing testimonials on social media has many benefits..”<\/p>",
+            "customer_name_2": "Michael Goodman"
+          }
+        },
+        "testimonial_box_gkdbRr": {
+          "type": "testimonial-box",
+          "settings": {
+            "content_1": "<p>“As we’ve mentioned, sharing testimonials on social media has many benefits..”<\/p>",
+            "customer_name_1": "Sarah Paige",
+            "content_2": "<p>“This means that once you use different template designs for actual testimonial website widgets, you can make images from them and post them as image.”<\/p>",
+            "customer_name_2": "John Hunam"
+          }
+        },
+        "testimonial_box_AC7fhD": {
+          "type": "testimonial-box",
+          "settings": {
+            "content_1": "<p>“Finding the right furniture for my small apartment was a challenge until I discovered Wooder. Their space-saving solutions have made a significant difference in my home.”<\/p>",
+            "customer_name_1": "Johny Angelo",
+            "content_2": "<p>“As we’ve mentioned, sharing testimonials on social media has many benefits..”<\/p>",
+            "customer_name_2": "Michael Goodman"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_box_PycYGa",
+        "testimonial_box_gkdbRr",
+        "testimonial_box_AC7fhD"
+      ],
+      "settings": {
+        "sub_heading": "Testimonial",
+        "column_dt": "3",
+        "autoplay": "on",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "testimonial_style_5_pgefHw": {
+      "type": "testimonial-style-5",
+      "blocks": {
+        "testimonial_box_jqLt8b": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>“Finding the right furniture for my small apartment was a challenge until I discovered Wooder. Their space-saving solutions have made a significant difference in my home.”<\/p>",
+            "customer_name": "John Hunam"
+          }
+        },
+        "testimonial_box_fVT4mD": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>“As we’ve mentioned, sharing testimonials on social media has many benefits..”<\/p>",
+            "customer_name": "Michael Goodman"
+          }
+        },
+        "testimonial_box_ftBgcf": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>“This means that once you use different template designs for actual testimonial website widgets, you can make images from them and post them as image.”<\/p>",
+            "customer_name": "Johny Angelo"
+          }
+        },
+        "testimonial_box_nGFwnx": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>“Finding the right furniture for my small apartment was a challenge until I discovered Wooder. Their space-saving solutions have made a significant difference in my home.”<\/p>",
+            "customer_name": "Sarah Paige"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_box_jqLt8b",
+        "testimonial_box_fVT4mD",
+        "testimonial_box_ftBgcf",
+        "testimonial_box_nGFwnx"
+      ],
+      "settings": {
+        "font_size_heading": "h4",
+        "heading": "<p>Customersay <br\/>about us<\/p>",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "testimonial_style_9_Prmbqy": {
+      "type": "testimonial-style-9",
+      "blocks": {
+        "testimonial_box_CYBUYm": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>“I was blown away by the sound quality of this Bluetooth speaker! The clarity and bass are impressive for its size. It's perfect for both indoor and outdoor use.”<\/p>",
+            "avatar_size": "small",
+            "customer_name": "John Hunam"
+          }
+        },
+        "testimonial_box_yExJ86": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>\"The sound quality of this high-end speaker is absolutely phenomenal. The audio is crystal clear, with deep bass and crisp highs that fill the room. It's perfect for audiophiles who want the best listening experience.\"<\/p>",
+            "avatar_size": "medium",
+            "customer_name": "Michael Goodman"
+          }
+        },
+        "testimonial_box_NLQGc3": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>\"The sound quality of this high-end speaker is absolutely phenomenal. The audio is crystal clear, with deep bass and crisp highs that fill the room. It's perfect for audiophiles who want the best listening experience.\"<\/p>",
+            "avatar_size": "medium",
+            "customer_name": "Sarah Paige"
+          }
+        },
+        "testimonial_box_4wVkyP": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>“I was blown away by the sound quality of this Bluetooth speaker! The clarity and bass are impressive for its size. It's perfect for both indoor and outdoor use.”<\/p>",
+            "avatar_size": "large",
+            "customer_name": "Johny Angelo"
+          }
+        },
+        "testimonial_box_JgwVqK": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>I love the design of this speaker – it's sleek and modern. The sound quality is fantastic, and it's super easy to pair with my devices. A great addition to any home audio setup!\"<\/p>",
+            "avatar_size": "small",
+            "customer_name": "Michael Goodman"
+          }
+        },
+        "testimonial_box_papG6V": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>\"The sound quality of this high-end speaker is absolutely phenomenal. The audio is crystal clear, with deep bass and crisp highs that fill the room. It's perfect for audiophiles who want the best listening experience.\"<\/p>",
+            "avatar_size": "large",
+            "customer_name": "Sarah Paige"
+          }
+        },
+        "testimonial_box_GQUJwt": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>“I was blown away by the sound quality of this Bluetooth speaker! The clarity and bass are impressive for its size. It's perfect for both indoor and outdoor use.”<\/p>",
+            "avatar_size": "small",
+            "customer_name": "Johny Angelo"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_box_CYBUYm",
+        "testimonial_box_yExJ86",
+        "testimonial_box_NLQGc3",
+        "testimonial_box_4wVkyP",
+        "testimonial_box_JgwVqK",
+        "testimonial_box_papG6V",
+        "testimonial_box_GQUJwt"
+      ],
+      "settings": {
+        "font_size_heading": "h5",
+        "text_heading": "Customers say about us",
+        "text_duration": 2000,
+        "text_effect": "split",
+        "active_index": "3",
+        "autoplay": "off",
+        "autoplay_speed": 5000,
+        "color_scheme": "background-1",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "testimonial_style_8_tfdpGL": {
+      "type": "testimonial-style-8",
+      "blocks": {
+        "testimonial_box_iq3Qh7": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>\"This high-end Bluetooth speaker is incredible. It pairs instantly with my devices and maintains a strong connection even at a distance. The sound quality is superb</p>",
+            "customer_name": "John Hunam",
+            "aspect_ratio": "1",
+            "button_text": "Shop all",
+            "button_style": "primary",
+            "button_size": "sm",
+            "product_card_aspect_ratio": "1",
+            "card_color_scheme": "inverse",
+            "product": ""
+          }
+        },
+        "testimonial_box_TMVQWa": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>\"The sound quality of this high-end speaker is absolutely phenomenal. The audio is crystal clear, with deep bass and crisp highs that fill the room.</p>",
+            "customer_name": "Michael Goodman",
+            "aspect_ratio": "1",
+            "button_text": "Shop all",
+            "button_style": "primary",
+            "button_size": "sm",
+            "product_card_aspect_ratio": "1",
+            "card_color_scheme": "inverse",
+            "product": ""
+          }
+        },
+        "testimonial_box_H3fByE": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>I love the design of this speaker – it's sleek and modern. The sound quality is fantastic, and it's super easy to pair with my devices. A great addition to any home audio setup!\"</p>",
+            "customer_name": "Sarah Paige",
+            "aspect_ratio": "1",
+            "button_text": "Shop all",
+            "button_style": "primary",
+            "button_size": "sm",
+            "product_card_aspect_ratio": "1",
+            "card_color_scheme": "inverse",
+            "product": ""
+          }
+        },
+        "testimonial_box_dfawPf": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>“I was blown away by the sound quality of this Bluetooth speaker! The clarity and bass are impressive for its size. It's perfect for both indoor and outdoor use.”</p>",
+            "customer_name": "Johny Angelo",
+            "aspect_ratio": "1",
+            "button_text": "Shop all",
+            "button_style": "primary",
+            "button_size": "sm",
+            "product_card_aspect_ratio": "1",
+            "card_color_scheme": "inverse",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_box_iq3Qh7",
+        "testimonial_box_TMVQWa",
+        "testimonial_box_H3fByE",
+        "testimonial_box_dfawPf"
+      ],
+      "settings": {
+        "layout": "image",
+        "autoplay": "off",
+        "autoplay_time": 3000,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    }
+  },
+  "order": [
+    "testimonial_style_4_qdijA4",
+    "testimonial_style_3_8hqcUa",
+    "testimonial_style_6_KJpg4f",
+    "testimonial_style_5_pgefHw",
+    "testimonial_style_9_Prmbqy",
+    "testimonial_style_8_tfdpGL"
+  ]
+}

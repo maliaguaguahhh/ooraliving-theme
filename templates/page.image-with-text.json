@@ -1,0 +1,144 @@
+{
+  "sections": {
+    "featured_collection_style_9_pPjwhY": {
+      "type": "featured-collection-style-9",
+      "blocks": {
+        "featured_XPNC4W": {
+          "type": "featured",
+          "settings": {
+            "heading": "<p>Anti Water up to IP68<\/p>",
+            "content": "<p>Yes, we ship all over the world. Shipping costs will <br\/>apply, and will be added at checkout. We run <br\/>discounts, promotion all year<\/p>",
+            "aspect_ratio": "746\/777"
+          }
+        },
+        "featured_gTVLpG": {
+          "type": "featured",
+          "settings": {
+            "heading": "<p>Drop Protechtion <br\/>4.8 meters<\/p>",
+            "content": "<p>Yes, we ship all over the world. Shipping costs will <br\/>apply, and will be added at checkout. We run <br\/>discounts, promotion all year<\/p>",
+            "aspect_ratio": "746\/777"
+          }
+        },
+        "featured_Cngg4B": {
+          "type": "featured",
+          "settings": {
+            "heading": "<p>Raised Screen Surround<\/p>",
+            "content": "<p>Yes, we ship all over the world. Shipping costs will <br\/>apply, and will be added at checkout. We run <br\/>discounts, promotion all year<\/p>",
+            "aspect_ratio": "746\/777"
+          }
+        }
+      },
+      "block_order": [
+        "featured_XPNC4W",
+        "featured_gTVLpG",
+        "featured_Cngg4B"
+      ],
+      "settings": {
+        "sub_heading": "FEATURE PRODUCT",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 130,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 130,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "image_with_text_style_2_FTr8YU": {
+      "type": "image-with-text-style-2",
+      "blocks": {
+        "feature_bzQHEm": {
+          "type": "feature",
+          "settings": {
+            "heading": "<p>Anti Water<br\/>up to IP68<\/p>"
+          }
+        },
+        "feature_jKnMdN": {
+          "type": "feature",
+          "settings": {
+            "heading": "<p>Drop Protechtion<br\/>4.8 meters<\/p>"
+          }
+        },
+        "feature_4MrMRm": {
+          "type": "feature",
+          "settings": {
+            "heading": "<p>Anti Water<br\/>up to IP68<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "feature_bzQHEm",
+        "feature_jKnMdN",
+        "feature_4MrMRm"
+      ],
+      "settings": {
+        "text_tag_name": "h2",
+        "text_heading": "We want to share creative inspiration & expression",
+        "font_size_heading": "h5",
+        "text_duration": 1000,
+        "text_effect": "split",
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "sub_heading": "SPECIAL FEATURES",
+        "aspect_ratio_left": "782\/351",
+        "aspect_ratio_right": "782\/827",
+        "show_image_right": "show",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "image_with_text_style_3_tUHbPK": {
+      "type": "image-with-text-style-3",
+      "blocks": {
+        "feature_JGYfeL": {
+          "type": "feature",
+          "settings": {
+            "font_size_heading": "h5",
+            "heading": "Powerful Hi-fi sound"
+          }
+        },
+        "feature_NJ4tK4": {
+          "type": "feature",
+          "settings": {
+            "font_size_heading": "h5",
+            "heading": "Seriously Smart"
+          }
+        },
+        "feature_dQBnWD": {
+          "type": "feature",
+          "settings": {
+            "font_size_heading": "h5",
+            "heading": "360 Degree Dispersion"
+          }
+        }
+      },
+      "block_order": [
+        "feature_JGYfeL",
+        "feature_NJ4tK4",
+        "feature_dQBnWD"
+      ],
+      "settings": {
+        "sub_heading": "<p> OUR UNIQLE SELLING <br\/>POINTS OF SPEAKERS<\/p>",
+        "aspect_ratio_dt": "21/9",
+        "aspect_ratio_mb": "3/2",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    }
+  },
+  "order": [
+    "featured_collection_style_9_pPjwhY",
+    "image_with_text_style_2_FTr8YU",
+    "image_with_text_style_3_tUHbPK"
+  ]
+}

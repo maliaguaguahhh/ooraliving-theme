@@ -1,0 +1,429 @@
+{
+  "sections": {
+    "image_banner_style_1_UPY3pa": {
+      "type": "image-banner-style-1",
+      "settings": {
+        "heading": "Super Play",
+        "button_text": "Shop all",
+        "button_style": "primary",
+        "button_size": "md",
+        "layout": "style-2",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "product_specification_style_11_agLRKX": {
+      "type": "product-specification-style-11",
+      "blocks": {
+        "chart_FzEJMb": {
+          "type": "chart",
+          "settings": {
+            "title": "PERFORMANCE",
+            "value_max": 60,
+            "x_label": "0\n1h\n6h\n14h\n20h\n24h",
+            "y_label": "60\n40\n20\n0",
+            "dataset": "0,20,39,40,30,42\n0,30,40,5,10,32",
+            "list_information": "After 12h - 80\nAfter 6h - 98"
+          }
+        },
+        "product_G8pkpn": {
+          "type": "product",
+          "settings": {
+            "product": "beosound-balance",
+            "product_card_aspect_ratio": "1",
+            "card_color_scheme": ""
+          }
+        },
+        "collection_gry66D": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "button_text": "Explore more",
+            "button_style": "primary",
+            "button_size": "sm"
+          }
+        }
+      },
+      "block_order": [
+        "chart_FzEJMb",
+        "product_G8pkpn",
+        "collection_gry66D"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "use_parallax": false,
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "featured_collection_style_1_XXcGRf": {
+      "type": "featured-collection-style-1",
+      "blocks": {
+        "image_with_text_yhXKFq": {
+          "type": "image-with-text",
+          "settings": {
+            "caption": "SPECIAL FEATURE",
+            "sub_heading": "Super",
+            "heading": "Smart"
+          }
+        },
+        "featured_product_hx9rwe": {
+          "type": "featured-product",
+          "settings": {
+            "heading": "<p>We want to share creative </p><p>inspiration & expression</p>",
+            "title_1": "<p>Crafted for </p><p>longevity</p>",
+            "title_2": "<p>Ultra-portable</p><p>technology</p>",
+            "title_3": "<p>Adapts to</p><p>environment</p>"
+          }
+        },
+        "collection_LqQJYY": {
+          "type": "collection",
+          "settings": {
+            "collection": "high-end",
+            "aspect_ratio_collection_desktop": "auto",
+            "aspect_ratio_collection_mobile": "auto",
+            "button_text": "Shop all",
+            "button_style": "primary",
+            "button_size": "sm"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_yhXKFq",
+        "featured_product_hx9rwe",
+        "collection_LqQJYY"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "multi_column_style_1_VmwYcY": {
+      "type": "multi-column-style-1",
+      "blocks": {
+        "column_w6rQDk": {
+          "type": "column",
+          "settings": {
+            "aspect_ratio_first": "auto",
+            "aspect_ratio_second": "auto",
+            "title": "<p>Being small yet powerful</p><p>The beauty of simplicity</p>",
+            "enable_overlay": "off"
+          }
+        },
+        "column_PcyrBm": {
+          "type": "column",
+          "settings": {
+            "aspect_ratio_first": "auto",
+            "aspect_ratio_second": "auto",
+            "title": "<p>Being small yet powerfulThe beauty of simplicity</p>",
+            "enable_overlay": "off"
+          }
+        },
+        "column_i94KRf": {
+          "type": "column",
+          "settings": {
+            "aspect_ratio_first": "auto",
+            "aspect_ratio_second": "auto",
+            "title": "<p>Providing conic quality</p><p>since the 1970s</p>",
+            "enable_overlay": "off"
+          }
+        }
+      },
+      "block_order": [
+        "column_w6rQDk",
+        "column_PcyrBm",
+        "column_i94KRf"
+      ],
+      "settings": {
+        "layout": "style-2",
+        "column": "3",
+        "text_tag_name": "h2",
+        "text_heading": "Adapts to environment",
+        "font_size_heading": "h4",
+        "text_duration": 1000,
+        "text_effect": "split",
+        "text_heading_width_desktop": 34,
+        "text_heading_width_mobile": 80,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "product_specification_style_1_xdaAGb": {
+      "type": "product-specification-style-1",
+      "blocks": {
+        "detail_infomation_a4Ndxc": {
+          "type": "detail-infomation",
+          "settings": {
+            "font_size_heading": "h1",
+            "heading_1": "360*",
+            "sub_heading_1": "Sound Dispersion",
+            "heading_2": "Wifi",
+            "sub_heading_2": "Stream Technology"
+          }
+        }
+      },
+      "block_order": [
+        "detail_infomation_a4Ndxc"
+      ],
+      "settings": {
+        "font_size_heading": "h6",
+        "heading": "<p>Introducing an elegant looks</p><p>disguise a world of power that</p><p>brings huge sound anywhere</p>",
+        "color_scheme": "background-2",
+        "background_color": "",
+        "background_gradient": "",
+        "use_parallax": true,
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "featured_product_style_1_keNt4C": {
+      "type": "featured-product-style-1",
+      "settings": {
+        "layout": "center",
+        "product": "beosound-explore-y",
+        "text_tag_name": "h2",
+        "text_heading": "Portable WiFi Speaker",
+        "font_size_heading": "h2",
+        "text_duration": 1000,
+        "text_effect": "split",
+        "text_heading_width_desktop": 73,
+        "text_heading_width_mobile": 100,
+        "sub_heading": "BEST SELLER",
+        "button_text": "",
+        "button_style": "primary",
+        "button_size": "sm",
+        "aspect_ratio_dt": "16/9",
+        "aspect_ratio_mb": "auto",
+        "product_card_show_image": true,
+        "product_card_show_secondary_image": true,
+        "product_card_show_price": true,
+        "card_color_scheme": "",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "testimonial_style_8_4fnRTw": {
+      "type": "testimonial-style-8",
+      "blocks": {
+        "testimonial_box_LJ3jqc": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>“I was blown away by the sound quality of this Bluetooth speaker! The clarity and bass are impressive for its size. It's perfect for both indoor and outdoor use.”</p>",
+            "customer_name": "Johny Angelo",
+            "aspect_ratio": "auto",
+            "button_text": "Button",
+            "button_style": "primary",
+            "button_size": "sm",
+            "product_card_aspect_ratio": "1",
+            "card_color_scheme": "inverse",
+            "product": "beosound-balance"
+          }
+        },
+        "testimonial_box_KbVemc": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>“I was blown away by the sound quality of this Bluetooth speaker! The clarity and bass are impressive for its size. It's perfect for both indoor and outdoor use.”</p>",
+            "customer_name": "Johny Angelo",
+            "aspect_ratio": "auto",
+            "button_text": "Button",
+            "button_style": "primary",
+            "button_size": "sm",
+            "product_card_aspect_ratio": "1",
+            "card_color_scheme": "inverse",
+            "product": "beosound-explore-y"
+          }
+        },
+        "testimonial_box_DQDHiG": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>“I was blown away by the sound quality of this Bluetooth speaker! The clarity and bass are impressive for its size. It's perfect for both indoor and outdoor use.”</p>",
+            "customer_name": "Johny Angelo",
+            "aspect_ratio": "auto",
+            "button_text": "Button",
+            "button_style": "primary",
+            "button_size": "sm",
+            "product_card_aspect_ratio": "1",
+            "card_color_scheme": "inverse",
+            "product": "beosound-a9"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_box_LJ3jqc",
+        "testimonial_box_KbVemc",
+        "testimonial_box_DQDHiG"
+      ],
+      "settings": {
+        "layout": "product",
+        "autoplay": "off",
+        "autoplay_time": 3000,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "blog_list_cnw9TU": {
+      "type": "blog-list",
+      "settings": {
+        "font_size_heading": "h4",
+        "heading": "Our journals",
+        "button_text": "Read all",
+        "button_style": "primary",
+        "button_size": "sm",
+        "blog": "news",
+        "show_image": true,
+        "show_date": true,
+        "show_author": true,
+        "show_description": true,
+        "show_tag": true,
+        "aspect_ratio": "auto",
+        "color_schema_blog": "",
+        "column_dt": 3,
+        "blog_to_show": 3,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "collapse_content_RxdEnW": {
+      "type": "collapse-content",
+      "blocks": {
+        "collapse_gUbPYb": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>What distinguishes your speakers from others?</p>",
+            "content": "<p>Our high-end speakers are designed with premium materials and advanced audio technology to deliver superior sound quality, which set them apart from standard models.</p>"
+          }
+        },
+        "collapse_da4bYH": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>What is the warranty coverage for your speakers?</p>",
+            "content": "<p>We offer a comprehensive warranty for all our high-end products. Typically, this includes a 2-year warranty covering manufacturing defects and a 1-year warranty for the electrical components</p>"
+          }
+        },
+        "collapse_X8aBi8": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>How do I connect multiple Bluetooth speakers for a surround sound experience?</p>",
+            "content": "<p>To connect multiple speakers, turn on each speaker and activate their Bluetooth mode. Follow the pairing instructions in the user manual to connect the speakers to each other and then to your device. </p>"
+          }
+        },
+        "collapse_fkpHCJ": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>Are your speakers waterproof?</p>",
+            "content": "<p>Yes, many of our Bluetooth speakers are designed to be waterproof and are rated IPX5 or higher, making them suitable for outdoor use, poolside gatherings, and even in the shower</p>"
+          }
+        }
+      },
+      "block_order": [
+        "collapse_gUbPYb",
+        "collapse_da4bYH",
+        "collapse_X8aBi8",
+        "collapse_fkpHCJ"
+      ],
+      "settings": {
+        "font_size_heading": "h4",
+        "heading": "<p>Frequently Asked</p><p>Questions</p>",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "gallery_style_1_xWFwnc": {
+      "type": "gallery-style-1",
+      "blocks": {
+        "image_1_BNiTXr": {
+          "type": "image-1",
+          "settings": {
+          }
+        },
+        "image_2_tBRWxK": {
+          "type": "image-2",
+          "settings": {
+          }
+        },
+        "image_3_EWGajf": {
+          "type": "image-3",
+          "settings": {
+          }
+        },
+        "image_4_M8C6mn": {
+          "type": "image-4",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "image_1_BNiTXr",
+        "image_2_tBRWxK",
+        "image_3_EWGajf",
+        "image_4_M8C6mn"
+      ],
+      "settings": {
+        "heading": "<p>#Our<br/>Instagram</p>",
+        "button_text": "@b&o.ig",
+        "button_style": "primary",
+        "button_size": "sm",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 43,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 23
+      }
+    }
+  },
+  "order": [
+    "image_banner_style_1_UPY3pa",
+    "product_specification_style_11_agLRKX",
+    "featured_collection_style_1_XXcGRf",
+    "multi_column_style_1_VmwYcY",
+    "product_specification_style_1_xdaAGb",
+    "featured_product_style_1_keNt4C",
+    "testimonial_style_8_4fnRTw",
+    "blog_list_cnw9TU",
+    "collapse_content_RxdEnW",
+    "gallery_style_1_xWFwnc"
+  ]
+}

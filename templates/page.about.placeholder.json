@@ -1,0 +1,229 @@
+{
+  "sections": {
+    "image_with_text_style_5_3fwwEP": {
+      "type": "image-with-text-style-5",
+      "blocks": {
+        "feature_J33aEG": {
+          "type": "feature",
+          "settings": {
+            "title": "Heading",
+            "sub_title": "<p>Showcase a benefit of your product</p>"
+          }
+        },
+        "feature_i8FMQQ": {
+          "type": "feature",
+          "settings": {
+            "title": "Heading",
+            "sub_title": "<p>Showcase a benefit of your product</p>"
+          }
+        },
+        "feature_XN8g6N": {
+          "type": "feature",
+          "settings": {
+            "title": "Heading",
+            "sub_title": "<p>Showcase a benefit of your product</p>"
+          }
+        }
+      },
+      "block_order": [
+        "feature_J33aEG",
+        "feature_i8FMQQ",
+        "feature_XN8g6N"
+      ],
+      "settings": {
+        "caption": "Caption",
+        "font_size_heading": "h5",
+        "heading": "<p>Image with text</p>",
+        "sub_heading": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "image_with_text_style_3_Re4KDT": {
+      "type": "image-with-text-style-3",
+      "blocks": {
+        "feature_CHDKBR": {
+          "type": "feature",
+          "settings": {
+            "font_size_heading": "h5",
+            "heading": "Heading"
+          }
+        },
+        "feature_CYwQG6": {
+          "type": "feature",
+          "settings": {
+            "font_size_heading": "h5",
+            "heading": "Heading"
+          }
+        },
+        "feature_TzethC": {
+          "type": "feature",
+          "settings": {
+            "font_size_heading": "h5",
+            "heading": "Heading"
+          }
+        }
+      },
+      "block_order": [
+        "feature_CHDKBR",
+        "feature_CYwQG6",
+        "feature_TzethC"
+      ],
+      "settings": {
+        "sub_heading": "<p>Subheading</p>",
+        "aspect_ratio_dt": "21/9",
+        "aspect_ratio_mb": "3/2",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "product_specification_style_1_HpEjYT": {
+      "type": "product-specification-style-1",
+      "blocks": {
+        "detail_infomation_zGcgRW": {
+          "type": "detail-infomation",
+          "settings": {
+            "font_size_heading": "h1",
+            "heading_1": "Heading 1",
+            "sub_heading_1": "Subheading 1",
+            "heading_2": "Heading 2",
+            "sub_heading_2": "Subheading 2"
+          }
+        }
+      },
+      "block_order": [
+        "detail_infomation_zGcgRW"
+      ],
+      "settings": {
+        "font_size_heading": "h6",
+        "heading": "<p>Product specification</p>",
+        "color_scheme": "background-2",
+        "background_color": "",
+        "background_gradient": "",
+        "use_parallax": true,
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "testimonial_style_4_Dm6PGR": {
+      "type": "testimonial-style-4",
+      "blocks": {
+        "testimonial_box_wEktnQ": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer's name"
+          }
+        },
+        "testimonial_box_LrHx7c": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer's name"
+          }
+        },
+        "testimonial_box_89BRfG": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer's name"
+          }
+        },
+        "testimonial_box_QUDyUd": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer's name"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_box_wEktnQ",
+        "testimonial_box_LrHx7c",
+        "testimonial_box_89BRfG",
+        "testimonial_box_QUDyUd"
+      ],
+      "settings": {
+        "sub_heading": "Subheading",
+        "autoplay_time": 3000,
+        "autoplay": "off",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "collapse_content_ckxnA9": {
+      "type": "collapse-content",
+      "blocks": {
+        "collapse_bEjByB": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>Heading</p>",
+            "content": "<p>Showcase a benefit of your product</p>"
+          }
+        },
+        "collapse_FUpk86": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>Heading</p>",
+            "content": "<p>Showcase a benefit of your product </p>"
+          }
+        },
+        "collapse_jjaVRy": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>Heading</p>",
+            "content": "<p>Showcase a benefit of your product </p>"
+          }
+        },
+        "collapse_3iBdw8": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>Heading</p>",
+            "content": "<p>Showcase a benefit of your product </p>"
+          }
+        }
+      },
+      "block_order": [
+        "collapse_bEjByB",
+        "collapse_FUpk86",
+        "collapse_jjaVRy",
+        "collapse_3iBdw8"
+      ],
+      "settings": {
+        "font_size_heading": "h4",
+        "heading": "<p>Collapse content</p>",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    }
+  },
+  "order": [
+    "image_with_text_style_5_3fwwEP",
+    "image_with_text_style_3_Re4KDT",
+    "product_specification_style_1_HpEjYT",
+    "testimonial_style_4_Dm6PGR",
+    "collapse_content_ckxnA9"
+  ]
+}
