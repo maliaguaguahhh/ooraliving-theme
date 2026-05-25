@@ -308,7 +308,7 @@
       "name": "Create your own rituals",
       "settings": {
         "layout": "style-2",
-        "background_type": "video",
+        "background_type": "image",
         "font_size_heading": "display-1",
         "heading": "Create your own rituals",
         "description": "Create shortcuts for podcasts, reminders, timers, notes, music, and any experience you love.",
@@ -316,6 +316,7 @@
         "button_link": "shopify://collections/all",
         "button_style": "primary",
         "button_size": "md",
+        "background_image_mobile": "shopify://shop_images/Dust_Rose_1_Crop.jpg",
         "color_scheme": "",
         "background_color": "",
         "background_gradient": "",
@@ -336,12 +337,13 @@
             "left_dt": 20,
             "top_mb": 50,
             "left_mb": 20,
-            "card_type": "product",
+            "card_type": "shortcut",
             "product": "",
-            "shortcut_title": "",
-            "shortcut_description": "",
-            "shortcut_button_text": "",
-            "shortcut_button_link": "",
+            "shortcut_image": "shopify://shop_images/image_91.png",
+            "shortcut_title": "Music",
+            "shortcut_description": "<p>This is the description</p>",
+            "shortcut_button_text": "download",
+            "shortcut_button_link": "shopify://pages/nfc-shortcut-gallery",
             "placement": "right-top",
             "hotspot_color": "#0f61ff"
           }
@@ -385,6 +387,7 @@
         "feature_dRCPhf": {
           "type": "feature",
           "settings": {
+            "image": "shopify://shop_images/icon_sticker-01.png",
             "color_config_enable": false,
             "content": "Shortcut 1"
           }
@@ -392,6 +395,7 @@
         "feature_fEALmt": {
           "type": "feature",
           "settings": {
+            "image": "shopify://shop_images/icon_sticker-02.png",
             "color_config_enable": false,
             "content": "Shortcut 1"
           }
@@ -399,6 +403,7 @@
         "feature_QFyMfy": {
           "type": "feature",
           "settings": {
+            "image": "shopify://shop_images/icon_sticker-03.png",
             "color_config_enable": false,
             "content": "Shortcut 1"
           }
@@ -425,6 +430,7 @@
         "heading_max_width_desktop": 600,
         "heading_max_width_mobile": 460,
         "aspect_ratio_dt": "4/3",
+        "image_mb": "shopify://shop_images/image_5_ae7856fb-9ada-40d0-9e53-99dad1ddf128.png",
         "aspect_ratio_mb": "4/3",
         "product_card_show_image": true,
         "product_card_show_secondary_image": false,
@@ -445,105 +451,50 @@
         "padding_bottom_mobile": 100
       }
     },
-    "media_showcase_UHdna6": {
-      "type": "media-showcase",
+    "testimonial_style_4_fkDVeW": {
+      "type": "testimonial-style-4",
       "blocks": {
-        "image_JfE3fa": {
-          "type": "image",
+        "testimonial_box_6Re8Ar": {
+          "type": "testimonial-box",
           "settings": {
-            "image": "shopify://shop_images/a-young-beautiful-woman-use-iphone-back-camera-to-do-selfie-in-front-of-mirror-show-her-upper-body-face-1-1-ratio.png",
-            "device": "desktop",
-            "inherit_desktop_value": true,
-            "width_desktop": 50,
-            "height_desktop": 50,
-            "width_mobile": 100,
-            "height_mobile": 100
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer's name"
           }
         },
-        "media_ACQXKd": {
-          "type": "media",
+        "testimonial_box_V3eief": {
+          "type": "testimonial-box",
           "settings": {
-            "aspect_ratio": "3/4",
-            "aspect_ratio_width": 400,
-            "aspect_ratio_height": 300,
-            "product": "tapnest",
-            "card_color_scheme": "",
-            "text": "Customer",
-            "inherit_color_scheme": true,
-            "color_scheme": ""
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer's name"
           }
         },
-        "media_DtzJiN": {
-          "type": "media",
+        "testimonial_box_dARwGh": {
+          "type": "testimonial-box",
           "settings": {
-            "aspect_ratio": "3/4",
-            "aspect_ratio_width": 400,
-            "aspect_ratio_height": 300,
-            "product": "tapnest",
-            "card_color_scheme": "",
-            "text": "Customer",
-            "inherit_color_scheme": true,
-            "color_scheme": ""
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer's name"
           }
         },
-        "media_TYnThm": {
-          "type": "media",
+        "testimonial_box_tNF8JU": {
+          "type": "testimonial-box",
           "settings": {
-            "aspect_ratio": "3/4",
-            "aspect_ratio_width": 400,
-            "aspect_ratio_height": 300,
-            "product": "tapnest",
-            "card_color_scheme": "",
-            "text": "Customer",
-            "inherit_color_scheme": true,
-            "color_scheme": ""
-          }
-        },
-        "media_jAxgDp": {
-          "type": "media",
-          "settings": {
-            "aspect_ratio": "3/4",
-            "aspect_ratio_width": 400,
-            "aspect_ratio_height": 300,
-            "product": "tapnest",
-            "card_color_scheme": "",
-            "text": "Customer",
-            "inherit_color_scheme": true,
-            "color_scheme": ""
-          }
-        },
-        "media_xkricW": {
-          "type": "media",
-          "settings": {
-            "aspect_ratio": "3/4",
-            "aspect_ratio_width": 400,
-            "aspect_ratio_height": 300,
-            "product": "tapnest",
-            "card_color_scheme": "",
-            "text": "Customer",
-            "inherit_color_scheme": true,
-            "color_scheme": ""
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer's name"
           }
         }
       },
       "block_order": [
-        "image_JfE3fa",
-        "media_ACQXKd",
-        "media_DtzJiN",
-        "media_TYnThm",
-        "media_jAxgDp",
-        "media_xkricW"
+        "testimonial_box_6Re8Ar",
+        "testimonial_box_V3eief",
+        "testimonial_box_dARwGh",
+        "testimonial_box_tNF8JU"
       ],
-      "name": "Testimonial (oora + you)",
+      "name": "t:sections.testimonial_style_4.presets.name",
       "settings": {
-        "font_size": "h1",
-        "text": "Friends of [img]  [highlight]",
-        "text_highlight": "oora",
-        "text_highlight_color": "#c87272",
-        "active_index": 2,
-        "autoplay": true,
-        "autoplay_speed": 2600,
-        "color_scheme": "background-1",
+        "sub_heading": "Subheading",
+        "autoplay_time": 3000,
+        "autoplay": "off",
+        "color_scheme": "",
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 50,
@@ -881,7 +832,7 @@
     "image_with_text_style_10_KKbrT7",
     "image_banner_style_2_Dypq4f",
     "shop_the_look_style_1_mW8Mf4",
-    "media_showcase_UHdna6",
+    "testimonial_style_4_fkDVeW",
     "multi_column_style_1_JAGazF",
     "collapse_content_PmMV3m",
     "image_banner_style_2_D3npaz",
