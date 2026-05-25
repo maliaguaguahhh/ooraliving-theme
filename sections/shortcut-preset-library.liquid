@@ -1,0 +1,546 @@
+{% liquid
+  assign aspect_ratio = section.settings.aspect_ratio
+  assign alignment = section.settings.alignment
+
+  assign heading_class = 'shortcut-preset-library__heading xo-heading-block'
+  case alignment
+    when 'left'
+      assign heading_class = heading_class | append: ' xo-heading-block--left'
+    when 'center'
+      assign heading_class = heading_class | append: ' xo-heading-block--center'
+    when 'right'
+      assign heading_class = heading_class | append: ' xo-heading-block--right'
+  endcase
+%}
+
+<style>
+  #shopify-section-{{ section.id }} .shortcut-preset-library {
+    --shortcut-card-radius: {{ section.settings.card_radius }}px;
+    --shortcut-grid-gap: {{ section.settings.grid_gap }}px;
+    --shortcut-overlay-opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__heading {
+    margin: 0 0 3rem;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--shortcut-grid-gap);
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__card {
+    position: relative;
+    display: block;
+    aspect-ratio: {{ aspect_ratio }};
+    min-height: 22rem;
+    overflow: hidden;
+    border-radius: var(--shortcut-card-radius);
+    color: #fff;
+    background: #1b1b1b;
+    text-decoration: none;
+    isolation: isolate;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__card:focus-visible {
+    outline: 0.2rem solid currentColor;
+    outline-offset: 0.4rem;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__image,
+  #shopify-section-{{ section.id }} .shortcut-preset-library__placeholder {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    transition: transform 400ms ease;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__image {
+    object-fit: cover;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__placeholder {
+    background:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0)),
+      #2d2d2d;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, var(--shortcut-overlay-opacity)) 100%),
+      rgba(0, 0, 0, 0.12);
+    transition: background 300ms ease;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__content {
+    position: absolute;
+    right: 7.2rem;
+    bottom: 2.4rem;
+    left: 2.4rem;
+    display: grid;
+    gap: 0.8rem;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__title {
+    margin: 0;
+    color: inherit;
+    font-size: clamp(2rem, 1.6vw, 2.8rem);
+    line-height: 1.1;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__text {
+    display: -webkit-box;
+    margin: 0;
+    overflow: hidden;
+    color: inherit;
+    font-size: 1.4rem;
+    line-height: 1.45;
+    opacity: 0.86;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__icon {
+    position: absolute;
+    right: 2.4rem;
+    bottom: 2.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.36);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff;
+    pointer-events: none;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__icon svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__card:hover .shortcut-preset-library__image,
+  #shopify-section-{{ section.id }} .shortcut-preset-library__card:hover .shortcut-preset-library__placeholder {
+    transform: scale(1.045);
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__card:hover .shortcut-preset-library__overlay {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, calc(var(--shortcut-overlay-opacity) + 0.12)) 100%),
+      rgba(0, 0, 0, 0.08);
+  }
+
+  @media screen and (max-width: 989px) {
+    #shopify-section-{{ section.id }} .shortcut-preset-library__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} .shortcut-preset-library__heading {
+      margin-bottom: 2.4rem;
+    }
+
+    #shopify-section-{{ section.id }} .shortcut-preset-library__grid {
+      grid-template-columns: 1fr;
+      gap: 1.6rem;
+    }
+
+    #shopify-section-{{ section.id }} .shortcut-preset-library__card {
+      min-height: 20rem;
+    }
+
+    #shopify-section-{{ section.id }} .shortcut-preset-library__content {
+      right: 6.4rem;
+      bottom: 2rem;
+      left: 2rem;
+    }
+
+    #shopify-section-{{ section.id }} .shortcut-preset-library__icon {
+      right: 2rem;
+      bottom: 2rem;
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+</style>
+
+<section {% render 'section-attr' %}>
+  <div class="shortcut-preset-library">
+    <xo-container>
+      {% if section.settings.text_heading != blank %}
+        <div class="{{ heading_class }}">
+          {% render 'text', context: section %}
+        </div>
+      {% endif %}
+
+      <div class="shortcut-preset-library__grid">
+        {% for block in section.blocks %}
+          {% liquid
+            assign preset_image = block.settings.image
+            assign preset_title = block.settings.title
+            assign preset_description = block.settings.description
+            assign download_link = block.settings.download_link
+          %}
+
+          <a
+            class="shortcut-preset-library__card"
+            {% if download_link != blank %}
+              href="{{ download_link }}"
+              download
+            {% else %}
+              href="#"
+              aria-disabled="true"
+            {% endif %}
+            aria-label="{% if preset_title != blank %}Download {{ preset_title | escape }}{% else %}Download shortcut preset{% endif %}"
+            {{ block.shopify_attributes }}
+          >
+            {% if preset_image != blank %}
+              {{
+                preset_image
+                | image_url: width: 1200
+                | image_tag:
+                  class: 'shortcut-preset-library__image',
+                  loading: 'lazy',
+                  sizes: '(min-width: 990px) 33vw, (min-width: 750px) 50vw, 100vw',
+                  widths: '360, 540, 720, 900, 1200',
+                  alt: preset_title
+              }}
+            {% else %}
+              <span class="shortcut-preset-library__placeholder" aria-hidden="true"></span>
+            {% endif %}
+
+            <span class="shortcut-preset-library__overlay" aria-hidden="true"></span>
+
+            <span class="shortcut-preset-library__content">
+              {% if preset_title != blank %}
+                <span class="shortcut-preset-library__title">{{ preset_title | escape }}</span>
+              {% endif %}
+
+              {% if preset_description != blank %}
+                <span class="shortcut-preset-library__text">{{ preset_description | escape }}</span>
+              {% endif %}
+            </span>
+
+            <span class="shortcut-preset-library__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" focusable="false">
+                <path d="M12 3v11m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </a>
+        {% endfor %}
+      </div>
+    </xo-container>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Shortcut Preset Library",
+  "disabled_on": {
+    "groups": [
+      "header",
+      "footer",
+      "custom.overlay",
+      "custom.popups",
+      "custom.features"
+    ]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "select",
+      "id": "text_tag_name",
+      "label": "Tag name",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "textarea",
+      "id": "text_heading",
+      "label": "Text",
+      "default": "Shortcut Preset Library"
+    },
+    {
+      "type": "select",
+      "id": "font_size_heading",
+      "label": "Font size heading",
+      "default": "h5",
+      "options": [
+        {
+          "value": "h1",
+          "label": "Extra extra large"
+        },
+        {
+          "value": "h2",
+          "label": "Extra large"
+        },
+        {
+          "value": "h3",
+          "label": "Large"
+        },
+        {
+          "value": "h4",
+          "label": "Medium"
+        },
+        {
+          "value": "h5",
+          "label": "Small"
+        },
+        {
+          "value": "h6",
+          "label": "Extra small"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "text_line_height",
+      "label": "Line height",
+      "min": 0,
+      "max": 3,
+      "step": 0.1,
+      "default": 1.2
+    },
+    {
+      "type": "select",
+      "id": "text_effect",
+      "label": "Effect",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "reveal",
+          "label": "Blur"
+        },
+        {
+          "value": "split",
+          "label": "Split"
+        }
+      ],
+      "default": "split"
+    },
+    {
+      "type": "number",
+      "id": "text_duration",
+      "label": "Duration (milliseconds)",
+      "default": 1000
+    },
+    {
+      "type": "range",
+      "id": "text_heading_width_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Desktop heading width",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "text_heading_width_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Mobile heading width",
+      "default": 100
+    },
+    {
+      "type": "text_alignment",
+      "id": "alignment",
+      "label": "Alignment"
+    },
+    {
+      "type": "header",
+      "content": "Cards"
+    },
+    {
+      "type": "select",
+      "id": "aspect_ratio",
+      "label": "Card aspect ratio",
+      "options": [
+        {
+          "value": "4 / 3",
+          "label": "4:3"
+        },
+        {
+          "value": "3 / 2",
+          "label": "3:2"
+        }
+      ],
+      "default": "4 / 3"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "label": "Grid gap",
+      "min": 8,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "label": "Card corner radius",
+      "min": 0,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay strength",
+      "min": 20,
+      "max": 85,
+      "step": 5,
+      "unit": "%",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "General settings"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Section color scheme"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "number",
+      "id": "padding_top_desktop",
+      "label": "Padding top desktop",
+      "default": 50
+    },
+    {
+      "type": "number",
+      "id": "padding_bottom_desktop",
+      "label": "Padding bottom desktop",
+      "default": 50
+    },
+    {
+      "type": "number",
+      "id": "padding_top_mobile",
+      "label": "Padding top mobile",
+      "default": 40
+    },
+    {
+      "type": "number",
+      "id": "padding_bottom_mobile",
+      "label": "Padding bottom mobile",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "shortcut_preset",
+      "name": "Shortcut preset",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Shortcut preset"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Short description",
+          "default": "A short preset description."
+        },
+        {
+          "type": "url",
+          "id": "download_link",
+          "label": "Download link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shortcut Preset Library",
+      "blocks": [
+        {
+          "type": "shortcut_preset",
+          "settings": {
+            "title": "Morning Focus",
+            "description": "A shortcut preset for deep work starts."
+          }
+        },
+        {
+          "type": "shortcut_preset",
+          "settings": {
+            "title": "Evening Reset",
+            "description": "A calm preset for winding down."
+          }
+        },
+        {
+          "type": "shortcut_preset",
+          "settings": {
+            "title": "Quick Capture",
+            "description": "A fast preset for saving ideas."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -3,16 +3,26 @@
 
   @param {String} heading - A string to use as the heading for the shop-look-1 element (optional)
   @param {Object} block - An object to use as the blocks for the shop-look-1 element (optional)
+  @param {Number} heading_max_width_desktop - Desktop max width for the heading, in pixels (optional)
+  @param {Number} heading_max_width_mobile - Mobile max width for the heading, in pixels (optional)
 
   @example
   {% render 'shop-look-1', heading: heading, block: block %}
 {% endcomment %}
 
+{% liquid
+  assign heading_max_width_desktop = heading_max_width_desktop | default: 600
+  assign heading_max_width_mobile = heading_max_width_mobile | default: 460
+%}
+
 <div class="shop-look-1">
   <xo-animate xo-cascade xo-order="1" style="height: 100%;">
     <div class="shop-look-1__content{% if settings.enable_border_radius %} shop-look-1__content--radius{% endif %}">
       {% if heading %}
-        <div class="shop-look-1__head">
+        <div
+          class="shop-look-1__head"
+          style="--heading-max-width-desktop: {{ heading_max_width_desktop }}px; --heading-max-width-mobile: {{ heading_max_width_mobile }}px;"
+        >
           {% render 'text', context: section %}
         </div>
       {% endif %}

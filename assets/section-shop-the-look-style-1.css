@@ -2,6 +2,16 @@
   position: relative;
 }
 
+.shop-look-1__head {
+  width: min(100%, var(--heading-max-width-mobile, 46rem));
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .shop-look-1__head {
+    width: min(100%, var(--heading-max-width-desktop, 60rem));
+  }
+}
+
 .shop-the-look-style-1__banner .xo-image,
 .shop-the-look-style-1__banner .xo-image__placeholder,
 .shop-the-look-style-1__banner .placeholder-svg,

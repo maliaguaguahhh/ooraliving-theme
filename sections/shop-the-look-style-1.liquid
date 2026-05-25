@@ -13,13 +13,9 @@
   endif
   assign point_type = section.settings.point_type
   assign point_size = section.settings.point_size
-  assign class = section.settings.font_size_heading
   assign heading = section.settings.text_heading
-  assign duration = section.settings.text_duration
-  assign effect = section.settings.text_effect
-  assign tag_name = section.settings.text_tag_name
-  assign heading_width_desktop = section.settings.text_heading_width_desktop
-  assign heading_width_mobile = section.settings.text_heading_width_mobile
+  assign heading_max_width_desktop = section.settings.heading_max_width_desktop
+  assign heading_max_width_mobile = section.settings.heading_max_width_mobile
   assign block = section.blocks
 %}
 
@@ -28,7 +24,12 @@
     <xo-container class="shop-the-look-style-1__container">
       <xo-grid class="shop-the-look-style-1__body">
         <div class="shop-the-look-style-1__left" style="--lg: 4; --md: 12; --xs: 12">
-          {% render 'shop-look-1', heading: heading, block: block %}
+          {% render 'shop-look-1',
+            heading: heading,
+            block: block,
+            heading_max_width_desktop: heading_max_width_desktop,
+            heading_max_width_mobile: heading_max_width_mobile
+          %}
         </div>
         <div class="shop-the-look-style-1__right" style="--lg: 8; --md: 12; --xs: 12">
           <div class="shop-the-look-style-1__banner{% if settings.enable_border_radius %} shop-the-look-style-1__banner--radius{% endif %}">
@@ -227,6 +228,26 @@
       "unit": "%",
       "label": "Mobile heading width",
       "default": 100
+    },
+    {
+      "type": "range",
+      "id": "heading_max_width_desktop",
+      "min": 200,
+      "max": 900,
+      "step": 10,
+      "unit": "px",
+      "label": "Heading max width desktop",
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "heading_max_width_mobile",
+      "min": 160,
+      "max": 520,
+      "step": 10,
+      "unit": "px",
+      "label": "Heading max width mobile",
+      "default": 460
     },
     {
       "type": "header",
