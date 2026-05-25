@@ -23,6 +23,8 @@
         "button_size": "md",
         "background_image_desktop": "shopify://shop_images/Dust_Rose_1_Crop.jpg",
         "background_image_mobile": "shopify://shop_images/Dust_Rose_1_Crop.jpg",
+        "video_dt": "shopify://files/videos/6888.mp4",
+        "video_mb": "shopify://files/videos/6888.mp4",
         "color_scheme": "background-1",
         "background_color": "",
         "background_gradient": "",
