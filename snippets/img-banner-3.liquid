@@ -44,8 +44,11 @@
                   assign heading = item.settings.heading
                   assign description = item.settings.description
                   assign button = item.settings
+                  assign media_type = item.settings.media_type | default: 'image'
                   assign img_desktop = item.settings.background_image_desktop | image_url
                   assign img_mobile = item.settings.background_image_mobile | image_url
+                  assign video_desktop = item.settings.background_video_desktop
+                  assign video_mobile = item.settings.background_video_mobile | default: video_desktop
                   assign lazyload = true
                   assign carousel_visible = ''
                   if forloop.index0 == 0
@@ -59,10 +62,18 @@
                   {% endif %}
                   <div class='img-banner-3__bg-image'>
                     <xo-animate xo-type='zoom-out' xo-order='4' class='img-banner-3__bg img-banner-3__bg--desktop'>
-                      {% render 'image', image: img_desktop, placeholder: placeholder, lazyload: lazyload %}
+                      {% if media_type == 'video' and video_desktop != blank %}
+                        {% render 'media', media: video_desktop, type: 'video', autoplay: true, enable_video_looping: true, controls: false, muted: true, class: 'xo-media--modifier' %}
+                      {% else %}
+                        {% render 'image', image: img_desktop, placeholder: placeholder, lazyload: lazyload %}
+                      {% endif %}
                     </xo-animate>
                     <xo-animate xo-type='zoom-out' xo-order='4' class='img-banner-3__bg img-banner-3__bg--mobile'>
-                      {% render 'image', image: img_mobile, placeholder: placeholder, lazyload: lazyload %}
+                      {% if media_type == 'video' and video_mobile != blank %}
+                        {% render 'media', media: video_mobile, type: 'video', autoplay: true, enable_video_looping: true, controls: false, muted: true, class: 'xo-media--modifier' %}
+                      {% else %}
+                        {% render 'image', image: img_mobile, placeholder: placeholder, lazyload: lazyload %}
+                      {% endif %}
                     </xo-animate>
                   </div>
 

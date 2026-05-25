@@ -203,6 +203,22 @@
           "content": "t:sections.hero_carousel.blocks.settings.header_image.content"
         },
         {
+          "type": "select",
+          "id": "media_type",
+          "label": "t:sections.hero_carousel.blocks.settings.media_type.label",
+          "options": [
+            {
+              "value": "image",
+              "label": "t:sections.hero_carousel.blocks.settings.media_type.options.image.label"
+            },
+            {
+              "value": "video",
+              "label": "t:sections.hero_carousel.blocks.settings.media_type.options.video.label"
+            }
+          ],
+          "default": "image"
+        },
+        {
           "type": "image_picker",
           "id": "background_image_desktop",
           "label": "t:sections.hero_carousel.blocks.settings.background_image_desktop.label"
@@ -211,6 +227,16 @@
           "type": "image_picker",
           "id": "background_image_mobile",
           "label": "t:sections.hero_carousel.blocks.settings.background_image_mobile.label"
+        },
+        {
+          "type": "video",
+          "id": "background_video_desktop",
+          "label": "t:sections.hero_carousel.blocks.settings.background_video_desktop.label"
+        },
+        {
+          "type": "video",
+          "id": "background_video_mobile",
+          "label": "t:sections.hero_carousel.blocks.settings.background_video_mobile.label"
         }
       ]
     },

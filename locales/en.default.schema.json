@@ -5528,11 +5528,28 @@
           "header_video": {
             "content": "Video"
           },
+          "media_type": {
+            "label": "Background media type",
+            "options": {
+              "image": {
+                "label": "Image"
+              },
+              "video": {
+                "label": "Video"
+              }
+            }
+          },
           "background_image_desktop": {
             "label": "Desktop background image"
           },
           "background_image_mobile": {
             "label": "Mobile background image"
+          },
+          "background_video_desktop": {
+            "label": "Desktop background video"
+          },
+          "background_video_mobile": {
+            "label": "Mobile background video"
           },
           "video_dt": {
             "label": "Video upload (desktop)"

@@ -3,6 +3,8 @@
   height: 100dvh;
 }
 .img-banner-3 .xo-video--modifier {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -47,8 +49,12 @@
   height: 100dvh;
 }
 .img-banner-3__bg-image .xo-image,
+.img-banner-3__bg-image .xo-media,
+.img-banner-3__bg-image .xo-embed-responsive,
+.img-banner-3__bg-image xo-intersection-video,
 .img-banner-3__bg-image .xo-image__placeholder,
 .img-banner-3__bg-image .placeholder-svg,
+.img-banner-3__bg-image video,
 .img-banner-3__bg-image img {
   width: 100%;
   height: 100%;
