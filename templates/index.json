@@ -1,1 +1,885 @@
-{"sections":{"image_banner_style_2_x4qhp6":{"type":"image-banner-style-2","settings":{"layout":"style-1","background_type":"video","font_size_heading":"display-1","heading":"TapNest","description":"Your phone finally has a place in your bathroom.","button_text":"Get TapNest - $39.99 $̶4̶6̶.̶9̶9̶","button_link":"shopify:\/\/collections\/all","button_style":"primary","button_size":"md","color_scheme":"background-1","background_color":"","background_gradient":"","padding_top_desktop":0,"padding_bottom_desktop":0,"padding_top_mobile":0,"padding_bottom_mobile":0}},"carousel_text_V4Lwdi":{"type":"carousel-text","blocks":{"carousel_item_aEiT3B":{"type":"carousel-item","settings":{"heading":"<p>Carousel text<\/p>"}},"carousel_item_RAUa8U":{"type":"carousel-item","settings":{"heading":"<p>Carousel text<\/p>"}},"carousel_item_HPiwGt":{"type":"carousel-item","settings":{"heading":"<p>Carousel text<\/p>"}}},"block_order":["carousel_item_aEiT3B","carousel_item_RAUa8U","carousel_item_HPiwGt"],"name":"t:sections.carousel_text.presets.name","settings":{"font_size_heading":"h5","speed":2,"direction":"","pause_on_hover":"off","color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":50,"padding_bottom_desktop":50,"padding_top_mobile":20,"padding_bottom_mobile":20}},"image_with_text_style_9_6fNkq3":{"type":"image-with-text-style-9","disabled":true,"name":"t:sections.image_with_text_style_9.presets.name","settings":{"text_tag_name":"h2","text_heading":"Tap. Snap. Flow.","font_size_heading":"h3","text_line_height":1.2,"text_effect":"split","text_duration":1000,"text_heading_width_desktop":100,"text_heading_width_mobile":100,"sub_heading":"What is TapNest","description":"Our patented design allows you to simply tap to start apps. Snap to dock your phone. One intuitive gesture to start your favourite rituals, be it music, video, makeup tutorals, or any other rituals for your bathroom moments.","alignment_desktop":"left","alignment_mobile":"top","expand_grid":false,"color_scheme":"","background_color":"","background_gradient":"","background_type":"video","use_parallax":true,"padding_top_desktop":50,"padding_bottom_desktop":50,"padding_top_mobile":50,"padding_bottom_mobile":50}},"hero_carousel_ntRjDd":{"type":"hero-carousel","blocks":{"image_pfPMbg":{"type":"image","settings":{"heading":"1. Tap","description":"<p>With 3 customizable NFC tap spots, your routine launch instantly without you ever having to navigate any menu.<\/p>","button_text":"Get TapNest","button_link":"shopify:\/\/collections\/all","button_style":"primary","button_size":"sm"}},"image_CxBzLD":{"type":"image","settings":{"heading":"2. Snap","description":"<p>Magnetic security in a click. <br\/>Keep your phone high, dry, and perfectly angled away from wet, messy sink edges.<\/p>","button_text":"Get TapNest","button_link":"shopify:\/\/collections\/all","button_style":"primary","button_size":"sm"}},"image_NaEnqy":{"type":"image","settings":{"heading":"3. Flow","description":"<p>Follow your ritual. <br\/>Enjoy seamless music and video without ever touching your screen with wet or messy fingers.<\/p>","button_text":"Get TapNest","button_link":"shopify:\/\/collections\/all","button_style":"primary","button_size":"sm"}}},"block_order":["image_pfPMbg","image_CxBzLD","image_NaEnqy"],"name":"Tap Snap Flow","settings":{"layout":"style-1","autoplay":"on","autoplay_speed":3000,"color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":0,"padding_bottom_desktop":0,"padding_top_mobile":0,"padding_bottom_mobile":0}},"featured_product_special_Vq8L67":{"type":"featured-product-special","blocks":{"title_WnLWNk":{"type":"title","settings":{}},"description_6bKfDc":{"type":"description","disabled":true,"settings":{}},"price_RdgQnr":{"type":"price","settings":{}},"quantity_picker_B4YTyH":{"type":"quantity_picker","settings":{}},"variants_hVq83B":{"type":"variants","settings":{"variant_style":"select","variant_color_style":"color"}},"buy_button_88TAkd":{"type":"buy_button","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":false}}},"block_order":["title_WnLWNk","description_6bKfDc","price_RdgQnr","quantity_picker_B4YTyH","variants_hVq83B","buy_button_88TAkd"],"name":"t:sections.featured_product_special.presets.name","settings":{"select_product":"tapnest","hide_variants":true,"color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":50,"padding_bottom_desktop":50,"padding_top_mobile":50,"padding_bottom_mobile":50}},"image_with_text_style_1_pKned4":{"type":"image-with-text-style-1","blocks":{"image_g9cjgC":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg","device_size":"desktop","inherit_desktop_value_size":false,"width_dt":90,"width_mb":60,"height_dt":115,"height_mb":85}},"image_YczHNV":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/face-treatment-with-a-smile.jpg","device_size":"desktop","inherit_desktop_value_size":false,"width_dt":229,"width_mb":141,"height_dt":214,"height_mb":148}}},"block_order":["image_g9cjgC","image_YczHNV"],"name":"Painpoints","settings":{"layout":"default","text_tag_name":"h2","text_heading":"Still propping your phone against the toothpaste?","font_size_heading":"h4","text_line_height":1.3,"text_effect":"split","text_duration":1000,"text_heading_width_desktop":100,"text_heading_width_mobile":100,"description":"<p>Phone is our besties for music, video, and more while getting ready or winding down. But between wet counters and slippery sink edges, it is a mess! <br\/><br\/>Also, why settle for ugly, bulky plastic holders that ruin your calm bathroom setup?<\/p>","small_image":"shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg","aspect_ratio_small":"custom","aspect_ratio_small_width":377,"aspect_ratio_small_height":386,"large_image":"shopify:\/\/shop_images\/a-wet-sink-top-with-a-phone-on-it-and-there-is-water-drop-on-the-phone-the-phone-is-playing-music-and-screen-is-on-show-the-app.png","aspect_ratio_large":"2\/3","aspect_ratio_large_width":400,"aspect_ratio_large_height":300,"color_scheme":"background-2","background_color":"#313131","background_gradient":"","padding_top_desktop":0,"padding_bottom_desktop":0,"padding_top_mobile":0,"padding_bottom_mobile":0}},"image_with_text_style_10_KKbrT7":{"type":"image-with-text-style-10","name":"Solution","settings":{"content":"<p>TapNest is the world's <strong>1st <\/strong>magnetic dock with built-in app shortcuts. <br\/><br\/><strong>Tap<\/strong> to launch your favorite apps. <strong>Snap<\/strong> to dock your device. It's that simple!<br\/><br\/>Designed with patented innovation and refined aesthetics, TapNest brings intentional elegance to any space.<\/p>","desktop_image":"shopify:\/\/shop_images\/woman-holding-mobile-phone.jpg","mobile_image":"shopify:\/\/shop_images\/woman-holding-mobile-phone.jpg","color_scheme":"","background_color":"","background_gradient":"","background_type":"image","use_parallax":true,"padding_top_desktop":50,"padding_bottom_desktop":50,"padding_top_mobile":50,"padding_bottom_mobile":50}},"image_banner_style_2_Dypq4f":{"type":"image-banner-style-2","name":"Create your own rituals","settings":{"layout":"style-2","background_type":"video","font_size_heading":"display-1","heading":"Create your own rituals","description":"Create shortcuts for podcasts, reminders, timers, notes, music, and any experience you love.","button_text":"Get TapNest - $39.99 $̶4̶6̶.̶9̶9̶","button_link":"shopify:\/\/collections\/all","button_style":"primary","button_size":"md","color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":0,"padding_bottom_desktop":0,"padding_top_mobile":0,"padding_bottom_mobile":0}},"shop_the_look_style_1_mW8Mf4":{"type":"shop-the-look-style-1","blocks":{"hostpot_zJ8Ykd":{"type":"hostpot","settings":{"timer_delay":0,"top_dt":50,"left_dt":20,"top_mb":50,"left_mb":20,"product":"","placement":"right-top","hotspot_color":"#0f61ff"}},"hostpot_tXcGDe":{"type":"hostpot","settings":{"timer_delay":1,"top_dt":50,"left_dt":50,"top_mb":50,"left_mb":50,"product":"","placement":"right-top","hotspot_color":"#0f61ff"}},"hostpot_tzRAj8":{"type":"hostpot","settings":{"timer_delay":2,"top_dt":50,"left_dt":80,"top_mb":50,"left_mb":80,"product":"tapnest","placement":"right-top","hotspot_color":"#c87272"}},"feature_dRCPhf":{"type":"feature","settings":{"color_config_enable":false,"content":"Shortcut 1"}},"feature_fEALmt":{"type":"feature","settings":{"color_config_enable":false,"content":"Shortcut 1"}},"feature_QFyMfy":{"type":"feature","settings":{"color_config_enable":false,"content":"Shortcut 1"}}},"block_order":["hostpot_zJ8Ykd","hostpot_tXcGDe","hostpot_tzRAj8","feature_dRCPhf","feature_fEALmt","feature_QFyMfy"],"name":"Show three taps","settings":{"text_tag_name":"h2","text_heading":"Don’t know where to start?","font_size_heading":"h5","text_line_height":1.2,"text_effect":"split","text_duration":1000,"text_heading_width_desktop":100,"text_heading_width_mobile":100,"aspect_ratio_dt":"4\/3","aspect_ratio_mb":"4\/3","product_card_show_image":true,"product_card_show_secondary_image":false,"product_card_show_price":false,"card_color_scheme":"background-2","point_type":"click","point_size":2.3,"button_text":"Browse Library","button_link":"shopify:\/\/products\/tapnest","button_style":"primary","button_size":"md","color_scheme":"background-2","background_color":"#c87272","background_gradient":"","padding_top_desktop":100,"padding_bottom_desktop":100,"padding_top_mobile":100,"padding_bottom_mobile":100}},"media_showcase_UHdna6":{"type":"media-showcase","blocks":{"image_JfE3fa":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/a-young-beautiful-woman-use-iphone-back-camera-to-do-selfie-in-front-of-mirror-show-her-upper-body-face-1-1-ratio.png","device":"desktop","inherit_desktop_value":true,"width_desktop":50,"height_desktop":50,"width_mobile":100,"height_mobile":100}},"media_ACQXKd":{"type":"media","settings":{"aspect_ratio":"3\/4","aspect_ratio_width":400,"aspect_ratio_height":300,"product":"tapnest","card_color_scheme":"","text":"Customer","inherit_color_scheme":true,"color_scheme":""}},"media_DtzJiN":{"type":"media","settings":{"aspect_ratio":"3\/4","aspect_ratio_width":400,"aspect_ratio_height":300,"product":"tapnest","card_color_scheme":"","text":"Customer","inherit_color_scheme":true,"color_scheme":""}},"media_TYnThm":{"type":"media","settings":{"aspect_ratio":"3\/4","aspect_ratio_width":400,"aspect_ratio_height":300,"product":"tapnest","card_color_scheme":"","text":"Customer","inherit_color_scheme":true,"color_scheme":""}},"media_jAxgDp":{"type":"media","settings":{"aspect_ratio":"3\/4","aspect_ratio_width":400,"aspect_ratio_height":300,"product":"tapnest","card_color_scheme":"","text":"Customer","inherit_color_scheme":true,"color_scheme":""}},"media_xkricW":{"type":"media","settings":{"aspect_ratio":"3\/4","aspect_ratio_width":400,"aspect_ratio_height":300,"product":"tapnest","card_color_scheme":"","text":"Customer","inherit_color_scheme":true,"color_scheme":""}}},"block_order":["image_JfE3fa","media_ACQXKd","media_DtzJiN","media_TYnThm","media_jAxgDp","media_xkricW"],"name":"Testimonial (oora + you)","settings":{"font_size":"h1","text":"Friends of [img]  [highlight]","text_highlight":"oora","text_highlight_color":"#c87272","active_index":2,"autoplay":true,"autoplay_speed":2600,"color_scheme":"background-1","background_color":"","background_gradient":"","padding_top_desktop":50,"padding_bottom_desktop":50,"padding_top_mobile":50,"padding_bottom_mobile":50}},"multi_column_style_1_JAGazF":{"type":"multi-column-style-1","blocks":{"column_qa9cfD":{"type":"column","settings":{"aspect_ratio_first":"3\/4","hover_type":"image","aspect_ratio_second":"3\/4","title":"","enable_overlay":"off"}},"column_mYL8UJ":{"type":"column","settings":{"aspect_ratio_first":"3\/4","hover_type":"image","aspect_ratio_second":"3\/4","title":"","enable_overlay":"off"}},"column_WYNfNJ":{"type":"column","settings":{"aspect_ratio_first":"3\/4","hover_type":"image","aspect_ratio_second":"3\/4","title":"","enable_overlay":"off"}}},"block_order":["column_qa9cfD","column_mYL8UJ","column_WYNfNJ"],"name":"Design to elevate","settings":{"layout":"style-2","column":"3","text_tag_name":"h2","text_heading":"Design to Elevate","font_size_heading":"h5","text_line_height":1.2,"text_effect":"split","text_duration":75,"text_heading_width_desktop":100,"text_heading_width_mobile":100,"color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":50,"padding_bottom_desktop":50,"padding_top_mobile":50,"padding_bottom_mobile":50}},"collapse_content_PmMV3m":{"type":"collapse-content","blocks":{"collapse_RaLc8a":{"type":"collapse","settings":{"title":"<p><strong>What is oora Tapnest?<\/strong><\/p>","content":"<p>oora Tapnest is the worlds first magnetic phone dock that also have multiple NFC shortcuts features. This allows you to open your favourite apps and experiences in one tap, and dock your phone in one smooth gesture. We aim to provide the best and proper bathroom phone dock experience.<\/p>"}},"collapse_VFkR3z":{"type":"collapse","settings":{"title":"<p><strong>Will it work with my Phone?<\/strong><\/p>","content":"<p>TapNest is designed for Magsafe-compatible iPhones and Magsafe cases. The NFC shortcut experience works best on recent iPhones with IOS shortcuts enabled. <strong>See our carefully curated <\/strong><a href=\"\/blogs\/news\" title=\"News\"><strong>shortcut presets here.<br\/><\/strong><\/a><em><br\/>Note: Thick, metallic, or non-Magsafe cases may reduce magnetic hold or NFC sensitivity.<\/em><\/p>"}},"collapse_VAbL78":{"type":"collapse","settings":{"title":"<p><strong>Can I use it without NFC?<\/strong><\/p>","content":"<p>Yes, the docking in fact is the core experience and most users report it to be the core experience. NFC is an extra layer that makes routines feel more intuitive and magical.<\/p>"}},"collapse_i6b3pR":{"type":"collapse","settings":{"title":"<p><strong>Where should I place it?<\/strong><\/p>","content":"<p>TapNest is made for smooth bathroom mirror, glass or tile surfaces near your natural eye line. Clean and dry the surface before applying the adhesion. You are also free to place the TapNest onto any surface that you feel that can benefit for the \"tap and snap\" experience.<\/p>"}}},"block_order":["collapse_RaLc8a","collapse_VFkR3z","collapse_VAbL78","collapse_i6b3pR"],"name":"FAQ","settings":{"font_size_heading":"h5","heading":"<p>FAQ<\/p>","color_scheme":"background-2","background_color":"","background_gradient":"","padding_top_desktop":40,"padding_bottom_desktop":90,"padding_top_mobile":50,"padding_bottom_mobile":50}},"image_banner_style_2_D3npaz":{"type":"image-banner-style-2","settings":{"layout":"style-2","background_type":"video","font_size_heading":"display-1","heading":"","description":"15% off with New Launch Pricing. Limited First Batch","button_text":"Get TapNest - $39.99 $̶4̶6̶.̶9̶9̶","button_link":"shopify:\/\/collections\/all","button_style":"primary","button_size":"md","color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":0,"padding_bottom_desktop":0,"padding_top_mobile":0,"padding_bottom_mobile":0}},"custom_section_EiRJBc":{"type":"custom-section","blocks":{"grid_FVgjTR":{"type":"grid","settings":{"device":"desktop","desktop_col":4,"tablet_col":2,"mobile_col":1,"gap":"global","col_gap_custom_desktop":20,"col_gap_custom_mobile":14,"row_gap_custom_desktop":20,"row_gap_custom_mobile":14,"fixed_row":false,"auto_row":20},"blocks":{"column_kBn3WF":{"type":"column","settings":{"device":"mobile","desktop_col_span":1,"desktop_row_span":2,"mobile_col_span":1,"mobile_row_span":2},"blocks":{"service_f8BQrR":{"type":"service","settings":{"image_size":"md","color_config_enable":false,"heading":"<p><strong>Snap without Thinking<\/strong><\/p>","heading_link":"","content":"<p>Magsafe-style placement makes docking easy, clean and intuitive. No more balancing your phone on wet counters.<\/p>","alignment":"center","inherit_color_schema":false,"color_schema_box":"background-1"},"blocks":{}}},"block_order":["service_f8BQrR"]},"column_f7LtH8":{"type":"column","settings":{"device":"desktop","desktop_col_span":1,"desktop_row_span":1,"mobile_col_span":1,"mobile_row_span":1},"blocks":{"service_rB8Czw":{"type":"service","settings":{"image_size":"md","color_config_enable":false,"heading":"<p><strong>Tap to start apps<\/strong><\/p>","heading_link":"","content":"<p>3 NFC touch points let you  easily open an app, launch a playlist, or trigger a routine.<\/p>","alignment":"center","inherit_color_schema":false,"color_schema_box":"background-1"},"blocks":{}}},"block_order":["service_rB8Czw"]},"column_TVDKGX":{"type":"column","settings":{"device":"desktop","desktop_col_span":1,"desktop_row_span":1,"mobile_col_span":1,"mobile_row_span":1},"blocks":{"service_78GKbd":{"type":"service","settings":{"image_size":"md","color_config_enable":false,"heading":"<p><strong>Stress-free Installation<\/strong><\/p>","heading_link":"","content":"<p>3M double sided tape provides firm and easy installation without damaging your walls.<\/p>","alignment":"center","inherit_color_schema":false,"color_schema_box":"background-1"},"blocks":{}}},"block_order":["service_78GKbd"]},"column_fKJhYY":{"type":"column","settings":{"device":"desktop","desktop_col_span":1,"desktop_row_span":1,"mobile_col_span":1,"mobile_row_span":1},"blocks":{"service_yHjCDJ":{"type":"service","settings":{"image_size":"md","color_config_enable":false,"heading":"<p><strong>Designed to Elevate<\/strong><\/p>","heading_link":"","content":"<p>Warm Living colors that fit and elevate your Bathroom environments.<\/p>","alignment":"center","inherit_color_schema":false,"color_schema_box":"background-1"},"blocks":{}}},"block_order":["service_yHjCDJ"]}},"block_order":["column_kBn3WF","column_f7LtH8","column_TVDKGX","column_fKJhYY"]}},"block_order":["grid_FVgjTR"],"name":"Feature icons","settings":{"width":"global","custom_width":1400,"height":"auto","custom_height":50,"container_gap":"global","container_gap_desktop":30,"container_gap_mobile":20,"color_scheme":"background-1","background_color":"","background_gradient":"","padding_top_desktop":39,"padding_bottom_desktop":32,"padding_top_mobile":39,"padding_bottom_mobile":32}},"image_banner_style_2_Pe67yk":{"type":"image-banner-style-2","settings":{"layout":"style-2","background_type":"video","font_size_heading":"display-1","heading":"","description":"15% off with New Launch Pricing. Limited First Batch","button_text":"Get TapNest - $39.99 $̶4̶6̶.̶9̶9̶","button_link":"shopify:\/\/collections\/all","button_style":"primary","button_size":"md","color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":0,"padding_bottom_desktop":0,"padding_top_mobile":0,"padding_bottom_mobile":0}}},"order":["image_banner_style_2_x4qhp6","carousel_text_V4Lwdi","image_with_text_style_9_6fNkq3","hero_carousel_ntRjDd","featured_product_special_Vq8L67","image_with_text_style_1_pKned4","image_with_text_style_10_KKbrT7","image_banner_style_2_Dypq4f","shop_the_look_style_1_mW8Mf4","media_showcase_UHdna6","multi_column_style_1_JAGazF","collapse_content_PmMV3m","image_banner_style_2_D3npaz","custom_section_EiRJBc","image_banner_style_2_Pe67yk"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_style_2_x4qhp6": {
+      "type": "image-banner-style-2",
+      "settings": {
+        "layout": "style-1",
+        "background_type": "video",
+        "font_size_heading": "display-1",
+        "heading": "TapNest",
+        "description": "Your phone finally has a place in your bathroom.",
+        "button_text": "Get TapNest - $39.99 $̶4̶6̶.̶9̶9̶",
+        "button_link": "shopify://collections/all",
+        "button_style": "primary",
+        "button_size": "md",
+        "color_scheme": "background-1",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "carousel_text_V4Lwdi": {
+      "type": "carousel-text",
+      "blocks": {
+        "carousel_item_aEiT3B": {
+          "type": "carousel-item",
+          "settings": {
+            "heading": "<p>Carousel text</p>"
+          }
+        },
+        "carousel_item_RAUa8U": {
+          "type": "carousel-item",
+          "settings": {
+            "heading": "<p>Carousel text</p>"
+          }
+        },
+        "carousel_item_HPiwGt": {
+          "type": "carousel-item",
+          "settings": {
+            "heading": "<p>Carousel text</p>"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_item_aEiT3B",
+        "carousel_item_RAUa8U",
+        "carousel_item_HPiwGt"
+      ],
+      "name": "t:sections.carousel_text.presets.name",
+      "settings": {
+        "font_size_heading": "h5",
+        "speed": 2,
+        "direction": "",
+        "pause_on_hover": "off",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "image_with_text_style_9_6fNkq3": {
+      "type": "image-with-text-style-9",
+      "disabled": true,
+      "name": "t:sections.image_with_text_style_9.presets.name",
+      "settings": {
+        "text_tag_name": "h2",
+        "text_heading": "Tap. Snap. Flow.",
+        "font_size_heading": "h3",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "sub_heading": "What is TapNest",
+        "description": "Our patented design allows you to simply tap to start apps. Snap to dock your phone. One intuitive gesture to start your favourite rituals, be it music, video, makeup tutorals, or any other rituals for your bathroom moments.",
+        "alignment_desktop": "left",
+        "alignment_mobile": "top",
+        "expand_grid": false,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "background_type": "video",
+        "use_parallax": true,
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "hero_carousel_ntRjDd": {
+      "type": "hero-carousel",
+      "blocks": {
+        "image_pfPMbg": {
+          "type": "image",
+          "settings": {
+            "heading": "1. Tap",
+            "description": "<p>With 3 customizable NFC tap spots, your routine launch instantly without you ever having to navigate any menu.</p>",
+            "button_text": "Get TapNest",
+            "button_link": "shopify://collections/all",
+            "button_style": "primary",
+            "button_size": "sm",
+            "media_type": "image",
+            "background_video_desktop": "shopify://files/videos/6886.mp4",
+            "background_video_mobile": "shopify://files/videos/6886.mp4"
+          }
+        },
+        "image_CxBzLD": {
+          "type": "image",
+          "settings": {
+            "heading": "2. Snap",
+            "description": "<p>Magnetic security in a click. <br/>Keep your phone high, dry, and perfectly angled away from wet, messy sink edges.</p>",
+            "button_text": "Get TapNest",
+            "button_link": "shopify://collections/all",
+            "button_style": "primary",
+            "button_size": "sm",
+            "media_type": "image"
+          }
+        },
+        "image_NaEnqy": {
+          "type": "image",
+          "settings": {
+            "heading": "3. Flow",
+            "description": "<p>Follow your ritual. <br/>Enjoy seamless music and video without ever touching your screen with wet or messy fingers.</p>",
+            "button_text": "Get TapNest",
+            "button_link": "shopify://collections/all",
+            "button_style": "primary",
+            "button_size": "sm",
+            "media_type": "image"
+          }
+        }
+      },
+      "block_order": [
+        "image_pfPMbg",
+        "image_CxBzLD",
+        "image_NaEnqy"
+      ],
+      "name": "Tap Snap Flow",
+      "settings": {
+        "layout": "style-1",
+        "autoplay": "on",
+        "autoplay_speed": 3000,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "featured_product_special_Vq8L67": {
+      "type": "featured-product-special",
+      "blocks": {
+        "title_WnLWNk": {
+          "type": "title",
+          "settings": {}
+        },
+        "description_6bKfDc": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "price_RdgQnr": {
+          "type": "price",
+          "settings": {}
+        },
+        "quantity_picker_B4YTyH": {
+          "type": "quantity_picker",
+          "settings": {}
+        },
+        "variants_hVq83B": {
+          "type": "variants",
+          "settings": {
+            "variant_style": "select",
+            "variant_color_style": "color"
+          }
+        },
+        "buy_button_88TAkd": {
+          "type": "buy_button",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "title_WnLWNk",
+        "description_6bKfDc",
+        "price_RdgQnr",
+        "quantity_picker_B4YTyH",
+        "variants_hVq83B",
+        "buy_button_88TAkd"
+      ],
+      "name": "t:sections.featured_product_special.presets.name",
+      "settings": {
+        "select_product": "tapnest",
+        "hide_variants": true,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "image_with_text_style_1_pKned4": {
+      "type": "image-with-text-style-1",
+      "blocks": {
+        "image_g9cjgC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
+            "device_size": "desktop",
+            "inherit_desktop_value_size": false,
+            "width_dt": 90,
+            "width_mb": 60,
+            "height_dt": 115,
+            "height_mb": 85
+          }
+        },
+        "image_YczHNV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/face-treatment-with-a-smile.jpg",
+            "device_size": "desktop",
+            "inherit_desktop_value_size": false,
+            "width_dt": 229,
+            "width_mb": 141,
+            "height_dt": 214,
+            "height_mb": 148
+          }
+        }
+      },
+      "block_order": [
+        "image_g9cjgC",
+        "image_YczHNV"
+      ],
+      "name": "Painpoints",
+      "settings": {
+        "layout": "default",
+        "text_tag_name": "h2",
+        "text_heading": "Still propping your phone against the toothpaste?",
+        "font_size_heading": "h4",
+        "text_line_height": 1.3,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "description": "<p>Phone is our besties for music, video, and more while getting ready or winding down. But between wet counters and slippery sink edges, it is a mess! <br/><br/>Also, why settle for ugly, bulky plastic holders that ruin your calm bathroom setup?</p>",
+        "small_image": "shopify://shop_images/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+        "aspect_ratio_small": "custom",
+        "aspect_ratio_small_width": 377,
+        "aspect_ratio_small_height": 386,
+        "large_image": "shopify://shop_images/a-wet-sink-top-with-a-phone-on-it-and-there-is-water-drop-on-the-phone-the-phone-is-playing-music-and-screen-is-on-show-the-app.png",
+        "aspect_ratio_large": "2/3",
+        "aspect_ratio_large_width": 400,
+        "aspect_ratio_large_height": 300,
+        "color_scheme": "background-2",
+        "background_color": "#313131",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "image_with_text_style_10_KKbrT7": {
+      "type": "image-with-text-style-10",
+      "name": "Solution",
+      "settings": {
+        "content": "<p>TapNest is the world's <strong>1st </strong>magnetic dock with built-in app shortcuts. <br/><br/><strong>Tap</strong> to launch your favorite apps. <strong>Snap</strong> to dock your device. It's that simple!<br/><br/>Designed with patented innovation and refined aesthetics, TapNest brings intentional elegance to any space.</p>",
+        "desktop_image": "shopify://shop_images/woman-holding-mobile-phone.jpg",
+        "mobile_image": "shopify://shop_images/woman-holding-mobile-phone.jpg",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "background_type": "image",
+        "use_parallax": true,
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "image_banner_style_2_Dypq4f": {
+      "type": "image-banner-style-2",
+      "name": "Create your own rituals",
+      "settings": {
+        "layout": "style-2",
+        "background_type": "video",
+        "font_size_heading": "display-1",
+        "heading": "Create your own rituals",
+        "description": "Create shortcuts for podcasts, reminders, timers, notes, music, and any experience you love.",
+        "button_text": "Get TapNest - $39.99 $̶4̶6̶.̶9̶9̶",
+        "button_link": "shopify://collections/all",
+        "button_style": "primary",
+        "button_size": "md",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "shop_the_look_style_1_mW8Mf4": {
+      "type": "shop-the-look-style-1",
+      "blocks": {
+        "hostpot_zJ8Ykd": {
+          "type": "hostpot",
+          "settings": {
+            "timer_delay": 0,
+            "top_dt": 50,
+            "left_dt": 20,
+            "top_mb": 50,
+            "left_mb": 20,
+            "card_type": "product",
+            "product": "",
+            "shortcut_title": "",
+            "shortcut_description": "",
+            "shortcut_button_text": "",
+            "shortcut_button_link": "",
+            "placement": "right-top",
+            "hotspot_color": "#0f61ff"
+          }
+        },
+        "hostpot_tXcGDe": {
+          "type": "hostpot",
+          "settings": {
+            "timer_delay": 1,
+            "top_dt": 50,
+            "left_dt": 50,
+            "top_mb": 50,
+            "left_mb": 50,
+            "card_type": "product",
+            "product": "",
+            "shortcut_title": "",
+            "shortcut_description": "",
+            "shortcut_button_text": "",
+            "shortcut_button_link": "",
+            "placement": "right-top",
+            "hotspot_color": "#0f61ff"
+          }
+        },
+        "hostpot_tzRAj8": {
+          "type": "hostpot",
+          "settings": {
+            "timer_delay": 2,
+            "top_dt": 50,
+            "left_dt": 80,
+            "top_mb": 50,
+            "left_mb": 80,
+            "card_type": "product",
+            "product": "tapnest",
+            "shortcut_title": "",
+            "shortcut_description": "",
+            "shortcut_button_text": "",
+            "shortcut_button_link": "",
+            "placement": "right-top",
+            "hotspot_color": "#c87272"
+          }
+        },
+        "feature_dRCPhf": {
+          "type": "feature",
+          "settings": {
+            "color_config_enable": false,
+            "content": "Shortcut 1"
+          }
+        },
+        "feature_fEALmt": {
+          "type": "feature",
+          "settings": {
+            "color_config_enable": false,
+            "content": "Shortcut 1"
+          }
+        },
+        "feature_QFyMfy": {
+          "type": "feature",
+          "settings": {
+            "color_config_enable": false,
+            "content": "Shortcut 1"
+          }
+        }
+      },
+      "block_order": [
+        "hostpot_zJ8Ykd",
+        "hostpot_tXcGDe",
+        "hostpot_tzRAj8",
+        "feature_dRCPhf",
+        "feature_fEALmt",
+        "feature_QFyMfy"
+      ],
+      "name": "Show three taps",
+      "settings": {
+        "text_tag_name": "h2",
+        "text_heading": "Don’t know where to start?",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "heading_max_width_desktop": 600,
+        "heading_max_width_mobile": 460,
+        "aspect_ratio_dt": "4/3",
+        "aspect_ratio_mb": "4/3",
+        "product_card_show_image": true,
+        "product_card_show_secondary_image": false,
+        "product_card_show_price": false,
+        "card_color_scheme": "background-2",
+        "point_type": "click",
+        "point_size": 2.3,
+        "button_text": "Browse Library",
+        "button_link": "shopify://products/tapnest",
+        "button_style": "primary",
+        "button_size": "md",
+        "color_scheme": "background-2",
+        "background_color": "#c87272",
+        "background_gradient": "",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 100
+      }
+    },
+    "media_showcase_UHdna6": {
+      "type": "media-showcase",
+      "blocks": {
+        "image_JfE3fa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/a-young-beautiful-woman-use-iphone-back-camera-to-do-selfie-in-front-of-mirror-show-her-upper-body-face-1-1-ratio.png",
+            "device": "desktop",
+            "inherit_desktop_value": true,
+            "width_desktop": 50,
+            "height_desktop": 50,
+            "width_mobile": 100,
+            "height_mobile": 100
+          }
+        },
+        "media_ACQXKd": {
+          "type": "media",
+          "settings": {
+            "aspect_ratio": "3/4",
+            "aspect_ratio_width": 400,
+            "aspect_ratio_height": 300,
+            "product": "tapnest",
+            "card_color_scheme": "",
+            "text": "Customer",
+            "inherit_color_scheme": true,
+            "color_scheme": ""
+          }
+        },
+        "media_DtzJiN": {
+          "type": "media",
+          "settings": {
+            "aspect_ratio": "3/4",
+            "aspect_ratio_width": 400,
+            "aspect_ratio_height": 300,
+            "product": "tapnest",
+            "card_color_scheme": "",
+            "text": "Customer",
+            "inherit_color_scheme": true,
+            "color_scheme": ""
+          }
+        },
+        "media_TYnThm": {
+          "type": "media",
+          "settings": {
+            "aspect_ratio": "3/4",
+            "aspect_ratio_width": 400,
+            "aspect_ratio_height": 300,
+            "product": "tapnest",
+            "card_color_scheme": "",
+            "text": "Customer",
+            "inherit_color_scheme": true,
+            "color_scheme": ""
+          }
+        },
+        "media_jAxgDp": {
+          "type": "media",
+          "settings": {
+            "aspect_ratio": "3/4",
+            "aspect_ratio_width": 400,
+            "aspect_ratio_height": 300,
+            "product": "tapnest",
+            "card_color_scheme": "",
+            "text": "Customer",
+            "inherit_color_scheme": true,
+            "color_scheme": ""
+          }
+        },
+        "media_xkricW": {
+          "type": "media",
+          "settings": {
+            "aspect_ratio": "3/4",
+            "aspect_ratio_width": 400,
+            "aspect_ratio_height": 300,
+            "product": "tapnest",
+            "card_color_scheme": "",
+            "text": "Customer",
+            "inherit_color_scheme": true,
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_JfE3fa",
+        "media_ACQXKd",
+        "media_DtzJiN",
+        "media_TYnThm",
+        "media_jAxgDp",
+        "media_xkricW"
+      ],
+      "name": "Testimonial (oora + you)",
+      "settings": {
+        "font_size": "h1",
+        "text": "Friends of [img]  [highlight]",
+        "text_highlight": "oora",
+        "text_highlight_color": "#c87272",
+        "active_index": 2,
+        "autoplay": true,
+        "autoplay_speed": 2600,
+        "color_scheme": "background-1",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "multi_column_style_1_JAGazF": {
+      "type": "multi-column-style-1",
+      "blocks": {
+        "column_qa9cfD": {
+          "type": "column",
+          "settings": {
+            "aspect_ratio_first": "3/4",
+            "hover_type": "image",
+            "aspect_ratio_second": "3/4",
+            "title": "",
+            "enable_overlay": "off"
+          }
+        },
+        "column_mYL8UJ": {
+          "type": "column",
+          "settings": {
+            "aspect_ratio_first": "3/4",
+            "hover_type": "image",
+            "aspect_ratio_second": "3/4",
+            "title": "",
+            "enable_overlay": "off"
+          }
+        },
+        "column_WYNfNJ": {
+          "type": "column",
+          "settings": {
+            "aspect_ratio_first": "3/4",
+            "hover_type": "image",
+            "aspect_ratio_second": "3/4",
+            "title": "",
+            "enable_overlay": "off"
+          }
+        }
+      },
+      "block_order": [
+        "column_qa9cfD",
+        "column_mYL8UJ",
+        "column_WYNfNJ"
+      ],
+      "name": "Design to elevate",
+      "settings": {
+        "layout": "style-2",
+        "column": "3",
+        "text_tag_name": "h2",
+        "text_heading": "Design to Elevate",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 75,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "collapse_content_PmMV3m": {
+      "type": "collapse-content",
+      "blocks": {
+        "collapse_RaLc8a": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p><strong>What is oora Tapnest?</strong></p>",
+            "content": "<p>oora Tapnest is the worlds first magnetic phone dock that also have multiple NFC shortcuts features. This allows you to open your favourite apps and experiences in one tap, and dock your phone in one smooth gesture. We aim to provide the best and proper bathroom phone dock experience.</p>"
+          }
+        },
+        "collapse_VFkR3z": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p><strong>Will it work with my Phone?</strong></p>",
+            "content": "<p>TapNest is designed for Magsafe-compatible iPhones and Magsafe cases. The NFC shortcut experience works best on recent iPhones with IOS shortcuts enabled. <strong>See our carefully curated </strong><a href=\"/blogs/news\" title=\"News\"><strong>shortcut presets here.<br/></strong></a><em><br/>Note: Thick, metallic, or non-Magsafe cases may reduce magnetic hold or NFC sensitivity.</em></p>"
+          }
+        },
+        "collapse_VAbL78": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p><strong>Can I use it without NFC?</strong></p>",
+            "content": "<p>Yes, the docking in fact is the core experience and most users report it to be the core experience. NFC is an extra layer that makes routines feel more intuitive and magical.</p>"
+          }
+        },
+        "collapse_i6b3pR": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p><strong>Where should I place it?</strong></p>",
+            "content": "<p>TapNest is made for smooth bathroom mirror, glass or tile surfaces near your natural eye line. Clean and dry the surface before applying the adhesion. You are also free to place the TapNest onto any surface that you feel that can benefit for the \"tap and snap\" experience.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "collapse_RaLc8a",
+        "collapse_VFkR3z",
+        "collapse_VAbL78",
+        "collapse_i6b3pR"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "font_size_heading": "h5",
+        "heading": "<p>FAQ</p>",
+        "color_scheme": "background-2",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 90,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "image_banner_style_2_D3npaz": {
+      "type": "image-banner-style-2",
+      "settings": {
+        "layout": "style-2",
+        "background_type": "video",
+        "font_size_heading": "display-1",
+        "heading": "",
+        "description": "15% off with New Launch Pricing. Limited First Batch",
+        "button_text": "Get TapNest - $39.99 $̶4̶6̶.̶9̶9̶",
+        "button_link": "shopify://collections/all",
+        "button_style": "primary",
+        "button_size": "md",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "custom_section_EiRJBc": {
+      "type": "custom-section",
+      "blocks": {
+        "grid_FVgjTR": {
+          "type": "grid",
+          "settings": {
+            "device": "desktop",
+            "desktop_col": 4,
+            "tablet_col": 2,
+            "mobile_col": 1,
+            "gap": "global",
+            "col_gap_custom_desktop": 20,
+            "col_gap_custom_mobile": 14,
+            "row_gap_custom_desktop": 20,
+            "row_gap_custom_mobile": 14,
+            "fixed_row": false,
+            "auto_row": 20
+          },
+          "blocks": {
+            "column_kBn3WF": {
+              "type": "column",
+              "settings": {
+                "device": "mobile",
+                "desktop_col_span": 1,
+                "desktop_row_span": 2,
+                "mobile_col_span": 1,
+                "mobile_row_span": 2
+              },
+              "blocks": {
+                "service_f8BQrR": {
+                  "type": "service",
+                  "settings": {
+                    "image_size": "md",
+                    "color_config_enable": false,
+                    "heading": "<p><strong>Snap without Thinking</strong></p>",
+                    "heading_link": "",
+                    "content": "<p>Magsafe-style placement makes docking easy, clean and intuitive. No more balancing your phone on wet counters.</p>",
+                    "alignment": "center",
+                    "inherit_color_schema": false,
+                    "color_schema_box": "background-1"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "service_f8BQrR"
+              ]
+            },
+            "column_f7LtH8": {
+              "type": "column",
+              "settings": {
+                "device": "desktop",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "service_rB8Czw": {
+                  "type": "service",
+                  "settings": {
+                    "image_size": "md",
+                    "color_config_enable": false,
+                    "heading": "<p><strong>Tap to start apps</strong></p>",
+                    "heading_link": "",
+                    "content": "<p>3 NFC touch points let you  easily open an app, launch a playlist, or trigger a routine.</p>",
+                    "alignment": "center",
+                    "inherit_color_schema": false,
+                    "color_schema_box": "background-1"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "service_rB8Czw"
+              ]
+            },
+            "column_TVDKGX": {
+              "type": "column",
+              "settings": {
+                "device": "desktop",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "service_78GKbd": {
+                  "type": "service",
+                  "settings": {
+                    "image_size": "md",
+                    "color_config_enable": false,
+                    "heading": "<p><strong>Stress-free Installation</strong></p>",
+                    "heading_link": "",
+                    "content": "<p>3M double sided tape provides firm and easy installation without damaging your walls.</p>",
+                    "alignment": "center",
+                    "inherit_color_schema": false,
+                    "color_schema_box": "background-1"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "service_78GKbd"
+              ]
+            },
+            "column_fKJhYY": {
+              "type": "column",
+              "settings": {
+                "device": "desktop",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "service_yHjCDJ": {
+                  "type": "service",
+                  "settings": {
+                    "image_size": "md",
+                    "color_config_enable": false,
+                    "heading": "<p><strong>Designed to Elevate</strong></p>",
+                    "heading_link": "",
+                    "content": "<p>Warm Living colors that fit and elevate your Bathroom environments.</p>",
+                    "alignment": "center",
+                    "inherit_color_schema": false,
+                    "color_schema_box": "background-1"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "service_yHjCDJ"
+              ]
+            }
+          },
+          "block_order": [
+            "column_kBn3WF",
+            "column_f7LtH8",
+            "column_TVDKGX",
+            "column_fKJhYY"
+          ]
+        }
+      },
+      "block_order": [
+        "grid_FVgjTR"
+      ],
+      "name": "Feature icons",
+      "settings": {
+        "width": "global",
+        "custom_width": 1400,
+        "height": "auto",
+        "custom_height": 50,
+        "container_gap": "global",
+        "container_gap_desktop": 30,
+        "container_gap_mobile": 20,
+        "color_scheme": "background-1",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 39,
+        "padding_bottom_desktop": 32,
+        "padding_top_mobile": 39,
+        "padding_bottom_mobile": 32
+      }
+    },
+    "image_banner_style_2_Pe67yk": {
+      "type": "image-banner-style-2",
+      "settings": {
+        "layout": "style-2",
+        "background_type": "video",
+        "font_size_heading": "display-1",
+        "heading": "",
+        "description": "15% off with New Launch Pricing. Limited First Batch",
+        "button_text": "Get TapNest - $39.99 $̶4̶6̶.̶9̶9̶",
+        "button_link": "shopify://collections/all",
+        "button_style": "primary",
+        "button_size": "md",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "image_banner_style_2_x4qhp6",
+    "carousel_text_V4Lwdi",
+    "image_with_text_style_9_6fNkq3",
+    "hero_carousel_ntRjDd",
+    "featured_product_special_Vq8L67",
+    "image_with_text_style_1_pKned4",
+    "image_with_text_style_10_KKbrT7",
+    "image_banner_style_2_Dypq4f",
+    "shop_the_look_style_1_mW8Mf4",
+    "media_showcase_UHdna6",
+    "multi_column_style_1_JAGazF",
+    "collapse_content_PmMV3m",
+    "image_banner_style_2_D3npaz",
+    "custom_section_EiRJBc",
+    "image_banner_style_2_Pe67yk"
+  ]
+}
