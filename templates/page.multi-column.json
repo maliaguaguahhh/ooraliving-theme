@@ -1,1 +1,199 @@
-{"sections":{"main_page_RCziHE":{"type":"main-page","name":"t:sections.main_page.presets.name","settings":{"font_size_heading":"h3","align":"left","color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":120,"padding_bottom_desktop":50,"padding_top_mobile":120,"padding_bottom_mobile":50}},"multi_column_style_2_CXhHyw":{"type":"multi-column-style-2","blocks":{"column_eWG79i":{"type":"column","settings":{"aspect_ratio":"512\/577","title":"<p>Being small yet powerful<br\/>The beauty of simplicity<\/p>"}},"column_YTWDhE":{"type":"column","settings":{"aspect_ratio":"512\/577","title":"<p>Sounding every bit as <br\/>beautiful as the look<\/p>"}},"column_3VWpXN":{"type":"column","settings":{"aspect_ratio":"512\/577","title":"<p>Providing conic quality <br\/>since the 1970s<\/p>"}}},"block_order":["column_eWG79i","column_YTWDhE","column_3VWpXN"],"settings":{"column":"3","text_tag_name":"h2","text_heading":"RItual","font_size_heading":"h5","text_line_height":1.2,"text_effect":"split","text_duration":1000,"text_heading_width_desktop":30,"text_heading_width_mobile":84,"color_scheme":"background-1","background_color":"","background_gradient":"","padding_top_desktop":130,"padding_bottom_desktop":50,"padding_top_mobile":20,"padding_bottom_mobile":50}},"multi_column_style_1_34xdBb":{"type":"multi-column-style-1","blocks":{"column_xX6xMW":{"type":"column","settings":{"aspect_ratio_first":"512\/577","hover_type":"image","aspect_ratio_second":"512\/577","title":"<p>Being small yet powerful<br\/>The beauty of simplicity<\/p>","enable_overlay":"off"}},"column_43XwUg":{"type":"column","settings":{"aspect_ratio_first":"512\/577","hover_type":"image","aspect_ratio_second":"512\/577","title":"<p>Sounding every bit as <br\/>beautiful as the look<\/p>","enable_overlay":"off"}},"column_fbJNNT":{"type":"column","settings":{"aspect_ratio_first":"512\/577","hover_type":"image","aspect_ratio_second":"512\/577","title":"<p>Providing conic quality <br\/>since the 1970s<\/p>","enable_overlay":"off"}}},"block_order":["column_xX6xMW","column_43XwUg","column_fbJNNT"],"settings":{"layout":"style-2","column":"3","text_tag_name":"h2","text_heading":"Stereo Speakers Ready to impress","font_size_heading":"h5","text_line_height":1.2,"text_effect":"split","text_duration":1000,"text_heading_width_desktop":30,"text_heading_width_mobile":80,"color_scheme":"background-1","background_color":"","background_gradient":"","padding_top_desktop":50,"padding_bottom_desktop":50,"padding_top_mobile":50,"padding_bottom_mobile":50}}},"order":["main_page_RCziHE","multi_column_style_2_CXhHyw","multi_column_style_1_34xdBb"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main_page_RCziHE": {
+      "type": "main-page",
+      "name": "t:sections.main_page.presets.name",
+      "settings": {
+        "font_size_heading": "h3",
+        "align": "left",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 120,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 120,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "shortcut_preset_library_tgzptj": {
+      "type": "shortcut-preset-library",
+      "blocks": {
+        "shortcut_preset_JLbbAE": {
+          "type": "shortcut_preset",
+          "settings": {
+            "title": "Morning Focus",
+            "description": "A shortcut preset for deep work starts.",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_cr3DeB": {
+          "type": "shortcut_preset",
+          "settings": {
+            "title": "Evening Reset",
+            "description": "A calm preset for winding down.",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_bLaTjn": {
+          "type": "shortcut_preset",
+          "settings": {
+            "title": "Quick Capture",
+            "description": "A fast preset for saving ideas.",
+            "download_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "shortcut_preset_JLbbAE",
+        "shortcut_preset_cr3DeB",
+        "shortcut_preset_bLaTjn"
+      ],
+      "name": "Shortcut Preset Library",
+      "settings": {
+        "text_tag_name": "h2",
+        "text_heading": "Shortcut Preset Library",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "alignment": "left",
+        "aspect_ratio": "4 / 3",
+        "grid_gap": 24,
+        "card_radius": 18,
+        "overlay_opacity": 60,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "multi_column_style_2_CXhHyw": {
+      "type": "multi-column-style-2",
+      "blocks": {
+        "column_eWG79i": {
+          "type": "column",
+          "settings": {
+            "aspect_ratio": "512/577",
+            "title": "<p>Being small yet powerful<br/>The beauty of simplicity</p>"
+          }
+        },
+        "column_YTWDhE": {
+          "type": "column",
+          "settings": {
+            "aspect_ratio": "512/577",
+            "title": "<p>Sounding every bit as <br/>beautiful as the look</p>"
+          }
+        },
+        "column_3VWpXN": {
+          "type": "column",
+          "settings": {
+            "aspect_ratio": "512/577",
+            "title": "<p>Providing conic quality <br/>since the 1970s</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_eWG79i",
+        "column_YTWDhE",
+        "column_3VWpXN"
+      ],
+      "settings": {
+        "column": "3",
+        "text_tag_name": "h2",
+        "text_heading": "RItual",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 30,
+        "text_heading_width_mobile": 84,
+        "color_scheme": "background-1",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 130,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "multi_column_style_1_34xdBb": {
+      "type": "multi-column-style-1",
+      "blocks": {
+        "column_xX6xMW": {
+          "type": "column",
+          "settings": {
+            "aspect_ratio_first": "512/577",
+            "hover_type": "image",
+            "aspect_ratio_second": "512/577",
+            "title": "<p>Being small yet powerful<br/>The beauty of simplicity</p>",
+            "enable_overlay": "off"
+          }
+        },
+        "column_43XwUg": {
+          "type": "column",
+          "settings": {
+            "aspect_ratio_first": "512/577",
+            "hover_type": "image",
+            "aspect_ratio_second": "512/577",
+            "title": "<p>Sounding every bit as <br/>beautiful as the look</p>",
+            "enable_overlay": "off"
+          }
+        },
+        "column_fbJNNT": {
+          "type": "column",
+          "settings": {
+            "aspect_ratio_first": "512/577",
+            "hover_type": "image",
+            "aspect_ratio_second": "512/577",
+            "title": "<p>Providing conic quality <br/>since the 1970s</p>",
+            "enable_overlay": "off"
+          }
+        }
+      },
+      "block_order": [
+        "column_xX6xMW",
+        "column_43XwUg",
+        "column_fbJNNT"
+      ],
+      "settings": {
+        "layout": "style-2",
+        "column": "3",
+        "text_tag_name": "h2",
+        "text_heading": "Stereo Speakers Ready to impress",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 30,
+        "text_heading_width_mobile": 80,
+        "color_scheme": "background-1",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    }
+  },
+  "order": [
+    "main_page_RCziHE",
+    "shortcut_preset_library_tgzptj",
+    "multi_column_style_2_CXhHyw",
+    "multi_column_style_1_34xdBb"
+  ]
+}
