@@ -58,7 +58,7 @@
                 %}
                 <xo-carousel-slide style='height: 100%;' {{ carousel_visible }}>
                   {% if block.size > 1 %}
-                    <xo-carousel-prev class='img-banner-3__prev'>
+                    <xo-carousel-prev class='img-banner-3__prev' role='button' tabindex='0' aria-label='Previous slide'></xo-carousel-prev>
                   {% endif %}
                   <div class='img-banner-3__bg-image'>
                     <xo-animate xo-type='zoom-out' xo-order='4' class='img-banner-3__bg img-banner-3__bg--desktop'>
@@ -108,10 +108,7 @@
                     </div>
                   </div>
                   {% if block.size > 1 %}
-                    </xo-carousel-prev>
-                  {% endif %}
-                  {% if block.size > 1 %}
-                    <xo-carousel-next class='img-banner-3__next'></xo-carousel-next>
+                    <xo-carousel-next class='img-banner-3__next' role='button' tabindex='0' aria-label='Next slide'></xo-carousel-next>
                   {% endif %}
                 </xo-carousel-slide>
 
@@ -129,7 +126,7 @@
                 %}
                 <xo-carousel-slide style='height: 100%;' {{ carousel_visible }}>
                   {% if block.size > 1 %}
-                    <xo-carousel-prev class='img-banner-3__prev'>
+                    <xo-carousel-prev class='img-banner-3__prev' role='button' tabindex='0' aria-label='Previous slide'></xo-carousel-prev>
                   {% endif %}
                   <div class='img-banner-3__bg-image'>
                     <xo-animate xo-type='zoom-out' xo-order='4' class='img-banner-3__bg img-banner-3__bg--desktop'>
@@ -179,10 +176,7 @@
                     </div>
                   </div>
                   {% if block.size > 1 %}
-                    </xo-carousel-prev>
-                  {% endif %}
-                  {% if block.size > 1 %}
-                    <xo-carousel-next class='img-banner-3__next'></xo-carousel-next>
+                    <xo-carousel-next class='img-banner-3__next' role='button' tabindex='0' aria-label='Next slide'></xo-carousel-next>
                   {% endif %}
                 </xo-carousel-slide>
             {% endcase %}
