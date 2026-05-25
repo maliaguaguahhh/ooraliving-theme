@@ -21,6 +21,8 @@
         "button_link": "shopify://collections/all",
         "button_style": "primary",
         "button_size": "md",
+        "background_image_desktop": "shopify://shop_images/Dust_Rose_1_Crop.jpg",
+        "background_image_mobile": "shopify://shop_images/Dust_Rose_1_Crop.jpg",
         "color_scheme": "background-1",
         "background_color": "",
         "background_gradient": "",
@@ -113,8 +115,7 @@
             "button_link": "shopify://collections/all",
             "button_style": "primary",
             "button_size": "sm",
-            "media_type": "image",
-            "background_video_desktop": "shopify://files/videos/6886.mp4",
+            "media_type": "video",
             "background_video_mobile": "shopify://files/videos/6886.mp4"
           }
         },
@@ -127,7 +128,8 @@
             "button_link": "shopify://collections/all",
             "button_style": "primary",
             "button_size": "sm",
-            "media_type": "image"
+            "media_type": "video",
+            "background_video_mobile": "shopify://files/videos/6887.mp4"
           }
         },
         "image_NaEnqy": {
@@ -139,7 +141,8 @@
             "button_link": "shopify://collections/all",
             "button_style": "primary",
             "button_size": "sm",
-            "media_type": "image"
+            "media_type": "video",
+            "background_video_mobile": "shopify://files/videos/6888.mp4"
           }
         }
       },
