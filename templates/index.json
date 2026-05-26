@@ -17,10 +17,10 @@
         "font_size_heading": "display-1",
         "heading": "TapNest",
         "description": "Your phone finally has a place in your bathroom.",
-        "button_text": "Get TapNest - $39.99 $̶4̶6̶.̶9̶9̶",
-        "button_link": "shopify://collections/all",
+        "button_text": "Shop TapNest",
+        "button_link": "shopify://products/tapnest",
         "button_style": "primary",
-        "button_size": "md",
+        "button_size": "lg",
         "background_image_desktop": "shopify://shop_images/Dust_Rose_1_Crop.jpg",
         "background_image_mobile": "shopify://shop_images/Dust_Rose_1_Crop.jpg",
         "video_dt": "shopify://files/videos/6888.mp4",
@@ -113,11 +113,11 @@
           "type": "image",
           "settings": {
             "heading": "1. Tap",
-            "description": "<p>With 3 customizable NFC tap spots, your routine launch instantly without you ever having to navigate any menu.</p>",
-            "button_text": "Get TapNest",
-            "button_link": "shopify://collections/all",
+            "description": "<p>One simple tap starts your favorite apps. With 3 customizable NFC tap spots, your routine launch instantly without you ever having to navigate any menu.</p>",
+            "button_text": "Shop TapNest",
+            "button_link": "shopify://products/tapnest",
             "button_style": "primary",
-            "button_size": "sm",
+            "button_size": "md",
             "media_type": "video",
             "background_video_mobile": "shopify://files/videos/6886.mp4"
           }
@@ -127,10 +127,10 @@
           "settings": {
             "heading": "2. Snap",
             "description": "<p>Magnetic security in a click. <br/>Keep your phone high, dry, and perfectly angled away from wet, messy sink edges.</p>",
-            "button_text": "Get TapNest",
+            "button_text": "Shop Now",
             "button_link": "shopify://collections/all",
             "button_style": "primary",
-            "button_size": "sm",
+            "button_size": "md",
             "media_type": "video",
             "background_video_mobile": "shopify://files/videos/6887.mp4"
           }
@@ -191,8 +191,8 @@
         "variants_hVq83B": {
           "type": "variants",
           "settings": {
-            "variant_style": "select",
-            "variant_color_style": "color"
+            "variant_style": "boxed",
+            "variant_color_style": "variant_image"
           }
         },
         "buy_button_88TAkd": {
@@ -230,11 +230,11 @@
         "image_g9cjgC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
-            "device_size": "desktop",
+            "image": "shopify://shop_images/image_6_ca472fe5-0731-4a9a-92dc-d7415452b739.png",
+            "device_size": "mobile",
             "inherit_desktop_value_size": false,
             "width_dt": 90,
-            "width_mb": 60,
+            "width_mb": 80,
             "height_dt": 115,
             "height_mb": 85
           }
@@ -242,8 +242,8 @@
         "image_YczHNV": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/face-treatment-with-a-smile.jpg",
-            "device_size": "desktop",
+            "image": "shopify://shop_images/image_5_930a7dd4-8d3d-4ada-8444-f3ac72e98261.png",
+            "device_size": "mobile",
             "inherit_desktop_value_size": false,
             "width_dt": 229,
             "width_mb": 141,
@@ -267,13 +267,13 @@
         "text_duration": 1000,
         "text_heading_width_desktop": 100,
         "text_heading_width_mobile": 100,
-        "description": "<p>Phone is our besties for music, video, and more while getting ready or winding down. But between wet counters and slippery sink edges, it is a mess! <br/><br/>Also, why settle for ugly, bulky plastic holders that ruin your calm bathroom setup?</p>",
-        "small_image": "shopify://shop_images/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+        "description": "<p>Phone is your bestie for music, video, and more while getting ready or winding down.              </p><p>You struggle to find a proper spot to place your phone between wet counters and slippery sink edges.      </p><p>You want to control your phone but your hands are busy and covered with lotions.</p><p>You try to find a phone holder, but the market is full of ugly, bulky, techy plastic holders that ruin your calm bathroom setup.</p>",
+        "small_image": "shopify://shop_images/nano_banana_pro_yp9qfdt7lvz6emgjmqvl_0.png",
         "aspect_ratio_small": "custom",
         "aspect_ratio_small_width": 377,
         "aspect_ratio_small_height": 386,
         "large_image": "shopify://shop_images/a-wet-sink-top-with-a-phone-on-it-and-there-is-water-drop-on-the-phone-the-phone-is-playing-music-and-screen-is-on-show-the-app.png",
-        "aspect_ratio_large": "2/3",
+        "aspect_ratio_large": "4/3",
         "aspect_ratio_large_width": 400,
         "aspect_ratio_large_height": 300,
         "color_scheme": "background-1",
@@ -289,11 +289,13 @@
       "type": "image-with-text-style-10",
       "name": "Solution",
       "settings": {
-        "content": "<p>TapNest is the world's <strong>1st </strong>magnetic dock with built-in app shortcuts. <br/><br/><strong>Tap</strong> to launch your favorite apps. <strong>Snap</strong> to dock your device. It's that simple!<br/><br/>Designed with patented innovation and refined aesthetics, TapNest brings intentional elegance to any space.</p>",
+        "content": "<p>TapNest is the best answer to how you use your smartphone in your bathroom. It's the world's <strong>1st </strong>magnetic phone dock with built-in app shortcuts. <br/><br/><strong>Tap</strong> to launch your favorite apps. <strong>Snap</strong> to dock your device. </p><p><strong>Tap, Snap, Flow. </strong>One intuitive gesture that forever changes how you use your phone in your bathroom.<br/><br/>Designed with patented innovation and refined aesthetics, TapNest brings intentional elegance to any space.</p>",
         "desktop_image": "shopify://shop_images/woman-holding-mobile-phone.jpg",
-        "mobile_image": "shopify://shop_images/woman-holding-mobile-phone.jpg",
-        "color_scheme": "",
-        "background_color": "",
+        "mobile_image": "shopify://shop_images/Weixin_Image_20260526153612_204_17.jpg",
+        "desktop_video": "shopify://files/videos/Weixin Image_20260514152822_1069_711.mp4",
+        "mobile_video": "shopify://files/videos/Weixin Image_20260514152822_1069_711.mp4",
+        "color_scheme": "background-1",
+        "background_color": "#ffffff",
         "background_gradient": "",
         "background_type": "video",
         "background_video_desktop": "shopify://files/videos/product rendering.mp4",
@@ -312,13 +314,13 @@
         "layout": "style-2",
         "background_type": "image",
         "font_size_heading": "display-1",
-        "heading": "Create your own rituals",
-        "description": "Create shortcuts for podcasts, reminders, timers, notes, music, and any experience you love.",
-        "button_text": "Get TapNest - $39.99 $̶4̶6̶.̶9̶9̶",
-        "button_link": "shopify://collections/all",
-        "button_style": "primary",
+        "heading": "Create your own rituals. Tap into your moments.",
+        "description": "Customize your own shortcuts for podcasts, reminders, timers, notes, music, and any experience you love.",
+        "button_text": "Shop TapNest Now",
+        "button_link": "shopify://pages/nfc-shortcut-gallery",
+        "button_style": "secondary",
         "button_size": "md",
-        "background_image_mobile": "shopify://shop_images/Dust_Rose_1_Crop.jpg",
+        "background_image_mobile": "shopify://shop_images/image_81.png",
         "color_scheme": "",
         "background_color": "",
         "background_gradient": "",
@@ -391,7 +393,7 @@
           "settings": {
             "image": "shopify://shop_images/icon_sticker-01.png",
             "color_config_enable": false,
-            "content": "Shortcut"
+            "content": "Spotify Playlist: Soothing Music"
           }
         },
         "feature_fEALmt": {
@@ -399,7 +401,7 @@
           "settings": {
             "image": "shopify://shop_images/icon_sticker-02.png",
             "color_config_enable": false,
-            "content": "Shortcut 1"
+            "content": "Shower Timer"
           }
         },
         "feature_QFyMfy": {
@@ -407,7 +409,7 @@
           "settings": {
             "image": "shopify://shop_images/icon_sticker-03.png",
             "color_config_enable": false,
-            "content": "Shortcut 1"
+            "content": "Sunrise Routine"
           }
         }
       },
@@ -422,7 +424,7 @@
       "name": "Show three taps",
       "settings": {
         "text_tag_name": "h2",
-        "text_heading": "Don’t know where to start?",
+        "text_heading": "Don't know where to start?",
         "font_size_heading": "h5",
         "text_line_height": 1.2,
         "text_effect": "split",
@@ -441,8 +443,8 @@
         "card_color_scheme": "background-2",
         "point_type": "click",
         "point_size": 2.3,
-        "button_text": "Browse Library",
-        "button_link": "shopify://products/tapnest",
+        "button_text": "Browse Shortcuts Library",
+        "button_link": "shopify://pages/nfc-shortcut-gallery",
         "button_style": "primary",
         "button_size": "md",
         "color_scheme": "background-2",
@@ -460,32 +462,32 @@
         "testimonial_box_6Re8Ar": {
           "type": "testimonial-box",
           "settings": {
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
-            "customer_name": "Customer's name",
+            "content": "<p>I didn’t realize how annoying balancing my phone on the sink was until I got TapNest. Now I just snap it onto my mirror while I get ready in the morning. It honestly made my bathroom routine feel so much cleaner and easier.</p>",
+            "customer_name": "Emily R., Los Angeles",
             "image": "shopify://shop_images/image_6d01c1e1-472c-4f93-b9e7-5646bcf2717c.png"
           }
         },
         "testimonial_box_V3eief": {
           "type": "testimonial-box",
           "settings": {
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
-            "customer_name": "Customer's name",
+            "content": "<p>I use my phone for everything while getting ready — makeup tutorials, Spotify, FaceTime with friends. TapNest made it feel effortless. Strong magnet, super minimal look, and it actually stays put in a humid bathroom.</p>",
+            "customer_name": "Sophie T., New York",
             "image": "shopify://shop_images/image2.png"
           }
         },
         "testimonial_box_dARwGh": {
           "type": "testimonial-box",
           "settings": {
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
-            "customer_name": "Customer's name",
+            "content": "<p>This is one of those products that feels obvious after you use it. I used to prop my phone against random bottles and pray it wouldn’t fall into the sink. TapNest solved that instantly.</p>",
+            "customer_name": "Rachel K., Chicago",
             "image": "shopify://shop_images/image3.png"
           }
         },
         "testimonial_box_tNF8JU": {
           "type": "testimonial-box",
           "settings": {
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
-            "customer_name": "Customer's name",
+            "content": "<p>My bathroom counter is tiny, so having my phone mounted on the mirror instead of sitting in water or clutter is such a game changer. Also perfect for shower playlists and TikTok makeup inspo.”</p>",
+            "customer_name": "Hannah L., Austin",
             "image": "shopify://shop_images/Morning_Routine_Mirror_Selfie.png"
           }
         }
@@ -498,7 +500,7 @@
       ],
       "name": "t:sections.testimonial_style_4.presets.name",
       "settings": {
-        "sub_heading": "Subheading",
+        "sub_heading": "What our Customers are saying\"",
         "autoplay_time": 3000,
         "autoplay": "off",
         "color_scheme": "",
@@ -557,7 +559,7 @@
         "layout": "style-2",
         "column": "3",
         "text_tag_name": "h2",
-        "text_heading": "Design to Elevate",
+        "text_heading": "Created by Designers\nDesigned to Elevate",
         "font_size_heading": "h5",
         "text_line_height": 1.2,
         "text_effect": "split",
@@ -579,14 +581,14 @@
         "collapse_RaLc8a": {
           "type": "collapse",
           "settings": {
-            "title": "<p><strong>What is oora Tapnest?</strong></p>",
-            "content": "<p>oora Tapnest is the worlds first magnetic phone dock that also have multiple NFC shortcuts features. This allows you to open your favourite apps and experiences in one tap, and dock your phone in one smooth gesture. We aim to provide the best and proper bathroom phone dock experience.</p>"
+            "title": "<p>What is Tapnest?</p>",
+            "content": "<p>TapNest is the world's first magnetic phone dock that also have multiple NFC shortcuts features. This allows you to open your favourite apps and experiences in one tap, and dock your phone in one smooth gesture. We aim to provide the best and most smooth and intuitive bathroom phone dock experience.</p>"
           }
         },
         "collapse_VFkR3z": {
           "type": "collapse",
           "settings": {
-            "title": "<p><strong>Will it work with my Phone?</strong></p>",
+            "title": "<p>Will it work with my Phone?</p>",
             "content": "<p>TapNest is designed for Magsafe-compatible iPhones and Magsafe cases. The NFC shortcut experience works best on recent iPhones with IOS shortcuts enabled. <strong>See our carefully curated </strong><a href=\"/blogs/news\" title=\"News\"><strong>shortcut presets here.<br/></strong></a><em><br/>Note: Thick, metallic, or non-Magsafe cases may reduce magnetic hold or NFC sensitivity.</em></p>"
           }
         },
