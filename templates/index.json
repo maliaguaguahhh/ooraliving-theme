@@ -192,7 +192,7 @@
           "type": "variants",
           "settings": {
             "variant_style": "boxed",
-            "variant_color_style": "color"
+            "variant_color_style": "select"
           }
         },
         "buy_button_88TAkd": {
