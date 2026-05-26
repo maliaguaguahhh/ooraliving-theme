@@ -1,1 +1,68 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","blocks":{"link_list_kAdCwe":{"type":"link_list","settings":{"heading":"","footer_menu":""}},"link_list_enY9Mp":{"type":"link_list","settings":{"heading":"","footer_menu":""}}},"block_order":["link_list_kAdCwe","link_list_enY9Mp"],"settings":{"footer_fixed":"fixed","grid_col_desktop":3,"grid_col_mobile":"2","logo_width_desktop":120,"logo_width_mobile":170,"newsletter_show":"hidden","sub_heading":"<p>Original Design.<br\/>Create by designers, with love, to Dedicated to bring joy to everyday products.<\/p>","show_social":"show","enable_follow_on_shop":"hidden","show_currency_selector":"show","show_language_selector":"show","show_payment":"show","color_scheme":"background-2","background_color":"","background_gradient":"","padding_top_desktop":66,"padding_bottom_desktop":23,"padding_top_mobile":42,"padding_bottom_mobile":39}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "177978866748a6ee3d": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "link_list_kAdCwe": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "footer_menu": "main-menu"
+          }
+        },
+        "link_list_enY9Mp": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "footer_menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_kAdCwe",
+        "link_list_enY9Mp"
+      ],
+      "settings": {
+        "footer_fixed": "fixed",
+        "grid_col_desktop": 3,
+        "grid_col_mobile": "2",
+        "image": "shopify://shop_images/oora_logo_Black_1x_6c567220-494c-4650-abe9-e654de1e5d3b.png",
+        "logo_width_desktop": 180,
+        "logo_width_mobile": 100,
+        "newsletter_show": "show",
+        "sub_heading": "<p>Original Design.<br/>Create by designers, with love, to Dedicated to bring joy to everyday products.</p>",
+        "show_social": "show",
+        "enable_follow_on_shop": "hidden",
+        "show_currency_selector": "show",
+        "show_language_selector": "show",
+        "show_payment": "show",
+        "color_scheme": "background-2",
+        "background_color": "#e5e5e5",
+        "background_gradient": "",
+        "padding_top_desktop": 66,
+        "padding_bottom_desktop": 23,
+        "padding_top_mobile": 42,
+        "padding_bottom_mobile": 39
+      }
+    }
+  },
+  "order": [
+    "177978866748a6ee3d",
+    "footer"
+  ]
+}
