@@ -29,7 +29,7 @@
         "announcement_style": "carousel",
         "hide_button_close": "off",
         "carousel_width": 610,
-        "carousel_height": 26,
+        "carousel_height": 20,
         "carousel_style": "horizontal",
         "carousel_autoplay": true,
         "carousel_speed": 4000,
