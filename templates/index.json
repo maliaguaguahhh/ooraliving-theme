@@ -500,9 +500,44 @@
       ],
       "name": "t:sections.testimonial_style_4.presets.name",
       "settings": {
-        "sub_heading": "What our Customers are saying\"",
+        "sub_heading": "What our Customers are saying:",
         "autoplay_time": 3000,
         "autoplay": "off",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "featured_product_style_1_D67MFk": {
+      "type": "featured-product-style-1",
+      "name": "t:sections.featured_product_style_1.presets.name",
+      "settings": {
+        "layout": "center",
+        "product": "tapnest",
+        "text_tag_name": "h2",
+        "text_heading": "TapNest",
+        "font_size_heading": "h2",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "sub_heading": "Subheading",
+        "button_text": "Shop  Now",
+        "button_link": "shopify://products/tapnest",
+        "button_style": "primary",
+        "button_size": "md",
+        "aspect_ratio_dt": "16/9",
+        "image_mb": "shopify://shop_images/image_8.png",
+        "aspect_ratio_mb": "16/9",
+        "product_card_show_image": true,
+        "product_card_show_secondary_image": true,
+        "product_card_show_price": true,
+        "card_color_scheme": "",
         "color_scheme": "",
         "background_color": "",
         "background_gradient": "",
@@ -592,17 +627,24 @@
             "content": "<p>TapNest is designed for Magsafe-compatible iPhones and Magsafe cases. The NFC shortcut experience works best on recent iPhones with IOS shortcuts enabled. <strong>See our carefully curated </strong><a href=\"/blogs/news\" title=\"News\"><strong>shortcut presets here.<br/></strong></a><em><br/>Note: Thick, metallic, or non-Magsafe cases may reduce magnetic hold or NFC sensitivity.</em></p>"
           }
         },
+        "collapse_ncUxWX": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>How do I set the NFC Shortcuts?</p>",
+            "content": "<p>We provide quick video tutorials on how to customize your own shortcut experience via iPhone's Shortcuts App. It's quick to learn and setup , usually in a few minutes.  If you have trouble thinking of ideas, we also provide curated shortcuts gallery on the website.</p>"
+          }
+        },
         "collapse_VAbL78": {
           "type": "collapse",
           "settings": {
-            "title": "<p><strong>Can I use it without NFC?</strong></p>",
+            "title": "<p>Can I use it without NFC?</p>",
             "content": "<p>Yes, the docking in fact is the core experience and most users report it to be the core experience. NFC is an extra layer that makes routines feel more intuitive and magical.</p>"
           }
         },
         "collapse_i6b3pR": {
           "type": "collapse",
           "settings": {
-            "title": "<p><strong>Where should I place it?</strong></p>",
+            "title": "<p>Where should I place it?</p>",
             "content": "<p>TapNest is made for smooth bathroom mirror, glass or tile surfaces near your natural eye line. Clean and dry the surface before applying the adhesion. You are also free to place the TapNest onto any surface that you feel that can benefit for the \"tap and snap\" experience.</p>"
           }
         }
@@ -610,6 +652,7 @@
       "block_order": [
         "collapse_RaLc8a",
         "collapse_VFkR3z",
+        "collapse_ncUxWX",
         "collapse_VAbL78",
         "collapse_i6b3pR"
       ],
@@ -632,7 +675,7 @@
         "layout": "style-2",
         "background_type": "image",
         "font_size_heading": "display-1",
-        "heading": "",
+        "heading": "By Designers",
         "description": "15% off with New Launch Pricing. Limited First Batch",
         "button_text": "Get TapNest - $39.99 $̶4̶6̶.̶9̶9̶",
         "button_link": "shopify://collections/all",
@@ -655,8 +698,8 @@
         "grid_FVgjTR": {
           "type": "grid",
           "settings": {
-            "device": "desktop",
-            "desktop_col": 4,
+            "device": "mobile",
+            "desktop_col": 2,
             "tablet_col": 2,
             "mobile_col": 1,
             "gap": "global",
@@ -849,6 +892,7 @@
     "image_banner_style_2_Dypq4f",
     "shop_the_look_style_1_mW8Mf4",
     "testimonial_style_4_fkDVeW",
+    "featured_product_style_1_D67MFk",
     "multi_column_style_1_JAGazF",
     "collapse_content_PmMV3m",
     "image_banner_style_2_D3npaz",
