@@ -1,6 +1,941 @@
+{% doc %}
+  @prompt
+    side by side comparison of our product and competitor product
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-product-comparison-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .ai-product-comparison-container-{{ ai_gen_id }} {
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    padding: {{ block.settings.padding }}px;
+    overflow: hidden;
+  }
+
+  .ai-product-comparison-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .ai-product-comparison-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0 0 12px;
+    font-weight: 600;
+  }
+
+  .ai-product-comparison-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.text_color }};
+    opacity: 0.8;
+    margin: 0;
+  }
+
+  .ai-product-comparison-table-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: {{ block.settings.column_gap }}px;
+  }
+
+  .ai-product-comparison-column-{{ ai_gen_id }} {
+    background-color: {{ block.settings.column_background }};
+    border-radius: {{ block.settings.column_border_radius }}px;
+    padding: {{ block.settings.column_padding }}px;
+    border: {{ block.settings.column_border_width }}px solid {{ block.settings.column_border_color }};
+  }
+
+  .ai-product-comparison-column-{{ ai_gen_id }}.highlight {
+    border-color: {{ block.settings.highlight_border_color }};
+    border-width: {{ block.settings.highlight_border_width }}px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-product-comparison-badge-{{ ai_gen_id }} {
+    display: inline-block;
+    background-color: {{ block.settings.badge_background }};
+    color: {{ block.settings.badge_text_color }};
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+
+  .ai-product-comparison-product-name-{{ ai_gen_id }} {
+    font-size: {{ block.settings.product_name_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0 0 8px;
+    font-weight: 600;
+  }
+
+  .ai-product-comparison-product-subtitle-{{ ai_gen_id }} {
+    font-size: 14px;
+    color: {{ block.settings.text_color }};
+    opacity: 0.7;
+    margin: 0 0 16px;
+  }
+
+  .ai-product-comparison-image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-product-comparison-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .ai-product-comparison-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-product-comparison-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-product-comparison-features-{{ ai_gen_id }} {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+
+  .ai-product-comparison-feature-{{ ai_gen_id }} {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid {{ block.settings.divider_color }};
+    font-size: 14px;
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-product-comparison-feature-{{ ai_gen_id }}:last-child {
+    border-bottom: none;
+  }
+
+  .ai-product-comparison-icon-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+  }
+
+  .ai-product-comparison-icon-{{ ai_gen_id }}.check {
+    color: {{ block.settings.check_color }};
+  }
+
+  .ai-product-comparison-icon-{{ ai_gen_id }}.cross {
+    color: {{ block.settings.cross_color }};
+  }
+
+  .ai-product-comparison-price-{{ ai_gen_id }} {
+    font-size: {{ block.settings.price_size }}px;
+    color: {{ block.settings.text_color }};
+    font-weight: 700;
+    margin: 0 0 16px;
+  }
+
+  .ai-product-comparison-button-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: 14px 24px;
+    background-color: {{ block.settings.button_background }};
+    color: {{ block.settings.button_text_color }};
+    border: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .ai-product-comparison-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_background }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-product-comparison-table-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .ai-product-comparison-title-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.title_size }}px * 0.8);
+    }
+
+    .ai-product-comparison-product-name-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.product_name_size }}px * 0.9);
+    }
+  }
+{% endstyle %}
+
+<product-comparison-{{ ai_gen_id }} class="ai-product-comparison-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-product-comparison-container-{{ ai_gen_id }}">
+    {% if block.settings.title != blank or block.settings.subtitle != blank %}
+      <div class="ai-product-comparison-header-{{ ai_gen_id }}">
+        {% if block.settings.title != blank %}
+          <h2 class="ai-product-comparison-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+        {% endif %}
+        {% if block.settings.subtitle != blank %}
+          <p class="ai-product-comparison-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-product-comparison-table-{{ ai_gen_id }}">
+      <div class="ai-product-comparison-column-{{ ai_gen_id }} {% if block.settings.highlight_our_product %}highlight{% endif %}">
+        {% if block.settings.show_our_badge %}
+          <span class="ai-product-comparison-badge-{{ ai_gen_id }}">{{ block.settings.our_badge_text }}</span>
+        {% endif %}
+
+        <h3 class="ai-product-comparison-product-name-{{ ai_gen_id }}">{{ block.settings.our_product_name }}</h3>
+        
+        {% if block.settings.our_product_subtitle != blank %}
+          <p class="ai-product-comparison-product-subtitle-{{ ai_gen_id }}">{{ block.settings.our_product_subtitle }}</p>
+        {% endif %}
+
+        <div class="ai-product-comparison-image-wrapper-{{ ai_gen_id }}">
+          {% if block.settings.our_product_image %}
+            <img
+              src="{{ block.settings.our_product_image | image_url: width: 600 }}"
+              alt="{{ block.settings.our_product_name | escape }}"
+              class="ai-product-comparison-image-{{ ai_gen_id }}"
+              loading="lazy"
+              width="600"
+              height="600"
+            >
+          {% else %}
+            <div class="ai-product-comparison-image-placeholder-{{ ai_gen_id }}">
+              {{ 'product-1' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+
+        <ul class="ai-product-comparison-features-{{ ai_gen_id }}">
+          {% for i in (1..8) %}
+            {% assign feature_key = 'our_feature_' | append: i %}
+            {% assign feature_enabled_key = 'our_feature_' | append: i | append: '_enabled' %}
+            {% assign feature_text = block.settings[feature_key] %}
+            {% assign feature_enabled = block.settings[feature_enabled_key] %}
+            
+            {% if feature_text != blank %}
+              <li class="ai-product-comparison-feature-{{ ai_gen_id }}">
+                <span class="ai-product-comparison-icon-{{ ai_gen_id }} {% if feature_enabled %}check{% else %}cross{% endif %}">
+                  {% if feature_enabled %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  {% else %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  {% endif %}
+                </span>
+                <span>{{ feature_text }}</span>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+        {% if block.settings.our_product_price != blank %}
+          <div class="ai-product-comparison-price-{{ ai_gen_id }}">{{ block.settings.our_product_price }}</div>
+        {% endif %}
+
+        {% if block.settings.our_product_button_text != blank %}
+          <a href="{{ block.settings.our_product_button_link }}" class="ai-product-comparison-button-{{ ai_gen_id }}">
+            {{ block.settings.our_product_button_text }}
+          </a>
+        {% endif %}
+      </div>
+
+      <div class="ai-product-comparison-column-{{ ai_gen_id }}">
+        {% if block.settings.show_competitor_badge %}
+          <span class="ai-product-comparison-badge-{{ ai_gen_id }}" style="background-color: {{ block.settings.competitor_badge_bg }}; color: {{ block.settings.competitor_badge_color }};">{{ block.settings.competitor_badge_label }}</span>
+        {% endif %}
+
+        <h3 class="ai-product-comparison-product-name-{{ ai_gen_id }}">{{ block.settings.competitor_product_name }}</h3>
+        
+        {% if block.settings.competitor_product_subtitle != blank %}
+          <p class="ai-product-comparison-product-subtitle-{{ ai_gen_id }}">{{ block.settings.competitor_product_subtitle }}</p>
+        {% endif %}
+
+        <div class="ai-product-comparison-image-wrapper-{{ ai_gen_id }}">
+          {% if block.settings.competitor_product_image %}
+            <img
+              src="{{ block.settings.competitor_product_image | image_url: width: 600 }}"
+              alt="{{ block.settings.competitor_product_name | escape }}"
+              class="ai-product-comparison-image-{{ ai_gen_id }}"
+              loading="lazy"
+              width="600"
+              height="600"
+            >
+          {% else %}
+            <div class="ai-product-comparison-image-placeholder-{{ ai_gen_id }}">
+              {{ 'product-1' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+
+        <ul class="ai-product-comparison-features-{{ ai_gen_id }}">
+          {% for i in (1..8) %}
+            {% assign feature_key = 'competitor_feature_' | append: i %}
+            {% assign feature_enabled_key = 'competitor_feature_' | append: i | append: '_enabled' %}
+            {% assign feature_text = block.settings[feature_key] %}
+            {% assign feature_enabled = block.settings[feature_enabled_key] %}
+            
+            {% if feature_text != blank %}
+              <li class="ai-product-comparison-feature-{{ ai_gen_id }}">
+                <span class="ai-product-comparison-icon-{{ ai_gen_id }} {% if feature_enabled %}check{% else %}cross{% endif %}">
+                  {% if feature_enabled %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  {% else %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  {% endif %}
+                </span>
+                <span>{{ feature_text }}</span>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+        {% if block.settings.competitor_product_price != blank %}
+          <div class="ai-product-comparison-price-{{ ai_gen_id }}">{{ block.settings.competitor_product_price }}</div>
+        {% endif %}
+
+        {% if block.settings.competitor_product_button_text != blank %}
+          <a href="{{ block.settings.competitor_product_button_link }}" class="ai-product-comparison-button-{{ ai_gen_id }}" style="background-color: {{ block.settings.competitor_button_bg }}; color: {{ block.settings.competitor_button_color }};">
+            {{ block.settings.competitor_product_button_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</product-comparison-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ProductComparison{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.style.display = 'block';
+      }
+    }
+
+    customElements.define('product-comparison-{{ ai_gen_id }}', ProductComparison{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Product comparison",
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Why choose us?"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "See how we compare to the competition"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Subtitle size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Our product"
+    },
+    {
+      "type": "checkbox",
+      "id": "highlight_our_product",
+      "label": "Highlight our product",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_our_badge",
+      "label": "Show badge",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "our_badge_text",
+      "label": "Badge text",
+      "default": "Our Product"
+    },
+    {
+      "type": "text",
+      "id": "our_product_name",
+      "label": "Product name",
+      "default": "Premium Speaker"
+    },
+    {
+      "type": "text",
+      "id": "our_product_subtitle",
+      "label": "Product subtitle"
+    },
+    {
+      "type": "image_picker",
+      "id": "our_product_image",
+      "label": "Product image"
+    },
+    {
+      "type": "text",
+      "id": "our_product_price",
+      "label": "Price",
+      "default": "$299"
+    },
+    {
+      "type": "text",
+      "id": "our_product_button_text",
+      "label": "Button text",
+      "default": "Shop now"
+    },
+    {
+      "type": "url",
+      "id": "our_product_button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Our product features"
+    },
+    {
+      "type": "text",
+      "id": "our_feature_1",
+      "label": "Feature 1",
+      "default": "Premium sound quality"
+    },
+    {
+      "type": "checkbox",
+      "id": "our_feature_1_enabled",
+      "label": "Feature 1 available",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "our_feature_2",
+      "label": "Feature 2",
+      "default": "20-hour battery life"
+    },
+    {
+      "type": "checkbox",
+      "id": "our_feature_2_enabled",
+      "label": "Feature 2 available",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "our_feature_3",
+      "label": "Feature 3",
+      "default": "Waterproof design"
+    },
+    {
+      "type": "checkbox",
+      "id": "our_feature_3_enabled",
+      "label": "Feature 3 available",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "our_feature_4",
+      "label": "Feature 4",
+      "default": "Bluetooth 5.0"
+    },
+    {
+      "type": "checkbox",
+      "id": "our_feature_4_enabled",
+      "label": "Feature 4 available",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "our_feature_5",
+      "label": "Feature 5",
+      "default": "Voice assistant support"
+    },
+    {
+      "type": "checkbox",
+      "id": "our_feature_5_enabled",
+      "label": "Feature 5 available",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "our_feature_6",
+      "label": "Feature 6",
+      "default": "Portable design"
+    },
+    {
+      "type": "checkbox",
+      "id": "our_feature_6_enabled",
+      "label": "Feature 6 available",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "our_feature_7",
+      "label": "Feature 7",
+      "default": "Fast charging"
+    },
+    {
+      "type": "checkbox",
+      "id": "our_feature_7_enabled",
+      "label": "Feature 7 available",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "our_feature_8",
+      "label": "Feature 8",
+      "default": "2-year warranty"
+    },
+    {
+      "type": "checkbox",
+      "id": "our_feature_8_enabled",
+      "label": "Feature 8 available",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Competitor product"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_competitor_badge",
+      "label": "Show badge",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "competitor_badge_label",
+      "label": "Badge text",
+      "default": "Competitor"
+    },
+    {
+      "type": "text",
+      "id": "competitor_product_name",
+      "label": "Product name",
+      "default": "Standard Speaker"
+    },
+    {
+      "type": "text",
+      "id": "competitor_product_subtitle",
+      "label": "Product subtitle"
+    },
+    {
+      "type": "image_picker",
+      "id": "competitor_product_image",
+      "label": "Product image"
+    },
+    {
+      "type": "text",
+      "id": "competitor_product_price",
+      "label": "Price",
+      "default": "$249"
+    },
+    {
+      "type": "text",
+      "id": "competitor_product_button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "competitor_product_button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Competitor features"
+    },
+    {
+      "type": "text",
+      "id": "competitor_feature_1",
+      "label": "Feature 1",
+      "default": "Premium sound quality"
+    },
+    {
+      "type": "checkbox",
+      "id": "competitor_feature_1_enabled",
+      "label": "Feature 1 available",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "competitor_feature_2",
+      "label": "Feature 2",
+      "default": "20-hour battery life"
+    },
+    {
+      "type": "checkbox",
+      "id": "competitor_feature_2_enabled",
+      "label": "Feature 2 available",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "competitor_feature_3",
+      "label": "Feature 3",
+      "default": "Waterproof design"
+    },
+    {
+      "type": "checkbox",
+      "id": "competitor_feature_3_enabled",
+      "label": "Feature 3 available",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "competitor_feature_4",
+      "label": "Feature 4",
+      "default": "Bluetooth 5.0"
+    },
+    {
+      "type": "checkbox",
+      "id": "competitor_feature_4_enabled",
+      "label": "Feature 4 available",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "competitor_feature_5",
+      "label": "Feature 5",
+      "default": "Voice assistant support"
+    },
+    {
+      "type": "checkbox",
+      "id": "competitor_feature_5_enabled",
+      "label": "Feature 5 available",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "competitor_feature_6",
+      "label": "Feature 6",
+      "default": "Portable design"
+    },
+    {
+      "type": "checkbox",
+      "id": "competitor_feature_6_enabled",
+      "label": "Feature 6 available",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "competitor_feature_7",
+      "label": "Feature 7",
+      "default": "Fast charging"
+    },
+    {
+      "type": "checkbox",
+      "id": "competitor_feature_7_enabled",
+      "label": "Feature 7 available",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "competitor_feature_8",
+      "label": "Feature 8",
+      "default": "2-year warranty"
+    },
+    {
+      "type": "checkbox",
+      "id": "competitor_feature_8_enabled",
+      "label": "Feature 8 available",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#1e1e1e"
+    },
+    {
+      "type": "color",
+      "id": "column_background",
+      "label": "Column background",
+      "default": "#f6f6f6"
+    },
+    {
+      "type": "color",
+      "id": "column_border_color",
+      "label": "Column border color",
+      "default": "#e5e5e5"
+    },
+    {
+      "type": "range",
+      "id": "column_border_width",
+      "label": "Column border width",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "highlight_border_color",
+      "label": "Highlight border color",
+      "default": "#c87272"
+    },
+    {
+      "type": "range",
+      "id": "highlight_border_width",
+      "label": "Highlight border width",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Divider color",
+      "default": "#e5e5e5"
+    },
+    {
+      "type": "color",
+      "id": "check_color",
+      "label": "Check icon color",
+      "default": "#10a71f"
+    },
+    {
+      "type": "color",
+      "id": "cross_color",
+      "label": "Cross icon color",
+      "default": "#da1e28"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Container padding",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "column_padding",
+      "label": "Column padding",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "label": "Column gap",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Container border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "column_border_radius",
+      "label": "Column border radius",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Image border radius",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "product_name_size",
+      "label": "Product name size",
+      "min": 16,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "price_size",
+      "label": "Price size",
+      "min": 16,
+      "max": 36,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "header",
+      "content": "Badge style"
+    },
+    {
+      "type": "color",
+      "id": "badge_background",
+      "label": "Our badge background",
+      "default": "#c87272"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Our badge text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "competitor_badge_bg",
+      "label": "Competitor badge background",
+      "default": "#888888"
+    },
+    {
+      "type": "color",
+      "id": "competitor_badge_color",
+      "label": "Competitor badge text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Button style"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Our button background",
+      "default": "#c87272"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Our button text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background",
+      "label": "Our button hover",
+      "default": "#b56565"
+    },
+    {
+      "type": "color",
+      "id": "competitor_button_bg",
+      "label": "Competitor button background",
+      "default": "#888888"
+    },
+    {
+      "type": "color",
+      "id": "competitor_button_color",
+      "label": "Competitor button text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "label": "Button border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 6
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product comparison"
+    }
+  ]
+}
 {% endschema %}
