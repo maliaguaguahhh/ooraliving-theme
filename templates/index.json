@@ -844,6 +844,57 @@
         "padding_bottom_mobile": 32
       }
     },
+    "blocks_rhjDXi": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_dba89c2_BEfkrE": {
+          "type": "ai_gen_block_dba89c2",
+          "settings": {
+            "product_image": "shopify://shop_images/Weixin_Image_20260526203427_206_17_50c6a321-724f-438b-8daa-31abfd189bc6.jpg",
+            "image_width": 40,
+            "image_border_radius": 8,
+            "title": "Limited Time Offer",
+            "title_size": 36,
+            "description": "Get this amazing product at an unbeatable Early Bird Price",
+            "description_size": 16,
+            "show_badge": true,
+            "badge_text": "Flash Sale",
+            "badge_background_color": "#eb001b",
+            "badge_text_color": "#ffffff",
+            "show_discount": true,
+            "discount_text": "SAVE 20% OFF",
+            "discount_size": 24,
+            "discount_color": "#c87272",
+            "show_timer": true,
+            "timer_label": "Ends in:",
+            "end_date": "2026-07-01",
+            "end_time": "23:59:59",
+            "timer_background_color": "#1e1e1e",
+            "timer_text_color": "#ffffff",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_text_size": 16,
+            "button_border_radius": 8,
+            "button_background_color": "#c87272",
+            "button_text_color": "#ffffff",
+            "button_hover_background_color": "#1e1e1e",
+            "button_hover_text_color": "#ffffff",
+            "desktop_width_percent": 100,
+            "padding_vertical": 40,
+            "padding_horizontal": 40,
+            "border_radius": 12,
+            "background_color": "#f6f6f6",
+            "text_color": "#1e1e1e"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_dba89c2_BEfkrE"
+      ],
+      "name": "Product banner",
+      "settings": {}
+    },
     "image_banner_style_2_Pe67yk": {
       "type": "image-banner-style-2",
       "settings": {
@@ -884,6 +935,7 @@
     "image_banner_style_2_D3npaz",
     "product_carousel_8DBqjx",
     "custom_section_EiRJBc",
+    "blocks_rhjDXi",
     "image_banner_style_2_Pe67yk"
   ]
 }
