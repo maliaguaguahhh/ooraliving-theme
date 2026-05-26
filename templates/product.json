@@ -28,30 +28,6 @@
           "type": "price",
           "settings": {}
         },
-        "ca89121c-8974-4f5c-852d-875abeb6041c": {
-          "type": "variants",
-          "settings": {
-            "variant_style": "radio",
-            "variant_color_style": "color"
-          }
-        },
-        "countdown_timer_RbAfUH": {
-          "type": "countdown_timer",
-          "disabled": true,
-          "settings": {
-            "heading": "Extra sale!",
-            "sub_heading": "Special offer ends in",
-            "background_color": "#FE92100D",
-            "text_color": "#fe9210"
-          }
-        },
-        "ae0ed4c8-948a-46c7-b292-5f2687b8c94e": {
-          "type": "buy_button",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": false
-          }
-        },
         "inventory_status_PjEGiM": {
           "type": "inventory_status",
           "settings": {
@@ -61,50 +37,41 @@
             "color_out_stock": "#da1e28"
           }
         },
+        "ca89121c-8974-4f5c-852d-875abeb6041c": {
+          "type": "variants",
+          "settings": {
+            "variant_style": "radio",
+            "variant_color_style": "color"
+          }
+        },
+        "countdown_timer_gRAAct": {
+          "type": "countdown_timer",
+          "settings": {
+            "heading": "New Release",
+            "sub_heading": "Early Bird Price",
+            "background_color": "#0F61FF",
+            "text_color": "#ffffff"
+          }
+        },
+        "ae0ed4c8-948a-46c7-b292-5f2687b8c94e": {
+          "type": "buy_button",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
         "volume_discount_nNQCrE": {
           "type": "volume_discount",
           "settings": {
             "product_list": [
-              "beogram-4000c",
-              "beolab-19",
-              "beolab-90",
-              "beosound-a1",
-              "beosound-a5",
-              "beosound-a9",
-              "beosound-balance",
-              "beogram-4000c-copy",
-              "explore"
+              "tapnest"
             ],
-            "label": "Buy 1 items",
-            "quantity": 1,
-            "discount_value": 10,
-            "discount_type": "percentage",
-            "highlight_text": "",
-            "highlight_background_color": "#fe9210",
-            "highlight_text_color": "#ffffff",
-            "highlight_position": "aside"
-          }
-        },
-        "volume_discount_QEyyDr": {
-          "type": "volume_discount",
-          "settings": {
-            "product_list": [
-              "beogram-4000c",
-              "beolab-19",
-              "beolab-90",
-              "beosound-a1",
-              "beosound-a5",
-              "beosound-a9",
-              "beosound-balance",
-              "beogram-4000c-copy",
-              "explore"
-            ],
-            "label": "Buy 2, save 20%",
+            "label": "BUY 2",
             "quantity": 2,
-            "discount_value": 20,
+            "discount_value": 15,
             "discount_type": "percentage",
-            "highlight_text": "",
-            "highlight_background_color": "#fe9210",
+            "highlight_text": "15% Off",
+            "highlight_background_color": "#f39f1f",
             "highlight_text_color": "#ffffff",
             "highlight_position": "aside"
           }
@@ -171,12 +138,11 @@
         "bedc5e2d-642d-4448-8569-c7fcfd527042",
         "4dabf9d3-3372-4f5a-9edf-1e1f03527b1b",
         "b1d95bc4-490b-4b8c-914a-89b1323d2a43",
-        "ca89121c-8974-4f5c-852d-875abeb6041c",
-        "countdown_timer_RbAfUH",
-        "ae0ed4c8-948a-46c7-b292-5f2687b8c94e",
         "inventory_status_PjEGiM",
+        "ca89121c-8974-4f5c-852d-875abeb6041c",
+        "countdown_timer_gRAAct",
+        "ae0ed4c8-948a-46c7-b292-5f2687b8c94e",
         "volume_discount_nNQCrE",
-        "volume_discount_QEyyDr",
         "volume_discount_UarJ87",
         "ebe1dbeb-d8fc-4f0c-9d34-fc7892bde207",
         "collapse_cRztXf",
@@ -204,11 +170,11 @@
       "type": "media-video",
       "name": "t:sections.media_video.presets.name",
       "settings": {
-        "layout": "page-width",
-        "enable_video_looping": false,
+        "layout": "full-width",
+        "enable_video_looping": true,
         "video": "shopify://files/videos/Weixin Image_20260514152822_1069_711.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "video_alt_text": "",
+        "video_alt_text": "TapNest Experience",
         "color_scheme": "",
         "background_color": "",
         "background_gradient": "",
@@ -286,6 +252,69 @@
       "settings": {
         "spacing_dt": 10,
         "spacing_mb": 30
+      }
+    },
+    "multi_column_style_1_zMJcpM": {
+      "type": "multi-column-style-1",
+      "blocks": {
+        "column_DzbmUV": {
+          "type": "column",
+          "settings": {
+            "image_first": "shopify://shop_images/Weixin_Image_20260526203651_208_17.jpg",
+            "aspect_ratio_first": "auto",
+            "hover_type": "image",
+            "aspect_ratio_second": "auto",
+            "title": "<p>Heading</p>",
+            "enable_overlay": "off"
+          }
+        },
+        "column_TLdrkB": {
+          "type": "column",
+          "settings": {
+            "image_first": "shopify://shop_images/Weixin_Image_20260526203427_206_17.jpg",
+            "aspect_ratio_first": "auto",
+            "hover_type": "image",
+            "aspect_ratio_second": "auto",
+            "title": "<p>Heading</p>",
+            "enable_overlay": "off"
+          }
+        },
+        "column_EKjUNM": {
+          "type": "column",
+          "settings": {
+            "image_first": "shopify://shop_images/Weixin_Image_20260526203652_209_17.jpg",
+            "aspect_ratio_first": "auto",
+            "hover_type": "image",
+            "aspect_ratio_second": "auto",
+            "title": "<p>Heading</p>",
+            "enable_overlay": "off"
+          }
+        }
+      },
+      "block_order": [
+        "column_DzbmUV",
+        "column_TLdrkB",
+        "column_EKjUNM"
+      ],
+      "name": "t:sections.multi_column_style_1.presets.name",
+      "settings": {
+        "layout": "style-1",
+        "column": "3",
+        "text_tag_name": "h2",
+        "text_heading": "Easy Installation",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 75,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
       }
     },
     "custom_section_pM4t7C": {
@@ -450,11 +479,11 @@
             "our_product_button_link": "",
             "our_feature_1": "Easy Magnetic Docking",
             "our_feature_1_enabled": true,
-            "our_feature_2": "NFC Shortcuts",
+            "our_feature_2": "Tap to Start Apps",
             "our_feature_2_enabled": true,
-            "our_feature_3": "Color Variations",
+            "our_feature_3": "Living Color Options",
             "our_feature_3_enabled": true,
-            "our_feature_4": "NFC Gallery",
+            "our_feature_4": "Curated Shortcuts Gallery",
             "our_feature_4_enabled": true,
             "our_feature_5": "Refined Aesthetics",
             "our_feature_5_enabled": true,
@@ -466,7 +495,7 @@
             "our_feature_8_enabled": true,
             "show_competitor_badge": true,
             "competitor_badge_label": "Competitor",
-            "competitor_product_name": "Standard Speaker",
+            "competitor_product_name": "Standard Phone Dock",
             "competitor_product_subtitle": "",
             "competitor_product_image": "shopify://shop_images/image_6_ca472fe5-0731-4a9a-92dc-d7415452b739.png",
             "competitor_product_price": "",
@@ -548,37 +577,69 @@
         "collapse_kQhKQw": {
           "type": "collapse",
           "settings": {
-            "title": "<p>What distinguishes your speakers from other models?</p>",
+            "title": "<p>What is TapNest?</p>",
             "content": "<p>Our high-end speakers are designed with premium materials and advanced audio technology to deliver superior sound quality, which set them apart from standard models</p>"
           }
         },
         "collapse_P6NPUt": {
           "type": "collapse",
           "settings": {
-            "title": "<p>What is the warranty coverage for your speakers?</p>",
+            "title": "<p>Can I Use it with my Phone?</p>",
             "content": "<p>We offer a comprehensive warranty for all our high-end products. Typically, this includes a 2-year warranty covering manufacturing defects and a 1-year warranty for the electrical components</p>"
+          }
+        },
+        "collapse_dTcceF": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>What is NFC?</p>",
+            "content": "<p>Showcase a benefit of your product</p>"
           }
         },
         "collapse_Q8mNRc": {
           "type": "collapse",
           "settings": {
-            "title": "<p>How do I connect multiple Bluetooth speakers for a surround sound experience?</p>",
+            "title": "<p>How to Setup NFC?</p>",
             "content": "<p>To connect multiple speakers, turn on each speaker and activate their Bluetooth mode. Follow the pairing instructions in the user manual to connect the speakers to each other and then to your device. </p>"
           }
         },
         "collapse_wWkj4N": {
           "type": "collapse",
           "settings": {
-            "title": "<p>Are your speakers waterproof?</p>",
+            "title": "<p>Why my NFC Doesn't Work?</p>",
             "content": "<p>Yes, many of our Bluetooth speakers are designed to be waterproof and are rated IPX5 or higher, making them suitable for outdoor use, poolside gatherings, and even in the shower</p>"
+          }
+        },
+        "collapse_GpHfJH": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>How do you Install TapNest?</p>",
+            "content": "<p>Showcase a benefit of your product</p>"
+          }
+        },
+        "collapse_qPUzBX": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>What's the shipping and customer service Policy?</p>",
+            "content": "<p>Showcase a benefit of your product</p>"
+          }
+        },
+        "collapse_6TLTRi": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>About Us</p>",
+            "content": "<p>Showcase a benefit of your product</p>"
           }
         }
       },
       "block_order": [
         "collapse_kQhKQw",
         "collapse_P6NPUt",
+        "collapse_dTcceF",
         "collapse_Q8mNRc",
-        "collapse_wWkj4N"
+        "collapse_wWkj4N",
+        "collapse_GpHfJH",
+        "collapse_qPUzBX",
+        "collapse_6TLTRi"
       ],
       "settings": {
         "font_size_heading": "h4",
@@ -616,6 +677,64 @@
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 50
       }
+    },
+    "hero_showcase_YHkncr": {
+      "type": "hero-showcase",
+      "name": "t:sections.hero_showcase.name",
+      "settings": {
+        "font_size": "h1",
+        "text": "TapNest",
+        "text_highlight": "Text highlight",
+        "text_highlight_color": "#D8C6F1",
+        "button_text": "Shop TapNest",
+        "button_link": "shopify://products/tapnest",
+        "button_style": "primary",
+        "button_size": "md",
+        "image_mobile": "shopify://shop_images/Weixin_Image_20260526203651_208_17.jpg",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "gallery_style_1_nQ8VYH": {
+      "type": "gallery-style-1",
+      "blocks": {
+        "image_1_AKpBD9": {
+          "type": "image-1",
+          "settings": {
+            "image_mb": "shopify://shop_images/image3.png"
+          }
+        },
+        "image_2_T3VHaW": {
+          "type": "image-2",
+          "settings": {
+            "image_mb": "shopify://shop_images/Morning_Routine_Mirror_Selfie.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_1_AKpBD9",
+        "image_2_T3VHaW"
+      ],
+      "name": "t:sections.gallery_style_1.presets.name",
+      "settings": {
+        "heading": "<p>#Our<br/>Instagram</p>",
+        "button_text": "@unicase.ig",
+        "button_link": "shopify://collections/all",
+        "button_style": "primary",
+        "button_size": "sm",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 43,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 23
+      }
     }
   },
   "order": [
@@ -623,8 +742,11 @@
     "media_video_HU9TKT",
     "multi_column_style_1_ePNRPr",
     "spacing_eXQ4kN",
+    "multi_column_style_1_zMJcpM",
     "custom_section_pM4t7C",
     "collapse_content_3mHbKF",
-    "main_product_recommendations_TnWBYD"
+    "main_product_recommendations_TnWBYD",
+    "hero_showcase_YHkncr",
+    "gallery_style_1_nQ8VYH"
   ]
 }

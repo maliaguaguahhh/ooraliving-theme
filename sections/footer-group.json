@@ -44,7 +44,7 @@
         "image": "shopify://shop_images/oora_logo_Black_1x_6c567220-494c-4650-abe9-e654de1e5d3b.png",
         "logo_width_desktop": 180,
         "logo_width_mobile": 100,
-        "newsletter_show": "show",
+        "newsletter_show": "hidden",
         "sub_heading": "<p>Original Design.<br/>Create by designers, with love, to Dedicated to bring joy to everyday products.</p>",
         "show_social": "show",
         "enable_follow_on_shop": "hidden",
