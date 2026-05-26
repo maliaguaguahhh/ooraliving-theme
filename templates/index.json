@@ -512,90 +512,6 @@
         "padding_bottom_mobile": 50
       }
     },
-    "featured_product_style_1_D67MFk": {
-      "type": "featured-product-style-1",
-      "name": "t:sections.featured_product_style_1.presets.name",
-      "settings": {
-        "layout": "left",
-        "product": "tapnest",
-        "text_tag_name": "h2",
-        "text_heading": "LIMITED TIME OFFER:\n20% Off  Early Bird Price\nEnds in Oct.1st",
-        "font_size_heading": "h4",
-        "text_line_height": 1.2,
-        "text_effect": "split",
-        "text_duration": 1000,
-        "text_heading_width_desktop": 100,
-        "text_heading_width_mobile": 100,
-        "sub_heading": "Subheading",
-        "button_text": "Shop  Now",
-        "button_link": "shopify://products/tapnest",
-        "button_style": "primary",
-        "button_size": "md",
-        "aspect_ratio_dt": "4/3",
-        "image_mb": "shopify://shop_images/image_8.png",
-        "aspect_ratio_mb": "1",
-        "product_card_show_image": false,
-        "product_card_show_secondary_image": false,
-        "product_card_show_price": false,
-        "card_color_scheme": "",
-        "color_scheme": "",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 50,
-        "padding_bottom_desktop": 50,
-        "padding_top_mobile": 50,
-        "padding_bottom_mobile": 50
-      }
-    },
-    "1779785207a1651150": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_dba89c2_mmGPUU": {
-          "type": "ai_gen_block_dba89c2",
-          "settings": {
-            "image_width": 40,
-            "image_border_radius": 8,
-            "title": "Limited Time Offer",
-            "title_size": 36,
-            "description": "Get this amazing product at an unbeatable price. Don't miss out on this exclusive deal!",
-            "description_size": 16,
-            "show_badge": true,
-            "badge_text": "Flash Sale",
-            "badge_background_color": "#eb001b",
-            "badge_text_color": "#ffffff",
-            "show_discount": true,
-            "discount_text": "Save 30% OFF",
-            "discount_size": 24,
-            "discount_color": "#c87272",
-            "show_timer": true,
-            "timer_label": "Ends in:",
-            "end_date": "2026-06-01",
-            "end_time": "23:59:59",
-            "timer_background_color": "#1e1e1e",
-            "timer_text_color": "#ffffff",
-            "button_text": "Shop Now",
-            "button_link": "",
-            "button_text_size": 16,
-            "button_border_radius": 8,
-            "button_background_color": "#c87272",
-            "button_text_color": "#ffffff",
-            "button_hover_background_color": "#1e1e1e",
-            "button_hover_text_color": "#ffffff",
-            "desktop_width_percent": 100,
-            "padding_vertical": 40,
-            "padding_horizontal": 40,
-            "border_radius": 12,
-            "background_color": "#f6f6f6",
-            "text_color": "#1e1e1e"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_dba89c2_mmGPUU"
-      ],
-      "settings": {}
-    },
     "multi_column_style_1_JAGazF": {
       "type": "multi-column-style-1",
       "blocks": {
@@ -715,7 +631,7 @@
         "padding_top_desktop": 40,
         "padding_bottom_desktop": 90,
         "padding_top_mobile": 50,
-        "padding_bottom_mobile": 50
+        "padding_bottom_mobile": 150
       }
     },
     "image_banner_style_2_D3npaz": {
@@ -723,13 +639,13 @@
       "settings": {
         "layout": "style-2",
         "background_type": "image",
-        "font_size_heading": "display-1",
-        "heading": "By Designers",
-        "description": "15% off with New Launch Pricing. Limited First Batch",
-        "button_text": "Get TapNest - $39.99 $̶4̶6̶.̶9̶9̶",
-        "button_link": "shopify://collections/all",
+        "font_size_heading": "h4",
+        "heading": "TapNest.\nTap into your moments .",
+        "description": "Loved by +5,000 Customers. \nOrder Now at 20% Off Early Bird Price.",
+        "button_text": "Shop TapNest Now",
+        "button_link": "shopify://products/tapnest",
         "button_style": "primary",
-        "button_size": "md",
+        "button_size": "lg",
         "background_image_desktop": "shopify://shop_images/Mist_Clay_1_Crop.jpg",
         "background_image_mobile": "shopify://shop_images/Mist_Clay_1_Crop.jpg",
         "color_scheme": "",
@@ -739,6 +655,28 @@
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 0
+      }
+    },
+    "product_carousel_8DBqjx": {
+      "type": "product-carousel",
+      "name": "t:sections.product_carousel.name",
+      "settings": {
+        "product_list": [
+          "tapnest"
+        ],
+        "autoplay": "off",
+        "autoplay_speed": 3000,
+        "enable_navigation": true,
+        "show_on_navigation": "desktop",
+        "enable_pagination": true,
+        "show_on_pagination": "mobile",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
       }
     },
     "custom_section_EiRJBc": {
@@ -911,13 +849,13 @@
       "settings": {
         "layout": "style-2",
         "background_type": "image",
-        "font_size_heading": "display-1",
-        "heading": "",
-        "description": "15% off with New Launch Pricing. Limited First Batch",
-        "button_text": "Get TapNest - $39.99 $̶4̶6̶.̶9̶9̶",
-        "button_link": "shopify://collections/all",
+        "font_size_heading": "h2",
+        "heading": "About Us",
+        "description": "Founded by Product Designers, oora started with a simple frustration: there was never a good place for our phones in the bathroom.\n\nWet countertops, messy sinks, makeup-covered hands — yet we still wanted music, podcasts, tutorials, and little moments of comfort during our routines.\n\nWe realized most tech products felt cold, black, and overly mechanical. They weren’t designed for soft living spaces or intentional daily rituals.\n\nSo we created TapNest — a magnetic bathroom mirror dock that blends lifestyle and technology together.\n\nA softer way to use your phone.\nA calmer way to begin your day.",
+        "button_text": "Shop TapNest",
+        "button_link": "shopify://products/tapnest",
         "button_style": "primary",
-        "button_size": "md",
+        "button_size": "lg",
         "background_image_desktop": "shopify://shop_images/08.jpg",
         "background_image_mobile": "shopify://shop_images/08.png",
         "color_scheme": "",
@@ -941,11 +879,10 @@
     "image_banner_style_2_Dypq4f",
     "shop_the_look_style_1_mW8Mf4",
     "testimonial_style_4_fkDVeW",
-    "featured_product_style_1_D67MFk",
-    "1779785207a1651150",
     "multi_column_style_1_JAGazF",
     "collapse_content_PmMV3m",
     "image_banner_style_2_D3npaz",
+    "product_carousel_8DBqjx",
     "custom_section_EiRJBc",
     "image_banner_style_2_Pe67yk"
   ]
