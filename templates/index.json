@@ -191,8 +191,8 @@
         "variants_hVq83B": {
           "type": "variants",
           "settings": {
-            "variant_style": "radio",
-            "variant_color_style": "select"
+            "variant_style": "select",
+            "variant_color_style": "color"
           }
         },
         "buy_button_88TAkd": {
