@@ -701,70 +701,6 @@
         "padding_bottom_mobile": 100
       }
     },
-    "multi_column_style_1_JAGazF": {
-      "type": "multi-column-style-1",
-      "blocks": {
-        "column_qa9cfD": {
-          "type": "column",
-          "settings": {
-            "image_first": "shopify://shop_images/image_91.png",
-            "aspect_ratio_first": "3/4",
-            "hover_type": "image",
-            "image_second": "shopify://shop_images/image_91.png",
-            "aspect_ratio_second": "3/4",
-            "title": "",
-            "enable_overlay": "off"
-          }
-        },
-        "column_mYL8UJ": {
-          "type": "column",
-          "settings": {
-            "image_first": "shopify://shop_images/image_10.png",
-            "aspect_ratio_first": "3/4",
-            "hover_type": "image",
-            "aspect_ratio_second": "3/4",
-            "title": "",
-            "enable_overlay": "off"
-          }
-        },
-        "column_WYNfNJ": {
-          "type": "column",
-          "settings": {
-            "aspect_ratio_first": "3/4",
-            "hover_type": "image",
-            "aspect_ratio_second": "3/4",
-            "title": "",
-            "enable_overlay": "off"
-          }
-        }
-      },
-      "block_order": [
-        "column_qa9cfD",
-        "column_mYL8UJ",
-        "column_WYNfNJ"
-      ],
-      "disabled": true,
-      "name": "Design to elevate",
-      "settings": {
-        "layout": "style-2",
-        "column": "3",
-        "text_tag_name": "h2",
-        "text_heading": "Created by Designers\nDesigned to Elevate",
-        "font_size_heading": "h5",
-        "text_line_height": 1.2,
-        "text_effect": "split",
-        "text_duration": 75,
-        "text_heading_width_desktop": 100,
-        "text_heading_width_mobile": 100,
-        "color_scheme": "",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 50,
-        "padding_bottom_desktop": 50,
-        "padding_top_mobile": 50,
-        "padding_bottom_mobile": 50
-      }
-    },
     "image_banner_style_2_D3npaz": {
       "type": "image-banner-style-2",
       "settings": {
@@ -1089,7 +1025,6 @@
     "testimonial_style_4_fkDVeW",
     "image_banner_style_2_Dypq4f",
     "shop_the_look_style_1_mW8Mf4",
-    "multi_column_style_1_JAGazF",
     "image_banner_style_2_D3npaz",
     "collapse_content_PmMV3m",
     "custom_section_EiRJBc",

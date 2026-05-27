@@ -178,7 +178,7 @@
             "image_border_radius": 8,
             "title": "EARLY BIRD CALLING",
             "title_size": 36,
-            "description": "As a new startup, OORA hopes to grow with our first batch Users and offers a Special Early Bird Discount.",
+            "description": "As a young startup, we offer a Limited Time Special Early Bird Discount for our early users to grow with the community.",
             "description_size": 16,
             "show_badge": true,
             "badge_text": "EARLY BIRD PRICE",
@@ -354,14 +354,6 @@
         "padding_bottom_mobile": 55
       }
     },
-    "spacing_eXQ4kN": {
-      "type": "spacing",
-      "name": "t:sections.spacing.presets.name",
-      "settings": {
-        "spacing_dt": 10,
-        "spacing_mb": 30
-      }
-    },
     "multi_column_style_1_zMJcpM": {
       "type": "multi-column-style-1",
       "blocks": {
@@ -417,6 +409,142 @@
         "text_heading_width_desktop": 100,
         "text_heading_width_mobile": 100,
         "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "multi_column_style_1_8fAFqN": {
+      "type": "multi-column-style-1",
+      "blocks": {
+        "column_LGyXm9": {
+          "type": "column",
+          "settings": {
+            "image_first": "shopify://shop_images/image_91.png",
+            "aspect_ratio_first": "3/4",
+            "hover_type": "image",
+            "image_second": "shopify://shop_images/image_91.png",
+            "aspect_ratio_second": "3/4",
+            "title": "",
+            "enable_overlay": "off"
+          }
+        },
+        "column_B9VAE3": {
+          "type": "column",
+          "settings": {
+            "image_first": "shopify://shop_images/image_10.png",
+            "aspect_ratio_first": "3/4",
+            "hover_type": "image",
+            "aspect_ratio_second": "3/4",
+            "title": "",
+            "enable_overlay": "off"
+          }
+        },
+        "column_KhDbR4": {
+          "type": "column",
+          "settings": {
+            "aspect_ratio_first": "3/4",
+            "hover_type": "image",
+            "aspect_ratio_second": "3/4",
+            "title": "",
+            "enable_overlay": "off"
+          }
+        }
+      },
+      "block_order": [
+        "column_LGyXm9",
+        "column_B9VAE3",
+        "column_KhDbR4"
+      ],
+      "name": "Design to elevate",
+      "settings": {
+        "layout": "style-2",
+        "column": "3",
+        "text_tag_name": "h2",
+        "text_heading": "Designed to Elevate",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 75,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "testimonial_style_3_KpGLtd": {
+      "type": "testimonial-style-3",
+      "blocks": {
+        "testimonial_slide_dkCKwt": {
+          "type": "testimonial-slide",
+          "settings": {
+            "message": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer name",
+            "verified_user": "show",
+            "product": "tapnest"
+          }
+        },
+        "testimonial_slide_GjPjRD": {
+          "type": "testimonial-slide",
+          "settings": {
+            "message": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer name",
+            "verified_user": "show",
+            "product": ""
+          }
+        },
+        "testimonial_slide_JjhD6K": {
+          "type": "testimonial-slide",
+          "settings": {
+            "message": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer name",
+            "verified_user": "show",
+            "product": ""
+          }
+        },
+        "testimonial_slide_RjAyTT": {
+          "type": "testimonial-slide",
+          "settings": {
+            "message": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer 4",
+            "verified_user": "show",
+            "product": ""
+          }
+        },
+        "testimonial_slide_Wqc8tA": {
+          "type": "testimonial-slide",
+          "settings": {
+            "message": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer 5",
+            "verified_user": "show",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_slide_dkCKwt",
+        "testimonial_slide_GjPjRD",
+        "testimonial_slide_JjhD6K",
+        "testimonial_slide_RjAyTT",
+        "testimonial_slide_Wqc8tA"
+      ],
+      "name": "t:sections.testimonial_style_3.presets.name",
+      "settings": {
+        "font_size_heading": "h4",
+        "heading": "User Story",
+        "autoplay": "off",
+        "autoplay_time": 3000,
+        "card_color": "",
+        "border_radius": 10,
+        "color_scheme": "background-1",
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 50,
@@ -828,8 +956,9 @@
     "blocks_xQ4MNJ",
     "video_feedback_4EeFed",
     "multi_column_style_1_ePNRPr",
-    "spacing_eXQ4kN",
     "multi_column_style_1_zMJcpM",
+    "multi_column_style_1_8fAFqN",
+    "testimonial_style_3_KpGLtd",
     "custom_section_pM4t7C",
     "collapse_content_3mHbKF",
     "main_product_recommendations_TnWBYD",
