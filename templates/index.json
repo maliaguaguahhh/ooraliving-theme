@@ -802,21 +802,21 @@
           "type": "collapse",
           "settings": {
             "title": "<p>Will it work with my Phone?</p>",
-            "content": "<p>TapNest is designed for Magsafe-compatible iPhones and Magsafe cases. The NFC shortcut experience works best on recent iPhones with IOS shortcuts enabled. <strong>See our carefully curated </strong><a href=\"/blogs/news\" title=\"News\"><strong>shortcut presets here.<br/></strong></a><em><br/>Note: Thick, metallic, or non-Magsafe cases may reduce magnetic hold or NFC sensitivity.</em></p>"
+            "content": "<p>TapNest is designed for Magsafe-compatible iPhones and Magsafe cases. The NFC shortcut experience works best on recent iPhones with IOS shortcuts enabled. <strong>See our carefully curated </strong><a href=\"/blogs/news\" title=\"News\"><strong>shortcut presets here.<br/><br/></strong></a><strong>The magnetic docking feature and NFC feature DO NOT SUPPORT Android users.</strong></p><p><em><br/>Note: Thick, metallic, or non-Magsafe cases may reduce magnetic hold or NFC sensitivity.</em></p>"
           }
         },
         "collapse_ncUxWX": {
           "type": "collapse",
           "settings": {
             "title": "<p>How do I set the NFC Shortcuts?</p>",
-            "content": "<p>We provide quick video tutorials on how to customize your own shortcut experience via iPhone's Shortcuts App. It's quick to learn and setup , usually in a few minutes.  If you have trouble thinking of ideas, we also provide curated shortcuts gallery on the website.</p>"
+            "content": "<p>We provide quick video tutorials on how to customize your own shortcut experience via iPhone's Shortcuts App. The setup usually takes a few minutes.  If you have trouble thinking of ideas, we also provide curated shortcuts gallery on the website.</p>"
           }
         },
         "collapse_VAbL78": {
           "type": "collapse",
           "settings": {
-            "title": "<p>Can I use it without NFC?</p>",
-            "content": "<p>Yes, the docking in fact is the core experience and most users report it to be the core experience. NFC is an extra layer that makes routines feel more intuitive and magical.</p>"
+            "title": "<p>Can I use TapNest without using the NFC?</p>",
+            "content": "<p>Yes, totally. The docking feature is what customers use most and find most helpful. NFC adds extra convenience to your daily routines.</p>"
           }
         },
         "collapse_i6b3pR": {
