@@ -27,7 +27,7 @@
         "video_dt": "shopify://files/videos/6888.mp4",
         "video_mb": "shopify://files/videos/6888.mp4",
         "color_scheme": "background-1",
-        "background_color": "",
+        "background_color": "#4d4d4d",
         "background_gradient": "",
         "padding_top_desktop": 0,
         "padding_bottom_desktop": 0,
@@ -78,35 +78,6 @@
         "padding_bottom_mobile": 20
       }
     },
-    "image_with_text_style_9_6fNkq3": {
-      "type": "image-with-text-style-9",
-      "disabled": true,
-      "name": "t:sections.image_with_text_style_9.presets.name",
-      "settings": {
-        "text_tag_name": "h2",
-        "text_heading": "Tap. Snap. Flow.",
-        "font_size_heading": "h3",
-        "text_line_height": 1.2,
-        "text_effect": "split",
-        "text_duration": 1000,
-        "text_heading_width_desktop": 100,
-        "text_heading_width_mobile": 100,
-        "sub_heading": "What is TapNest",
-        "description": "Our patented design allows you to simply tap to start apps. Snap to dock your phone. One intuitive gesture to start your favourite rituals, be it music, video, makeup tutorals, or any other rituals for your bathroom moments.",
-        "alignment_desktop": "left",
-        "alignment_mobile": "top",
-        "expand_grid": false,
-        "color_scheme": "",
-        "background_color": "",
-        "background_gradient": "",
-        "background_type": "video",
-        "use_parallax": true,
-        "padding_top_desktop": 50,
-        "padding_bottom_desktop": 50,
-        "padding_top_mobile": 50,
-        "padding_bottom_mobile": 50
-      }
-    },
     "multi_column_style_1_Htrxjp": {
       "type": "multi-column-style-1",
       "blocks": {
@@ -149,9 +120,10 @@
         "column_yxyPmm",
         "column_YqMdeM"
       ],
+      "disabled": true,
       "name": "t:sections.multi_column_style_1.presets.name",
       "settings": {
-        "layout": "style-1",
+        "layout": "style-2",
         "column": "3",
         "text_tag_name": "h2",
         "text_heading": "Tap, Snap, Flow.",
@@ -168,6 +140,66 @@
         "padding_bottom_desktop": 50,
         "padding_top_mobile": 50,
         "padding_bottom_mobile": 50
+      }
+    },
+    "hero_carousel_RQDi7q": {
+      "type": "hero-carousel",
+      "blocks": {
+        "image_V7k8ni": {
+          "type": "image",
+          "settings": {
+            "heading": "Hero carousel",
+            "description": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_text": "Button",
+            "button_link": "shopify://collections/all",
+            "button_style": "primary",
+            "button_size": "md",
+            "media_type": "image"
+          }
+        },
+        "image_j9jFVp": {
+          "type": "image",
+          "settings": {
+            "heading": "Hero carousel",
+            "description": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_text": "Button",
+            "button_link": "shopify://collections/all",
+            "button_style": "primary",
+            "button_size": "md",
+            "media_type": "image"
+          }
+        },
+        "image_Pg4ich": {
+          "type": "image",
+          "settings": {
+            "heading": "Hero carousel",
+            "description": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_text": "Button",
+            "button_link": "shopify://collections/all",
+            "button_style": "primary",
+            "button_size": "md",
+            "media_type": "image"
+          }
+        }
+      },
+      "block_order": [
+        "image_V7k8ni",
+        "image_j9jFVp",
+        "image_Pg4ich"
+      ],
+      "disabled": true,
+      "name": "t:sections.hero_carousel.presets.name",
+      "settings": {
+        "layout": "style-2",
+        "autoplay": "off",
+        "autoplay_speed": 5000,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
       }
     },
     "hero_carousel_ntRjDd": {
@@ -218,11 +250,10 @@
         "image_CxBzLD",
         "image_NaEnqy"
       ],
-      "disabled": true,
       "name": "Tap Snap Flow",
       "settings": {
         "layout": "style-1",
-        "autoplay": "off",
+        "autoplay": "on",
         "autoplay_speed": 3000,
         "color_scheme": "",
         "background_color": "",
@@ -987,8 +1018,8 @@
   "order": [
     "image_banner_style_2_x4qhp6",
     "carousel_text_V4Lwdi",
-    "image_with_text_style_9_6fNkq3",
     "multi_column_style_1_Htrxjp",
+    "hero_carousel_RQDi7q",
     "hero_carousel_ntRjDd",
     "featured_product_special_Vq8L67",
     "image_with_text_style_1_pKned4",
