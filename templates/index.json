@@ -11,10 +11,11 @@
   "sections": {
     "image_banner_style_2_x4qhp6": {
       "type": "image-banner-style-2",
+      "custom_css": [],
       "settings": {
-        "layout": "style-1",
+        "layout": "style-2",
         "background_type": "video",
-        "font_size_heading": "display-1",
+        "font_size_heading": "display-2",
         "heading": "TapNest",
         "description": "Your phone finally has a place in your bathroom.",
         "button_text": "Shop TapNest",
