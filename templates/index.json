@@ -412,11 +412,81 @@
       "settings": {
         "sub_heading": "Our Solution",
         "font_size_heading": "h5",
-        "heading": "<p>TapNest is the best answer to how you use your smartphone in your bathroom. <br/><br/>Not only does it allows easy Magnetic Docking, you can also launch your favorite music, GRWMs, skincare timers, podcasts through tapping.<br/><br/>Tap. Snap. Flow.<br/><br/>TapNest brings intentional elegance to your space.</p>",
+        "heading": "<p>TapNest is the best answer to how you use your smartphone in your bathroom. <br/><br/>Easy Magnetic Docking. Launch your favorite music, GRWMs, skincare timers, podcasts through tapping.<br/><br/>Tap.  Snap. Flow<br/><br/><br/>...</p>",
         "reveal_text_effect": true,
-        "reveal_text_opacity": 50,
-        "image_desktop": "shopify://shop_images/image_7.png",
-        "image_mobile": "shopify://shop_images/image_7.png",
+        "reveal_text_opacity": 40,
+        "image_desktop": "shopify://shop_images/Weixin_Image_20260526203652_209_17.jpg",
+        "image_mobile": "shopify://shop_images/Weixin_Image_20260526203652_209_17.jpg",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 80
+      }
+    },
+    "video_feedback_WXgbgP": {
+      "type": "video-feedback",
+      "blocks": {
+        "video_yjmjyz": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        },
+        "video_HD8Hjp": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        },
+        "video_MeKJdM": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        },
+        "video_nRKaqh": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        },
+        "video_UnLfLq": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        }
+      },
+      "block_order": [
+        "video_yjmjyz",
+        "video_HD8Hjp",
+        "video_MeKJdM",
+        "video_nRKaqh",
+        "video_UnLfLq"
+      ],
+      "name": "t:sections.video_feedback.name",
+      "settings": {
+        "text_tag_name": "h2",
+        "text_heading": "Video feedback",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "active_index": 2,
+        "autoplay": "off",
+        "autoplay_speed": 5000,
+        "enable_pagination": true,
+        "enable_navigation": true,
         "color_scheme": "",
         "background_color": "",
         "background_gradient": "",
@@ -424,155 +494,6 @@
         "padding_bottom_desktop": 50,
         "padding_top_mobile": 50,
         "padding_bottom_mobile": 50
-      }
-    },
-    "image_banner_style_2_Dypq4f": {
-      "type": "image-banner-style-2",
-      "name": "Create your own rituals",
-      "settings": {
-        "layout": "style-2",
-        "background_type": "image",
-        "font_size_heading": "display-1",
-        "heading": "Create your own rituals. Tap into your moments.",
-        "description": "Customize your own shortcuts for podcasts, reminders, timers, notes, music, and any experience you love.",
-        "button_text": "Shop TapNest Now",
-        "button_link": "shopify://pages/nfc-shortcut-gallery",
-        "button_style": "secondary",
-        "button_size": "md",
-        "background_image_mobile": "shopify://shop_images/image_81.png",
-        "color_scheme": "",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 0,
-        "padding_bottom_desktop": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0
-      }
-    },
-    "shop_the_look_style_1_mW8Mf4": {
-      "type": "shop-the-look-style-1",
-      "blocks": {
-        "hostpot_zJ8Ykd": {
-          "type": "hostpot",
-          "settings": {
-            "timer_delay": 0,
-            "top_dt": 50,
-            "left_dt": 20,
-            "top_mb": 50,
-            "left_mb": 20,
-            "card_type": "shortcut",
-            "product": "",
-            "shortcut_image": "shopify://shop_images/image_91.png",
-            "shortcut_title": "Music",
-            "shortcut_description": "<p>This is the description</p>",
-            "shortcut_button_text": "download",
-            "shortcut_button_link": "shopify://pages/nfc-shortcut-gallery",
-            "placement": "right-top",
-            "hotspot_color": "#0f61ff"
-          }
-        },
-        "hostpot_tXcGDe": {
-          "type": "hostpot",
-          "settings": {
-            "timer_delay": 1,
-            "top_dt": 50,
-            "left_dt": 50,
-            "top_mb": 50,
-            "left_mb": 50,
-            "card_type": "product",
-            "product": "",
-            "shortcut_title": "",
-            "shortcut_description": "",
-            "shortcut_button_text": "",
-            "shortcut_button_link": "",
-            "placement": "right-top",
-            "hotspot_color": "#0f61ff"
-          }
-        },
-        "hostpot_tzRAj8": {
-          "type": "hostpot",
-          "settings": {
-            "timer_delay": 2,
-            "top_dt": 50,
-            "left_dt": 80,
-            "top_mb": 50,
-            "left_mb": 80,
-            "card_type": "product",
-            "product": "tapnest",
-            "shortcut_title": "",
-            "shortcut_description": "",
-            "shortcut_button_text": "",
-            "shortcut_button_link": "",
-            "placement": "right-top",
-            "hotspot_color": "#c87272"
-          }
-        },
-        "feature_dRCPhf": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/icon_sticker-01.png",
-            "color_config_enable": false,
-            "content": "Spotify Playlist: Soothing Music"
-          }
-        },
-        "feature_fEALmt": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/icon_sticker-02.png",
-            "color_config_enable": false,
-            "content": "Shower Timer"
-          }
-        },
-        "feature_QFyMfy": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/icon_sticker-03.png",
-            "color_config_enable": false,
-            "content": "Sunrise Routine"
-          }
-        }
-      },
-      "block_order": [
-        "hostpot_zJ8Ykd",
-        "hostpot_tXcGDe",
-        "hostpot_tzRAj8",
-        "feature_dRCPhf",
-        "feature_fEALmt",
-        "feature_QFyMfy"
-      ],
-      "name": "Show three taps",
-      "settings": {
-        "text_tag_name": "h2",
-        "text_heading": "Don't know where to start?",
-        "font_size_heading": "h5",
-        "text_line_height": 1.2,
-        "text_effect": "split",
-        "text_duration": 1000,
-        "text_heading_width_desktop": 100,
-        "text_heading_width_mobile": 100,
-        "heading_max_width_desktop": 600,
-        "heading_max_width_mobile": 460,
-        "image_dt": "shopify://shop_images/image_5_ae7856fb-9ada-40d0-9e53-99dad1ddf128.png",
-        "aspect_ratio_dt": "1",
-        "image_mb": "shopify://shop_images/image_5_ae7856fb-9ada-40d0-9e53-99dad1ddf128.png",
-        "aspect_ratio_mb": "4/3",
-        "product_card_show_image": true,
-        "product_card_show_secondary_image": false,
-        "product_card_show_price": false,
-        "card_color_scheme": "background-2",
-        "point_type": "click",
-        "point_size": 2.3,
-        "button_text": "Browse Shortcuts Library",
-        "button_link": "shopify://pages/nfc-shortcut-gallery",
-        "button_style": "primary",
-        "button_size": "md",
-        "color_scheme": "background-2",
-        "background_color": "#c87272",
-        "background_gradient": "",
-        "padding_top_desktop": 100,
-        "padding_bottom_desktop": 100,
-        "padding_top_mobile": 100,
-        "padding_bottom_mobile": 100
       }
     },
     "testimonial_style_4_fkDVeW": {
@@ -631,6 +552,155 @@
         "padding_bottom_mobile": 50
       }
     },
+    "image_banner_style_2_Dypq4f": {
+      "type": "image-banner-style-2",
+      "name": "Create your own rituals",
+      "settings": {
+        "layout": "style-2",
+        "background_type": "image",
+        "font_size_heading": "display-1",
+        "heading": "Create your own rituals.",
+        "description": "Customize your own routines for podcasts, reminders, music,or any experience you love via iPhone's ShortCuts App.",
+        "button_text": "Shop TapNest",
+        "button_link": "shopify://pages/nfc-shortcut-gallery",
+        "button_style": "primary",
+        "button_size": "md",
+        "background_image_mobile": "shopify://shop_images/image_81.png",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "shop_the_look_style_1_mW8Mf4": {
+      "type": "shop-the-look-style-1",
+      "blocks": {
+        "hostpot_zJ8Ykd": {
+          "type": "hostpot",
+          "settings": {
+            "timer_delay": 0,
+            "top_dt": 50,
+            "left_dt": 20,
+            "top_mb": 50,
+            "left_mb": 20,
+            "card_type": "shortcut",
+            "product": "",
+            "shortcut_image": "shopify://shop_images/image_91.png",
+            "shortcut_title": "Music",
+            "shortcut_description": "<p>This is the description</p>",
+            "shortcut_button_text": "download",
+            "shortcut_button_link": "shopify://pages/nfc-shortcut-gallery",
+            "placement": "right-top",
+            "hotspot_color": "#c87272"
+          }
+        },
+        "hostpot_tXcGDe": {
+          "type": "hostpot",
+          "settings": {
+            "timer_delay": 1,
+            "top_dt": 50,
+            "left_dt": 50,
+            "top_mb": 50,
+            "left_mb": 50,
+            "card_type": "product",
+            "product": "",
+            "shortcut_title": "",
+            "shortcut_description": "",
+            "shortcut_button_text": "",
+            "shortcut_button_link": "",
+            "placement": "right-top",
+            "hotspot_color": "#c87272"
+          }
+        },
+        "hostpot_tzRAj8": {
+          "type": "hostpot",
+          "settings": {
+            "timer_delay": 2,
+            "top_dt": 50,
+            "left_dt": 80,
+            "top_mb": 50,
+            "left_mb": 80,
+            "card_type": "product",
+            "product": "tapnest",
+            "shortcut_title": "",
+            "shortcut_description": "",
+            "shortcut_button_text": "",
+            "shortcut_button_link": "",
+            "placement": "right-top",
+            "hotspot_color": "#c87272"
+          }
+        },
+        "feature_dRCPhf": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/icon_sticker-01.png",
+            "color_config_enable": false,
+            "content": "Spotify Playlist: Soothing Music"
+          }
+        },
+        "feature_fEALmt": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/icon_sticker-02.png",
+            "color_config_enable": false,
+            "content": "Shower Timer"
+          }
+        },
+        "feature_QFyMfy": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/icon_sticker-03.png",
+            "color_config_enable": false,
+            "content": "Sunrise Routine"
+          }
+        }
+      },
+      "block_order": [
+        "hostpot_zJ8Ykd",
+        "hostpot_tXcGDe",
+        "hostpot_tzRAj8",
+        "feature_dRCPhf",
+        "feature_fEALmt",
+        "feature_QFyMfy"
+      ],
+      "name": "Show three taps",
+      "settings": {
+        "text_tag_name": "h2",
+        "text_heading": "Don't know where to start?",
+        "font_size_heading": "h4",
+        "text_line_height": 1.5,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "heading_max_width_desktop": 600,
+        "heading_max_width_mobile": 350,
+        "image_dt": "shopify://shop_images/image_5_ae7856fb-9ada-40d0-9e53-99dad1ddf128.png",
+        "aspect_ratio_dt": "1",
+        "image_mb": "shopify://shop_images/image_5_ae7856fb-9ada-40d0-9e53-99dad1ddf128.png",
+        "aspect_ratio_mb": "4/3",
+        "product_card_show_image": true,
+        "product_card_show_secondary_image": false,
+        "product_card_show_price": false,
+        "card_color_scheme": "background-2",
+        "point_type": "click",
+        "point_size": 2.5,
+        "button_text": "Browse Shortcuts Library",
+        "button_link": "shopify://pages/nfc-shortcut-gallery",
+        "button_style": "primary",
+        "button_size": "md",
+        "color_scheme": "background-2",
+        "background_color": "#e5e5e5",
+        "background_gradient": "",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 100
+      }
+    },
     "multi_column_style_1_JAGazF": {
       "type": "multi-column-style-1",
       "blocks": {
@@ -673,6 +743,7 @@
         "column_mYL8UJ",
         "column_WYNfNJ"
       ],
+      "disabled": true,
       "name": "Design to elevate",
       "settings": {
         "layout": "style-2",
@@ -692,6 +763,29 @@
         "padding_bottom_desktop": 50,
         "padding_top_mobile": 50,
         "padding_bottom_mobile": 50
+      }
+    },
+    "image_banner_style_2_D3npaz": {
+      "type": "image-banner-style-2",
+      "settings": {
+        "layout": "style-2",
+        "background_type": "image",
+        "font_size_heading": "h2",
+        "heading": "Tap into your moments .",
+        "description": "Loved by +5,000 Customers.  Order Now at 20% Off Early Bird Price.",
+        "button_text": "Shop Early Bird Price",
+        "button_link": "shopify://products/tapnest",
+        "button_style": "primary",
+        "button_size": "lg",
+        "background_image_desktop": "shopify://shop_images/Mist_Clay_1_Crop.jpg",
+        "background_image_mobile": "shopify://shop_images/Mist_Clay_1_Crop.jpg",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
       }
     },
     "collapse_content_PmMV3m": {
@@ -751,29 +845,6 @@
         "padding_bottom_desktop": 90,
         "padding_top_mobile": 50,
         "padding_bottom_mobile": 150
-      }
-    },
-    "image_banner_style_2_D3npaz": {
-      "type": "image-banner-style-2",
-      "settings": {
-        "layout": "style-2",
-        "background_type": "image",
-        "font_size_heading": "h4",
-        "heading": "TapNest.\nTap into your moments .",
-        "description": "Loved by +5,000 Customers. \nOrder Now at 20% Off Early Bird Price.",
-        "button_text": "Shop TapNest Now",
-        "button_link": "shopify://products/tapnest",
-        "button_style": "primary",
-        "button_size": "lg",
-        "background_image_desktop": "shopify://shop_images/Mist_Clay_1_Crop.jpg",
-        "background_image_mobile": "shopify://shop_images/Mist_Clay_1_Crop.jpg",
-        "color_scheme": "",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 0,
-        "padding_bottom_desktop": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0
       }
     },
     "custom_section_EiRJBc": {
@@ -923,6 +994,7 @@
       "block_order": [
         "grid_FVgjTR"
       ],
+      "disabled": true,
       "name": "Feature icons",
       "settings": {
         "width": "global",
@@ -948,7 +1020,7 @@
         "background_type": "image",
         "font_size_heading": "h2",
         "heading": "About Us",
-        "description": "Founded by Product Designers, oora started with a simple frustration: there was never a good place for our phones in the bathroom.\n\nWet countertops, messy sinks, makeup-covered hands — yet we still wanted music, podcasts, tutorials, and little moments of comfort during our routines.\n\nWe realized most tech products felt cold, black, and overly mechanical. They weren’t designed for soft living spaces or intentional daily rituals.\n\nSo we created TapNest — a magnetic bathroom mirror dock that blends lifestyle and technology together.\n\nA softer way to use your phone.\nA calmer way to begin your day.",
+        "description": "Founded by Product Designers Louis.D and Maria H. OORA transforms everyday routines into joyful, beautifully designed rituals through soft technology and thoughtful living.",
         "button_text": "Shop TapNest",
         "button_link": "shopify://products/tapnest",
         "button_style": "primary",
@@ -963,6 +1035,43 @@
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 0
       }
+    },
+    "newsletter_form_xLqPFV": {
+      "type": "newsletter-form",
+      "blocks": {
+        "heading_mteenr": {
+          "type": "heading",
+          "settings": {
+            "heading_size": "h4",
+            "heading": "<p>Subscribe to our emails</p>"
+          }
+        },
+        "sub_heading_TJWpT9": {
+          "type": "sub-heading",
+          "settings": {
+            "sub_heading": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_H8Krbc": {
+          "type": "email-form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_mteenr",
+        "sub_heading_TJWpT9",
+        "email_form_H8Krbc"
+      ],
+      "name": "t:sections.newsletter_form.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
     }
   },
   "order": [
@@ -976,13 +1085,15 @@
     "17798651046e825b57",
     "image_with_text_style_10_KKbrT7",
     "reveal_text_effect_PAWFkF",
+    "video_feedback_WXgbgP",
+    "testimonial_style_4_fkDVeW",
     "image_banner_style_2_Dypq4f",
     "shop_the_look_style_1_mW8Mf4",
-    "testimonial_style_4_fkDVeW",
     "multi_column_style_1_JAGazF",
-    "collapse_content_PmMV3m",
     "image_banner_style_2_D3npaz",
+    "collapse_content_PmMV3m",
     "custom_section_EiRJBc",
-    "image_banner_style_2_Pe67yk"
+    "image_banner_style_2_Pe67yk",
+    "newsletter_form_xLqPFV"
   ]
 }
