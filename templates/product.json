@@ -158,13 +158,64 @@
         "gallery_type": "carousel",
         "media_column": "6",
         "color_scheme": "background-1",
-        "background_color": "",
+        "background_color": "#ffffff",
         "background_gradient": "",
         "padding_top_desktop": 120,
         "padding_bottom_desktop": 136,
         "padding_top_mobile": 100,
         "padding_bottom_mobile": 52
       }
+    },
+    "blocks_xQ4MNJ": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_dba89c2_4bXCxU": {
+          "type": "ai_gen_block_dba89c2",
+          "settings": {
+            "product_image": "shopify://shop_images/08.png",
+            "image_width": 40,
+            "image_border_radius": 8,
+            "title": "GET TAPNEST",
+            "title_size": 36,
+            "description": "As a new startup, OORA hopes to grow with our first batch Users and offers a Special Early Bird Discount.",
+            "description_size": 16,
+            "show_badge": true,
+            "badge_text": "EARLY BIRD PRICE",
+            "badge_background_color": "#10a71f",
+            "badge_text_color": "#ffffff",
+            "show_discount": true,
+            "discount_text": "Save 20% OFF",
+            "discount_size": 24,
+            "discount_color": "#c87272",
+            "show_timer": true,
+            "timer_label": "Ends in:",
+            "end_date": "2026-06-01",
+            "end_time": "23:59:59",
+            "timer_background_color": "#1e1e1e",
+            "timer_text_color": "#ffffff",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_text_size": 16,
+            "button_border_radius": 8,
+            "button_background_color": "#c87272",
+            "button_text_color": "#ffffff",
+            "button_hover_background_color": "#1e1e1e",
+            "button_hover_text_color": "#ffffff",
+            "desktop_width_percent": 100,
+            "padding_vertical": 40,
+            "padding_horizontal": 40,
+            "border_radius": 12,
+            "background_color": "#f6f6f6",
+            "text_color": "#1e1e1e"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_dba89c2_4bXCxU"
+      ],
+      "name": "Product banner",
+      "settings": {}
     },
     "media_video_HU9TKT": {
       "type": "media-video",
@@ -685,7 +736,7 @@
         "font_size": "h1",
         "text": "TapNest",
         "text_highlight": "Text highlight",
-        "text_highlight_color": "#D8C6F1",
+        "text_highlight_color": "#d8c6f1",
         "button_text": "Shop TapNest",
         "button_link": "shopify://products/tapnest",
         "button_style": "primary",
@@ -739,6 +790,7 @@
   },
   "order": [
     "main",
+    "blocks_xQ4MNJ",
     "media_video_HU9TKT",
     "multi_column_style_1_ePNRPr",
     "spacing_eXQ4kN",
