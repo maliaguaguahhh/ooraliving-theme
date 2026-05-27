@@ -14,43 +14,22 @@
       "blocks": {
         "vendor_Fd6fHH": {
           "type": "vendor",
+          "disabled": true,
           "settings": {}
         },
         "bedc5e2d-642d-4448-8569-c7fcfd527042": {
           "type": "title",
           "settings": {}
         },
-        "4dabf9d3-3372-4f5a-9edf-1e1f03527b1b": {
-          "type": "description",
-          "settings": {}
-        },
         "b1d95bc4-490b-4b8c-914a-89b1323d2a43": {
           "type": "price",
           "settings": {}
-        },
-        "inventory_status_PjEGiM": {
-          "type": "inventory_status",
-          "settings": {
-            "low_inventory_threshold": 15,
-            "show_inventory_count": "low-inventory-threshold",
-            "color_in_stock": "#10a71f",
-            "color_out_stock": "#da1e28"
-          }
         },
         "ca89121c-8974-4f5c-852d-875abeb6041c": {
           "type": "variants",
           "settings": {
             "variant_style": "radio",
             "variant_color_style": "color"
-          }
-        },
-        "countdown_timer_gRAAct": {
-          "type": "countdown_timer",
-          "settings": {
-            "heading": "New Release",
-            "sub_heading": "Early Bird Price",
-            "background_color": "#0F61FF",
-            "text_color": "#ffffff"
           }
         },
         "ae0ed4c8-948a-46c7-b292-5f2687b8c94e": {
@@ -76,6 +55,24 @@
             "highlight_position": "aside"
           }
         },
+        "inventory_status_PjEGiM": {
+          "type": "inventory_status",
+          "settings": {
+            "low_inventory_threshold": 15,
+            "show_inventory_count": "low-inventory-threshold",
+            "color_in_stock": "#10a71f",
+            "color_out_stock": "#da1e28"
+          }
+        },
+        "countdown_timer_gRAAct": {
+          "type": "countdown_timer",
+          "settings": {
+            "heading": "New Release",
+            "sub_heading": "Early Bird Price",
+            "background_color": "#0F61FF",
+            "text_color": "#ffffff"
+          }
+        },
         "volume_discount_UarJ87": {
           "type": "volume_discount",
           "settings": {
@@ -99,6 +96,10 @@
             "highlight_text_color": "#ffffff",
             "highlight_position": "aside"
           }
+        },
+        "4dabf9d3-3372-4f5a-9edf-1e1f03527b1b": {
+          "type": "description",
+          "settings": {}
         },
         "ebe1dbeb-d8fc-4f0c-9d34-fc7892bde207": {
           "type": "collapse",
@@ -136,14 +137,14 @@
       "block_order": [
         "vendor_Fd6fHH",
         "bedc5e2d-642d-4448-8569-c7fcfd527042",
-        "4dabf9d3-3372-4f5a-9edf-1e1f03527b1b",
         "b1d95bc4-490b-4b8c-914a-89b1323d2a43",
-        "inventory_status_PjEGiM",
         "ca89121c-8974-4f5c-852d-875abeb6041c",
-        "countdown_timer_gRAAct",
         "ae0ed4c8-948a-46c7-b292-5f2687b8c94e",
         "volume_discount_nNQCrE",
+        "inventory_status_PjEGiM",
+        "countdown_timer_gRAAct",
         "volume_discount_UarJ87",
+        "4dabf9d3-3372-4f5a-9edf-1e1f03527b1b",
         "ebe1dbeb-d8fc-4f0c-9d34-fc7892bde207",
         "collapse_cRztXf",
         "collapse_Q7Fhxe",
@@ -162,8 +163,8 @@
         "background_gradient": "",
         "padding_top_desktop": 120,
         "padding_bottom_desktop": 136,
-        "padding_top_mobile": 100,
-        "padding_bottom_mobile": 52
+        "padding_top_mobile": 80,
+        "padding_bottom_mobile": 50
       }
     },
     "blocks_xQ4MNJ": {
@@ -175,7 +176,7 @@
             "product_image": "shopify://shop_images/08.png",
             "image_width": 40,
             "image_border_radius": 8,
-            "title": "GET TAPNEST",
+            "title": "EARLY BIRD CALLING",
             "title_size": 36,
             "description": "As a new startup, OORA hopes to grow with our first batch Users and offers a Special Early Bird Discount.",
             "description_size": 16,
@@ -193,7 +194,7 @@
             "end_time": "23:59:59",
             "timer_background_color": "#1e1e1e",
             "timer_text_color": "#ffffff",
-            "button_text": "Shop Now",
+            "button_text": "Shop Early Bird Price $39.99",
             "button_link": "",
             "button_text_size": 16,
             "button_border_radius": 8,
@@ -217,22 +218,78 @@
       "name": "Product banner",
       "settings": {}
     },
-    "media_video_HU9TKT": {
-      "type": "media-video",
-      "name": "t:sections.media_video.presets.name",
+    "video_feedback_4EeFed": {
+      "type": "video-feedback",
+      "blocks": {
+        "video_HbbMxN": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Weixin Image_20260514152822_1069_711.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        },
+        "video_CizQ7j": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        },
+        "video_TiJmrd": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        },
+        "video_NXKEWR": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        },
+        "video_jijbjn": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        }
+      },
+      "block_order": [
+        "video_HbbMxN",
+        "video_CizQ7j",
+        "video_TiJmrd",
+        "video_NXKEWR",
+        "video_jijbjn"
+      ],
+      "name": "t:sections.video_feedback.name",
       "settings": {
-        "layout": "full-width",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/Weixin Image_20260514152822_1069_711.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "video_alt_text": "TapNest Experience",
+        "text_tag_name": "h2",
+        "text_heading": "How we use TapNest",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "active_index": 2,
+        "autoplay": "off",
+        "autoplay_speed": 5000,
+        "enable_pagination": true,
+        "enable_navigation": true,
         "color_scheme": "",
         "background_color": "",
         "background_gradient": "",
-        "padding_top_desktop": 0,
-        "padding_bottom_desktop": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
       }
     },
     "multi_column_style_1_ePNRPr": {
@@ -394,7 +451,7 @@
                 "desktop_col_span": 1,
                 "desktop_row_span": 2,
                 "mobile_col_span": 1,
-                "mobile_row_span": 2
+                "mobile_row_span": 1
               },
               "blocks": {
                 "service_bU88A6": {
@@ -791,7 +848,7 @@
   "order": [
     "main",
     "blocks_xQ4MNJ",
-    "media_video_HU9TKT",
+    "video_feedback_4EeFed",
     "multi_column_style_1_ePNRPr",
     "spacing_eXQ4kN",
     "multi_column_style_1_zMJcpM",
