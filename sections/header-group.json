@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Limited Time:20% Off Early Bird Price</p>",
+            "text": "<p>BUY NOW: 20% Off Early Bird Price</p>",
             "link": "shopify://products/tapnest"
           }
         }
@@ -54,7 +54,7 @@
         "secondary_menu": "",
         "menu_type": "default",
         "event_type": "click",
-        "logo_transparent": "shopify://shop_images/oora_logo_Black_1x_6c567220-494c-4650-abe9-e654de1e5d3b.png",
+        "logo_transparent": "shopify://shop_images/oora_logo_White_2x_d164b2aa-10ad-4d19-b0bf-76b00a15b5c8.png",
         "logo_sticky": "shopify://shop_images/oora_logo_Black_1x_6c567220-494c-4650-abe9-e654de1e5d3b.png",
         "logo_width_desktop": 100,
         "logo_width_mobile": 70,

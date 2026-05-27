@@ -14,7 +14,7 @@
       "custom_css": [],
       "settings": {
         "layout": "style-2",
-        "background_type": "video",
+        "background_type": "image",
         "font_size_heading": "display-2",
         "heading": "TapNest",
         "description": "Your phone finally has a place in your bathroom.",
@@ -107,6 +107,69 @@
         "padding_bottom_mobile": 50
       }
     },
+    "multi_column_style_1_Htrxjp": {
+      "type": "multi-column-style-1",
+      "blocks": {
+        "column_yBeMwC": {
+          "type": "column",
+          "settings": {
+            "image_first": "shopify://shop_images/1.png",
+            "aspect_ratio_first": "auto",
+            "hover_type": "image",
+            "aspect_ratio_second": "auto",
+            "title": "<h5>One simple tap starts your favorite apps. With 3 customizable NFC tap spots, your routine launch instantly without you ever having to navigate any menu.</h5>",
+            "enable_overlay": "on"
+          }
+        },
+        "column_yxyPmm": {
+          "type": "column",
+          "settings": {
+            "image_first": "shopify://shop_images/image_51.png",
+            "aspect_ratio_first": "auto",
+            "hover_type": "image",
+            "aspect_ratio_second": "auto",
+            "title": "<h5>Magnetic security in a click. <br/>Keep your phone high, dry, and perfectly angled away from wet, messy sink edges.</h5>",
+            "enable_overlay": "on"
+          }
+        },
+        "column_YqMdeM": {
+          "type": "column",
+          "settings": {
+            "image_first": "shopify://shop_images/image_61.png",
+            "aspect_ratio_first": "auto",
+            "hover_type": "image",
+            "aspect_ratio_second": "auto",
+            "title": "<h5>Sink into your ritual, enjoy seamless music and video without ever touching your screen with wet or messy fingers.</h5>",
+            "enable_overlay": "on"
+          }
+        }
+      },
+      "block_order": [
+        "column_yBeMwC",
+        "column_yxyPmm",
+        "column_YqMdeM"
+      ],
+      "name": "t:sections.multi_column_style_1.presets.name",
+      "settings": {
+        "layout": "style-1",
+        "column": "3",
+        "text_tag_name": "h2",
+        "text_heading": "Tap, Snap, Flow.",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 75,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "color_scheme": "background-2",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
     "hero_carousel_ntRjDd": {
       "type": "hero-carousel",
       "blocks": {
@@ -140,7 +203,7 @@
           "type": "image",
           "settings": {
             "heading": "3. Flow",
-            "description": "<p>Follow your ritual. <br/>Enjoy seamless music and video without ever touching your screen with wet or messy fingers.</p>",
+            "description": "<p>Sink into your ritual, enjoy seamless music and video without ever touching your screen with wet or messy fingers.</p>",
             "button_text": "Get TapNest",
             "button_link": "shopify://collections/all",
             "button_style": "primary",
@@ -155,6 +218,7 @@
         "image_CxBzLD",
         "image_NaEnqy"
       ],
+      "disabled": true,
       "name": "Tap Snap Flow",
       "settings": {
         "layout": "style-1",
@@ -176,17 +240,8 @@
           "type": "title",
           "settings": {}
         },
-        "description_6bKfDc": {
-          "type": "description",
-          "disabled": true,
-          "settings": {}
-        },
         "price_RdgQnr": {
           "type": "price",
-          "settings": {}
-        },
-        "quantity_picker_B4YTyH": {
-          "type": "quantity_picker",
           "settings": {}
         },
         "variants_hVq83B": {
@@ -202,15 +257,24 @@
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": false
           }
+        },
+        "quantity_picker_B4YTyH": {
+          "type": "quantity_picker",
+          "settings": {}
+        },
+        "description_6bKfDc": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
         }
       },
       "block_order": [
         "title_WnLWNk",
-        "description_6bKfDc",
         "price_RdgQnr",
-        "quantity_picker_B4YTyH",
         "variants_hVq83B",
-        "buy_button_88TAkd"
+        "buy_button_88TAkd",
+        "quantity_picker_B4YTyH",
+        "description_6bKfDc"
       ],
       "name": "t:sections.featured_product_special.presets.name",
       "settings": {
@@ -924,6 +988,7 @@
     "image_banner_style_2_x4qhp6",
     "carousel_text_V4Lwdi",
     "image_with_text_style_9_6fNkq3",
+    "multi_column_style_1_Htrxjp",
     "hero_carousel_ntRjDd",
     "featured_product_special_Vq8L67",
     "image_with_text_style_1_pKned4",

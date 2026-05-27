@@ -17,6 +17,8 @@
     "heading_4_scale": 100,
     "heading_5_scale": 100,
     "heading_6_scale": 100,
+    "heading_6_line_height": 1.3,
+    "mobile_heading_6_line_height": 1.3,
     "type_body_font": "dm_sans_n4",
     "body_scale": 100,
     "enable_border_radius": true,
