@@ -447,9 +447,9 @@
             "column_NiywmD": {
               "type": "column",
               "settings": {
-                "device": "mobile",
+                "device": "desktop",
                 "desktop_col_span": 1,
-                "desktop_row_span": 2,
+                "desktop_row_span": 1,
                 "mobile_col_span": 1,
                 "mobile_row_span": 1
               },
@@ -461,7 +461,7 @@
                     "color_config_enable": false,
                     "heading": "<p><strong>Snap without Thinking</strong></p>",
                     "heading_link": "",
-                    "content": "<p>Magsafe-style placement makes docking easy, clean and intuitive. No more balancing your phone on wet counters.</p>",
+                    "content": "<p>Magsafe-style placement makes docking easy, clean and intuitive. </p>",
                     "alignment": "center",
                     "inherit_color_schema": false,
                     "color_schema_box": "background-1"
