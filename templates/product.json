@@ -786,28 +786,6 @@
         "padding_bottom_mobile": 50
       }
     },
-    "hero_showcase_YHkncr": {
-      "type": "hero-showcase",
-      "name": "t:sections.hero_showcase.name",
-      "settings": {
-        "font_size": "h1",
-        "text": "TapNest",
-        "text_highlight": "Text highlight",
-        "text_highlight_color": "#d8c6f1",
-        "button_text": "Shop TapNest",
-        "button_link": "shopify://products/tapnest",
-        "button_style": "primary",
-        "button_size": "md",
-        "image_mobile": "shopify://shop_images/Weixin_Image_20260526203651_208_17.jpg",
-        "color_scheme": "",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 50,
-        "padding_bottom_desktop": 50,
-        "padding_top_mobile": 50,
-        "padding_bottom_mobile": 50
-      }
-    },
     "gallery_style_1_nQ8VYH": {
       "type": "gallery-style-1",
       "blocks": {
@@ -855,7 +833,6 @@
     "custom_section_pM4t7C",
     "collapse_content_3mHbKF",
     "main_product_recommendations_TnWBYD",
-    "hero_showcase_YHkncr",
     "gallery_style_1_nQ8VYH"
   ]
 }
