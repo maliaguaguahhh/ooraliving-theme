@@ -435,6 +435,7 @@
         "aspect_ratio_desktop": "21/9",
         "aspect_ratio_mobile": "1",
         "enable_video_looping": true,
+        "video_url": "",
         "button_text": "Button",
         "button_link": "shopify://products/tapnest",
         "button_style": "primary",
