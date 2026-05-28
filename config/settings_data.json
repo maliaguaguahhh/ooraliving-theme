@@ -10,7 +10,7 @@
 {
   "current": {
     "logo_size": 90,
-    "type_header_font": "montserrat_n6",
+    "type_header_font": "poppins_n7",
     "heading_1_scale": 100,
     "heading_2_scale": 100,
     "heading_3_scale": 100,
@@ -19,7 +19,7 @@
     "heading_6_scale": 100,
     "heading_6_line_height": 1.3,
     "mobile_heading_6_line_height": 1.3,
-    "type_body_font": "dm_sans_n4",
+    "type_body_font": "poppins_n4",
     "body_scale": 100,
     "enable_border_radius": true,
     "page_width": 1920,
@@ -164,7 +164,7 @@
           "light_button_label": "#1e1e1e",
           "badge_sale_background": "#eb001b",
           "badge_sale_label": "#ffffff",
-          "badge_new_background": "#c87272",
+          "badge_new_background": "#c99fa3",
           "badge_new_label": "#ffffff",
           "badge_sold_out_background": "#ffffff",
           "badge_sold_out_label": "#4d4d4d",
