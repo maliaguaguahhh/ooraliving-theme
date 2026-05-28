@@ -306,6 +306,66 @@
         {% endif %}
       </xo-carousel>
     </xo-gallery>
+    <!-- Scroll Progress Bar -->
+<div class="fpm-progress-wrap">
+  <div class="fpm-progress-bar">
+    <div class="fpm-progress-fill"></div>
+  </div>
+</div>
+
+<style>
+  .fpm-progress-wrap {
+    padding: 8px 0 2px;
+  }
+  .fpm-progress-bar {
+    height: 2px;
+    background: rgba(0,0,0,0.12);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .fpm-progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #222;
+    border-radius: 2px;
+    transition: width 0.25s ease;
+  }
+</style>
+
+<script>
+  (() => {
+    function initProgressBar() {
+      const gallery = document.querySelector('.featured-product-media');
+      if (!gallery) return;
+
+      const fill = gallery.querySelector('.fpm-progress-fill');
+      const carousel = gallery.querySelector('xo-carousel');
+      if (!fill || !carousel) return;
+
+      function updateBar(index, total) {
+        const pct = total > 1 ? (index / (total - 1)) * 100 : 100;
+        fill.style.width = pct + '%';
+      }
+
+      // Listen for slide change events on the carousel
+      carousel.addEventListener('xo:slide-change', (e) => {
+        const slides = carousel.querySelectorAll('xo-carousel-slide');
+        updateBar(e.detail?.index ?? 0, slides.length);
+      });
+
+      // Set initial state
+      const slides = carousel.querySelectorAll('xo-carousel-slide');
+      updateBar(0, slides.length);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initProgressBar);
+    } else {
+      initProgressBar();
+    }
+  })();
+</script>
+
   </xo-product-will-change>
 </div>
 
