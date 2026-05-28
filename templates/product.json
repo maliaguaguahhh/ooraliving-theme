@@ -108,18 +108,18 @@
             "collapse_content": "<p><strong>Designed for the bathroom mirror</strong></p><p>TapNest is the world’s first magnetic phone dock designed specifically for bathroom routines — keeping your phone elevated, visible, and hands-free exactly where you use it most.</p><p><strong>Magnetic snap-on experience</strong></p><p>Built for MagSafe-compatible iPhones and cases. Simply snap your phone into place for an effortless one-handed docking experience.</p><p><strong>Integrated NFC shortcuts</strong></p><p>Features 3 built-in NFC touch points that let you instantly launch playlists, podcasts, meditation, reminders, beauty tutorials, and more with a simple tap.</p><p><strong>Create your own rituals</strong></p><p>Customize your own NFC routines using Apple Shortcuts. From shower karaoke to morning affirmations, TapNest helps turn everyday habits into intentional moments.</p><p><strong>Soft-tech aesthetic</strong></p><p>Unlike traditional black, industrial-looking phone mounts, TapNest blends soft colors, rounded forms, and lifestyle-focused design into your space beautifully.</p><p><strong>Made for humid environments</strong></p><p>Designed for everyday bathroom conditions including humidity and light splashes. Best installed on mirrors, glass, tile, or other smooth surfaces.</p><p><strong>Compatibility</strong></p><ul><li>Compatible with MagSafe iPhones and MagSafe cases</li><li>NFC functionality depends on iPhone model and iOS settings</li><li>Not recommended for textured walls or painted drywall surfaces</li></ul><p><strong>What’s included</strong></p><ul><li>1 × OORA TapNest</li><li>Adhesive mounting system</li><li>NFC quick-start guide</li><li>OORA ritual setup inspiration card</li></ul>"
           }
         },
-        "collapse_cRztXf": {
-          "type": "collapse",
-          "settings": {
-            "collapse_text": "Materials",
-            "collapse_content": "<p>High-Grade Plastics: Durable and resistant to wear and tear in bathroom environment,<br/>Rubber: Ensures stability and friction for Phone docking.</p>"
-          }
-        },
         "collapse_Q7Fhxe": {
           "type": "collapse",
           "settings": {
             "collapse_text": "Shipping & returns",
             "collapse_content": "<p>Quick Dispatch: Orders shipped within 1-2 business days.<br/>Express Delivery: Available for an additional charge.<br/>14-Day Return Policy: Easy returns for a full refund or exchange.<br/>Return Shipping: Complimentary for defective or damaged items.</p>"
+          }
+        },
+        "collapse_cRztXf": {
+          "type": "collapse",
+          "settings": {
+            "collapse_text": "Can my phone work?",
+            "collapse_content": "<p>High-Grade Plastics: Durable and resistant to wear and tear in bathroom environment,<br/>Rubber: Ensures stability and friction for Phone docking.</p>"
           }
         },
         "collapse_mdKxAA": {
@@ -146,8 +146,8 @@
         "volume_discount_UarJ87",
         "4dabf9d3-3372-4f5a-9edf-1e1f03527b1b",
         "ebe1dbeb-d8fc-4f0c-9d34-fc7892bde207",
-        "collapse_cRztXf",
         "collapse_Q7Fhxe",
+        "collapse_cRztXf",
         "collapse_mdKxAA",
         "line_nB8MEt"
       ],
@@ -352,6 +352,248 @@
         "padding_bottom_mobile": 50
       }
     },
+    "custom_section_a3aWXb": {
+      "type": "custom-section",
+      "blocks": {
+        "grid_RNtJK3": {
+          "type": "grid",
+          "settings": {
+            "device": "desktop",
+            "desktop_col": 3,
+            "tablet_col": 2,
+            "mobile_col": 1,
+            "gap": "global",
+            "col_gap_custom_desktop": 20,
+            "col_gap_custom_mobile": 14,
+            "row_gap_custom_desktop": 20,
+            "row_gap_custom_mobile": 14,
+            "fixed_row": false,
+            "auto_row": 20
+          },
+          "blocks": {
+            "column_hdUBFM": {
+              "type": "column",
+              "settings": {
+                "device": "desktop",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "text_F6ni6n": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text_tag_name": "h2",
+                    "text_heading": "Tap, Snap, Flow",
+                    "font_size_heading": "h5",
+                    "text_line_height": 1.2,
+                    "text_effect": "split",
+                    "text_duration": 1000,
+                    "text_heading_width_desktop": 100,
+                    "text_heading_width_mobile": 100,
+                    "alignment": "left",
+                    "padding_top_dt": 0,
+                    "padding_bottom_dt": 0,
+                    "padding_top_mb": 0,
+                    "padding_bottom_mb": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_F6ni6n"
+              ]
+            },
+            "divider_q7q7Fj": {
+              "type": "divider",
+              "name": "t:blocks.divider.presets.name",
+              "settings": {
+                "text": "",
+                "divider_width": 100,
+                "divider_weight": 1,
+                "divider_style": "solid"
+              },
+              "blocks": {}
+            },
+            "column_4FnCXk": {
+              "type": "column",
+              "settings": {
+                "device": "mobile",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "information_with_image_cAPrM3": {
+                  "type": "information-with-image",
+                  "name": "t:blocks.information_with_image.presets.name",
+                  "settings": {
+                    "caption": "",
+                    "sub_heading": "",
+                    "heading": "",
+                    "aspect_ratio_desktop": "16/9",
+                    "aspect_ratio_mobile": "2/3"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "information_with_image_cAPrM3"
+              ]
+            }
+          },
+          "block_order": [
+            "column_hdUBFM",
+            "divider_q7q7Fj",
+            "column_4FnCXk"
+          ]
+        }
+      },
+      "block_order": [
+        "grid_RNtJK3"
+      ],
+      "name": "t:sections.custom_section.presets.name",
+      "settings": {
+        "width": "global",
+        "custom_width": 1400,
+        "height": "auto",
+        "custom_height": 50,
+        "container_gap": "global",
+        "container_gap_desktop": 30,
+        "container_gap_mobile": 20,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "custom_section_jKppML": {
+      "type": "custom-section",
+      "blocks": {
+        "grid_FexpMw": {
+          "type": "grid",
+          "settings": {
+            "device": "desktop",
+            "desktop_col": 3,
+            "tablet_col": 2,
+            "mobile_col": 1,
+            "gap": "global",
+            "col_gap_custom_desktop": 20,
+            "col_gap_custom_mobile": 14,
+            "row_gap_custom_desktop": 20,
+            "row_gap_custom_mobile": 14,
+            "fixed_row": false,
+            "auto_row": 20
+          },
+          "blocks": {
+            "column_YXGmJJ": {
+              "type": "column",
+              "settings": {
+                "device": "desktop",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "text_CK6caX": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text_tag_name": "h2",
+                    "text_heading": "Easy Installation",
+                    "font_size_heading": "h5",
+                    "text_line_height": 1.2,
+                    "text_effect": "split",
+                    "text_duration": 1000,
+                    "text_heading_width_desktop": 100,
+                    "text_heading_width_mobile": 100,
+                    "alignment": "left",
+                    "padding_top_dt": 0,
+                    "padding_bottom_dt": 0,
+                    "padding_top_mb": 0,
+                    "padding_bottom_mb": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_CK6caX"
+              ]
+            },
+            "divider_eEtihD": {
+              "type": "divider",
+              "name": "t:blocks.divider.presets.name",
+              "settings": {
+                "text": "",
+                "divider_width": 100,
+                "divider_weight": 1,
+                "divider_style": "solid"
+              },
+              "blocks": {}
+            },
+            "column_yxPaHk": {
+              "type": "column",
+              "settings": {
+                "device": "mobile",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "information_with_image_nGNHtt": {
+                  "type": "information-with-image",
+                  "name": "t:blocks.information_with_image.presets.name",
+                  "settings": {
+                    "caption": "",
+                    "sub_heading": "",
+                    "heading": "",
+                    "aspect_ratio_desktop": "16/9",
+                    "aspect_ratio_mobile": "2/3"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "information_with_image_nGNHtt"
+              ]
+            }
+          },
+          "block_order": [
+            "column_YXGmJJ",
+            "divider_eEtihD",
+            "column_yxPaHk"
+          ]
+        }
+      },
+      "block_order": [
+        "grid_FexpMw"
+      ],
+      "name": "t:sections.custom_section.presets.name",
+      "settings": {
+        "width": "fill",
+        "custom_width": 1400,
+        "height": "auto",
+        "custom_height": 50,
+        "container_gap": "global",
+        "container_gap_desktop": 30,
+        "container_gap_mobile": 20,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
     "video_feedback_4EeFed": {
       "type": "video-feedback",
       "blocks": {
@@ -469,6 +711,7 @@
         "column_nwH8ag",
         "column_XPMn3z"
       ],
+      "disabled": true,
       "settings": {
         "layout": "style-2",
         "column": "3",
@@ -531,75 +774,13 @@
         "column_TLdrkB",
         "column_EKjUNM"
       ],
+      "disabled": true,
       "name": "t:sections.multi_column_style_1.presets.name",
       "settings": {
         "layout": "style-1",
         "column": "3",
         "text_tag_name": "h2",
         "text_heading": "Easy Installation",
-        "font_size_heading": "h5",
-        "text_line_height": 1.2,
-        "text_effect": "split",
-        "text_duration": 75,
-        "text_heading_width_desktop": 100,
-        "text_heading_width_mobile": 100,
-        "color_scheme": "",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 50,
-        "padding_bottom_desktop": 50,
-        "padding_top_mobile": 50,
-        "padding_bottom_mobile": 50
-      }
-    },
-    "multi_column_style_1_8fAFqN": {
-      "type": "multi-column-style-1",
-      "blocks": {
-        "column_LGyXm9": {
-          "type": "column",
-          "settings": {
-            "image_first": "shopify://shop_images/image_91.png",
-            "aspect_ratio_first": "3/4",
-            "hover_type": "image",
-            "image_second": "shopify://shop_images/image_91.png",
-            "aspect_ratio_second": "3/4",
-            "title": "",
-            "enable_overlay": "off"
-          }
-        },
-        "column_B9VAE3": {
-          "type": "column",
-          "settings": {
-            "image_first": "shopify://shop_images/image_10.png",
-            "aspect_ratio_first": "3/4",
-            "hover_type": "image",
-            "aspect_ratio_second": "3/4",
-            "title": "",
-            "enable_overlay": "off"
-          }
-        },
-        "column_KhDbR4": {
-          "type": "column",
-          "settings": {
-            "aspect_ratio_first": "3/4",
-            "hover_type": "image",
-            "aspect_ratio_second": "3/4",
-            "title": "",
-            "enable_overlay": "off"
-          }
-        }
-      },
-      "block_order": [
-        "column_LGyXm9",
-        "column_B9VAE3",
-        "column_KhDbR4"
-      ],
-      "name": "Design to elevate",
-      "settings": {
-        "layout": "style-2",
-        "column": "3",
-        "text_tag_name": "h2",
-        "text_heading": "Designed to Elevate",
         "font_size_heading": "h5",
         "text_line_height": 1.2,
         "text_effect": "split",
@@ -722,6 +903,69 @@
         "ai_gen_block_9fc1d9b_KkHBtf"
       ],
       "settings": {}
+    },
+    "multi_column_style_1_8fAFqN": {
+      "type": "multi-column-style-1",
+      "blocks": {
+        "column_LGyXm9": {
+          "type": "column",
+          "settings": {
+            "image_first": "shopify://shop_images/image_91.png",
+            "aspect_ratio_first": "3/4",
+            "hover_type": "image",
+            "image_second": "shopify://shop_images/image_91.png",
+            "aspect_ratio_second": "3/4",
+            "title": "",
+            "enable_overlay": "off"
+          }
+        },
+        "column_B9VAE3": {
+          "type": "column",
+          "settings": {
+            "image_first": "shopify://shop_images/image_10.png",
+            "aspect_ratio_first": "3/4",
+            "hover_type": "image",
+            "aspect_ratio_second": "3/4",
+            "title": "",
+            "enable_overlay": "off"
+          }
+        },
+        "column_KhDbR4": {
+          "type": "column",
+          "settings": {
+            "aspect_ratio_first": "3/4",
+            "hover_type": "image",
+            "aspect_ratio_second": "3/4",
+            "title": "",
+            "enable_overlay": "off"
+          }
+        }
+      },
+      "block_order": [
+        "column_LGyXm9",
+        "column_B9VAE3",
+        "column_KhDbR4"
+      ],
+      "name": "Design to elevate",
+      "settings": {
+        "layout": "style-2",
+        "column": "3",
+        "text_tag_name": "h2",
+        "text_heading": "Designed to Elevate",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 75,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
     },
     "testimonial_style_3_KpGLtd": {
       "type": "testimonial-style-3",
@@ -1121,6 +1365,7 @@
         "collapse_qPUzBX",
         "collapse_6TLTRi"
       ],
+      "disabled": true,
       "settings": {
         "font_size_heading": "h4",
         "heading": "<p>Frequently Asked <br/>Questions</p>",
@@ -1199,11 +1444,13 @@
     "main",
     "blocks_xQ4MNJ",
     "custom_section_CgqbtL",
+    "custom_section_a3aWXb",
+    "custom_section_jKppML",
     "video_feedback_4EeFed",
     "multi_column_style_1_ePNRPr",
     "multi_column_style_1_zMJcpM",
-    "multi_column_style_1_8fAFqN",
     "1779938978cf3e0fbb",
+    "multi_column_style_1_8fAFqN",
     "testimonial_style_3_KpGLtd",
     "custom_section_pM4t7C",
     "collapse_content_3mHbKF",
