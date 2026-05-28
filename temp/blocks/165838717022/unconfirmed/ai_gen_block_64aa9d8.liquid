@@ -1,6 +1,235 @@
+{% doc %}
+  @prompt
+    Add a horizontal scroll progress bar underneath the product image in the featured product section. The progress bar should visually indicate horizontal scroll progress, styled to match the store's aesthetic — thin, minimal bar that fills from left to right as the user scrolls horizontally through the image gallery.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-scroll-progress-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-top: {{ block.settings.spacing_top }}px;
+  }
+
+  .ai-scroll-progress-track-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.bar_height }}px;
+    background-color: {{ block.settings.track_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-scroll-progress-bar-{{ ai_gen_id }} {
+    height: 100%;
+    width: 0%;
+    background-color: {{ block.settings.bar_color }};
+    transition: width 0.1s ease-out;
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-scroll-progress-{{ ai_gen_id }} {
+      margin-top: {{ block.settings.spacing_top_mobile }}px;
+    }
+  }
+{% endstyle %}
+
+<horizontal-scroll-progress-{{ ai_gen_id }}
+  class="ai-scroll-progress-{{ ai_gen_id }}"
+  data-target-selector="{{ block.settings.target_selector }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-scroll-progress-track-{{ ai_gen_id }}">
+    <div class="ai-scroll-progress-bar-{{ ai_gen_id }}"></div>
+  </div>
+</horizontal-scroll-progress-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class HorizontalScrollProgress{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.progressBar = null;
+        this.scrollContainer = null;
+        this.targetSelector = '';
+      }
+
+      connectedCallback() {
+        this.progressBar = this.querySelector('.ai-scroll-progress-bar-{{ ai_gen_id }}');
+        this.targetSelector = this.dataset.targetSelector;
+        
+        if (this.targetSelector) {
+          this.scrollContainer = document.querySelector(this.targetSelector);
+        }
+
+        if (!this.scrollContainer) {
+          this.scrollContainer = this.findNearestScrollableParent();
+        }
+
+        if (this.scrollContainer) {
+          this.setupScrollListener();
+        }
+      }
+
+      findNearestScrollableParent() {
+        const commonSelectors = [
+          '.product__media-wrapper',
+          '.product-media-container',
+          '.product__media-list',
+          '[data-media-gallery]',
+          '.media-gallery',
+          '.product-gallery',
+          '.slider',
+          '.flickity-viewport',
+          '.swiper-wrapper'
+        ];
+
+        for (const selector of commonSelectors) {
+          const element = document.querySelector(selector);
+          if (element && this.isScrollable(element)) {
+            return element;
+          }
+        }
+
+        let parent = this.parentElement;
+        while (parent && parent !== document.body) {
+          if (this.isScrollable(parent)) {
+            return parent;
+          }
+          parent = parent.parentElement;
+        }
+
+        return null;
+      }
+
+      isScrollable(element) {
+        const hasHorizontalScrollbar = element.scrollWidth > element.clientWidth;
+        const overflowX = window.getComputedStyle(element).overflowX;
+        return hasHorizontalScrollbar && (overflowX === 'scroll' || overflowX === 'auto');
+      }
+
+      setupScrollListener() {
+        this.updateProgress();
+        
+        this.scrollContainer.addEventListener('scroll', () => {
+          this.updateProgress();
+        });
+
+        const resizeObserver = new ResizeObserver(() => {
+          this.updateProgress();
+        });
+        resizeObserver.observe(this.scrollContainer);
+      }
+
+      updateProgress() {
+        if (!this.scrollContainer || !this.progressBar) return;
+
+        const scrollLeft = this.scrollContainer.scrollLeft;
+        const scrollWidth = this.scrollContainer.scrollWidth;
+        const clientWidth = this.scrollContainer.clientWidth;
+        const maxScroll = scrollWidth - clientWidth;
+
+        if (maxScroll <= 0) {
+          this.progressBar.style.width = '100%';
+          return;
+        }
+
+        const progress = (scrollLeft / maxScroll) * 100;
+        this.progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
+      }
+
+      disconnectedCallback() {
+        if (this.scrollContainer) {
+          this.scrollContainer.removeEventListener('scroll', this.updateProgress);
+        }
+      }
+    }
+
+    customElements.define('horizontal-scroll-progress-{{ ai_gen_id }}', HorizontalScrollProgress{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Scroll progress bar",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Target"
+    },
+    {
+      "type": "text",
+      "id": "target_selector",
+      "label": "Target selector",
+      "info": "CSS selector for the scrollable container (e.g., .product__media-wrapper). Leave empty to auto-detect."
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "bar_height",
+      "label": "Bar height",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "track_color",
+      "label": "Track color",
+      "default": "#e5e5e5"
+    },
+    {
+      "type": "color",
+      "id": "bar_color",
+      "label": "Progress color",
+      "default": "#c87272"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "spacing_top",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "spacing_top_mobile",
+      "label": "Top spacing mobile",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scroll progress bar"
+    }
+  ]
+}
 {% endschema %}
