@@ -1,6 +1,737 @@
+{% doc %}
+  @prompt
+    Create a new Shopify Liquid section called "Hero Carousel Swipe" — a full-screen horizontal swipe carousel using CSS scroll-snap and native touch scrolling only. No scroll-jacking, no wheel event overrides, no scroll-lock JavaScript.
+    
+    SLIDE LAYOUT:
+    - Full viewport height (100vh) slides with full-bleed background image or video
+    - Middle-left: body text in white, semi-transparent
+    - Mid-left: rounded pill CTA button in muted dusty rose color (#B07878)
+    - Bottom-left: very large bold white slide number + title (e.g. "3. Flow"), font size 80-100px
+    - All text overlaid on top of the media
+    
+    HORIZONTAL SCROLL:
+    - Container: display flex, flex-direction row, overflow-x scroll, overflow-y hidden
+    - scroll-snap-type: x mandatory
+    - scroll-snap-align: start on each slide
+    - Hide scrollbar: scrollbar-width none + ::-webkit-scrollbar display none
+    - -webkit-overflow-scrolling: touch
+    - Each slide: flex 0 0 100%, width 100%, height 100vh
+    
+    PROGRESS INDICATOR:
+    - Single thin pill progress bar (NOT dots), overlaid on media, bottom-center
+    - Position: absolute, bottom 24px, horizontally centered
+    - Track: 140px wide, 5px tall, border-radius 999px, background rgba(255,255,255,0.35)
+    - Fill: grows left to right, color #B07878, smooth CSS transition
+    - Updates via JS scroll event: fill width = scrollLeft / (scrollWidth - offsetWidth) * 100%
+    - z-index above slides
+    
+    SCHEMA per slide block:
+    - Background image picker
+    - Optional video URL
+    - Slide number + title text
+    - Body text
+    - Button label + link
+    - Text color option (default white)
+    
+    Mobile-first, also works on desktop.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-hero-carousel-{{ ai_gen_id }} {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .ai-hero-carousel__container-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    height: 100%;
+    width: 100%;
+  }
+
+  .ai-hero-carousel__container-{{ ai_gen_id }}::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ai-hero-carousel__slide-{{ ai_gen_id }} {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .ai-hero-carousel__media-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .ai-hero-carousel__video-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .ai-hero-carousel__content-{{ ai_gen_id }} {
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    max-width: 600px;
+    margin-left: 5%;
+  }
+
+  .ai-hero-carousel__body-{{ ai_gen_id }} {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 16px 20px;
+    border-radius: 8px;
+  }
+
+  .ai-hero-carousel__button-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #B07878;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-bottom: 40px;
+  }
+
+  .ai-hero-carousel__button-{{ ai_gen_id }}:hover {
+    background-color: #9a6565;
+  }
+
+  .ai-hero-carousel__slide-title-{{ ai_gen_id }} {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .ai-hero-carousel__progress-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 140px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+
+  .ai-hero-carousel__progress-fill-{{ ai_gen_id }} {
+    height: 100%;
+    background-color: #B07878;
+    width: 0%;
+    transition: width 0.1s ease-out;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-hero-carousel__content-{{ ai_gen_id }} {
+      padding: 24px;
+      margin-left: 0;
+    }
+
+    .ai-hero-carousel__body-{{ ai_gen_id }} {
+      font-size: 16px;
+      padding: 12px 16px;
+    }
+
+    .ai-hero-carousel__button-{{ ai_gen_id }} {
+      padding: 12px 24px;
+      font-size: 14px;
+    }
+
+    .ai-hero-carousel__slide-title-{{ ai_gen_id }} {
+      font-size: 60px;
+    }
+  }
+{% endstyle %}
+
+<hero-carousel-{{ ai_gen_id }} class="ai-hero-carousel-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-hero-carousel__container-{{ ai_gen_id }}" data-carousel-container>
+    {% liquid
+      assign slide_1_enabled = block.settings.slide_1_enabled
+      assign slide_2_enabled = block.settings.slide_2_enabled
+      assign slide_3_enabled = block.settings.slide_3_enabled
+      assign slide_4_enabled = block.settings.slide_4_enabled
+      assign slide_5_enabled = block.settings.slide_5_enabled
+    %}
+
+    {% if slide_1_enabled %}
+      <div class="ai-hero-carousel__slide-{{ ai_gen_id }}">
+        {% if block.settings.slide_1_video_url != blank %}
+          <video
+            class="ai-hero-carousel__video-{{ ai_gen_id }}"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="{{ block.settings.slide_1_video_url }}" type="video/mp4">
+          </video>
+        {% elsif block.settings.slide_1_image %}
+          <img
+            src="{{ block.settings.slide_1_image | image_url: width: 2000 }}"
+            alt="{{ block.settings.slide_1_image.alt | escape }}"
+            class="ai-hero-carousel__media-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.slide_1_image.width }}"
+            height="{{ block.settings.slide_1_image.height }}"
+          >
+        {% else %}
+          <div class="ai-hero-carousel__media-{{ ai_gen_id }}" style="background-color: #f4f4f4;"></div>
+        {% endif %}
+
+        <div class="ai-hero-carousel__content-{{ ai_gen_id }}">
+          {% if block.settings.slide_1_body != blank %}
+            <div class="ai-hero-carousel__body-{{ ai_gen_id }}" style="color: {{ block.settings.slide_1_text_color }};">
+              {{ block.settings.slide_1_body }}
+            </div>
+          {% endif %}
+
+          {% if block.settings.slide_1_button_label != blank %}
+            <a
+              href="{{ block.settings.slide_1_button_link }}"
+              class="ai-hero-carousel__button-{{ ai_gen_id }}"
+            >
+              {{ block.settings.slide_1_button_label }}
+            </a>
+          {% endif %}
+
+          {% if block.settings.slide_1_title != blank %}
+            <h2 class="ai-hero-carousel__slide-title-{{ ai_gen_id }}" style="color: {{ block.settings.slide_1_text_color }};">
+              1. {{ block.settings.slide_1_title }}
+            </h2>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if slide_2_enabled %}
+      <div class="ai-hero-carousel__slide-{{ ai_gen_id }}">
+        {% if block.settings.slide_2_video_url != blank %}
+          <video
+            class="ai-hero-carousel__video-{{ ai_gen_id }}"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="{{ block.settings.slide_2_video_url }}" type="video/mp4">
+          </video>
+        {% elsif block.settings.slide_2_image %}
+          <img
+            src="{{ block.settings.slide_2_image | image_url: width: 2000 }}"
+            alt="{{ block.settings.slide_2_image.alt | escape }}"
+            class="ai-hero-carousel__media-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.slide_2_image.width }}"
+            height="{{ block.settings.slide_2_image.height }}"
+          >
+        {% else %}
+          <div class="ai-hero-carousel__media-{{ ai_gen_id }}" style="background-color: #f4f4f4;"></div>
+        {% endif %}
+
+        <div class="ai-hero-carousel__content-{{ ai_gen_id }}">
+          {% if block.settings.slide_2_body != blank %}
+            <div class="ai-hero-carousel__body-{{ ai_gen_id }}" style="color: {{ block.settings.slide_2_text_color }};">
+              {{ block.settings.slide_2_body }}
+            </div>
+          {% endif %}
+
+          {% if block.settings.slide_2_button_label != blank %}
+            <a
+              href="{{ block.settings.slide_2_button_link }}"
+              class="ai-hero-carousel__button-{{ ai_gen_id }}"
+            >
+              {{ block.settings.slide_2_button_label }}
+            </a>
+          {% endif %}
+
+          {% if block.settings.slide_2_title != blank %}
+            <h2 class="ai-hero-carousel__slide-title-{{ ai_gen_id }}" style="color: {{ block.settings.slide_2_text_color }};">
+              2. {{ block.settings.slide_2_title }}
+            </h2>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if slide_3_enabled %}
+      <div class="ai-hero-carousel__slide-{{ ai_gen_id }}">
+        {% if block.settings.slide_3_video_url != blank %}
+          <video
+            class="ai-hero-carousel__video-{{ ai_gen_id }}"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="{{ block.settings.slide_3_video_url }}" type="video/mp4">
+          </video>
+        {% elsif block.settings.slide_3_image %}
+          <img
+            src="{{ block.settings.slide_3_image | image_url: width: 2000 }}"
+            alt="{{ block.settings.slide_3_image.alt | escape }}"
+            class="ai-hero-carousel__media-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.slide_3_image.width }}"
+            height="{{ block.settings.slide_3_image.height }}"
+          >
+        {% else %}
+          <div class="ai-hero-carousel__media-{{ ai_gen_id }}" style="background-color: #f4f4f4;"></div>
+        {% endif %}
+
+        <div class="ai-hero-carousel__content-{{ ai_gen_id }}">
+          {% if block.settings.slide_3_body != blank %}
+            <div class="ai-hero-carousel__body-{{ ai_gen_id }}" style="color: {{ block.settings.slide_3_text_color }};">
+              {{ block.settings.slide_3_body }}
+            </div>
+          {% endif %}
+
+          {% if block.settings.slide_3_button_label != blank %}
+            <a
+              href="{{ block.settings.slide_3_button_link }}"
+              class="ai-hero-carousel__button-{{ ai_gen_id }}"
+            >
+              {{ block.settings.slide_3_button_label }}
+            </a>
+          {% endif %}
+
+          {% if block.settings.slide_3_title != blank %}
+            <h2 class="ai-hero-carousel__slide-title-{{ ai_gen_id }}" style="color: {{ block.settings.slide_3_text_color }};">
+              3. {{ block.settings.slide_3_title }}
+            </h2>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if slide_4_enabled %}
+      <div class="ai-hero-carousel__slide-{{ ai_gen_id }}">
+        {% if block.settings.slide_4_video_url != blank %}
+          <video
+            class="ai-hero-carousel__video-{{ ai_gen_id }}"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="{{ block.settings.slide_4_video_url }}" type="video/mp4">
+          </video>
+        {% elsif block.settings.slide_4_image %}
+          <img
+            src="{{ block.settings.slide_4_image | image_url: width: 2000 }}"
+            alt="{{ block.settings.slide_4_image.alt | escape }}"
+            class="ai-hero-carousel__media-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.slide_4_image.width }}"
+            height="{{ block.settings.slide_4_image.height }}"
+          >
+        {% else %}
+          <div class="ai-hero-carousel__media-{{ ai_gen_id }}" style="background-color: #f4f4f4;"></div>
+        {% endif %}
+
+        <div class="ai-hero-carousel__content-{{ ai_gen_id }}">
+          {% if block.settings.slide_4_body != blank %}
+            <div class="ai-hero-carousel__body-{{ ai_gen_id }}" style="color: {{ block.settings.slide_4_text_color }};">
+              {{ block.settings.slide_4_body }}
+            </div>
+          {% endif %}
+
+          {% if block.settings.slide_4_button_label != blank %}
+            <a
+              href="{{ block.settings.slide_4_button_link }}"
+              class="ai-hero-carousel__button-{{ ai_gen_id }}"
+            >
+              {{ block.settings.slide_4_button_label }}
+            </a>
+          {% endif %}
+
+          {% if block.settings.slide_4_title != blank %}
+            <h2 class="ai-hero-carousel__slide-title-{{ ai_gen_id }}" style="color: {{ block.settings.slide_4_text_color }};">
+              4. {{ block.settings.slide_4_title }}
+            </h2>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if slide_5_enabled %}
+      <div class="ai-hero-carousel__slide-{{ ai_gen_id }}">
+        {% if block.settings.slide_5_video_url != blank %}
+          <video
+            class="ai-hero-carousel__video-{{ ai_gen_id }}"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="{{ block.settings.slide_5_video_url }}" type="video/mp4">
+          </video>
+        {% elsif block.settings.slide_5_image %}
+          <img
+            src="{{ block.settings.slide_5_image | image_url: width: 2000 }}"
+            alt="{{ block.settings.slide_5_image.alt | escape }}"
+            class="ai-hero-carousel__media-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.slide_5_image.width }}"
+            height="{{ block.settings.slide_5_image.height }}"
+          >
+        {% else %}
+          <div class="ai-hero-carousel__media-{{ ai_gen_id }}" style="background-color: #f4f4f4;"></div>
+        {% endif %}
+
+        <div class="ai-hero-carousel__content-{{ ai_gen_id }}">
+          {% if block.settings.slide_5_body != blank %}
+            <div class="ai-hero-carousel__body-{{ ai_gen_id }}" style="color: {{ block.settings.slide_5_text_color }};">
+              {{ block.settings.slide_5_body }}
+            </div>
+          {% endif %}
+
+          {% if block.settings.slide_5_button_label != blank %}
+            <a
+              href="{{ block.settings.slide_5_button_link }}"
+              class="ai-hero-carousel__button-{{ ai_gen_id }}"
+            >
+              {{ block.settings.slide_5_button_label }}
+            </a>
+          {% endif %}
+
+          {% if block.settings.slide_5_title != blank %}
+            <h2 class="ai-hero-carousel__slide-title-{{ ai_gen_id }}" style="color: {{ block.settings.slide_5_text_color }};">
+              5. {{ block.settings.slide_5_title }}
+            </h2>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="ai-hero-carousel__progress-{{ ai_gen_id }}">
+    <div class="ai-hero-carousel__progress-fill-{{ ai_gen_id }}" data-progress-fill></div>
+  </div>
+</hero-carousel-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class HeroCarousel{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.container = this.querySelector('[data-carousel-container]');
+        this.progressFill = this.querySelector('[data-progress-fill]');
+        
+        if (this.container && this.progressFill) {
+          this.updateProgress();
+          this.container.addEventListener('scroll', () => this.updateProgress());
+        }
+      }
+
+      updateProgress() {
+        const scrollLeft = this.container.scrollLeft;
+        const scrollWidth = this.container.scrollWidth;
+        const offsetWidth = this.container.offsetWidth;
+        const maxScroll = scrollWidth - offsetWidth;
+        
+        if (maxScroll > 0) {
+          const progress = (scrollLeft / maxScroll) * 100;
+          this.progressFill.style.width = progress + '%';
+        } else {
+          this.progressFill.style.width = '0%';
+        }
+      }
+    }
+
+    customElements.define('hero-carousel-{{ ai_gen_id }}', HeroCarousel{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Hero carousel swipe",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Slide 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_1_enabled",
+      "label": "Enable slide 1",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_1_image",
+      "label": "Background image"
+    },
+    {
+      "type": "url",
+      "id": "slide_1_video_url",
+      "label": "Video URL"
+    },
+    {
+      "type": "text",
+      "id": "slide_1_title",
+      "label": "Title",
+      "default": "Flow"
+    },
+    {
+      "type": "textarea",
+      "id": "slide_1_body",
+      "label": "Body text",
+      "default": "Discover the perfect harmony of design and function."
+    },
+    {
+      "type": "text",
+      "id": "slide_1_button_label",
+      "label": "Button label",
+      "default": "Shop now"
+    },
+    {
+      "type": "url",
+      "id": "slide_1_button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "color",
+      "id": "slide_1_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Slide 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_2_enabled",
+      "label": "Enable slide 2",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_2_image",
+      "label": "Background image"
+    },
+    {
+      "type": "url",
+      "id": "slide_2_video_url",
+      "label": "Video URL"
+    },
+    {
+      "type": "text",
+      "id": "slide_2_title",
+      "label": "Title",
+      "default": "Harmony"
+    },
+    {
+      "type": "textarea",
+      "id": "slide_2_body",
+      "label": "Body text",
+      "default": "Experience the beauty of thoughtful design."
+    },
+    {
+      "type": "text",
+      "id": "slide_2_button_label",
+      "label": "Button label",
+      "default": "Explore"
+    },
+    {
+      "type": "url",
+      "id": "slide_2_button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "color",
+      "id": "slide_2_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Slide 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_3_enabled",
+      "label": "Enable slide 3",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_3_image",
+      "label": "Background image"
+    },
+    {
+      "type": "url",
+      "id": "slide_3_video_url",
+      "label": "Video URL"
+    },
+    {
+      "type": "text",
+      "id": "slide_3_title",
+      "label": "Title",
+      "default": "Essence"
+    },
+    {
+      "type": "textarea",
+      "id": "slide_3_body",
+      "label": "Body text",
+      "default": "Elevate your space with timeless elegance."
+    },
+    {
+      "type": "text",
+      "id": "slide_3_button_label",
+      "label": "Button label",
+      "default": "Discover"
+    },
+    {
+      "type": "url",
+      "id": "slide_3_button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "color",
+      "id": "slide_3_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Slide 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_4_enabled",
+      "label": "Enable slide 4",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_4_image",
+      "label": "Background image"
+    },
+    {
+      "type": "url",
+      "id": "slide_4_video_url",
+      "label": "Video URL"
+    },
+    {
+      "type": "text",
+      "id": "slide_4_title",
+      "label": "Title",
+      "default": "Serenity"
+    },
+    {
+      "type": "textarea",
+      "id": "slide_4_body",
+      "label": "Body text",
+      "default": "Find peace in every detail."
+    },
+    {
+      "type": "text",
+      "id": "slide_4_button_label",
+      "label": "Button label",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "slide_4_button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "color",
+      "id": "slide_4_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Slide 5"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_5_enabled",
+      "label": "Enable slide 5",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_5_image",
+      "label": "Background image"
+    },
+    {
+      "type": "url",
+      "id": "slide_5_video_url",
+      "label": "Video URL"
+    },
+    {
+      "type": "text",
+      "id": "slide_5_title",
+      "label": "Title",
+      "default": "Balance"
+    },
+    {
+      "type": "textarea",
+      "id": "slide_5_body",
+      "label": "Body text",
+      "default": "Create a space that reflects your soul."
+    },
+    {
+      "type": "text",
+      "id": "slide_5_button_label",
+      "label": "Button label",
+      "default": "View collection"
+    },
+    {
+      "type": "url",
+      "id": "slide_5_button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "color",
+      "id": "slide_5_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero carousel swipe"
+    }
+  ]
+}
 {% endschema %}
