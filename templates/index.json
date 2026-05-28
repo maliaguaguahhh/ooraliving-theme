@@ -1032,6 +1032,10 @@
         "ai_gen_block_64aa9d8_Nn7Qwq"
       ],
       "settings": {}
+    },
+    "1779957730315a3073": {
+      "type": "_blocks",
+      "settings": {}
     }
   },
   "order": [
@@ -1054,6 +1058,7 @@
     "custom_section_EiRJBc",
     "image_banner_style_2_Pe67yk",
     "newsletter_form_xLqPFV",
-    "1779955078ce86cec8"
+    "1779955078ce86cec8",
+    "1779957730315a3073"
   ]
 }
