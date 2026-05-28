@@ -314,3 +314,4 @@
   position: relative;
   z-index: 10;
 }
+touch-action: pan-y;
