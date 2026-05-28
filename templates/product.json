@@ -218,6 +218,46 @@
       "name": "Product banner",
       "settings": {}
     },
+    "product_specification_style_5_JwrkEf": {
+      "type": "product-specification-style-5",
+      "blocks": {
+        "feature_special_DXXh36": {
+          "type": "feature-special",
+          "settings": {
+            "caption": "SUBHEADING",
+            "color_config_enable": false,
+            "title_1": "<p>Showcase a benefit<br/>of your product</p>",
+            "title_2": "<p>Showcase a benefit<br/>of your product</p>",
+            "title_3": "<p>Showcase a benefit<br/>of your product</p>"
+          }
+        }
+      },
+      "block_order": [
+        "feature_special_DXXh36"
+      ],
+      "name": "t:sections.product_specification_style_5.presets.name",
+      "settings": {
+        "layout": "style-1",
+        "text_tag_name": "h2",
+        "text_heading": "Before & After TapNest",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "image_1": "shopify://shop_images/image_71.png",
+        "image_2": "shopify://shop_images/nano_banana_pro_yp9qfdt7lvz6emgjmqvl_0.png",
+        "aspect_ratio": "auto",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
     "custom_section_CgqbtL": {
       "type": "custom-section",
       "blocks": {
@@ -816,46 +856,6 @@
         "padding_bottom_mobile": 50
       }
     },
-    "product_specification_style_5_JwrkEf": {
-      "type": "product-specification-style-5",
-      "blocks": {
-        "feature_special_DXXh36": {
-          "type": "feature-special",
-          "settings": {
-            "caption": "SUBHEADING",
-            "color_config_enable": false,
-            "title_1": "<p>Showcase a benefit<br/>of your product</p>",
-            "title_2": "<p>Showcase a benefit<br/>of your product</p>",
-            "title_3": "<p>Showcase a benefit<br/>of your product</p>"
-          }
-        }
-      },
-      "block_order": [
-        "feature_special_DXXh36"
-      ],
-      "name": "t:sections.product_specification_style_5.presets.name",
-      "settings": {
-        "layout": "style-1",
-        "text_tag_name": "h2",
-        "text_heading": "Before & After TapNest",
-        "font_size_heading": "h5",
-        "text_line_height": 1.2,
-        "text_effect": "split",
-        "text_duration": 1000,
-        "text_heading_width_desktop": 100,
-        "text_heading_width_mobile": 100,
-        "image_1": "shopify://shop_images/image_71.png",
-        "image_2": "shopify://shop_images/nano_banana_pro_yp9qfdt7lvz6emgjmqvl_0.png",
-        "aspect_ratio": "auto",
-        "color_scheme": "",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 50,
-        "padding_bottom_desktop": 50,
-        "padding_top_mobile": 50,
-        "padding_bottom_mobile": 50
-      }
-    },
     "testimonial_style_4_pkXpeP": {
       "type": "testimonial-style-4",
       "blocks": {
@@ -863,21 +863,24 @@
           "type": "testimonial-box",
           "settings": {
             "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
-            "customer_name": "Customer's name"
+            "customer_name": "Customer's name",
+            "image": "shopify://shop_images/image3.png"
           }
         },
         "testimonial_box_TEJrch": {
           "type": "testimonial-box",
           "settings": {
             "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
-            "customer_name": "Customer's name"
+            "customer_name": "Customer's name",
+            "image": "shopify://shop_images/image_6d01c1e1-472c-4f93-b9e7-5646bcf2717c.png"
           }
         },
         "testimonial_box_kcmfFd": {
           "type": "testimonial-box",
           "settings": {
             "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
-            "customer_name": "Customer's name"
+            "customer_name": "Customer's name",
+            "image": "shopify://shop_images/image2.png"
           }
         },
         "testimonial_box_FPyUcN": {
@@ -1311,8 +1314,8 @@
   "order": [
     "main",
     "blocks_xQ4MNJ",
-    "product_specification_style_5_JwrkEf",
     "custom_section_CgqbtL",
+    "product_specification_style_5_JwrkEf",
     "hero_carousel_UCaq7W",
     "hero_carousel_wEyFzx",
     "video_feedback_4EeFed",
