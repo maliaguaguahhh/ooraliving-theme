@@ -314,4 +314,11 @@
   position: relative;
   z-index: 10;
 }
-touch-action: pan-y;
+@media (max-width: 767px) {
+  .section-hero xo-carousel,
+  .section-hero xo-carousel-inner,
+  .section-hero xo-carousel-list,
+  .section-hero xo-carousel-slide {
+    touch-action: pan-y;
+  }
+}
