@@ -57,7 +57,7 @@
         "logo_transparent": "shopify://shop_images/oora_logo_White_2x_d164b2aa-10ad-4d19-b0bf-76b00a15b5c8.png",
         "logo_sticky": "shopify://shop_images/oora_logo_Black_1x_6c567220-494c-4650-abe9-e654de1e5d3b.png",
         "logo_width_desktop": 100,
-        "logo_width_mobile": 80,
+        "logo_width_mobile": 60,
         "logo_position": "left",
         "show_currency_selector": "show",
         "show_language_selector": "show",
