@@ -10,7 +10,7 @@
     return;
   }
 
-  const MOBILE_QUERY = '(max-width: 767px)';
+  const MOBILE_QUERY = '(max-width: 991px), (pointer: coarse)';
   const SWIPE_THRESHOLD = 36;
   const LOCK_TOP_TOLERANCE = 40;
   const LOCK_VISIBLE_RATIO = 0.75;
