@@ -53,7 +53,7 @@
         "padding_top_desktop": 254,
         "padding_bottom_desktop": 63,
         "padding_top_mobile": 150,
-        "padding_bottom_mobile": 63
+        "padding_bottom_mobile": 40
       }
     },
     "image_with_text_style_3_Qxdnny": {
@@ -153,7 +153,7 @@
         "background_gradient": "",
         "padding_top_desktop": 0,
         "padding_bottom_desktop": 0,
-        "padding_top_mobile": 0,
+        "padding_top_mobile": 20,
         "padding_bottom_mobile": 20
       }
     },
@@ -371,8 +371,8 @@
     "image_with_text_style_5_7HWQFf",
     "image_with_text_style_3_Qxdnny",
     "product_specification_style_1_Mz7xb9",
-    "image_button_style_1_mMX7rE",
     "image_with_text_style_9_iGgNN7",
+    "image_button_style_1_mMX7rE",
     "video_feedback_WLgAr9",
     "testimonial_style_4_9n6aYe",
     "collapse_content_UqUKUB"
