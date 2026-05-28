@@ -455,45 +455,23 @@
         "video_yjmjyz": {
           "type": "video",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video": "shopify://files/videos/6887.mp4",
+            "video_url": "",
             "aspect_ratio": "1"
           }
         },
         "video_HD8Hjp": {
           "type": "video",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "aspect_ratio": "1"
-          }
-        },
-        "video_MeKJdM": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "aspect_ratio": "1"
-          }
-        },
-        "video_nRKaqh": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "aspect_ratio": "1"
-          }
-        },
-        "video_UnLfLq": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video": "shopify://files/videos/6886.mp4",
+            "video_url": "",
             "aspect_ratio": "1"
           }
         }
       },
       "block_order": [
         "video_yjmjyz",
-        "video_HD8Hjp",
-        "video_MeKJdM",
-        "video_nRKaqh",
-        "video_UnLfLq"
+        "video_HD8Hjp"
       ],
       "name": "t:sections.video_feedback.name",
       "settings": {
