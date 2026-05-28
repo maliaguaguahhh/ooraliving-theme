@@ -475,7 +475,7 @@
       "name": "t:sections.video_feedback.name",
       "settings": {
         "text_tag_name": "h2",
-        "text_heading": "Video feedback",
+        "text_heading": "See oora in action",
         "font_size_heading": "h5",
         "text_line_height": 1.2,
         "text_effect": "split",
@@ -960,7 +960,7 @@
         "heading": "Our Story",
         "description": "Founded in 2026 by product designers Louis D. and Maria H., OORA was created with a simple belief: technology should feel soft, intuitive, and beautiful.\n\nAfter a year of designing, prototyping, and working closely with suppliers, we launched our first product — TapNest. We hope it can bring a little more joy to your daily routines.\n\nLike many young brands, we’re still learning and improving every day. We’re excited to grow alongside our community, one product at a time",
         "button_text": "Our Story",
-        "button_link": "shopify://products/tapnest",
+        "button_link": "shopify://pages/about-us",
         "button_style": "primary",
         "button_size": "lg",
         "background_image_desktop": "shopify://shop_images/08.jpg",
