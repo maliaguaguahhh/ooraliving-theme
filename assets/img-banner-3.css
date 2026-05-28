@@ -275,6 +275,15 @@
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
+
+@media (max-width: 767px) {
+  .img-banner-3__prev,
+  .img-banner-3__next {
+    display: none;
+    pointer-events: none;
+  }
+}
+
 .img-banner-3__prev {
   width: 22vw;
 }
