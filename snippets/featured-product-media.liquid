@@ -342,20 +342,19 @@
       const carousel = gallery.querySelector('xo-carousel');
       if (!fill || !carousel) return;
 
-      function updateBar(index, total) {
+      const slides = carousel.querySelectorAll('xo-carousel-slide');
+      const total = slides.length;
+
+      function updateBar(index) {
         const pct = total > 1 ? (index / (total - 1)) * 100 : 100;
         fill.style.width = pct + '%';
       }
 
-      // Listen for slide change events on the carousel
-      carousel.addEventListener('xo:slide-change', (e) => {
-        const slides = carousel.querySelectorAll('xo-carousel-slide');
-        updateBar(e.detail?.index ?? 0, slides.length);
+      carousel.addEventListener('xo:carousel:change', (e) => {
+        updateBar(e.detail?.activeIndex ?? 0);
       });
 
-      // Set initial state
-      const slides = carousel.querySelectorAll('xo-carousel-slide');
-      updateBar(0, slides.length);
+      updateBar(0);
     }
 
     if (document.readyState === 'loading') {
@@ -365,6 +364,7 @@
     }
   })();
 </script>
+
 
   </xo-product-will-change>
 </div>
