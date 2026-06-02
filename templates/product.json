@@ -32,6 +32,10 @@
             "variant_color_style": "color"
           }
         },
+        "judge_me_reviews_preview_badge_C4Ey6B": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "ae0ed4c8-948a-46c7-b292-5f2687b8c94e": {
           "type": "buy_button",
           "settings": {
@@ -139,6 +143,7 @@
         "bedc5e2d-642d-4448-8569-c7fcfd527042",
         "b1d95bc4-490b-4b8c-914a-89b1323d2a43",
         "ca89121c-8974-4f5c-852d-875abeb6041c",
+        "judge_me_reviews_preview_badge_C4Ey6B",
         "ae0ed4c8-948a-46c7-b292-5f2687b8c94e",
         "volume_discount_nNQCrE",
         "inventory_status_PjEGiM",
