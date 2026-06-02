@@ -273,6 +273,74 @@
         "padding_bottom_mobile": 50
       }
     },
+    "hero_carousel_UCaq7W": {
+      "type": "hero-carousel",
+      "blocks": {
+        "image_WEhRw7": {
+          "type": "image",
+          "name": "Tap Snap Flow",
+          "settings": {
+            "heading": "",
+            "description": "<p>Tap Snap Flow</p>",
+            "button_text": "",
+            "button_link": "shopify://collections/all",
+            "button_style": "primary",
+            "button_size": "md",
+            "media_type": "image"
+          }
+        }
+      },
+      "block_order": [
+        "image_WEhRw7"
+      ],
+      "name": "t:sections.hero_carousel.presets.name",
+      "settings": {
+        "layout": "style-1",
+        "autoplay": "off",
+        "autoplay_speed": 5000,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "hero_carousel_wEyFzx": {
+      "type": "hero-carousel",
+      "blocks": {
+        "image_azDpGX": {
+          "type": "image",
+          "name": "Easy Installation",
+          "settings": {
+            "heading": "",
+            "description": "<p>East Installation</p>",
+            "button_text": "",
+            "button_link": "shopify://collections/all",
+            "button_style": "primary",
+            "button_size": "md",
+            "media_type": "image"
+          }
+        }
+      },
+      "block_order": [
+        "image_azDpGX"
+      ],
+      "name": "t:sections.hero_carousel.presets.name",
+      "settings": {
+        "layout": "style-1",
+        "autoplay": "off",
+        "autoplay_speed": 5000,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
     "custom_section_CgqbtL": {
       "type": "custom-section",
       "blocks": {
@@ -446,74 +514,6 @@
         "padding_bottom_desktop": 50,
         "padding_top_mobile": 50,
         "padding_bottom_mobile": 50
-      }
-    },
-    "hero_carousel_UCaq7W": {
-      "type": "hero-carousel",
-      "blocks": {
-        "image_WEhRw7": {
-          "type": "image",
-          "name": "Tap Snap Flow",
-          "settings": {
-            "heading": "",
-            "description": "<p>Tap Snap Flow</p>",
-            "button_text": "",
-            "button_link": "shopify://collections/all",
-            "button_style": "primary",
-            "button_size": "md",
-            "media_type": "image"
-          }
-        }
-      },
-      "block_order": [
-        "image_WEhRw7"
-      ],
-      "name": "t:sections.hero_carousel.presets.name",
-      "settings": {
-        "layout": "style-1",
-        "autoplay": "off",
-        "autoplay_speed": 5000,
-        "color_scheme": "",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 0,
-        "padding_bottom_desktop": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0
-      }
-    },
-    "hero_carousel_wEyFzx": {
-      "type": "hero-carousel",
-      "blocks": {
-        "image_azDpGX": {
-          "type": "image",
-          "name": "Easy Installation",
-          "settings": {
-            "heading": "",
-            "description": "<p>East Installation</p>",
-            "button_text": "",
-            "button_link": "shopify://collections/all",
-            "button_style": "primary",
-            "button_size": "md",
-            "media_type": "image"
-          }
-        }
-      },
-      "block_order": [
-        "image_azDpGX"
-      ],
-      "name": "t:sections.hero_carousel.presets.name",
-      "settings": {
-        "layout": "style-1",
-        "autoplay": "off",
-        "autoplay_speed": 5000,
-        "color_scheme": "",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 0,
-        "padding_bottom_desktop": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0
       }
     },
     "video_feedback_4EeFed": {
@@ -1310,6 +1310,33 @@
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 23
       }
+    },
+    "17803883564ba6d0c2": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_UziQMR": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_UziQMR"
+      ],
+      "settings": {
+        "include_margins": true,
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
     }
   },
   "order": [
@@ -1328,6 +1355,7 @@
     "custom_section_pM4t7C",
     "collapse_content_3mHbKF",
     "main_product_recommendations_TnWBYD",
-    "gallery_style_1_nQ8VYH"
+    "gallery_style_1_nQ8VYH",
+    "17803883564ba6d0c2"
   ]
 }
