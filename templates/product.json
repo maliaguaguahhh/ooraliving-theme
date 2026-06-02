@@ -16,13 +16,6 @@
           "type": "title",
           "settings": {}
         },
-        "buy_button_Hgeb3z": {
-          "type": "buy_button",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": false
-          }
-        },
         "b1d95bc4-490b-4b8c-914a-89b1323d2a43": {
           "type": "price",
           "settings": {}
@@ -32,6 +25,22 @@
           "settings": {
             "variant_style": "radio",
             "variant_color_style": "color"
+          }
+        },
+        "inventory_status_PjEGiM": {
+          "type": "inventory_status",
+          "settings": {
+            "low_inventory_threshold": 15,
+            "show_inventory_count": "low-inventory-threshold",
+            "color_in_stock": "#10a71f",
+            "color_out_stock": "#da1e28"
+          }
+        },
+        "buy_button_Hgeb3z": {
+          "type": "buy_button",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
           }
         },
         "judge_me_reviews_preview_badge_C4Ey6B": {
@@ -54,15 +63,6 @@
             "highlight_background_color": "#f39f1f",
             "highlight_text_color": "#ffffff",
             "highlight_position": "aside"
-          }
-        },
-        "inventory_status_PjEGiM": {
-          "type": "inventory_status",
-          "settings": {
-            "low_inventory_threshold": 15,
-            "show_inventory_count": "low-inventory-threshold",
-            "color_in_stock": "#10a71f",
-            "color_out_stock": "#da1e28"
           }
         },
         "countdown_timer_gRAAct": {
@@ -113,12 +113,12 @@
       },
       "block_order": [
         "bedc5e2d-642d-4448-8569-c7fcfd527042",
-        "buy_button_Hgeb3z",
         "b1d95bc4-490b-4b8c-914a-89b1323d2a43",
         "ca89121c-8974-4f5c-852d-875abeb6041c",
+        "inventory_status_PjEGiM",
+        "buy_button_Hgeb3z",
         "judge_me_reviews_preview_badge_C4Ey6B",
         "volume_discount_nNQCrE",
-        "inventory_status_PjEGiM",
         "countdown_timer_gRAAct",
         "4dabf9d3-3372-4f5a-9edf-1e1f03527b1b",
         "ebe1dbeb-d8fc-4f0c-9d34-fc7892bde207",
