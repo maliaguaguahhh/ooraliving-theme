@@ -35,12 +35,13 @@
         "ae0ed4c8-948a-46c7-b292-5f2687b8c94e": {
           "type": "buy_button",
           "settings": {
-            "show_dynamic_checkout": false,
+            "show_dynamic_checkout": true,
             "show_gift_card_recipient": false
           }
         },
         "judge_me_reviews_preview_badge_C4Ey6B": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
           "settings": {}
         },
         "volume_discount_nNQCrE": {
