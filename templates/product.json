@@ -32,19 +32,20 @@
             "variant_color_style": "color"
           }
         },
+        "ae0ed4c8-948a-46c7-b292-5f2687b8c94e": {
+          "type": "buy_button",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
         "judge_me_reviews_preview_badge_C4Ey6B": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
-        "ae0ed4c8-948a-46c7-b292-5f2687b8c94e": {
-          "type": "buy_button",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": false
-          }
-        },
         "volume_discount_nNQCrE": {
           "type": "volume_discount",
+          "disabled": true,
           "settings": {
             "product_list": [
               "tapnest"
@@ -75,30 +76,6 @@
             "sub_heading": "Early Bird Price",
             "background_color": "#0F61FF",
             "text_color": "#ffffff"
-          }
-        },
-        "volume_discount_UarJ87": {
-          "type": "volume_discount",
-          "settings": {
-            "product_list": [
-              "beogram-4000c",
-              "beolab-19",
-              "beolab-90",
-              "beosound-a1",
-              "beosound-a5",
-              "beosound-a9",
-              "beosound-balance",
-              "beogram-4000c-copy",
-              "explore"
-            ],
-            "label": "Buy 3, save 30%",
-            "quantity": 3,
-            "discount_value": 30,
-            "discount_type": "percentage",
-            "highlight_text": "Best Choice",
-            "highlight_background_color": "#fe9210",
-            "highlight_text_color": "#ffffff",
-            "highlight_position": "aside"
           }
         },
         "4dabf9d3-3372-4f5a-9edf-1e1f03527b1b": {
@@ -143,12 +120,11 @@
         "bedc5e2d-642d-4448-8569-c7fcfd527042",
         "b1d95bc4-490b-4b8c-914a-89b1323d2a43",
         "ca89121c-8974-4f5c-852d-875abeb6041c",
-        "judge_me_reviews_preview_badge_C4Ey6B",
         "ae0ed4c8-948a-46c7-b292-5f2687b8c94e",
+        "judge_me_reviews_preview_badge_C4Ey6B",
         "volume_discount_nNQCrE",
         "inventory_status_PjEGiM",
         "countdown_timer_gRAAct",
-        "volume_discount_UarJ87",
         "4dabf9d3-3372-4f5a-9edf-1e1f03527b1b",
         "ebe1dbeb-d8fc-4f0c-9d34-fc7892bde207",
         "collapse_Q7Fhxe",
