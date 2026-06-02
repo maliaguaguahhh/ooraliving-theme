@@ -36,7 +36,7 @@
         "marquee_speed": 6,
         "marquee_rtl": false,
         "marquee_stop": true,
-        "color_scheme": "background-2",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 13,
@@ -61,7 +61,7 @@
         "logo_position": "left",
         "show_currency_selector": "show",
         "show_language_selector": "show",
-        "color_scheme": "background-1"
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
       }
     },
     "main-predictive-search": {
