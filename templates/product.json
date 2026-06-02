@@ -12,14 +12,16 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor_Fd6fHH": {
-          "type": "vendor",
-          "disabled": true,
-          "settings": {}
-        },
         "bedc5e2d-642d-4448-8569-c7fcfd527042": {
           "type": "title",
           "settings": {}
+        },
+        "buy_button_Hgeb3z": {
+          "type": "buy_button",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
         },
         "b1d95bc4-490b-4b8c-914a-89b1323d2a43": {
           "type": "price",
@@ -30,13 +32,6 @@
           "settings": {
             "variant_style": "radio",
             "variant_color_style": "color"
-          }
-        },
-        "ae0ed4c8-948a-46c7-b292-5f2687b8c94e": {
-          "type": "buy_button",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": false
           }
         },
         "judge_me_reviews_preview_badge_C4Ey6B": {
@@ -117,11 +112,10 @@
         }
       },
       "block_order": [
-        "vendor_Fd6fHH",
         "bedc5e2d-642d-4448-8569-c7fcfd527042",
+        "buy_button_Hgeb3z",
         "b1d95bc4-490b-4b8c-914a-89b1323d2a43",
         "ca89121c-8974-4f5c-852d-875abeb6041c",
-        "ae0ed4c8-948a-46c7-b292-5f2687b8c94e",
         "judge_me_reviews_preview_badge_C4Ey6B",
         "volume_discount_nNQCrE",
         "inventory_status_PjEGiM",

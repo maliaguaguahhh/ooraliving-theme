@@ -29,7 +29,7 @@
     "animate_duration": 500,
     "animate_effect": "fade-up",
     "animate_strength": 1,
-    "buttons_border_thickness": 0,
+    "buttons_border_thickness": 1,
     "buttons_border_opacity": 10,
     "buttons_effect": "slide-up",
     "buttons_loading": "loader-3",
