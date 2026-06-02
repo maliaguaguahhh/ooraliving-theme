@@ -10,7 +10,7 @@
 {
   "current": {
     "logo_size": 90,
-    "type_header_font": "poppins_n5",
+    "type_header_font": "poppins_n4",
     "heading_1_scale": 100,
     "heading_2_scale": 100,
     "heading_3_scale": 100,
@@ -19,7 +19,7 @@
     "heading_6_scale": 100,
     "heading_6_line_height": 1.3,
     "mobile_heading_6_line_height": 1.3,
-    "type_body_font": "poppins_n4",
+    "type_body_font": "poppins_n3",
     "body_scale": 100,
     "enable_border_radius": true,
     "page_width": 1920,
