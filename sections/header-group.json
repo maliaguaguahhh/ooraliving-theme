@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "<p>New Release: Free Shipping + 20% Off Early Bird Price</p>",
+            "text": "<p>Buy Now: 20% off  + Free Shipping</p>",
             "link": "shopify://products/tapnest"
           }
         }
