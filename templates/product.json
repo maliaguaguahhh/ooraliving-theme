@@ -148,6 +148,7 @@
       "blocks": {
         "ai_gen_block_dba89c2_4bXCxU": {
           "type": "ai_gen_block_dba89c2",
+          "disabled": true,
           "settings": {
             "product_image": "shopify://shop_images/08.png",
             "image_width": 40,

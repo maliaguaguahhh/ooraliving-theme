@@ -252,7 +252,7 @@
         "buy_button_88TAkd": {
           "type": "buy_button",
           "settings": {
-            "show_dynamic_checkout": false,
+            "show_dynamic_checkout": true,
             "show_gift_card_recipient": false
           }
         },
