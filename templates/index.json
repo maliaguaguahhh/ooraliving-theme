@@ -699,6 +699,7 @@
       "blocks": {
         "collapse_RaLc8a": {
           "type": "collapse",
+          "disabled": true,
           "settings": {
             "title": "<p>What is Tapnest?</p>",
             "content": "<p>TapNest is the world's first magnetic phone dock that also have multiple NFC shortcuts features. This allows you to open your favourite apps and experiences in one tap, and dock your phone in one smooth gesture. We aim to provide the best and most smooth and intuitive bathroom phone dock experience.</p>"
@@ -739,6 +740,9 @@
         "collapse_ncUxWX",
         "collapse_VAbL78",
         "collapse_i6b3pR"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.xo-collapse__trigger-title {font-size: 16px; } .xo-collapse__content {font-size: 14px; }}"
       ],
       "name": "FAQ",
       "settings": {
