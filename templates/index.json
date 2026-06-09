@@ -319,6 +319,7 @@
         "image_g9cjgC",
         "image_YczHNV"
       ],
+      "disabled": true,
       "name": "Painpoints",
       "settings": {
         "layout": "default",
@@ -375,6 +376,7 @@
     },
     "reveal_text_effect_PAWFkF": {
       "type": "reveal-text-effect",
+      "disabled": true,
       "name": "t:sections.reveal_text_effect.name",
       "settings": {
         "sub_heading": "Our Solution",
@@ -393,14 +395,84 @@
         "padding_bottom_mobile": 80
       }
     },
+    "media_video_869NfF": {
+      "type": "media-video",
+      "name": "t:sections.media_video.presets.name",
+      "settings": {
+        "layout": "full-width",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_alt_text": "",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "product_specification_style_5_B9DyJ6": {
+      "type": "product-specification-style-5",
+      "custom_css": [
+        ".product-specification-5__grid > xo-animate {display: none;}"
+      ],
+      "name": "t:sections.product_specification_style_5.presets.name",
+      "settings": {
+        "layout": "style-1",
+        "text_tag_name": "h2",
+        "text_heading": "Your Space, Transformed",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "aspect_ratio": "3/4",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "product_specification_style_5_m4b9UA": {
+      "type": "product-specification-style-5",
+      "custom_css": [
+        ".product-specification-5__heading {display: none;}",
+        ".product-specification-5__grid > xo-animate {display: none;}"
+      ],
+      "name": "t:sections.product_specification_style_5.presets.name",
+      "settings": {
+        "layout": "style-2",
+        "text_tag_name": "h2",
+        "text_heading": "",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "aspect_ratio": "1",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 20
+      }
+    },
     "image_button_style_1_wwf7QK": {
       "type": "image-button-style-1",
       "name": "t:sections.image_button_style_1.presets.name",
       "settings": {
-        "layout": "full-width",
+        "layout": "page-width",
         "background_type": "image",
         "aspect_ratio_desktop": "21/9",
-        "aspect_ratio_mobile": "1",
+        "aspect_ratio_mobile": "16/9",
         "enable_video_looping": true,
         "video_url": "",
         "button_text": "Button",
@@ -413,7 +485,7 @@
         "padding_top_desktop": 0,
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0
+        "padding_bottom_mobile": 60
       }
     },
     "video_feedback_WXgbgP": {
@@ -440,6 +512,7 @@
         "video_yjmjyz",
         "video_HD8Hjp"
       ],
+      "disabled": true,
       "name": "t:sections.video_feedback.name",
       "settings": {
         "text_tag_name": "h2",
@@ -455,62 +528,6 @@
         "autoplay_speed": 5000,
         "enable_pagination": true,
         "enable_navigation": true,
-        "color_scheme": "",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 50,
-        "padding_bottom_desktop": 50,
-        "padding_top_mobile": 50,
-        "padding_bottom_mobile": 50
-      }
-    },
-    "testimonial_style_4_fkDVeW": {
-      "type": "testimonial-style-4",
-      "blocks": {
-        "testimonial_box_6Re8Ar": {
-          "type": "testimonial-box",
-          "settings": {
-            "content": "<p>I didn’t realize how annoying balancing my phone on the sink was until I got TapNest. Now I just snap it onto my mirror while I get ready in the morning. It honestly made my bathroom routine feel so much cleaner and easier.</p>",
-            "customer_name": "Emily R., Los Angeles",
-            "image": "shopify://shop_images/image_6d01c1e1-472c-4f93-b9e7-5646bcf2717c.png"
-          }
-        },
-        "testimonial_box_V3eief": {
-          "type": "testimonial-box",
-          "settings": {
-            "content": "<p>I use my phone for everything while getting ready — makeup tutorials, Spotify, FaceTime with friends. TapNest made it feel effortless. Strong magnet, super minimal look, and it actually stays put in a humid bathroom.</p>",
-            "customer_name": "Sophie T., New York",
-            "image": "shopify://shop_images/image2.png"
-          }
-        },
-        "testimonial_box_dARwGh": {
-          "type": "testimonial-box",
-          "settings": {
-            "content": "<p>This is one of those products that feels obvious after you use it. I used to prop my phone against random bottles and pray it wouldn’t fall into the sink. TapNest solved that instantly.</p>",
-            "customer_name": "Rachel K., Chicago",
-            "image": "shopify://shop_images/image3.png"
-          }
-        },
-        "testimonial_box_tNF8JU": {
-          "type": "testimonial-box",
-          "settings": {
-            "content": "<p>My bathroom counter is tiny, so having my phone mounted on the mirror instead of sitting in water or clutter is such a game changer. Also perfect for shower playlists and TikTok makeup inspo.”</p>",
-            "customer_name": "Hannah L., Austin",
-            "image": "shopify://shop_images/Morning_Routine_Mirror_Selfie.png"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_box_6Re8Ar",
-        "testimonial_box_V3eief",
-        "testimonial_box_dARwGh",
-        "testimonial_box_tNF8JU"
-      ],
-      "name": "t:sections.testimonial_style_4.presets.name",
-      "settings": {
-        "sub_heading": "What our Customers are saying:",
-        "autoplay_time": 3000,
-        "autoplay": "off",
         "color_scheme": "",
         "background_color": "",
         "background_gradient": "",
@@ -636,6 +653,7 @@
         "feature_fEALmt",
         "feature_QFyMfy"
       ],
+      "disabled": true,
       "name": "Show three taps",
       "settings": {
         "text_tag_name": "h2",
@@ -692,69 +710,6 @@
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 0
-      }
-    },
-    "collapse_content_PmMV3m": {
-      "type": "collapse-content",
-      "blocks": {
-        "collapse_RaLc8a": {
-          "type": "collapse",
-          "disabled": true,
-          "settings": {
-            "title": "<p>What is Tapnest?</p>",
-            "content": "<p>TapNest is the world's first magnetic phone dock that also have multiple NFC shortcuts features. This allows you to open your favourite apps and experiences in one tap, and dock your phone in one smooth gesture. We aim to provide the best and most smooth and intuitive bathroom phone dock experience.</p>"
-          }
-        },
-        "collapse_VFkR3z": {
-          "type": "collapse",
-          "settings": {
-            "title": "<p>Will it work with my Phone?</p>",
-            "content": "<p>TapNest is designed for Magsafe-compatible iPhones and Magsafe cases. The NFC shortcut experience works best on recent iPhones with IOS shortcuts enabled. <strong>See our carefully curated </strong><a href=\"/blogs/news\" title=\"News\"><strong>shortcut presets here.<br/><br/></strong></a><strong>The magnetic docking feature and NFC feature DO NOT SUPPORT Android users.</strong></p><p><em><br/>Note: Thick, metallic, or non-Magsafe cases may reduce magnetic hold or NFC sensitivity.</em></p>"
-          }
-        },
-        "collapse_ncUxWX": {
-          "type": "collapse",
-          "settings": {
-            "title": "<p>How do I set the NFC Shortcuts?</p>",
-            "content": "<p>We provide quick video tutorials on how to customize your own shortcut experience via iPhone's Shortcuts App. The setup usually takes a few minutes.  If you have trouble thinking of ideas, we also provide curated shortcuts gallery on the website.</p>"
-          }
-        },
-        "collapse_VAbL78": {
-          "type": "collapse",
-          "settings": {
-            "title": "<p>Can I use TapNest without using the NFC?</p>",
-            "content": "<p>Yes, totally. The docking feature is what customers use most and find most helpful. NFC adds extra convenience to your daily routines.</p>"
-          }
-        },
-        "collapse_i6b3pR": {
-          "type": "collapse",
-          "settings": {
-            "title": "<p>Where should I place it?</p>",
-            "content": "<p>TapNest is made for smooth bathroom mirror, glass or tile surfaces near your natural eye line. Clean and dry the surface before applying the adhesion. You are also free to place the TapNest onto any surface that you feel that can benefit for the \"tap and snap\" experience.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "collapse_RaLc8a",
-        "collapse_VFkR3z",
-        "collapse_ncUxWX",
-        "collapse_VAbL78",
-        "collapse_i6b3pR"
-      ],
-      "custom_css": [
-        "@media (max-width: 767px) {.xo-collapse__trigger-title {font-size: 16px; } .xo-collapse__content {font-size: 14px; }}"
-      ],
-      "name": "FAQ",
-      "settings": {
-        "font_size_heading": "h5",
-        "heading": "<p>FAQ</p>",
-        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
-        "background_color": "#f8f5f2",
-        "background_gradient": "",
-        "padding_top_desktop": 40,
-        "padding_bottom_desktop": 90,
-        "padding_top_mobile": 50,
-        "padding_bottom_mobile": 80
       }
     },
     "custom_section_EiRJBc": {
@@ -923,6 +878,65 @@
         "padding_bottom_mobile": 32
       }
     },
+    "testimonial_style_4_fkDVeW": {
+      "type": "testimonial-style-4",
+      "blocks": {
+        "testimonial_box_6Re8Ar": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>It's one of those products where you wonder how you did without it. I tap for my podcast, snap my phone in, and my whole bathroom vibe just shifted.</p>",
+            "customer_name": "Emily R., Los Angeles",
+            "image": "shopify://shop_images/image_6d01c1e1-472c-4f93-b9e7-5646bcf2717c.png"
+          }
+        },
+        "testimonial_box_V3eief": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>I use my phone for everything while getting ready — makeup tutorials, Spotify, FaceTime with friends. TapNest made it feel effortless. Strong magnet, super minimal look, and it actually stays put in a humid bathroom.</p>",
+            "customer_name": "Sophie T., New York",
+            "image": "shopify://shop_images/image2.png"
+          }
+        },
+        "testimonial_box_dARwGh": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>This is one of those products that feels obvious after you use it. I used to prop my phone against random bottles and pray it wouldn’t fall into the sink. TapNest solved that instantly.</p>",
+            "customer_name": "Rachel K., Chicago",
+            "image": "shopify://shop_images/image3.png"
+          }
+        },
+        "testimonial_box_tNF8JU": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>My bathroom counter is tiny, so having my phone mounted on the mirror instead of sitting in water or clutter is such a game changer. Also perfect for shower playlists and TikTok makeup inspo.”</p>",
+            "customer_name": "Hannah L., Austin",
+            "image": "shopify://shop_images/Morning_Routine_Mirror_Selfie.png"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_box_6Re8Ar",
+        "testimonial_box_V3eief",
+        "testimonial_box_dARwGh",
+        "testimonial_box_tNF8JU"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.testimonial-box__content {font-size: 14px; line-height: 1.4; } .testimonial-box__name {font-size: 14px; }}"
+      ],
+      "name": "t:sections.testimonial_style_4.presets.name",
+      "settings": {
+        "sub_heading": "See TapNest in action",
+        "autoplay_time": 3000,
+        "autoplay": "off",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
     "image_banner_style_2_Pe67yk": {
       "type": "image-banner-style-2",
       "settings": {
@@ -944,6 +958,69 @@
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 0
+      }
+    },
+    "collapse_content_PmMV3m": {
+      "type": "collapse-content",
+      "blocks": {
+        "collapse_RaLc8a": {
+          "type": "collapse",
+          "disabled": true,
+          "settings": {
+            "title": "<p>What is Tapnest?</p>",
+            "content": "<p>TapNest is the world's first magnetic phone dock that also have multiple NFC shortcuts features. This allows you to open your favourite apps and experiences in one tap, and dock your phone in one smooth gesture. We aim to provide the best and most smooth and intuitive bathroom phone dock experience.</p>"
+          }
+        },
+        "collapse_VFkR3z": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>Will it work with my Phone?</p>",
+            "content": "<p>TapNest is designed for Magsafe-compatible iPhones and Magsafe cases. The NFC shortcut experience works best on recent iPhones with IOS shortcuts enabled. <strong>See our carefully curated </strong><a href=\"/blogs/news\" title=\"News\"><strong>shortcut presets here.<br/><br/></strong></a><strong>The magnetic docking feature and NFC feature DO NOT SUPPORT Android users.</strong></p><p><em><br/>Note: Thick, metallic, or non-Magsafe cases may reduce magnetic hold or NFC sensitivity.</em></p>"
+          }
+        },
+        "collapse_ncUxWX": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>How do I set the NFC Shortcuts?</p>",
+            "content": "<p>We provide quick video tutorials on how to customize your own shortcut experience via iPhone's Shortcuts App. The setup usually takes a few minutes.  If you have trouble thinking of ideas, we also provide curated shortcuts gallery on the website.</p>"
+          }
+        },
+        "collapse_VAbL78": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>Can I use TapNest without using the NFC?</p>",
+            "content": "<p>Yes, totally. The docking feature is what customers use most and find most helpful. NFC adds extra convenience to your daily routines.</p>"
+          }
+        },
+        "collapse_i6b3pR": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>Where should I place it?</p>",
+            "content": "<p>TapNest is made for smooth bathroom mirror, glass or tile surfaces near your natural eye line. Clean and dry the surface before applying the adhesion. You are also free to place the TapNest onto any surface that you feel that can benefit for the \"tap and snap\" experience.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "collapse_RaLc8a",
+        "collapse_VFkR3z",
+        "collapse_ncUxWX",
+        "collapse_VAbL78",
+        "collapse_i6b3pR"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.xo-collapse__trigger-title {font-size: 16px; } .xo-collapse__content {font-size: 14px; }}"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "font_size_heading": "h5",
+        "heading": "<p>FAQ</p>",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "#f8f5f2",
+        "background_gradient": "",
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 90,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 80
       }
     },
     "newsletter_form_xLqPFV": {
@@ -1021,15 +1098,18 @@
     "17798651046e825b57",
     "image_with_text_style_10_KKbrT7",
     "reveal_text_effect_PAWFkF",
+    "media_video_869NfF",
+    "product_specification_style_5_B9DyJ6",
+    "product_specification_style_5_m4b9UA",
     "image_button_style_1_wwf7QK",
     "video_feedback_WXgbgP",
-    "testimonial_style_4_fkDVeW",
     "image_banner_style_2_Dypq4f",
     "shop_the_look_style_1_mW8Mf4",
     "image_banner_style_2_D3npaz",
-    "collapse_content_PmMV3m",
     "custom_section_EiRJBc",
+    "testimonial_style_4_fkDVeW",
     "image_banner_style_2_Pe67yk",
+    "collapse_content_PmMV3m",
     "newsletter_form_xLqPFV",
     "1779955078ce86cec8",
     "1779957730315a3073"
