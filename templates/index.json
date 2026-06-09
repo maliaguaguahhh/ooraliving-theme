@@ -754,7 +754,7 @@
         "padding_top_desktop": 40,
         "padding_bottom_desktop": 90,
         "padding_top_mobile": 50,
-        "padding_bottom_mobile": 150
+        "padding_bottom_mobile": 80
       }
     },
     "custom_section_EiRJBc": {
@@ -930,7 +930,7 @@
         "background_type": "image",
         "font_size_heading": "h2",
         "heading": "",
-        "description": "Founded in 2026 by product designers Louis D. and Maria H., OORA was created with a simple belief: technology should feel soft, intuitive, and beautiful.\n\nAfter a year of designing, prototyping, and working closely with suppliers, we launched our first product — TapNest. We hope it can bring a little more joy to your daily routines.\n\nLike many young brands, we’re still learning and improving every day. We’re excited to grow alongside our community, one product at a time",
+        "description": "Turn everyday habits into moments worth having. TapNest exists to bring a little more ease, beauty, and intention to the routine you already have.",
         "button_text": "Our Story",
         "button_link": "shopify://pages/about-us",
         "button_style": "primary",
