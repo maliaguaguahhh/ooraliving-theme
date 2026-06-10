@@ -597,18 +597,23 @@
     },
     "image_banner_style_2_Pe67yk": {
       "type": "image-banner-style-2",
+      "custom_css": [
+        ".img-banner-2__button .xo-btn{min-width:120px;min-height:24px;padding:4px;border:1px solid #fff;border-radius:999px;background:transparent;color:#fff}",
+        ".img-banner-2__description{max-width:100%;font-size:14px;line-height:1.55;font-weight:400;color:#fff;letter-spacing:0}",
+        "@media(max-width:767px){.img-banner-2__content{justify-content:flex-start!important}.img-banner-2__box{padding-top:6rem!important}.img-banner-2__box>xo-animate:first-child{order:2}.img-banner-2__box>xo-animate:last-child{order:1}}"
+      ],
       "settings": {
         "layout": "style-1",
         "background_type": "image",
         "font_size_heading": "h2",
         "heading": "",
-        "description": "Turn everyday habits into moments worth having. TapNest exists to bring a little more ease, beauty, and intention to the routine you already have.",
+        "description": "TapNest began with a belief that the small moments matter. We wanted to create products that bring a little more ease, beauty, and intention to the routines people return to every day.",
         "button_text": "Our Story",
         "button_link": "shopify://pages/about-us",
         "button_style": "primary",
-        "button_size": "lg",
-        "background_image_desktop": "shopify://shop_images/08.jpg",
-        "background_image_mobile": "shopify://shop_images/08.png",
+        "button_size": "sm",
+        "background_image_desktop": "shopify://shop_images/ChatGPT_Image_Jun_10_2026_10_42_17_AM_2.png",
+        "background_image_mobile": "shopify://shop_images/ChatGPT_Image_Jun_10_2026_10_42_17_AM_2.png",
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
@@ -638,7 +643,7 @@
         "collapse_VAbL78": {
           "type": "collapse",
           "settings": {
-            "title": "<p>Can I use TapNest without using the NFC?</p>",
+            "title": "<p>Can I use TapNest without NFC?</p>",
             "content": "<p>Absolutely. The docking feature is the one our customers reach for most — it just fits naturally into your routine. NFC takes it a step further, adding a little ease to the moments you repeat every day.</p>"
           }
         },
@@ -657,7 +662,7 @@
         "collapse_i6b3pR"
       ],
       "custom_css": [
-        "@media (max-width: 767px) {.xo-collapse__trigger-title {font-size: 16px; } .xo-collapse__content {font-size: 14px; }}"
+        "@media (max-width: 767px) {.xo-collapse__trigger-title {font-size: 14px; } .xo-collapse__content {font-size: 14px; }}"
       ],
       "name": "FAQ",
       "settings": {
