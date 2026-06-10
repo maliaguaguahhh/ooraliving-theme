@@ -612,19 +612,11 @@
     "collapse_content_PmMV3m": {
       "type": "collapse-content",
       "blocks": {
-        "collapse_RaLc8a": {
-          "type": "collapse",
-          "disabled": true,
-          "settings": {
-            "title": "<p>What is Tapnest?</p>",
-            "content": "<p>TapNest is the world's first magnetic phone dock that also have multiple NFC shortcuts features. This allows you to open your favourite apps and experiences in one tap, and dock your phone in one smooth gesture. We aim to provide the best and most smooth and intuitive bathroom phone dock experience.</p>"
-          }
-        },
         "collapse_VFkR3z": {
           "type": "collapse",
           "settings": {
             "title": "<p>Will it work with my Phone?</p>",
-            "content": "<p>TapNest is designed for Magsafe-compatible iPhones and Magsafe cases. The NFC shortcut experience works best on recent iPhones with IOS shortcuts enabled. <strong>See our carefully curated </strong><a href=\"/blogs/news\" title=\"News\"><strong>shortcut presets here.<br/><br/></strong></a><strong>The magnetic docking feature and NFC feature DO NOT SUPPORT Android users.</strong></p><p><em><br/>Note: Thick, metallic, or non-Magsafe cases may reduce magnetic hold or NFC sensitivity.</em></p>"
+            "content": "<p>TapNest is designed for <strong>MagSafe-compatible iPhones and MagSafe cases</strong>, with iOS Shortcuts enabled for the full NFC experience. Android devices are not supported at this time. <br/><br/><em>Note: For best results, avoid thick, metallic, or non-MagSafe cases, as these may affect magnetic hold or NFC sensitivity.</em></p>"
           }
         },
         "collapse_ncUxWX": {
@@ -650,7 +642,6 @@
         }
       },
       "block_order": [
-        "collapse_RaLc8a",
         "collapse_VFkR3z",
         "collapse_ncUxWX",
         "collapse_VAbL78",
