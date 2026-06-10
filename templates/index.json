@@ -476,19 +476,24 @@
     },
     "image_banner_style_2_Dypq4f": {
       "type": "image-banner-style-2",
+      "custom_css": [
+        ".img-banner-2__button .xo-btn {min-width: 100px; min-height: 24px; padding: 4px 4px; border: 1px solid #fff; border-radius: 999px; background: transparent; color: #fff;}",
+        ".img-banner-2__description {max-width: 100%; font-size: 16px; line-height: 1.55; font-weight: 400; color: #fff; letter-spacing: 0;}",
+        ".img-banner-2__box {gap: 400px;}"
+      ],
       "name": "Create your own rituals",
       "settings": {
         "layout": "style-2",
         "background_type": "image",
-        "font_size_heading": "h6",
+        "font_size_heading": "h5",
         "heading": "Your ritual, one tap away.",
         "description": "Create custom routines for podcasts, music, and more using the iPhone Shortcuts app.",
-        "button_text": "Shop TapNest",
+        "button_text": "Do not know where to start?",
         "button_link": "shopify://pages/nfc-shortcut-gallery",
         "button_style": "secondary",
-        "button_size": "md",
+        "button_size": "sm",
         "background_image_mobile": "shopify://shop_images/image_81.png",
-        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "color_scheme": "scheme-323cd3c8-b1ca-447a-af93-116891949216",
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 0,
