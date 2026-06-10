@@ -119,7 +119,7 @@
         "promo_button_link": "shopify://products/tapnest",
         "close_button_label": "Close",
         "timer_label_style": "capitalize",
-        "timer_mode": "fixed",
+        "timer_mode": "evergreen",
         "timer_year": "2026",
         "timer_month": "06",
         "timer_day": "25",
