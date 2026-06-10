@@ -104,7 +104,7 @@
         "content_width": 505,
         "placement_type": "flyout",
         "where_to_show": "all_pages",
-        "target_pages": "home",
+        "target_pages": "",
         "when_to_show": "conditions",
         "time_delay": "15000",
         "show_scroll_depth": "25",
