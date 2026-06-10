@@ -623,21 +623,21 @@
           "type": "collapse",
           "settings": {
             "title": "<p>How do I set the NFC Shortcuts?</p>",
-            "content": "<p>We provide quick video tutorials on how to customize your own shortcut experience via iPhone's Shortcuts App. The setup usually takes a few minutes.  If you have trouble thinking of ideas, we also provide curated shortcuts gallery on the website.</p>"
+            "content": "<p>Watch our quick <a href=\"/pages/nfc-shortcut-gallery\" target=\"_blank\" title=\"How to set up the shortcuts?\">video tutorial</a> to get started — setup only takes a few minutes. <br/><br/>If you're looking for inspiration, our <a href=\"/pages/nfc-shortcut-gallery\" target=\"_blank\" title=\"How to set up the shortcuts?\">Shortcuts Gallery</a> has plenty of ideas to get you going. </p>"
           }
         },
         "collapse_VAbL78": {
           "type": "collapse",
           "settings": {
             "title": "<p>Can I use TapNest without using the NFC?</p>",
-            "content": "<p>Yes, totally. The docking feature is what customers use most and find most helpful. NFC adds extra convenience to your daily routines.</p>"
+            "content": "<p>Absolutely. The docking feature is the one our customers reach for most — it just fits naturally into your routine. NFC takes it a step further, adding a little ease to the moments you repeat every day.</p>"
           }
         },
         "collapse_i6b3pR": {
           "type": "collapse",
           "settings": {
             "title": "<p>Where should I place it?</p>",
-            "content": "<p>TapNest is made for smooth bathroom mirror, glass or tile surfaces near your natural eye line. Clean and dry the surface before applying the adhesion. You are also free to place the TapNest onto any surface that you feel that can benefit for the \"tap and snap\" experience.</p>"
+            "content": "<p>TapNest is made for smooth bathroom mirrors, glass, or tile — ideally somewhere near your natural eye line. Just wipe the surface clean and dry before applying. <br/><br/>That said, feel free to place it anywhere the tap-and-snap experience would make your space work better for you.</p>"
           }
         }
       },
