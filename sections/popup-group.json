@@ -108,7 +108,7 @@
         "when_to_show": "conditions",
         "time_delay": "3000",
         "show_scroll_depth": "25",
-        "often_show": "once",
+        "often_show": "every_day",
         "subheading": "",
         "font_size_heading": "h6",
         "heading": "<p>Create urgency over events</p>",
