@@ -100,10 +100,10 @@
     "popup_countdown_promo_7kcnyd": {
       "type": "popup-countdown-promo",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "content_width": 505,
         "placement_type": "flyout",
-        "where_to_show": "target_pages",
+        "where_to_show": "all_pages",
         "target_pages": "home",
         "when_to_show": "conditions",
         "time_delay": "15000",
@@ -115,8 +115,8 @@
         "body": "<p>Tell about ongoing promotions or <br/>limited time offers in your store.</p>",
         "disclaimer": "<p>Provide a disclaimer statement or any<br/>details about your campaign.</p>",
         "content_alignment": "center",
-        "promo_button_label": "See more",
-        "promo_button_link": "",
+        "promo_button_label": "Learn More",
+        "promo_button_link": "shopify://products/tapnest",
         "close_button_label": "Close",
         "timer_label_style": "capitalize",
         "timer_mode": "fixed",

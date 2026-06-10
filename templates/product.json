@@ -87,7 +87,6 @@
         },
         "collapse_Q7Fhxe": {
           "type": "collapse",
-          "disabled": true,
           "settings": {
             "collapse_text": "Shipping & returns",
             "collapse_content": "<p>Quick Dispatch: Orders shipped within 1-2 business days.<br/>Express Delivery: Available for an additional charge.<br/>14-Day Return Policy: Easy returns for a full refund or exchange.<br/>Return Shipping: Complimentary for defective or damaged items.</p>"
@@ -95,7 +94,6 @@
         },
         "collapse_cRztXf": {
           "type": "collapse",
-          "disabled": true,
           "settings": {
             "collapse_text": "Can my phone work?",
             "collapse_content": "<p>High-Grade Plastics: Durable and resistant to wear and tear in bathroom environment,<br/>Rubber: Ensures stability and friction for Phone docking.</p>"
@@ -910,6 +908,7 @@
       "block_order": [
         "grid_hxDtkA"
       ],
+      "disabled": true,
       "name": "t:sections.custom_section.presets.name",
       "settings": {
         "width": "global",
