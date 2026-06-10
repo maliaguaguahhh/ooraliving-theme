@@ -109,7 +109,7 @@
         "time_delay": "3000",
         "show_scroll_depth": "none",
         "often_show": "every_day",
-        "subheading": "Countdown timer lightbox",
+        "subheading": "",
         "font_size_heading": "h6",
         "heading": "<p>Create urgency over events</p>",
         "body": "<p>Tell about ongoing promotions or <br/>limited time offers in your store.</p>",
