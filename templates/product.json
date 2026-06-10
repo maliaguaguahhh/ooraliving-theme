@@ -76,12 +76,10 @@
         },
         "4dabf9d3-3372-4f5a-9edf-1e1f03527b1b": {
           "type": "description",
-          "disabled": true,
           "settings": {}
         },
         "ebe1dbeb-d8fc-4f0c-9d34-fc7892bde207": {
           "type": "collapse",
-          "disabled": true,
           "settings": {
             "collapse_text": "Main features",
             "collapse_content": "<p><strong>Designed for the bathroom mirror</strong></p><p>TapNest is the world’s first magnetic phone dock designed specifically for bathroom routines — keeping your phone elevated, visible, and hands-free exactly where you use it most.</p><p><strong>Magnetic snap-on experience</strong></p><p>Built for MagSafe-compatible iPhones and cases. Simply snap your phone into place for an effortless one-handed docking experience.</p><p><strong>Integrated NFC shortcuts</strong></p><p>Features 3 built-in NFC touch points that let you instantly launch playlists, podcasts, meditation, reminders, beauty tutorials, and more with a simple tap.</p><p><strong>Create your own rituals</strong></p><p>Customize your own NFC routines using Apple Shortcuts. From shower karaoke to morning affirmations, TapNest helps turn everyday habits into intentional moments.</p><p><strong>Soft-tech aesthetic</strong></p><p>Unlike traditional black, industrial-looking phone mounts, TapNest blends soft colors, rounded forms, and lifestyle-focused design into your space beautifully.</p><p><strong>Made for humid environments</strong></p><p>Designed for everyday bathroom conditions including humidity and light splashes. Best installed on mirrors, glass, tile, or other smooth surfaces.</p><p><strong>Compatibility</strong></p><ul><li>Compatible with MagSafe iPhones and MagSafe cases</li><li>NFC functionality depends on iPhone model and iOS settings</li><li>Not recommended for textured walls or painted drywall surfaces</li></ul><p><strong>What’s included</strong></p><ul><li>1 × OORA TapNest</li><li>Adhesive mounting system</li><li>NFC quick-start guide</li><li>OORA ritual setup inspiration card</li></ul>"
@@ -837,9 +835,22 @@
                 "mobile_col_span": 1,
                 "mobile_row_span": 1
               },
-              "blocks": {}
+              "blocks": {
+                "collapse_M4Trt4": {
+                  "type": "collapse",
+                  "name": "t:blocks.collapse.presets.name",
+                  "settings": {
+                    "collapse_title": "Collapse heading",
+                    "collapse_content": "<p>Collapse content</p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "collapse_M4Trt4"
+              ]
             },
-            "column_Pyhxkm": {
+            "column_dnqT9b": {
               "type": "column",
               "settings": {
                 "device": "desktop",
@@ -848,13 +859,51 @@
                 "mobile_col_span": 1,
                 "mobile_row_span": 1
               },
-              "blocks": {}
+              "blocks": {
+                "collapse_hDbFjt": {
+                  "type": "collapse",
+                  "name": "t:blocks.collapse.presets.name",
+                  "settings": {
+                    "collapse_title": "Collapse heading",
+                    "collapse_content": "<p>Collapse content</p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "collapse_hDbFjt"
+              ]
+            },
+            "column_NfCC3b": {
+              "type": "column",
+              "settings": {
+                "device": "desktop",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "collapse_irFA4H": {
+                  "type": "collapse",
+                  "name": "t:blocks.collapse.presets.name",
+                  "settings": {
+                    "collapse_title": "Collapse heading",
+                    "collapse_content": "<p>Collapse content</p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "collapse_irFA4H"
+              ]
             }
           },
           "block_order": [
             "column_EpUBtr",
             "column_p87xTB",
-            "column_Pyhxkm"
+            "column_dnqT9b",
+            "column_NfCC3b"
           ]
         }
       },
