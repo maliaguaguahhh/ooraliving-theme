@@ -16,9 +16,9 @@
         "layout": "style-2",
         "background_type": "image",
         "font_size_heading": "h3",
-        "heading": "Meet TapNest.",
-        "description": "Tap. Snap. Flow",
-        "button_text": "Shop TapNest",
+        "heading": "",
+        "description": "Meet TapNest",
+        "button_text": "Shop Now",
         "button_link": "shopify://products/tapnest",
         "button_style": "primary",
         "button_size": "md",
@@ -48,6 +48,7 @@
         },
         "custom_liquid_KrWczM": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<div class=\"free-shipping-label\">\n  Free Shipping Included\n</div>\n\n<style>\n  .free-shipping-label {\n    margin-top: 6px;\n    color: #999999;\n    font-size: 18px;\n    font-weight: 400;\n    line-height: 1.3;\n  }\n\n  @media screen and (max-width: 749px) {\n    .free-shipping-label {\n      font-size: 16px;\n    }\n  }\n</style>"
           }
