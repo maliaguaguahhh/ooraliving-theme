@@ -50,9 +50,8 @@
         },
         "custom_liquid_KrWczM": {
           "type": "custom_liquid",
-          "disabled": true,
           "settings": {
-            "custom_liquid": "<div class=\"free-shipping-label\">\n  Free Shipping Included\n</div>\n\n<style>\n  .free-shipping-label {\n    margin-top: 6px;\n    color: #999999;\n    font-size: 18px;\n    font-weight: 400;\n    line-height: 1.3;\n  }\n\n  @media screen and (max-width: 749px) {\n    .free-shipping-label {\n      font-size: 16px;\n    }\n  }\n</style>"
+            "custom_liquid": "<div class=\"free-shipping-label\">\n  Free US Shipping Included\n</div>\n\n<style>\n  .free-shipping-label {\n    margin-top: 6px;\n    color: #999999;\n    font-size: 18px;\n    font-weight: 400;\n    line-height: 1.3;\n  }\n\n  @media screen and (max-width: 749px) {\n    .free-shipping-label {\n      font-size: 14px;\n    }\n  }\n</style>"
           }
         },
         "variants_hVq83B": {
