@@ -76,10 +76,12 @@
         },
         "4dabf9d3-3372-4f5a-9edf-1e1f03527b1b": {
           "type": "description",
+          "disabled": true,
           "settings": {}
         },
         "ebe1dbeb-d8fc-4f0c-9d34-fc7892bde207": {
           "type": "collapse",
+          "disabled": true,
           "settings": {
             "collapse_text": "Main features",
             "collapse_content": "<p><strong>Designed for the bathroom mirror</strong></p><p>TapNest is the world’s first magnetic phone dock designed specifically for bathroom routines — keeping your phone elevated, visible, and hands-free exactly where you use it most.</p><p><strong>Magnetic snap-on experience</strong></p><p>Built for MagSafe-compatible iPhones and cases. Simply snap your phone into place for an effortless one-handed docking experience.</p><p><strong>Integrated NFC shortcuts</strong></p><p>Features 3 built-in NFC touch points that let you instantly launch playlists, podcasts, meditation, reminders, beauty tutorials, and more with a simple tap.</p><p><strong>Create your own rituals</strong></p><p>Customize your own NFC routines using Apple Shortcuts. From shower karaoke to morning affirmations, TapNest helps turn everyday habits into intentional moments.</p><p><strong>Soft-tech aesthetic</strong></p><p>Unlike traditional black, industrial-looking phone mounts, TapNest blends soft colors, rounded forms, and lifestyle-focused design into your space beautifully.</p><p><strong>Made for humid environments</strong></p><p>Designed for everyday bathroom conditions including humidity and light splashes. Best installed on mirrors, glass, tile, or other smooth surfaces.</p><p><strong>Compatibility</strong></p><ul><li>Compatible with MagSafe iPhones and MagSafe cases</li><li>NFC functionality depends on iPhone model and iOS settings</li><li>Not recommended for textured walls or painted drywall surfaces</li></ul><p><strong>What’s included</strong></p><ul><li>1 × OORA TapNest</li><li>Adhesive mounting system</li><li>NFC quick-start guide</li><li>OORA ritual setup inspiration card</li></ul>"
@@ -87,6 +89,7 @@
         },
         "collapse_Q7Fhxe": {
           "type": "collapse",
+          "disabled": true,
           "settings": {
             "collapse_text": "Shipping & returns",
             "collapse_content": "<p>Quick Dispatch: Orders shipped within 1-2 business days.<br/>Express Delivery: Available for an additional charge.<br/>14-Day Return Policy: Easy returns for a full refund or exchange.<br/>Return Shipping: Complimentary for defective or damaged items.</p>"
@@ -94,6 +97,7 @@
         },
         "collapse_cRztXf": {
           "type": "collapse",
+          "disabled": true,
           "settings": {
             "collapse_text": "Can my phone work?",
             "collapse_content": "<p>High-Grade Plastics: Durable and resistant to wear and tear in bathroom environment,<br/>Rubber: Ensures stability and friction for Phone docking.</p>"
@@ -101,6 +105,7 @@
         },
         "collapse_mdKxAA": {
           "type": "collapse",
+          "disabled": true,
           "settings": {
             "collapse_text": "Care guide",
             "collapse_content": "<p>Regular Dusting: Use a soft, dry cloth to wipe the surface and prevent dust accumulation.<br/>Avoid Moisture: Keep the speakers away from water and humidity to prevent damage.<br/>Proper Placement: Position the speakers on a stable surface to avoid falls and vibrations.<br/>Cable Management: Organize and secure cables to prevent tangling and wear.<br/>Firmware Updates: Check for and install any software updates to ensure the best performance.</p>"
@@ -250,6 +255,114 @@
         "padding_bottom_mobile": 50
       }
     },
+    "custom_section_CgqbtL": {
+      "type": "custom-section",
+      "blocks": {
+        "grid_nnp7nA": {
+          "type": "grid",
+          "settings": {
+            "device": "mobile",
+            "desktop_col": 3,
+            "tablet_col": 2,
+            "mobile_col": 1,
+            "gap": "global",
+            "col_gap_custom_desktop": 20,
+            "col_gap_custom_mobile": 14,
+            "row_gap_custom_desktop": 20,
+            "row_gap_custom_mobile": 14,
+            "fixed_row": false,
+            "auto_row": 20
+          },
+          "blocks": {
+            "column_eJAQce": {
+              "type": "column",
+              "settings": {
+                "device": "desktop",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "text_hWTNHt": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text_tag_name": "h2",
+                    "text_heading": "How we use TapNest",
+                    "font_size_heading": "h5",
+                    "text_line_height": 1.2,
+                    "text_effect": "split",
+                    "text_duration": 1000,
+                    "text_heading_width_desktop": 100,
+                    "text_heading_width_mobile": 100,
+                    "alignment": "left",
+                    "padding_top_dt": 0,
+                    "padding_bottom_dt": 0,
+                    "padding_top_mb": 0,
+                    "padding_bottom_mb": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_hWTNHt"
+              ]
+            },
+            "column_magidW": {
+              "type": "column",
+              "settings": {
+                "device": "desktop",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "video_x9zJTh": {
+                  "type": "video",
+                  "name": "t:blocks.video.presets.name",
+                  "settings": {
+                    "enable_video_looping": false,
+                    "video": "shopify://files/videos/Weixin Image_20260514152822_1069_711.mp4",
+                    "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                    "video_alt_text": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "video_x9zJTh"
+              ]
+            }
+          },
+          "block_order": [
+            "column_eJAQce",
+            "column_magidW"
+          ]
+        }
+      },
+      "block_order": [
+        "grid_nnp7nA"
+      ],
+      "name": "t:sections.custom_section.presets.name",
+      "settings": {
+        "width": "global",
+        "custom_width": 1400,
+        "height": "auto",
+        "custom_height": 50,
+        "container_gap": "global",
+        "container_gap_desktop": 30,
+        "container_gap_mobile": 20,
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
     "hero_carousel_UCaq7W": {
       "type": "hero-carousel",
       "blocks": {
@@ -316,141 +429,6 @@
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 0
-      }
-    },
-    "custom_section_CgqbtL": {
-      "type": "custom-section",
-      "blocks": {
-        "grid_nnp7nA": {
-          "type": "grid",
-          "settings": {
-            "device": "mobile",
-            "desktop_col": 3,
-            "tablet_col": 2,
-            "mobile_col": 1,
-            "gap": "global",
-            "col_gap_custom_desktop": 20,
-            "col_gap_custom_mobile": 14,
-            "row_gap_custom_desktop": 20,
-            "row_gap_custom_mobile": 14,
-            "fixed_row": false,
-            "auto_row": 20
-          },
-          "blocks": {
-            "column_eJAQce": {
-              "type": "column",
-              "settings": {
-                "device": "desktop",
-                "desktop_col_span": 1,
-                "desktop_row_span": 1,
-                "mobile_col_span": 1,
-                "mobile_row_span": 1
-              },
-              "blocks": {
-                "text_hWTNHt": {
-                  "type": "text",
-                  "name": "t:blocks.text.name",
-                  "settings": {
-                    "text_tag_name": "h2",
-                    "text_heading": "How we use TapNest",
-                    "font_size_heading": "h5",
-                    "text_line_height": 1.2,
-                    "text_effect": "split",
-                    "text_duration": 1000,
-                    "text_heading_width_desktop": 100,
-                    "text_heading_width_mobile": 100,
-                    "alignment": "left",
-                    "padding_top_dt": 0,
-                    "padding_bottom_dt": 0,
-                    "padding_top_mb": 0,
-                    "padding_bottom_mb": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_hWTNHt"
-              ]
-            },
-            "column_VjEexx": {
-              "type": "column",
-              "settings": {
-                "device": "desktop",
-                "desktop_col_span": 1,
-                "desktop_row_span": 1,
-                "mobile_col_span": 1,
-                "mobile_row_span": 1
-              },
-              "blocks": {
-                "video_7nFLBP": {
-                  "type": "video",
-                  "name": "t:blocks.video.presets.name",
-                  "settings": {
-                    "enable_video_looping": false,
-                    "video": "shopify://files/videos/Weixin Image_20260514152822_1069_711.mp4",
-                    "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-                    "video_alt_text": ""
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "video_7nFLBP"
-              ]
-            },
-            "column_magidW": {
-              "type": "column",
-              "settings": {
-                "device": "desktop",
-                "desktop_col_span": 1,
-                "desktop_row_span": 1,
-                "mobile_col_span": 1,
-                "mobile_row_span": 1
-              },
-              "blocks": {
-                "video_x9zJTh": {
-                  "type": "video",
-                  "name": "t:blocks.video.presets.name",
-                  "settings": {
-                    "enable_video_looping": false,
-                    "video": "shopify://files/videos/Weixin Image_20260514152822_1069_711.mp4",
-                    "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-                    "video_alt_text": ""
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "video_x9zJTh"
-              ]
-            }
-          },
-          "block_order": [
-            "column_eJAQce",
-            "column_VjEexx",
-            "column_magidW"
-          ]
-        }
-      },
-      "block_order": [
-        "grid_nnp7nA"
-      ],
-      "name": "t:sections.custom_section.presets.name",
-      "settings": {
-        "width": "global",
-        "custom_width": 1400,
-        "height": "auto",
-        "custom_height": 50,
-        "container_gap": "global",
-        "container_gap_desktop": 30,
-        "container_gap_mobile": 20,
-        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 50,
-        "padding_bottom_desktop": 50,
-        "padding_top_mobile": 50,
-        "padding_bottom_mobile": 50
       }
     },
     "video_feedback_4EeFed": {
@@ -889,7 +867,7 @@
                     "content": "<p>Magsafe-style placement makes docking easy, clean and intuitive. </p>",
                     "alignment": "center",
                     "inherit_color_schema": false,
-                    "color_schema_box": "background-1"
+                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
                   },
                   "blocks": {}
                 }
@@ -918,7 +896,7 @@
                     "content": "<p>3 NFC touch points let you  easily open an app, launch a playlist, or trigger a routine.</p>",
                     "alignment": "center",
                     "inherit_color_schema": false,
-                    "color_schema_box": "background-1"
+                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
                   },
                   "blocks": {}
                 }
@@ -947,7 +925,7 @@
                     "content": "<p>3M double sided tape provides firm and easy installation without damaging your walls.</p>",
                     "alignment": "center",
                     "inherit_color_schema": false,
-                    "color_schema_box": "background-1"
+                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
                   },
                   "blocks": {}
                 }
@@ -976,7 +954,7 @@
                     "content": "<p>Warm Living colors that fit and elevate your Bathroom environments.</p>",
                     "alignment": "center",
                     "inherit_color_schema": false,
-                    "color_schema_box": "background-1"
+                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
                   },
                   "blocks": {}
                 }
@@ -1096,7 +1074,7 @@
         "container_gap": "global",
         "container_gap_desktop": 30,
         "container_gap_mobile": 20,
-        "color_scheme": "background-1",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 39,
@@ -1237,7 +1215,7 @@
         "judge_me_reviews_review_widget_UziQMR": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "review_data": "sample_data",
+            "review_data": "real_data",
             "max_width": 1200,
             "show_shop_reviews": false,
             "empty_state": "empty_widget"
@@ -1263,9 +1241,9 @@
     "main",
     "blocks_xQ4MNJ",
     "testimonial_style_4_pkXpeP",
+    "custom_section_CgqbtL",
     "hero_carousel_UCaq7W",
     "hero_carousel_wEyFzx",
-    "custom_section_CgqbtL",
     "video_feedback_4EeFed",
     "multi_column_style_1_ePNRPr",
     "multi_column_style_1_zMJcpM",

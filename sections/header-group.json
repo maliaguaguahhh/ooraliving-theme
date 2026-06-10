@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Buy Now: 20% off  + Free Shipping</p>",
+            "text": "<p><strong>Buy Now: 20% off  + Free Shipping</strong></p>",
             "link": "shopify://products/tapnest"
           }
         }
@@ -36,7 +36,7 @@
         "marquee_speed": 6,
         "marquee_rtl": false,
         "marquee_stop": true,
-        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "color_scheme": "scheme-323cd3c8-b1ca-447a-af93-116891949216",
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 13,
