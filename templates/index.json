@@ -568,27 +568,48 @@
         "padding_bottom_mobile": 20
       }
     },
-    "image_button_style_1_wwf7QK": {
-      "type": "image-button-style-1",
-      "name": "t:sections.image_button_style_1.presets.name",
+    "product_specification_style_13_Y73fzK": {
+      "type": "product-specification-style-13",
+      "blocks": {
+        "chart_UtJy38": {
+          "type": "chart",
+          "disabled": true,
+          "settings": {
+            "title": "Subheading",
+            "value_max": 100,
+            "x_label": "0\n1h\n6h\n14h\n20h\n24h",
+            "y_label": "100\n80\n60\n40\n20\n0",
+            "dataset": "0,65,92,90,75,85\n0,38,65,40,30,60\n0,25,40,38,36,50",
+            "list_information": "Heading - 67\nHeading - 80\nHeading - 98"
+          }
+        },
+        "collection_BEqiQP": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "aspect_ratio_dt": "21/9",
+            "aspect_ratio_mb": "3/2",
+            "button_text": "Button",
+            "button_link": "shopify://collections/all",
+            "button_style": "primary",
+            "button_size": "md"
+          }
+        }
+      },
+      "block_order": [
+        "chart_UtJy38",
+        "collection_BEqiQP"
+      ],
+      "name": "t:sections.product_specification_style_13.presets.name",
       "settings": {
-        "layout": "page-width",
-        "background_type": "image",
-        "aspect_ratio_desktop": "21/9",
-        "aspect_ratio_mobile": "16/9",
-        "enable_video_looping": true,
-        "video_url": "",
-        "button_text": "Button",
-        "button_link": "shopify://products/tapnest",
-        "button_style": "primary",
-        "button_size": "sm",
         "color_scheme": "",
         "background_color": "",
         "background_gradient": "",
-        "padding_top_desktop": 0,
-        "padding_bottom_desktop": 0,
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
         "padding_top_mobile": 0,
-        "padding_bottom_mobile": 60
+        "padding_bottom_mobile": 0
       }
     },
     "video_feedback_WXgbgP": {
@@ -961,7 +982,7 @@
     "custom_section_tijzzy",
     "product_specification_style_5_B9DyJ6",
     "product_specification_style_5_m4b9UA",
-    "image_button_style_1_wwf7QK",
+    "product_specification_style_13_Y73fzK",
     "video_feedback_WXgbgP",
     "image_banner_style_2_Dypq4f",
     "image_banner_style_2_D3npaz",
