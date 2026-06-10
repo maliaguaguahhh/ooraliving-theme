@@ -113,7 +113,7 @@
         "font_size_heading": "h6",
         "heading": "<p>Create urgency over events</p>",
         "body": "<p>Tell about ongoing promotions or <br/>limited time offers in your store.</p>",
-        "disclaimer": "<p>Provide a disclaimer statement or any<br/>details about your campaign.</p>",
+        "disclaimer": "<p>Provide a disclaimer statement</p>",
         "content_alignment": "center",
         "promo_button_label": "Learn More",
         "promo_button_link": "shopify://products/tapnest",
