@@ -500,7 +500,7 @@
         "button_text": "Do not know where to start?",
         "button_link": "shopify://pages/nfc-shortcut-gallery",
         "button_style": "secondary",
-        "button_size": "sm",
+        "button_size": "md",
         "background_image_mobile": "shopify://shop_images/image_81.png",
         "color_scheme": "scheme-323cd3c8-b1ca-447a-af93-116891949216",
         "background_color": "",
