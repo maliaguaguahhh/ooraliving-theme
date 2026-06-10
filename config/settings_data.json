@@ -306,7 +306,7 @@
           "badge_new_label": "#ffffff",
           "badge_sold_out_background": "#ffffff",
           "badge_sold_out_label": "#4d4d4d",
-          "border": "#e5e5e5",
+          "border": "#d3d3d3",
           "error": "#da1e28",
           "warning": "#f39f1f",
           "success": "#10a71f",
