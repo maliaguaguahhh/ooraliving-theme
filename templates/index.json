@@ -210,10 +210,17 @@
     },
     "media_video_869NfF": {
       "type": "media-video",
+      "custom_css": [
+        ".media-video .xo-video__poster,.media-video .xo-video__button {display: none !important;}",
+        ".media-video .xo-video,.media-video .xo-media,.media-video xo-intersection-video,.media-video .xo-embed-responsive {width: 100% !important; height: auto !important;}",
+        ".media-video .xo-embed-responsive:before {display: none;}",
+        ".media-video video {position: static !important; display: block; width: 100% !important; height: auto !important; object-fit: contain !important;}"
+      ],
       "name": "t:sections.media_video.presets.name",
       "settings": {
         "layout": "full-width",
-        "enable_video_looping": false,
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/product rendering.mp4",
         "video_url": "",
         "cover_image": "shopify://shop_images/Frame_37.png",
         "video_alt_text": "",
@@ -345,6 +352,7 @@
         "text_duration": 1000,
         "text_heading_width_desktop": 100,
         "text_heading_width_mobile": 100,
+        "image_1": "shopify://shop_images/image_63.png",
         "aspect_ratio": "3/4",
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
