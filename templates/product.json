@@ -582,6 +582,261 @@
         "padding_bottom_mobile": 50
       }
     },
+    "custom_section_pM4t7C": {
+      "type": "custom-section",
+      "blocks": {
+        "grid_bGV3Uk": {
+          "type": "grid",
+          "settings": {
+            "device": "mobile",
+            "desktop_col": 2,
+            "tablet_col": 2,
+            "mobile_col": 1,
+            "gap": "global",
+            "col_gap_custom_desktop": 20,
+            "col_gap_custom_mobile": 14,
+            "row_gap_custom_desktop": 20,
+            "row_gap_custom_mobile": 14,
+            "fixed_row": false,
+            "auto_row": 20
+          },
+          "blocks": {
+            "column_NiywmD": {
+              "type": "column",
+              "settings": {
+                "device": "desktop",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "service_bU88A6": {
+                  "type": "service",
+                  "settings": {
+                    "image_size": "md",
+                    "color_config_enable": false,
+                    "heading": "<p><strong>Snap without Thinking</strong></p>",
+                    "heading_link": "",
+                    "content": "<p>Magsafe-style placement makes docking easy, clean and intuitive. </p>",
+                    "alignment": "center",
+                    "inherit_color_schema": false,
+                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "service_bU88A6"
+              ]
+            },
+            "column_wANiKq": {
+              "type": "column",
+              "settings": {
+                "device": "desktop",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "service_mpNDwh": {
+                  "type": "service",
+                  "settings": {
+                    "image_size": "md",
+                    "color_config_enable": false,
+                    "heading": "<p><strong>Tap to start apps</strong></p>",
+                    "heading_link": "",
+                    "content": "<p>3 NFC touch points let you  easily open an app, launch a playlist, or trigger a routine.</p>",
+                    "alignment": "center",
+                    "inherit_color_schema": false,
+                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "service_mpNDwh"
+              ]
+            },
+            "column_Ht7Ey9": {
+              "type": "column",
+              "settings": {
+                "device": "desktop",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "service_Rkr3DC": {
+                  "type": "service",
+                  "settings": {
+                    "image_size": "md",
+                    "color_config_enable": false,
+                    "heading": "<p><strong>Stress-free Installation</strong></p>",
+                    "heading_link": "",
+                    "content": "<p>3M double sided tape provides firm and easy installation without damaging your walls.</p>",
+                    "alignment": "center",
+                    "inherit_color_schema": false,
+                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "service_Rkr3DC"
+              ]
+            },
+            "column_KCrW8N": {
+              "type": "column",
+              "settings": {
+                "device": "desktop",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "service_PegtJJ": {
+                  "type": "service",
+                  "settings": {
+                    "image_size": "md",
+                    "color_config_enable": false,
+                    "heading": "<p><strong>Designed to Elevate</strong></p>",
+                    "heading_link": "",
+                    "content": "<p>Warm Living colors that fit and elevate your Bathroom environments.</p>",
+                    "alignment": "center",
+                    "inherit_color_schema": false,
+                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "service_PegtJJ"
+              ]
+            }
+          },
+          "block_order": [
+            "column_NiywmD",
+            "column_wANiKq",
+            "column_Ht7Ey9",
+            "column_KCrW8N"
+          ]
+        },
+        "ai_gen_block_c324f5c_R7Fjqr": {
+          "type": "ai_gen_block_c324f5c",
+          "disabled": true,
+          "settings": {
+            "title": "Why TapNest?",
+            "subtitle": "See how we compare to other phone holder",
+            "title_size": 32,
+            "subtitle_size": 16,
+            "desktop_width_percent": 100,
+            "highlight_our_product": true,
+            "show_our_badge": true,
+            "our_badge_text": "Our Product",
+            "our_product_name": "TapNest",
+            "our_product_subtitle": "",
+            "our_product_image": "shopify://shop_images/1.png",
+            "our_product_price": "$49",
+            "our_product_button_text": "Shop now",
+            "our_product_button_link": "",
+            "our_feature_1": "Easy Magnetic Docking",
+            "our_feature_1_enabled": true,
+            "our_feature_2": "Tap to Start Apps",
+            "our_feature_2_enabled": true,
+            "our_feature_3": "Living Color Options",
+            "our_feature_3_enabled": true,
+            "our_feature_4": "Curated Shortcuts Gallery",
+            "our_feature_4_enabled": true,
+            "our_feature_5": "Refined Aesthetics",
+            "our_feature_5_enabled": true,
+            "our_feature_6": "",
+            "our_feature_6_enabled": false,
+            "our_feature_7": "",
+            "our_feature_7_enabled": false,
+            "our_feature_8": "",
+            "our_feature_8_enabled": true,
+            "show_competitor_badge": true,
+            "competitor_badge_label": "Competitor",
+            "competitor_product_name": "Standard Phone Dock",
+            "competitor_product_subtitle": "",
+            "competitor_product_image": "shopify://shop_images/image_6_ca472fe5-0731-4a9a-92dc-d7415452b739.png",
+            "competitor_product_price": "",
+            "competitor_product_button_text": "",
+            "competitor_product_button_link": "",
+            "competitor_feature_1": "Hard to Mount your Phone",
+            "competitor_feature_1_enabled": false,
+            "competitor_feature_2": "No Other Features",
+            "competitor_feature_2_enabled": false,
+            "competitor_feature_3": "Exposed Hinges",
+            "competitor_feature_3_enabled": false,
+            "competitor_feature_4": "Techy Black Color",
+            "competitor_feature_4_enabled": false,
+            "competitor_feature_5": "",
+            "competitor_feature_5_enabled": false,
+            "competitor_feature_6": "",
+            "competitor_feature_6_enabled": true,
+            "competitor_feature_7": "",
+            "competitor_feature_7_enabled": false,
+            "competitor_feature_8": "",
+            "competitor_feature_8_enabled": false,
+            "background_color": "#ffffff",
+            "text_color": "#1e1e1e",
+            "column_background": "#f6f6f6",
+            "column_border_color": "#e5e5e5",
+            "column_border_width": 1,
+            "highlight_border_color": "#c87272",
+            "highlight_border_width": 2,
+            "divider_color": "#e5e5e5",
+            "check_color": "#10a71f",
+            "cross_color": "#da1e28",
+            "padding": 40,
+            "column_padding": 25,
+            "column_gap": 25,
+            "border_radius": 12,
+            "column_border_radius": 8,
+            "image_border_radius": 8,
+            "product_name_size": 24,
+            "price_size": 28,
+            "badge_background": "#c87272",
+            "badge_text_color": "#ffffff",
+            "competitor_badge_bg": "#888888",
+            "competitor_badge_color": "#ffffff",
+            "button_background": "#c87272",
+            "button_text_color": "#ffffff",
+            "button_hover_background": "#b56565",
+            "competitor_button_bg": "#888888",
+            "competitor_button_color": "#ffffff",
+            "button_border_radius": 6
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "grid_bGV3Uk",
+        "ai_gen_block_c324f5c_R7Fjqr"
+      ],
+      "name": "Feature icons",
+      "settings": {
+        "width": "global",
+        "custom_width": 1400,
+        "height": "auto",
+        "custom_height": 50,
+        "container_gap": "global",
+        "container_gap_desktop": 30,
+        "container_gap_mobile": 20,
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 39,
+        "padding_bottom_desktop": 32,
+        "padding_top_mobile": 39,
+        "padding_bottom_mobile": 32
+      }
+    },
     "1779938978cf3e0fbb": {
       "type": "_blocks",
       "blocks": {
@@ -927,261 +1182,6 @@
         "padding_bottom_mobile": 50
       }
     },
-    "custom_section_pM4t7C": {
-      "type": "custom-section",
-      "blocks": {
-        "grid_bGV3Uk": {
-          "type": "grid",
-          "settings": {
-            "device": "mobile",
-            "desktop_col": 2,
-            "tablet_col": 2,
-            "mobile_col": 1,
-            "gap": "global",
-            "col_gap_custom_desktop": 20,
-            "col_gap_custom_mobile": 14,
-            "row_gap_custom_desktop": 20,
-            "row_gap_custom_mobile": 14,
-            "fixed_row": false,
-            "auto_row": 20
-          },
-          "blocks": {
-            "column_NiywmD": {
-              "type": "column",
-              "settings": {
-                "device": "desktop",
-                "desktop_col_span": 1,
-                "desktop_row_span": 1,
-                "mobile_col_span": 1,
-                "mobile_row_span": 1
-              },
-              "blocks": {
-                "service_bU88A6": {
-                  "type": "service",
-                  "settings": {
-                    "image_size": "md",
-                    "color_config_enable": false,
-                    "heading": "<p><strong>Snap without Thinking</strong></p>",
-                    "heading_link": "",
-                    "content": "<p>Magsafe-style placement makes docking easy, clean and intuitive. </p>",
-                    "alignment": "center",
-                    "inherit_color_schema": false,
-                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "service_bU88A6"
-              ]
-            },
-            "column_wANiKq": {
-              "type": "column",
-              "settings": {
-                "device": "desktop",
-                "desktop_col_span": 1,
-                "desktop_row_span": 1,
-                "mobile_col_span": 1,
-                "mobile_row_span": 1
-              },
-              "blocks": {
-                "service_mpNDwh": {
-                  "type": "service",
-                  "settings": {
-                    "image_size": "md",
-                    "color_config_enable": false,
-                    "heading": "<p><strong>Tap to start apps</strong></p>",
-                    "heading_link": "",
-                    "content": "<p>3 NFC touch points let you  easily open an app, launch a playlist, or trigger a routine.</p>",
-                    "alignment": "center",
-                    "inherit_color_schema": false,
-                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "service_mpNDwh"
-              ]
-            },
-            "column_Ht7Ey9": {
-              "type": "column",
-              "settings": {
-                "device": "desktop",
-                "desktop_col_span": 1,
-                "desktop_row_span": 1,
-                "mobile_col_span": 1,
-                "mobile_row_span": 1
-              },
-              "blocks": {
-                "service_Rkr3DC": {
-                  "type": "service",
-                  "settings": {
-                    "image_size": "md",
-                    "color_config_enable": false,
-                    "heading": "<p><strong>Stress-free Installation</strong></p>",
-                    "heading_link": "",
-                    "content": "<p>3M double sided tape provides firm and easy installation without damaging your walls.</p>",
-                    "alignment": "center",
-                    "inherit_color_schema": false,
-                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "service_Rkr3DC"
-              ]
-            },
-            "column_KCrW8N": {
-              "type": "column",
-              "settings": {
-                "device": "desktop",
-                "desktop_col_span": 1,
-                "desktop_row_span": 1,
-                "mobile_col_span": 1,
-                "mobile_row_span": 1
-              },
-              "blocks": {
-                "service_PegtJJ": {
-                  "type": "service",
-                  "settings": {
-                    "image_size": "md",
-                    "color_config_enable": false,
-                    "heading": "<p><strong>Designed to Elevate</strong></p>",
-                    "heading_link": "",
-                    "content": "<p>Warm Living colors that fit and elevate your Bathroom environments.</p>",
-                    "alignment": "center",
-                    "inherit_color_schema": false,
-                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "service_PegtJJ"
-              ]
-            }
-          },
-          "block_order": [
-            "column_NiywmD",
-            "column_wANiKq",
-            "column_Ht7Ey9",
-            "column_KCrW8N"
-          ]
-        },
-        "ai_gen_block_c324f5c_R7Fjqr": {
-          "type": "ai_gen_block_c324f5c",
-          "disabled": true,
-          "settings": {
-            "title": "Why TapNest?",
-            "subtitle": "See how we compare to other phone holder",
-            "title_size": 32,
-            "subtitle_size": 16,
-            "desktop_width_percent": 100,
-            "highlight_our_product": true,
-            "show_our_badge": true,
-            "our_badge_text": "Our Product",
-            "our_product_name": "TapNest",
-            "our_product_subtitle": "",
-            "our_product_image": "shopify://shop_images/1.png",
-            "our_product_price": "$49",
-            "our_product_button_text": "Shop now",
-            "our_product_button_link": "",
-            "our_feature_1": "Easy Magnetic Docking",
-            "our_feature_1_enabled": true,
-            "our_feature_2": "Tap to Start Apps",
-            "our_feature_2_enabled": true,
-            "our_feature_3": "Living Color Options",
-            "our_feature_3_enabled": true,
-            "our_feature_4": "Curated Shortcuts Gallery",
-            "our_feature_4_enabled": true,
-            "our_feature_5": "Refined Aesthetics",
-            "our_feature_5_enabled": true,
-            "our_feature_6": "",
-            "our_feature_6_enabled": false,
-            "our_feature_7": "",
-            "our_feature_7_enabled": false,
-            "our_feature_8": "",
-            "our_feature_8_enabled": true,
-            "show_competitor_badge": true,
-            "competitor_badge_label": "Competitor",
-            "competitor_product_name": "Standard Phone Dock",
-            "competitor_product_subtitle": "",
-            "competitor_product_image": "shopify://shop_images/image_6_ca472fe5-0731-4a9a-92dc-d7415452b739.png",
-            "competitor_product_price": "",
-            "competitor_product_button_text": "",
-            "competitor_product_button_link": "",
-            "competitor_feature_1": "Hard to Mount your Phone",
-            "competitor_feature_1_enabled": false,
-            "competitor_feature_2": "No Other Features",
-            "competitor_feature_2_enabled": false,
-            "competitor_feature_3": "Exposed Hinges",
-            "competitor_feature_3_enabled": false,
-            "competitor_feature_4": "Techy Black Color",
-            "competitor_feature_4_enabled": false,
-            "competitor_feature_5": "",
-            "competitor_feature_5_enabled": false,
-            "competitor_feature_6": "",
-            "competitor_feature_6_enabled": true,
-            "competitor_feature_7": "",
-            "competitor_feature_7_enabled": false,
-            "competitor_feature_8": "",
-            "competitor_feature_8_enabled": false,
-            "background_color": "#ffffff",
-            "text_color": "#1e1e1e",
-            "column_background": "#f6f6f6",
-            "column_border_color": "#e5e5e5",
-            "column_border_width": 1,
-            "highlight_border_color": "#c87272",
-            "highlight_border_width": 2,
-            "divider_color": "#e5e5e5",
-            "check_color": "#10a71f",
-            "cross_color": "#da1e28",
-            "padding": 40,
-            "column_padding": 25,
-            "column_gap": 25,
-            "border_radius": 12,
-            "column_border_radius": 8,
-            "image_border_radius": 8,
-            "product_name_size": 24,
-            "price_size": 28,
-            "badge_background": "#c87272",
-            "badge_text_color": "#ffffff",
-            "competitor_badge_bg": "#888888",
-            "competitor_badge_color": "#ffffff",
-            "button_background": "#c87272",
-            "button_text_color": "#ffffff",
-            "button_hover_background": "#b56565",
-            "competitor_button_bg": "#888888",
-            "competitor_button_color": "#ffffff",
-            "button_border_radius": 6
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "grid_bGV3Uk",
-        "ai_gen_block_c324f5c_R7Fjqr"
-      ],
-      "name": "Feature icons",
-      "settings": {
-        "width": "global",
-        "custom_width": 1400,
-        "height": "auto",
-        "custom_height": 50,
-        "container_gap": "global",
-        "container_gap_desktop": 30,
-        "container_gap_mobile": 20,
-        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 39,
-        "padding_bottom_desktop": 32,
-        "padding_top_mobile": 39,
-        "padding_bottom_mobile": 32
-      }
-    },
     "collapse_content_3mHbKF": {
       "type": "collapse-content",
       "blocks": {
@@ -1319,10 +1319,10 @@
     "hero_carousel_wEyFzx",
     "multi_column_style_1_ePNRPr",
     "multi_column_style_1_zMJcpM",
+    "custom_section_pM4t7C",
     "1779938978cf3e0fbb",
     "multi_column_style_1_8fAFqN",
     "custom_section_pwtGyr",
-    "custom_section_pM4t7C",
     "collapse_content_3mHbKF",
     "main_product_recommendations_TnWBYD",
     "gallery_style_1_nQ8VYH"
