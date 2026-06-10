@@ -106,7 +106,7 @@
         "where_to_show": "all_pages",
         "target_pages": "",
         "when_to_show": "conditions",
-        "time_delay": "15000",
+        "time_delay": "5000",
         "show_scroll_depth": "25",
         "often_show": "every_day",
         "subheading": "Countdown timer lightbox",
