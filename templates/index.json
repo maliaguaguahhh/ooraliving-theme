@@ -11,7 +11,9 @@
   "sections": {
     "image_banner_style_2_x4qhp6": {
       "type": "image-banner-style-2",
-      "custom_css": [],
+      "custom_css": [
+        "@media (max-width: 767px) {.img-banner-2__box {transform: translateY(-80px); } .img-banner-2__description {font-size: 24px; } .img-banner-2__button .xo-btn__text {font-size: 14px; }}"
+      ],
       "settings": {
         "layout": "style-2",
         "background_type": "image",
