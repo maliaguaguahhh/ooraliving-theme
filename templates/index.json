@@ -214,7 +214,8 @@
       "settings": {
         "layout": "full-width",
         "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_url": "",
+        "cover_image": "shopify://shop_images/Frame_37.png",
         "video_alt_text": "",
         "color_scheme": "",
         "background_color": "",
