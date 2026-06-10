@@ -599,11 +599,11 @@
       "type": "image-banner-style-2",
       "custom_css": [
         ".img-banner-2__button .xo-btn {min-width: 120px; min-height: 24px; padding: 4px; border: 1px solid #fff; border-radius: 999px; background: transparent; color: #fff;}",
-        ".img-banner-2__description {max-width: 100%; font-size: 15px; line-height: 1.55; font-weight: 400; color: #fff; letter-spacing: 0;}",
-        " .img-banner-2__content {justify-content: flex-start !important; }",
-        " .img-banner-2__box {padding-top: 6rem !important; }",
-        " .img-banner-2__box > xo-animate:first-child {order: 2; }",
-        " .img-banner-2__box > xo-animate:last-child {order: 1; }"
+        ".img-banner-2__description {max-width: 100%; font-size: 16px; line-height: 1.55; font-weight: 400; color: #fff; letter-spacing: 0;}",
+        ".img-banner-2__content {justify-content: flex-start !important;}",
+        ".img-banner-2__box {padding-top: 6rem !important;}",
+        ".img-banner-2__box > xo-animate:first-child {order: 2;}",
+        ".img-banner-2__box > xo-animate:last-child {order: 1;}"
       ],
       "settings": {
         "layout": "style-1",
@@ -614,7 +614,7 @@
         "button_text": "Our Story",
         "button_link": "shopify://pages/about-us",
         "button_style": "primary",
-        "button_size": "sm",
+        "button_size": "md",
         "background_image_desktop": "shopify://shop_images/ChatGPT_Image_Jun_10_2026_10_42_17_AM_2.png",
         "background_image_mobile": "shopify://shop_images/ChatGPT_Image_Jun_10_2026_10_42_17_AM_2.png",
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
