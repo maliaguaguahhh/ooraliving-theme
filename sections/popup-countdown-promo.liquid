@@ -38,7 +38,7 @@
   assign settings = show | append: section.settings.target_pages | append: section.settings.when_to_show | append: section.settings.time_delay | append: section.settings.show_scroll_depth
   assign observed = settings | base64_encode
 
-  assign fixed_time = section.settings.timer_year | append: '-' | append: section.settings.timer_month | append: '-' | append: section.settings.timer_day | append: ' ' | append: section.settings.timer_hour | append: ':' | append: section.settings.timer_minute | append: ':' | append: section.settings.timer_minute | append: ':00'
+  assign fixed_time = section.settings.timer_year | append: '-' | append: section.settings.timer_month | append: '-' | append: section.settings.timer_day | append: ' ' | append: section.settings.timer_hour | append: ':' | append: section.settings.timer_minute | append: ':00'
 
   case section.settings.evergreen_unit
     when 'days'
