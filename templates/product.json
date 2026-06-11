@@ -286,6 +286,7 @@
       "block_order": [
         "judge_me_reviews_cards_carousel_PDgkRB"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "include_margins": true,
@@ -314,7 +315,6 @@
       "block_order": [
         "judge_me_reviews_review_widget_UziQMR"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": true,
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
