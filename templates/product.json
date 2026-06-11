@@ -1290,9 +1290,9 @@
       "type": "gallery-style-1",
       "name": "t:sections.gallery_style_1.presets.name",
       "settings": {
-        "heading": "<p>#Our<br/>Tiktok</p>",
+        "heading": "<p>Follow us on <br/>Tiktok!</p>",
         "button_text": "@ooraliving",
-        "button_link": "shopify://collections/all",
+        "button_link": "https://www.tiktok.com",
         "button_style": "primary",
         "button_size": "sm",
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
