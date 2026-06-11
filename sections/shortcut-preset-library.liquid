@@ -1,6 +1,7 @@
 {% liquid
   assign aspect_ratio = section.settings.aspect_ratio
   assign alignment = section.settings.alignment
+  assign download_icon = section.settings.download_icon
 
   assign heading_class = 'shortcut-preset-library__heading xo-heading-block'
   case alignment
@@ -64,7 +65,11 @@
 
   #shopify-section-{{ section.id }} .shortcut-preset-library__placeholder {
     background:
-      linear-gradient(135deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0)),
+      linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.16),
+        rgba(255, 255, 255, 0)
+      ),
       #2d2d2d;
   }
 
@@ -128,20 +133,21 @@
     object-fit: contain;
   }
 
-  #shopify-section-{{ section.id }} .shortcut-preset-library__icon {
+  #shopify-section-{{ section.id }} .shortcut-preset-library__download-icon {
     position: absolute;
     right: 2.4rem;
     bottom: 2.4rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
     pointer-events: none;
   }
 
-  #shopify-section-{{ section.id }} .shortcut-preset-library__icon svg {
+  #shopify-section-{{ section.id }} .shortcut-preset-library__download-icon img {
+    display: block;
     width: 3.6rem;
     height: 3.6rem;
+    object-fit: contain;
   }
 
   #shopify-section-{{ section.id }} .shortcut-preset-library__card:hover .shortcut-preset-library__image,
@@ -185,7 +191,7 @@
       left: 2rem;
     }
 
-    #shopify-section-{{ section.id }} .shortcut-preset-library__icon {
+    #shopify-section-{{ section.id }} .shortcut-preset-library__download-icon {
       right: 2rem;
       bottom: 2rem;
     }
@@ -283,30 +289,21 @@
               {% endif %}
             </span>
 
-            <span
-              class="shortcut-preset-library__icon"
-              aria-hidden="true"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                focusable="false"
+            {% if download_icon != blank %}
+              <span
+                class="shortcut-preset-library__download-icon"
+                aria-hidden="true"
               >
-                <path
-                  d="M12 3v11m0 0 4-4m-4 4-4-4"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </span>
+                {{
+                  download_icon
+                  | image_url: width: 160
+                  | image_tag:
+                    loading: 'lazy',
+                    widths: '64, 96, 128, 160',
+                    alt: ''
+                }}
+              </span>
+            {% endif %}
           </a>
         {% endfor %}
       </div>
@@ -518,6 +515,11 @@
     {
       "type": "header",
       "content": "General settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "download_icon",
+      "label": "Download icon"
     },
     {
       "type": "color_scheme",
