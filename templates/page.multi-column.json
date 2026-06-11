@@ -109,6 +109,7 @@
         "shortcut_preset_cr3DeB": {
           "type": "shortcut_preset",
           "settings": {
+            "image": "shopify://shop_images/image2.png",
             "title": "Evening Reset",
             "description": "A calm preset for winding down.",
             "download_link": ""
