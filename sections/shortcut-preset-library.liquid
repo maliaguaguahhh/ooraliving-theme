@@ -73,7 +73,11 @@
     inset: 0;
     z-index: -1;
     background:
-      linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, var(--shortcut-overlay-opacity)) 100%),
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.08) 0%,
+        rgba(0, 0, 0, var(--shortcut-overlay-opacity)) 100%
+      ),
       rgba(0, 0, 0, 0.12);
     transition: background 300ms ease;
   }
@@ -106,6 +110,24 @@
     -webkit-line-clamp: 2;
   }
 
+  #shopify-section-{{ section.id }} .shortcut-preset-library__category-icon {
+    position: absolute;
+    top: 2.4rem;
+    left: 2.4rem;
+    z-index: 1;
+    display: block;
+    width: 4.8rem;
+    height: 4.8rem;
+    pointer-events: none;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__category-icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
   #shopify-section-{{ section.id }} .shortcut-preset-library__icon {
     position: absolute;
     right: 2.4rem;
@@ -113,18 +135,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 4.4rem;
-    height: 4.4rem;
-    border: 0.1rem solid rgba(255, 255, 255, 0.36);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.14);
     color: #fff;
     pointer-events: none;
   }
 
   #shopify-section-{{ section.id }} .shortcut-preset-library__icon svg {
-    width: 2rem;
-    height: 2rem;
+    width: 3.6rem;
+    height: 3.6rem;
   }
 
   #shopify-section-{{ section.id }} .shortcut-preset-library__card:hover .shortcut-preset-library__image,
@@ -134,7 +151,11 @@
 
   #shopify-section-{{ section.id }} .shortcut-preset-library__card:hover .shortcut-preset-library__overlay {
     background:
-      linear-gradient(180deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, calc(var(--shortcut-overlay-opacity) + 0.12)) 100%),
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.03) 0%,
+        rgba(0, 0, 0, calc(var(--shortcut-overlay-opacity) + 0.12)) 100%
+      ),
       rgba(0, 0, 0, 0.08);
   }
 
@@ -167,8 +188,13 @@
     #shopify-section-{{ section.id }} .shortcut-preset-library__icon {
       right: 2rem;
       bottom: 2rem;
-      width: 4rem;
-      height: 4rem;
+    }
+
+    #shopify-section-{{ section.id }} .shortcut-preset-library__category-icon {
+      top: 2rem;
+      left: 2rem;
+      width: 4.4rem;
+      height: 4.4rem;
     }
   }
 </style>
@@ -186,6 +212,7 @@
         {% for block in section.blocks %}
           {% liquid
             assign preset_image = block.settings.image
+            assign preset_icon = block.settings.icon
             assign preset_title = block.settings.title
             assign preset_description = block.settings.description
             assign download_link = block.settings.download_link
@@ -215,25 +242,69 @@
                   alt: preset_title
               }}
             {% else %}
-              <span class="shortcut-preset-library__placeholder" aria-hidden="true"></span>
+              <span
+                class="shortcut-preset-library__placeholder"
+                aria-hidden="true"
+              ></span>
             {% endif %}
 
-            <span class="shortcut-preset-library__overlay" aria-hidden="true"></span>
+            <span
+              class="shortcut-preset-library__overlay"
+              aria-hidden="true"
+            ></span>
+
+            {% if preset_icon != blank %}
+              <span
+                class="shortcut-preset-library__category-icon"
+                aria-hidden="true"
+              >
+                {{
+                  preset_icon
+                  | image_url: width: 160
+                  | image_tag:
+                    loading: 'lazy',
+                    widths: '64, 96, 128, 160',
+                    alt: ''
+                }}
+              </span>
+            {% endif %}
 
             <span class="shortcut-preset-library__content">
               {% if preset_title != blank %}
-                <span class="shortcut-preset-library__title">{{ preset_title | escape }}</span>
+                <span class="shortcut-preset-library__title">
+                  {{ preset_title | escape }}
+                </span>
               {% endif %}
 
               {% if preset_description != blank %}
-                <span class="shortcut-preset-library__text">{{ preset_description | escape }}</span>
+                <span class="shortcut-preset-library__text">
+                  {{ preset_description | escape }}
+                </span>
               {% endif %}
             </span>
 
-            <span class="shortcut-preset-library__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" focusable="false">
-                <path d="M12 3v11m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <span
+              class="shortcut-preset-library__icon"
+              aria-hidden="true"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                focusable="false"
+              >
+                <path
+                  d="M12 3v11m0 0 4-4m-4 4-4-4"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
               </svg>
             </span>
           </a>
@@ -400,6 +471,10 @@
       "label": "Card aspect ratio",
       "options": [
         {
+          "value": "1 / 1",
+          "label": "1:1"
+        },
+        {
           "value": "4 / 3",
           "label": "4:3"
         },
@@ -493,6 +568,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Top-left icon"
         },
         {
           "type": "text",
