@@ -85,33 +85,21 @@
           "type": "collapse",
           "settings": {
             "collapse_text": "Main features",
-            "collapse_content": "<p><strong>Designed for the bathroom mirror</strong></p><p>TapNest is the world’s first magnetic phone dock designed specifically for bathroom routines — keeping your phone elevated, visible, and hands-free exactly where you use it most.</p><p><strong>Magnetic snap-on experience</strong></p><p>Built for MagSafe-compatible iPhones and cases. Simply snap your phone into place for an effortless one-handed docking experience.</p><p><strong>Integrated NFC shortcuts</strong></p><p>Features 3 built-in NFC touch points that let you instantly launch playlists, podcasts, meditation, reminders, beauty tutorials, and more with a simple tap.</p><p><strong>Create your own rituals</strong></p><p>Customize your own NFC routines using Apple Shortcuts. From shower karaoke to morning affirmations, TapNest helps turn everyday habits into intentional moments.</p><p><strong>Soft-tech aesthetic</strong></p><p>Unlike traditional black, industrial-looking phone mounts, TapNest blends soft colors, rounded forms, and lifestyle-focused design into your space beautifully.</p><p><strong>Made for humid environments</strong></p><p>Designed for everyday bathroom conditions including humidity and light splashes. Best installed on mirrors, glass, tile, or other smooth surfaces.</p><p><strong>Compatibility</strong></p><ul><li>Compatible with MagSafe iPhones and MagSafe cases</li><li>NFC functionality depends on iPhone model and iOS settings</li><li>Not recommended for textured walls or painted drywall surfaces</li></ul><p><strong>What’s included</strong></p><ul><li>1 × OORA TapNest</li><li>Adhesive mounting system</li><li>NFC quick-start guide</li><li>OORA ritual setup inspiration card</li></ul>"
+            "collapse_content": "<p>TapNest is a magnetic phone dock with three customizable NFC tap zones — designed to live on your mirror and fit seamlessly into your daily routine.<br/><br/>Tap once to launch your morning playlist. Tap again for your meditation app. Set your third zone for whatever comes next. Then snap your phone into place and let the ritual begin.<br/><br/>No digging through apps. No wet-handed scrolling. Just tap, snap, and go.</p>"
           }
         },
         "collapse_Q7Fhxe": {
           "type": "collapse",
           "settings": {
-            "collapse_text": "Shipping & returns",
-            "collapse_content": "<p>Quick Dispatch: Orders shipped within 1-2 business days.<br/>Express Delivery: Available for an additional charge.<br/>14-Day Return Policy: Easy returns for a full refund or exchange.<br/>Return Shipping: Complimentary for defective or damaged items.</p>"
+            "collapse_text": "Shipping & Returns",
+            "collapse_content": "<p>Orders ship within 1–2 business days. Express delivery is available at checkout for an additional fee. <br/><br/>We offer a 14-day return policy for a full refund or exchange, and complimentary return shipping on any defective or damaged items.</p>"
           }
         },
         "collapse_cRztXf": {
           "type": "collapse",
           "settings": {
-            "collapse_text": "Can my phone work?",
-            "collapse_content": "<p>High-Grade Plastics: Durable and resistant to wear and tear in bathroom environment,<br/>Rubber: Ensures stability and friction for Phone docking.</p>"
-          }
-        },
-        "4dabf9d3-3372-4f5a-9edf-1e1f03527b1b": {
-          "type": "description",
-          "settings": {}
-        },
-        "collapse_mdKxAA": {
-          "type": "collapse",
-          "disabled": true,
-          "settings": {
-            "collapse_text": "Care guide",
-            "collapse_content": "<p>Regular Dusting: Use a soft, dry cloth to wipe the surface and prevent dust accumulation.<br/>Avoid Moisture: Keep the speakers away from water and humidity to prevent damage.<br/>Proper Placement: Position the speakers on a stable surface to avoid falls and vibrations.<br/>Cable Management: Organize and secure cables to prevent tangling and wear.<br/>Firmware Updates: Check for and install any software updates to ensure the best performance.</p>"
+            "collapse_text": "Care Guide",
+            "collapse_content": "<p>Wipe TapNest down with a soft, dry cloth to keep it looking fresh. Avoid applying cleaning sprays or excess water directly onto the NFC zones or magnetic surface. <br/><br/>Periodically check that the adhesive mount is still secure, especially in high-humidity environments. If you ever reposition it, make sure the new surface is clean and fully dry before reapplying.</p>"
           }
         },
         "line_nB8MEt": {
@@ -132,8 +120,6 @@
         "ebe1dbeb-d8fc-4f0c-9d34-fc7892bde207",
         "collapse_Q7Fhxe",
         "collapse_cRztXf",
-        "4dabf9d3-3372-4f5a-9edf-1e1f03527b1b",
-        "collapse_mdKxAA",
         "line_nB8MEt"
       ],
       "settings": {
