@@ -98,6 +98,14 @@
     "shortcut_preset_library_tgzptj": {
       "type": "shortcut-preset-library",
       "blocks": {
+        "shortcut_preset_i3pDpE": {
+          "type": "shortcut_preset",
+          "settings": {
+            "title": "Shortcut preset",
+            "description": "A short preset description.",
+            "download_link": ""
+          }
+        },
         "shortcut_preset_JLbbAE": {
           "type": "shortcut_preset",
           "settings": {
@@ -125,6 +133,7 @@
         }
       },
       "block_order": [
+        "shortcut_preset_i3pDpE",
         "shortcut_preset_JLbbAE",
         "shortcut_preset_cr3DeB",
         "shortcut_preset_bLaTjn"
@@ -140,7 +149,7 @@
         "text_heading_width_desktop": 100,
         "text_heading_width_mobile": 100,
         "alignment": "left",
-        "aspect_ratio": "4 / 3",
+        "aspect_ratio": "1 / 1",
         "grid_gap": 24,
         "card_radius": 18,
         "overlay_opacity": 60,
