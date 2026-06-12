@@ -92,7 +92,7 @@
           "type": "collapse",
           "settings": {
             "collapse_text": "Shipping & Returns",
-            "collapse_content": "<p>Orders ship within 1–2 business days. Express delivery is available at checkout for an additional fee. <br/><br/>We offer a 14-day return policy for a full refund or exchange, and complimentary return shipping on any defective or damaged items.</p>"
+            "collapse_content": "<p><strong>US Standard Shipping:</strong> 5-10 business day delivery.</p><p><strong>Shipping Email Notice:</strong> We will send you an email with the tracking number once your order has been shipped.</p><p><strong>Global Standard Shipping:</strong> 8-15 business day delivery. Some countries in Middle East, Southeast Asia and Latin America might take up to 15-25 business days.<br/><br/>We offer a <strong>14-day return policy</strong> for a full refund or exchange, and complimentary return shipping on any defective or damaged items.</p>"
           }
         },
         "collapse_cRztXf": {
@@ -999,7 +999,7 @@
                 "feature_4_label": "",
                 "feature_4_product_has": true,
                 "feature_5_enabled": true,
-                "feature_5_description": "Customize it with stickers",
+                "feature_5_description": "Multiple Colors Customize with stickers",
                 "feature_5_label": "",
                 "feature_5_product_has": true
               },
