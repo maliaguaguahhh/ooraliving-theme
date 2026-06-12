@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "<p><strong>Buy Now: 20% off  + Free US Shipping</strong></p>",
+            "text": "<p>Buy Now: 20% off  + Free US Shipping</p>",
             "link": "shopify://products/tapnest"
           }
         }
@@ -26,10 +26,10 @@
         "announcement-bar-0"
       ],
       "settings": {
-        "announcement_style": "carousel",
+        "announcement_style": "text-inline",
         "hide_button_close": "off",
         "carousel_width": 610,
-        "carousel_height": 20,
+        "carousel_height": 21,
         "carousel_style": "horizontal",
         "carousel_autoplay": true,
         "carousel_speed": 4000,
