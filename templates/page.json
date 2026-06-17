@@ -186,10 +186,10 @@
         "shortcut_preset_3VxDGD": {
           "type": "shortcut_preset",
           "settings": {
-            "image": "shopify://shop_images/shower_karaoke.png",
-            "icon": "shopify://shop_images/icons-07_1.png",
-            "title": "Singing in the Shower",
-            "description": "A playlist of classics to sing along to",
+            "image": "shopify://shop_images/countdown.png",
+            "icon": "shopify://shop_images/icons-02_1.png",
+            "title": "Start a Countdown",
+            "description": "A timer to keep you on track",
             "download_link": ""
           }
         },
