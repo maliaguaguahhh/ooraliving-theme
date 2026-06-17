@@ -176,10 +176,10 @@
         "shortcut_preset_wzDmG9": {
           "type": "shortcut_preset",
           "settings": {
-            "image": "shopify://shop_images/shower_karaoke.png",
-            "icon": "shopify://shop_images/icons-07_1.png",
-            "title": "Singing in the Shower",
-            "description": "A playlist of classics to sing along to",
+            "image": "shopify://shop_images/soothing.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Soothing Playlist",
+            "description": "A playlist to slow everything down",
             "download_link": ""
           }
         },
