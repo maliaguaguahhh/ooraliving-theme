@@ -165,8 +165,9 @@
         "shortcut_preset_bLaTjn"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 20px; } .shortcut-preset-library__text {font-size: 13px; }}",
-        ".shortcut-preset-library__overlay {background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.55) 100% ) !important;}"
+        "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 14px; } .shortcut-preset-library__text {font-size: 11px; }}",
+        ".shortcut-preset-library__overlay {background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.55) 100% ) !important;}",
+        "@media screen and (max-width: 749px) {.shortcut-preset-library__icon img {width: 24px !important; }}"
       ],
       "name": "Shortcut Preset Library",
       "settings": {
