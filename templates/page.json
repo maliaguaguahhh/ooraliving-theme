@@ -139,6 +139,7 @@
           "type": "shortcut_preset",
           "settings": {
             "image": "shopify://shop_images/spotify_faves.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
             "title": "Spotify Favorites",
             "description": "A playlist of your liked songs",
             "download_link": ""
@@ -223,6 +224,16 @@
             "description": "Jump straight to your For You page",
             "download_link": ""
           }
+        },
+        "shortcut_preset_NFAP8n": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/youtube.png",
+            "icon": "shopify://shop_images/icons-04_1.png",
+            "title": "Watch YouTube",
+            "description": "Jump straight into your comfort content",
+            "download_link": ""
+          }
         }
       },
       "block_order": [
@@ -234,7 +245,8 @@
         "shortcut_preset_3VxDGD",
         "shortcut_preset_nXkUNQ",
         "shortcut_preset_mmbKNc",
-        "shortcut_preset_3GhBgJ"
+        "shortcut_preset_3GhBgJ",
+        "shortcut_preset_NFAP8n"
       ],
       "custom_css": [
         "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 18px; } .shortcut-preset-library__text {font-size: 12px; }}"
