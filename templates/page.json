@@ -162,12 +162,56 @@
             "description": "A playlist of classics to sing along to",
             "download_link": ""
           }
+        },
+        "shortcut_preset_UAUEPE": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/play_my_own_list.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Play Your Own",
+            "description": "Add your own playlist",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_wzDmG9": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/shower_karaoke.png",
+            "icon": "shopify://shop_images/icons-07_1.png",
+            "title": "Singing in the Shower",
+            "description": "A playlist of classics to sing along to",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_3VxDGD": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/shower_karaoke.png",
+            "icon": "shopify://shop_images/icons-07_1.png",
+            "title": "Singing in the Shower",
+            "description": "A playlist of classics to sing along to",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_nXkUNQ": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/shower_karaoke.png",
+            "icon": "shopify://shop_images/icons-07_1.png",
+            "title": "Singing in the Shower",
+            "description": "A playlist of classics to sing along to",
+            "download_link": ""
+          }
         }
       },
       "block_order": [
         "shortcut_preset_yF7At4",
         "shortcut_preset_9LPGMF",
-        "shortcut_preset_7bdHpD"
+        "shortcut_preset_7bdHpD",
+        "shortcut_preset_UAUEPE",
+        "shortcut_preset_wzDmG9",
+        "shortcut_preset_3VxDGD",
+        "shortcut_preset_nXkUNQ"
       ],
       "custom_css": [
         "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 18px; } .shortcut-preset-library__text {font-size: 12px; }}"
