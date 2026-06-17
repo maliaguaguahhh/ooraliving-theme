@@ -99,7 +99,7 @@
           "type": "collapse",
           "settings": {
             "collapse_text": "FAQ",
-            "collapse_content": "<p><strong>Will TapNest fit in my space?<br/></strong>TapNest measures [W × H × D]. Make sure you have enough clear space for both the dock and your phone.<br/><br/><strong>Where can I install TapNest?<br/></strong>TapNest works best on smooth, clean, non-porous surfaces like mirrors and glossy tile. Make sure the surface is completely dry before applying.<br/><br/><strong>Does it work with my phone?<br/></strong>TapNest works best with MagSafe-compatible iPhones and cases. Other phones may require a compatible magnetic ring.<br/><br/><strong>How do I keep it looking fresh?<br/></strong>Wipe it with a soft, dry cloth. Keep sprays and excess water away from the NFC zones and magnetic surface, and check the adhesive occasionally in humid spaces.</p>"
+            "collapse_content": "<p><strong>Will TapNest fit in my space?<br/></strong>TapNest measures 7.8'' x 2.1'' x 1.1''. Make sure you have enough clear space for both the dock and your phone.<br/><br/><strong>Where can I install TapNest?<br/></strong>TapNest works best on smooth, clean, non-porous surfaces like mirrors and glossy tile. Make sure the surface is completely dry before applying.<br/><br/><strong>Does it work with my phone?<br/></strong>TapNest works best with MagSafe-compatible iPhones and cases. Other phones may require a compatible magnetic ring.<br/><br/><strong>How do I keep it looking fresh?<br/></strong>Wipe it with a soft, dry cloth. Keep sprays and excess water away from the NFC zones and magnetic surface, and check the adhesive occasionally in humid spaces.</p>"
           }
         },
         "line_nB8MEt": {
@@ -595,6 +595,7 @@
                   "type": "image",
                   "name": "t:blocks.image.presets.name",
                   "settings": {
+                    "image": "shopify://shop_images/Frame_83_b0ab45c0-8241-432f-89cd-6439a8cadba4.png",
                     "aspect_ratio": "auto"
                   },
                   "blocks": {}
@@ -663,8 +664,8 @@
                 "service_bU88A6": {
                   "type": "service",
                   "settings": {
-                    "image": "shopify://shop_images/megsafe_icon_a3669040-95c5-4500-8bfe-a8881310cf79.png",
-                    "image_size": "auto",
+                    "image": "shopify://shop_images/Frame_91.png",
+                    "image_size": "lg",
                     "color_config_enable": false,
                     "heading": "<p><strong>Snap without Thinking</strong></p>",
                     "heading_link": "",
@@ -693,8 +694,8 @@
                 "service_mpNDwh": {
                   "type": "service",
                   "settings": {
-                    "image": "shopify://shop_images/nfc_icon_ee47d3fb-c1a0-44ff-93d0-b635ebb54326.png",
-                    "image_size": "auto",
+                    "image": "shopify://shop_images/Frame_92.png",
+                    "image_size": "lg",
                     "color_config_enable": false,
                     "heading": "<p><strong>Tap to start apps</strong></p>",
                     "heading_link": "",
@@ -723,8 +724,8 @@
                 "service_Rkr3DC": {
                   "type": "service",
                   "settings": {
-                    "image": "shopify://shop_images/3M_icon_dcac6c8d-e08a-4184-96ba-80ea982a2871.png",
-                    "image_size": "auto",
+                    "image": "shopify://shop_images/Frame_90.png",
+                    "image_size": "lg",
                     "color_config_enable": false,
                     "heading": "<p><strong>Stress-free Installation</strong></p>",
                     "heading_link": "",
@@ -753,8 +754,8 @@
                 "service_PegtJJ": {
                   "type": "service",
                   "settings": {
-                    "image": "shopify://shop_images/Star_icon_4e193496-3a16-4d41-bc13-5f33b09511bd.png",
-                    "image_size": "auto",
+                    "image": "shopify://shop_images/Frame_89.png",
+                    "image_size": "md",
                     "color_config_enable": false,
                     "heading": "<p><strong>Designed to Elevate</strong></p>",
                     "heading_link": "",
