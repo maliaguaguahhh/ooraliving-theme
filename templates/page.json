@@ -135,6 +135,16 @@
     "shortcut_preset_library_WDxihw": {
       "type": "shortcut-preset-library",
       "blocks": {
+        "shortcut_preset_F87ygF": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/immersive_bath.png",
+            "icon": "shopify://shop_images/icons-11_1.png",
+            "title": "Immersive Bath",
+            "description": "Open your bath time go-to app and keep track of time",
+            "download_link": ""
+          }
+        },
         "shortcut_preset_yF7At4": {
           "type": "shortcut_preset",
           "settings": {
@@ -185,6 +195,26 @@
             "download_link": ""
           }
         },
+        "shortcut_preset_3GhBgJ": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/tiktok.png",
+            "icon": "shopify://shop_images/icons-09_1.png",
+            "title": "Scroll on TikTok",
+            "description": "Jump straight to your For You page",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_NFAP8n": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/youtube.png",
+            "icon": "shopify://shop_images/icons-04_1.png",
+            "title": "Watch YouTube",
+            "description": "Jump straight into your comfort content",
+            "download_link": ""
+          }
+        },
         "shortcut_preset_3VxDGD": {
           "type": "shortcut_preset",
           "settings": {
@@ -215,38 +245,41 @@
             "download_link": ""
           }
         },
-        "shortcut_preset_3GhBgJ": {
+        "shortcut_preset_QKde4M": {
           "type": "shortcut_preset",
           "settings": {
-            "image": "shopify://shop_images/tiktok.png",
-            "icon": "shopify://shop_images/icons-09_1.png",
-            "title": "Scroll on TikTok",
-            "description": "Jump straight to your For You page",
+            "image": "shopify://shop_images/facetime.png",
+            "icon": "shopify://shop_images/icons-05_1.png",
+            "title": "FaceTime",
+            "description": "Call your favorite person with just a tap",
             "download_link": ""
           }
         },
-        "shortcut_preset_NFAP8n": {
+        "shortcut_preset_qEg6pn": {
           "type": "shortcut_preset",
           "settings": {
-            "image": "shopify://shop_images/youtube.png",
-            "icon": "shopify://shop_images/icons-04_1.png",
-            "title": "Watch YouTube",
-            "description": "Jump straight into your comfort content",
+            "image": "shopify://shop_images/podcast.png",
+            "icon": "shopify://shop_images/icons-01_1.png",
+            "title": "Listen to a Podcast",
+            "description": "Jump straight to your favorite podcast",
             "download_link": ""
           }
         }
       },
       "block_order": [
+        "shortcut_preset_F87ygF",
         "shortcut_preset_yF7At4",
         "shortcut_preset_9LPGMF",
         "shortcut_preset_7bdHpD",
         "shortcut_preset_UAUEPE",
         "shortcut_preset_wzDmG9",
+        "shortcut_preset_3GhBgJ",
+        "shortcut_preset_NFAP8n",
         "shortcut_preset_3VxDGD",
         "shortcut_preset_nXkUNQ",
         "shortcut_preset_mmbKNc",
-        "shortcut_preset_3GhBgJ",
-        "shortcut_preset_NFAP8n"
+        "shortcut_preset_QKde4M",
+        "shortcut_preset_qEg6pn"
       ],
       "custom_css": [
         "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 18px; } .shortcut-preset-library__text {font-size: 12px; }}"
