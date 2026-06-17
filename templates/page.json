@@ -138,6 +138,7 @@
         "shortcut_preset_yF7At4": {
           "type": "shortcut_preset",
           "settings": {
+            "image": "shopify://shop_images/spotify_faves.png",
             "title": "Spotify Favorites",
             "description": "A playlist of your liked songs",
             "download_link": ""
