@@ -149,7 +149,7 @@
         "text_heading_width_desktop": 100,
         "text_heading_width_mobile": 100,
         "alignment": "left",
-        "aspect_ratio": "1 / 1",
+        "aspect_ratio": "16 / 9",
         "grid_gap": 24,
         "card_radius": 18,
         "overlay_opacity": 60,
