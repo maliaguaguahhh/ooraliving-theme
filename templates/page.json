@@ -138,24 +138,24 @@
         "shortcut_preset_yF7At4": {
           "type": "shortcut_preset",
           "settings": {
-            "title": "Morning Focus",
-            "description": "A shortcut preset for deep work starts.",
+            "title": "Spotify Favorites",
+            "description": "A playlist of your liked songs",
             "download_link": ""
           }
         },
         "shortcut_preset_9LPGMF": {
           "type": "shortcut_preset",
           "settings": {
-            "title": "Evening Reset",
-            "description": "A calm preset for winding down.",
+            "title": "Morning Energy",
+            "description": "A Spotify playlist to ease into the day",
             "download_link": ""
           }
         },
         "shortcut_preset_7bdHpD": {
           "type": "shortcut_preset",
           "settings": {
-            "title": "Quick Capture",
-            "description": "A fast preset for saving ideas.",
+            "title": "Singing in the Shower",
+            "description": "A playlist of classics to sing along to",
             "download_link": ""
           }
         }
