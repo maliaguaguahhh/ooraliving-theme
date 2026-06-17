@@ -196,10 +196,20 @@
         "shortcut_preset_nXkUNQ": {
           "type": "shortcut_preset",
           "settings": {
-            "image": "shopify://shop_images/shower_karaoke.png",
-            "icon": "shopify://shop_images/icons-07_1.png",
-            "title": "Singing in the Shower",
-            "description": "A playlist of classics to sing along to",
+            "image": "shopify://shop_images/departure_reminder.png",
+            "icon": "shopify://shop_images/icons-02_1.png",
+            "title": "Departure Reminder",
+            "description": "A reminder to get you ready in time",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_mmbKNc": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/selfie.png",
+            "icon": "shopify://shop_images/icons-05_1.png",
+            "title": "Take a Selfie",
+            "description": "Opens your camera, ready to shoot",
             "download_link": ""
           }
         }
@@ -211,7 +221,8 @@
         "shortcut_preset_UAUEPE",
         "shortcut_preset_wzDmG9",
         "shortcut_preset_3VxDGD",
-        "shortcut_preset_nXkUNQ"
+        "shortcut_preset_nXkUNQ",
+        "shortcut_preset_mmbKNc"
       ],
       "custom_css": [
         "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 18px; } .shortcut-preset-library__text {font-size: 12px; }}"
