@@ -146,6 +146,8 @@
         "shortcut_preset_9LPGMF": {
           "type": "shortcut_preset",
           "settings": {
+            "image": "shopify://shop_images/morning_energy.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
             "title": "Morning Energy",
             "description": "A Spotify playlist to ease into the day",
             "download_link": ""
@@ -154,6 +156,8 @@
         "shortcut_preset_7bdHpD": {
           "type": "shortcut_preset",
           "settings": {
+            "image": "shopify://shop_images/shower_karaoke.png",
+            "icon": "shopify://shop_images/icons-07_1.png",
             "title": "Singing in the Shower",
             "description": "A playlist of classics to sing along to",
             "download_link": ""
