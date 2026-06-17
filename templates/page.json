@@ -1,1 +1,198 @@
-{"sections":{"main_page_X8xeY7":{"type":"main-page","settings":{"font_size_heading":"h2","align":"left","color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":100,"padding_bottom_desktop":50,"padding_top_mobile":80,"padding_bottom_mobile":50}}},"order":["main_page_X8xeY7"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main_page_X8xeY7": {
+      "type": "main-page",
+      "settings": {
+        "font_size_heading": "h2",
+        "align": "left",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 80,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "custom_section_dx4Xyh": {
+      "type": "custom-section",
+      "blocks": {
+        "grid_XrmMUn": {
+          "type": "grid",
+          "settings": {
+            "device": "desktop",
+            "desktop_col": 3,
+            "tablet_col": 2,
+            "mobile_col": 1,
+            "gap": "global",
+            "col_gap_custom_desktop": 20,
+            "col_gap_custom_mobile": 14,
+            "row_gap_custom_desktop": 20,
+            "row_gap_custom_mobile": 14,
+            "fixed_row": false,
+            "auto_row": 20
+          },
+          "blocks": {
+            "text_6PbpGb": {
+              "type": "text",
+              "name": "t:blocks.text.name",
+              "settings": {
+                "text_tag_name": "h2",
+                "text_heading": "How to set up TapNest?",
+                "font_size_heading": "h6",
+                "text_line_height": 1.2,
+                "text_effect": "none",
+                "text_duration": 1000,
+                "text_heading_width_desktop": 100,
+                "text_heading_width_mobile": 100,
+                "alignment": "left",
+                "padding_top_dt": 0,
+                "padding_bottom_dt": 0,
+                "padding_top_mb": 0,
+                "padding_bottom_mb": 0
+              },
+              "blocks": {}
+            },
+            "video_dVKpCr": {
+              "type": "video",
+              "name": "t:blocks.video.presets.name",
+              "settings": {
+                "enable_video_looping": false,
+                "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                "video_alt_text": ""
+              },
+              "blocks": {}
+            },
+            "text_DLH4qP": {
+              "type": "text",
+              "name": "t:blocks.text.name",
+              "settings": {
+                "text_tag_name": "h2",
+                "text_heading": "Improve NFC experience",
+                "font_size_heading": "h6",
+                "text_line_height": 1.2,
+                "text_effect": "none",
+                "text_duration": 1000,
+                "text_heading_width_desktop": 100,
+                "text_heading_width_mobile": 100,
+                "alignment": "left",
+                "padding_top_dt": 0,
+                "padding_bottom_dt": 0,
+                "padding_top_mb": 20,
+                "padding_bottom_mb": 0
+              },
+              "blocks": {}
+            },
+            "video_t9yKjt": {
+              "type": "video",
+              "name": "t:blocks.video.presets.name",
+              "settings": {
+                "enable_video_looping": false,
+                "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                "video_alt_text": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_6PbpGb",
+            "video_dVKpCr",
+            "text_DLH4qP",
+            "video_t9yKjt"
+          ]
+        }
+      },
+      "block_order": [
+        "grid_XrmMUn"
+      ],
+      "name": "t:sections.custom_section.presets.name",
+      "settings": {
+        "width": "global",
+        "custom_width": 1400,
+        "height": "auto",
+        "custom_height": 50,
+        "container_gap": "global",
+        "container_gap_desktop": 30,
+        "container_gap_mobile": 20,
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "shortcut_preset_library_WDxihw": {
+      "type": "shortcut-preset-library",
+      "blocks": {
+        "shortcut_preset_yF7At4": {
+          "type": "shortcut_preset",
+          "settings": {
+            "title": "Morning Focus",
+            "description": "A shortcut preset for deep work starts.",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_9LPGMF": {
+          "type": "shortcut_preset",
+          "settings": {
+            "title": "Evening Reset",
+            "description": "A calm preset for winding down.",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_7bdHpD": {
+          "type": "shortcut_preset",
+          "settings": {
+            "title": "Quick Capture",
+            "description": "A fast preset for saving ideas.",
+            "download_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "shortcut_preset_yF7At4",
+        "shortcut_preset_9LPGMF",
+        "shortcut_preset_7bdHpD"
+      ],
+      "name": "Shortcut Preset Library",
+      "settings": {
+        "text_tag_name": "h2",
+        "text_heading": "Shortcut Preset Library",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "none",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "alignment": "left",
+        "aspect_ratio": "4 / 3",
+        "grid_gap": 24,
+        "card_radius": 18,
+        "overlay_opacity": 60,
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "main_page_X8xeY7",
+    "custom_section_dx4Xyh",
+    "shortcut_preset_library_WDxihw"
+  ]
+}
