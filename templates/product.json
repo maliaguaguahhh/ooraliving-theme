@@ -991,7 +991,7 @@
                 "competitor_3_feature_5": false,
                 "competitor_3_feature_5_desc": "",
                 "feature_1_enabled": true,
-                "feature_1_description": "Tap to start your routine",
+                "feature_1_description": "Tap to instantly start your routine",
                 "feature_1_label": "",
                 "feature_1_product_has": true,
                 "feature_2_enabled": true,
@@ -1003,7 +1003,7 @@
                 "feature_3_label": "",
                 "feature_3_product_has": true,
                 "feature_4_enabled": true,
-                "feature_4_description": "Keep it off wet counters",
+                "feature_4_description": "Keep it off the wet counters",
                 "feature_4_label": "",
                 "feature_4_product_has": true,
                 "feature_5_enabled": true,
@@ -1118,7 +1118,7 @@
                   "name": "t:blocks.text_2.name",
                   "settings": {
                     "text": "<p>For the best experience, place TapNest <br/><strong>at chest level</strong> on your mirror for an easy, natural reach. Made for the bathroom, <br/>but not limited to it. Style it your way throughout your home.</p>",
-                    "alignment": "center",
+                    "alignment": "left",
                     "padding_top_dt": 0,
                     "padding_bottom_dt": 0,
                     "padding_top_mb": 10,
