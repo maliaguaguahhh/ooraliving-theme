@@ -417,6 +417,7 @@
       "block_order": [
         "grid_nnp7nA"
       ],
+      "disabled": true,
       "name": "t:sections.custom_section.presets.name",
       "settings": {
         "width": "global",
