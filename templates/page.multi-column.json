@@ -43,17 +43,35 @@
             "auto_row": 20
           },
           "blocks": {
-            "column_g6LAzn": {
-              "type": "column",
+            "grid_yQaQRP": {
+              "type": "grid",
+              "name": "t:blocks.grid.presets.name",
               "settings": {
                 "device": "mobile",
-                "desktop_col_span": 1,
-                "desktop_row_span": 1,
-                "mobile_col_span": 1,
-                "mobile_row_span": 1
+                "desktop_col": 3,
+                "tablet_col": 2,
+                "mobile_col": 1,
+                "gap": "global",
+                "col_gap_custom_desktop": 20,
+                "col_gap_custom_mobile": 14,
+                "row_gap_custom_desktop": 20,
+                "row_gap_custom_mobile": 14,
+                "fixed_row": false,
+                "auto_row": 20
               },
               "blocks": {
-                "video_ixzhgr": {
+                "heading_JQgU3H": {
+                  "type": "heading",
+                  "name": "t:blocks.heading.presets.name",
+                  "settings": {
+                    "title_tag": "h2",
+                    "title": "Block heading",
+                    "description": "<p><strong>How to set up TapNest?</strong></p>",
+                    "alignment": "left"
+                  },
+                  "blocks": {}
+                },
+                "video_EUUyEL": {
                   "type": "video",
                   "name": "t:blocks.video.presets.name",
                   "settings": {
@@ -62,23 +80,54 @@
                     "video_alt_text": ""
                   },
                   "blocks": {}
+                },
+                "divider_tTrM4a": {
+                  "type": "divider",
+                  "name": "t:blocks.divider.presets.name",
+                  "settings": {
+                    "text": "",
+                    "divider_width": 0,
+                    "divider_weight": 1,
+                    "divider_style": "solid"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "video_ixzhgr"
+                "heading_JQgU3H",
+                "video_EUUyEL",
+                "divider_tTrM4a"
               ]
             },
-            "column_afjFVw": {
-              "type": "column",
+            "grid_gdLVXU": {
+              "type": "grid",
+              "name": "t:blocks.grid.presets.name",
               "settings": {
                 "device": "mobile",
-                "desktop_col_span": 1,
-                "desktop_row_span": 1,
-                "mobile_col_span": 1,
-                "mobile_row_span": 1
+                "desktop_col": 3,
+                "tablet_col": 2,
+                "mobile_col": 1,
+                "gap": "global",
+                "col_gap_custom_desktop": 20,
+                "col_gap_custom_mobile": 14,
+                "row_gap_custom_desktop": 20,
+                "row_gap_custom_mobile": 14,
+                "fixed_row": false,
+                "auto_row": 20
               },
               "blocks": {
-                "video_wDGKqx": {
+                "heading_7zT7tQ": {
+                  "type": "heading",
+                  "name": "t:blocks.heading.presets.name",
+                  "settings": {
+                    "title_tag": "h2",
+                    "title": "Block heading",
+                    "description": "<p><strong>Improving NFC Experience</strong></p>",
+                    "alignment": "left"
+                  },
+                  "blocks": {}
+                },
+                "video_z7BRMi": {
                   "type": "video",
                   "name": "t:blocks.video.presets.name",
                   "settings": {
@@ -90,13 +139,14 @@
                 }
               },
               "block_order": [
-                "video_wDGKqx"
+                "heading_7zT7tQ",
+                "video_z7BRMi"
               ]
             }
           },
           "block_order": [
-            "column_g6LAzn",
-            "column_afjFVw"
+            "grid_yQaQRP",
+            "grid_gdLVXU"
           ]
         }
       },
