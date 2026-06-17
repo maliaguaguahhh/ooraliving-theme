@@ -177,33 +177,39 @@
         "shortcut_preset_i3pDpE": {
           "type": "shortcut_preset",
           "settings": {
-            "title": "Shortcut preset",
-            "description": "A short preset description.",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Spotify Favorites",
+            "description": "A playlist of your liked songs",
             "download_link": ""
           }
         },
         "shortcut_preset_JLbbAE": {
           "type": "shortcut_preset",
           "settings": {
-            "title": "Morning Focus",
-            "description": "A shortcut preset for deep work starts.",
+            "image": "shopify://shop_images/morning_energy.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Morning Energy",
+            "description": "A Spotify playlist to ease into the day",
             "download_link": ""
           }
         },
         "shortcut_preset_cr3DeB": {
           "type": "shortcut_preset",
           "settings": {
-            "image": "shopify://shop_images/image2.png",
-            "title": "Evening Reset",
-            "description": "A calm preset for winding down.",
+            "image": "shopify://shop_images/shower_karaoke.png",
+            "icon": "shopify://shop_images/icons-07_1.png",
+            "title": "Singing in the Shower",
+            "description": "A playlist of classics to sing along to",
             "download_link": ""
           }
         },
         "shortcut_preset_bLaTjn": {
           "type": "shortcut_preset",
           "settings": {
-            "title": "Quick Capture",
-            "description": "A fast preset for saving ideas.",
+            "image": "shopify://shop_images/soothing.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Soothing Playlist",
+            "description": "A playlist to slow everything down",
             "download_link": ""
           }
         }
