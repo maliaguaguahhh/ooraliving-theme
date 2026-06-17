@@ -145,6 +145,26 @@
             "download_link": ""
           }
         },
+        "shortcut_preset_wy8Hik": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/affirmation.png",
+            "icon": "shopify://shop_images/icons-06_1.png",
+            "title": "Daily Affirmations",
+            "description": "Launches your list of daily affirmations and daily reminders",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_zNYDFT": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/wakeup_routine.png",
+            "icon": "shopify://shop_images/icons-03_1.png",
+            "title": "Wakeup Routine",
+            "description": "Reports the weather and starts your morning go-to app",
+            "download_link": ""
+          }
+        },
         "shortcut_preset_yF7At4": {
           "type": "shortcut_preset",
           "settings": {
@@ -268,6 +288,8 @@
       },
       "block_order": [
         "shortcut_preset_F87ygF",
+        "shortcut_preset_wy8Hik",
+        "shortcut_preset_zNYDFT",
         "shortcut_preset_yF7At4",
         "shortcut_preset_9LPGMF",
         "shortcut_preset_7bdHpD",
