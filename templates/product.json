@@ -1117,8 +1117,8 @@
                   "type": "text-2",
                   "name": "t:blocks.text_2.name",
                   "settings": {
-                    "text": "<p>For the best experience, place TapNest <br/><strong>at chest level</strong> on your mirror for an easy, natural reach. Made for the bathroom, <br/>but not limited to it. Style it your way throughout your home.</p>",
-                    "alignment": "left",
+                    "text": "<p>For the best experience, place TapNest <strong>at chest level</strong> on your mirror for an easy, natural reach. Made for the bathroom, <br/>but not limited to it. Style it your way throughout your home.</p>",
+                    "alignment": "center",
                     "padding_top_dt": 0,
                     "padding_bottom_dt": 0,
                     "padding_top_mb": 10,
