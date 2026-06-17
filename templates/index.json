@@ -220,7 +220,7 @@
       "settings": {
         "layout": "full-width",
         "enable_video_looping": true,
-        "video": "shopify://files/videos/Tap_Animation.mp4",
+        "video": "shopify://files/videos/01Tap.mp4",
         "video_url": "",
         "cover_image": "shopify://shop_images/Frame_37.png",
         "video_alt_text": "",
@@ -245,7 +245,7 @@
       "settings": {
         "layout": "full-width",
         "enable_video_looping": true,
-        "video": "shopify://files/videos/合成 2_2.mp4",
+        "video": "shopify://files/videos/02Snap.mp4",
         "video_url": "",
         "cover_image": "shopify://shop_images/Frame_37.png",
         "video_alt_text": "",
@@ -269,8 +269,8 @@
       "name": "t:sections.media_video.presets.name",
       "settings": {
         "layout": "full-width",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/合成 3_2.mp4",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/03Flow.mp4",
         "video_url": "",
         "cover_image": "shopify://shop_images/Frame_37.png",
         "video_alt_text": "",
