@@ -973,7 +973,7 @@
                 "competitor_2_feature_2": false,
                 "competitor_2_feature_2_desc": "Prop your phone up again and again",
                 "competitor_2_feature_3": false,
-                "competitor_2_feature_3_desc": "Adds to the counter clutter",
+                "competitor_2_feature_3_desc": "Another layer of counter clutter",
                 "competitor_2_feature_4": false,
                 "competitor_2_feature_4_desc": "Sits near all the water and mess",
                 "competitor_2_feature_5": false,
@@ -1117,7 +1117,7 @@
                   "type": "text-2",
                   "name": "t:blocks.text_2.name",
                   "settings": {
-                    "text": "<p>For the best experience, place TapNest <strong>at chest level</strong> on your mirror for an easy, natural reach. Made for the bathroom, <br/>but not limited to it. Style it your way throughout your home.</p>",
+                    "text": "<p>For the best experience, place TapNest <strong>at chest level</strong> on your mirror for an easy, natural reach. Made for the bathroom, but not limited to it. Style it your way throughout your home.</p>",
                     "alignment": "center",
                     "padding_top_dt": 0,
                     "padding_bottom_dt": 0,
@@ -1278,7 +1278,7 @@
                   "type": "text-2",
                   "name": "t:blocks.text_2.name",
                   "settings": {
-                    "text": "<p>View tutorials, explore placement <br/>ideas, and download NFC-curated experiences <a href=\"/pages/nfc-shortcut-gallery\" target=\"_blank\" title=\"NFC Setup Guide\"><strong>HERE</strong></a></p>",
+                    "text": "<p>View tutorials, explore placement ideas, and download NFC-curated experiences <a href=\"/pages/nfc-shortcut-gallery\" target=\"_blank\" title=\"NFC Setup Guide\"><strong>HERE</strong></a></p>",
                     "alignment": "center",
                     "padding_top_dt": 0,
                     "padding_bottom_dt": 0,
