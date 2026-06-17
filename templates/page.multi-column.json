@@ -67,10 +67,36 @@
               "block_order": [
                 "video_ixzhgr"
               ]
+            },
+            "column_afjFVw": {
+              "type": "column",
+              "settings": {
+                "device": "mobile",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "video_wDGKqx": {
+                  "type": "video",
+                  "name": "t:blocks.video.presets.name",
+                  "settings": {
+                    "enable_video_looping": false,
+                    "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                    "video_alt_text": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "video_wDGKqx"
+              ]
             }
           },
           "block_order": [
-            "column_g6LAzn"
+            "column_g6LAzn",
+            "column_afjFVw"
           ]
         }
       },
@@ -138,6 +164,10 @@
         "shortcut_preset_cr3DeB",
         "shortcut_preset_bLaTjn"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 20px; } .shortcut-preset-library__text {font-size: 13px; }}",
+        ".shortcut-preset-library__overlay {background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.55) 100% ) !important;}"
+      ],
       "name": "Shortcut Preset Library",
       "settings": {
         "text_tag_name": "h2",
@@ -153,6 +183,7 @@
         "grid_gap": 24,
         "card_radius": 18,
         "overlay_opacity": 60,
+        "download_icon": "shopify://shop_images/material-symbols_download-rounded.png",
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
