@@ -212,6 +212,16 @@
             "description": "Opens your camera, ready to shoot",
             "download_link": ""
           }
+        },
+        "shortcut_preset_3GhBgJ": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/tiktok.png",
+            "icon": "shopify://shop_images/icons-09_1.png",
+            "title": "Scroll on TikTok",
+            "description": "Jump straight to your For You page",
+            "download_link": ""
+          }
         }
       },
       "block_order": [
@@ -222,7 +232,8 @@
         "shortcut_preset_wzDmG9",
         "shortcut_preset_3VxDGD",
         "shortcut_preset_nXkUNQ",
-        "shortcut_preset_mmbKNc"
+        "shortcut_preset_mmbKNc",
+        "shortcut_preset_3GhBgJ"
       ],
       "custom_css": [
         "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 18px; } .shortcut-preset-library__text {font-size: 12px; }}"
