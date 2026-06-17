@@ -15,6 +15,8 @@
     "heading_2_scale": 100,
     "heading_3_scale": 100,
     "heading_4_scale": 100,
+    "heading_4_line_height": 0.3,
+    "mobile_heading_4_line_height": 0.3,
     "heading_5_scale": 100,
     "heading_6_scale": 100,
     "heading_6_line_height": 1.3,

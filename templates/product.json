@@ -92,14 +92,14 @@
           "type": "collapse",
           "settings": {
             "collapse_text": "Shipping & Returns",
-            "collapse_content": "<p><strong>US Standard Shipping:</strong> 5-10 business day delivery.</p><p><strong>Shipping Email Notice:</strong> We will send you an email with the tracking number once your order has been shipped.</p><p><strong>Global Standard Shipping:</strong> 8-15 business day delivery. Some countries in Middle East, Southeast Asia and Latin America might take up to 15-25 business days.<br/><br/>We offer a <strong>14-day return policy</strong> for a full refund or exchange, and complimentary return shipping on any defective or damaged items.</p>"
+            "collapse_content": "<p><strong>US Standard Shipping:</strong> 5-10 business day delivery.<br/><br/><strong>Shipping Email Notice:</strong> We will send you an email with the tracking number once your order has been shipped<br/><br/><strong>Global Standard Shipping:</strong> 8-15 business day delivery. Some countries in Middle East, Southeast Asia and Latin America might take up to 15-25 business days.<br/><br/>We offer a <strong>14-day return policy</strong> for a full refund or exchange, and complimentary return shipping on any defective or damaged items.</p>"
           }
         },
         "collapse_cRztXf": {
           "type": "collapse",
           "settings": {
             "collapse_text": "FAQ",
-            "collapse_content": "<p>Wipe TapNest down with a soft, dry cloth to keep it looking fresh. Avoid applying cleaning sprays or excess water directly onto the NFC zones or magnetic surface. <br/><br/>Periodically check that the adhesive mount is still secure, especially in high-humidity environments. If you ever reposition it, make sure the new surface is clean and fully dry before reapplying.</p>"
+            "collapse_content": "<p><strong>Will TapNest fit in my space?<br/></strong>TapNest measures [W × H × D]. Make sure you have enough clear space for both the dock and your phone.<br/><br/><strong>Where can I install TapNest?<br/></strong>TapNest works best on smooth, clean, non-porous surfaces like mirrors and glossy tile. Make sure the surface is completely dry before applying.<br/><br/><strong>Does it work with my phone?<br/></strong>TapNest works best with MagSafe-compatible iPhones and cases. Other phones may require a compatible magnetic ring.<br/><br/><strong>How do I keep it looking fresh?<br/></strong>Wipe it with a soft, dry cloth. Keep sprays and excess water away from the NFC zones and magnetic surface, and check the adhesive occasionally in humid spaces.</p>"
           }
         },
         "line_nB8MEt": {
@@ -122,6 +122,7 @@
         "collapse_cRztXf",
         "line_nB8MEt"
       ],
+      "custom_css": [],
       "settings": {
         "product_media_style": "style-1",
         "hide_variants": true,
