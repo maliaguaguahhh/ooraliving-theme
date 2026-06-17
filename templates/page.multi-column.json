@@ -225,7 +225,7 @@
         "text_heading": "Shortcut Preset Library",
         "font_size_heading": "h5",
         "text_line_height": 1.2,
-        "text_effect": "split",
+        "text_effect": "none",
         "text_duration": 1000,
         "text_heading_width_desktop": 100,
         "text_heading_width_mobile": 100,
