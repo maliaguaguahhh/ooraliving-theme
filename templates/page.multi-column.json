@@ -212,17 +212,28 @@
             "description": "A playlist to slow everything down",
             "download_link": ""
           }
+        },
+        "shortcut_preset_kJJPWm": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/play_my_own_list.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Play Your Own",
+            "description": "Add your own playlist",
+            "download_link": ""
+          }
         }
       },
       "block_order": [
         "shortcut_preset_i3pDpE",
         "shortcut_preset_JLbbAE",
         "shortcut_preset_cr3DeB",
-        "shortcut_preset_bLaTjn"
+        "shortcut_preset_bLaTjn",
+        "shortcut_preset_kJJPWm"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 14px; } .shortcut-preset-library__text {font-size: 11px; }}",
-        ".shortcut-preset-library__overlay {background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.55) 100% ) !important;}",
+        "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 16px; } .shortcut-preset-library__text {font-size: 12px; }}",
+        ".shortcut-preset-library__overlay {background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.55) 100% ) !important;}",
         "@media screen and (max-width: 749px) {.shortcut-preset-library__icon img {width: 24px !important; }}"
       ],
       "name": "Shortcut Preset Library",
