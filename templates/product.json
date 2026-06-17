@@ -469,40 +469,6 @@
         "padding_bottom_mobile": 0
       }
     },
-    "hero_carousel_wEyFzx": {
-      "type": "hero-carousel",
-      "blocks": {
-        "image_azDpGX": {
-          "type": "image",
-          "name": "Easy Installation",
-          "settings": {
-            "heading": "",
-            "description": "<p>East Installation</p>",
-            "button_text": "",
-            "button_link": "shopify://collections/all",
-            "button_style": "primary",
-            "button_size": "md",
-            "media_type": "image"
-          }
-        }
-      },
-      "block_order": [
-        "image_azDpGX"
-      ],
-      "name": "t:sections.hero_carousel.presets.name",
-      "settings": {
-        "layout": "style-1",
-        "autoplay": "off",
-        "autoplay_speed": 5000,
-        "color_scheme": "",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 0,
-        "padding_bottom_desktop": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0
-      }
-    },
     "multi_column_style_1_ePNRPr": {
       "type": "multi-column-style-1",
       "blocks": {
@@ -1017,6 +983,306 @@
       ],
       "settings": {}
     },
+    "custom_section_pmnEtC": {
+      "type": "custom-section",
+      "blocks": {
+        "text_R4RW9N": {
+          "type": "text",
+          "name": "t:blocks.text.name",
+          "settings": {
+            "text_tag_name": "h2",
+            "text_heading": "How to install?",
+            "font_size_heading": "h4",
+            "text_line_height": 1.2,
+            "text_effect": "none",
+            "text_duration": 1000,
+            "text_heading_width_desktop": 100,
+            "text_heading_width_mobile": 100,
+            "alignment": "center",
+            "padding_top_dt": 0,
+            "padding_bottom_dt": 0,
+            "padding_top_mb": 0,
+            "padding_bottom_mb": 50
+          },
+          "blocks": {}
+        },
+        "grid_nHE6Gh": {
+          "type": "grid",
+          "settings": {
+            "device": "mobile",
+            "desktop_col": 3,
+            "tablet_col": 2,
+            "mobile_col": 1,
+            "gap": "global",
+            "col_gap_custom_desktop": 20,
+            "col_gap_custom_mobile": 14,
+            "row_gap_custom_desktop": 20,
+            "row_gap_custom_mobile": 14,
+            "fixed_row": false,
+            "auto_row": 20
+          },
+          "blocks": {
+            "column_Pzxwyy": {
+              "type": "column",
+              "settings": {
+                "device": "mobile",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "text_ngPGNF": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text_tag_name": "h2",
+                    "text_heading": "01",
+                    "font_size_heading": "h5",
+                    "text_line_height": 1.2,
+                    "text_effect": "split",
+                    "text_duration": 1000,
+                    "text_heading_width_desktop": 100,
+                    "text_heading_width_mobile": 100,
+                    "alignment": "center",
+                    "padding_top_dt": 0,
+                    "padding_bottom_dt": 0,
+                    "padding_top_mb": 0,
+                    "padding_bottom_mb": 0
+                  },
+                  "blocks": {}
+                },
+                "text_RtfHUP": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text_tag_name": "h2",
+                    "text_heading": "Recommended Placement",
+                    "font_size_heading": "h6",
+                    "text_line_height": 1.9,
+                    "text_effect": "split",
+                    "text_duration": 1000,
+                    "text_heading_width_desktop": 100,
+                    "text_heading_width_mobile": 100,
+                    "alignment": "center",
+                    "padding_top_dt": 0,
+                    "padding_bottom_dt": 0,
+                    "padding_top_mb": 10,
+                    "padding_bottom_mb": 0
+                  },
+                  "blocks": {}
+                },
+                "text_2_eKRniA": {
+                  "type": "text-2",
+                  "name": "t:blocks.text_2.name",
+                  "settings": {
+                    "text": "<p>For the best experience, place TapNest <br/><strong>at chest level</strong> on your mirror for an easy, natural reach. Made for the bathroom, <br/>but not limited to it. Style it your way throughout your home.</p>",
+                    "alignment": "center",
+                    "padding_top_dt": 0,
+                    "padding_bottom_dt": 0,
+                    "padding_top_mb": 10,
+                    "padding_bottom_mb": 0
+                  },
+                  "blocks": {}
+                },
+                "image_XbeQqz": {
+                  "type": "image",
+                  "name": "t:blocks.image.presets.name",
+                  "settings": {
+                    "image": "shopify://shop_images/oora_woman.png",
+                    "aspect_ratio": "auto"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_ngPGNF",
+                "text_RtfHUP",
+                "text_2_eKRniA",
+                "image_XbeQqz"
+              ]
+            },
+            "column_KpJJYT": {
+              "type": "column",
+              "settings": {
+                "device": "mobile",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "text_zCVfng": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text_tag_name": "h2",
+                    "text_heading": "02",
+                    "font_size_heading": "h5",
+                    "text_line_height": 1.2,
+                    "text_effect": "split",
+                    "text_duration": 1000,
+                    "text_heading_width_desktop": 100,
+                    "text_heading_width_mobile": 100,
+                    "alignment": "center",
+                    "padding_top_dt": 0,
+                    "padding_bottom_dt": 0,
+                    "padding_top_mb": 50,
+                    "padding_bottom_mb": 0
+                  },
+                  "blocks": {}
+                },
+                "text_QVrBi8": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text_tag_name": "h2",
+                    "text_heading": "How to install",
+                    "font_size_heading": "h6",
+                    "text_line_height": 1.9,
+                    "text_effect": "split",
+                    "text_duration": 1000,
+                    "text_heading_width_desktop": 100,
+                    "text_heading_width_mobile": 100,
+                    "alignment": "center",
+                    "padding_top_dt": 0,
+                    "padding_bottom_dt": 0,
+                    "padding_top_mb": 10,
+                    "padding_bottom_mb": 0
+                  },
+                  "blocks": {}
+                },
+                "text_2_HD9bHg": {
+                  "type": "text-2",
+                  "name": "t:blocks.text_2.name",
+                  "settings": {
+                    "text": "<ol><li>Wipe the surface thoroughly to remove dust, dirt, and moisture.</li><li>Ensure the surface is completely <br/>dry before installation.</li><li>Mount the dock and peel off the adhesive backing.</li><li>Press firmly onto the prepared <br/>surface for 10–15 seconds.</li><li>Let it set 20 minutes before placing your phone.</li></ol>",
+                    "alignment": "left",
+                    "padding_top_dt": 0,
+                    "padding_bottom_dt": 0,
+                    "padding_top_mb": 10,
+                    "padding_bottom_mb": 0
+                  },
+                  "blocks": {}
+                },
+                "image_4PDtKy": {
+                  "type": "image",
+                  "name": "t:blocks.image.presets.name",
+                  "settings": {
+                    "image": "shopify://shop_images/tips_graphic_bd0f4a14-cab2-4542-9985-21d0c0b2c7ca.png",
+                    "aspect_ratio": "auto",
+                    "image_width": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_zCVfng",
+                "text_QVrBi8",
+                "text_2_HD9bHg",
+                "image_4PDtKy"
+              ]
+            },
+            "column_3yyCg8": {
+              "type": "column",
+              "settings": {
+                "device": "mobile",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "text_D3cmaB": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text_tag_name": "h2",
+                    "text_heading": "03",
+                    "font_size_heading": "h5",
+                    "text_line_height": 1.2,
+                    "text_effect": "split",
+                    "text_duration": 1000,
+                    "text_heading_width_desktop": 100,
+                    "text_heading_width_mobile": 100,
+                    "alignment": "center",
+                    "padding_top_dt": 0,
+                    "padding_bottom_dt": 0,
+                    "padding_top_mb": 50,
+                    "padding_bottom_mb": 0
+                  },
+                  "blocks": {}
+                },
+                "text_fNmAVE": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text_tag_name": "h2",
+                    "text_heading": "Setting up your first NFC Shortcut",
+                    "font_size_heading": "h6",
+                    "text_line_height": 1.9,
+                    "text_effect": "split",
+                    "text_duration": 1000,
+                    "text_heading_width_desktop": 100,
+                    "text_heading_width_mobile": 100,
+                    "alignment": "center",
+                    "padding_top_dt": 0,
+                    "padding_bottom_dt": 0,
+                    "padding_top_mb": 10,
+                    "padding_bottom_mb": 0
+                  },
+                  "blocks": {}
+                },
+                "text_2_zyXVr8": {
+                  "type": "text-2",
+                  "name": "t:blocks.text_2.name",
+                  "settings": {
+                    "text": "<p>View tutorials, explore placement <br/>ideas, and download NFC-curated experiences <a href=\"/pages/nfc-shortcut-gallery\" target=\"_blank\" title=\"NFC Setup Guide\"><strong>HERE</strong></a></p>",
+                    "alignment": "center",
+                    "padding_top_dt": 0,
+                    "padding_bottom_dt": 0,
+                    "padding_top_mb": 10,
+                    "padding_bottom_mb": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_D3cmaB",
+                "text_fNmAVE",
+                "text_2_zyXVr8"
+              ]
+            }
+          },
+          "block_order": [
+            "column_Pzxwyy",
+            "column_KpJJYT",
+            "column_3yyCg8"
+          ]
+        }
+      },
+      "block_order": [
+        "text_R4RW9N",
+        "grid_nHE6Gh"
+      ],
+      "name": "t:sections.custom_section.presets.name",
+      "settings": {
+        "width": "global",
+        "custom_width": 1400,
+        "height": "auto",
+        "custom_height": 50,
+        "container_gap": "global",
+        "container_gap_desktop": 30,
+        "container_gap_mobile": 20,
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
     "multi_column_style_1_8fAFqN": {
       "type": "multi-column-style-1",
       "blocks": {
@@ -1366,11 +1632,11 @@
     "17803883564ba6d0c2",
     "custom_section_CgqbtL",
     "hero_carousel_UCaq7W",
-    "hero_carousel_wEyFzx",
     "multi_column_style_1_ePNRPr",
     "multi_column_style_1_zMJcpM",
     "custom_section_pM4t7C",
     "1779938978cf3e0fbb",
+    "custom_section_pmnEtC",
     "multi_column_style_1_8fAFqN",
     "custom_section_pwtGyr",
     "collapse_content_3mHbKF",
