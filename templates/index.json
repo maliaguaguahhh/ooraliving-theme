@@ -104,162 +104,77 @@
       "type": "image-with-text-style-10",
       "custom_css": [
         ".xo-image-with-text-style-10__container {display: none !important;}",
-        ".section-image-with-text-style-10 .xo-section {height: 100svh !important;}",
-        ".xo-image-with-text-style-10 {position: relative;}",
-        ".xo-section-bg-image {z-index: 0 !important;}"
+        ".xo-section {height: auto !important; aspect-ratio: 16/9;}",
+        ".xo-image-with-text-style-10 {height: 100% !important; position: relative;}",
+        ".xo-section-bg-image {z-index: 0 !important;}",
+        ".xo-section-bg-image__item {min-height: 0 !important; transform: none !important; inset: 0 !important;}",
+        ".xo-section-bg-image video {width: 100% !important; height: 100% !important; object-fit: contain !important;}",
+        "@media (max-width: 767px) {.xo-section {aspect-ratio: 9/16; }}"
       ],
       "name": "t:sections.image_with_text_style_10.presets.name",
       "settings": {
         "content": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
         "background_type": "video",
         "background_video_desktop": "shopify://files/videos/01Tap_Light.mp4",
         "background_video_mobile": "shopify://files/videos/01Tap_Light.mp4",
         "use_parallax": false,
-        "padding_top_desktop": 50,
-        "padding_bottom_desktop": 50,
-        "padding_top_mobile": 50,
-        "padding_bottom_mobile": 50
-      }
-    },
-    "image_with_text_style_1_pKned4": {
-      "type": "image-with-text-style-1",
-      "blocks": {
-        "image_g9cjgC": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/image_6_ca472fe5-0731-4a9a-92dc-d7415452b739.png",
-            "device_size": "mobile",
-            "inherit_desktop_value_size": false,
-            "width_dt": 90,
-            "width_mb": 80,
-            "height_dt": 115,
-            "height_mb": 85
-          }
-        },
-        "image_YczHNV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/image_5_930a7dd4-8d3d-4ada-8444-f3ac72e98261.png",
-            "device_size": "mobile",
-            "inherit_desktop_value_size": false,
-            "width_dt": 229,
-            "width_mb": 141,
-            "height_dt": 214,
-            "height_mb": 148
-          }
-        }
-      },
-      "block_order": [
-        "image_g9cjgC",
-        "image_YczHNV"
-      ],
-      "disabled": true,
-      "name": "Painpoints",
-      "settings": {
-        "layout": "default",
-        "text_tag_name": "h2",
-        "text_heading": "Still propping your phone against the toothpaste?",
-        "font_size_heading": "h3",
-        "text_line_height": 1.3,
-        "text_effect": "split",
-        "text_duration": 1000,
-        "text_heading_width_desktop": 100,
-        "text_heading_width_mobile": 100,
-        "description": "<p><br/>Phone is your bestie for music, video, and more while getting ready or winding down.             <br/><br/>But between slippery counters, lotion-covered hands, and bulky techy holders, there’s never a good place to put it.</p>",
-        "small_image": "shopify://shop_images/nano_banana_pro_yp9qfdt7lvz6emgjmqvl_0.png",
-        "aspect_ratio_small": "custom",
-        "aspect_ratio_small_width": 377,
-        "aspect_ratio_small_height": 386,
-        "large_image": "shopify://shop_images/a-wet-sink-top-with-a-phone-on-it-and-there-is-water-drop-on-the-phone-the-phone-is-playing-music-and-screen-is-on-show-the-app.png",
-        "aspect_ratio_large": "4/3",
-        "aspect_ratio_large_width": 400,
-        "aspect_ratio_large_height": 300,
-        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
-        "background_color": "#ffffff",
-        "background_gradient": "",
         "padding_top_desktop": 0,
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 0
       }
     },
-    "17798651046e825b57": {
-      "type": "_blocks",
-      "settings": {}
-    },
-    "media_video_869NfF": {
-      "type": "media-video",
+    "image_with_text_style_10_ALTAbf": {
+      "type": "image-with-text-style-10",
       "custom_css": [
-        ".media-video .xo-video__button {display: none;}",
-        ".media-video .xo-video,.media-video .xo-media,.media-video xo-intersection-video,.media-video .xo-embed-responsive {width: 100%; height: auto;}",
-        ".media-video .xo-embed-responsive:before {display: none;}",
-        ".media-video video {position: static; display: block; width: 100%; height: auto; object-fit: contain;}",
-        ".media-video .xo-image__loading {display: none;}"
+        ".xo-image-with-text-style-10__container {display: none !important;}",
+        ".xo-section {height: auto !important; aspect-ratio: 16/9;}",
+        ".xo-image-with-text-style-10 {height: 100% !important; position: relative;}",
+        ".xo-section-bg-image {z-index: 0 !important;}",
+        ".xo-section-bg-image__item {min-height: 0 !important; transform: none !important; inset: 0 !important;}",
+        ".xo-section-bg-image video {width: 100% !important; height: 100% !important; object-fit: contain !important;}",
+        "@media (max-width: 767px) {.xo-section {aspect-ratio: 10/16; }}"
       ],
-      "name": "t:sections.media_video.presets.name",
+      "name": "t:sections.image_with_text_style_10.presets.name",
       "settings": {
-        "layout": "full-width",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/01Tap_Light.mp4",
-        "video_url": "",
-        "cover_image": "shopify://shop_images/Frame_37.png",
-        "video_alt_text": "",
+        "content": "",
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
-        "background_color": "#f5f4f2",
+        "background_color": "",
         "background_gradient": "",
+        "background_type": "video",
+        "background_video_desktop": "shopify://files/videos/02Snap_light.mp4",
+        "background_video_mobile": "shopify://files/videos/02Snap_light.mp4",
+        "use_parallax": false,
         "padding_top_desktop": 0,
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 0
       }
     },
-    "media_video_BKrgtA": {
-      "type": "media-video",
+    "image_with_text_style_10_rpcAfp": {
+      "type": "image-with-text-style-10",
       "custom_css": [
-        ".media-video .xo-video__poster,.media-video .xo-video__button {display: none !important;}",
-        ".media-video .xo-video,.media-video .xo-media,.media-video xo-intersection-video,.media-video .xo-embed-responsive {width: 100% !important; height: auto !important;}",
-        ".media-video .xo-embed-responsive:before {display: none;}",
-        ".media-video video {position: static !important; display: block; width: 100% !important; height: auto !important; object-fit: contain !important;}"
+        ".xo-image-with-text-style-10__container {display: none !important;}",
+        ".xo-section {height: auto !important; aspect-ratio: 16/9;}",
+        ".xo-image-with-text-style-10 {height: 100% !important; position: relative;}",
+        ".xo-section-bg-image {z-index: 0 !important;}",
+        ".xo-section-bg-image__item {min-height: 0 !important; transform: none !important; inset: 0 !important;}",
+        ".xo-section-bg-image video {width: 100% !important; height: 100% !important; object-fit: contain !important;}",
+        "@media (max-width: 767px) {.xo-section {aspect-ratio: 9/16; }}"
       ],
-      "name": "t:sections.media_video.presets.name",
+      "name": "t:sections.image_with_text_style_10.presets.name",
       "settings": {
-        "layout": "full-width",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/02Snap_light.mp4",
-        "video_url": "",
-        "cover_image": "shopify://shop_images/Frame_37.png",
-        "video_alt_text": "",
+        "content": "",
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
-        "background_color": "#f5f4f2",
+        "background_color": "",
         "background_gradient": "",
-        "padding_top_desktop": 0,
-        "padding_bottom_desktop": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0
-      }
-    },
-    "media_video_GBBAbY": {
-      "type": "media-video",
-      "custom_css": [
-        ".media-video .xo-video__poster,.media-video .xo-video__button {display: none !important;}",
-        ".media-video .xo-video,.media-video .xo-media,.media-video xo-intersection-video,.media-video .xo-embed-responsive {width: 100% !important; height: auto !important;}",
-        ".media-video .xo-embed-responsive:before {display: none;}",
-        ".media-video video {position: static !important; display: block; width: 100% !important; height: auto !important; object-fit: contain !important;}"
-      ],
-      "name": "t:sections.media_video.presets.name",
-      "settings": {
-        "layout": "full-width",
-        "enable_video_looping": false,
-        "video": "shopify://files/videos/03Flow_Light.mp4",
-        "video_url": "",
-        "cover_image": "shopify://shop_images/Frame_37.png",
-        "video_alt_text": "",
-        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
-        "background_color": "#f5f4f2",
-        "background_gradient": "",
+        "background_type": "video",
+        "background_video_desktop": "shopify://files/videos/03Flow_Light.mp4",
+        "background_video_mobile": "shopify://files/videos/03Flow_Light.mp4",
+        "use_parallax": false,
         "padding_top_desktop": 0,
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 0,
@@ -783,11 +698,8 @@
     "image_banner_style_2_x4qhp6",
     "featured_product_special_Vq8L67",
     "image_with_text_style_10_8mEABG",
-    "image_with_text_style_1_pKned4",
-    "17798651046e825b57",
-    "media_video_869NfF",
-    "media_video_BKrgtA",
-    "media_video_GBBAbY",
+    "image_with_text_style_10_ALTAbf",
+    "image_with_text_style_10_rpcAfp",
     "custom_section_tijzzy",
     "product_specification_style_5_B9DyJ6",
     "product_specification_style_5_m4b9UA",
