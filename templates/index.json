@@ -166,57 +166,15 @@
       "type": "_blocks",
       "settings": {}
     },
-    "image_with_text_style_10_KKbrT7": {
-      "type": "image-with-text-style-10",
-      "disabled": true,
-      "name": "Solution",
-      "settings": {
-        "content": "<p>TapNest is the best answer to how you use your smartphone in your bathroom. <br/><br/>Not only does it allows easy Magnetic Docking, you can also launch your favorite music, GRWMs, skincare timers, podcasts through tapping.<br/><br/>Tap. Snap. Flow.<br/><br/>TapNest brings intentional elegance to your space.</p>",
-        "desktop_image": "shopify://shop_images/woman-holding-mobile-phone.jpg",
-        "mobile_image": "shopify://shop_images/image_7.png",
-        "color_scheme": "background-1",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "background_type": "video",
-        "background_video_desktop": "shopify://files/videos/product rendering.mp4",
-        "background_video_mobile": "shopify://files/videos/product rendering.mp4",
-        "use_parallax": true,
-        "padding_top_desktop": 50,
-        "padding_bottom_desktop": 50,
-        "padding_top_mobile": 50,
-        "padding_bottom_mobile": 50
-      }
-    },
-    "reveal_text_effect_PAWFkF": {
-      "type": "reveal-text-effect",
-      "disabled": true,
-      "name": "t:sections.reveal_text_effect.name",
-      "settings": {
-        "sub_heading": "Our Solution",
-        "font_size_heading": "h5",
-        "heading": "<p>TapNest is the best answer to how you use your smartphone in your bathroom. <br/><br/>Easy Magnetic Docking. Launch your favorite music, GRWMs, skincare timers, podcasts through tapping.<br/><br/>Tap.  Snap. Flow<br/><br/><br/>...</p>",
-        "reveal_text_effect": true,
-        "reveal_text_opacity": 40,
-        "image_desktop": "shopify://shop_images/Weixin_Image_20260526203652_209_17.jpg",
-        "image_mobile": "shopify://shop_images/Weixin_Image_20260526203652_209_17.jpg",
-        "color_scheme": "",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 50,
-        "padding_bottom_desktop": 100,
-        "padding_top_mobile": 50,
-        "padding_bottom_mobile": 80
-      }
-    },
     "media_video_869NfF": {
       "type": "media-video",
       "custom_css": [
-        ".media-video .xo-video__button{display:none}",
-        ".media-video .xo-video,.media-video .xo-media,.media-video xo-intersection-video,.media-video .xo-embed-responsive{width:100%;height:auto}",
-        ".media-video .xo-embed-responsive:before{display:none}",
-        ".media-video video{position:static;display:block;width:100%;height:auto;object-fit:contain}",
-        ".media-video .xo-image__loading{display:none}",
-        ".media-video .xo-lazyload-overlay{background:#fff;backdrop-filter:none}"
+        ".media-video .xo-video__button {display: none;}",
+        ".media-video .xo-video,.media-video .xo-media,.media-video xo-intersection-video,.media-video .xo-embed-responsive {width: 100%; height: auto;}",
+        ".media-video .xo-embed-responsive:before {display: none;}",
+        ".media-video video {position: static; display: block; width: 100%; height: auto; object-fit: contain;}",
+        ".media-video .xo-image__loading {display: none;}",
+        ".media-video .xo-lazyload-overlay {background: #fff; backdrop-filter: none;}"
       ],
       "name": "t:sections.media_video.presets.name",
       "settings": {
@@ -801,8 +759,6 @@
     "featured_product_special_Vq8L67",
     "image_with_text_style_1_pKned4",
     "17798651046e825b57",
-    "image_with_text_style_10_KKbrT7",
-    "reveal_text_effect_PAWFkF",
     "media_video_869NfF",
     "media_video_BKrgtA",
     "media_video_GBBAbY",
