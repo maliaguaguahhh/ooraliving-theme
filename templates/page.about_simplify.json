@@ -22,15 +22,15 @@
         "feature_byhcnx": {
           "type": "feature",
           "settings": {
-            "title": "A problem no one questions?!",
-            "sub_title": "<p>Friends used bulky stands, awkward angles, or whatever happened to be nearby. We had all quietly adapted to the same problem.</p>"
+            "title": "Why no one questions it?!",
+            "sub_title": "<p>We used flimsy stands, awkward angles, or whatever happened to be nearby. We had all quietly adapted to the problem. But frustration stays.</p>"
           }
         },
         "feature_QjCHTb": {
           "type": "feature",
           "settings": {
-            "title": "Value",
-            "sub_title": "<p>Because this was not an established category, every detail had to be figured out from scratch—from structure and adhesion to shortcut development and proportions.</p>"
+            "title": "Then build it ourselves!",
+            "sub_title": "<p>With no predecessors, every detail had to be figured out from scratch—from structure proportions, and material to shortcut building.</p>"
           }
         }
       },
