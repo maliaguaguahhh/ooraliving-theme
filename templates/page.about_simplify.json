@@ -15,8 +15,8 @@
         "feature_iUkPdx": {
           "type": "feature",
           "settings": {
-            "title": "Mission",
-            "sub_title": "<p>Our 1960s brand slogan, ‘We think differently’, remains inspiring – rooting us in an approach to design that embraces risk and experimentation</p>"
+            "title": "Origin",
+            "sub_title": "<p>A clumsy phone holder came free with my electric toothbrush. I never use it to monitor brushing teeth but my phone is there all the time. HAHA</p>"
           }
         },
         "feature_byhcnx": {
@@ -46,6 +46,7 @@
         "sub_heading": "<p>We are a designer startup obsessed with life's small moments that slip by unnoticed yet define how living feels. <br/><br/>We design everyday objects that matter: <strong>thoughtful enough to endure, useful without coldness, playful without waste. </strong>Each piece bridges home, beauty, and intention, turning overlooked moments into ones worth savoring.</p>",
         "hover_show_content": true,
         "aspect_ratio_dt": "16/9",
+        "image_mb": "shopify://shop_images/image_3.png",
         "aspect_ratio_mb": "3/4",
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
@@ -135,34 +136,6 @@
         "padding_bottom_mobile": 0
       }
     },
-    "image_with_text_style_9_iGgNN7": {
-      "type": "image-with-text-style-9",
-      "name": "t:sections.image_with_text_style_9.presets.name",
-      "settings": {
-        "text_tag_name": "h2",
-        "text_heading": "Image with text style 9",
-        "font_size_heading": "h3",
-        "text_line_height": 1.2,
-        "text_effect": "split",
-        "text_duration": 1000,
-        "text_heading_width_desktop": 100,
-        "text_heading_width_mobile": 100,
-        "sub_heading": "Subheading",
-        "description": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
-        "alignment_desktop": "left",
-        "alignment_mobile": "top",
-        "expand_grid": false,
-        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
-        "background_color": "",
-        "background_gradient": "",
-        "background_type": "image",
-        "use_parallax": true,
-        "padding_top_desktop": 50,
-        "padding_bottom_desktop": 50,
-        "padding_top_mobile": 50,
-        "padding_bottom_mobile": 50
-      }
-    },
     "collapse_content_UqUKUB": {
       "type": "collapse-content",
       "blocks": {
@@ -236,7 +209,6 @@
     "image_with_text_style_5_7HWQFf",
     "image_with_text_style_3_Qxdnny",
     "product_specification_style_1_Mz7xb9",
-    "image_with_text_style_9_iGgNN7",
     "collapse_content_UqUKUB",
     "image_button_style_1_mMX7rE"
   ]
