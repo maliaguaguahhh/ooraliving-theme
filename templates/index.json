@@ -173,8 +173,7 @@
         ".media-video .xo-video,.media-video .xo-media,.media-video xo-intersection-video,.media-video .xo-embed-responsive {width: 100%; height: auto;}",
         ".media-video .xo-embed-responsive:before {display: none;}",
         ".media-video video {position: static; display: block; width: 100%; height: auto; object-fit: contain;}",
-        ".media-video .xo-image__loading {display: none;}",
-        ".media-video .xo-lazyload-overlay {background: #fff; backdrop-filter: none;}"
+        ".media-video .xo-image__loading {display: none;}"
       ],
       "name": "t:sections.media_video.presets.name",
       "settings": {
