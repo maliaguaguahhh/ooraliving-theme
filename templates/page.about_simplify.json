@@ -170,39 +170,31 @@
           "type": "collapse",
           "settings": {
             "title": "<p>Why start with the bathroom?</p>",
-            "content": "<p>Bathrooms are built around permanent decisions—mirrors, cabinetry, tile, fixtures, and plumbing. They are expensive to change, even as new technologies quietly create new habits.<br/><br/>As a designer who spent years working with bathroom products and spaces, I kept seeing the same gap: people had adapted, but the room had not.<br/><br/>Could a smaller object help an existing space keep up?</p><p><br/></p><p>TapNest is our first answer.</p>"
+            "content": "<p>Bathrooms are built around permanent decisions—mirrors, cabinetry, tile, fixtures, and plumbing. They are expensive to change, even as new technologies quietly create new habits.<br/><br/>As a designer who spent years working with bathroom products and spaces, I wonder:</p><p><br/><strong>Could a smaller object help an existing space keep up?</strong><br/><br/>TapNest is our first answer.</p>"
           }
         },
         "collapse_bQbcgr": {
           "type": "collapse",
           "settings": {
-            "title": "<p>What is the warranty coverage for your speakers?</p>",
-            "content": "<p>We offer a comprehensive warranty for all our high-end products. Typically, this includes a 2-year warranty covering manufacturing defects and a 1-year warranty for the electrical components</p>"
+            "title": "<p>Isn’t TapNest just a simple phone holder?</p>",
+            "content": "<p>Not quite. Holding your phone was only half the problem.<br/><br/>Most phone holders were designed as temporary accessories. They worked technically, but took up space, felt visually disconnected from home vibe.<br/><br/>We wanted TapNest to behave more like <strong>part of the room</strong>: something that could<strong> </strong>stay, belong, and support different routines without prescribing one.</p>"
           }
         },
         "collapse_eCWmQm": {
           "type": "collapse",
           "settings": {
-            "title": "<p>How do I connect multiple Bluetooth speakers for a surround sound experience?</p>",
-            "content": "<p>To connect multiple speakers, turn on each speaker and activate their Bluetooth mode. Follow the pairing instructions in the user manual to connect the speakers to each other and then to your device. </p>"
-          }
-        },
-        "collapse_79gUff": {
-          "type": "collapse",
-          "settings": {
-            "title": "<p>Are your speakers waterproof?</p>",
-            "content": "<p>Yes, many of our Bluetooth speakers are designed to be waterproof and are rated IPX5 or higher, making them suitable for outdoor use, poolside gatherings, and even in the shower</p>"
+            "title": "<p>Is OORA only about phones?</p>",
+            "content": "<p><strong>No.</strong> OORA looks for small habits that have changed, but are still poorly supported by the spaces around them.<br/><br/>We create thoughtful objects that <strong>help familiar spaces adapt to you.</strong></p>"
           }
         }
       },
       "block_order": [
         "collapse_gXh4yj",
         "collapse_bQbcgr",
-        "collapse_eCWmQm",
-        "collapse_79gUff"
+        "collapse_eCWmQm"
       ],
       "custom_css": [
-        "@media (max-width: 767px) {.xo-collapse__trigger-title {font-size: 14px; } .xo-collapse__content {font-size: 14px; }}"
+        "@media (max-width: 767px) {.xo-collapse__trigger-title {font-size: 15px; } .xo-collapse__content {font-size: 13px; }}"
       ],
       "settings": {
         "font_size_heading": "h5",
