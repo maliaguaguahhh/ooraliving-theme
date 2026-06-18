@@ -201,6 +201,9 @@
         "collapse_eCWmQm",
         "collapse_79gUff"
       ],
+      "custom_css": [
+        "@media (max-width: 767px) {.xo-collapse__trigger-title {font-size: 14px; } .xo-collapse__content {font-size: 14px; }}"
+      ],
       "settings": {
         "font_size_heading": "h5",
         "heading": "<p>FOUNDER Q&A</p>",
