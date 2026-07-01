@@ -249,8 +249,8 @@
           "settings": {
             "image": "shopify://shop_images/wakeup_routine.png",
             "icon": "shopify://shop_images/icons-03_1.png",
-            "title": "Affirmations",
-            "description": "A reminder just for you.",
+            "title": "Wakeup Routine",
+            "description": "Report the weather & start your morning routine",
             "download_link": ""
           }
         }
