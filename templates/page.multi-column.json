@@ -299,8 +299,8 @@
           "settings": {
             "image": "shopify://shop_images/selfie.png",
             "icon": "shopify://shop_images/icons-05_1.png",
-            "title": "Watch YouTube",
-            "description": "Jump straight into your comfort content",
+            "title": "Take a Selfie",
+            "description": "Open your camera, ready to shoot",
             "download_link": ""
           }
         },
@@ -311,6 +311,16 @@
             "icon": "shopify://shop_images/icons-01_1.png",
             "title": "Listen to a Podcast",
             "description": "Jump straight to your favorite podcast",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_nELMj9": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/youtube.png",
+            "icon": "shopify://shop_images/icons-04_1.png",
+            "title": "Watch YouTube",
+            "description": "Jump straight into your comfort content",
             "download_link": ""
           }
         }
@@ -329,7 +339,8 @@
         "shortcut_preset_AWBanX",
         "shortcut_preset_Drqepw",
         "shortcut_preset_xD7cUm",
-        "shortcut_preset_GPKn4L"
+        "shortcut_preset_GPKn4L",
+        "shortcut_preset_nELMj9"
       ],
       "custom_css": [
         "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 16px; } .shortcut-preset-library__text {font-size: 12px; }}",
