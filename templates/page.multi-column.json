@@ -303,6 +303,16 @@
             "description": "Opens your camera, ready to shoot",
             "download_link": ""
           }
+        },
+        "shortcut_preset_GPKn4L": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/podcast.png",
+            "icon": "shopify://shop_images/icons-01_1.png",
+            "title": "Listen to a Podcast",
+            "description": "Jump straight to your favorite podcast",
+            "download_link": ""
+          }
         }
       },
       "block_order": [
@@ -318,7 +328,8 @@
         "shortcut_preset_9JWeEH",
         "shortcut_preset_AWBanX",
         "shortcut_preset_Drqepw",
-        "shortcut_preset_xD7cUm"
+        "shortcut_preset_xD7cUm",
+        "shortcut_preset_GPKn4L"
       ],
       "custom_css": [
         "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 16px; } .shortcut-preset-library__text {font-size: 12px; }}",
