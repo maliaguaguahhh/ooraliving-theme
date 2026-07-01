@@ -273,6 +273,16 @@
             "description": "Call your favorite person with just a tap",
             "download_link": ""
           }
+        },
+        "shortcut_preset_AWBanX": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/departure_reminder.png",
+            "icon": "shopify://shop_images/icons-02_1.png",
+            "title": "Departure Reminder",
+            "description": "A reminder to get you out the door",
+            "download_link": ""
+          }
         }
       },
       "block_order": [
@@ -285,7 +295,8 @@
         "shortcut_preset_kh3Xhq",
         "shortcut_preset_93YaAA",
         "shortcut_preset_VdYjHK",
-        "shortcut_preset_9JWeEH"
+        "shortcut_preset_9JWeEH",
+        "shortcut_preset_AWBanX"
       ],
       "custom_css": [
         "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 16px; } .shortcut-preset-library__text {font-size: 12px; }}",
