@@ -117,6 +117,7 @@
     },
     "image_with_text_style_9_89bHiw": {
       "type": "image-with-text-style-9",
+      "custom_css": [],
       "name": "t:sections.image_with_text_style_9.presets.name",
       "settings": {
         "text_tag_name": "h2",
