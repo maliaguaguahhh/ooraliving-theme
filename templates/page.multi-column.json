@@ -30,8 +30,8 @@
         "grid_Vj8W3W": {
           "type": "grid",
           "settings": {
-            "device": "desktop",
-            "desktop_col": 3,
+            "device": "mobile",
+            "desktop_col": 1,
             "tablet_col": 2,
             "mobile_col": 1,
             "gap": "global",
@@ -80,24 +80,23 @@
                     "video_alt_text": ""
                   },
                   "blocks": {}
-                },
-                "divider_tTrM4a": {
-                  "type": "divider",
-                  "name": "t:blocks.divider.presets.name",
-                  "settings": {
-                    "text": "",
-                    "divider_width": 0,
-                    "divider_weight": 1,
-                    "divider_style": "solid"
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
                 "heading_JQgU3H",
-                "video_EUUyEL",
-                "divider_tTrM4a"
+                "video_EUUyEL"
               ]
+            },
+            "divider_JaXFU4": {
+              "type": "divider",
+              "name": "t:blocks.divider.presets.name",
+              "settings": {
+                "text": "",
+                "divider_width": 0,
+                "divider_weight": 1,
+                "divider_style": "solid"
+              },
+              "blocks": {}
             },
             "grid_gdLVXU": {
               "type": "grid",
@@ -146,6 +145,7 @@
           },
           "block_order": [
             "grid_yQaQRP",
+            "divider_JaXFU4",
             "grid_gdLVXU"
           ]
         }
@@ -155,7 +155,7 @@
       ],
       "name": "t:sections.custom_section.presets.name",
       "settings": {
-        "width": "global",
+        "width": "fill",
         "custom_width": 1400,
         "height": "auto",
         "custom_height": 50,
