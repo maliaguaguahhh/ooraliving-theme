@@ -117,7 +117,11 @@
     },
     "image_with_text_style_9_89bHiw": {
       "type": "image-with-text-style-9",
-      "custom_css": [],
+      "custom_css": [
+        ".img-with-text-9__subheading {color: rgba(255, 255, 255, 1) !important; opacity: 1 !important;}",
+        ".img-with-text-9__heading .xo-text__heading,.img-with-text-9__heading .xo-text__char {color: rgba(255, 255, 255, 1) !important;}",
+        ".img-with-text-9__description {color: rgba(255, 255, 255, 1) !important; opacity: 1 !important;}"
+      ],
       "name": "t:sections.image_with_text_style_9.presets.name",
       "settings": {
         "text_tag_name": "h2",
