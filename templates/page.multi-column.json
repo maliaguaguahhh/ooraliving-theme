@@ -177,6 +177,7 @@
         "shortcut_preset_i3pDpE": {
           "type": "shortcut_preset",
           "settings": {
+            "image": "shopify://shop_images/spotify_faves.png",
             "icon": "shopify://shop_images/icons-10_1.png",
             "title": "Spotify Favorites",
             "description": "A playlist of your liked songs",
@@ -222,6 +223,16 @@
             "description": "Add your own playlist",
             "download_link": ""
           }
+        },
+        "shortcut_preset_VxFETy": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/play_my_own_list.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Play Your Own",
+            "description": "Add your own playlist",
+            "download_link": ""
+          }
         }
       },
       "block_order": [
@@ -229,7 +240,8 @@
         "shortcut_preset_JLbbAE",
         "shortcut_preset_cr3DeB",
         "shortcut_preset_bLaTjn",
-        "shortcut_preset_kJJPWm"
+        "shortcut_preset_kJJPWm",
+        "shortcut_preset_VxFETy"
       ],
       "custom_css": [
         "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 16px; } .shortcut-preset-library__text {font-size: 12px; }}",
