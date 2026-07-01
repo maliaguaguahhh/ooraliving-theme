@@ -230,7 +230,7 @@
             "image": "shopify://shop_images/immersive_bath.png",
             "icon": "shopify://shop_images/icons-11_1.png",
             "title": "Immersive Bath",
-            "description": "Sink in, stay a while.",
+            "description": "Open the go-to app & keep track of time",
             "download_link": ""
           }
         },
@@ -239,6 +239,16 @@
           "settings": {
             "image": "shopify://shop_images/affirmation.png",
             "icon": "shopify://shop_images/icons-12_1.png",
+            "title": "Affirmations",
+            "description": "Launch your list of daily reminders",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_93YaAA": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/wakeup_routine.png",
+            "icon": "shopify://shop_images/icons-03_1.png",
             "title": "Affirmations",
             "description": "A reminder just for you.",
             "download_link": ""
@@ -252,7 +262,8 @@
         "shortcut_preset_bLaTjn",
         "shortcut_preset_kJJPWm",
         "shortcut_preset_VxFETy",
-        "shortcut_preset_kh3Xhq"
+        "shortcut_preset_kh3Xhq",
+        "shortcut_preset_93YaAA"
       ],
       "custom_css": [
         "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 16px; } .shortcut-preset-library__text {font-size: 12px; }}",
