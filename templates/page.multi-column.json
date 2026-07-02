@@ -181,7 +181,7 @@
             "icon": "shopify://shop_images/icons-10_1.png",
             "title": "Spotify Favorites",
             "description": "A playlist of your liked songs",
-            "download_link": "https://www.icloud.com/shortcuts/e4a49d6b585142499061bead3707a302"
+            "download_link": "https://www.icloud.com/shortcuts/62e11e0b722241efac938202f8e08177"
           }
         },
         "shortcut_preset_JLbbAE": {
@@ -191,7 +191,7 @@
             "icon": "shopify://shop_images/icons-10_1.png",
             "title": "Morning Energy",
             "description": "A Spotify playlist to ease into the day",
-            "download_link": "https://www.icloud.com/shortcuts/3285154e4c4b4faa808316ac169ac57b"
+            "download_link": "https://www.icloud.com/shortcuts/ecda3e7977ef426686f9d7372977b7ff"
           }
         },
         "shortcut_preset_cr3DeB": {
@@ -249,7 +249,7 @@
           "settings": {
             "image": "shopify://shop_images/wakeup_routine.png",
             "icon": "shopify://shop_images/icons-03_1.png",
-            "title": "Wakeup Routine",
+            "title": "Wake-up Routine",
             "description": "Report the weather & start your morning routine",
             "download_link": ""
           }
