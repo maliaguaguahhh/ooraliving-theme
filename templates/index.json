@@ -293,7 +293,7 @@
       "settings": {
         "layout": "style-1",
         "text_tag_name": "h2",
-        "text_heading": "Your Space, Transformed",
+        "text_heading": "Your Space, transformed",
         "font_size_heading": "h5",
         "text_line_height": 1.2,
         "text_effect": "split",
@@ -447,7 +447,7 @@
         "font_size_heading": "h5",
         "heading": "Your ritual, one tap away.",
         "description": "Create custom routines for podcasts, music, and more using the iPhone Shortcuts app.",
-        "button_text": "Do not know where to start?",
+        "button_text": "Not sure where to start?",
         "button_link": "shopify://pages/nfc-shortcut-gallery",
         "button_style": "secondary",
         "button_size": "md",
