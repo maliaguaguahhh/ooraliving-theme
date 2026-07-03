@@ -280,7 +280,8 @@
             "arrows_color": "#2c2120",
             "transition_speed": 3,
             "header_text": "User Reviews",
-            "show_average_rating": true
+            "show_average_rating": true,
+            "rating_display": "default"
           }
         }
       },
@@ -1003,11 +1004,11 @@
                 "feature_3_label": "",
                 "feature_3_product_has": true,
                 "feature_4_enabled": true,
-                "feature_4_description": "Keep it off the wet counters",
+                "feature_4_description": "Keeps it off the wet counters",
                 "feature_4_label": "",
                 "feature_4_product_has": true,
                 "feature_5_enabled": true,
-                "feature_5_description": "Multiple Colors Customize with stickers",
+                "feature_5_description": "Multiple colors customizable with stickers",
                 "feature_5_label": "",
                 "feature_5_product_has": true
               },
