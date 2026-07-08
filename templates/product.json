@@ -888,7 +888,7 @@
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 39,
-        "padding_bottom_desktop": 32,
+        "padding_bottom_desktop": 100,
         "padding_top_mobile": 39,
         "padding_bottom_mobile": 32
       }
@@ -1319,8 +1319,8 @@
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
-        "padding_top_desktop": 50,
-        "padding_bottom_desktop": 50,
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
         "padding_top_mobile": 50,
         "padding_bottom_mobile": 50
       }
