@@ -941,7 +941,6 @@
                 "dropdown_text_color": "#272023",
                 "dropdown_border_color": "#e8e0e4",
                 "dropdown_border_radius": 6,
-                "image_height": 150,
                 "image_border_radius": 12,
                 "feature_gap": 30,
                 "icon_size": 35,
@@ -1402,6 +1401,9 @@
     },
     "gallery_style_1_nQ8VYH": {
       "type": "gallery-style-1",
+      "custom_css": [
+        "@media (min-width: 992px) {.gallery-style-1__flex {justify-content: center; } .gallery-style-1__desktop .gallery-style-1__text {width: min(55rem, calc(100vw - 4rem)); height: auto; min-height: 45rem; }}"
+      ],
       "name": "t:sections.gallery_style_1.presets.name",
       "settings": {
         "heading": "<p>Follow us on <br/>Tiktok!</p>",
@@ -1412,8 +1414,8 @@
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
-        "padding_top_desktop": 43,
-        "padding_bottom_desktop": 60,
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 23
       }
