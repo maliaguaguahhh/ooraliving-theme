@@ -924,7 +924,7 @@
                 "background_color": "#f7f2f1",
                 "section_padding": 50,
                 "section_padding_horizontal": 25,
-                "max_width": 750,
+                "max_width": 850,
                 "column_gap": 25,
                 "column_background": "#ece0e0",
                 "column_border_radius": 12,
@@ -1051,7 +1051,7 @@
         "grid_nHE6Gh": {
           "type": "grid",
           "settings": {
-            "device": "mobile",
+            "device": "desktop",
             "desktop_col": 3,
             "tablet_col": 2,
             "mobile_col": 1,
