@@ -114,6 +114,7 @@
       "block_order": [
         "grid_XrmMUn"
       ],
+      "disabled": true,
       "name": "t:sections.custom_section.presets.name",
       "settings": {
         "width": "global",
@@ -303,6 +304,7 @@
         "shortcut_preset_QKde4M",
         "shortcut_preset_qEg6pn"
       ],
+      "disabled": true,
       "custom_css": [
         "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 18px; } .shortcut-preset-library__text {font-size: 12px; }}"
       ],
