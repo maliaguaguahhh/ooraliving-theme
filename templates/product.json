@@ -571,7 +571,7 @@
           "type": "grid",
           "settings": {
             "device": "desktop",
-            "desktop_col": 3,
+            "desktop_col": 1,
             "tablet_col": 2,
             "mobile_col": 1,
             "gap": "global",
@@ -900,8 +900,8 @@
           "type": "grid",
           "name": "t:blocks.grid.presets.name",
           "settings": {
-            "device": "mobile",
-            "desktop_col": 3,
+            "device": "desktop",
+            "desktop_col": 1,
             "tablet_col": 2,
             "mobile_col": 1,
             "gap": "global",
