@@ -362,7 +362,7 @@
       "type": "image-banner-style-2",
       "custom_css": [
         ".xo-btn {min-width: 100px; padding: 4px; border: 1px solid #fff; border-radius: 9em; background: none; color: #fff;}",
-        ".img-banner-2__description {max-width: 600px; font-size: 1.8rem; line-height: 1.55; color: #fff;}",
+        ".img-banner-2__description {max-width: 450px; font-size: 1.8rem; line-height: 1.55; color: #fff;}",
         "@media (max-width: 767px) {.img-banner-2__content {justify-content: start !important; gap: 12px; padding: 9rem 0 3.4rem !important; } .img-banner-2__box {display: contents; } .img-banner-2__bottom {order: 1; } .img-banner-2__box > xo-animate:first-child {order: 2; } .img-banner-2__box > xo-animate:last-child {order: 3; margin-top: 32rem; }}"
       ],
       "name": "Create your own rituals",
