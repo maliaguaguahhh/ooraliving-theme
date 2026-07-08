@@ -101,7 +101,7 @@
       "type": "popup-countdown-promo",
       "settings": {
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
-        "content_width": 505,
+        "content_width": 580,
         "placement_type": "flyout",
         "where_to_show": "target_pages",
         "target_pages": "index",
@@ -128,7 +128,7 @@
         "evergreen_unit": "days",
         "evergreen_value": 1,
         "image": "shopify://shop_images/Frame_87.png",
-        "media_width": 476,
+        "media_width": 410,
         "image_position": "left",
         "hidden_image_mobile": false,
         "overlay_opacity": 0
