@@ -14,7 +14,7 @@
       "name": "t:sections.main_page.presets.name",
       "settings": {
         "font_size_heading": "h3",
-        "align": "left",
+        "align": "center",
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
@@ -47,8 +47,8 @@
               "type": "grid",
               "name": "t:blocks.grid.presets.name",
               "settings": {
-                "device": "mobile",
-                "desktop_col": 3,
+                "device": "desktop",
+                "desktop_col": 1,
                 "tablet_col": 2,
                 "mobile_col": 1,
                 "gap": "global",
@@ -67,7 +67,7 @@
                     "title_tag": "h2",
                     "title": "Block heading",
                     "description": "<p><strong>How to set up TapNest?</strong></p>",
-                    "alignment": "left"
+                    "alignment": "center"
                   },
                   "blocks": {}
                 },
@@ -102,8 +102,8 @@
               "type": "grid",
               "name": "t:blocks.grid.presets.name",
               "settings": {
-                "device": "mobile",
-                "desktop_col": 3,
+                "device": "desktop",
+                "desktop_col": 1,
                 "tablet_col": 2,
                 "mobile_col": 1,
                 "gap": "global",
@@ -122,7 +122,7 @@
                     "title_tag": "h2",
                     "title": "Block heading",
                     "description": "<p><strong>Improving NFC Experience</strong></p>",
-                    "alignment": "left"
+                    "alignment": "center"
                   },
                   "blocks": {}
                 },
@@ -357,7 +357,7 @@
         "text_duration": 1000,
         "text_heading_width_desktop": 100,
         "text_heading_width_mobile": 100,
-        "alignment": "left",
+        "alignment": "center",
         "aspect_ratio": "16 / 9",
         "grid_gap": 24,
         "card_radius": 18,
