@@ -278,8 +278,8 @@
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "linear-gradient(180deg, rgba(245, 244, 242, 1), rgba(247, 242, 241, 1) 100%)",
-        "padding_top_desktop": 100,
-        "padding_bottom_desktop": 100,
+        "padding_top_desktop": 120,
+        "padding_bottom_desktop": 120,
         "padding_top_mobile": 80,
         "padding_bottom_mobile": 80
       }
@@ -287,7 +287,8 @@
     "product_specification_style_5_B9DyJ6": {
       "type": "product-specification-style-5",
       "custom_css": [
-        ".product-specification-5__grid > xo-animate {display: none;}"
+        ".product-specification-5__grid > xo-animate {display: none;}",
+        "@media (min-width: 992px) {.product-specification-5__grid > xo-animate {display: none; } .product-specification-5__left {--lg: 8 !important; grid-column: 3 / span 8 !important; justify-self: center; }}"
       ],
       "name": "t:sections.product_specification_style_5.presets.name",
       "settings": {
@@ -316,7 +317,8 @@
       "type": "product-specification-style-5",
       "custom_css": [
         ".product-specification-5__heading {display: none;}",
-        ".product-specification-5__grid > xo-animate {display: none;}"
+        ".product-specification-5__grid > xo-animate {display: none;}",
+        "@media (min-width: 992px) {.product-specification-5__grid > xo-animate {display: none; } .product-specification-5__left {--lg: 8 !important; grid-column: 3 / span 8 !important; justify-self: center; }}"
       ],
       "name": "t:sections.product_specification_style_5.presets.name",
       "settings": {
@@ -335,102 +337,25 @@
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 50,
-        "padding_bottom_desktop": 50,
+        "padding_bottom_desktop": 20,
         "padding_top_mobile": 50,
         "padding_bottom_mobile": 20
       }
     },
     "product_specification_style_13_Y73fzK": {
       "type": "product-specification-style-13",
-      "blocks": {
-        "chart_UtJy38": {
-          "type": "chart",
-          "disabled": true,
-          "settings": {
-            "title": "Subheading",
-            "value_max": 100,
-            "x_label": "0\n1h\n6h\n14h\n20h\n24h",
-            "y_label": "100\n80\n60\n40\n20\n0",
-            "dataset": "0,65,92,90,75,85\n0,38,65,40,30,60\n0,25,40,38,36,50",
-            "list_information": "Heading - 67\nHeading - 80\nHeading - 98"
-          }
-        },
-        "collection_BEqiQP": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "",
-            "aspect_ratio_dt": "21/9",
-            "aspect_ratio_mb": "3/2",
-            "button_text": "Button",
-            "button_link": "shopify://collections/all",
-            "button_style": "primary",
-            "button_size": "md"
-          }
-        }
-      },
-      "block_order": [
-        "chart_UtJy38",
-        "collection_BEqiQP"
+      "custom_css": [
+        "@media (min-width: 992px) {.product-specification-13__grid > xo-animate, .product-specification-13__grid > div:nth-of-type(2) {display: none; } .product-specification-13__grid > div:first-child {--xl: 6 !important; --lg: 6 !important; grid-column: 3 / span 8 !important; justify-self: center; width: 100%; } .product-specification-13__image {max-width: 674px; margin-inline: auto; }}"
       ],
       "name": "t:sections.product_specification_style_13.presets.name",
       "settings": {
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
-        "padding_top_desktop": 50,
+        "padding_top_desktop": 0,
         "padding_bottom_desktop": 50,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 80
-      }
-    },
-    "video_feedback_WXgbgP": {
-      "type": "video-feedback",
-      "blocks": {
-        "video_yjmjyz": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/6887.mp4",
-            "video_url": "",
-            "aspect_ratio": "1"
-          }
-        },
-        "video_HD8Hjp": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/6886.mp4",
-            "video_url": "",
-            "aspect_ratio": "1"
-          }
-        }
-      },
-      "block_order": [
-        "video_yjmjyz",
-        "video_HD8Hjp"
-      ],
-      "disabled": true,
-      "name": "t:sections.video_feedback.name",
-      "settings": {
-        "text_tag_name": "h2",
-        "text_heading": "See oora in action",
-        "font_size_heading": "h5",
-        "text_line_height": 1.2,
-        "text_effect": "split",
-        "text_duration": 1000,
-        "text_heading_width_desktop": 100,
-        "text_heading_width_mobile": 100,
-        "active_index": 2,
-        "autoplay": "off",
-        "autoplay_speed": 5000,
-        "enable_pagination": true,
-        "enable_navigation": true,
-        "color_scheme": "",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 50,
-        "padding_bottom_desktop": 50,
-        "padding_top_mobile": 50,
-        "padding_bottom_mobile": 50
       }
     },
     "image_banner_style_2_Dypq4f": {
@@ -454,30 +379,6 @@
         "background_image_desktop": "shopify://shop_images/Frame_84.png",
         "background_image_mobile": "shopify://shop_images/Frame_84.png",
         "color_scheme": "background-2",
-        "background_color": "",
-        "background_gradient": "",
-        "padding_top_desktop": 0,
-        "padding_bottom_desktop": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0
-      }
-    },
-    "image_banner_style_2_D3npaz": {
-      "type": "image-banner-style-2",
-      "disabled": true,
-      "settings": {
-        "layout": "style-2",
-        "background_type": "image",
-        "font_size_heading": "h2",
-        "heading": "Tap into your moments .",
-        "description": "Loved by +5,000 Customers.  Order Now at 20% Off Early Bird Price.",
-        "button_text": "Shop Early Bird Price",
-        "button_link": "shopify://products/tapnest",
-        "button_style": "primary",
-        "button_size": "lg",
-        "background_image_desktop": "shopify://shop_images/Mist_Clay_1_Crop.jpg",
-        "background_image_mobile": "shopify://shop_images/Mist_Clay_1_Crop.jpg",
-        "color_scheme": "",
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 0,
@@ -705,9 +606,7 @@
     "product_specification_style_5_B9DyJ6",
     "product_specification_style_5_m4b9UA",
     "product_specification_style_13_Y73fzK",
-    "video_feedback_WXgbgP",
     "image_banner_style_2_Dypq4f",
-    "image_banner_style_2_D3npaz",
     "testimonial_style_4_fkDVeW",
     "image_banner_style_2_Pe67yk",
     "collapse_content_PmMV3m",
