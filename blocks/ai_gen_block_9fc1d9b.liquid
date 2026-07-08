@@ -73,17 +73,20 @@
   }
 
   .ai-product-comparison__image-wrapper-{{ ai_gen_id }} {
-    width: 100%;
-    height: {{ block.settings.image_height }}px;
-    border-radius: {{ block.settings.image_border_radius }}px;
-    overflow: hidden;
-  }
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: {{ block.settings.image_border_radius }}px;
+  overflow: hidden;
+  background-color: #f7f4f4;
+}
 
-  .ai-product-comparison__image-{{ ai_gen_id }} {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.ai-product-comparison__image-{{ ai_gen_id }} {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
 
   .ai-product-comparison__image-placeholder-{{ ai_gen_id }} {
     width: 100%;
@@ -683,16 +686,6 @@
     {
       "type": "header",
       "content": "Images"
-    },
-    {
-      "type": "range",
-      "id": "image_height",
-      "label": "Image height",
-      "min": 100,
-      "max": 400,
-      "step": 10,
-      "unit": "px",
-      "default": 200
     },
     {
       "type": "range",
