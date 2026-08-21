@@ -102,6 +102,7 @@
     "predictive_search_enabled": true,
     "pill": "",
     "enable_text_suggess": true,
+    "favicon": "shopify://shop_images/20260819-220800.jpg",
     "quick_link": true,
     "logo_width": 90,
     "buttons_background_opacity": 100,
