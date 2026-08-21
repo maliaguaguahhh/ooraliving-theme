@@ -60,10 +60,7 @@
           {% endif %}
         {% endif %}
       </xo-animate>
-      <xo-animate
-  xo-cascade
-  xo-type="zoom-out"
-  xo-duration="0"
+      <div
         class="img-banner-2__bg img-banner-2__bg--mobile"
         style="--img-desktop: url('{{ img_desktop | image_url }}'); --img-mobile: url('{{ img_mobile | image_url }}')"
       >
@@ -80,7 +77,7 @@
             {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
           {% endif %}
         {% endif %}
-      </xo-animate>
+      </div>
     </div>
 
     <div class="img-banner-2__body">
