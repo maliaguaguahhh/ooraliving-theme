@@ -1,7 +1,8 @@
-{% liquid
-  assign font_size = font_size | default: 160
-%}
+{% comment %}
+  Disabled artificial LCP placeholder.
 
-<p xo-abs="full" class="xo-lcp" style="--z-index: -999; font-size: {{ font_size }}vw;">
-  {{ shop.name | first }}
-</p>
+  The previous markup rendered a huge off-screen `.xo-lcp` text node that
+  Lighthouse selected as the Largest Contentful Paint element on mobile.
+  Keep this snippet empty so existing `{% render 'lcp' %}` calls stay safe
+  while the browser measures the real above-the-fold content instead.
+{% endcomment %}
