@@ -50,14 +50,17 @@
     assign is_header_and_template = true
   endif
 
-  if section.index == 1 and is_header_and_template
-    assign loading = 'eager'
-    assign fetch_priority = 'high'
-  endif
+if section.index == 1 and is_header_and_template
+  assign loading = 'eager'
+  assign fetch_priority = 'high'
+  assign lazyload = false
+  assign wc = blank
+endif
 
- if loading == 'eager'
-  assign final_widths = '375, 550, 750, 900, 1100, 1500, 2000, 2800'
-  assign width = 1500
+if loading == 'eager'
+  assign final_widths = '375, 550, 750, 900, 1100, 1500'
+  assign width = 1000
+  assign wc = blank
 endif
 
   assign alt = alt | default: 'Image'
