@@ -48,7 +48,7 @@
       >
         {% if background_type == 'image' %}
           {% if img_desktop != blank %}
-            {% render 'image', image: img_desktop %}
+            {% render 'image', image: img_desktop, lazyload: false %}
           {% else %}
             {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
           {% endif %}
@@ -69,7 +69,7 @@
       >
         {% if background_type == 'image' %}
           {% if img_mobile != blank %}
-            {% render 'image', image: img_mobile %}
+            {% render 'image', image: img_mobile, lazyload: false %}
           {% else %}
             {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
           {% endif %}
