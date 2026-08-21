@@ -28,7 +28,7 @@
     "spacing_sections": 0,
     "spacing_grid_horizontal": 28,
     "spacing_grid_vertical": 28,
-    "animate_disabled": true,
+    "animate_disabled": false,
     "animate_duration": 500,
     "animate_effect": "fade-up",
     "animate_strength": 1,
