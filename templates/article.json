@@ -27,6 +27,7 @@
       "blocks": {
         "tag_9wQwdn": {
           "type": "tag",
+          "disabled": true,
           "settings": {}
         },
         "c190618a-1e1d-46af-8752-99de30126b0f": {
@@ -52,7 +53,7 @@
           "type": "share",
           "settings": {
             "align_dt": "flex-start",
-            "align_mb": "flex-start"
+            "align_mb": "center"
           }
         }
       },
