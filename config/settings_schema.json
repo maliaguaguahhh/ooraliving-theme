@@ -1844,5 +1844,17 @@
         "label": "t:settings_schema.theme_load.settings.quick_link.label"
       }
     ]
-  }
+  },
+  {
+  "name": "Performance",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "homepage_lcp_image",
+      "label": "Homepage LCP preload image",
+      "info": "Select the image used as the largest above-the-fold image on the homepage."
+    }
+  ]
+}
+  
 ]
