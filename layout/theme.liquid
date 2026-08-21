@@ -27,6 +27,23 @@
     {% comment %}theme-check-enable AssetPreload{% endcomment %}
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    
+{% comment %}theme-check-disable AssetPreload{% endcomment %}
+{% if template.name == 'index' and settings.homepage_lcp_image != blank %}
+  <link
+    rel="preload"
+    as="image"
+    href="{{ settings.homepage_lcp_image | image_url: width: 1000 }}"
+    imagesrcset="
+      {{ settings.homepage_lcp_image | image_url: width: 375 }} 375w,
+      {{ settings.homepage_lcp_image | image_url: width: 750 }} 750w,
+      {{ settings.homepage_lcp_image | image_url: width: 1000 }} 1000w
+    "
+    imagesizes="(max-width: 749px) 100vw, 50vw"
+    fetchpriority="high"
+  >
+{% endif %}
+{% comment %}theme-check-enable AssetPreload{% endcomment %}
 
     {% render 'xotiny-theme' %}
 
