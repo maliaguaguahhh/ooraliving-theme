@@ -77,15 +77,8 @@
 
     {{ 'styles.css' | asset_url | stylesheet_tag }}
 
-{% comment %}theme-check-disable AssetPreload{% endcomment %}
-<link
-  rel="preload"
-  href="{{ 'xo-webcomponents.min.css' | asset_url }}"
-  as="style"
-  onload="this.onload=null;this.rel='stylesheet'"
->
-{% comment %}theme-check-enable AssetPreload{% endcomment %}
-<noscript>{{ 'xo-webcomponents.min.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'xo-webcomponents.min.css' | asset_url | stylesheet_tag }}
+{{ 'styles.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}
