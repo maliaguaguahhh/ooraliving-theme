@@ -258,6 +258,9 @@
             "products": [
               "tapnest"
             ],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
             "star_rating": "all",
             "show_review_media": true,
             "display_order": "media_first",
@@ -1032,7 +1035,7 @@
           "name": "t:blocks.text.name",
           "settings": {
             "text_tag_name": "h2",
-            "text_heading": "How to install?",
+            "text_heading": "How to Install TapNest",
             "font_size_heading": "h4",
             "text_line_height": 1.2,
             "text_effect": "none",
@@ -1077,7 +1080,7 @@
                   "type": "text",
                   "name": "t:blocks.text.name",
                   "settings": {
-                    "text_tag_name": "h2",
+                    "text_tag_name": "h3",
                     "text_heading": "01",
                     "font_size_heading": "h5",
                     "text_line_height": 1.2,
@@ -1157,7 +1160,7 @@
                   "type": "text",
                   "name": "t:blocks.text.name",
                   "settings": {
-                    "text_tag_name": "h2",
+                    "text_tag_name": "h3",
                     "text_heading": "02",
                     "font_size_heading": "h5",
                     "text_line_height": 1.2,
@@ -1238,7 +1241,7 @@
                   "type": "text",
                   "name": "t:blocks.text.name",
                   "settings": {
-                    "text_tag_name": "h2",
+                    "text_tag_name": "h3",
                     "text_heading": "03",
                     "font_size_heading": "h5",
                     "text_line_height": 1.2,
