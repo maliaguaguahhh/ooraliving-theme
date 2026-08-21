@@ -28,7 +28,7 @@
 
 <div xo-parallax class="img-banner-2{% if layout %} img-banner-2--{{ layout }}{% endif %}">
   <div class="img-banner-2__inner">
-    <xo-parallax-scroll
+    <div
       class="img-banner-2__pr"
       xo-backface-visibility="visible"
       xo-keyframes="
@@ -60,10 +60,7 @@
           {% endif %}
         {% endif %}
       </xo-animate>
-      <xo-animate
-        xo-cascade
-        xo-type="zoom-out"
-        xo-duration="0"
+      <div
         class="img-banner-2__bg img-banner-2__bg--mobile"
         style="--img-desktop: url('{{ img_desktop | image_url }}'); --img-mobile: url('{{ img_mobile | image_url }}')"
       >
@@ -80,8 +77,8 @@
             {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
           {% endif %}
         {% endif %}
-      </xo-animate>
-    </xo-parallax-scroll>
+      </div>
+    </div>
 
     <div class="img-banner-2__body">
       <div class="img-banner-2__content">
