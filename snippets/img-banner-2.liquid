@@ -44,7 +44,7 @@
         xo-type="zoom-out"
         xo-duration="2000"
         class="img-banner-2__bg img-banner-2__bg--desktop"
-        style="--img-desktop: url('{{ img_desktop }}'); --img-mobile: url('{{ img_mobile }}')"
+        style="--img-desktop: url('{{ img_desktop | image_url }}'); --img-mobile: url('{{ img_mobile | image_url }}')"
       >
         {% if background_type == 'image' %}
           {% if img_desktop != blank %}
@@ -65,7 +65,7 @@
         xo-type="zoom-out"
         xo-duration="2000"
         class="img-banner-2__bg img-banner-2__bg--mobile"
-        style="--img-desktop: url('{{ img_desktop }}'); --img-mobile: url('{{ img_mobile }}')"
+        style="--img-desktop: url('{{ img_desktop | image_url }}'); --img-mobile: url('{{ img_mobile | image_url }}')"
       >
         {% if background_type == 'image' %}
           {% if img_mobile != blank %}
