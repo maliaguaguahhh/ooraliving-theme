@@ -11,6 +11,13 @@
   overflow: hidden;
 }
 
+.xo-main-cart .cart-actions__dynamic-checkout-buttons shop-pay-wallet-button,
+.xo-main-cart .cart-actions__dynamic-checkout-buttons shopify-accelerated-checkout,
+.xo-main-cart .cart-actions__dynamic-checkout-buttons shopify-accelerated-checkout-cart {
+  height: 6rem !important;
+  min-height: 6rem !important;
+}
+
 .xo-main-cart__left {
   position: relative;
   padding-bottom: 3.4rem;
