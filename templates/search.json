@@ -14,7 +14,7 @@
       "settings": {
         "color_schema_header": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "columns_desktop": 4,
-        "products_per_page": 18,
+        "products_per_page": 11,
         "enable_filtering": true,
         "enable_sorting": true,
         "filter_type": "horizontal",
@@ -22,7 +22,7 @@
         "card_color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "article_card_show_image": true,
         "article_card_show_date": true,
-        "article_card_show_author": true,
+        "article_card_show_author": false,
         "article_card_show_excerpt": false,
         "article_card_show_tags": false,
         "article_card_show_badge": false,
