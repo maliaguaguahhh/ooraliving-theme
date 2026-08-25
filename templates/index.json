@@ -565,7 +565,7 @@
       ],
       "name": "t:sections.newsletter_form.presets.name",
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "linear-gradient(180deg, rgba(248, 245, 242, 1), rgba(255, 255, 255, 1) 100%)",
         "padding_top_desktop": 50,
