@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Buy Now: 20% off  + Free US Shipping</p>",
+            "text": "<p>Buy Now: 30% off  + Free US Shipping</p>",
             "link": "shopify://products/tapnest"
           }
         }
