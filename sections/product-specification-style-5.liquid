@@ -6,10 +6,13 @@
   assign heading = section.settings.text_heading
   assign image_1 = section.settings.image_1
   assign image_2 = section.settings.image_2
+  assign comparison_default_position = section.settings.comparison_default_position
   assign aspect_ratio = section.settings.aspect_ratio
+
   if aspect_ratio == 'custom'
     assign aspect_ratio = section.settings.aspect_ratio_width | append: '/' | append: section.settings.aspect_ratio_height
   endif
+
   assign block = section.blocks
 %}
 
@@ -17,7 +20,15 @@
   <div class="product-specification-style-5">
     <xo-container class="product-specification-style-5__container">
       <div class="product-specification-style-5__content">
-        {% render 'product-specification-5', heading: heading, image_1: image_1, image_2: image_2, aspect_ratio: aspect_ratio, block: block, layout: layout %}
+        {% render 'product-specification-5',
+          heading: heading,
+          image_1: image_1,
+          image_2: image_2,
+          aspect_ratio: aspect_ratio,
+          comparison_default_position: comparison_default_position,
+          block: block,
+          layout: layout
+        %}
       </div>
     </xo-container>
   </div>
@@ -196,6 +207,17 @@
       "label": "t:sections.product_specification_style_5.settings.image_2.label"
     },
     {
+      "type": "range",
+      "id": "comparison_default_position",
+      "label": "Slider default position",
+      "info": "Controls the initial position of the comparison slider.",
+      "min": 10,
+      "max": 90,
+      "step": 1,
+      "unit": "%",
+      "default": 70
+    },
+    {
       "type": "select",
       "id": "aspect_ratio",
       "label": "Aspect ratio",
@@ -359,6 +381,7 @@
         "text_effect": "split",
         "image_1": "",
         "image_2": "",
+        "comparison_default_position": 70,
         "aspect_ratio": "",
         "color_scheme": "",
         "background_color": "",

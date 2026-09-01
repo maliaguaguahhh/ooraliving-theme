@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_with_text_style_5_7HWQFf": {
@@ -7,21 +16,21 @@
           "type": "feature",
           "settings": {
             "title": "Mission",
-            "sub_title": "<p>Our 1960s brand slogan, ‘We think differently’, remains inspiring – rooting us in an approach to design that embraces risk and experimentation<\/p>"
+            "sub_title": "<p>Our 1960s brand slogan, ‘We think differently’, remains inspiring – rooting us in an approach to design that embraces risk and experimentation</p>"
           }
         },
         "feature_byhcnx": {
           "type": "feature",
           "settings": {
             "title": "Vision",
-            "sub_title": "<p>We work with local and international artists to bring art to your daily life — we are saying good bye to boring tech and unimaginative phone case<\/p>"
+            "sub_title": "<p>We work with local and international artists to bring art to your daily life — we are saying good bye to boring tech and unimaginative phone case</p>"
           }
         },
         "feature_QjCHTb": {
           "type": "feature",
           "settings": {
             "title": "Value",
-            "sub_title": "<p>Creating long lasting products and enduring magical experiences are part of our fundamental beliefs. We embrace the principles of a circular economy and promoting responsible consumption.<\/p>"
+            "sub_title": "<p>Creating long lasting products and enduring magical experiences are part of our fundamental beliefs. We embrace the principles of a circular economy and promoting responsible consumption.</p>"
           }
         }
       },
@@ -33,15 +42,18 @@
       "settings": {
         "caption": "OUR STORY",
         "font_size_heading": "h5",
-        "heading": "<p>Hey! We’re BASSER<\/p>",
-        "sub_heading": "<p>In 1925, working out of a Danish farmhouse, Peter Bang and Svend Olufsen reinvented the radio, developing The Eliminator, the first mass-produced radio that could be plugged into the wall, without the need for a battery. A century later, that entrepreneurial spirit of innovation lives on in everything we do. It’s what drives us: to change how we all hear, see and feel the world.<\/p>",
-        "color_scheme": "",
+        "heading": "<p>Hey! This is oora~</p>",
+        "sub_heading": "<p>In 1925, working out of a Danish farmhouse, Peter Bang and Svend Olufsen reinvented the radio, developing The Eliminator, the first mass-produced radio that could be plugged into the wall, without the need for a battery. A century later, that entrepreneurial spirit of innovation lives on in everything we do. It’s what drives us: to change how we all hear, see and feel the world.</p>",
+        "hover_show_content": true,
+        "aspect_ratio_dt": "16/9",
+        "aspect_ratio_mb": "3/4",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 254,
         "padding_bottom_desktop": 63,
         "padding_top_mobile": 150,
-        "padding_bottom_mobile": 63
+        "padding_bottom_mobile": 40
       }
     },
     "image_with_text_style_3_Qxdnny": {
@@ -51,21 +63,24 @@
           "type": "feature",
           "settings": {
             "font_size_heading": "h5",
-            "heading": "Powerful Hi-fi sound"
+            "heading": "Powerful Hi-fi sound",
+            "link": "shopify://collections/all"
           }
         },
         "feature_dQp6A9": {
           "type": "feature",
           "settings": {
             "font_size_heading": "h5",
-            "heading": "Seriously  Smart"
+            "heading": "Seriously  Smart",
+            "link": "shopify://collections/all"
           }
         },
         "feature_6iKaBn": {
           "type": "feature",
           "settings": {
             "font_size_heading": "h5",
-            "heading": "360 Degree Dispersion"
+            "heading": "360 Degree Dispersion",
+            "link": "shopify://collections/all"
           }
         }
       },
@@ -74,8 +89,9 @@
         "feature_dQp6A9",
         "feature_6iKaBn"
       ],
+      "disabled": true,
       "settings": {
-        "sub_heading": "<p> OUR UNIQLE SELLING <br\/>POINTS OF SPEAKERS<\/p>",
+        "sub_heading": "<p> OUR UNIQLE SELLING <br/>POINTS OF SPEAKERS</p>",
         "aspect_ratio_dt": "21/9",
         "aspect_ratio_mb": "3/2",
         "color_scheme": "",
@@ -104,17 +120,142 @@
       "block_order": [
         "detail_infomation_j7dkJT"
       ],
+      "disabled": true,
       "settings": {
         "font_size_heading": "h6",
-        "heading": "<p>Introducing an elegant looks <br\/>disguise a world of power that <br\/>brings huge sound anywhere<\/p>",
+        "heading": "<p>Introducing an elegant looks <br/>disguise a world of power that <br/>brings huge sound anywhere</p>",
         "color_scheme": "background-2",
         "background_color": "",
         "background_gradient": "",
+        "background_type": "image",
         "use_parallax": true,
         "padding_top_desktop": 0,
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 0
+      }
+    },
+    "image_with_text_style_9_iGgNN7": {
+      "type": "image-with-text-style-9",
+      "name": "t:sections.image_with_text_style_9.presets.name",
+      "settings": {
+        "text_tag_name": "h2",
+        "text_heading": "Image with text style 9",
+        "font_size_heading": "h3",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "sub_heading": "Subheading",
+        "description": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
+        "alignment_desktop": "left",
+        "alignment_mobile": "top",
+        "expand_grid": false,
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "background_type": "image",
+        "use_parallax": true,
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "image_button_style_1_mMX7rE": {
+      "type": "image-button-style-1",
+      "name": "t:sections.image_button_style_1.presets.name",
+      "settings": {
+        "layout": "page-width",
+        "background_type": "image",
+        "aspect_ratio_desktop": "21/9",
+        "aspect_ratio_mobile": "3/2",
+        "enable_video_looping": true,
+        "video_url": "",
+        "button_text": "Get TapNest",
+        "button_link": "shopify://products/tapnest",
+        "button_style": "primary",
+        "button_size": "sm",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "video_feedback_WLgAr9": {
+      "type": "video-feedback",
+      "blocks": {
+        "video_CKnHYJ": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        },
+        "video_DNfb6T": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        },
+        "video_AiTezM": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        },
+        "video_JMzmJc": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        },
+        "video_ebG9C6": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "1"
+          }
+        }
+      },
+      "block_order": [
+        "video_CKnHYJ",
+        "video_DNfb6T",
+        "video_AiTezM",
+        "video_JMzmJc",
+        "video_ebG9C6"
+      ],
+      "name": "t:sections.video_feedback.name",
+      "settings": {
+        "text_tag_name": "h2",
+        "text_heading": "Behind the scene",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "active_index": 2,
+        "autoplay": "off",
+        "autoplay_speed": 5000,
+        "enable_pagination": true,
+        "enable_navigation": true,
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
       }
     },
     "testimonial_style_4_9n6aYe": {
@@ -123,35 +264,35 @@
         "testimonial_box_WHEAg8": {
           "type": "testimonial-box",
           "settings": {
-            "content": "<p>“I was blown away by the sound quality of this Bluetooth speaker! The clarity and bass are impressive for its size. It's perfect for both indoor and outdoor use.”<\/p>",
+            "content": "<p>“I was blown away by the sound quality of this Bluetooth speaker! The clarity and bass are impressive for its size. It's perfect for both indoor and outdoor use.”</p>",
             "customer_name": "Johny Angelo"
           }
         },
         "testimonial_box_hXjxKM": {
           "type": "testimonial-box",
           "settings": {
-            "content": "<p>I love the design of this speaker – it's sleek and modern. The sound quality is fantastic, and it's super easy to pair with my devices. A great addition to any home audio setup!\"<\/p>",
+            "content": "<p>I love the design of this speaker – it's sleek and modern. The sound quality is fantastic, and it's super easy to pair with my devices. A great addition to any home audio setup!\"</p>",
             "customer_name": "Sarah Paige"
           }
         },
         "testimonial_box_tL7WHP": {
           "type": "testimonial-box",
           "settings": {
-            "content": "<p>\"The sound quality of this high-end speaker is absolutely phenomenal. The audio is crystal clear, with deep bass and crisp highs that fill the room. It's perfect for audiophiles who want the best listening experience.\"<\/p>",
+            "content": "<p>\"The sound quality of this high-end speaker is absolutely phenomenal. The audio is crystal clear, with deep bass and crisp highs that fill the room. It's perfect for audiophiles who want the best listening experience.\"</p>",
             "customer_name": "Michael Goodman"
           }
         },
         "testimonial_box_tXg68m": {
           "type": "testimonial-box",
           "settings": {
-            "content": "<p>\"This high-end Bluetooth speaker is incredible. It pairs instantly with my devices and maintains a strong connection even at a distance. The sound quality is superb, and the speakerphone feature works flawlessly\"<\/p>",
+            "content": "<p>\"This high-end Bluetooth speaker is incredible. It pairs instantly with my devices and maintains a strong connection even at a distance. The sound quality is superb, and the speakerphone feature works flawlessly\"</p>",
             "customer_name": "John Hunam"
           }
         },
         "testimonial_box_7GqGcG": {
           "type": "testimonial-box",
           "settings": {
-            "content": "<p>I love the design of this speaker – it's sleek and modern. The sound quality is fantastic, and it's super easy to pair with my devices. A great addition to any home audio setup!\"<\/p>",
+            "content": "<p>I love the design of this speaker – it's sleek and modern. The sound quality is fantastic, and it's super easy to pair with my devices. A great addition to any home audio setup!\"</p>",
             "customer_name": "Sarah Paige"
           }
         }
@@ -167,7 +308,7 @@
         "sub_heading": "TESTIMONIAL",
         "autoplay_time": 3000,
         "autoplay": "off",
-        "color_scheme": "",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 63,
@@ -182,29 +323,29 @@
         "collapse_gXh4yj": {
           "type": "collapse",
           "settings": {
-            "title": "<p>What distinguishes your speakers from other models?<\/p>",
-            "content": "<p>Our high-end speakers are designed with premium materials and advanced audio technology to deliver superior sound quality, which set them apart from standard models<\/p>"
+            "title": "<p>What distinguishes your speakers from other models?</p>",
+            "content": "<p>Our high-end speakers are designed with premium materials and advanced audio technology to deliver superior sound quality, which set them apart from standard models</p>"
           }
         },
         "collapse_bQbcgr": {
           "type": "collapse",
           "settings": {
-            "title": "<p>What is the warranty coverage for your speakers?<\/p>",
-            "content": "<p>We offer a comprehensive warranty for all our high-end products. Typically, this includes a 2-year warranty covering manufacturing defects and a 1-year warranty for the electrical components<\/p>"
+            "title": "<p>What is the warranty coverage for your speakers?</p>",
+            "content": "<p>We offer a comprehensive warranty for all our high-end products. Typically, this includes a 2-year warranty covering manufacturing defects and a 1-year warranty for the electrical components</p>"
           }
         },
         "collapse_eCWmQm": {
           "type": "collapse",
           "settings": {
-            "title": "<p>How do I connect multiple Bluetooth speakers for a surround sound experience?<\/p>",
-            "content": "<p>To connect multiple speakers, turn on each speaker and activate their Bluetooth mode. Follow the pairing instructions in the user manual to connect the speakers to each other and then to your device. <\/p>"
+            "title": "<p>How do I connect multiple Bluetooth speakers for a surround sound experience?</p>",
+            "content": "<p>To connect multiple speakers, turn on each speaker and activate their Bluetooth mode. Follow the pairing instructions in the user manual to connect the speakers to each other and then to your device. </p>"
           }
         },
         "collapse_79gUff": {
           "type": "collapse",
           "settings": {
-            "title": "<p>Are your speakers waterproof?<\/p>",
-            "content": "<p>Yes, many of our Bluetooth speakers are designed to be waterproof and are rated IPX5 or higher, making them suitable for outdoor use, poolside gatherings, and even in the shower<\/p>"
+            "title": "<p>Are your speakers waterproof?</p>",
+            "content": "<p>Yes, many of our Bluetooth speakers are designed to be waterproof and are rated IPX5 or higher, making them suitable for outdoor use, poolside gatherings, and even in the shower</p>"
           }
         }
       },
@@ -216,8 +357,8 @@
       ],
       "settings": {
         "font_size_heading": "h4",
-        "heading": "<p>Frequently Asked <br\/>Questions<\/p>",
-        "color_scheme": "",
+        "heading": "<p>Frequently Asked <br/>Questions</p>",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 57,
@@ -231,6 +372,9 @@
     "image_with_text_style_5_7HWQFf",
     "image_with_text_style_3_Qxdnny",
     "product_specification_style_1_Mz7xb9",
+    "image_with_text_style_9_iGgNN7",
+    "image_button_style_1_mMX7rE",
+    "video_feedback_WLgAr9",
     "testimonial_style_4_9n6aYe",
     "collapse_content_UqUKUB"
   ]

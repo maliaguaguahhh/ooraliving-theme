@@ -54,7 +54,16 @@
 
       {% comment %} Video {% endcomment %}
     {% else %}
-      {% render 'media', media: video, type: 'video', loop: loop, autoplay: autoplay, class: class, controls: controls, enable_video_looping: enable_video_looping %}
+      {% render 'media',
+  media: video,
+  type: 'video',
+  loop: loop,
+  autoplay: autoplay,
+  muted: muted,
+  class: class,
+  controls: controls,
+  enable_video_looping: enable_video_looping
+%}
     {% endif %}
   </div>
 </xo-video-custom>

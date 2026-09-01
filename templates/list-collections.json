@@ -1,1 +1,556 @@
-{"sections":{"banner_main_collection_xqRBCX":{"type":"banner-main-collection","settings":{"font_size_heading":"h1","heading":"Collections","color_scheme":"background-2","background_color":"","background_gradient":"","padding_top_desktop":0,"padding_bottom_desktop":0,"padding_top_mobile":0,"padding_bottom_mobile":0}},"custom_section_VCwjbX":{"type":"custom-section","blocks":{"grid_bfzeRR":{"type":"grid","settings":{"desktop_col":2,"tablet_col":2,"mobile_col":1,"fixed_row":false,"auto_row":20},"blocks":{"column_myqzxy":{"type":"column","settings":{"desktop_col_span":1,"desktop_row_span":1,"mobile_col_span":1,"mobile_row_span":1},"blocks":{"category_2_bJffVt":{"type":"category-2","settings":{"collection_list":["high-end","home-audio","portable-audio","soulful-sound"],"color_schema_box":"background-1","text_tag_name":"h2","text_heading":"Home Audio","font_size_heading":"h6","text_effect":"split","text_duration":1000,"text_heading_width_desktop":100,"text_heading_width_mobile":100,"button_text":"Shop all","button_style":"primary","button_size":"sm","aspect_ratio_desktop":"auto","aspect_ratio_mobile":"auto"}}},"block_order":["category_2_bJffVt"]},"column_VEGUcU":{"type":"column","settings":{"desktop_col_span":1,"desktop_row_span":1,"mobile_col_span":1,"mobile_row_span":1},"blocks":{"category_2_xeKXAA":{"type":"category-2","settings":{"collection_list":["wireless","speaker-sets","soulful-sound","portable-audio"],"color_schema_box":"background-1","text_tag_name":"h2","text_heading":"Portable","font_size_heading":"h6","text_effect":"split","text_duration":1000,"text_heading_width_desktop":100,"text_heading_width_mobile":100,"button_text":"Shop all","button_style":"primary","button_size":"sm","aspect_ratio_desktop":"auto","aspect_ratio_mobile":"auto"}}},"block_order":["category_2_xeKXAA"]}},"block_order":["column_myqzxy","column_VEGUcU"]}},"block_order":["grid_bfzeRR"],"settings":{"color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":86,"padding_bottom_desktop":0,"padding_top_mobile":72,"padding_bottom_mobile":0}},"custom_section_h6CPNe":{"type":"custom-section","blocks":{"grid_fpmR6L":{"type":"grid","settings":{"desktop_col":2,"tablet_col":1,"mobile_col":1,"fixed_row":false,"auto_row":20},"blocks":{"column_FQktbh":{"type":"column","settings":{"desktop_col_span":1,"desktop_row_span":2,"mobile_col_span":1,"mobile_row_span":1},"blocks":{"information_with_image_kYD3EX":{"type":"information-with-image","settings":{"caption":"SPECIEAL FEATURES","sub_heading":"Super","heading":"Bass","aspect_ratio_desktop":"auto","aspect_ratio_mobile":"1"}}},"block_order":["information_with_image_kYD3EX"]},"column_xfqcjb":{"type":"column","settings":{"desktop_col_span":1,"desktop_row_span":1,"mobile_col_span":1,"mobile_row_span":1},"blocks":{"text_feature_geM9UH":{"type":"text-feature","settings":{"text_tag_name":"h2","text_heading":"We want to share \ncreative inspiration,expression","font_size_heading":"h6","text_effect":"split","text_duration":1000,"text_heading_width_desktop":100,"text_heading_width_mobile":100,"title_1":"<p>Crafted for<br\/>longevity<\/p>","title_2":"<p>Ultra-portable<br\/>technology<\/p>","title_3":"<p>Adapts to<br\/>environment<\/p>"}}},"block_order":["text_feature_geM9UH"]},"column_BDPa7b":{"type":"column","settings":{"desktop_col_span":1,"desktop_row_span":1,"mobile_col_span":1,"mobile_row_span":1},"blocks":{"image_button_FihjdB":{"type":"image-button","settings":{"aspect_ratio_desktop":"4\/3","aspect_ratio_mobile":"16\/9","button_text":"Shop now","button_style":"primary","button_size":"sm"}}},"block_order":["image_button_FihjdB"]}},"block_order":["column_FQktbh","column_xfqcjb","column_BDPa7b"]}},"block_order":["grid_fpmR6L"],"settings":{"color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":96,"padding_bottom_desktop":0,"padding_top_mobile":63,"padding_bottom_mobile":0}},"main":{"type":"main-list-collections","settings":{"show_breadcrumb":"hidden","sort":"alphabetical","color_scheme_collection":"inverse","background_overlay":0,"column_desktop":2,"column_mobile":"1","aspect_ratio_dt":"3\/2","aspect_ratio_mb":"1","color_scheme":"inverse","background_color":"","background_gradient":"","padding_top_desktop":78,"padding_bottom_desktop":80,"padding_top_mobile":57,"padding_bottom_mobile":67}},"featured_product_style_1_bB6mbf":{"type":"featured-product-style-1","settings":{"layout":"left","product":"beosound-a5","text_tag_name":"h2","text_heading":"New sound with Shield Collection","font_size_heading":"h3","text_effect":"split","text_duration":2000,"text_heading_width_desktop":65,"text_heading_width_mobile":100,"sub_heading":"BEST SELLER","button_text":"Shop all","button_style":"primary","button_size":"sm","aspect_ratio_dt":"1920\/1003","aspect_ratio_mb":"375\/672","product_card_show_image":true,"product_card_show_secondary_image":true,"product_card_show_price":true,"card_color_scheme":"","color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":0,"padding_bottom_desktop":0,"padding_top_mobile":0,"padding_bottom_mobile":0}},"introduction_text_JBJ4YB":{"type":"introduction-text","blocks":{"countto_GQF4wB":{"type":"countto","settings":{"from_value":0,"to_value":0}},"countto_hhV3bj":{"type":"countto","settings":{}}},"block_order":["countto_GQF4wB","countto_hhV3bj"],"settings":{"content":"Our 1960s brand slogan, ‘We think differently’, remains inspiring – rooting us in an approach to design that embraces risk and experimentation.","color_scheme":"background-2","background_color":"","background_gradient":"","padding_top_desktop":98,"padding_bottom_desktop":98,"padding_top_mobile":63,"padding_bottom_mobile":63}},"featured_collection_style_6_FPrk8q":{"type":"featured-collection-style-6","settings":{"text_tag_name":"h5","text_heading":"Portable Audio Collection","font_size_heading":"h5","text_effect":"split","text_duration":1000,"text_heading_width_desktop":62,"text_heading_width_mobile":60,"collection":"home-audio","aspect_ratio_collection_mobile":"330\/380","color_schema_collection":"background-2","column_mobile":"2","product_display":4,"product_card_aspect_ratio":"1","card_color_scheme":"inverse","color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":122,"padding_bottom_desktop":100,"padding_top_mobile":63,"padding_bottom_mobile":50}},"category_style_1_YKqH3a":{"type":"category-style-1","blocks":{"collection_item_bwaEhY":{"type":"collection-item","settings":{"collection":"iphone","collection_card_padding_vertical":7,"collection_card_padding_horizontal":7,"image_size":"sm","color_schema_card":"inverse"}},"collection_item_WYN6Vx":{"type":"collection-item","settings":{"collection":"samsung","collection_card_padding_vertical":7,"collection_card_padding_horizontal":7,"image_size":"sm","color_schema_card":"inverse"}},"collection_item_dYrWDj":{"type":"collection-item","settings":{"collection":"xiaomi","collection_card_padding_vertical":7,"collection_card_padding_horizontal":7,"image_size":"sm","color_schema_card":"inverse"}},"collection_item_jEbV4w":{"type":"collection-item","settings":{"collection":"case-apple-watch","collection_card_padding_vertical":7,"collection_card_padding_horizontal":7,"image_size":"sm","color_schema_card":"inverse"}},"collection_item_qcxEBe":{"type":"collection-item","settings":{"collection":"case-airpods","collection_card_padding_vertical":7,"collection_card_padding_horizontal":7,"image_size":"sm","color_schema_card":"inverse"}}},"block_order":["collection_item_bwaEhY","collection_item_WYN6Vx","collection_item_dYrWDj","collection_item_jEbV4w","collection_item_qcxEBe"],"disabled":true,"settings":{"collection_per_view":7,"space_between":15,"text_tag_name":"h3","text_heading":"Shop by Category","font_size_heading":"h6","text_effect":"split","text_duration":1000,"text_heading_width_desktop":100,"text_heading_width_mobile":100,"sub_heading":"<p>Protect your phone in style. From minimalist to drop-proof cases, we have your back<\/p>","color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":76,"padding_bottom_desktop":70,"padding_top_mobile":32,"padding_bottom_mobile":32}},"custom_section_mng4X6":{"type":"custom-section","blocks":{"grid_CygJcy":{"type":"grid","settings":{"desktop_col":3,"tablet_col":3,"mobile_col":1,"fixed_row":false,"auto_row":20},"blocks":{"column_pnqiwF":{"type":"column","settings":{"desktop_col_span":1,"desktop_row_span":1,"mobile_col_span":1,"mobile_row_span":1},"blocks":{"service_k9CWGY":{"type":"service","settings":{"image_size":"md","heading":"<p>Buy Now Pay Later<\/p>","heading_link":"","content":"<p>Pay in installments with 0% interest and no extra charges through Shop Pay<\/p>","alignment":"center","color_schema_box":"background-1"}}},"block_order":["service_k9CWGY"]},"column_fG4zEU":{"type":"column","settings":{"desktop_col_span":1,"desktop_row_span":1,"mobile_col_span":1,"mobile_row_span":1},"blocks":{"service_q4h8f3":{"type":"service","settings":{"image_size":"md","heading":"<p>Easy Returns<\/p>","heading_link":"","content":"<p>Your exchange ships out as soon as you email us.<\/p>","alignment":"center","color_schema_box":"background-1"}}},"block_order":["service_q4h8f3"]},"column_fVJeB4":{"type":"column","settings":{"desktop_col_span":1,"desktop_row_span":1,"mobile_col_span":1,"mobile_row_span":1},"blocks":{"service_V6KqUe":{"type":"service","settings":{"image_size":"md","heading":"<p>Wordwide shipping<\/p>","heading_link":"","content":"<p>Receive your order an estimated 3-5 days after shipment<\/p>","alignment":"center","color_schema_box":"background-1"}}},"block_order":["service_V6KqUe"]}},"block_order":["column_pnqiwF","column_fG4zEU","column_fVJeB4"]}},"block_order":["grid_CygJcy"],"settings":{"color_scheme":"background-1","background_color":"","background_gradient":"","padding_top_desktop":39,"padding_bottom_desktop":39,"padding_top_mobile":39,"padding_bottom_mobile":39}}},"order":["banner_main_collection_xqRBCX","custom_section_VCwjbX","custom_section_h6CPNe","main","featured_product_style_1_bB6mbf","introduction_text_JBJ4YB","featured_collection_style_6_FPrk8q","category_style_1_YKqH3a","custom_section_mng4X6"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner_main_collection_xqRBCX": {
+      "type": "banner-main-collection",
+      "settings": {
+        "font_size_heading": "h1",
+        "heading": "Collections",
+        "color_scheme": "background-2",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "custom_section_VCwjbX": {
+      "type": "custom-section",
+      "blocks": {
+        "grid_bfzeRR": {
+          "type": "grid",
+          "settings": {
+            "desktop_col": 2,
+            "tablet_col": 2,
+            "mobile_col": 1,
+            "fixed_row": false,
+            "auto_row": 20
+          },
+          "blocks": {
+            "column_myqzxy": {
+              "type": "column",
+              "settings": {
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "category_2_bJffVt": {
+                  "type": "category-2",
+                  "settings": {
+                    "collection_list": [
+                      "high-end",
+                      "home-audio",
+                      "portable-audio",
+                      "soulful-sound"
+                    ],
+                    "color_schema_box": "background-1",
+                    "text_tag_name": "h2",
+                    "text_heading": "Home Audio",
+                    "font_size_heading": "h6",
+                    "text_effect": "split",
+                    "text_duration": 1000,
+                    "text_heading_width_desktop": 100,
+                    "text_heading_width_mobile": 100,
+                    "button_text": "Shop all",
+                    "button_style": "primary",
+                    "button_size": "sm",
+                    "aspect_ratio_desktop": "auto",
+                    "aspect_ratio_mobile": "auto"
+                  }
+                }
+              },
+              "block_order": [
+                "category_2_bJffVt"
+              ]
+            },
+            "column_VEGUcU": {
+              "type": "column",
+              "settings": {
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "category_2_xeKXAA": {
+                  "type": "category-2",
+                  "settings": {
+                    "collection_list": [
+                      "wireless",
+                      "speaker-sets",
+                      "soulful-sound",
+                      "portable-audio"
+                    ],
+                    "color_schema_box": "background-1",
+                    "text_tag_name": "h2",
+                    "text_heading": "Portable",
+                    "font_size_heading": "h6",
+                    "text_effect": "split",
+                    "text_duration": 1000,
+                    "text_heading_width_desktop": 100,
+                    "text_heading_width_mobile": 100,
+                    "button_text": "Shop all",
+                    "button_style": "primary",
+                    "button_size": "sm",
+                    "aspect_ratio_desktop": "auto",
+                    "aspect_ratio_mobile": "auto"
+                  }
+                }
+              },
+              "block_order": [
+                "category_2_xeKXAA"
+              ]
+            }
+          },
+          "block_order": [
+            "column_myqzxy",
+            "column_VEGUcU"
+          ]
+        }
+      },
+      "block_order": [
+        "grid_bfzeRR"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 86,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 72,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "custom_section_h6CPNe": {
+      "type": "custom-section",
+      "blocks": {
+        "grid_fpmR6L": {
+          "type": "grid",
+          "settings": {
+            "desktop_col": 2,
+            "tablet_col": 1,
+            "mobile_col": 1,
+            "fixed_row": false,
+            "auto_row": 20
+          },
+          "blocks": {
+            "column_FQktbh": {
+              "type": "column",
+              "settings": {
+                "desktop_col_span": 1,
+                "desktop_row_span": 2,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "information_with_image_kYD3EX": {
+                  "type": "information-with-image",
+                  "settings": {
+                    "caption": "SPECIEAL FEATURES",
+                    "sub_heading": "Super",
+                    "heading": "Bass",
+                    "aspect_ratio_desktop": "auto",
+                    "aspect_ratio_mobile": "1"
+                  }
+                }
+              },
+              "block_order": [
+                "information_with_image_kYD3EX"
+              ]
+            },
+            "column_xfqcjb": {
+              "type": "column",
+              "settings": {
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "text_feature_geM9UH": {
+                  "type": "text-feature",
+                  "settings": {
+                    "text_tag_name": "h2",
+                    "text_heading": "We want to share \ncreative inspiration,expression",
+                    "font_size_heading": "h6",
+                    "text_effect": "split",
+                    "text_duration": 1000,
+                    "text_heading_width_desktop": 100,
+                    "text_heading_width_mobile": 100,
+                    "title_1": "<p>Crafted for<br/>longevity</p>",
+                    "title_2": "<p>Ultra-portable<br/>technology</p>",
+                    "title_3": "<p>Adapts to<br/>environment</p>"
+                  }
+                }
+              },
+              "block_order": [
+                "text_feature_geM9UH"
+              ]
+            },
+            "column_BDPa7b": {
+              "type": "column",
+              "settings": {
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "image_button_FihjdB": {
+                  "type": "image-button",
+                  "settings": {
+                    "aspect_ratio_desktop": "4/3",
+                    "aspect_ratio_mobile": "16/9",
+                    "button_text": "Shop now",
+                    "button_style": "primary",
+                    "button_size": "sm"
+                  }
+                }
+              },
+              "block_order": [
+                "image_button_FihjdB"
+              ]
+            }
+          },
+          "block_order": [
+            "column_FQktbh",
+            "column_xfqcjb",
+            "column_BDPa7b"
+          ]
+        }
+      },
+      "block_order": [
+        "grid_fpmR6L"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 96,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 63,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "show_breadcrumb": "hidden",
+        "sort": "alphabetical",
+        "color_scheme_collection": "inverse",
+        "background_overlay": 0,
+        "column_desktop": 2,
+        "column_mobile": "1",
+        "aspect_ratio_dt": "3/2",
+        "aspect_ratio_mb": "1",
+        "color_scheme": "inverse",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 78,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 57,
+        "padding_bottom_mobile": 67
+      }
+    },
+    "featured_product_style_1_bB6mbf": {
+      "type": "featured-product-style-1",
+      "settings": {
+        "layout": "left",
+        "product": "beosound-a5",
+        "text_tag_name": "h2",
+        "text_heading": "New sound with Shield Collection",
+        "font_size_heading": "h3",
+        "text_effect": "split",
+        "text_duration": 2000,
+        "text_heading_width_desktop": 65,
+        "text_heading_width_mobile": 100,
+        "sub_heading": "BEST SELLER",
+        "button_text": "Shop all",
+        "button_style": "primary",
+        "button_size": "sm",
+        "aspect_ratio_dt": "1920/1003",
+        "aspect_ratio_mb": "375/672",
+        "product_card_show_image": true,
+        "product_card_show_secondary_image": true,
+        "product_card_show_price": true,
+        "card_color_scheme": "",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "introduction_text_JBJ4YB": {
+      "type": "introduction-text",
+      "blocks": {
+        "countto_GQF4wB": {
+          "type": "countto",
+          "settings": {
+            "from_value": 0,
+            "to_value": 0
+          }
+        },
+        "countto_hhV3bj": {
+          "type": "countto",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "countto_GQF4wB",
+        "countto_hhV3bj"
+      ],
+      "settings": {
+        "content": "Our 1960s brand slogan, ‘We think differently’, remains inspiring – rooting us in an approach to design that embraces risk and experimentation.",
+        "color_scheme": "background-2",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 98,
+        "padding_bottom_desktop": 98,
+        "padding_top_mobile": 63,
+        "padding_bottom_mobile": 63
+      }
+    },
+    "featured_collection_style_6_FPrk8q": {
+      "type": "featured-collection-style-6",
+      "settings": {
+        "text_tag_name": "h5",
+        "text_heading": "Portable Audio Collection",
+        "font_size_heading": "h5",
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 62,
+        "text_heading_width_mobile": 60,
+        "collection": "home-audio",
+        "aspect_ratio_collection_mobile": "330/380",
+        "color_schema_collection": "background-2",
+        "column_mobile": "2",
+        "product_display": 4,
+        "product_card_aspect_ratio": "1",
+        "card_color_scheme": "inverse",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 122,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 63,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "category_style_1_YKqH3a": {
+      "type": "category-style-1",
+      "blocks": {
+        "collection_item_bwaEhY": {
+          "type": "collection-item",
+          "settings": {
+            "collection": "iphone",
+            "collection_card_padding_vertical": 7,
+            "collection_card_padding_horizontal": 7,
+            "image_size": "sm",
+            "color_schema_card": "inverse"
+          }
+        },
+        "collection_item_WYN6Vx": {
+          "type": "collection-item",
+          "settings": {
+            "collection": "samsung",
+            "collection_card_padding_vertical": 7,
+            "collection_card_padding_horizontal": 7,
+            "image_size": "sm",
+            "color_schema_card": "inverse"
+          }
+        },
+        "collection_item_dYrWDj": {
+          "type": "collection-item",
+          "settings": {
+            "collection": "xiaomi",
+            "collection_card_padding_vertical": 7,
+            "collection_card_padding_horizontal": 7,
+            "image_size": "sm",
+            "color_schema_card": "inverse"
+          }
+        },
+        "collection_item_jEbV4w": {
+          "type": "collection-item",
+          "settings": {
+            "collection": "case-apple-watch",
+            "collection_card_padding_vertical": 7,
+            "collection_card_padding_horizontal": 7,
+            "image_size": "sm",
+            "color_schema_card": "inverse"
+          }
+        },
+        "collection_item_qcxEBe": {
+          "type": "collection-item",
+          "settings": {
+            "collection": "case-airpods",
+            "collection_card_padding_vertical": 7,
+            "collection_card_padding_horizontal": 7,
+            "image_size": "sm",
+            "color_schema_card": "inverse"
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_bwaEhY",
+        "collection_item_WYN6Vx",
+        "collection_item_dYrWDj",
+        "collection_item_jEbV4w",
+        "collection_item_qcxEBe"
+      ],
+      "disabled": true,
+      "settings": {
+        "collection_per_view": 7,
+        "space_between": 15,
+        "text_tag_name": "h3",
+        "text_heading": "Shop by Category",
+        "font_size_heading": "h6",
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "sub_heading": "<p>Protect your phone in style. From minimalist to drop-proof cases, we have your back</p>",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 76,
+        "padding_bottom_desktop": 70,
+        "padding_top_mobile": 32,
+        "padding_bottom_mobile": 32
+      }
+    },
+    "custom_section_mng4X6": {
+      "type": "custom-section",
+      "blocks": {
+        "grid_CygJcy": {
+          "type": "grid",
+          "settings": {
+            "desktop_col": 3,
+            "tablet_col": 3,
+            "mobile_col": 1,
+            "fixed_row": false,
+            "auto_row": 20
+          },
+          "blocks": {
+            "column_pnqiwF": {
+              "type": "column",
+              "settings": {
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "service_k9CWGY": {
+                  "type": "service",
+                  "settings": {
+                    "image_size": "md",
+                    "heading": "<p>Buy Now Pay Later</p>",
+                    "heading_link": "",
+                    "content": "<p>Pay in installments with 0% interest and no extra charges through Shop Pay</p>",
+                    "alignment": "center",
+                    "color_schema_box": "background-1"
+                  }
+                }
+              },
+              "block_order": [
+                "service_k9CWGY"
+              ]
+            },
+            "column_fG4zEU": {
+              "type": "column",
+              "settings": {
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "service_q4h8f3": {
+                  "type": "service",
+                  "settings": {
+                    "image_size": "md",
+                    "heading": "<p>Easy Returns</p>",
+                    "heading_link": "",
+                    "content": "<p>Your exchange ships out as soon as you email us.</p>",
+                    "alignment": "center",
+                    "color_schema_box": "background-1"
+                  }
+                }
+              },
+              "block_order": [
+                "service_q4h8f3"
+              ]
+            },
+            "column_fVJeB4": {
+              "type": "column",
+              "settings": {
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "service_V6KqUe": {
+                  "type": "service",
+                  "settings": {
+                    "image_size": "md",
+                    "heading": "<p>Wordwide shipping</p>",
+                    "heading_link": "",
+                    "content": "<p>Receive your order an estimated 3-5 days after shipment</p>",
+                    "alignment": "center",
+                    "color_schema_box": "background-1"
+                  }
+                }
+              },
+              "block_order": [
+                "service_V6KqUe"
+              ]
+            }
+          },
+          "block_order": [
+            "column_pnqiwF",
+            "column_fG4zEU",
+            "column_fVJeB4"
+          ]
+        }
+      },
+      "block_order": [
+        "grid_CygJcy"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 39,
+        "padding_bottom_desktop": 39,
+        "padding_top_mobile": 39,
+        "padding_bottom_mobile": 39
+      }
+    }
+  },
+  "order": [
+    "banner_main_collection_xqRBCX",
+    "custom_section_VCwjbX",
+    "custom_section_h6CPNe",
+    "main",
+    "featured_product_style_1_bB6mbf",
+    "introduction_text_JBJ4YB",
+    "featured_collection_style_6_FPrk8q",
+    "category_style_1_YKqH3a",
+    "custom_section_mng4X6"
+  ]
+}

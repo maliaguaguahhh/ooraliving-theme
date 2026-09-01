@@ -1,1 +1,342 @@
-{"sections":{"main_page_X8xeY7":{"type":"main-page","settings":{"font_size_heading":"h2","align":"left","color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":100,"padding_bottom_desktop":50,"padding_top_mobile":80,"padding_bottom_mobile":50}}},"order":["main_page_X8xeY7"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main_page_X8xeY7": {
+      "type": "main-page",
+      "settings": {
+        "font_size_heading": "h2",
+        "align": "left",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 80,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "custom_section_dx4Xyh": {
+      "type": "custom-section",
+      "blocks": {
+        "grid_XrmMUn": {
+          "type": "grid",
+          "settings": {
+            "device": "desktop",
+            "desktop_col": 3,
+            "tablet_col": 2,
+            "mobile_col": 1,
+            "gap": "global",
+            "col_gap_custom_desktop": 20,
+            "col_gap_custom_mobile": 14,
+            "row_gap_custom_desktop": 20,
+            "row_gap_custom_mobile": 14,
+            "fixed_row": false,
+            "auto_row": 20
+          },
+          "blocks": {
+            "text_6PbpGb": {
+              "type": "text",
+              "name": "t:blocks.text.name",
+              "settings": {
+                "text_tag_name": "h2",
+                "text_heading": "How to set up TapNest?",
+                "font_size_heading": "h6",
+                "text_line_height": 1.2,
+                "text_effect": "none",
+                "text_duration": 1000,
+                "text_heading_width_desktop": 100,
+                "text_heading_width_mobile": 100,
+                "alignment": "left",
+                "padding_top_dt": 0,
+                "padding_bottom_dt": 0,
+                "padding_top_mb": 0,
+                "padding_bottom_mb": 0
+              },
+              "blocks": {}
+            },
+            "video_dVKpCr": {
+              "type": "video",
+              "name": "t:blocks.video.presets.name",
+              "settings": {
+                "enable_video_looping": false,
+                "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                "video_alt_text": ""
+              },
+              "blocks": {}
+            },
+            "text_DLH4qP": {
+              "type": "text",
+              "name": "t:blocks.text.name",
+              "settings": {
+                "text_tag_name": "h2",
+                "text_heading": "Improve NFC experience",
+                "font_size_heading": "h6",
+                "text_line_height": 1.2,
+                "text_effect": "none",
+                "text_duration": 1000,
+                "text_heading_width_desktop": 100,
+                "text_heading_width_mobile": 100,
+                "alignment": "left",
+                "padding_top_dt": 0,
+                "padding_bottom_dt": 0,
+                "padding_top_mb": 20,
+                "padding_bottom_mb": 0
+              },
+              "blocks": {}
+            },
+            "video_t9yKjt": {
+              "type": "video",
+              "name": "t:blocks.video.presets.name",
+              "settings": {
+                "enable_video_looping": false,
+                "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                "video_alt_text": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_6PbpGb",
+            "video_dVKpCr",
+            "text_DLH4qP",
+            "video_t9yKjt"
+          ]
+        }
+      },
+      "block_order": [
+        "grid_XrmMUn"
+      ],
+      "disabled": true,
+      "name": "t:sections.custom_section.presets.name",
+      "settings": {
+        "width": "global",
+        "custom_width": 1400,
+        "height": "auto",
+        "custom_height": 50,
+        "container_gap": "global",
+        "container_gap_desktop": 30,
+        "container_gap_mobile": 20,
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "shortcut_preset_library_WDxihw": {
+      "type": "shortcut-preset-library",
+      "blocks": {
+        "shortcut_preset_F87ygF": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/immersive_bath.png",
+            "icon": "shopify://shop_images/icons-11_1.png",
+            "title": "Immersive Bath",
+            "description": "Open your bath time go-to app and keep track of time",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_wy8Hik": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/affirmation.png",
+            "icon": "shopify://shop_images/icons-06_1.png",
+            "title": "Daily Affirmations",
+            "description": "Launches your list of daily affirmations and daily reminders",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_zNYDFT": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/wakeup_routine.png",
+            "icon": "shopify://shop_images/icons-03_1.png",
+            "title": "Wakeup Routine",
+            "description": "Reports the weather and starts your morning go-to app",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_yF7At4": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/spotify_faves.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Spotify Favorites",
+            "description": "A playlist of your liked songs",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_9LPGMF": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/morning_energy.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Morning Energy",
+            "description": "A Spotify playlist to ease into the day",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_7bdHpD": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/shower_karaoke.png",
+            "icon": "shopify://shop_images/icons-07_1.png",
+            "title": "Singing in the Shower",
+            "description": "A playlist of classics to sing along to",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_UAUEPE": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/play_my_own_list.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Play Your Own",
+            "description": "Add your own playlist",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_wzDmG9": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/soothing.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Soothing Playlist",
+            "description": "A playlist to slow everything down",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_3GhBgJ": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/tiktok.png",
+            "icon": "shopify://shop_images/icons-09_1.png",
+            "title": "Scroll on TikTok",
+            "description": "Jump straight to your For You page",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_NFAP8n": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/youtube.png",
+            "icon": "shopify://shop_images/icons-04_1.png",
+            "title": "Watch YouTube",
+            "description": "Jump straight into your comfort content",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_3VxDGD": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/countdown.png",
+            "icon": "shopify://shop_images/icons-02_1.png",
+            "title": "Start a Countdown",
+            "description": "A timer to keep you on track",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_nXkUNQ": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/departure_reminder.png",
+            "icon": "shopify://shop_images/icons-02_1.png",
+            "title": "Departure Reminder",
+            "description": "A reminder to get you ready in time",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_mmbKNc": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/selfie.png",
+            "icon": "shopify://shop_images/icons-05_1.png",
+            "title": "Take a Selfie",
+            "description": "Opens your camera, ready to shoot",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_QKde4M": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/facetime.png",
+            "icon": "shopify://shop_images/icons-05_1.png",
+            "title": "FaceTime",
+            "description": "Call your favorite person with just a tap",
+            "download_link": ""
+          }
+        },
+        "shortcut_preset_qEg6pn": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/podcast.png",
+            "icon": "shopify://shop_images/icons-01_1.png",
+            "title": "Listen to a Podcast",
+            "description": "Jump straight to your favorite podcast",
+            "download_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "shortcut_preset_F87ygF",
+        "shortcut_preset_wy8Hik",
+        "shortcut_preset_zNYDFT",
+        "shortcut_preset_yF7At4",
+        "shortcut_preset_9LPGMF",
+        "shortcut_preset_7bdHpD",
+        "shortcut_preset_UAUEPE",
+        "shortcut_preset_wzDmG9",
+        "shortcut_preset_3GhBgJ",
+        "shortcut_preset_NFAP8n",
+        "shortcut_preset_3VxDGD",
+        "shortcut_preset_nXkUNQ",
+        "shortcut_preset_mmbKNc",
+        "shortcut_preset_QKde4M",
+        "shortcut_preset_qEg6pn"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 18px; } .shortcut-preset-library__text {font-size: 12px; }}"
+      ],
+      "name": "Shortcut Preset Library",
+      "settings": {
+        "text_tag_name": "h2",
+        "text_heading": "Shortcut Preset Library",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "none",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "alignment": "left",
+        "aspect_ratio": "16 / 9",
+        "grid_gap": 24,
+        "card_radius": 18,
+        "overlay_opacity": 60,
+        "download_icon": "shopify://shop_images/material-symbols_download-rounded.png",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "main_page_X8xeY7",
+    "custom_section_dx4Xyh",
+    "shortcut_preset_library_WDxihw"
+  ]
+}

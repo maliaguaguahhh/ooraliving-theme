@@ -22,11 +22,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
+    <meta name="p:domain_verify" content="1c1e6f1beff693269f7cb6b13c2f92ff"/>
     {% comment %}theme-check-disable AssetPreload{% endcomment %}
     <link rel="preload" href="{{ 'xo-critical.min.js' | asset_url }}" as="script" fetchpriority="high">
     {% comment %}theme-check-enable AssetPreload{% endcomment %}
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    
+{% comment %}theme-check-disable AssetPreload{% endcomment %}
+{% if template.name == 'index' and settings.homepage_lcp_image != blank %}
+  <link
+    rel="preload"
+    as="image"
+    href="{{ settings.homepage_lcp_image | image_url: width: 1000 }}"
+    imagesrcset="
+      {{ settings.homepage_lcp_image | image_url: width: 375 }} 375w,
+      {{ settings.homepage_lcp_image | image_url: width: 750 }} 750w,
+      {{ settings.homepage_lcp_image | image_url: width: 1000 }} 1000w
+    "
+    imagesizes="(max-width: 749px) 100vw, 50vw"
+    fetchpriority="high"
+  >
+{% endif %}
+{% comment %}theme-check-enable AssetPreload{% endcomment %}
 
     {% render 'xotiny-theme' %}
 
@@ -58,8 +76,10 @@
 
     {% render 'settings-adapter' %}
 
-    {{ 'xo-webcomponents.min.css' | asset_url | stylesheet_tag }}
     {{ 'styles.css' | asset_url | stylesheet_tag }}
+
+{{ 'xo-webcomponents.min.css' | asset_url | stylesheet_tag }}
+{{ 'styles.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}

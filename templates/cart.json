@@ -1,1 +1,163 @@
-{"sections":{"main-page-heading":{"type":"main-page-heading","settings":{"font_size_heading":"h2","heading":"<p>Your cart<\/p>","sub_heading":"","align":"left","color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":120,"padding_bottom_desktop":24,"padding_top_mobile":100,"padding_bottom_mobile":13}},"main_cart_AxiBwR":{"type":"main-cart","blocks":{"free_shipping_FL7Kfm":{"type":"free_shipping","settings":{}},"note_xng4Bg":{"type":"note","settings":{"type":"collapse"}}},"block_order":["free_shipping_FL7Kfm","note_xng4Bg"],"settings":{"color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":0,"padding_bottom_desktop":96,"padding_top_mobile":0,"padding_bottom_mobile":59}},"featured_collection_style_5_DVNfnH":{"type":"featured-collection-style-5","disabled":true,"settings":{"layout":"carousel","column_desktop":4,"column_mobile":"2","product_display":4,"product_per_view":4,"autoplay":"off","autoplay_time":3000,"product_card_aspect_ratio":"1","card_color_scheme":"inverse","product_list":["beolab-19","beosound-2","beosound-a1","beosound-a5","beosound-a9","beosound-balance","beosound-emerge"],"text_tag_name":"h2","text_heading":"May you also like","font_size_heading":"h5","text_line_height":1.2,"text_effect":"split","text_duration":500,"text_heading_width_desktop":100,"text_heading_width_mobile":100,"collection":"home-audio","aspect_ratio_collection_desktop":"1592\/701","aspect_ratio_collection_mobile":"330\/228","color_schema_collection":"","button_text":"Shop all","button_link":"shopify:\/\/collections\/all","button_style":"secondary","button_size":"xs","color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":55,"padding_bottom_desktop":56,"padding_top_mobile":59,"padding_bottom_mobile":64}},"testimonial_style_4_E4t4W3":{"type":"testimonial-style-4","blocks":{"testimonial_box_4BimhD":{"type":"testimonial-box","settings":{"content":"<p>Share what your customers are saying about your products, customer service or shipping rates.<\/p>","customer_name":"Customer's name"}},"testimonial_box_DwegJq":{"type":"testimonial-box","settings":{"content":"<p>Share what your customers are saying about your products, customer service or shipping rates.<\/p>","customer_name":"Customer's name"}},"testimonial_box_yVDX7e":{"type":"testimonial-box","settings":{"content":"<p>Share what your customers are saying about your products, customer service or shipping rates.<\/p>","customer_name":"Customer's name"}},"testimonial_box_84Gmwn":{"type":"testimonial-box","settings":{"content":"<p>Share what your customers are saying about your products, customer service or shipping rates.<\/p>","customer_name":"Customer's name"}}},"block_order":["testimonial_box_4BimhD","testimonial_box_DwegJq","testimonial_box_yVDX7e","testimonial_box_84Gmwn"],"name":"t:sections.testimonial_style_4.presets.name","settings":{"sub_heading":"Subheading","autoplay_time":3000,"autoplay":"off","color_scheme":"","background_color":"","background_gradient":"","padding_top_desktop":50,"padding_bottom_desktop":50,"padding_top_mobile":50,"padding_bottom_mobile":50}}},"order":["main-page-heading","main_cart_AxiBwR","featured_collection_style_5_DVNfnH","testimonial_style_4_E4t4W3"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-page-heading": {
+      "type": "main-page-heading",
+      "settings": {
+        "font_size_heading": "h2",
+        "heading": "<p>Your cart</p>",
+        "sub_heading": "",
+        "align": "left",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 120,
+        "padding_bottom_desktop": 24,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 13
+      }
+    },
+    "main_cart_AxiBwR": {
+      "type": "main-cart",
+      "blocks": {
+        "free_shipping_FL7Kfm": {
+          "type": "free_shipping",
+          "settings": {}
+        },
+        "note_xng4Bg": {
+          "type": "note",
+          "settings": {
+            "type": "collapse"
+          }
+        }
+      },
+      "block_order": [
+        "free_shipping_FL7Kfm",
+        "note_xng4Bg"
+      ],
+      "settings": {
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 96,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 59
+      }
+    },
+    "featured_collection_style_5_DVNfnH": {
+      "type": "featured-collection-style-5",
+      "disabled": true,
+      "settings": {
+        "layout": "carousel",
+        "column_desktop": 4,
+        "column_mobile": "2",
+        "product_display": 4,
+        "product_per_view": 4,
+        "autoplay": "off",
+        "autoplay_time": 3000,
+        "product_card_aspect_ratio": "1",
+        "card_color_scheme": "inverse",
+        "product_list": [
+          "beolab-19",
+          "beosound-2",
+          "beosound-a1",
+          "beosound-a5",
+          "beosound-a9",
+          "beosound-balance",
+          "beosound-emerge"
+        ],
+        "text_tag_name": "h2",
+        "text_heading": "May you also like",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 500,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "collection": "home-audio",
+        "aspect_ratio_collection_desktop": "1592/701",
+        "aspect_ratio_collection_mobile": "330/228",
+        "color_schema_collection": "",
+        "button_text": "Shop all",
+        "button_link": "shopify://collections/all",
+        "button_style": "secondary",
+        "button_size": "xs",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 55,
+        "padding_bottom_desktop": 56,
+        "padding_top_mobile": 59,
+        "padding_bottom_mobile": 64
+      }
+    },
+    "testimonial_style_4_E4t4W3": {
+      "type": "testimonial-style-4",
+      "blocks": {
+        "testimonial_box_4BimhD": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer's name"
+          }
+        },
+        "testimonial_box_DwegJq": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer's name"
+          }
+        },
+        "testimonial_box_yVDX7e": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer's name"
+          }
+        },
+        "testimonial_box_84Gmwn": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "customer_name": "Customer's name"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_box_4BimhD",
+        "testimonial_box_DwegJq",
+        "testimonial_box_yVDX7e",
+        "testimonial_box_84Gmwn"
+      ],
+      "disabled": true,
+      "name": "t:sections.testimonial_style_4.presets.name",
+      "settings": {
+        "sub_heading": "Subheading",
+        "autoplay_time": 3000,
+        "autoplay": "off",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    }
+  },
+  "order": [
+    "main-page-heading",
+    "main_cart_AxiBwR",
+    "featured_collection_style_5_DVNfnH",
+    "testimonial_style_4_E4t4W3"
+  ]
+}

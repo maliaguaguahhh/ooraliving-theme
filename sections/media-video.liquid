@@ -7,12 +7,19 @@
     {% endif %}
     <div style="--sm: 12; --md: 12; --lg: 10; --start-lg: 2; --xxl: 8; --start-xxl: 3">
       {% render 'video',
-        video: section.settings.video,
-        video_url: section.settings.video_url,
-        enable_video_looping: section.settings.enable_video_looping,
-        cover_image: section.settings.cover_image,
-        video_alt_text: section.settings.video_alt_text
-      %}
+  video: section.settings.video,
+  video_url: section.settings.video_url,
+  enable_video_looping: true,
+  cover_image: section.settings.cover_image,
+  video_alt_text: section.settings.video_alt_text,
+  autoplay: true,
+  muted: true,
+  controls: false,
+  show_poster: false,
+  lazyload:false,
+
+
+%}
     </div>
     {% if section.settings.layout == 'page-width' %}
       </xo-grid>

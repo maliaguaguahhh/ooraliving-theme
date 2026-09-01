@@ -1,14 +1,13 @@
 {% comment %}
   Renders a product specification element with a given value
 
-  @param {String} heading - A string to use as the heading for the product-specification-5 element (optional)
-  @param {Object} image_1 - An object to use as the first image for the product-specification-5 element (required)
-  @param {Object} image_2 - An object to use as the second image for the product-specification-5 element (required)
-  @param {String} aspect_ratio - A string to use as the aspect ratio for the product-specification-5 element (required)
-  @param {Object} block - An object to use as the blocks for the product-specification-5 element (required)
-
-  @example
-  {% render 'product-specification-5', heading: heading, image_1: image_1, image_2: image_2, aspect_ratio: aspect_ratio, block: block %}
+  @param {String} heading - Heading text (optional)
+  @param {Object} image_1 - First comparison image (required)
+  @param {Object} image_2 - Second comparison image (required)
+  @param {String} aspect_ratio - Image aspect ratio (required)
+  @param {Number} comparison_default_position - Initial slider position (optional)
+  @param {Object} block - Section blocks (required)
+  @param {String} layout - Section layout (required)
 {% endcomment %}
 
 {% if block.size == 1 %}
@@ -25,6 +24,7 @@
   {% capture style_1 %}
     style="--lg: 7; --md: 12; --xs: 12"
   {% endcapture %}
+
   {% capture style_2 %}
     style="--lg: 5; --md: 12; --xs: 12"
   {% endcapture %}
@@ -32,6 +32,7 @@
   {% capture style_1 %}
     style="--lg: 6; --md: 12; --xs: 12"
   {% endcapture %}
+
   {% capture style_2 %}
     style="--lg: 6; --md: 12; --xs: 12"
   {% endcapture %}
@@ -40,9 +41,10 @@
 {% liquid
   assign final_aspect_ratio_1 = aspect_ratio | default: '377/549'
   assign final_aspect_ratio_2 = aspect_ratio | default: '917/608'
+  assign final_comparison_position = comparison_default_position | default: 70
 %}
 
-<div class="product-specification-5 {% if layout %}product-specification-5--{{ layout }}{% endif %}">
+<div class="product-specification-5{% if layout %} product-specification-5--{{ layout }}{% endif %}">
   {% if layout == 'style-1' %}
     <xo-animate xo-cascade>
       {% if heading %}
@@ -52,6 +54,7 @@
       {% endif %}
     </xo-animate>
   {% endif %}
+
   <div class="product-specification-5__content">
     <xo-grid class="product-specification-5__grid">
       <div xo-cascade class="product-specification-5__left" {{ style_1 }}>
@@ -59,26 +62,44 @@
           {% if layout == 'style-2' %}
             <xo-animate xo-cascade style="height: 100%;">
               <div class="product-specification-5__image{% if settings.enable_border_radius %} product-specification-5__image--radius{% endif %}">
-                {% render 'image', image: image_1, aspect_ratio: final_aspect_ratio_1 %}
+                {% render 'image',
+                  image: image_1,
+                  aspect_ratio: final_aspect_ratio_1
+                %}
               </div>
             </xo-animate>
+
             <xo-animate xo-cascade style="height: 100%;">
               <div class="product-specification-5__image{% if settings.enable_border_radius %} product-specification-5__image--radius{% endif %}">
-                {% render 'image', image: image_2, aspect_ratio: final_aspect_ratio_1 %}
+                {% render 'image',
+                  image: image_2,
+                  aspect_ratio: final_aspect_ratio_1
+                %}
               </div>
             </xo-animate>
           {%- else -%}
-            <xo-image-comparison class="product-specification-5__thumbnail">
+            <xo-image-comparison
+              class="product-specification-5__thumbnail"
+              xo-default-percent="{{ final_comparison_position }}"
+            >
               <xo-image-comparison-before>
                 <div class="product-specification-5__image{% if settings.enable_border_radius %} product-specification-5__image--radius{% endif %}">
-                  {% render 'image', image: image_1, aspect_ratio: final_aspect_ratio_2 %}
+                  {% render 'image',
+                    image: image_1,
+                    aspect_ratio: final_aspect_ratio_2
+                  %}
                 </div>
               </xo-image-comparison-before>
+
               <xo-image-comparison-after>
                 <div class="product-specification-5__image{% if settings.enable_border_radius %} product-specification-5__image--radius{% endif %}">
-                  {% render 'image', image: image_2, aspect_ratio: final_aspect_ratio_2 %}
+                  {% render 'image',
+                    image: image_2,
+                    aspect_ratio: final_aspect_ratio_2
+                  %}
                 </div>
               </xo-image-comparison-after>
+
               <xo-image-comparison-handle>
                 <xo-image-comparison-handle-icon>
                   {% render 'icon', name: 'comparison', size: '36' %}
@@ -88,6 +109,7 @@
           {% endif %}
         </div>
       </div>
+
       <xo-animate xo-cascade {{ style_2 }}>
         <div class="product-specification-5__right{% if settings.enable_border_radius %} product-specification-5__right--radius{% endif %}">
           {% if layout == 'style-2' %}
@@ -97,6 +119,7 @@
               </div>
             {% endif %}
           {% endif %}
+
           <xo-grid class="product-specification-5__right-grid">
             {% for item in block %}
               <div class="product-specification-5__right-item" {{ style }}>

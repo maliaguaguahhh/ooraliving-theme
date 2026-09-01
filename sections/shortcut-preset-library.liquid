@@ -1,6 +1,8 @@
+
 {% liquid
   assign aspect_ratio = section.settings.aspect_ratio
   assign alignment = section.settings.alignment
+  assign download_icon = section.settings.download_icon
 
   assign heading_class = 'shortcut-preset-library__heading xo-heading-block'
   case alignment
@@ -26,13 +28,17 @@
 
   #shopify-section-{{ section.id }} .shortcut-preset-library__grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 28rem), 42rem));
+    justify-content: center;
     gap: var(--shortcut-grid-gap);
   }
 
   #shopify-section-{{ section.id }} .shortcut-preset-library__card {
     position: relative;
     display: block;
+    width: 100%;
+    max-width: 42rem;
+    justify-self: center;
     aspect-ratio: {{ aspect_ratio }};
     min-height: 22rem;
     overflow: hidden;
@@ -106,6 +112,24 @@
     -webkit-line-clamp: 2;
   }
 
+  #shopify-section-{{ section.id }} .shortcut-preset-library__category-icon {
+    position: absolute;
+    top: 2.4rem;
+    left: 2.4rem;
+    z-index: 1;
+    display: block;
+    width: 4.8rem;
+    height: 4.8rem;
+    pointer-events: none;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library__category-icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
   #shopify-section-{{ section.id }} .shortcut-preset-library__icon {
     position: absolute;
     right: 2.4rem;
@@ -113,18 +137,15 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 4.4rem;
-    height: 4.4rem;
-    border: 0.1rem solid rgba(255, 255, 255, 0.36);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.14);
     color: #fff;
     pointer-events: none;
   }
 
-  #shopify-section-{{ section.id }} .shortcut-preset-library__icon svg {
-    width: 2rem;
-    height: 2rem;
+  #shopify-section-{{ section.id }} .shortcut-preset-library__icon img {
+    display: block;
+    width: 3.6rem;
+    height: 3.6rem;
+    object-fit: contain;
   }
 
   #shopify-section-{{ section.id }} .shortcut-preset-library__card:hover .shortcut-preset-library__image,
@@ -138,23 +159,18 @@
       rgba(0, 0, 0, 0.08);
   }
 
-  @media screen and (max-width: 989px) {
-    #shopify-section-{{ section.id }} .shortcut-preset-library__grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-
   @media screen and (max-width: 749px) {
     #shopify-section-{{ section.id }} .shortcut-preset-library__heading {
       margin-bottom: 2.4rem;
     }
 
     #shopify-section-{{ section.id }} .shortcut-preset-library__grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: 1.6rem;
     }
 
     #shopify-section-{{ section.id }} .shortcut-preset-library__card {
+      max-width: none;
       min-height: 20rem;
     }
 
@@ -167,8 +183,13 @@
     #shopify-section-{{ section.id }} .shortcut-preset-library__icon {
       right: 2rem;
       bottom: 2rem;
-      width: 4rem;
-      height: 4rem;
+    }
+
+    #shopify-section-{{ section.id }} .shortcut-preset-library__category-icon {
+      top: 2rem;
+      left: 2rem;
+      width: 4.4rem;
+      height: 4.4rem;
     }
   }
 </style>
@@ -186,6 +207,7 @@
         {% for block in section.blocks %}
           {% liquid
             assign preset_image = block.settings.image
+            assign preset_icon = block.settings.icon
             assign preset_title = block.settings.title
             assign preset_description = block.settings.description
             assign download_link = block.settings.download_link
@@ -210,7 +232,7 @@
                 | image_tag:
                   class: 'shortcut-preset-library__image',
                   loading: 'lazy',
-                  sizes: '(min-width: 990px) 33vw, (min-width: 750px) 50vw, 100vw',
+                  sizes: '(min-width: 990px) 420px, (min-width: 750px) 50vw, 100vw',
                   widths: '360, 540, 720, 900, 1200',
                   alt: preset_title
               }}
@@ -219,6 +241,19 @@
             {% endif %}
 
             <span class="shortcut-preset-library__overlay" aria-hidden="true"></span>
+
+            {% if preset_icon != blank %}
+              <span class="shortcut-preset-library__category-icon" aria-hidden="true">
+                {{
+                  preset_icon
+                  | image_url: width: 160
+                  | image_tag:
+                    loading: 'lazy',
+                    widths: '64, 96, 128, 160',
+                    alt: ''
+                }}
+              </span>
+            {% endif %}
 
             <span class="shortcut-preset-library__content">
               {% if preset_title != blank %}
@@ -230,12 +265,18 @@
               {% endif %}
             </span>
 
-            <span class="shortcut-preset-library__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" focusable="false">
-                <path d="M12 3v11m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              </svg>
-            </span>
+            {% if download_icon != blank %}
+              <span class="shortcut-preset-library__icon" aria-hidden="true">
+                {{
+                  download_icon
+                  | image_url: width: 160
+                  | image_tag:
+                    loading: 'lazy',
+                    widths: '64, 96, 128, 160',
+                    alt: ''
+                }}
+              </span>
+            {% endif %}
           </a>
         {% endfor %}
       </div>
@@ -247,270 +288,93 @@
 {
   "name": "Shortcut Preset Library",
   "disabled_on": {
-    "groups": [
-      "header",
-      "footer",
-      "custom.overlay",
-      "custom.popups",
-      "custom.features"
-    ]
+    "groups": ["header", "footer", "custom.overlay", "custom.popups", "custom.features"]
   },
   "settings": [
-    {
-      "type": "header",
-      "content": "Text"
-    },
+    { "type": "header", "content": "Text" },
     {
       "type": "select",
       "id": "text_tag_name",
       "label": "Tag name",
       "options": [
-        {
-          "value": "h1",
-          "label": "H1"
-        },
-        {
-          "value": "h2",
-          "label": "H2"
-        },
-        {
-          "value": "h3",
-          "label": "H3"
-        },
-        {
-          "value": "h4",
-          "label": "H4"
-        },
-        {
-          "value": "h5",
-          "label": "H5"
-        },
-        {
-          "value": "h6",
-          "label": "H6"
-        }
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "h6", "label": "H6" }
       ],
       "default": "h2"
     },
-    {
-      "type": "textarea",
-      "id": "text_heading",
-      "label": "Text",
-      "default": "Shortcut Preset Library"
-    },
+    { "type": "textarea", "id": "text_heading", "label": "Text", "default": "Shortcut Preset Library" },
     {
       "type": "select",
       "id": "font_size_heading",
       "label": "Font size heading",
       "default": "h5",
       "options": [
-        {
-          "value": "h1",
-          "label": "Extra extra large"
-        },
-        {
-          "value": "h2",
-          "label": "Extra large"
-        },
-        {
-          "value": "h3",
-          "label": "Large"
-        },
-        {
-          "value": "h4",
-          "label": "Medium"
-        },
-        {
-          "value": "h5",
-          "label": "Small"
-        },
-        {
-          "value": "h6",
-          "label": "Extra small"
-        }
+        { "value": "h1", "label": "Extra extra large" },
+        { "value": "h2", "label": "Extra large" },
+        { "value": "h3", "label": "Large" },
+        { "value": "h4", "label": "Medium" },
+        { "value": "h5", "label": "Small" },
+        { "value": "h6", "label": "Extra small" }
       ]
     },
-    {
-      "type": "range",
-      "id": "text_line_height",
-      "label": "Line height",
-      "min": 0,
-      "max": 3,
-      "step": 0.1,
-      "default": 1.2
-    },
+    { "type": "range", "id": "text_line_height", "label": "Line height", "min": 0, "max": 3, "step": 0.1, "default": 1.2 },
     {
       "type": "select",
       "id": "text_effect",
       "label": "Effect",
       "options": [
-        {
-          "value": "none",
-          "label": "None"
-        },
-        {
-          "value": "reveal",
-          "label": "Blur"
-        },
-        {
-          "value": "split",
-          "label": "Split"
-        }
+        { "value": "none", "label": "None" },
+        { "value": "reveal", "label": "Blur" },
+        { "value": "split", "label": "Split" }
       ],
       "default": "split"
     },
-    {
-      "type": "number",
-      "id": "text_duration",
-      "label": "Duration (milliseconds)",
-      "default": 1000
-    },
-    {
-      "type": "range",
-      "id": "text_heading_width_desktop",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "label": "Desktop heading width",
-      "default": 100
-    },
-    {
-      "type": "range",
-      "id": "text_heading_width_mobile",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "label": "Mobile heading width",
-      "default": 100
-    },
-    {
-      "type": "text_alignment",
-      "id": "alignment",
-      "label": "Alignment"
-    },
-    {
-      "type": "header",
-      "content": "Cards"
-    },
+    { "type": "number", "id": "text_duration", "label": "Duration (milliseconds)", "default": 1000 },
+    { "type": "range", "id": "text_heading_width_desktop", "min": 0, "max": 100, "step": 1, "unit": "%", "label": "Desktop heading width", "default": 100 },
+    { "type": "range", "id": "text_heading_width_mobile", "min": 0, "max": 100, "step": 1, "unit": "%", "label": "Mobile heading width", "default": 100 },
+    { "type": "text_alignment", "id": "alignment", "label": "Alignment" },
+
+    { "type": "header", "content": "Cards" },
     {
       "type": "select",
       "id": "aspect_ratio",
       "label": "Card aspect ratio",
       "options": [
-        {
-          "value": "4 / 3",
-          "label": "4:3"
-        },
-        {
-          "value": "3 / 2",
-          "label": "3:2"
-        }
+        { "value": "1 / 1", "label": "1:1" },
+        { "value": "16 / 9", "label": "16:9" },
+        { "value": "4 / 3", "label": "4:3" },
+        { "value": "3 / 2", "label": "3:2" }
       ],
       "default": "4 / 3"
     },
-    {
-      "type": "range",
-      "id": "grid_gap",
-      "label": "Grid gap",
-      "min": 8,
-      "max": 48,
-      "step": 2,
-      "unit": "px",
-      "default": 24
-    },
-    {
-      "type": "range",
-      "id": "card_radius",
-      "label": "Card corner radius",
-      "min": 0,
-      "max": 32,
-      "step": 1,
-      "unit": "px",
-      "default": 18
-    },
-    {
-      "type": "range",
-      "id": "overlay_opacity",
-      "label": "Overlay strength",
-      "min": 20,
-      "max": 85,
-      "step": 5,
-      "unit": "%",
-      "default": 60
-    },
-    {
-      "type": "header",
-      "content": "General settings"
-    },
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "Section color scheme"
-    },
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background color"
-    },
-    {
-      "type": "color_background",
-      "id": "background_gradient",
-      "label": "Background gradient"
-    },
-    {
-      "type": "number",
-      "id": "padding_top_desktop",
-      "label": "Padding top desktop",
-      "default": 50
-    },
-    {
-      "type": "number",
-      "id": "padding_bottom_desktop",
-      "label": "Padding bottom desktop",
-      "default": 50
-    },
-    {
-      "type": "number",
-      "id": "padding_top_mobile",
-      "label": "Padding top mobile",
-      "default": 40
-    },
-    {
-      "type": "number",
-      "id": "padding_bottom_mobile",
-      "label": "Padding bottom mobile",
-      "default": 40
-    }
+    { "type": "range", "id": "grid_gap", "label": "Grid gap", "min": 8, "max": 48, "step": 2, "unit": "px", "default": 24 },
+    { "type": "range", "id": "card_radius", "label": "Card corner radius", "min": 0, "max": 32, "step": 1, "unit": "px", "default": 18 },
+    { "type": "range", "id": "overlay_opacity", "label": "Overlay strength", "min": 20, "max": 85, "step": 5, "unit": "%", "default": 60 },
+
+    { "type": "header", "content": "General settings" },
+    { "type": "image_picker", "id": "download_icon", "label": "Download icon" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Section color scheme" },
+    { "type": "color", "id": "background_color", "label": "Background color" },
+    { "type": "color_background", "id": "background_gradient", "label": "Background gradient" },
+    { "type": "number", "id": "padding_top_desktop", "label": "Padding top desktop", "default": 50 },
+    { "type": "number", "id": "padding_bottom_desktop", "label": "Padding bottom desktop", "default": 50 },
+    { "type": "number", "id": "padding_top_mobile", "label": "Padding top mobile", "default": 40 },
+    { "type": "number", "id": "padding_bottom_mobile", "label": "Padding bottom mobile", "default": 40 }
   ],
   "blocks": [
     {
       "type": "shortcut_preset",
       "name": "Shortcut preset",
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title",
-          "default": "Shortcut preset"
-        },
-        {
-          "type": "textarea",
-          "id": "description",
-          "label": "Short description",
-          "default": "A short preset description."
-        },
-        {
-          "type": "url",
-          "id": "download_link",
-          "label": "Download link"
-        }
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "image_picker", "id": "icon", "label": "Top-left icon" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Shortcut preset" },
+        { "type": "textarea", "id": "description", "label": "Short description", "default": "A short preset description." },
+        { "type": "url", "id": "download_link", "label": "Download link" }
       ]
     }
   ],

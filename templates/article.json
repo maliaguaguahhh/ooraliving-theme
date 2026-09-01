@@ -1,10 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main_breadcrumb_ABzfNr": {
       "type": "main-breadcrumb",
       "settings": {
-        "align": "center",
-        "color_scheme": "",
+        "align": "left",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 100,
@@ -18,18 +27,12 @@
       "blocks": {
         "tag_9wQwdn": {
           "type": "tag",
-          "settings": {
-          }
+          "disabled": true,
+          "settings": {}
         },
         "c190618a-1e1d-46af-8752-99de30126b0f": {
           "type": "title",
-          "settings": {
-          }
-        },
-        "published": {
-          "type": "published",
-          "settings": {
-          }
+          "settings": {}
         },
         "share_kdXMwt": {
           "type": "share",
@@ -40,19 +43,17 @@
         },
         "6219541e-660f-41c1-9dc7-65274a86e7bf": {
           "type": "featured_image",
-          "settings": {
-          }
+          "settings": {}
         },
         "c0eb0f66-4c6c-4ae9-b5c7-3158c9075545": {
           "type": "content",
-          "settings": {
-          }
+          "settings": {}
         },
         "8a248648-195a-4b31-aa09-4fdcc94cb87a": {
           "type": "share",
           "settings": {
             "align_dt": "flex-start",
-            "align_mb": "flex-start"
+            "align_mb": "center"
           }
         }
       },
@@ -65,7 +66,7 @@
         "8a248648-195a-4b31-aa09-4fdcc94cb87a"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 121,
@@ -77,7 +78,7 @@
     "section-comment": {
       "type": "comment",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
         "padding_top_desktop": 0,
