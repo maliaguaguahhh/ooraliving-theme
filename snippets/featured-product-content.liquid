@@ -214,6 +214,13 @@
                   </xo-cart-add>
                 </xo-product-will-change>
               </xo-animate>
+              {% if product.handle == 'tapnest' and block.settings.enable_bundle_offer %}
+                <xo-animate xo-cascade class="xo-featured-product-content__bundle-offer">
+                  <xo-product-will-change xo-unique-id="bundle-offer-card-{{ section.id }}">
+                    {% render 'bundle-offer-card', product: product, block: block, section_id: section.id %}
+                  </xo-product-will-change>
+                </xo-animate>
+              {% endif %}
             </div>
             <xo-product-will-change xo-unique-id="featured-product-preorder-message-{{ section.id }}">
               {% if is_preorder and block.settings.enable_preorder_message and block.settings.preorder_arrival_text != blank %}

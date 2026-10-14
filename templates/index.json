@@ -104,7 +104,17 @@
             "preorder_status_text": "Available for pre-order",
             "preorder_button_label": "Pre-order",
             "preorder_arrival_text": "Expected to restock around October 14. Pre-orders will ship as soon as inventory arrives.",
-            "preorder_color": "#4f8068"
+            "preorder_color": "#4f8068",
+            "enable_bundle_offer": true,
+            "bundle_offer_product": "",
+            "bundle_offer_image": "",
+            "bundle_offer_discount_percent": 15,
+            "bundle_offer_summary": "Add another and save 15%",
+            "bundle_offer_badge": "Bundle offer",
+            "bundle_offer_heading": "Add another for 15% off?",
+            "bundle_offer_body": "Another room, another color, or a gift.",
+            "bundle_offer_selector_label": "Choose your second item",
+            "bundle_offer_cta_text": "+ Add a second - [price]"
           }
         },
         "quantity_picker_B4YTyH": {

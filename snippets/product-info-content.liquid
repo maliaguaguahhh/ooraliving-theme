@@ -185,6 +185,13 @@
                     </xo-product-will-change>
                   {% endform %}
                 </xo-animate>
+                {% if product.handle == 'tapnest' and block.settings.enable_bundle_offer %}
+                  <xo-animate xo-cascade class="xo-product-info-content__bundle-offer">
+                    <xo-product-will-change xo-unique-id="bundle-offer-card-{{ section.id }}">
+                      {% render 'bundle-offer-card', product: product, block: block, section_id: section.id %}
+                    </xo-product-will-change>
+                  </xo-animate>
+                {% endif %}
                 <xo-animate xo-cascade class="xo-product-info-content__buy-now {{ style_button_buy }}">
                   {% render 'buy-button', show_gift_card_recipient: block.settings.show_gift_card_recipient, show_dynamic_checkout: block.settings.show_dynamic_checkout %}
                   {% if block.settings.show_gift_card_recipient == false %}

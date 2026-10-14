@@ -1,0 +1,202 @@
+{% doc %}
+Renders an optional bundle offer card for product and featured product buy buttons.
+
+@param {product} product - The primary product.
+@param {block} block - The buy button block containing bundle settings.
+@param {string} section_id - The section id used by XO cart components.
+@example
+{% render 'bundle-offer-card', product: product, block: block, section_id: section.id %}
+{% enddoc %}
+
+{{ 'bundle-offer-card.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'bundle-offer-card.js' | asset_url }}" defer="defer"></script>
+
+{% liquid
+  assign offer_product = block.settings.bundle_offer_product | default: product
+  assign discount_percent = block.settings.bundle_offer_discount_percent | default: 15
+  assign discount_multiplier = 100 | minus: discount_percent
+  assign primary_variant = product.selected_or_first_available_variant
+  assign offer_variant = offer_product.selected_or_first_available_variant
+
+  if offer_product.id == product.id
+    assign offer_variant = primary_variant
+  endif
+
+  assign discounted_price = offer_variant.price | times: discount_multiplier | divided_by: 100
+  assign discounted_price_money = discounted_price | money
+  assign cta_text = block.settings.bundle_offer_cta_text | default: '+ Add a second - [price]'
+  assign cta_text = cta_text | replace: '[price]', discounted_price_money
+  assign cta_text = cta_text | replace: '{{ price }}', discounted_price_money
+  assign summary_text = block.settings.bundle_offer_summary | default: 'Add another and save'
+  assign heading = block.settings.bundle_offer_heading | default: 'Add another for 15% off?'
+  assign body = block.settings.bundle_offer_body | default: 'Another room, another color, or a gift.'
+  assign selector_label = block.settings.bundle_offer_selector_label | default: 'Choose your second item'
+  assign badge_text = block.settings.bundle_offer_badge | default: 'Bundle offer'
+  assign current_option_label = offer_variant.option1 | default: offer_variant.title
+  if offer_variant.title == 'Default Title'
+    assign current_option_label = offer_product.title
+  endif
+  assign current_option_handle = current_option_label | handleize
+  assign current_swatch_style = ''
+  assign offer_color_option = offer_product.options_with_values | first
+
+  for value in offer_color_option.values
+    assign value_label = value.name | default: value
+    if value_label == current_option_label
+      if value.swatch.image != blank
+        assign swatch_image_url = value.swatch.image | image_url: width: 80
+        assign current_swatch_style = '--bundle-swatch: url(' | append: swatch_image_url | append: ');'
+      elsif value.swatch.color != blank
+        assign current_swatch_style = '--bundle-swatch: ' | append: value.swatch.color | append: ';'
+      endif
+      break
+    endif
+  endfor
+%}
+
+{% if product.handle == 'tapnest' and offer_product.handle == 'tapnest' and primary_variant != blank and offer_variant != blank %}
+  <details
+    class="xo-bundle-offer-card"
+    data-bundle-offer-card
+    data-primary-variant-id="{{ primary_variant.id }}"
+    data-primary-available="{{ primary_variant.available }}"
+    data-section-id="{{ section_id }}"
+  >
+    <summary class="xo-bundle-offer-card__summary">
+      <span class="xo-bundle-offer-card__summary-text">{{ summary_text }}</span>
+      <span class="xo-bundle-offer-card__summary-icon" aria-hidden="true">+</span>
+    </summary>
+
+    <div class="xo-bundle-offer-card__content">
+      <div class="xo-bundle-offer-card__media">
+        {% if block.settings.bundle_offer_image != blank %}
+          {{
+            block.settings.bundle_offer_image
+            | image_url: width: 160
+            | image_tag: loading: 'lazy', widths: '80, 120, 160', class: 'xo-bundle-offer-card__image'
+          }}
+        {% elsif offer_product.featured_image != blank %}
+          {{
+            offer_product.featured_image
+            | image_url: width: 160
+            | image_tag: loading: 'lazy', widths: '80, 120, 160', class: 'xo-bundle-offer-card__image'
+          }}
+        {% endif %}
+      </div>
+
+      <div class="xo-bundle-offer-card__main">
+        <div class="xo-bundle-offer-card__badge">{{ badge_text }}</div>
+        <h3 class="xo-bundle-offer-card__heading">{{ heading }}</h3>
+        <p class="xo-bundle-offer-card__body">{{ body }}</p>
+
+        {% if offer_product.variants.size > 1 %}
+          <div class="xo-bundle-offer-card__selector" data-bundle-offer-selector>
+            <button
+              type="button"
+              class="xo-bundle-offer-card__trigger"
+              aria-expanded="false"
+              aria-controls="BundleOfferMenu-{{ section_id }}-{{ block.id }}"
+              data-bundle-offer-trigger
+            >
+              <span
+                class="xo-bundle-offer-card__swatch"
+                data-bundle-offer-current-swatch
+                data-swatch-handle="{{ current_option_handle }}"
+                style="{{ current_swatch_style }}"
+                aria-hidden="true"
+              ></span>
+              <span class="xo-bundle-offer-card__trigger-text" data-bundle-offer-current-label>{{ current_option_label }}</span>
+              <span class="xo-bundle-offer-card__chevron" aria-hidden="true">
+                {% render 'icon', name: 'arrow-down', color: 'currentColor', size: '1.8rem' %}
+              </span>
+            </button>
+
+            <div
+              id="BundleOfferMenu-{{ section_id }}-{{ block.id }}"
+              class="xo-bundle-offer-card__menu"
+              role="listbox"
+              aria-label="{{ selector_label | escape }}"
+              data-bundle-offer-menu
+              hidden
+            >
+              {% for variant in offer_product.variants %}
+                {% liquid
+                  assign variant_discounted_price = variant.price | times: discount_multiplier | divided_by: 100
+                  assign variant_discounted_price_money = variant_discounted_price | money
+                  assign option_cta_text = block.settings.bundle_offer_cta_text | default: '+ Add a second - [price]'
+                  assign option_cta_text = option_cta_text | replace: '[price]', variant_discounted_price_money
+                  assign option_cta_text = option_cta_text | replace: '{{ price }}', variant_discounted_price_money
+                  assign option_label = variant.option1 | default: variant.title
+                  if variant.title == 'Default Title'
+                    assign option_label = offer_product.title
+                  endif
+                  assign option_handle = option_label | handleize
+                  assign option_swatch_style = ''
+
+                  for value in offer_color_option.values
+                    assign value_label = value.name | default: value
+                    if value_label == option_label
+                      if value.swatch.image != blank
+                        assign swatch_image_url = value.swatch.image | image_url: width: 80
+                        assign option_swatch_style = '--bundle-swatch: url(' | append: swatch_image_url | append: ');'
+                      elsif value.swatch.color != blank
+                        assign option_swatch_style = '--bundle-swatch: ' | append: value.swatch.color | append: ';'
+                      endif
+                      break
+                    endif
+                  endfor
+                %}
+                <button
+                  type="button"
+                  class="xo-bundle-offer-card__option"
+                  role="option"
+                  data-bundle-offer-option
+                  data-variant-id="{{ variant.id }}"
+                  data-available="{{ variant.available }}"
+                  data-cta-text="{{ option_cta_text | escape }}"
+                  data-label="{{ option_label | escape }}"
+                  data-swatch-handle="{{ option_handle }}"
+                  data-swatch-style="{{ option_swatch_style | escape }}"
+                  aria-selected="{% if variant.id == offer_variant.id %}true{% else %}false{% endif %}"
+                >
+                  <span
+                    class="xo-bundle-offer-card__swatch"
+                    data-swatch-handle="{{ option_handle }}"
+                    style="{{ option_swatch_style }}"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="xo-bundle-offer-card__option-label">{{ option_label }}</span>
+                  <span class="xo-bundle-offer-card__option-price">{{ variant_discounted_price_money }}</span>
+                </button>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
+        <input
+          type="hidden"
+          data-bundle-offer-variant
+          value="{{ offer_variant.id }}"
+          data-available="{{ offer_variant.available }}"
+          data-cta-text="{{ cta_text | escape }}"
+        >
+
+        <xo-cart-add
+          class="xo-bundle-offer-card__button"
+          xo-for-bundle
+          xo-section-id="{{ section_id }}"
+          xo-product-id="[{{ primary_variant.id }},{{ offer_variant.id }}]"
+          xo-product-quantities="[1,1]"
+          {% if primary_variant.available == false or offer_variant.available == false %}
+            xo-disabled
+          {% endif %}
+          {% if settings.cart_type == 'page' %}
+            xo-cart-redirection
+          {% endif %}
+        >
+          {% render 'button', style: 'secondary', text: cta_text, size: 'md', block: true %}
+        </xo-cart-add>
+      </div>
+    </div>
+  </details>
+{% endif %}

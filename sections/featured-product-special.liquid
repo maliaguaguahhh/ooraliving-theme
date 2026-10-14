@@ -301,6 +301,74 @@
           "id": "preorder_color",
           "label": "Restock notice color",
           "default": "#4f8068"
+        },
+        {
+          "type": "header",
+          "content": "Bundle offer"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_bundle_offer",
+          "label": "Enable bundle offer",
+          "default": false
+        },
+        {
+          "type": "product",
+          "id": "bundle_offer_product",
+          "label": "Bundle product",
+          "info": "Leave blank to add another of the current product."
+        },
+        {
+          "type": "image_picker",
+          "id": "bundle_offer_image",
+          "label": "Bundle image"
+        },
+        {
+          "type": "range",
+          "id": "bundle_offer_discount_percent",
+          "min": 0,
+          "max": 50,
+          "step": 1,
+          "unit": "%",
+          "label": "Displayed discount",
+          "default": 15
+        },
+        {
+          "type": "text",
+          "id": "bundle_offer_summary",
+          "label": "Collapsed text",
+          "default": "Add another and save 15%"
+        },
+        {
+          "type": "text",
+          "id": "bundle_offer_badge",
+          "label": "Badge",
+          "default": "Bundle offer"
+        },
+        {
+          "type": "text",
+          "id": "bundle_offer_heading",
+          "label": "Heading",
+          "default": "Add another for 15% off?"
+        },
+        {
+          "type": "textarea",
+          "id": "bundle_offer_body",
+          "label": "Body",
+          "default": "Another room, another color, or a gift."
+        },
+        {
+          "type": "text",
+          "id": "bundle_offer_selector_label",
+          "label": "Variant selector label",
+          "default": "Choose your second item"
+        },
+        {
+          "type": "text",
+          "id": "bundle_offer_cta_text",
+          "label": "Button text",
+          "info": "Use [price] to show the discounted second item price.",
+          "default": "+ Add a second - [price]"
         }
       ]
     },
