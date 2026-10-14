@@ -37,8 +37,8 @@
 
   if lazyload
     assign loading = 'lazy'
-    assign final_widths = '100'
-    assign width = 100
+    assign final_widths = '375, 550, 750, 900, 1100, 1500, 1780, 2048'
+    assign width = 750
   else
     assign loading = 'eager'
     assign wc = blank
@@ -51,18 +51,18 @@
     assign is_header_and_template = true
   endif
 
-if section.index == 1 and is_header_and_template
-  assign loading = 'eager'
-  assign fetch_priority = 'high'
-  assign lazyload = false
-  assign wc = blank
-endif
+  if section.index == 1 and is_header_and_template
+    assign loading = 'eager'
+    assign fetch_priority = 'high'
+    assign lazyload = false
+    assign wc = blank
+  endif
 
-if loading == 'eager'
-  assign final_widths = '375, 550, 750, 900, 1100, 1500'
-  assign width = 1000
-  assign wc = blank
-endif
+  if loading == 'eager'
+    assign final_widths = '750, 900, 1100, 1500, 1780, 2048, 3000'
+    assign width = 2048
+    assign wc = blank
+  endif
 
   assign alt = alt | default: 'Image'
 
@@ -102,6 +102,7 @@ endif
           xo-width-range: width_range,
           alt: alt
       }}
+    
     {%- else -%}
       {{
         image

@@ -14,25 +14,36 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_HHnFyX": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Explore Now: Setup Guides and<br/> Shortcut Gallery</p>",
+            "link": "shopify://pages/nfc-shortcut-gallery"
+          }
+        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Buy Now: 30% off  + Free US Shipping</p>",
+            "text": "<p>Buy Now: 20% Off + Free Shipping in the Contiguous U.S.</p>",
             "link": "shopify://products/tapnest"
           }
         }
       },
       "block_order": [
+        "announcement_HHnFyX",
         "announcement-bar-0"
       ],
+      "custom_css": [
+        ".xo-announcement-bar__prev,.xo-announcement-bar__next {color: #fff;}"
+      ],
       "settings": {
-        "announcement_style": "text-inline",
+        "announcement_style": "carousel",
         "hide_button_close": "off",
-        "carousel_width": 610,
-        "carousel_height": 21,
+        "carousel_width": 800,
+        "carousel_height": 20,
         "carousel_style": "horizontal",
         "carousel_autoplay": true,
-        "carousel_speed": 4000,
+        "carousel_speed": 3000,
         "marquee_speed": 6,
         "marquee_rtl": false,
         "marquee_stop": true,

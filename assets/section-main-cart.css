@@ -2,6 +2,15 @@
   padding-top: 2rem;
 }
 
+.xo-main-cart .cart-actions__dynamic-checkout-buttons [data-shopify-buttoncontainer],
+.xo-main-cart .cart-actions__dynamic-checkout-buttons [data-shopify-buttoncontainer] > *,
+.xo-main-cart .cart-actions__dynamic-checkout-buttons shop-pay-wallet-button,
+.xo-main-cart .cart-actions__dynamic-checkout-buttons shopify-accelerated-checkout,
+.xo-main-cart .cart-actions__dynamic-checkout-buttons shopify-accelerated-checkout-cart {
+  border-radius: var(--button-radius) !important;
+  overflow: hidden;
+}
+
 .xo-main-cart__left {
   position: relative;
   padding-bottom: 3.4rem;

@@ -1,0 +1,198 @@
+.main-product .free-shipping-label,
+.xo-featured-product-content .free-shipping-label {
+  display: none;
+}
+
+.tapnest-product-hero__eyebrow {
+  margin: 0 0 1.5rem;
+  color: #a46f78;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.xo-product-info-content__title:has(+ .tapnest-product-hero__reviews),
+.xo-featured-product-content__title:has(+ .tapnest-product-hero__reviews) {
+  padding-bottom: 2.4rem;
+}
+
+.xo-featured-product-content .oora-shipping-promise {
+  margin-bottom: 2rem;
+}
+
+.tapnest-product-hero__reviews {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2.8rem;
+  color: #2c2120;
+  text-decoration: none;
+}
+
+.tapnest-product-hero__stars {
+  color: #a46f78;
+  font-size: 1.85rem;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+.tapnest-product-hero__review-copy {
+  border-bottom: 1px solid currentColor;
+  font-size: 1.55rem;
+  line-height: 1.3;
+}
+
+.tapnest-product-hero__reviews:hover .tapnest-product-hero__review-copy,
+.tapnest-product-hero__reviews:focus-visible .tapnest-product-hero__review-copy {
+  border-bottom-width: 2px;
+}
+
+.tapnest-product-hero__price-row,
+.tapnest-product-hero__price-row .xo-price__sale {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tapnest-product-hero__price-row {
+  gap: 1.4rem;
+}
+
+.tapnest-product-hero__price-row .xo-price__sale {
+  gap: 1rem;
+}
+
+.tapnest-product-hero__price-row .xo-price__item:not(.xo-price__item--del) {
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.tapnest-product-hero__price-row .xo-price__item--del {
+  font-size: 1.8rem;
+  text-decoration-thickness: 1px;
+}
+
+.tapnest-product-hero__save {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3.6rem;
+  padding: 0.65rem 1.45rem;
+  border-radius: 999px;
+  background: #a46f78;
+  color: #fff;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.tapnest-product-hero__free-shipping {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 1.6rem;
+  color: #4f8068;
+  font-size: 1.75rem;
+  line-height: 1.3;
+}
+
+.tapnest-product-hero__free-shipping svg {
+  flex: 0 0 auto;
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.xo-product-info-content__variant--pd {
+  padding-top: 1.8rem;
+}
+
+.xo-product-info-content__variant .xo-product-variant__inner,
+.xo-product-info-content__variant .xo-product-variant__group {
+  gap: 0.6rem;
+}
+
+.xo-product-info-content__variant .xo-product-variant__group + .xo-product-variant__group {
+  margin-top: 0.8rem;
+}
+
+.xo-product-info-content__variant .xo-product-variant__inner-name,
+.xo-product-info-content__variant .xo-product-variant__top-name {
+  padding-bottom: 0.35rem;
+}
+
+@media (max-width: 767px) {
+  .main-product .main-product__content {
+    padding-top: 1.5rem;
+  }
+
+  .tapnest-product-hero__eyebrow {
+    margin-bottom: 1.1rem;
+    font-size: 1.05rem;
+    letter-spacing: 0.15em;
+  }
+
+  .xo-product-info-content__title:has(+ .tapnest-product-hero__reviews),
+  .xo-featured-product-content__title:has(+ .tapnest-product-hero__reviews) {
+    padding-bottom: 1.25rem;
+  }
+
+  .tapnest-product-hero__reviews {
+    gap: 0.8rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .tapnest-product-hero__stars {
+    font-size: 1.5rem;
+    letter-spacing: 0.04em;
+  }
+
+  .tapnest-product-hero__review-copy {
+    font-size: 1.35rem;
+  }
+
+  .tapnest-product-hero__price-row {
+    gap: 1rem;
+  }
+
+  .tapnest-product-hero__price-row .xo-price__item:not(.xo-price__item--del) {
+    font-size: 2.3rem;
+  }
+
+  .tapnest-product-hero__price-row .xo-price__item--del {
+    font-size: 1.5rem;
+  }
+
+  .tapnest-product-hero__save {
+    min-height: 3rem;
+    padding: 0.55rem 1.1rem;
+    font-size: 1.2rem;
+  }
+
+  .tapnest-product-hero__free-shipping {
+    gap: 0.7rem;
+    margin-top: 1.2rem;
+    font-size: 1.45rem;
+  }
+
+  .tapnest-product-hero__free-shipping svg {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .xo-product-info-content__variant--pd {
+    padding-top: 1.4rem;
+  }
+
+  .xo-product-info-content__variant .xo-product-variant__inner,
+  .xo-product-info-content__variant .xo-product-variant__group {
+    gap: 0.45rem;
+  }
+
+  .xo-product-info-content__variant .xo-product-variant__group + .xo-product-variant__group {
+    margin-top: 0.55rem;
+  }
+}

@@ -76,7 +76,8 @@
                   "name": "t:blocks.video.presets.name",
                   "settings": {
                     "enable_video_looping": false,
-                    "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                    "video": "shopify://files/videos/Setting up TapNest Tutorial V2.mp4",
+                    "video_url": "",
                     "video_alt_text": ""
                   },
                   "blocks": {}
@@ -101,6 +102,7 @@
             "grid_gdLVXU": {
               "type": "grid",
               "name": "t:blocks.grid.presets.name",
+              "disabled": true,
               "settings": {
                 "device": "desktop",
                 "desktop_col": 1,
@@ -153,6 +155,7 @@
       "block_order": [
         "grid_Vj8W3W"
       ],
+      "disabled": true,
       "name": "t:sections.custom_section.presets.name",
       "settings": {
         "width": "fill",
@@ -171,6 +174,42 @@
         "padding_bottom_mobile": 50
       }
     },
+    "nfc_tutorials_CRaQt8": {
+      "type": "nfc-tutorials",
+      "blocks": {
+        "tutorial_troubleshooting": {
+          "type": "tutorial",
+          "settings": {
+            "title": "Quick Guide to Make it Work",
+            "video": "shopify://files/videos/1151_raw.MP4",
+            "video_url": "",
+            "cover_image": "shopify://shop_images/1147_0d1d2349-bebd-496e-aea1-f616b7a85b47.png"
+          }
+        },
+        "tutorial_setup": {
+          "type": "tutorial",
+          "settings": {
+            "title": "Full Guide: DIY Shortcut to Finish",
+            "video": "shopify://files/videos/Setting up TapNest Tutorial V2.mp4",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "tutorial_troubleshooting",
+        "tutorial_setup"
+      ],
+      "settings": {
+        "heading": "Video Tutorials",
+        "gallery_anchor": "shortcut-gallery",
+        "card_aspect_ratio": "3 / 4",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 24,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 24
+      }
+    },
     "shortcut_preset_library_tgzptj": {
       "type": "shortcut-preset-library",
       "blocks": {
@@ -181,7 +220,7 @@
             "icon": "shopify://shop_images/icons-10_1.png",
             "title": "Spotify Favorites",
             "description": "A playlist of your liked songs",
-            "download_link": "https://www.icloud.com/shortcuts/62e11e0b722241efac938202f8e08177"
+            "download_link": "https://www.icloud.com/shortcuts/e6bd1bc6fdb4411f8502fd41e1d2868d"
           }
         },
         "shortcut_preset_JLbbAE": {
@@ -191,7 +230,7 @@
             "icon": "shopify://shop_images/icons-10_1.png",
             "title": "Morning Energy",
             "description": "A Spotify playlist to ease into the day",
-            "download_link": "https://www.icloud.com/shortcuts/ecda3e7977ef426686f9d7372977b7ff"
+            "download_link": "https://www.icloud.com/shortcuts/503c13ab702c4dc4b0b84b8355d54bf1"
           }
         },
         "shortcut_preset_cr3DeB": {
@@ -201,7 +240,7 @@
             "icon": "shopify://shop_images/icons-07_1.png",
             "title": "Singing in the Shower",
             "description": "A playlist of classics to sing along to",
-            "download_link": "https://www.icloud.com/shortcuts/5e57faf958994fcb8ad7e5abad9c502d"
+            "download_link": "https://www.icloud.com/shortcuts/bfa05d73c9334376ac0eed1337e70620"
           }
         },
         "shortcut_preset_bLaTjn": {
@@ -211,7 +250,7 @@
             "icon": "shopify://shop_images/icons-10_1.png",
             "title": "Soothing Playlist",
             "description": "A playlist to slow everything down",
-            "download_link": "https://www.icloud.com/shortcuts/8929b534e5b249e6a94a89778df6a666"
+            "download_link": "https://www.icloud.com/shortcuts/8baa4bec90e8400aac87e23b99951df5"
           }
         },
         "shortcut_preset_kJJPWm": {
@@ -221,7 +260,7 @@
             "icon": "shopify://shop_images/icons-10_1.png",
             "title": "Play Your Own",
             "description": "Add your own playlist",
-            "download_link": "https://www.icloud.com/shortcuts/5f22846ee23d4d6fabc3982b427b68f9"
+            "download_link": "https://www.icloud.com/shortcuts/8baa4bec90e8400aac87e23b99951df5"
           }
         },
         "shortcut_preset_VxFETy": {
@@ -231,7 +270,7 @@
             "icon": "shopify://shop_images/icons-11_1.png",
             "title": "Immersive Bath",
             "description": "Open the go-to app & keep track of time",
-            "download_link": "https://www.icloud.com/shortcuts/78489531e9be4522a6fe2e046b5a9988"
+            "download_link": "https://www.icloud.com/shortcuts/dd538b2ede924e9b9093db6b8ea26284"
           }
         },
         "shortcut_preset_kh3Xhq": {
@@ -251,7 +290,7 @@
             "icon": "shopify://shop_images/icons-03_1.png",
             "title": "Wake-up Routine",
             "description": "Report the weather & start your morning routine",
-            "download_link": "https://www.icloud.com/shortcuts/f7c76eb3b1bb4846825a39315ba7d966"
+            "download_link": "https://www.icloud.com/shortcuts/cbb18d4373ab4667969daaa06d8b27af"
           }
         },
         "shortcut_preset_VdYjHK": {
@@ -357,7 +396,9 @@
         "text_duration": 1000,
         "text_heading_width_desktop": 100,
         "text_heading_width_mobile": 100,
-        "alignment": "center",
+        "alignment": "left",
+        "fill_available_width": true,
+        "enable_show_more": true,
         "aspect_ratio": "16 / 9",
         "grid_gap": 24,
         "card_radius": 18,
@@ -366,9 +407,9 @@
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
         "background_gradient": "",
-        "padding_top_desktop": 50,
+        "padding_top_desktop": 24,
         "padding_bottom_desktop": 50,
-        "padding_top_mobile": 40,
+        "padding_top_mobile": 24,
         "padding_bottom_mobile": 40
       }
     }
@@ -376,6 +417,7 @@
   "order": [
     "main_page_RCziHE",
     "custom_section_CRaQt8",
+    "nfc_tutorials_CRaQt8",
     "shortcut_preset_library_tgzptj"
   ]
 }

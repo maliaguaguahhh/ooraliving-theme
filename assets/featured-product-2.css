@@ -121,14 +121,23 @@
 .featured-product-2__product-variant .xo-product-variant__top-name {
   padding-bottom: 0.8rem;
   color: rgba(var(--color-foreground), 0.5);
-  font-size: calc(var(--font-body-scale) * 1.4rem);
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 400;
   line-height: calc(1 + 0.4 / var(--font-body-scale));
   text-transform: uppercase;
   justify-content: center;
 }
 .featured-product-2__product-variant .xo-product-variant__value-selected {
   display: none;
+}
+.featured-product-2__product-variant .xo-product-variant__group .xo-product-variant__inner-name {
+  font-size: 1em;
+  font-weight: 400;
+}
+.featured-product-2__product-variant .xo-product-variant__group .xo-product-variant__value-selected {
+  display: inline;
+  font-size: 1em;
+  font-weight: 400;
 }
 .featured-product-2__product-variant .xo-field-select-custom__label {
   text-transform: capitalize;

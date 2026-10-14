@@ -1,0 +1,103 @@
+.oora-shipping-promise {
+  width: 100%;
+  margin-top: 1.8rem;
+  color: #2c2725;
+}
+
+.oora-shipping-promise__guarantee {
+  display: grid;
+  grid-template-columns: 2.8rem minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: center;
+  min-height: 4.6rem;
+  margin-bottom: 0.9rem;
+  padding: 0.8rem 1.1rem;
+  color: #94656c;
+  background: rgba(185, 141, 145, 0.11);
+  border: 1px solid rgba(148, 101, 108, 0.22);
+  border-radius: 1.2rem;
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+
+.oora-shipping-promise__clock {
+  display: grid;
+  place-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: rgba(185, 141, 145, 0.12);
+  border-radius: 50%;
+}
+
+.oora-shipping-promise__clock svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.oora-shipping-promise__options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid rgba(62, 49, 46, 0.14);
+  border-radius: 1.2rem;
+}
+
+.oora-shipping-promise__option {
+  min-width: 0;
+  min-height: 7.4rem;
+  padding: 1.1rem 1.2rem;
+}
+
+.oora-shipping-promise__option + .oora-shipping-promise__option {
+  border-left: 1px solid rgba(62, 49, 46, 0.1);
+}
+
+.oora-shipping-promise__topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.7rem;
+  align-items: baseline;
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+
+.oora-shipping-promise__topline b {
+  flex: none;
+  white-space: nowrap;
+}
+
+.oora-shipping-promise__free {
+  color: #527c63;
+}
+
+.oora-shipping-promise__option > span {
+  display: block;
+  margin-top: 0.6rem;
+  color: #756b68;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+
+.oora-shipping-promise > small {
+  display: block;
+  margin-top: 0.7rem;
+  color: #756b68;
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+@media (max-width: 749px) {
+  .oora-shipping-promise {
+    margin-top: 1.6rem;
+  }
+
+  .oora-shipping-promise__option {
+    min-height: 7.2rem;
+    padding: 1rem;
+  }
+}

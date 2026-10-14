@@ -8,6 +8,10 @@
   {% render 'fetured-product-content' %}
 {% endcomment %}
 
+{% if product.handle == 'tapnest' %}
+  {{ 'tapnest-product-hero.css' | asset_url | stylesheet_tag }}
+{% endif %}
+
 <div class="xo-featured-product-content">
   <div class="xo-featured-product-content__top">
     {% for block in section.blocks %}
@@ -24,9 +28,29 @@
         {% when 'title' %}
           <xo-animate xo-cascade>
             {% if product != blank %}
+              {% if product.handle == 'tapnest' %}
+                <p class="tapnest-product-hero__eyebrow">Your ritual, one tap away</p>
+              {% endif %}
               <h2 class="xo-featured-product-content__title h4 {{ style_title }}" {{ block.shopify_attributes }}>
                 {{ product.title }}
               </h2>
+              {% if product.handle == 'tapnest' %}
+                {% assign judge_me_data = product.metafields.judgeme.review_widget_data.value %}
+                {% assign judge_me_rating = judge_me_data.average_rating | default: 0 | plus: 0 %}
+                {% assign judge_me_review_count = judge_me_data.number_of_reviews | default: 0 | plus: 0 %}
+                {% if judge_me_review_count > 0 %}
+                  <a
+                    class="tapnest-product-hero__reviews"
+                    href="{{ product.url }}#judgeme_product_reviews"
+                    aria-label="Rated {{ judge_me_rating | round: 2 }} out of 5 from {{ judge_me_review_count }} reviews. View reviews."
+                  >
+                    <span class="tapnest-product-hero__stars" aria-hidden="true">★★★★★</span>
+                    <span class="tapnest-product-hero__review-copy">
+                      {{ judge_me_rating | round: 2 }} · {{ judge_me_review_count }} reviews
+                    </span>
+                  </a>
+                {% endif %}
+              {% endif %}
             {%- else -%}
               <h2 class="xo-featured-product-content__title h4 {{ style_title }}" {{ block.shopify_attributes }}>
                 {{ 'onboarding.product_title' | t }}
@@ -53,11 +77,35 @@
           <xo-animate xo-cascade>
             <div class="xo-featured-product-content__price {{ style_price }} {{ style_price_pd }}">
               <xo-product-will-change xo-unique-id="product-price-{{ section.id }}" {{ block.shopify_attributes }} xo-morph-selector="[xo-price]">
-                {% render 'price', product: product, use_variant: true %}
+                <div class="{% if product.handle == 'tapnest' %}tapnest-product-hero__price-row{% endif %}">
+                  {% render 'price', product: product, use_variant: true %}
+                  {% if product.handle == 'tapnest' %}
+                    {% assign tapnest_variant = product.selected_or_first_available_variant %}
+                    {% if tapnest_variant.compare_at_price > tapnest_variant.price %}
+                      {% assign tapnest_savings = tapnest_variant.compare_at_price
+                        | minus: tapnest_variant.price
+                        | times: 100.0
+                        | divided_by: tapnest_variant.compare_at_price
+                        | divided_by: 10.0
+                        | round
+                        | times: 10
+                      %}
+                      <span class="tapnest-product-hero__save">Save {{ tapnest_savings }}%</span>
+                    {% endif %}
+                  {% endif %}
+                </div>
                 {% if cart.taxes_included == true %}
                   <span>{{ 'products.product.price.include_tax' | t }}</span>
                 {% endif %}
               </xo-product-will-change>
+              {% if product.handle == 'tapnest' %}
+                <div class="tapnest-product-hero__free-shipping">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 6.5h11v10H3zM14 10h3.5l3.5 3.5v3H14zM7.25 19a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5ZM17.75 19a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                  </svg>
+                  <strong>Free shipping in the contiguous U.S.</strong>
+                </div>
+              {% endif %}
             </div>
           </xo-animate>
 
@@ -69,7 +117,15 @@
                 <div class="xo-featured-product-content__variant {{ style_variant }} {{ hidden_variant }} {% if product.has_only_default_variant == false %}xo-featured-product-content__variant--pd{% endif %}">
                   {%- for option in product.options_with_values -%}
                     {% if option.name == settings.product_card_color_option_name %}
-                      {% render 'product-variant', option: option, style: block.settings.variant_color_style, product: product %}
+                      {% render 'product-variant',
+                        option: option,
+                        style: block.settings.variant_color_style,
+                        product: product,
+                        enable_color_groups: block.settings.enable_color_groups,
+                        limited_edition_colors: block.settings.limited_edition_colors,
+                        limited_edition_label: block.settings.limited_edition_label,
+                        classic_shades_label: block.settings.classic_shades_label
+                      %}
                     {% else %}
                       {% render 'product-variant',
                         option: option,
@@ -84,6 +140,14 @@
               </xo-product-variants>
             </xo-animate>
           {% endunless %}
+
+          <!-- inventory status -->
+        {% when 'inventory_status' %}
+          <xo-animate xo-cascade class="xo-featured-product-content__inventory-status">
+            <xo-product-will-change xo-unique-id="inventory-status-{{ section.id }}">
+              {% render 'inventory-status', block: block, product: product %}
+            </xo-product-will-change>
+          </xo-animate>
       {% endcase %}
     {% endfor %}
   </div>
@@ -105,6 +169,13 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'buy_button' %}
+          {% liquid
+            assign current_variant = product.selected_or_first_available_variant
+            assign is_preorder = false
+            if current_variant.inventory_policy == 'continue' and current_variant.inventory_quantity <= 0
+              assign is_preorder = true
+            endif
+          %}
           <div class="xo-featured-product-content__buy-form" {{ block.shopify_attributes }}>
             <div class="xo-featured-product-content__group">
               <xo-animate xo-cascade class="xo-featured-product-content__buy-now {{ style_button_buy }}">
@@ -123,14 +194,17 @@
                 <xo-product-will-change class="shopify-payment-button__add" xo-unique-id="product-add-button-{{ section.id }}">
                   <xo-cart-add
                     class="xo-featured-product-content__add"
-                    {% if product.selected_or_first_available_variant.available == false %}
+                    {% if current_variant.available == false %}
                       xo-disabled
                     {% endif %}
                     {% if settings.cart_type == 'page' %}
                       xo-cart-redirection
                     {% endif %}
                   >
-                    {% if product.selected_or_first_available_variant.available %}
+                    {% if is_preorder %}
+                      {% assign button_text = block.settings.preorder_button_label | default: 'Pre-order' %}
+                      {% render 'button', style: 'secondary', text: button_text, size: 'md', block: true %}
+                    {% elsif current_variant.available %}
                       {% assign button_text = 'products.product.add_to_cart' | t %}
                       {% render 'button', style: 'secondary', text: button_text, size: 'md', block: true %}
                     {%- else -%}
@@ -141,7 +215,21 @@
                 </xo-product-will-change>
               </xo-animate>
             </div>
+            <xo-product-will-change xo-unique-id="featured-product-preorder-message-{{ section.id }}">
+              {% if is_preorder and block.settings.enable_preorder_message and block.settings.preorder_arrival_text != blank %}
+                <div
+                  class="xo-featured-product-content__preorder-note"
+                  style="--preorder-color: {{ block.settings.preorder_color | default: '#4f8068' }}"
+                >
+                  <span class="xo-featured-product-content__preorder-note-dot" aria-hidden="true"></span>
+                  <span>{{ block.settings.preorder_arrival_text | escape }}</span>
+                </div>
+              {% endif %}
+            </xo-product-will-change>
           </div>
+          {% if product.handle == 'tapnest' and block.settings.show_shipping_promise %}
+            {% render 'product-shipping-promise', heading: block.settings.shipping_promise_heading %}
+          {% endif %}
       {% endcase %}
     {% endfor %}
 

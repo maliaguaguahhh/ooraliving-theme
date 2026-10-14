@@ -14,6 +14,7 @@
       "blocks": {
         "image_f9hzx7": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "device_size": "desktop",
             "inherit_desktop_value_size": false,
@@ -25,6 +26,7 @@
         },
         "image_PbebKi": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "device_size": "desktop",
             "inherit_desktop_value_size": false,
@@ -41,7 +43,7 @@
       ],
       "name": "t:sections.image_with_text_style_1.presets.name",
       "settings": {
-        "layout": "reverse",
+        "layout": "default",
         "text_tag_name": "h2",
         "text_heading": "Our Story",
         "font_size_heading": "h5",
@@ -51,9 +53,11 @@
         "text_heading_width_desktop": 100,
         "text_heading_width_mobile": 100,
         "description": "<p>We are a designer startup obsessed with life's small moments that slip by unnoticed yet define how living feels. <br/><br/>We design everyday objects that matter: <strong>thoughtful enough to endure, useful without coldness, playful without waste. </strong><br/><br/>We begin the journey from TapNest. After a year of sketching, prototyping, testing, and working closely with suppliers, we finally brought it something we really proud of to life.<br/></p>",
+        "small_image": "shopify://shop_images/MD103945_v2.jpg",
         "aspect_ratio_small": "1",
         "aspect_ratio_small_width": 377,
         "aspect_ratio_small_height": 423,
+        "large_image": "shopify://shop_images/22.jpg",
         "aspect_ratio_large": "2/3",
         "aspect_ratio_large_width": 400,
         "aspect_ratio_large_height": 300,
@@ -326,8 +330,10 @@
         "layout": "page-width",
         "background_type": "image",
         "aspect_ratio_desktop": "21/9",
-        "aspect_ratio_mobile": "3/2",
+        "aspect_ratio_mobile": "4/3",
         "enable_video_looping": true,
+        "image_desktop": "shopify://shop_images/MD102600_v3.jpg",
+        "image_mobile": "shopify://shop_images/image_196.jpg",
         "video_url": "",
         "button_text": "Get TapNest",
         "button_link": "shopify://products/tapnest",

@@ -11,7 +11,13 @@
 {% liquid
   assign variant_color_style = variants_block.settings.variant_color_style
   assign variant_style = variants_block.settings.variant_style
-  assign featured_media = product.selected_or_first_available_variant.featured_media
+  assign current_variant = product.selected_or_first_available_variant
+  assign featured_media = current_variant.featured_media
+  assign is_preorder = false
+  if current_variant.inventory_policy == 'continue' and current_variant.inventory_quantity <= 0
+    assign is_preorder = true
+  endif
+  assign preorder_button_label = buy_button_block.settings.preorder_button_label | default: 'Pre-order'
 %}
 
 <xo-sticky class="xo-sticky-cart" xo-name="sticky-hidden" xo-direction="down" xo-placement="bottom">
@@ -74,14 +80,18 @@
             <xo-product-will-change xo-unique-id="sticky-product-add-cart-{{ section.id }}">
               <xo-cart-add
                 class="xo-sticky-cart__button-add"
-                {% if product.selected_or_first_available_variant.available == false %}
+                {% if current_variant.available == false %}
                   xo-disabled
                 {% endif %}
                 {% if settings.cart_type == 'page' %}
                   xo-cart-redirection
                 {% endif %}
               >
-                {%- if product.selected_or_first_available_variant.available == false -%}
+                {%- if is_preorder -%}
+                  <div class="xo-sticky-cart__button-text">
+                    {% render 'button', text: preorder_button_label, style: 'primary', loading_type: 'loader-3', size: 'lg', block: true %}
+                  </div>
+                {%- elsif current_variant.available == false -%}
                   {%- assign button_sold_out = 'products.product.sold_out' | t -%}
                   <div class="xo-sticky-cart__button-text xo-sticky-cart__button-text--sold-out">
                     {% render 'button', text: button_sold_out, style: 'primary', loading_type: 'loader-3', size: 'lg', block: true %}
@@ -102,7 +112,11 @@
           {% if product.variants.size > 1 %}
             {% if product.has_only_default_variant == false %}
               <xo-modal-trigger xo-name="variant-options-{{ product.id }}" class="xo-sticky-cart__product-variant xo-sticky-cart__product-variant--modal">
-                {% assign choose_options = 'products.product.add_to_cart' | t %}
+                {% if is_preorder %}
+                  {% assign choose_options = preorder_button_label %}
+                {% else %}
+                  {% assign choose_options = 'products.product.add_to_cart' | t %}
+                {% endif %}
                 {% render 'button', text: choose_options, style: 'primary', size: 'md', block: true %}
               </xo-modal-trigger>
             {% endif %}
@@ -111,14 +125,18 @@
               <xo-product-will-change xo-unique-id="sticky-product-add-cart-{{ section.id }}">
                 <xo-cart-add
                   class="xo-sticky-cart__button-add"
-                  {% if product.selected_or_first_available_variant.available == false %}
+                  {% if current_variant.available == false %}
                     xo-disabled
                   {% endif %}
                   {% if settings.cart_type == 'page' %}
                     xo-cart-redirection
                   {% endif %}
                 >
-                  {%- if product.selected_or_first_available_variant.available == false -%}
+                  {%- if is_preorder -%}
+                    <div class="xo-sticky-cart__button-text">
+                      {% render 'button', text: preorder_button_label, style: 'primary', loading_type: 'loader-3', size: 'md', block: true %}
+                    </div>
+                  {%- elsif current_variant.available == false -%}
                     {%- assign button_sold_out = 'products.product.sold_out' | t -%}
                     <div class="xo-sticky-cart__button-text xo-sticky-cart__button-text--sold-out">
                       {% render 'button', text: button_sold_out, style: 'primary', loading_type: 'loader-3', size: 'md', block: true %}
@@ -137,7 +155,7 @@
       </div>
     </xo-grid>
     <xo-modal xo-name="variant-options-{{ product.id }}" class="xo-sticky-cart__modal">
-      {% render 'sticky-variant-modal', product: product, variant_style: variant_style, variant_color_style: variant_color_style %}
+      {% render 'sticky-variant-modal', product: product, variant_style: variant_style, variant_color_style: variant_color_style, buy_button_block: buy_button_block %}
     </xo-modal>
   </div>
 </xo-sticky>

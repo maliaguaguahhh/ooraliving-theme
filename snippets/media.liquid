@@ -34,6 +34,9 @@
   assign image_size = image_size | default: '1100x'
 
   assign video_media = media | video_tag: image_size: image_size, loop: enable_video_looping, controls: controls, muted: muted, autoplay: autoplay, class: 'xo-video--modifier', fetchpriority: 'high'
+  if autoplay and muted
+    assign video_media = video_media | replace: '<video ', '<video webkit-playsinline="webkit-playsinline" x5-playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="false" controlslist="nodownload noplaybackrate noremoteplayback" disablepictureinpicture="disablepictureinpicture" disableremoteplayback="disableremoteplayback" '
+  endif
   assign video_media = video_media | replace: '<img', '<img alt="Image"'
 %}
 

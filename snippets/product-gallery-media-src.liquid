@@ -1,0 +1,20 @@
+{% comment %}
+  Returns a gallery-compatible source for product media.
+
+  Shopify's gallery component detects video by the file extension, so video URLs
+  are stripped of query parameters before being passed to xo-gallery-item.
+{% endcomment %}
+
+{% liquid
+  assign gallery_media_src = ''
+
+  if media.media_type == 'video'
+    assign mp4_sources = media.sources | where: 'format', 'mp4'
+    assign gallery_video_source = mp4_sources | sort: 'width' | last
+    assign gallery_media_src = gallery_video_source.url | split: '?' | first
+  elsif media.preview_image != blank
+    assign gallery_media_src = media.preview_image | image_url: width: 1600
+  endif
+
+  echo gallery_media_src
+%}

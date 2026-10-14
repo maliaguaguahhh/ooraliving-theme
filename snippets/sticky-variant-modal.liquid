@@ -8,6 +8,15 @@
   {% render 'sticky-variant-modal', product: product %}
 {% endcomment %}
 
+{% liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign is_preorder = false
+  if current_variant.inventory_policy == 'continue' and current_variant.inventory_quantity <= 0
+    assign is_preorder = true
+  endif
+  assign preorder_button_label = buy_button_block.settings.preorder_button_label | default: 'Pre-order'
+%}
+
 <div class="xo-sticky-variant-modal">
   <div class="xo-sticky-variant-modal__container{% if settings.enable_border_radius %} xo-sticky-variant-modal__container--radius{% endif %}">
     <div class="xo-sticky-variant-modal__content">
@@ -47,14 +56,18 @@
         <xo-product-will-change xo-unique-id="sticky-product-add-cart-modal-{{ section.id }}">
           <xo-cart-add
             class="xo-sticky-variant-modal__button-add"
-            {% if product.selected_or_first_available_variant.available == false %}
+            {% if current_variant.available == false %}
               xo-disabled
             {% endif %}
             {% if settings.cart_type == 'page' %}
               xo-cart-redirection
             {% endif %}
           >
-            {% if product.selected_or_first_available_variant.available %}
+            {% if is_preorder %}
+              {% assign button_text = preorder_button_label %}
+              {% assign button_text_unavailable = 'products.product.unavailable' | t %}
+              {% render 'button', style: 'primary', text: button_text, size: 'md', block: true, text_unavailable: button_text_unavailable %}
+            {% elsif current_variant.available %}
               {% assign button_text = 'products.product.add_to_cart' | t %}
               {% assign button_text_unavailable = 'products.product.unavailable' | t %}
               {% render 'button', style: 'primary', text: button_text, size: 'md', block: true, text_unavailable: button_text_unavailable %}

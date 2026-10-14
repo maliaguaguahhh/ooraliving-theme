@@ -4,6 +4,10 @@
   assign color_in_stock = block.settings.color_in_stock
   assign color_out_stock = block.settings.color_out_stock
   assign current_variant = product.selected_or_first_available_variant
+  assign is_preorder = false
+  if current_variant.inventory_policy == 'continue' and current_variant.inventory_quantity <= 0
+    assign is_preorder = true
+  endif
 
   assign progress = 100
   if low_inventory_threshold > 0
@@ -13,7 +17,17 @@
 
 {% comment %} Display content for 'default' layout {% endcomment %}
 {% capture default_content %}
-  {% if current_variant.inventory_quantity == 0 %}
+  {% if is_preorder %}
+    <div
+      class='xo-inventory-status__box xo-inventory-status__box--in-stock{% if settings.enable_border_radius %} xo-inventory-status__box--radius{% endif %}'
+      style='--color: {{ color_in_stock }}'
+    >
+      <span class='xo-inventory-status__icon xo-stack' style='--ai: center; --jc: center'>
+        {% render 'icon', name: 'inventory', size: 16, color: color_in_stock %}
+      </span>
+      <span class='xo-inventory-status__label' style='--color: {{ color_in_stock }}'>{{ block.settings.preorder_status_text | default: 'Available for pre-order' | escape }}</span>
+    </div>
+  {% elsif current_variant.inventory_quantity <= 0 %}
     <div
       class='xo-inventory-status__box xo-inventory-status__box--out-stock{% if settings.enable_border_radius %} xo-inventory-status__box--radius{% endif %}'
       style='--color: {{ color_out_stock }}'
@@ -50,7 +64,17 @@
 
 {% comment %} Display content for 'low inventory threshold' layout {% endcomment %}
 {% capture low_inventory_threshold_content %}
-  {% if current_variant.inventory_quantity == 0 %}
+  {% if is_preorder %}
+    <div
+      class='xo-inventory-status__box xo-inventory-status__box--in-stock{% if settings.enable_border_radius %} xo-inventory-status__box--radius{% endif %}'
+      style='--color: {{ color_in_stock }}'
+    >
+      <span class='xo-inventory-status__icon xo-stack' style='--ai: center; --jc: center'>
+        {% render 'icon', name: 'inventory', size: 16, color: color_in_stock %}
+      </span>
+      <span class='xo-inventory-status__label' style='--color: {{ color_in_stock }}'>{{ block.settings.preorder_status_text | default: 'Available for pre-order' | escape }}</span>
+    </div>
+  {% elsif current_variant.inventory_quantity <= 0 %}
     <div
       class='xo-inventory-status__box xo-inventory-status__box--out-stock{% if settings.enable_border_radius %} xo-inventory-status__box--radius{% endif %}'
       style='--color: {{ color_out_stock }}'
@@ -87,7 +111,17 @@
 
 {% comment %} Display content for 'always' layout {% endcomment %}
 {% capture always_content %}
-  {% if current_variant.inventory_quantity == 0 %}
+  {% if is_preorder %}
+    <div
+      class='xo-inventory-status__box xo-inventory-status__box--in-stock{% if settings.enable_border_radius %} xo-inventory-status__box--radius{% endif %}'
+      style='--color: {{ color_in_stock }}'
+    >
+      <span class='xo-inventory-status__icon xo-stack' style='--ai: center; --jc: center'>
+        {% render 'icon', name: 'inventory', size: 16, color: color_in_stock %}
+      </span>
+      <span class='xo-inventory-status__label' style='--color: {{ color_in_stock }}'>{{ block.settings.preorder_status_text | default: 'Available for pre-order' | escape }}</span>
+    </div>
+  {% elsif current_variant.inventory_quantity <= 0 %}
     <div
       class='xo-inventory-status__box xo-inventory-status__box--out-stock{% if settings.enable_border_radius %} xo-inventory-status__box--radius{% endif %}'
       style='--color: {{ color_out_stock }}'
