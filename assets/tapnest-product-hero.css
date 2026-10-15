@@ -3,6 +3,12 @@
   display: none;
 }
 
+/* Rich text metafields render one <p> per paragraph; keep a blank line between them. */
+.metafield-rich_text_field > * + * {
+  margin-top: 1.42em;
+  margin-top: 1lh;
+}
+
 .tapnest-product-hero__eyebrow {
   margin: 0 0 1.5rem;
   color: #a46f78;

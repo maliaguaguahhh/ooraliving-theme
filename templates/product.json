@@ -105,7 +105,7 @@
           "type": "collapse",
           "settings": {
             "collapse_text": "Main features",
-            "collapse_content": "<p>TapNest is a magnetic phone dock with three customizable NFC tap zones — designed to live on your mirror and fit seamlessly into your daily routine.<br/><br/>Tap once to launch your morning playlist. Tap again for your meditation app. Set your third zone for whatever comes next. Then snap your phone into place and let the ritual begin.<br/><br/>No digging through apps. No wet-handed scrolling. Just tap, snap, and go.</p>"
+            "collapse_content": "{{ product.metafields.custom.main_features | metafield_tag }}"
           }
         },
         "collapse_Q7Fhxe": {
@@ -1140,7 +1140,7 @@
                   "type": "text-2",
                   "name": "t:blocks.text_2.name",
                   "settings": {
-                    "text": "<p>For the best experience, place TapNest <strong>at chest level</strong> on your mirror for an easy, natural reach. Made for the bathroom, but not limited to it. Style it your way throughout your home.</p>",
+                    "text": "{{ product.metafields.custom.install_placement_text | metafield_tag }}",
                     "alignment": "center",
                     "padding_top_dt": 0,
                     "padding_bottom_dt": 0,
@@ -1153,7 +1153,7 @@
                   "type": "image",
                   "name": "t:blocks.image.presets.name",
                   "settings": {
-                    "image": "shopify://shop_images/oora_woman.png",
+                    "image": "{{ product.metafields.custom.install_placement_image.value }}",
                     "aspect_ratio": "auto"
                   },
                   "blocks": {}
@@ -1220,7 +1220,7 @@
                   "type": "text-2",
                   "name": "t:blocks.text_2.name",
                   "settings": {
-                    "text": "<ol><li>Wipe the surface thoroughly to remove dust, dirt, and moisture.</li><li>Ensure the surface is completely <br/>dry before installation.</li><li>Mount the dock and peel off the adhesive backing.</li><li>Press firmly onto the prepared <br/>surface for 10–15 seconds.</li><li>Let it set 20 minutes before placing your phone.</li></ol>",
+                    "text": "{{ product.metafields.custom.install_steps_text | metafield_tag }}",
                     "alignment": "left",
                     "padding_top_dt": 0,
                     "padding_bottom_dt": 0,
@@ -1233,7 +1233,7 @@
                   "type": "image",
                   "name": "t:blocks.image.presets.name",
                   "settings": {
-                    "image": "shopify://shop_images/tips_graphic_bd0f4a14-cab2-4542-9985-21d0c0b2c7ca.png",
+                    "image": "{{ product.metafields.custom.install_steps_image.value }}",
                     "aspect_ratio": "auto",
                     "image_width": 0
                   },
@@ -1301,7 +1301,7 @@
                   "type": "text-2",
                   "name": "t:blocks.text_2.name",
                   "settings": {
-                    "text": "<p>TapNest is designed to work best with Apple’s built-in Shortcuts app, so there’s nothing extra to download. Setup takes about 2–3 minutes. View tutorials, explore placement ideas, and download NFC-curated experiences <a href=\"/pages/nfc-shortcut-gallery\" target=\"_blank\" title=\"NFC Setup Guide\"><strong>HERE</strong></a></p>",
+                    "text": "{{ product.metafields.custom.install_shortcut_text | metafield_tag }}",
                     "alignment": "center",
                     "padding_top_dt": 0,
                     "padding_bottom_dt": 0,
@@ -1353,7 +1353,7 @@
         "team_member_p4ybbc": {
           "type": "team-member",
           "settings": {
-            "image": "shopify://shop_images/MD102181.jpg",
+            "image": "{{ product.metafields.custom.room_image_1.value }}",
             "aspect_ratio": "3/4",
             "name": "",
             "position": ""
@@ -1362,7 +1362,7 @@
         "team_member_tWLAWk": {
           "type": "team-member",
           "settings": {
-            "image": "shopify://shop_images/Codex_Image_Sep_2_2026_11_42_23_AM.png",
+            "image": "{{ product.metafields.custom.room_image_2.value }}",
             "aspect_ratio": "3/4",
             "name": "",
             "position": ""
@@ -1371,7 +1371,7 @@
         "team_member_UeYYpW": {
           "type": "team-member",
           "settings": {
-            "image": "shopify://shop_images/MD102487_v3_1.jpg",
+            "image": "{{ product.metafields.custom.room_image_3.value }}",
             "aspect_ratio": "3/4",
             "name": "",
             "position": ""
