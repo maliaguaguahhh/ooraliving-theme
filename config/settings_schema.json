@@ -1182,6 +1182,24 @@
     ]
   },
   {
+    "name": "Gift wrapping",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "gift_wrapping_enabled",
+        "label": "Enable gift wrapping",
+        "info": "Turn on only after the wrapping product, checkout paths, and fulfillment process are ready.",
+        "default": false
+      },
+      {
+        "type": "product",
+        "id": "gift_wrapping_product",
+        "label": "Gift wrapping product",
+        "info": "Choose a product with one variant per wrapping tier. One wrapping variant is charged once per order."
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.media.name",
     "settings": [
       {
