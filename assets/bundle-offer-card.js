@@ -132,6 +132,33 @@
     }
   };
 
+  // The card renders inside <xo-product>, so <xo-cart-add> takes its
+  // single-product path, drops the bundle flag and posts an empty /cart/add
+  // (400). Hiding the product element from this one button sends it down the
+  // bundle path, which adds both variant IDs with their own quantities.
+  const detachFromProduct = (button) => {
+    if (button.dataset.bundleOfferDetached === 'true') {
+      return;
+    }
+
+    Object.defineProperty(button, 'productEl', { value: null, configurable: true });
+    button.dataset.bundleOfferDetached = 'true';
+  };
+
+  document.addEventListener(
+    'click',
+    (event) => {
+      const button = event.target.closest('[data-bundle-offer-card] xo-cart-add');
+      if (!button) {
+        return;
+      }
+
+      syncCard(button.closest('[data-bundle-offer-card]'));
+      detachFromProduct(button);
+    },
+    true
+  );
+
   document.addEventListener('change', (event) => {
     const card = event.target.closest('[data-bundle-offer-card]');
     if (card) {
