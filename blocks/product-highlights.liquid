@@ -1,0 +1,225 @@
+{% doc %}
+Renders the product's feature highlights (custom.highlights -> product_highlight metaobjects)
+as a grid of service cards, using the same grid, column and service snippets as the hand-built
+version. Renders nothing when the product has no highlights.
+{% enddoc %}
+
+{% liquid
+  assign highlights = closest.product.metafields.custom.highlights.value
+  if highlights == blank
+    assign highlights = product.metafields.custom.highlights.value
+  endif
+%}
+
+{% if highlights != blank %}
+  {% capture content %}
+    {% for item in highlights %}
+      {% liquid
+        assign icon = item.image.value.preview_image | default: item.image.value
+        assign icon_size = item.image_size.value | default: block.settings.image_size
+        assign heading = item.title.value | escape | prepend: '<p><strong>' | append: '</strong></p>'
+        assign description = item.description | metafield_tag
+      %}
+      {% capture card %}
+        <div class="shopify-block">
+          <div class="service" style="height: 100%">
+            {% render 'service-block',
+              image: icon,
+              image_size: icon_size,
+              color_config_enable: false,
+              heading: heading,
+              content: description,
+              alignment: block.settings.alignment,
+              inherit_color_schema: block.settings.inherit_color_schema,
+              color_schema_box: block.settings.color_schema_box
+            %}
+          </div>
+        </div>
+      {% endcapture %}
+      {% render 'column-block',
+        content: card,
+        desktop_row_span: 1,
+        desktop_col_span: 1,
+        mobile_row_span: 1,
+        mobile_col_span: 1
+      %}
+    {% endfor %}
+  {% endcapture %}
+
+  {% render 'grid-block',
+    content: content,
+    desktop_col: block.settings.desktop_col,
+    tablet_col: block.settings.tablet_col,
+    mobile_col: block.settings.mobile_col,
+    auto_row: 20,
+    fixed_row: false,
+    gap: block.settings.gap,
+    col_gap_custom_desktop: block.settings.col_gap_custom_desktop,
+    col_gap_custom_mobile: block.settings.col_gap_custom_mobile,
+    row_gap_custom_desktop: block.settings.row_gap_custom_desktop,
+    row_gap_custom_mobile: block.settings.row_gap_custom_mobile
+  %}
+{% endif %}
+
+{% schema %}
+{
+  "tag": null,
+  "name": "Product highlights",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Cards come from the product's Feature highlights metafield (custom.highlights). Hidden when the product has none."
+    },
+    {
+      "type": "header",
+      "content": "Grid"
+    },
+    {
+      "type": "range",
+      "id": "desktop_col",
+      "label": "Columns on desktop",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "tablet_col",
+      "label": "Columns on tablet",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "mobile_col",
+      "label": "Columns on mobile",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "select",
+      "id": "gap",
+      "label": "t:blocks.grid.settings.gap.label",
+      "options": [
+        {
+          "value": "global",
+          "label": "t:blocks.grid.settings.gap.option_1.label"
+        },
+        {
+          "value": "custom",
+          "label": "t:blocks.grid.settings.gap.option_2.label"
+        }
+      ],
+      "default": "global"
+    },
+    {
+      "type": "range",
+      "id": "col_gap_custom_desktop",
+      "label": "Column gap (desktop)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20,
+      "visible_if": "{{ block.settings.gap == 'custom' }}"
+    },
+    {
+      "type": "range",
+      "id": "col_gap_custom_mobile",
+      "label": "Column gap (mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 14,
+      "visible_if": "{{ block.settings.gap == 'custom' }}"
+    },
+    {
+      "type": "range",
+      "id": "row_gap_custom_desktop",
+      "label": "Row gap (desktop)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20,
+      "visible_if": "{{ block.settings.gap == 'custom' }}"
+    },
+    {
+      "type": "range",
+      "id": "row_gap_custom_mobile",
+      "label": "Row gap (mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 14,
+      "visible_if": "{{ block.settings.gap == 'custom' }}"
+    },
+    {
+      "type": "header",
+      "content": "Cards"
+    },
+    {
+      "type": "select",
+      "id": "image_size",
+      "label": "Default icon size",
+      "info": "Used when a highlight has no icon size of its own.",
+      "options": [
+        {
+          "value": "sm",
+          "label": "t:blocks.service.settings.image_size.option__2.label"
+        },
+        {
+          "value": "md",
+          "label": "t:blocks.service.settings.image_size.option__3.label"
+        },
+        {
+          "value": "lg",
+          "label": "t:blocks.service.settings.image_size.option__4.label"
+        }
+      ],
+      "default": "lg"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "t:blocks.service.settings.alignment.label",
+      "options": [
+        {
+          "value": "start",
+          "label": "t:blocks.service.settings.alignment.option__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:blocks.service.settings.alignment.option__2.label"
+        },
+        {
+          "value": "end",
+          "label": "t:blocks.service.settings.alignment.option__3.label"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "checkbox",
+      "id": "inherit_color_schema",
+      "label": "t:blocks.service.settings.inherit_color_schema.label",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_schema_box",
+      "label": "t:blocks.service.settings.color_schema_box.label",
+      "default": "inverse",
+      "visible_if": "{{ block.settings.inherit_color_schema == false }}"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product highlights"
+    }
+  ]
+}
+{% endschema %}

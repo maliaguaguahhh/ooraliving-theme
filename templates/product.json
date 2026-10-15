@@ -659,10 +659,9 @@
     "custom_section_pM4t7C": {
       "type": "custom-section",
       "blocks": {
-        "grid_bGV3Uk": {
-          "type": "grid",
+        "product_highlights_Tn8wQa": {
+          "type": "product-highlights",
           "settings": {
-            "device": "mobile",
             "desktop_col": 2,
             "tablet_col": 2,
             "mobile_col": 1,
@@ -671,137 +670,12 @@
             "col_gap_custom_mobile": 14,
             "row_gap_custom_desktop": 20,
             "row_gap_custom_mobile": 14,
-            "fixed_row": false,
-            "auto_row": 20
+            "image_size": "lg",
+            "alignment": "center",
+            "inherit_color_schema": false,
+            "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
           },
-          "blocks": {
-            "column_NiywmD": {
-              "type": "column",
-              "settings": {
-                "device": "desktop",
-                "desktop_col_span": 1,
-                "desktop_row_span": 1,
-                "mobile_col_span": 1,
-                "mobile_row_span": 1
-              },
-              "blocks": {
-                "service_bU88A6": {
-                  "type": "service",
-                  "settings": {
-                    "image": "shopify://shop_images/Frame_91.png",
-                    "image_size": "lg",
-                    "color_config_enable": false,
-                    "heading": "<p><strong>Snap without Thinking</strong></p>",
-                    "heading_link": "",
-                    "content": "<p>Magsafe-style placement makes docking easy, clean and intuitive. </p>",
-                    "alignment": "center",
-                    "inherit_color_schema": false,
-                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "service_bU88A6"
-              ]
-            },
-            "column_wANiKq": {
-              "type": "column",
-              "settings": {
-                "device": "desktop",
-                "desktop_col_span": 1,
-                "desktop_row_span": 1,
-                "mobile_col_span": 1,
-                "mobile_row_span": 1
-              },
-              "blocks": {
-                "service_mpNDwh": {
-                  "type": "service",
-                  "settings": {
-                    "image": "shopify://shop_images/Frame_92.png",
-                    "image_size": "lg",
-                    "color_config_enable": false,
-                    "heading": "<p><strong>Tap to start apps</strong></p>",
-                    "heading_link": "",
-                    "content": "<p>3 NFC touch points let you  easily open an app, launch a playlist, or trigger a routine.</p>",
-                    "alignment": "center",
-                    "inherit_color_schema": false,
-                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "service_mpNDwh"
-              ]
-            },
-            "column_Ht7Ey9": {
-              "type": "column",
-              "settings": {
-                "device": "desktop",
-                "desktop_col_span": 1,
-                "desktop_row_span": 1,
-                "mobile_col_span": 1,
-                "mobile_row_span": 1
-              },
-              "blocks": {
-                "service_Rkr3DC": {
-                  "type": "service",
-                  "settings": {
-                    "image": "shopify://shop_images/Frame_90.png",
-                    "image_size": "lg",
-                    "color_config_enable": false,
-                    "heading": "<p><strong>Stress-free Installation</strong></p>",
-                    "heading_link": "",
-                    "content": "<p>3M double sided tape provides firm and easy installation without damaging your walls.</p>",
-                    "alignment": "center",
-                    "inherit_color_schema": false,
-                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "service_Rkr3DC"
-              ]
-            },
-            "column_KCrW8N": {
-              "type": "column",
-              "settings": {
-                "device": "desktop",
-                "desktop_col_span": 1,
-                "desktop_row_span": 1,
-                "mobile_col_span": 1,
-                "mobile_row_span": 1
-              },
-              "blocks": {
-                "service_PegtJJ": {
-                  "type": "service",
-                  "settings": {
-                    "image": "shopify://shop_images/Frame_89.png",
-                    "image_size": "md",
-                    "color_config_enable": false,
-                    "heading": "<p><strong>Designed to Elevate</strong></p>",
-                    "heading_link": "",
-                    "content": "<p>Warm Living colors that fit and elevate your Bathroom environments.</p>",
-                    "alignment": "center",
-                    "inherit_color_schema": false,
-                    "color_schema_box": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "service_PegtJJ"
-              ]
-            }
-          },
-          "block_order": [
-            "column_NiywmD",
-            "column_wANiKq",
-            "column_Ht7Ey9",
-            "column_KCrW8N"
-          ]
+          "blocks": {}
         },
         "ai_gen_block_c324f5c_R7Fjqr": {
           "type": "ai_gen_block_c324f5c",
@@ -894,7 +768,7 @@
         }
       },
       "block_order": [
-        "grid_bGV3Uk",
+        "product_highlights_Tn8wQa",
         "ai_gen_block_c324f5c_R7Fjqr"
       ],
       "name": "Feature icons",
