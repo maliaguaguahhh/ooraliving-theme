@@ -54,7 +54,7 @@ Renders an optional bundle offer card for product and featured product buy butto
   endfor
 %}
 
-{% if product.handle == 'tapnest' and offer_product.handle == 'tapnest' and primary_variant != blank and offer_variant != blank %}
+{% if primary_variant != blank and offer_variant != blank %}
   <details
     class="xo-bundle-offer-card"
     data-bundle-offer-card

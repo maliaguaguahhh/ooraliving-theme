@@ -8,9 +8,7 @@
   {% render 'fetured-product-content' %}
 {% endcomment %}
 
-{% if product.handle == 'tapnest' %}
-  {{ 'tapnest-product-hero.css' | asset_url | stylesheet_tag }}
-{% endif %}
+{{ 'tapnest-product-hero.css' | asset_url | stylesheet_tag }}
 
 <div class="xo-featured-product-content">
   <div class="xo-featured-product-content__top">
@@ -28,28 +26,26 @@
         {% when 'title' %}
           <xo-animate xo-cascade>
             {% if product != blank %}
-              {% if product.handle == 'tapnest' %}
-                <p class="tapnest-product-hero__eyebrow">Your ritual, one tap away</p>
+              {% if product.metafields.custom.tagline != blank %}
+                <p class="tapnest-product-hero__eyebrow">{{ product.metafields.custom.tagline | escape }}</p>
               {% endif %}
               <h2 class="xo-featured-product-content__title h4 {{ style_title }}" {{ block.shopify_attributes }}>
                 {{ product.title }}
               </h2>
-              {% if product.handle == 'tapnest' %}
-                {% assign judge_me_data = product.metafields.judgeme.review_widget_data.value %}
-                {% assign judge_me_rating = judge_me_data.average_rating | default: 0 | plus: 0 %}
-                {% assign judge_me_review_count = judge_me_data.number_of_reviews | default: 0 | plus: 0 %}
-                {% if judge_me_review_count > 0 %}
-                  <a
-                    class="tapnest-product-hero__reviews"
-                    href="{{ product.url }}#judgeme_product_reviews"
-                    aria-label="Rated {{ judge_me_rating | round: 2 }} out of 5 from {{ judge_me_review_count }} reviews. View reviews."
-                  >
-                    <span class="tapnest-product-hero__stars" aria-hidden="true">★★★★★</span>
-                    <span class="tapnest-product-hero__review-copy">
-                      {{ judge_me_rating | round: 2 }} · {{ judge_me_review_count }} reviews
-                    </span>
-                  </a>
-                {% endif %}
+              {% assign judge_me_data = product.metafields.judgeme.review_widget_data.value %}
+              {% assign judge_me_rating = judge_me_data.average_rating | default: 0 | plus: 0 %}
+              {% assign judge_me_review_count = judge_me_data.number_of_reviews | default: 0 | plus: 0 %}
+              {% if judge_me_review_count > 0 %}
+                <a
+                  class="tapnest-product-hero__reviews"
+                  href="{{ product.url }}#judgeme_product_reviews"
+                  aria-label="Rated {{ judge_me_rating | round: 2 }} out of 5 from {{ judge_me_review_count }} reviews. View reviews."
+                >
+                  <span class="tapnest-product-hero__stars" aria-hidden="true">★★★★★</span>
+                  <span class="tapnest-product-hero__review-copy">
+                    {{ judge_me_rating | round: 2 }} · {{ judge_me_review_count }} reviews
+                  </span>
+                </a>
               {% endif %}
             {%- else -%}
               <h2 class="xo-featured-product-content__title h4 {{ style_title }}" {{ block.shopify_attributes }}>
@@ -77,35 +73,26 @@
           <xo-animate xo-cascade>
             <div class="xo-featured-product-content__price {{ style_price }} {{ style_price_pd }}">
               <xo-product-will-change xo-unique-id="product-price-{{ section.id }}" {{ block.shopify_attributes }} xo-morph-selector="[xo-price]">
-                <div class="{% if product.handle == 'tapnest' %}tapnest-product-hero__price-row{% endif %}">
+                <div class="tapnest-product-hero__price-row">
                   {% render 'price', product: product, use_variant: true %}
-                  {% if product.handle == 'tapnest' %}
-                    {% assign tapnest_variant = product.selected_or_first_available_variant %}
-                    {% if tapnest_variant.compare_at_price > tapnest_variant.price %}
-                      {% assign tapnest_savings = tapnest_variant.compare_at_price
-                        | minus: tapnest_variant.price
-                        | times: 100.0
-                        | divided_by: tapnest_variant.compare_at_price
-                        | divided_by: 10.0
-                        | round
-                        | times: 10
-                      %}
-                      <span class="tapnest-product-hero__save">Save {{ tapnest_savings }}%</span>
-                    {% endif %}
+                  {% assign savings_variant = product.selected_or_first_available_variant %}
+                  {% if savings_variant.compare_at_price > savings_variant.price %}
+                    {% assign savings_percent = savings_variant.compare_at_price
+                      | minus: savings_variant.price
+                      | times: 100.0
+                      | divided_by: savings_variant.compare_at_price
+                      | divided_by: 10.0
+                      | round
+                      | times: 10
+                    %}
+                    <span class="tapnest-product-hero__save">Save {{ savings_percent }}%</span>
                   {% endif %}
                 </div>
                 {% if cart.taxes_included == true %}
                   <span>{{ 'products.product.price.include_tax' | t }}</span>
                 {% endif %}
               </xo-product-will-change>
-              {% if product.handle == 'tapnest' %}
-                <div class="tapnest-product-hero__free-shipping">
-                  <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
-                    <path d="M3 6.5h11v10H3zM14 10h3.5l3.5 3.5v3H14zM7.25 19a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5ZM17.75 19a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
-                  </svg>
-                  <strong>Free shipping in the contiguous U.S.</strong>
-                </div>
-              {% endif %}
+              {% render 'product-free-shipping-label' %}
             </div>
           </xo-animate>
 
@@ -214,7 +201,7 @@
                   </xo-cart-add>
                 </xo-product-will-change>
               </xo-animate>
-              {% if product.handle == 'tapnest' and block.settings.enable_bundle_offer %}
+              {% if block.settings.enable_bundle_offer and product.metafields.custom.bundle_offer_enabled == true %}
                 <xo-animate xo-cascade class="xo-featured-product-content__bundle-offer">
                   <xo-product-will-change xo-unique-id="bundle-offer-card-{{ section.id }}">
                     {% render 'bundle-offer-card', product: product, block: block, section_id: section.id %}
@@ -234,7 +221,7 @@
               {% endif %}
             </xo-product-will-change>
           </div>
-          {% if product.handle == 'tapnest' and block.settings.show_shipping_promise %}
+          {% if product != blank and block.settings.show_shipping_promise %}
             {% render 'product-shipping-promise', heading: block.settings.shipping_promise_heading %}
           {% endif %}
       {% endcase %}

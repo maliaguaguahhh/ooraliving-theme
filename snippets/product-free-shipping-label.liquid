@@ -1,0 +1,18 @@
+{% doc %}
+Renders the store-wide free shipping label under the product price.
+The text comes from the shop metafield custom.free_shipping_label; nothing renders when it is empty.
+
+@example
+{% render 'product-free-shipping-label' %}
+{% enddoc %}
+
+{% assign free_shipping_label = shop.metafields.custom.free_shipping_label.value %}
+
+{% if free_shipping_label != blank %}
+  <div class="tapnest-product-hero__free-shipping">
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+      <path d="M3 6.5h11v10H3zM14 10h3.5l3.5 3.5v3H14zM7.25 19a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5ZM17.75 19a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    </svg>
+    <strong>{{ free_shipping_label | escape }}</strong>
+  </div>
+{% endif %}
