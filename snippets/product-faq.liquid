@@ -1,0 +1,16 @@
+{% doc %}
+Renders a list of FAQ entries (faq_item metaobjects) as question and answer pairs.
+
+@param {object[]} items - faq_item metaobjects, e.g. product.metafields.custom.faqs.value
+@example
+{% render 'product-faq', items: product.metafields.custom.faqs.value %}
+{% enddoc %}
+
+<div class="product-faq">
+  {% for item in items %}
+    <div class="product-faq__item">
+      <p class="product-faq__question"><strong>{{ item.question.value | escape }}</strong></p>
+      {{ item.answer | metafield_tag }}
+    </div>
+  {% endfor %}
+</div>

@@ -116,10 +116,9 @@
           }
         },
         "collapse_cRztXf": {
-          "type": "collapse",
+          "type": "faq",
           "settings": {
-            "collapse_text": "FAQ",
-            "collapse_content": "<p><strong>Will TapNest fit in my space?<br/></strong>TapNest measures 7.8'' x 2.1'' x 1.1''. Make sure you have enough clear space for both the dock and your phone.<br/><br/><strong>Where can I install TapNest?<br/></strong>TapNest works best on smooth, clean, non-porous surfaces like mirrors and glossy tile. Make sure the surface is completely dry before applying.<br/><br/><strong>Does it work with my phone?<br/></strong>TapNest works best with MagSafe-compatible iPhones and cases. Other phones may require a compatible magnetic ring.</p><p><strong>Do I need to download an extra app to use the shortcuts?</strong><br/>No. TapNest is designed to work with Shortcuts, Apple’s native free app that comes preinstalled on iPhone. Follow the included guide or the <a href=\"/pages/nfc-shortcut-gallery\" target=\"_blank\" title=\"NFC Setup Guide\">tutorials</a> on our website to set up your tap zones in a few minutes. After that, a single tap can start your routine.<br/><br/><strong>Does TapNest work with Samsung or other Android phones?</strong><br/>TapNest is designed for iPhone and works best with Apple’s Shortcuts app. Many NFC-enabled Samsung Galaxy phones can also use TapNest through the built-in Modes and Routines feature in Settings, though setup and features may vary by model. Other Android phones may require a third-party NFC app. Most Android phones aren’t MagSafe-compatible, so a magnetic ring or case may be needed to attach your phone to the dock.<br/><br/><strong>How do I keep it looking fresh?<br/></strong>Wipe it with a soft, dry cloth. Keep sprays and excess water away from the NFC zones and magnetic surface, and check the adhesive occasionally in humid spaces.</p>"
+            "heading": "FAQ"
           }
         },
         "line_nB8MEt": {

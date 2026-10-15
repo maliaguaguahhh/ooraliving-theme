@@ -216,6 +216,17 @@
             {% render 'collapse', title: block.settings.collapse_text, content: block.settings.collapse_content, name: name %}
           </xo-animate>
 
+          <!-- faq -->
+        {% when 'faq' %}
+          {% assign faq_items = product.metafields.custom.faqs.value %}
+          {% if faq_items != blank %}
+            {% capture faq_content %}{% render 'product-faq', items: faq_items %}{% endcapture %}
+            {% assign name = block.settings.heading | append: forloop.index %}
+            <xo-animate xo-cascade class="xo-product-info-content__collapse" {{ block.shopify_attributes }}>
+              {% render 'collapse', title: block.settings.heading, content: faq_content, name: name %}
+            </xo-animate>
+          {% endif %}
+
           <!-- share -->
         {%- when 'share' -%}
           <xo-animate xo-cascade class="xo-product-info-content__share">
