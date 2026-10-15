@@ -102,14 +102,14 @@
           "type": "collapse",
           "settings": {
             "collapse_text": "Shipping & Returns",
-            "collapse_content": "<p><strong>Contiguous U.S. Standard Shipping:</strong></p><p>Free on orders of $42 or more to the 48 contiguous U.S. states and Washington, D.C. Estimated delivery is 5–10 business days.<br/><br/><strong>Other Destinations:</strong><br/>Shipping charges apply to orders under $42 and to Alaska, Hawaii, U.S. territories, APO/FPO addresses, Canada, and international destinations. Rates are shown at checkout.<br/><br/><strong>U.S. Express Shipping:</strong><br/>4–7 business day delivery where available.<br/><br/><strong>Shipping Email Notice:</strong><br/>We’ll send you an email with tracking information once your order has shipped. Please allow 24–72 hours for tracking updates.<br/><br/>See the detailed <a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Shipping</a> &amp; <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">Refund</a> policies here.</p>"
+            "collapse_content": "<p><strong>Contiguous U.S. Standard Shipping:</strong></p><p>Free on orders of $49 or more to the 48 contiguous U.S. states and Washington, D.C. Estimated delivery is 5–10 business days.<br/><br/><strong>Other Destinations:</strong><br/>Shipping charges apply to orders under $49 and to Alaska, Hawaii, U.S. territories, and APO/FPO addresses. Rates are shown at checkout. We are expanding shipping zones actively. Follow our social media to get the latest information.<br/><br/><strong>U.S. Express Shipping:</strong><br/>4–7 business day delivery where available.<br/><br/><strong>Shipping Email Notice:</strong><br/>We’ll send you an email with tracking information once your order has shipped. Please allow 24–72 hours for tracking updates.<br/><br/>See the detailed <a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Shipping</a> & <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">Refund</a> policies here.</p>"
           }
         },
         "collapse_cRztXf": {
           "type": "collapse",
           "settings": {
             "collapse_text": "FAQ",
-            "collapse_content": "<p><strong>Will TapNest fit in my space?<br/></strong>TapNest measures 7.8'' x 2.1'' x 1.1''. Make sure you have enough clear space for both the dock and your phone.<br/><br/><strong>Where can I install TapNest?<br/></strong>TapNest works best on smooth, clean, non-porous surfaces like mirrors and glossy tile. Make sure the surface is completely dry before applying.<br/><br/><strong>Does it work with my phone?<br/></strong>TapNest works best with MagSafe-compatible iPhones and cases. Other phones may require a compatible magnetic ring.<br/><br/><strong>How do I keep it looking fresh?<br/></strong>Wipe it with a soft, dry cloth. Keep sprays and excess water away from the NFC zones and magnetic surface, and check the adhesive occasionally in humid spaces.</p>"
+            "collapse_content": "<p><strong>Will TapNest fit in my space?<br/></strong>TapNest measures 7.8'' x 2.1'' x 1.1''. Make sure you have enough clear space for both the dock and your phone.<br/><br/><strong>Where can I install TapNest?<br/></strong>TapNest works best on smooth, clean, non-porous surfaces like mirrors and glossy tile. Make sure the surface is completely dry before applying.<br/><br/><strong>Does it work with my phone?<br/></strong>TapNest works best with MagSafe-compatible iPhones and cases. Other phones may require a compatible magnetic ring.</p><p><strong>Do I need to download an extra app to use the shortcuts?</strong><br/>No. TapNest is designed to work with Shortcuts, Apple’s native free app that comes preinstalled on iPhone. Follow the included guide or the <a href=\"/pages/nfc-shortcut-gallery\" target=\"_blank\" title=\"NFC Setup Guide\">tutorials</a> on our website to set up your tap zones in a few minutes. After that, a single tap can start your routine.<br/><br/><strong>Does TapNest work with Samsung or other Android phones?</strong><br/>TapNest is designed for iPhone and works best with Apple’s Shortcuts app. Many NFC-enabled Samsung Galaxy phones can also use TapNest through the built-in Modes and Routines feature in Settings, though setup and features may vary by model. Other Android phones may require a third-party NFC app. Most Android phones aren’t MagSafe-compatible, so a magnetic ring or case may be needed to attach your phone to the dock.<br/><br/><strong>How do I keep it looking fresh?<br/></strong>Wipe it with a soft, dry cloth. Keep sprays and excess water away from the NFC zones and magnetic surface, and check the adhesive occasionally in humid spaces.</p>"
           }
         },
         "line_nB8MEt": {
@@ -1291,7 +1291,7 @@
                   "type": "text-2",
                   "name": "t:blocks.text_2.name",
                   "settings": {
-                    "text": "<p>View tutorials, explore placement ideas, and download NFC-curated experiences <a href=\"/pages/nfc-shortcut-gallery\" target=\"_blank\" title=\"NFC Setup Guide\"><strong>HERE</strong></a></p>",
+                    "text": "<p>TapNest is designed to work best with Apple’s built-in Shortcuts app, so there’s nothing extra to download. Setup takes about 2–3 minutes. View tutorials, explore placement ideas, and download NFC-curated experiences <a href=\"/pages/nfc-shortcut-gallery\" target=\"_blank\" title=\"NFC Setup Guide\"><strong>HERE</strong></a></p>",
                     "alignment": "center",
                     "padding_top_dt": 0,
                     "padding_bottom_dt": 0,
@@ -1379,7 +1379,7 @@
       "name": "t:sections.team_member.presets.name",
       "settings": {
         "font_size_heading": "h4",
-        "heading": "See in your bathroom",
+        "heading": "See in your room",
         "col_dt": "3",
         "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
         "background_color": "",
