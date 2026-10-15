@@ -1055,7 +1055,7 @@
           "name": "t:blocks.text.name",
           "settings": {
             "text_tag_name": "h2",
-            "text_heading": "How to Install TapNest",
+            "text_heading": "Installation Instructions",
             "font_size_heading": "h4",
             "text_line_height": 1.2,
             "text_effect": "none",
