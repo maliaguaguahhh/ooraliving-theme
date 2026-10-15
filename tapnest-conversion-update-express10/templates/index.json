@@ -1,0 +1,659 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_style_2_x4qhp6": {
+      "type": "image-banner-style-2",
+      "custom_css": [
+        "@media (max-width: 767px) {.img-banner-2__box {transform: translateY(-80px); } .img-banner-2__description {font-size: 24px; } .img-banner-2__button .xo-btn__text {font-size: 14px; }}"
+      ],
+      "settings": {
+        "layout": "style-2",
+        "background_type": "image",
+        "font_size_heading": "h3",
+        "heading": "Your Phone's New Favorite Place.",
+        "description": "Meet TapNest.",
+        "button_text": "Shop Now",
+        "button_link": "shopify://products/tapnest",
+        "button_style": "primary",
+        "button_size": "md",
+        "background_image_desktop": "shopify://shop_images/MD102311_v3_Desktop.jpg",
+        "background_image_mobile": "shopify://shop_images/MD102311_v3.jpg",
+        "video_dt": "shopify://files/videos/6888.mp4",
+        "video_mb": "shopify://files/videos/6888.mp4",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "#ece0e0",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "media_video_zrirwL": {
+      "type": "media-video",
+      "disabled": true,
+      "name": "t:sections.media_video.presets.name",
+      "settings": {
+        "layout": "page-width",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_alt_text": "",
+        "color_scheme": "",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "featured_product_special_Vq8L67": {
+      "type": "featured-product-special",
+      "blocks": {
+        "title_WnLWNk": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_RdgQnr": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_liquid_KrWczM": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"free-shipping-label\">\n  Free Shipping in the Contiguous U.S.\n</div>\n\n<style>\n  .free-shipping-label {\n    margin-top: 6px;\n    color: #999999;\n    font-size: 18px;\n    font-weight: 400;\n    line-height: 1.3;\n  }\n\n  @media screen and (max-width: 749px) {\n    .free-shipping-label {\n      font-size: 14px;\n    }\n  }\n</style>"
+          }
+        },
+        "variants_hVq83B": {
+          "type": "variants",
+          "settings": {
+            "variant_style": "select",
+            "variant_color_style": "color",
+            "enable_color_groups": true,
+            "limited_edition_label": "Limited Edition",
+            "limited_edition_colors": "Dust Rose",
+            "classic_shades_label": "Classic Shades"
+          }
+        },
+        "buy_button_88TAkd": {
+          "type": "buy_button",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "quantity_picker_B4YTyH": {
+          "type": "quantity_picker",
+          "settings": {}
+        },
+        "description_6bKfDc": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_WnLWNk",
+        "price_RdgQnr",
+        "custom_liquid_KrWczM",
+        "variants_hVq83B",
+        "buy_button_88TAkd",
+        "quantity_picker_B4YTyH",
+        "description_6bKfDc"
+      ],
+      "name": "t:sections.featured_product_special.presets.name",
+      "settings": {
+        "select_product": "tapnest",
+        "hide_variants": true,
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "#f8f5f2",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 60
+      }
+    },
+    "image_with_text_style_10_8mEABG": {
+      "type": "image-with-text-style-10",
+      "custom_css": [
+        ".xo-image-with-text-style-10__container {display: none !important;}",
+        ".xo-section {height: auto !important; aspect-ratio: 16/9;}",
+        ".xo-image-with-text-style-10 {height: 100% !important; position: relative;}",
+        ".xo-section-bg-image {z-index: 0 !important;}",
+        ".xo-section-bg-image__item {min-height: 0 !important; transform: none !important; inset: 0 !important;}",
+        ".xo-section-bg-image video {width: 100% !important; height: 100% !important; object-fit: contain !important;}",
+        "@media (max-width: 767px) {.xo-section {aspect-ratio: 9/16; }}"
+      ],
+      "name": "t:sections.image_with_text_style_10.presets.name",
+      "settings": {
+        "content": "",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "#F6F4F2",
+        "background_gradient": "",
+        "background_type": "video",
+        "background_video_desktop": "shopify://files/videos/01Tap_Light.mp4",
+        "background_video_mobile": "shopify://files/videos/01Tap_Light.mp4",
+        "use_parallax": false,
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "image_with_text_style_10_ALTAbf": {
+      "type": "image-with-text-style-10",
+      "custom_css": [
+        ".xo-image-with-text-style-10__container {display: none !important;}",
+        ".xo-section {height: auto !important; aspect-ratio: 16/9;}",
+        ".xo-image-with-text-style-10 {height: 100% !important; position: relative;}",
+        ".xo-section-bg-image {z-index: 0 !important;}",
+        ".xo-section-bg-image__item {min-height: 0 !important; transform: none !important; inset: 0 !important;}",
+        ".xo-section-bg-image video {width: 100% !important; height: 100% !important; object-fit: contain !important;}",
+        "@media (max-width: 767px) {.xo-section {aspect-ratio: 10/16; }}"
+      ],
+      "name": "t:sections.image_with_text_style_10.presets.name",
+      "settings": {
+        "content": "",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "#F6F4F2",
+        "background_gradient": "",
+        "background_type": "video",
+        "background_video_desktop": "shopify://files/videos/02Snap_light.mp4",
+        "background_video_mobile": "shopify://files/videos/02Snap_light.mp4",
+        "use_parallax": false,
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "image_with_text_style_10_rpcAfp": {
+      "type": "image-with-text-style-10",
+      "custom_css": [
+        ".xo-image-with-text-style-10__container {display: none !important;}",
+        ".xo-section {height: auto !important; aspect-ratio: 16/9;}",
+        ".xo-image-with-text-style-10 {height: 100% !important; position: relative;}",
+        ".xo-section-bg-image {z-index: 0 !important;}",
+        ".xo-section-bg-image__item {min-height: 0 !important; transform: none !important; inset: 0 !important;}",
+        ".xo-section-bg-image video {width: 100% !important; height: 100% !important; object-fit: contain !important;}",
+        "@media (max-width: 767px) {.xo-section {aspect-ratio: 9/16; }}"
+      ],
+      "name": "t:sections.image_with_text_style_10.presets.name",
+      "settings": {
+        "content": "",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "#F6F4F2",
+        "background_gradient": "",
+        "background_type": "video",
+        "background_video_desktop": "shopify://files/videos/03Flow_Light.mp4",
+        "background_video_mobile": "shopify://files/videos/03Flow_Light.mp4",
+        "use_parallax": false,
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "product_specification_style_5_B9DyJ6": {
+      "type": "product-specification-style-5",
+      "custom_css": [
+        ".product-specification-5__grid > xo-animate {display: none;}",
+        "@media (min-width: 992px) {.product-specification-5__grid > xo-animate {display: none; } .product-specification-5__left {--lg: 8 !important; grid-column: 3 / span 8 !important; justify-self: center; }}"
+      ],
+      "name": "t:sections.product_specification_style_5.presets.name",
+      "settings": {
+        "layout": "style-1",
+        "text_tag_name": "h2",
+        "text_heading": "Your Space, transformed",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "image_1": "shopify://shop_images/Frame_89_19db5a5d-cfe9-4269-9321-d92d14712d95.png",
+        "image_2": "shopify://shop_images/Frame_137_649a96ba-080f-4b3e-b849-68836cf40779.jpg",
+        "comparison_default_position": 62,
+        "aspect_ratio": "3/4",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "product_specification_style_13_Y73fzK": {
+      "type": "product-specification-style-13",
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 992px) {.product-specification-13__grid > xo-animate, .product-specification-13__grid > div:nth-of-type(2) {display: none; } .product-specification-13__grid > div:first-child {--xl: 6 !important; --lg: 6 !important; grid-column: 3 / span 8 !important; justify-self: center; width: 100%; } .product-specification-13__image {max-width: 674px; margin-inline: auto; }}"
+      ],
+      "name": "t:sections.product_specification_style_13.presets.name",
+      "settings": {
+        "image_desktop": "shopify://shop_images/MD102181.jpg",
+        "image_mobile": "shopify://shop_images/MD102181.jpg",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "image_banner_style_2_Dypq4f": {
+      "type": "image-banner-style-2",
+      "custom_css": [
+        ".xo-btn {min-width: 100px; padding: 4px; border: 1px solid #fff; border-radius: 9em; background: none; color: #fff;}",
+        ".img-banner-2__description {max-width: 450px; font-size: 16px; line-height: 1.55; color: #fff;}",
+        ".img-banner-2__content {justify-content: start !important; gap: 12px; padding: 9rem 0 3.4rem !important;}",
+        ".img-banner-2__box {display: contents;}",
+        ".img-banner-2__bottom {order: 1;}",
+        ".img-banner-2__box > xo-animate:first-child {order: 2;}",
+        ".img-banner-2__box > xo-animate:last-child {order: 3; margin-top: 32rem;}"
+      ],
+      "name": "Create your own rituals",
+      "settings": {
+        "layout": "style-1",
+        "background_type": "image",
+        "font_size_heading": "h5",
+        "heading": "Your ritual, one tap away.",
+        "description": "Create custom routines for podcasts, music, and more using the iPhone Shortcuts app.",
+        "button_text": "Not sure where to start?",
+        "button_link": "shopify://pages/nfc-shortcut-gallery",
+        "button_style": "secondary",
+        "button_size": "md",
+        "background_image_desktop": "shopify://shop_images/Frame_84.png",
+        "background_image_mobile": "shopify://shop_images/Frame_84.png",
+        "color_scheme": "background-2",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "custom_section_tijzzy": {
+      "type": "custom-section",
+      "blocks": {
+        "grid_znmp8U": {
+          "type": "grid",
+          "settings": {
+            "device": "desktop",
+            "desktop_col": 1,
+            "tablet_col": 2,
+            "mobile_col": 1,
+            "gap": "global",
+            "col_gap_custom_desktop": 20,
+            "col_gap_custom_mobile": 14,
+            "row_gap_custom_desktop": 20,
+            "row_gap_custom_mobile": 14,
+            "fixed_row": false,
+            "auto_row": 20
+          },
+          "blocks": {
+            "column_TVbhnH": {
+              "type": "column",
+              "settings": {
+                "device": "desktop",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "text_2_RPU84M": {
+                  "type": "text-2",
+                  "name": "t:blocks.text_2.name",
+                  "settings": {
+                    "text": "<p>Join 1,000+ customers. <strong>Now 20% off.</strong></p>",
+                    "alignment": "center",
+                    "padding_top_dt": 0,
+                    "padding_bottom_dt": 0,
+                    "padding_top_mb": 0,
+                    "padding_bottom_mb": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_2_RPU84M"
+              ]
+            },
+            "column_DTpjJX": {
+              "type": "column",
+              "settings": {
+                "device": "desktop",
+                "desktop_col_span": 1,
+                "desktop_row_span": 1,
+                "mobile_col_span": 1,
+                "mobile_row_span": 1
+              },
+              "blocks": {
+                "button_rje48L": {
+                  "type": "button",
+                  "name": "t:blocks.button.presets.name",
+                  "settings": {
+                    "button_text": "Shop Early Bird Price",
+                    "button_link": "shopify://products/tapnest",
+                    "full_width": false,
+                    "button_style": "primary",
+                    "button_size": "sm",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "button_rje48L"
+              ]
+            }
+          },
+          "block_order": [
+            "column_TVbhnH",
+            "column_DTpjJX"
+          ]
+        }
+      },
+      "block_order": [
+        "grid_znmp8U"
+      ],
+      "name": "t:sections.custom_section.presets.name",
+      "settings": {
+        "width": "global",
+        "custom_width": 1240,
+        "height": "auto",
+        "custom_height": 50,
+        "container_gap": "global",
+        "container_gap_desktop": 30,
+        "container_gap_mobile": 20,
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "linear-gradient(180deg, rgba(245, 244, 242, 1), rgba(247, 242, 241, 1) 100%)",
+        "padding_top_desktop": 120,
+        "padding_bottom_desktop": 120,
+        "padding_top_mobile": 120,
+        "padding_bottom_mobile": 120
+      }
+    },
+    "testimonial_style_4_fkDVeW": {
+      "type": "testimonial-style-4",
+      "blocks": {
+        "testimonial_box_6Re8Ar": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>It's one of those products where you wonder how you did without it. I tap for my podcast, snap my phone in, and my whole bathroom vibe just shifted.</p>",
+            "customer_name": "Emily R., Los Angeles",
+            "image": "shopify://shop_images/image_6d01c1e1-472c-4f93-b9e7-5646bcf2717c.png"
+          }
+        },
+        "testimonial_box_V3eief": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>I use my phone for everything while getting ready — makeup tutorials, Spotify, FaceTime with friends. TapNest made it feel effortless. Strong magnet, super minimal look, and it actually stays put in a humid bathroom.</p>",
+            "customer_name": "Sophie T., New York",
+            "image": "shopify://shop_images/image2.png"
+          }
+        },
+        "testimonial_box_dARwGh": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>This is one of those products that feels obvious after you use it. I used to prop my phone against random bottles and pray it wouldn’t fall into the sink. TapNest solved that instantly.</p>",
+            "customer_name": "Rachel K., Chicago",
+            "image": "shopify://shop_images/image3.png"
+          }
+        },
+        "testimonial_box_tNF8JU": {
+          "type": "testimonial-box",
+          "settings": {
+            "content": "<p>My bathroom counter is tiny, so having my phone mounted on the mirror instead of sitting in water or clutter is such a game changer. Also perfect for shower playlists and TikTok makeup inspo.”</p>",
+            "customer_name": "Hannah L., Austin",
+            "image": "shopify://shop_images/Morning_Routine_Mirror_Selfie.png"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_box_6Re8Ar",
+        "testimonial_box_V3eief",
+        "testimonial_box_dARwGh",
+        "testimonial_box_tNF8JU"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".testimonial-box__content {font-size: 16px; line-height: 1.4;}",
+        ".testimonial-box__name {font-size: 16px;}",
+        ".testimonial-box-4__paginate xo-carousel-bullet:not([xo-active]) span {background-color: #ece0e0;}"
+      ],
+      "name": "t:sections.testimonial_style_4.presets.name",
+      "settings": {
+        "sub_heading": "See TapNest in action",
+        "autoplay_time": 3000,
+        "autoplay": "off",
+        "color_scheme": "scheme-9ed00fe4-52a9-4f35-a444-df0d35e0844e",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "image_banner_style_2_Pe67yk": {
+      "type": "image-banner-style-2",
+      "custom_css": [
+        ".img-banner-2__button .xo-btn {min-width: 120px; min-height: 24px; padding: 4px; border: 1px solid #fff; border-radius: 999px; background: transparent; color: #fff;}",
+        ".img-banner-2__description {max-width: 600px; font-size: 16px; line-height: 1.55; font-weight: 400; color: #fff; letter-spacing: 0;}",
+        ".img-banner-2__content {justify-content: flex-start !important;}",
+        ".img-banner-2__box {padding-top: 6rem !important;}",
+        ".img-banner-2__box > xo-animate:first-child {order: 2;}",
+        ".img-banner-2__box > xo-animate:last-child {order: 1;}"
+      ],
+      "settings": {
+        "layout": "style-1",
+        "background_type": "image",
+        "font_size_heading": "h2",
+        "heading": "",
+        "description": "TapNest began with a belief that the small moments matter. We wanted to create products that bring a little more ease, beauty, and intention to the routines people return to every day.",
+        "button_text": "Our Story",
+        "button_link": "shopify://pages/about-us",
+        "button_style": "primary",
+        "button_size": "md",
+        "background_image_desktop": "shopify://shop_images/MD104015_V2-2.jpg",
+        "background_image_mobile": "shopify://shop_images/MD104015_V2-2_Mobile.jpg",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "collapse_content_PmMV3m": {
+      "type": "collapse-content",
+      "blocks": {
+        "collapse_ecxTn6": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>What is TapNest?</p>",
+            "content": "<p>TapNest is a new kind of magnetic phone dock, featuring three built-in NFC touch zones. With a simple tap, you can instantly launch your favorite app, playlist, or shortcut—no searching, no scrolling. Just tap, dock, and enjoy. </p>"
+          }
+        },
+        "collapse_VFkR3z": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>Will it work with my Phone?</p>",
+            "content": "<p>TapNest is designed for <strong>MagSafe-compatible iPhones and MagSafe cases</strong>, with iOS Shortcuts enabled for the full NFC experience. Android devices are not supported at this time. <br/><br/><em>Note: For best results, avoid thick, metallic, or non-MagSafe cases, as these may affect magnetic hold or NFC sensitivity.</em></p>"
+          }
+        },
+        "collapse_ncUxWX": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>How do I set the NFC Shortcuts?</p>",
+            "content": "<p>Watch our quick <a href=\"/pages/nfc-shortcut-gallery\" target=\"_blank\" title=\"How to set up the shortcuts?\">video tutorial</a> to get started — setup only takes a few minutes. <br/><br/>If you're looking for inspiration, our <a href=\"/pages/nfc-shortcut-gallery\" target=\"_blank\" title=\"How to set up the shortcuts?\">Shortcuts Gallery</a> has plenty of ideas to get you going. </p>"
+          }
+        },
+        "collapse_VAbL78": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>Can I use TapNest without NFC?</p>",
+            "content": "<p>Absolutely. The docking feature is the one our customers reach for most — it just fits naturally into your routine. NFC takes it a step further, adding a little ease to the moments you repeat every day.</p>"
+          }
+        },
+        "collapse_i6b3pR": {
+          "type": "collapse",
+          "settings": {
+            "title": "<p>Where should I place it?</p>",
+            "content": "<p>TapNest is made for smooth bathroom mirrors, glass, or tile — ideally somewhere near your natural eye line. Just wipe the surface clean and dry before applying. <br/><br/>That said, feel free to place it anywhere the tap-and-snap experience would make your space work better for you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "collapse_ecxTn6",
+        "collapse_VFkR3z",
+        "collapse_ncUxWX",
+        "collapse_VAbL78",
+        "collapse_i6b3pR"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.xo-collapse__trigger-title {font-size: 14px; } .xo-collapse__content {font-size: 14px; }}"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "font_size_heading": "h5",
+        "heading": "<p>FAQ</p>",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "#f8f5f2",
+        "background_gradient": "",
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 90,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 80
+      }
+    },
+    "image_with_text_style_9_3TXKmK": {
+      "type": "image-with-text-style-9",
+      "name": "t:sections.image_with_text_style_9.presets.name",
+      "settings": {
+        "text_tag_name": "h2",
+        "text_heading": "A More Thoughtful way to Live.",
+        "font_size_heading": "h3",
+        "text_line_height": 1.2,
+        "text_effect": "split",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "sub_heading": "",
+        "description": "Tap, Snap, Flow",
+        "alignment_desktop": "left",
+        "alignment_mobile": "top",
+        "expand_grid": false,
+        "color_scheme": "background-2",
+        "background_color": "",
+        "background_gradient": "",
+        "background_type": "image",
+        "background_image_desktop": "shopify://shop_images/MD102181_Mobile.jpg",
+        "background_image_mobile": "shopify://shop_images/MD102181_Mobile.jpg",
+        "use_parallax": true,
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "newsletter_form_xLqPFV": {
+      "type": "newsletter-form",
+      "blocks": {
+        "heading_mteenr": {
+          "type": "heading",
+          "settings": {
+            "heading_size": "h4",
+            "heading": "<p>Subscribe to our emails</p>"
+          }
+        },
+        "sub_heading_TJWpT9": {
+          "type": "sub-heading",
+          "settings": {
+            "sub_heading": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_H8Krbc": {
+          "type": "email-form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_mteenr",
+        "sub_heading_TJWpT9",
+        "email_form_H8Krbc"
+      ],
+      "name": "t:sections.newsletter_form.presets.name",
+      "settings": {
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "linear-gradient(180deg, rgba(248, 245, 242, 1), rgba(255, 255, 255, 1) 100%)",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "1779955078ce86cec8": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_64aa9d8_Nn7Qwq": {
+          "type": "ai_gen_block_64aa9d8",
+          "settings": {
+            "target_selector": "",
+            "bar_height": 2,
+            "border_radius": 0,
+            "track_color": "#e5e5e5",
+            "bar_color": "#c87272",
+            "spacing_top": 16,
+            "spacing_top_mobile": 12
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_64aa9d8_Nn7Qwq"
+      ],
+      "settings": {}
+    },
+    "1779957730315a3073": {
+      "type": "_blocks",
+      "settings": {}
+    }
+  },
+  "order": [
+    "image_banner_style_2_x4qhp6",
+    "media_video_zrirwL",
+    "featured_product_special_Vq8L67",
+    "image_with_text_style_10_8mEABG",
+    "image_with_text_style_10_ALTAbf",
+    "image_with_text_style_10_rpcAfp",
+    "product_specification_style_5_B9DyJ6",
+    "product_specification_style_13_Y73fzK",
+    "image_banner_style_2_Dypq4f",
+    "custom_section_tijzzy",
+    "testimonial_style_4_fkDVeW",
+    "image_banner_style_2_Pe67yk",
+    "collapse_content_PmMV3m",
+    "image_with_text_style_9_3TXKmK",
+    "newsletter_form_xLqPFV",
+    "1779955078ce86cec8",
+    "1779957730315a3073"
+  ]
+}

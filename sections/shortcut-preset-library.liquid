@@ -54,6 +54,22 @@
     outline-offset: 0.4rem;
   }
 
+  #shopify-section-{{ section.id }} .shortcut-preset-library--fill .shortcut-preset-library__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: start;
+  }
+
+  #shopify-section-{{ section.id }} .shortcut-preset-library--fill .shortcut-preset-library__card {
+    max-width: none;
+    min-height: 0;
+  }
+
+  @media screen and (min-width: 750px) and (max-width: 989px) {
+    #shopify-section-{{ section.id }} .shortcut-preset-library--fill .shortcut-preset-library__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
   #shopify-section-{{ section.id }} .shortcut-preset-library__image,
   #shopify-section-{{ section.id }} .shortcut-preset-library__placeholder {
     position: absolute;
@@ -160,6 +176,9 @@
   }
 
   @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} .shortcut-preset-library--fill .shortcut-preset-library__grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
     #shopify-section-{{ section.id }} .shortcut-preset-library__heading {
       margin-bottom: 2.4rem;
     }
@@ -195,7 +214,8 @@
 </style>
 
 <section {% render 'section-attr' %}>
-  <div class="shortcut-preset-library">
+  <div class="shortcut-preset-library{% if section.settings.fill_available_width %} shortcut-preset-library--fill{% endif %}" id="shortcut-library-{{ section.id }}"{% if section.settings.enable_show_more %} data-shortcut-disclosure{% endif %}>
+    {% if section.settings.enable_show_more %}<span id="shortcut-gallery" class="xo-visually-hidden"></span>{% endif %}
     <xo-container>
       {% if section.settings.text_heading != blank %}
         <div class="{{ heading_class }}">
@@ -203,7 +223,7 @@
         </div>
       {% endif %}
 
-      <div class="shortcut-preset-library__grid">
+      <div class="shortcut-preset-library__grid" id="shortcut-grid-{{ section.id }}">
         {% for block in section.blocks %}
           {% liquid
             assign preset_image = block.settings.image
@@ -280,9 +300,21 @@
           </a>
         {% endfor %}
       </div>
+      {% if section.settings.enable_show_more %}
+        <div class="shortcut-preset-library__disclosure" hidden>
+          {% assign show_all_text = 'nfc_hub.show_all' | t: count: section.blocks.size %}
+          {% capture disclosure_attrs %}data-shortcut-toggle aria-expanded="false" aria-controls="shortcut-grid-{{ section.id }}" data-show-all="{{ show_all_text | escape }}" data-show-fewer="{{ 'nfc_hub.show_fewer' | t | escape }}"{% endcapture %}
+          {% render 'button', text: show_all_text, type: 'button', style: 'secondary', attrs: disclosure_attrs %}
+        </div>
+      {% endif %}
     </xo-container>
   </div>
 </section>
+
+{% if section.settings.enable_show_more %}
+  {{ 'nfc-shortcuts.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'nfc-shortcuts.js' | asset_url }}" defer></script>
+{% endif %}
 
 {% schema %}
 {
@@ -339,6 +371,8 @@
     { "type": "text_alignment", "id": "alignment", "label": "Alignment" },
 
     { "type": "header", "content": "Cards" },
+    { "type": "checkbox", "id": "fill_available_width", "label": "Fill available width", "info": "Equal-width cards: 3 columns on desktop, 2 on tablet, 1 on mobile.", "default": false },
+    { "type": "checkbox", "id": "enable_show_more", "label": "Show fewer cards initially", "info": "Show 4 on mobile and 6 on desktop, with a button to reveal all. All cards remain visible in the theme editor.", "default": false },
     {
       "type": "select",
       "id": "aspect_ratio",

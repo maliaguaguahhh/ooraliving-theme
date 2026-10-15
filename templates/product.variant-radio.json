@@ -92,9 +92,9 @@
           "type": "volume_discount",
           "settings": {
             "product_list": ["active-strap","airpod-case-3rd-gen","airpod-case-4th-gen","aramid","limone-case","civilian","coloros","hills-1","essential-galaxy-s25","keva-copy","banahills","matte-case","kevlar","limone","limone-case-1","limone-plyo","limone-pro","limone-styla","lion","hills"],
-            "label": "Buy 3, save 30%",
+            "label": "Buy 3, save 20%",
             "quantity": 3,
-            "discount_value": 30,
+            "discount_value": 20,
             "discount_type": "percentage",
             "highlight_text": "Best Choice",
             "highlight_background_color": "#0f61ff",

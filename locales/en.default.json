@@ -8,6 +8,17 @@
  * ------------------------------------------------------------
  */
 {
+  "nfc_hub": {
+    "tutorials_heading": "Video tutorials",
+    "browse_shortcuts": "Browse shortcuts",
+    "watch_tutorial": "Watch {{ title }}",
+    "watch_video": "Watch video",
+    "close_video": "Close video",
+    "previous_tutorial": "Previous tutorial",
+    "next_tutorial": "Next tutorial",
+    "show_all": "View all {{ count }} shortcuts",
+    "show_fewer": "Show fewer"
+  },
   "general": {
     "home": "Home",
     "back": "Back",
@@ -57,9 +68,9 @@
     "cart": {
       "view": "View my cart ({{ count }})",
       "item_added": "Item added to your cart",
-      "free_shipping_notice": "Spend more for FREE shipping",
-      "free_shipping_notice_2": "Your order now has FREE shipping!",
-      "free_shipping_progress": "Spend {{ money }} more for FREE shipping"
+      "free_shipping_notice": "Spend more for FREE shipping in the contiguous U.S.",
+      "free_shipping_notice_2": "Your order now qualifies for FREE shipping in the contiguous U.S.!",
+      "free_shipping_progress": "Spend {{ money }} more for FREE shipping in the contiguous U.S."
     },
     "share": {
       "close": "Close share",

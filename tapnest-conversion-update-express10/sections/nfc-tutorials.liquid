@@ -1,0 +1,111 @@
+{{ 'nfc-tutorials.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'nfc-tutorials.js' | asset_url }}" defer="defer"></script>
+
+<section {% render 'section-attr' %}>
+  <xo-container>
+    <nfc-tutorials class="nfc-tutorials" style="--nfc-tutorial-card-ratio: {{ section.settings.card_aspect_ratio }};">
+      <div class="nfc-tutorials__heading">
+        <h2 class="h5" id="TutorialHeading-{{ section.id }}">{% if section.settings.heading != blank %}{{ section.settings.heading | escape }}{% else %}{{ 'nfc_hub.tutorials_heading' | t }}{% endif %}</h2>
+        {% if section.settings.gallery_anchor != blank %}
+          <a class="nfc-tutorials__jump" href="#{{ section.settings.gallery_anchor | escape }}">{{ 'nfc_hub.browse_shortcuts' | t }} <span aria-hidden="true">↓</span></a>
+        {% endif %}
+      </div>
+      <div class="nfc-tutorials__rail" aria-labelledby="TutorialHeading-{{ section.id }}">
+        {% for block in section.blocks %}
+          {% liquid
+            assign video = block.settings.video
+            assign video_url = block.settings.video_url
+            assign cover = block.settings.cover_image | default: video.preview_image
+            assign fallback_url = video_url
+            if video != blank
+              assign mp4_sources = video.sources | where: 'format', 'mp4'
+              assign mp4_source = mp4_sources | first
+              if mp4_source == blank
+                assign mp4_source = video.sources | first
+              endif
+              assign fallback_url = mp4_source.url
+            endif
+            assign title = block.settings.title
+            if title == blank
+              assign title = 'nfc_hub.watch_video' | t
+            endif
+          %}
+          <div class="nfc-tutorials__item" {{ block.shopify_attributes }}>
+            <a class="nfc-tutorials__card" {% if fallback_url != blank %}href="{{ fallback_url }}" data-nfc-open{% else %}aria-disabled="true"{% endif %} aria-label="{{ 'nfc_hub.watch_tutorial' | t: title: title | escape }}" data-nfc-title="{{ title | escape }}">
+              <span class="nfc-tutorials__cover{% if cover == blank %} nfc-tutorials__cover--empty{% endif %}">
+                {% if cover != blank %}
+                  {{ cover | image_url: width: 800 | image_tag: loading: 'lazy', widths: '320, 480, 640, 800', sizes: '(min-width: 750px) 360px, 78vw', alt: '' }}
+                {% endif %}
+                <span class="nfc-tutorials__play" aria-hidden="true">{% render 'icon', name: 'play', size: '2rem' %}</span>
+              </span>
+              <span class="nfc-tutorials__title">{{ title | escape }}</span>
+            </a>
+            <template data-nfc-media>
+              {% if video != blank %}
+                {{ video | video_tag: controls: true, autoplay: false, playsinline: true, preload: 'none' }}
+              {% elsif video_url != blank %}
+                {% if video_url.type == 'youtube' %}
+                  <iframe src="https://www.youtube-nocookie.com/embed/{{ video_url.id }}?autoplay=1&amp;playsinline=1&amp;rel=0" title="{{ title | escape }}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+                {% elsif video_url.type == 'vimeo' %}
+                  <iframe src="https://player.vimeo.com/video/{{ video_url.id }}?autoplay=1" title="{{ title | escape }}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+                {% endif %}
+              {% endif %}
+            </template>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="nfc-tutorials__navigation" hidden>
+        <button type="button" data-nfc-prev aria-label="{{ 'nfc_hub.previous_tutorial' | t }}">{% render 'icon', name: 'arrow-left', size: '2rem' %}</button>
+        <button type="button" data-nfc-next aria-label="{{ 'nfc_hub.next_tutorial' | t }}">{% render 'icon', name: 'arrow-right', size: '2rem' %}</button>
+      </div>
+      <dialog class="nfc-tutorials__dialog" aria-labelledby="TutorialDialogTitle-{{ section.id }}">
+        <div class="nfc-tutorials__dialog-header">
+          <h2 id="TutorialDialogTitle-{{ section.id }}" class="nfc-tutorials__dialog-title"></h2>
+          <button class="nfc-tutorials__close" type="button" data-nfc-close aria-label="{{ 'nfc_hub.close_video' | t }}">{% render 'icon', name: 'close', size: '2.4rem' %}</button>
+        </div>
+        <div class="nfc-tutorials__player"></div>
+      </dialog>
+    </nfc-tutorials>
+  </xo-container>
+</section>
+
+{% schema %}
+{
+  "name": "NFC tutorials",
+  "tag": "div",
+  "max_blocks": 30,
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Video tutorials" },
+    { "type": "text", "id": "gallery_anchor", "label": "Shortcut gallery anchor", "default": "shortcut-gallery" },
+    {
+      "type": "select",
+      "id": "card_aspect_ratio",
+      "label": "Tutorial card aspect ratio",
+      "options": [
+        { "value": "1 / 1", "label": "Square (1:1)" },
+        { "value": "16 / 9", "label": "Landscape (16:9)" },
+        { "value": "2 / 3", "label": "Portrait (2:3)" },
+        { "value": "3 / 4", "label": "Portrait (3:4)" }
+      ],
+      "default": "3 / 4"
+    },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme" },
+    { "type": "number", "id": "padding_top_desktop", "label": "Top padding desktop", "default": 24 },
+    { "type": "number", "id": "padding_bottom_desktop", "label": "Bottom padding desktop", "default": 32 },
+    { "type": "number", "id": "padding_top_mobile", "label": "Top padding mobile", "default": 16 },
+    { "type": "number", "id": "padding_bottom_mobile", "label": "Bottom padding mobile", "default": 24 }
+  ],
+  "blocks": [{
+    "type": "tutorial",
+    "name": "Tutorial",
+    "settings": [
+      { "type": "text", "id": "title", "label": "Title" },
+      { "type": "video", "id": "video", "label": "Shopify video" },
+      { "type": "video_url", "id": "video_url", "label": "YouTube or Vimeo video", "accept": ["youtube", "vimeo"], "info": "Used when no Shopify video is selected." },
+      { "type": "image_picker", "id": "cover_image", "label": "Cover image" }
+    ]
+  }],
+  "presets": [{ "name": "NFC tutorials" }]
+}
+{% endschema %}

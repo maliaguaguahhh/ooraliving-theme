@@ -2,6 +2,17 @@
   width: 100%;
   height: 100%;
 }
+.featured-product-media .xo-embed-responsive,
+.featured-product-media xo-intersection-video,
+.featured-product-media video,
+.featured-product-media iframe {
+  width: 100%;
+  height: 100%;
+}
+.featured-product-media video,
+.featured-product-media iframe {
+  object-fit: cover;
+}
 .featured-product-media .xo-image {
   width: 100%;
   height: 100%;

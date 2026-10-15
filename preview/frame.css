@@ -1,0 +1,15 @@
+/* Local preview frame only: theme settings normally supplied by Shopify. */
+@font-face{font-family:Poppins;font-weight:400;src:url('https://ooraliving.com/cdn/fonts/poppins/poppins_n4.0ba78fa5af9b0e1a374041b3ceaadf0a43b41362.woff2')}
+@font-face{font-family:Poppins;font-weight:600;src:url('https://ooraliving.com/cdn/fonts/poppins/poppins_n6.aa29d4918bc243723d56b59572e18228ed0786f6.woff2')}
+:root{--font-body-family:Poppins,sans-serif;--font-heading-family:Poppins,sans-serif;--font-body-style:normal;--font-heading-style:normal;--font-body-weight-bold:400;--font-heading-weight:600;--font-body-scale:1;--font-heading-3-scale:1;--font-heading-5-scale:1;--font-heading-6-scale:1;--font-body-size:1.5rem;--font-body-line-height:1.6;--color-background:247,242,241;--color-foreground:44,33,32;--color-accent:174,130,128;--color-button:174,130,128;--color-button-label:255,255,255;--color-secondary-button:255,255,255;--color-secondary-button-label:174,130,128;--xo-container-width:1400px;--xo-container-gap:4;--xo-container-gap-mobile:2;--color-border:200,186,181;--font-heading-3-line-height:1.15;--font-heading-3-mobile-line-height:1.2;--font-heading-5-line-height:1.2;--font-heading-5-mobile-line-height:1.2}
+body{margin:0;background:#f7f2f1;color:#2c2120;font-family:Poppins,sans-serif;font-weight:400}
+.preview-note{font:12px/1.5 system-ui;padding:8px 20px;background:#efe5e3;text-align:center}.preview-note a{color:inherit;text-decoration:underline}
+.preview-header{height:80px;display:flex;justify-content:space-between;align-items:center;margin:0 auto;padding:0 40px;max-width:1400px}.preview-header>a{font-size:36px;font-weight:600;color:inherit;letter-spacing:-3px}.preview-header span{font-size:14px}
+.preview-footer{text-align:center;padding:48px 20px;border-top:1px solid #decfcb}
+.xo-section{padding-top:calc(var(--pt_dt,24)*1px);padding-bottom:calc(var(--pb_dt,24)*1px)}
+.main-page__heading{text-align:center}.main-page__content{text-align:center;max-width:880px;margin:20px auto 0}.main-page .xo-container{max-width:100%}
+xo-animate,xo-text{display:block}xo-animate{opacity:1!important;transform:none!important}
+.xo-btn{padding:14px 24px;cursor:pointer;border:1px solid #ae8280;border-radius:30px;background:transparent;color:#785351;font:inherit}.xo-btn__loading{display:none}.xo-btn__text{transform:none!important}.xo-btn__text:after{display:none!important}
+.xo-btn__text{color:inherit!important}
+#shortcut-gallery{scroll-margin-top:24px}
+@media(max-width:749px){.preview-header{height:64px;padding:0 20px}.preview-header span{display:none}.xo-section{padding-top:calc(var(--pt_mb,16)*1px);padding-bottom:calc(var(--pb_mb,16)*1px)}.main-page__content{font-size:14px}}

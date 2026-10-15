@@ -1,0 +1,35 @@
+{% comment %}
+  Renders grouped color variant options for product detail pages.
+{% endcomment %}
+
+{% assign selected_value_name = option.selected_value | strip | downcase | prepend: '|' | append: '|' %}
+{% assign limited_edition_options = limited_edition_options | strip %}
+{% assign classic_shade_options = classic_shade_options | strip %}
+
+{% if limited_edition_options != blank %}
+  <div class="xo-product-variant__group">
+    <div class="xo-product-variant__inner-name">
+      <span>{{ limited_edition_label }}</span>
+      {% if normalized_limited_edition_colors contains selected_value_name %}
+        <span class="xo-product-variant__value-selected">{{ option.selected_value }}</span>
+      {% endif %}
+    </div>
+    <div class="xo-product-variant__inner-value">
+      {{ limited_edition_options }}
+    </div>
+  </div>
+{% endif %}
+
+{% if classic_shade_options != blank %}
+  <div class="xo-product-variant__group">
+    <div class="xo-product-variant__inner-name">
+      <span>{{ classic_shades_label }}</span>
+      {% unless normalized_limited_edition_colors contains selected_value_name %}
+        <span class="xo-product-variant__value-selected">{{ option.selected_value }}</span>
+      {% endunless %}
+    </div>
+    <div class="xo-product-variant__inner-value">
+      {{ classic_shade_options }}
+    </div>
+  </div>
+{% endif %}

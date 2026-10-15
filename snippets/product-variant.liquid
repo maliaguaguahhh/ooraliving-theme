@@ -4,12 +4,33 @@
   Accepts:
   - style: {String} The style of the radio buttons. Accepts 'radio' | 'boxed' | 'select' | 'color'
   - option: {Object} The product variant option to render.
+  - enable_color_groups: {Boolean} Whether to group color variants into edition groups (optional)
+  - limited_edition_colors: {String} Comma-separated color values that should appear in the limited edition group (optional)
+  - limited_edition_label: {String} Limited edition group label (optional)
+  - classic_shades_label: {String} Classic shades group label (optional)
   - select_custom_popover_name_suffix: {String} Suffix for popover name (optional)
   Usage:
   {% render 'product-variant', option: option %}
 {% endcomment %}
 
 {% assign placement = placement | default: 'bottom-left' %}
+{% if enable_color_groups == nil %}
+  {% assign enable_color_groups = true %}
+{% endif %}
+{% assign limited_edition_label = limited_edition_label | default: 'Limited Edition' %}
+{% assign classic_shades_label = classic_shades_label | default: 'Classic Shades' %}
+{% assign normalized_limited_edition_colors = '' %}
+{% assign limited_edition_colors_raw = limited_edition_colors | default: 'Dust Rose' %}
+
+{% if limited_edition_colors_raw != blank %}
+  {% assign limited_edition_colors_list = limited_edition_colors_raw | split: ',' %}
+  {% for color_name in limited_edition_colors_list %}
+    {% assign normalized_color_name = color_name | strip | downcase %}
+    {% if normalized_color_name != blank %}
+      {% assign normalized_limited_edition_colors = normalized_limited_edition_colors | append: '|' | append: normalized_color_name | append: '|' %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 
 <div class="xo-product-variant">
   {% if style == 'select' %}
@@ -40,45 +61,141 @@
 
   {% elsif style == 'color' %}
     <div class="xo-product-variant__inner">
-      <div class="xo-product-variant__inner-name">
-        <span>{{ option.name }}</span>
-        <span class="xo-product-variant__value-selected">{{ option.selected_value }}</span>
-      </div>
-      <div class="xo-product-variant__inner-value">
-        {% for value in option.values %}
-          {% render 'field-color',
-            style: style,
-            option: option,
-            name: option.name,
-            value: value,
-            label: value,
-            image: value.swatch.image,
-            use_image: true,
-            use_with: 'product-variant'
-          %}
-        {% endfor %}
-      </div>
+      {% if enable_color_groups and normalized_limited_edition_colors != blank %}
+        {% capture limited_edition_options %}
+          {% for value in option.values %}
+            {% assign value_name = value.name | default: value %}
+            {% assign normalized_value_name = value_name | strip | downcase | prepend: '|' | append: '|' %}
+            {% if normalized_limited_edition_colors contains normalized_value_name %}
+              {% render 'field-color',
+                style: style,
+                option: option,
+                name: option.name,
+                value: value,
+                label: value,
+                image: value.swatch.image,
+                use_image: true,
+                use_with: 'product-variant'
+              %}
+            {% endif %}
+          {% endfor %}
+        {% endcapture %}
+        {% capture classic_shade_options %}
+          {% for value in option.values %}
+            {% assign value_name = value.name | default: value %}
+            {% assign normalized_value_name = value_name | strip | downcase | prepend: '|' | append: '|' %}
+            {% unless normalized_limited_edition_colors contains normalized_value_name %}
+              {% render 'field-color',
+                style: style,
+                option: option,
+                name: option.name,
+                value: value,
+                label: value,
+                image: value.swatch.image,
+                use_image: true,
+                use_with: 'product-variant'
+              %}
+            {% endunless %}
+          {% endfor %}
+        {% endcapture %}
+
+        {% render 'product-variant-color-groups',
+          limited_edition_options: limited_edition_options,
+          classic_shade_options: classic_shade_options,
+          limited_edition_label: limited_edition_label,
+          classic_shades_label: classic_shades_label,
+          option: option,
+          normalized_limited_edition_colors: normalized_limited_edition_colors
+        %}
+      {% else %}
+        <div class="xo-product-variant__inner-name">
+          <span>{{ option.name }}</span>
+          <span class="xo-product-variant__value-selected">{{ option.selected_value }}</span>
+        </div>
+        <div class="xo-product-variant__inner-value">
+          {% for value in option.values %}
+            {% render 'field-color',
+              style: style,
+              option: option,
+              name: option.name,
+              value: value,
+              label: value,
+              image: value.swatch.image,
+              use_image: true,
+              use_with: 'product-variant'
+            %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
   {%- elsif style == 'variant_image' -%}
     <div class="xo-product-variant__inner">
-      <div class="xo-product-variant__inner-name">
-        <span>{{ option.name }}</span>
-        <span class="xo-product-variant__value-selected">{{ option.selected_value }}</span>
-      </div>
-      <div class="xo-product-variant__inner-value">
-        {% for value in option.values %}
-          {% render 'field-color',
-            style: style,
-            option: option,
-            name: option.name,
-            value: value,
-            label: value,
-            image: value.variant.featured_image,
-            use_image: true,
-            use_with: 'product-variant'
-          %}
-        {% endfor %}
-      </div>
+      {% if enable_color_groups and normalized_limited_edition_colors != blank %}
+        {% capture limited_edition_options %}
+          {% for value in option.values %}
+            {% assign value_name = value.name | default: value %}
+            {% assign normalized_value_name = value_name | strip | downcase | prepend: '|' | append: '|' %}
+            {% if normalized_limited_edition_colors contains normalized_value_name %}
+              {% render 'field-color',
+                style: style,
+                option: option,
+                name: option.name,
+                value: value,
+                label: value,
+                image: value.variant.featured_image,
+                use_image: true,
+                use_with: 'product-variant'
+              %}
+            {% endif %}
+          {% endfor %}
+        {% endcapture %}
+        {% capture classic_shade_options %}
+          {% for value in option.values %}
+            {% assign value_name = value.name | default: value %}
+            {% assign normalized_value_name = value_name | strip | downcase | prepend: '|' | append: '|' %}
+            {% unless normalized_limited_edition_colors contains normalized_value_name %}
+              {% render 'field-color',
+                style: style,
+                option: option,
+                name: option.name,
+                value: value,
+                label: value,
+                image: value.variant.featured_image,
+                use_image: true,
+                use_with: 'product-variant'
+              %}
+            {% endunless %}
+          {% endfor %}
+        {% endcapture %}
+
+        {% render 'product-variant-color-groups',
+          limited_edition_options: limited_edition_options,
+          classic_shade_options: classic_shade_options,
+          limited_edition_label: limited_edition_label,
+          classic_shades_label: classic_shades_label,
+          option: option,
+          normalized_limited_edition_colors: normalized_limited_edition_colors
+        %}
+      {% else %}
+        <div class="xo-product-variant__inner-name">
+          <span>{{ option.name }}</span>
+          <span class="xo-product-variant__value-selected">{{ option.selected_value }}</span>
+        </div>
+        <div class="xo-product-variant__inner-value">
+          {% for value in option.values %}
+            {% render 'field-color',
+              style: style,
+              option: option,
+              name: option.name,
+              value: value,
+              label: value,
+              image: value.variant.featured_image,
+              use_image: true,
+              use_with: 'product-variant'
+            %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
   {% else %}
     <div class="xo-product-variant__inner">

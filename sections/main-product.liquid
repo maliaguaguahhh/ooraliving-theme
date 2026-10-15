@@ -319,6 +319,31 @@
             }
           ],
           "default": "color"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_color_groups",
+          "label": "Group color swatches",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "limited_edition_label",
+          "label": "Limited edition label",
+          "default": "Limited Edition"
+        },
+        {
+          "type": "textarea",
+          "id": "limited_edition_colors",
+          "label": "Limited edition colors",
+          "info": "Comma-separated color option values, for example: Dust Rose, Stone.",
+          "default": "Dust Rose"
+        },
+        {
+          "type": "text",
+          "id": "classic_shades_label",
+          "label": "Classic shades label",
+          "default": "Classic Shades"
         }
       ]
     },
@@ -340,6 +365,74 @@
           "label": "t:sections.main_product.blocks.buy_button.show_gift_card_recipient.label",
           "info": "t:sections.main_product.blocks.buy_button.show_gift_card_recipient.info",
           "default": false
+        },
+        {
+          "type": "header",
+          "content": "Bundle offer"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_bundle_offer",
+          "label": "Enable bundle offer",
+          "default": false
+        },
+        {
+          "type": "product",
+          "id": "bundle_offer_product",
+          "label": "Bundle product",
+          "info": "Leave blank to add another of the current product."
+        },
+        {
+          "type": "image_picker",
+          "id": "bundle_offer_image",
+          "label": "Bundle image"
+        },
+        {
+          "type": "range",
+          "id": "bundle_offer_discount_percent",
+          "min": 0,
+          "max": 50,
+          "step": 1,
+          "unit": "%",
+          "label": "Displayed discount",
+          "default": 15
+        },
+        {
+          "type": "text",
+          "id": "bundle_offer_summary",
+          "label": "Collapsed text",
+          "default": "Add another and save 15%"
+        },
+        {
+          "type": "text",
+          "id": "bundle_offer_badge",
+          "label": "Badge",
+          "default": "Bundle offer"
+        },
+        {
+          "type": "text",
+          "id": "bundle_offer_heading",
+          "label": "Heading",
+          "default": "Add another for 15% off?"
+        },
+        {
+          "type": "textarea",
+          "id": "bundle_offer_body",
+          "label": "Body",
+          "default": "Another room, another color, or a gift."
+        },
+        {
+          "type": "text",
+          "id": "bundle_offer_selector_label",
+          "label": "Variant selector label",
+          "default": "Choose your second item"
+        },
+        {
+          "type": "text",
+          "id": "bundle_offer_cta_text",
+          "label": "Button text",
+          "info": "Use [price] to show the discounted second item price.",
+          "default": "+ Add a second - [price]"
         }
       ]
     },

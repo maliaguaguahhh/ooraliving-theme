@@ -1,0 +1,33 @@
+{{ 'product-shipping-promise.css' | asset_url | stylesheet_tag }}
+
+<div class="oora-shipping-promise" aria-label="Shipping options">
+  <div class="oora-shipping-promise__guarantee">
+    <span class="oora-shipping-promise__clock" aria-hidden="true">
+      <svg viewBox="0 0 24 24" role="img">
+        <circle cx="12" cy="12" r="8"></circle>
+        <path d="M12 7v5l3 2"></path>
+      </svg>
+    </span>
+    <strong>Guaranteed to ship within 24–48 hours</strong>
+  </div>
+
+  <div class="oora-shipping-promise__options">
+    <div class="oora-shipping-promise__option">
+      <div class="oora-shipping-promise__topline">
+        <strong>Standard</strong>
+        <b class="oora-shipping-promise__free">FREE</b>
+      </div>
+      <span>5–10 business days</span>
+    </div>
+
+    <div class="oora-shipping-promise__option">
+      <div class="oora-shipping-promise__topline">
+        <strong>Express</strong>
+        <b>$10.00</b>
+      </div>
+      <span>4–7 business days</span>
+    </div>
+  </div>
+
+  <small>Contiguous U.S. estimates shown. Other destinations may vary.</small>
+</div>

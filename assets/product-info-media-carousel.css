@@ -6,6 +6,17 @@
   width: 100%;
   height: 100%;
 }
+.xo-product-info-media-carousel .xo-embed-responsive,
+.xo-product-info-media-carousel xo-intersection-video,
+.xo-product-info-media-carousel video,
+.xo-product-info-media-carousel iframe {
+  width: 100%;
+  height: 100%;
+}
+.xo-product-info-media-carousel video,
+.xo-product-info-media-carousel iframe {
+  object-fit: cover;
+}
 
 .xo-product-info-media-carousel__image {
   height: 100%;

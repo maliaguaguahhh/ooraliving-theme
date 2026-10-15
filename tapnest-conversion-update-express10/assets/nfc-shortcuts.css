@@ -1,0 +1,4 @@
+[data-shortcut-disclosure] { scroll-margin-top: 10rem; }
+[data-shortcut-disclosure] .shortcut-preset-library__card[hidden],
+[data-shortcut-disclosure] .shortcut-preset-library__disclosure[hidden] { display: none !important; }
+[data-shortcut-disclosure] .shortcut-preset-library__disclosure { text-align: center; margin-top: 2.4rem; }

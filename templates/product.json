@@ -23,14 +23,18 @@
         "custom_liquid_nckBpb": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"free-shipping-label\">\n  Free US Shipping Included\n</div>\n\n<style>\n  .free-shipping-label {\n    margin-top: 6px;\n    color: #999999;\n    font-size: 18px;\n    font-weight: 400;\n    line-height: 1.3;\n  }\n\n  @media screen and (max-width: 749px) {\n    .free-shipping-label {\n      font-size: 14px;\n    }\n  }\n</style>"
+            "custom_liquid": "<div class=\"free-shipping-label\">\n  Free Shipping in the Contiguous U.S.\n</div>\n\n<style>\n  .free-shipping-label {\n    margin-top: 6px;\n    color: #999999;\n    font-size: 18px;\n    font-weight: 400;\n    line-height: 1.3;\n  }\n\n  @media screen and (max-width: 749px) {\n    .free-shipping-label {\n      font-size: 14px;\n    }\n  }\n</style>"
           }
         },
         "ca89121c-8974-4f5c-852d-875abeb6041c": {
           "type": "variants",
           "settings": {
             "variant_style": "radio",
-            "variant_color_style": "color"
+            "variant_color_style": "color",
+            "enable_color_groups": true,
+            "limited_edition_label": "Limited Edition",
+            "limited_edition_colors": "Dust Rose",
+            "classic_shades_label": "Classic Shades"
           }
         },
         "inventory_status_PjEGiM": {
@@ -47,7 +51,17 @@
           "type": "buy_button",
           "settings": {
             "show_dynamic_checkout": true,
-            "show_gift_card_recipient": false
+            "show_gift_card_recipient": false,
+            "enable_bundle_offer": true,
+            "bundle_offer_product": "",
+            "bundle_offer_image": "",
+            "bundle_offer_discount_percent": 15,
+            "bundle_offer_summary": "Add another and save 15%",
+            "bundle_offer_badge": "Bundle offer",
+            "bundle_offer_heading": "Add another for 15% off?",
+            "bundle_offer_body": "Another room, another color, or a gift.",
+            "bundle_offer_selector_label": "Choose your second item",
+            "bundle_offer_cta_text": "+ Add a second - [price]"
           }
         },
         "judge_me_reviews_preview_badge_C4Ey6B": {
@@ -92,7 +106,7 @@
           "type": "collapse",
           "settings": {
             "collapse_text": "Shipping & Returns",
-            "collapse_content": "<p><strong>US Standard Shipping:</strong> 5-10 business day delivery.<br/><br/><strong>Shipping Email Notice:</strong> We will send you an email with the tracking number once your order has been shipped<br/><br/><strong>Global Standard Shipping:</strong> 8-15 business day delivery. Some countries in Middle East, Southeast Asia and Latin America might take up to 15-25 business days.<br/><br/>We offer a <strong>14-day return policy</strong> for a full refund or exchange, and complimentary return shipping on any defective or damaged items.</p>"
+            "collapse_content": "<p><strong>Contiguous U.S. Standard Shipping:</strong></p><p>Free on orders of $42 or more to the 48 contiguous U.S. states and Washington, D.C. Estimated delivery is 5–10 business days.<br/><br/><strong>Other Destinations:</strong><br/>Shipping charges apply to orders under $42 and to Alaska, Hawaii, U.S. territories, APO/FPO addresses, Canada, and international destinations. Rates are shown at checkout.<br/><br/><strong>U.S. Express Shipping:</strong><br/>4–7 business day delivery where available.<br/><br/><strong>Shipping Email Notice:</strong><br/>We’ll send you an email with tracking information once your order has shipped. Please allow 24–72 hours for tracking updates.<br/><br/>See the detailed <a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Shipping</a> &amp; <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">Refund</a> policies here.</p>"
           }
         },
         "collapse_cRztXf": {
@@ -1335,7 +1349,8 @@
           "settings": {
             "aspect_ratio": "auto",
             "name": "",
-            "position": ""
+            "position": "",
+            "image": "shopify://shop_images/MD102181.jpg"
           }
         },
         "team_member_tWLAWk": {
@@ -1343,7 +1358,8 @@
           "settings": {
             "aspect_ratio": "auto",
             "name": "",
-            "position": ""
+            "position": "",
+            "image": "shopify://shop_images/Codex_Image_Sep_2_2026_11_42_23_AM.png"
           }
         },
         "team_member_UeYYpW": {
@@ -1351,7 +1367,8 @@
           "settings": {
             "aspect_ratio": "auto",
             "name": "",
-            "position": ""
+            "position": "",
+            "image": "shopify://shop_images/MD102487_v3_1.jpg"
           }
         }
       },

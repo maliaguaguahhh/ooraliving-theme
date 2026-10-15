@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TapNest Product Trust Preview</title>
+  <style>
+    :root {
+      --ink: #2c2928;
+      --muted: #7b7471;
+      --line: rgba(62, 49, 46, .14);
+      --paper: #f7f2f1;
+      --white: #fffdfc;
+      --rose: #b98d91;
+      --rose-dark: #8e6268;
+      --green: #49705a;
+      --shadow: 0 18px 60px rgba(74, 53, 50, .12);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { color-scheme: light; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #ebe6e4;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    button, summary { font: inherit; }
+
+    .preview-bar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 62px;
+      padding: 10px 18px;
+      background: rgba(255, 253, 252, .92);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .preview-title {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .preview-title span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .viewport-switch {
+      display: flex;
+      gap: 4px;
+      padding: 4px;
+      border-radius: 999px;
+      background: #eee8e6;
+    }
+
+    .viewport-switch button {
+      min-height: 34px;
+      padding: 0 14px;
+      color: #6c6260;
+      background: transparent;
+      border: 0;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .viewport-switch button[aria-pressed="true"] {
+      color: var(--ink);
+      background: var(--white);
+      box-shadow: 0 2px 9px rgba(72, 54, 51, .11);
+    }
+
+    .stage {
+      width: min(1440px, calc(100% - 36px));
+      margin: 24px auto 54px;
+      overflow: hidden;
+      background: var(--paper);
+      border-radius: 26px;
+      box-shadow: var(--shadow);
+      transition: width .28s ease, border-radius .28s ease;
+    }
+
+    .stage.is-mobile {
+      width: min(390px, calc(100% - 20px));
+      border-radius: 34px;
+    }
+
+    .announcement {
+      padding: 10px 18px;
+      color: #fff;
+      background: var(--rose-dark);
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .04em;
+    }
+
+    .site-header {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      min-height: 74px;
+      padding: 0 38px;
+      background: rgba(247, 242, 241, .94);
+      border-bottom: 1px solid rgba(62, 49, 46, .08);
+    }
+
+    .nav { display: flex; gap: 24px; font-size: 13px; }
+    .logo { font-size: 25px; font-weight: 800; letter-spacing: -.06em; }
+    .header-actions { justify-self: end; display: flex; gap: 14px; }
+    .header-icon { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; }
+
+    .product {
+      display: grid;
+      grid-template-columns: minmax(0, 1.12fr) minmax(390px, .88fr);
+      min-height: 760px;
+    }
+
+    .media {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 760px;
+      padding: 48px;
+      overflow: hidden;
+      background: #f2eeee;
+    }
+
+    .media::after {
+      position: absolute;
+      inset: 20% -10% auto auto;
+      width: 440px;
+      height: 440px;
+      content: "";
+      border-radius: 50%;
+      background: rgba(187, 143, 147, .13);
+      filter: blur(1px);
+    }
+
+    .media img {
+      position: relative;
+      z-index: 1;
+      width: min(78%, 560px);
+      max-height: 670px;
+      object-fit: cover;
+      object-position: center 46%;
+      border-radius: 16px;
+      box-shadow: 0 24px 65px rgba(73, 52, 49, .16);
+    }
+
+    .gallery-count {
+      position: absolute;
+      z-index: 2;
+      right: 26px;
+      bottom: 24px;
+      padding: 8px 12px;
+      color: #615653;
+      background: rgba(255,255,255,.82);
+      border: 1px solid rgba(62, 49, 46, .1);
+      border-radius: 999px;
+      font-size: 12px;
+      backdrop-filter: blur(10px);
+    }
+
+    .product-info {
+      padding: 66px clamp(34px, 5vw, 82px) 54px;
+      background: var(--paper);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--rose-dark);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(44px, 4.4vw, 70px);
+      font-weight: 400;
+      letter-spacing: -.045em;
+      line-height: .98;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-top: 17px;
+      color: var(--rose-dark);
+      font-size: 14px;
+    }
+
+    .stars { letter-spacing: .08em; }
+    .rating a { color: var(--ink); text-underline-offset: 3px; }
+
+    .price-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .price { font-size: 25px; font-weight: 750; }
+    .compare { color: #8d8481; font-size: 16px; text-decoration: line-through; }
+    .save {
+      padding: 5px 9px;
+      color: #fff;
+      background: var(--rose-dark);
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .04em;
+    }
+
+    .shipping-note {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 9px;
+      color: var(--green);
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .shipping-note svg { width: 18px; height: 18px; }
+
+    .color-groups { margin-top: 28px; }
+    .color-group + .color-group { margin-top: 19px; }
+
+    .group-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 18px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .group-label span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 500;
+      text-align: right;
+    }
+
+    .group-label span:empty { display: none; }
+    .swatches { display: flex; gap: 11px; margin-top: 10px; }
+
+    .swatch {
+      width: 42px;
+      height: 42px;
+      padding: 3px;
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .swatch[aria-pressed="true"] { border-color: var(--ink); }
+    .swatch::before { display: block; width: 100%; height: 100%; content: ""; border-radius: 50%; background: var(--swatch); box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); }
+
+    .add {
+      width: 100%;
+      min-height: 58px;
+      margin-top: 26px;
+      color: #fff;
+      background: var(--ink);
+      border: 1px solid var(--ink);
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 750;
+      letter-spacing: .01em;
+      transition: transform .18s ease, background .18s ease;
+    }
+
+    .add:hover { background: #433d3b; transform: translateY(-1px); }
+
+    .quick-pay {
+      width: 100%;
+      min-height: 54px;
+      margin-top: 10px;
+      color: #fff;
+      background: #5a31f4;
+      border: 1px solid #5a31f4;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 650;
+      transition: filter .18s ease, transform .18s ease;
+    }
+
+    .quick-pay:hover { filter: brightness(.95); transform: translateY(-1px); }
+    .quick-pay-logo { margin-left: 4px; font-size: 18px; font-weight: 800; letter-spacing: -.05em; }
+    .payment-options { margin: 9px 0 0; text-align: center; }
+    .payment-options a { color: var(--ink); font-size: 12px; text-underline-offset: 3px; }
+
+    .shipping-block { margin-top: 20px; }
+
+    .shipping-options {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .shipping-option {
+      min-width: 0;
+      min-height: 74px;
+      padding: 11px 12px;
+    }
+
+    .shipping-option + .shipping-option { border-left: 1px solid rgba(62, 49, 46, .1); }
+    .shipping-top { display: flex; justify-content: space-between; gap: 7px; align-items: baseline; }
+    .shipping-name { min-width: 0; font-size: 13px; font-weight: 700; line-height: 1.25; }
+    .shipping-eta { display: block; margin-top: 6px; color: var(--muted); font-size: 11px; line-height: 1.3; }
+    .shipping-price { flex: none; font-size: 13px; font-weight: 750; white-space: nowrap; }
+    .shipping-price.free { color: var(--green); }
+
+    .dispatch-guarantee {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 9px;
+      align-items: center;
+      margin-bottom: 9px;
+      min-height: 46px;
+      padding: 8px 11px;
+      background: rgba(185, 141, 145, .11);
+      border: 1px solid rgba(148, 101, 108, .22);
+      border-radius: 12px;
+    }
+
+    .dispatch-icon {
+      display: grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      color: var(--rose-dark);
+      background: rgba(185, 141, 145, .12);
+      border-radius: 50%;
+    }
+
+    .dispatch-icon svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .dispatch-copy strong { display: block; color: var(--rose-dark); font-size: 13px; line-height: 1.25; letter-spacing: .01em; }
+
+    .accordions { margin-top: 24px; border-top: 1px solid var(--line); }
+    details { border-bottom: 1px solid var(--line); }
+    summary { display: flex; align-items: center; justify-content: space-between; min-height: 54px; cursor: pointer; list-style: none; font-size: 14px; font-weight: 700; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--muted); font-size: 20px; font-weight: 300; }
+    details[open] summary::after { content: "−"; }
+    details p { margin: -2px 0 18px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+
+    .stage.is-mobile .preview-hidden-mobile { display: none; }
+    .stage.is-mobile .site-header { grid-template-columns: 1fr auto 1fr; min-height: 60px; padding: 0 18px; }
+    .stage.is-mobile .nav { display: none; }
+    .stage.is-mobile .menu-mobile { display: block; }
+    .menu-mobile { display: none; }
+    .stage.is-mobile .product { display: block; min-height: auto; }
+    .stage.is-mobile .media { min-height: 440px; padding: 18px 20px 20px; }
+    .stage.is-mobile .media img { width: 100%; max-height: 410px; border-radius: 12px; }
+    .stage.is-mobile .gallery-count { right: 16px; bottom: 14px; }
+    .stage.is-mobile .product-info { padding: 28px 20px 34px; }
+    .stage.is-mobile h1 { font-size: 44px; }
+    .stage.is-mobile .rating { margin-top: 14px; }
+    .stage.is-mobile .price-row { margin-top: 18px; }
+    .stage.is-mobile .color-groups { margin-top: 24px; }
+    .stage.is-mobile .color-group + .color-group { margin-top: 17px; }
+    .stage.is-mobile .add { min-height: 56px; margin-top: 22px; }
+    .stage.is-mobile .quick-pay { min-height: 52px; }
+    .stage.is-mobile .shipping-block { margin-top: 18px; }
+    .stage.is-mobile .shipping-option { min-height: 72px; padding: 10px; }
+    .stage.is-mobile .announcement { font-size: 11px; }
+
+    @media (max-width: 760px) {
+      .preview-bar { align-items: flex-start; gap: 12px; padding: 10px 12px; }
+      .preview-title { flex-direction: column; gap: 1px; }
+      .viewport-switch button { padding: 0 10px; }
+      .stage:not(.is-mobile) { width: 100%; margin-top: 0; border-radius: 0; }
+      .stage:not(.is-mobile) .nav { display: none; }
+      .stage:not(.is-mobile) .menu-mobile { display: block; }
+      .stage:not(.is-mobile) .site-header { min-height: 60px; padding: 0 18px; }
+      .stage:not(.is-mobile) .product { display: block; }
+      .stage:not(.is-mobile) .media { min-height: 470px; padding: 18px; }
+      .stage:not(.is-mobile) .product-info { padding: 30px 20px 40px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="preview-bar">
+    <div class="preview-title">TapNest purchase area <span>Local concept preview</span></div>
+    <div class="viewport-switch" role="group" aria-label="Preview width">
+      <button type="button" data-view="desktop" aria-pressed="true">Desktop</button>
+      <button type="button" data-view="mobile" aria-pressed="false">Mobile</button>
+    </div>
+  </header>
+
+  <main class="stage" id="stage">
+    <div class="announcement">30% OFF · FREE U.S. STANDARD SHIPPING</div>
+    <header class="site-header">
+      <button class="menu-mobile" aria-label="Open menu" style="border:0;background:transparent;padding:0;font-size:20px">☰</button>
+      <nav class="nav" aria-label="Primary">
+        <span>Shop</span><span>NFC Shortcuts</span><span>Our Story</span>
+      </nav>
+      <div class="logo">oora.</div>
+      <div class="header-actions">
+        <svg class="header-icon preview-hidden-mobile" viewBox="0 0 24 24" aria-label="Search"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+        <svg class="header-icon" viewBox="0 0 24 24" aria-label="Cart"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+      </div>
+    </header>
+
+    <section class="product">
+      <div class="media">
+        <img src="../assets/oora-tiktok-01tap-poster.jpg" alt="Dust Rose TapNest with three NFC tap zones">
+        <span class="gallery-count">1 / 6</span>
+      </div>
+
+      <div class="product-info">
+        <p class="eyebrow">Your ritual, one tap away</p>
+        <h1>TapNest</h1>
+
+        <div class="rating" aria-label="4.8 out of 5 stars from 19 reviews">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <a href="#reviews">4.8 · 19 reviews</a>
+        </div>
+
+        <div class="price-row">
+          <span class="price">$42.00</span>
+          <span class="compare">$59.99</span>
+          <span class="save">SAVE 30%</span>
+        </div>
+
+        <div class="shipping-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+          Free shipping in the contiguous U.S.
+        </div>
+
+        <div class="color-groups" aria-label="Color">
+          <div class="color-group" data-color-group="limited">
+            <div class="group-label">Limited Edition <span>Dust Rose</span></div>
+            <div class="swatches">
+              <button class="swatch" style="--swatch:#b8898f" aria-label="Dust Rose" aria-pressed="true"></button>
+            </div>
+          </div>
+          <div class="color-group" data-color-group="classic">
+            <div class="group-label">Classic <span></span></div>
+            <div class="swatches">
+              <button class="swatch" style="--swatch:#d7d0c7" aria-label="Mist Clay" aria-pressed="false"></button>
+              <button class="swatch" style="--swatch:#303234" aria-label="Obsidian" aria-pressed="false"></button>
+            </div>
+          </div>
+        </div>
+
+        <button class="add" type="button">Add to cart</button>
+        <button class="quick-pay" type="button">Buy with <span class="quick-pay-logo">shop</span></button>
+        <p class="payment-options"><a href="#payment-options">More payment options</a></p>
+
+        <section class="shipping-block" aria-label="Shipping options">
+          <div class="dispatch-guarantee">
+            <span class="dispatch-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <span class="dispatch-copy"><strong>Guaranteed to ship within 24–48 hours</strong></span>
+          </div>
+          <div class="shipping-options">
+            <div class="shipping-option">
+              <div class="shipping-top">
+                <span class="shipping-name">Standard</span>
+                <span class="shipping-price free">FREE</span>
+              </div>
+              <span class="shipping-eta">5–10 business days</span>
+            </div>
+            <div class="shipping-option">
+              <div class="shipping-top">
+                <span class="shipping-name">Express</span>
+                <span class="shipping-price">$10.00</span>
+              </div>
+              <span class="shipping-eta">4–7 business days</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="accordions">
+          <details>
+            <summary>Main features</summary>
+            <p>Magnetic phone docking with three customizable NFC tap zones, designed to make everyday routines feel effortless.</p>
+          </details>
+          <details>
+            <summary>Shipping &amp; returns</summary>
+            <p>Free standard shipping on eligible U.S. orders. Express delivery is available at checkout. Returns are accepted within 14 days.</p>
+          </details>
+          <details>
+            <summary>FAQ</summary>
+            <p>TapNest works best with MagSafe-compatible iPhones and cases on smooth, clean surfaces such as mirrors and glossy tile.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const stage = document.getElementById('stage');
+    const viewButtons = document.querySelectorAll('[data-view]');
+    viewButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const mobile = button.dataset.view === 'mobile';
+        stage.classList.toggle('is-mobile', mobile);
+        viewButtons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+
+    document.querySelectorAll('.swatch').forEach((swatch) => {
+      swatch.addEventListener('click', () => {
+        document.querySelectorAll('.swatch').forEach((item) => item.setAttribute('aria-pressed', String(item === swatch)));
+        document.querySelectorAll('.color-group .group-label span').forEach((label) => { label.textContent = ''; });
+        swatch.closest('.color-group').querySelector('.group-label span').textContent = swatch.getAttribute('aria-label');
+      });
+    });
+  </script>
+</body>
+</html>

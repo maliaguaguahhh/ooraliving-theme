@@ -1,0 +1,258 @@
+{
+  "sections": {
+    "main_page_RCziHE": {
+      "type": "main-page",
+      "name": "t:sections.main_page.presets.name",
+      "settings": {
+        "font_size_heading": "h3",
+        "align": "center",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 120,
+        "padding_bottom_desktop": 24,
+        "padding_top_mobile": 120,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "shortcut_preset_library_tgzptj": {
+      "type": "shortcut-preset-library",
+      "blocks": {
+        "shortcut_preset_i3pDpE": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/spotify_faves.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Spotify Favorites",
+            "description": "A playlist of your liked songs",
+            "download_link": "https://www.icloud.com/shortcuts/62e11e0b722241efac938202f8e08177"
+          }
+        },
+        "shortcut_preset_JLbbAE": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/morning_energy.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Morning Energy",
+            "description": "A Spotify playlist to ease into the day",
+            "download_link": "https://www.icloud.com/shortcuts/ecda3e7977ef426686f9d7372977b7ff"
+          }
+        },
+        "shortcut_preset_cr3DeB": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/shower_karaoke.png",
+            "icon": "shopify://shop_images/icons-07_1.png",
+            "title": "Singing in the Shower",
+            "description": "A playlist of classics to sing along to",
+            "download_link": "https://www.icloud.com/shortcuts/5e57faf958994fcb8ad7e5abad9c502d"
+          }
+        },
+        "shortcut_preset_bLaTjn": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/soothing.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Soothing Playlist",
+            "description": "A playlist to slow everything down",
+            "download_link": "https://www.icloud.com/shortcuts/8929b534e5b249e6a94a89778df6a666"
+          }
+        },
+        "shortcut_preset_kJJPWm": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/play_my_own_list.png",
+            "icon": "shopify://shop_images/icons-10_1.png",
+            "title": "Play Your Own",
+            "description": "Add your own playlist",
+            "download_link": "https://www.icloud.com/shortcuts/5f22846ee23d4d6fabc3982b427b68f9"
+          }
+        },
+        "shortcut_preset_VxFETy": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/immersive_bath.png",
+            "icon": "shopify://shop_images/icons-11_1.png",
+            "title": "Immersive Bath",
+            "description": "Open the go-to app & keep track of time",
+            "download_link": "https://www.icloud.com/shortcuts/78489531e9be4522a6fe2e046b5a9988"
+          }
+        },
+        "shortcut_preset_kh3Xhq": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/affirmation.png",
+            "icon": "shopify://shop_images/icons-12_1.png",
+            "title": "Affirmations",
+            "description": "Launch your list of daily reminders",
+            "download_link": "https://www.icloud.com/shortcuts/f12cdb151dc9497fbbf1f7bbc031f931"
+          }
+        },
+        "shortcut_preset_93YaAA": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/wakeup_routine.png",
+            "icon": "shopify://shop_images/icons-03_1.png",
+            "title": "Wake-up Routine",
+            "description": "Report the weather & start your morning routine",
+            "download_link": "https://www.icloud.com/shortcuts/f7c76eb3b1bb4846825a39315ba7d966"
+          }
+        },
+        "shortcut_preset_VdYjHK": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/tiktok.png",
+            "icon": "shopify://shop_images/icons-09_1.png",
+            "title": "Scroll on TikTok",
+            "description": "Jump straight to your For You page",
+            "download_link": "https://www.icloud.com/shortcuts/7dc916b5f40f41e6bbca40f7eebc0d59"
+          }
+        },
+        "shortcut_preset_9JWeEH": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/facetime.png",
+            "icon": "shopify://shop_images/icons-05_1.png",
+            "title": "FaceTime",
+            "description": "Call your favorite person with just a tap",
+            "download_link": "https://www.icloud.com/shortcuts/24f456914b9c462393072c45dc84aaab"
+          }
+        },
+        "shortcut_preset_AWBanX": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/departure_reminder.png",
+            "icon": "shopify://shop_images/icons-02_1.png",
+            "title": "Departure Reminder",
+            "description": "A reminder to get you out the door",
+            "download_link": "https://www.icloud.com/shortcuts/705cc631a73941609c91d4399fb0f77b"
+          }
+        },
+        "shortcut_preset_Drqepw": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/countdown.png",
+            "icon": "shopify://shop_images/icons-02_1.png",
+            "title": "Start a Countdown",
+            "description": "A timer to keep you on track",
+            "download_link": "https://www.icloud.com/shortcuts/f79ddd514dfd44d78006fa8974c59bfb"
+          }
+        },
+        "shortcut_preset_xD7cUm": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/selfie.png",
+            "icon": "shopify://shop_images/icons-05_1.png",
+            "title": "Take a Selfie",
+            "description": "Open your camera, ready to shoot",
+            "download_link": "https://www.icloud.com/shortcuts/dc0db6ea2a8b4c15bb9288c963b4efc5"
+          }
+        },
+        "shortcut_preset_GPKn4L": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/podcast.png",
+            "icon": "shopify://shop_images/icons-01_1.png",
+            "title": "Listen to a Podcast",
+            "description": "Jump straight to your favorite podcast",
+            "download_link": "https://www.icloud.com/shortcuts/793df19d70a849a2885c8831126b4a60"
+          }
+        },
+        "shortcut_preset_nELMj9": {
+          "type": "shortcut_preset",
+          "settings": {
+            "image": "shopify://shop_images/youtube.png",
+            "icon": "shopify://shop_images/icons-04_1.png",
+            "title": "Watch YouTube",
+            "description": "Jump straight into your comfort content",
+            "download_link": "https://www.icloud.com/shortcuts/1105e33f63a845479634280bf8cdc161"
+          }
+        }
+      },
+      "block_order": [
+        "shortcut_preset_i3pDpE",
+        "shortcut_preset_JLbbAE",
+        "shortcut_preset_cr3DeB",
+        "shortcut_preset_bLaTjn",
+        "shortcut_preset_kJJPWm",
+        "shortcut_preset_VxFETy",
+        "shortcut_preset_kh3Xhq",
+        "shortcut_preset_93YaAA",
+        "shortcut_preset_VdYjHK",
+        "shortcut_preset_9JWeEH",
+        "shortcut_preset_AWBanX",
+        "shortcut_preset_Drqepw",
+        "shortcut_preset_xD7cUm",
+        "shortcut_preset_GPKn4L",
+        "shortcut_preset_nELMj9"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.shortcut-preset-library__title {font-size: 16px; } .shortcut-preset-library__text {font-size: 12px; }}",
+        ".shortcut-preset-library__overlay {background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.55) 100% ) !important;}",
+        "@media screen and (max-width: 749px) {.shortcut-preset-library__icon img {width: 24px !important; }}"
+      ],
+      "name": "Shortcut Preset Library",
+      "settings": {
+        "text_tag_name": "h2",
+        "text_heading": "Shortcut Preset Library",
+        "font_size_heading": "h5",
+        "text_line_height": 1.2,
+        "text_effect": "none",
+        "text_duration": 1000,
+        "text_heading_width_desktop": 100,
+        "text_heading_width_mobile": 100,
+        "alignment": "left",
+        "aspect_ratio": "16 / 9",
+        "grid_gap": 24,
+        "card_radius": 18,
+        "overlay_opacity": 60,
+        "download_icon": "shopify://shop_images/material-symbols_download-rounded.png",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "background_color": "",
+        "background_gradient": "",
+        "padding_top_desktop": 24,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 24,
+        "padding_bottom_mobile": 40,
+        "enable_show_more": true,
+        "fill_available_width": true
+      }
+    },
+    "nfc_tutorials": {
+      "type": "nfc-tutorials",
+      "settings": {
+        "gallery_anchor": "shortcut-gallery",
+        "color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
+        "padding_top_desktop": 24,
+        "padding_bottom_desktop": 24,
+        "padding_top_mobile": 16,
+        "padding_bottom_mobile": 16
+      },
+      "blocks": {
+        "setup": {
+          "type": "tutorial",
+          "settings": {
+            "title": "How to set up TapNest?",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "troubleshooting": {
+          "type": "tutorial",
+          "settings": {
+            "title": "NFC Shortcut Troubleshooting",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        }
+      },
+      "block_order": [
+        "setup",
+        "troubleshooting"
+      ]
+    }
+  },
+  "order": [
+    "main_page_RCziHE",
+    "nfc_tutorials",
+    "shortcut_preset_library_tgzptj"
+  ]
+}

@@ -1,0 +1,147 @@
+{% comment %}
+  Renders a bg image
+
+  Usage:
+  {% render 'section-bg-image' %}
+{% endcomment %}
+
+{% liquid
+  assign background_type = section.settings.background_type
+  assign video_desktop = section.settings.background_video_desktop
+  assign video_mobile = section.settings.background_video_mobile | default: video_desktop
+  assign video_fallback_source = video_mobile | default: video_desktop
+  assign video_fallback_url = ''
+  assign tiktok_fallback_asset = ''
+  assign tiktok_fallback_width = '1080'
+  assign tiktok_fallback_height = ''
+  if section.id contains 'image_with_text_style_10_8mEABG'
+    assign tiktok_fallback_asset = 'oora-tiktok-01tap-poster.jpg'
+    assign tiktok_fallback_height = '1920'
+  elsif section.id contains 'image_with_text_style_10_ALTAbf'
+    assign tiktok_fallback_asset = 'oora-tiktok-02snap-poster.jpg'
+    assign tiktok_fallback_height = '1650'
+  elsif section.id contains 'image_with_text_style_10_rpcAfp'
+    assign tiktok_fallback_asset = 'oora-tiktok-03flow-poster.jpg'
+    assign tiktok_fallback_height = '1850'
+  else
+    if video_fallback_source != blank
+      assign video_fallback_url = video_fallback_source.sources[1].url | default: video_fallback_source.sources[0].url
+    endif
+    if video_fallback_url contains '01Tap_Light'
+      assign tiktok_fallback_asset = 'oora-tiktok-01tap-poster.jpg'
+      assign tiktok_fallback_height = '1920'
+    elsif video_fallback_url contains '02Snap_light'
+      assign tiktok_fallback_asset = 'oora-tiktok-02snap-poster.jpg'
+      assign tiktok_fallback_height = '1650'
+    elsif video_fallback_url contains '03Flow_Light'
+      assign tiktok_fallback_asset = 'oora-tiktok-03flow-poster.jpg'
+      assign tiktok_fallback_height = '1850'
+    endif
+  endif
+  assign img_desktop = section.settings.background_image_desktop | image_url
+  assign img_mobile = section.settings.background_image_mobile | image_url
+%}
+
+{% capture bg_placeholder %}
+  <div class="xo-section-bg-image">
+    <div class="xo-section-bg-image__item">
+      <div class="xo-section-bg-image__url xo-background-lazyload">
+        {{ 'hero-apparel-1' | placeholder_svg_tag }}
+      </div>
+    </div>
+  </div>
+{% endcapture %}
+
+{% if background_type == 'image' %}
+  {% if img_desktop or img_mobile %}
+    <div
+      class="xo-section-bg-image xo-section-bg-image--image"
+      style="{% if img_desktop != blank %}--img-desktop: url('{{ img_desktop | image_url: width: 100 }}');{% endif %}{% if img_mobile != blank %}--img-mobile: url('{{ img_mobile | image_url: width: 100 }}');{% endif %}"
+    >
+      {% if section.settings.use_parallax %}
+        <xo-parallax xo-lerp-ease="0.4" class="xo-section-bg-image__item">
+          <xo-parallax-scroll
+            xo-keyframes="
+              {
+                '0%': { backgroundPositionY: '200px' },
+                '100%': { backgroundPositionY: '-200px' },
+              }
+            "
+            class="xo-section-bg-image__url xo-background-lazyload"
+          >
+          </xo-parallax-scroll>
+        </xo-parallax>
+      {% else %}
+        <div class="xo-section-bg-image__item"><div class="xo-section-bg-image__url xo-background-lazyload"></div></div>
+      {% endif %}
+    </div>
+  {% else %}
+    {% if section.settings.background_color == blank and section.settings.background_gradient == blank %}
+      {{ bg_placeholder }}
+    {% endif %}
+  {% endif %}
+{% else %}
+  {% if video_desktop != blank or video_mobile != blank %}
+    <div class="xo-section-bg-image xo-section-bg-image--video">
+      {% if section.settings.use_parallax %}
+        <xo-parallax xo-lerp-ease="0.4" class="xo-section-bg-image__item">
+          <xo-parallax-scroll
+            xo-keyframes="
+              {
+                '0%': { backgroundPositionY: '300px' },
+                '100%': { backgroundPositionY: '-300px' },
+              }
+            "
+            class="xo-section-bg-image__url xo-background-lazyload"
+          >
+            {% if video_desktop != blank %}
+              {% liquid
+                assign desktop_video_markup = video_desktop | video_tag: image_size: '1600x', autoplay: true, loop: true, controls: false, muted: true, preload: 'auto', class: 'xo-section-bg-image__video xo-section-bg-image__video--desktop xo-video--modifier'
+                assign desktop_video_markup = desktop_video_markup | replace: '<video ', '<video webkit-playsinline="webkit-playsinline" x5-playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="false" controlslist="nodownload noplaybackrate noremoteplayback" disablepictureinpicture="disablepictureinpicture" disableremoteplayback="disableremoteplayback" '
+                echo desktop_video_markup
+              %}
+            {% endif %}
+            {% if video_mobile != blank %}
+              {% liquid
+                assign mobile_video_markup = video_mobile | video_tag: image_size: '1600x', autoplay: true, loop: true, controls: false, muted: true, preload: 'auto', class: 'xo-section-bg-image__video xo-section-bg-image__video--mobile xo-video--modifier'
+                assign mobile_video_markup = mobile_video_markup | replace: '<video ', '<video webkit-playsinline="webkit-playsinline" x5-playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="false" controlslist="nodownload noplaybackrate noremoteplayback" disablepictureinpicture="disablepictureinpicture" disableremoteplayback="disableremoteplayback" '
+                echo mobile_video_markup
+              %}
+            {% endif %}
+          </xo-parallax-scroll>
+        </xo-parallax>
+      {% else %}
+        {% if video_desktop != blank %}
+          {% liquid
+            assign desktop_video_markup = video_desktop | video_tag: image_size: '1600x', autoplay: true, loop: true, controls: false, muted: true, preload: 'auto', class: 'xo-section-bg-image__item xo-section-bg-image__item--desktop xo-video--modifier'
+            assign desktop_video_markup = desktop_video_markup | replace: '<video ', '<video webkit-playsinline="webkit-playsinline" x5-playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="false" controlslist="nodownload noplaybackrate noremoteplayback" disablepictureinpicture="disablepictureinpicture" disableremoteplayback="disableremoteplayback" '
+            echo desktop_video_markup
+          %}
+        {% endif %}
+        {% if video_mobile != blank %}
+          {% liquid
+            assign mobile_video_markup = video_mobile | video_tag: image_size: '1600x', autoplay: true, loop: true, controls: false, muted: true, preload: 'auto', class: 'xo-section-bg-image__item xo-section-bg-image__item--mobile xo-video--modifier'
+            assign mobile_video_markup = mobile_video_markup | replace: '<video ', '<video webkit-playsinline="webkit-playsinline" x5-playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="false" controlslist="nodownload noplaybackrate noremoteplayback" disablepictureinpicture="disablepictureinpicture" disableremoteplayback="disableremoteplayback" '
+            echo mobile_video_markup
+          %}
+        {% endif %}
+      {% endif %}
+      {% if tiktok_fallback_asset != blank %}
+        <img
+          class="xo-section-bg-image__item xo-video-poster-fallback"
+          src="{{ tiktok_fallback_asset | asset_url }}"
+          width="{{ tiktok_fallback_width }}"
+          height="{{ tiktok_fallback_height }}"
+          alt=""
+          loading="eager"
+          decoding="async"
+          aria-hidden="true"
+        >
+      {% endif %}
+    </div>
+  {% else %}
+    {% if section.settings.background_color == blank and section.settings.background_gradient == blank %}
+      {{ bg_placeholder }}
+    {% endif %}
+  {% endif %}
+{% endif %}

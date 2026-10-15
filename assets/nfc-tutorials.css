@@ -1,0 +1,45 @@
+.nfc-tutorials { display: block; position: relative; }
+.nfc-tutorials__heading { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-bottom: 2.4rem; }
+.nfc-tutorials__heading h2 { margin: 0; }
+.nfc-tutorials__jump { color: inherit; text-underline-offset: .4rem; font-size: 1.4rem; white-space: nowrap; }
+.nfc-tutorials__rail { display: flex; gap: 2.4rem; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; padding: .4rem .4rem 1.2rem; margin: -.4rem; }
+.nfc-tutorials__item { flex: 0 0 calc((100% - 4.8rem) / 3); min-width: 0; scroll-snap-align: start; }
+.nfc-tutorials__card { display: block; color: inherit; text-decoration: none; }
+.nfc-tutorials__card[aria-disabled] { opacity: .6; }
+.nfc-tutorials__cover { position: relative; display: grid; place-items: center; aspect-ratio: var(--nfc-tutorial-card-ratio, 3 / 4); overflow: hidden; border-radius: 1.8rem; background: rgba(var(--color-foreground), .06); }
+.nfc-tutorials__cover img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
+.nfc-tutorials__cover--empty { border: 1px solid rgba(var(--color-foreground), .12); }
+.nfc-tutorials__play { display: grid; place-items: center; position: relative; width: 5.2rem; height: 5.2rem; border-radius: 50%; background: #fff; color: #242424; box-shadow: 0 .2rem 1.4rem #0002; transition: transform 180ms ease; }
+.nfc-tutorials__card:hover .nfc-tutorials__play { transform: scale(1.06); }
+.nfc-tutorials__title { display: block; font-size: 1.6rem; line-height: 1.4; margin-top: 1.2rem; font-weight: 500; }
+.nfc-tutorials__navigation { display: flex; justify-content: flex-end; gap: .8rem; margin-top: 1.2rem; }
+.nfc-tutorials__navigation[hidden] { display: none; }
+.nfc-tutorials__navigation button, .nfc-tutorials__close { display: grid; place-items: center; flex: 0 0 auto; width: 4.4rem; height: 4.4rem; background: transparent; color: inherit; border: 1px solid currentColor; border-radius: 50%; cursor: pointer; }
+.nfc-tutorials__navigation button:disabled { opacity: .3; cursor: default; }
+.nfc-tutorials__card:focus-visible, .nfc-tutorials button:focus-visible, .nfc-tutorials__jump:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.nfc-tutorials[data-focus-input="pointer"] .nfc-tutorials__card:focus,
+.nfc-tutorials[data-focus-input="pointer"] button:focus,
+.nfc-tutorials[data-focus-input="pointer"] .nfc-tutorials__jump:focus { outline: none; box-shadow: none; }
+.nfc-tutorials__dialog { padding: 1.6rem; border: 0; border-radius: 1.8rem; background: #fff; color: #242424; width: min(48rem, calc(100vw - 2.4rem)); max-width: none; max-height: calc(100dvh - 2.4rem); overflow: auto; }
+.nfc-tutorials__dialog::backdrop { background: #000b; }
+.nfc-tutorials__dialog-header { display: flex; align-items: center; justify-content: space-between; gap: 1.6rem; margin-bottom: 1.2rem; }
+.nfc-tutorials__dialog-title { font-size: 1.6rem; line-height: 1.4; margin: 0; color: inherit; }
+.nfc-tutorials__close { border: 0; padding: 0; appearance: none; -webkit-appearance: none; width: 44px; height: 44px; box-shadow: none; }
+.nfc-tutorials__close svg { display: block; width: 20px; height: 20px; }
+.nfc-tutorials__player { position: relative; width: min(100%, calc((100dvh - 15rem) * .5625)); aspect-ratio: 9 / 16; margin-inline: auto; background: #000; }
+.nfc-tutorials__loading { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; overflow: hidden; background: #242424; color: #fff; text-align: center; padding: 24px; }
+.nfc-tutorials__loading[hidden], .nfc-tutorials__loading button[hidden] { display: none; }
+.nfc-tutorials__loading img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; opacity: .45; }
+.nfc-tutorials__loading span, .nfc-tutorials__loading button { position: relative; }
+.nfc-tutorials__loading button { min-height: 44px; padding: 10px 22px; border: 0; border-radius: 24px; background: #fff; color: #242424; font: inherit; cursor: pointer; }
+.nfc-tutorials__player iframe, .nfc-tutorials__player video { display: block; width: 100%; height: 100%; border: 0; object-fit: contain; }
+@media (min-width: 750px) and (max-width: 989px) {
+  .nfc-tutorials__item { flex-basis: calc((100% - 2.4rem) / 2); }
+}
+@media (max-width: 749px) {
+  .nfc-tutorials__heading { gap: 1.2rem; flex-wrap: wrap; margin-bottom: 2rem; }
+  .nfc-tutorials__rail { gap: 1.6rem; }
+  .nfc-tutorials__item { flex-basis: min(78vw, 30rem); min-width: 0; }
+  .nfc-tutorials__dialog { padding: 1.2rem; }
+}
+@media (prefers-reduced-motion: reduce) { .nfc-tutorials__play { transition: none; } }
