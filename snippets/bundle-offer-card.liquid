@@ -69,7 +69,15 @@ Renders an optional bundle offer card for product and featured product buy butto
 
     <div class="xo-bundle-offer-card__content">
       <div class="xo-bundle-offer-card__media">
-        {% if block.settings.bundle_offer_image != blank %}
+        {% assign bundle_image = product.metafields.custom.bundle_offer_image.value %}
+        {% if bundle_image != blank %}
+          {{
+            bundle_image.preview_image
+            | default: bundle_image
+            | image_url: width: 160
+            | image_tag: loading: 'lazy', widths: '80, 120, 160', class: 'xo-bundle-offer-card__image'
+          }}
+        {% elsif block.settings.bundle_offer_image != blank %}
           {{
             block.settings.bundle_offer_image
             | image_url: width: 160
