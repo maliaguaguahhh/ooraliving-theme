@@ -251,6 +251,22 @@
     if (button) {
       event.preventDefault();
       buyNow(button);
+      return;
+    }
+
+    const opener = event.target.closest('[data-gift-wrap-dialog-open]');
+    if (opener) {
+      const dialog = document.getElementById(opener.dataset.giftWrapDialogOpen);
+      if (dialog && typeof dialog.showModal === 'function') {
+        dialog.showModal();
+      }
+      return;
+    }
+
+    // Close on the close button or a click on the backdrop (the dialog element itself).
+    const dialog = event.target.closest('.gift-wrap-dialog');
+    if (dialog && (event.target === dialog || event.target.closest('[data-gift-wrap-dialog-close]'))) {
+      dialog.close();
     }
   });
 

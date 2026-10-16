@@ -137,7 +137,7 @@
             endif
           %}
           <div {{ block.shopify_attributes }}>
-            {% render 'gift-wrap-option', product: product %}
+            {% render 'gift-wrap-option', product: product, section_id: section.id %}
             <div class="xo-product-info-content__buy-form">
               <xo-animate xo-cascade>
                 <div class="xo-product-info-content__quantity" data-gift-wrap-quantity>

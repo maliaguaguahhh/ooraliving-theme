@@ -165,7 +165,7 @@
             endif
           %}
           <div class="xo-featured-product-content__buy-form" {{ block.shopify_attributes }}>
-            {% render 'gift-wrap-option', product: product %}
+            {% render 'gift-wrap-option', product: product, section_id: section.id %}
             <div class="xo-featured-product-content__group">
               <xo-animate xo-cascade class="xo-featured-product-content__buy-now {{ style_button_buy }}">
                 {% if product != blank %}

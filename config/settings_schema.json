@@ -1380,6 +1380,19 @@
       },
       {
         "type": "text",
+        "id": "gift_wrapping_preview_label",
+        "label": "Preview link text",
+        "info": "Shown with a thumbnail when the Gift Wrap product has images. The popup shows up to 3 of its images and its description.",
+        "default": "See how it looks"
+      },
+      {
+        "type": "text",
+        "id": "gift_wrapping_dialog_title",
+        "label": "Preview popup title",
+        "default": "Our gift wrap"
+      },
+      {
+        "type": "text",
         "id": "gift_wrapping_count_label",
         "label": "Cart label when several are in the cart",
         "info": "Shown as: Gift wrap [n] of 3",
