@@ -2,19 +2,29 @@
   margin: 1.6rem 0 0;
 }
 
-/* The thumbnail stretches to the height of the text next to it, so the two read as one block. */
+/*
+  Square thumbnail beside the text. The text column is at least as tall as the square and spreads
+  its content top to bottom, so "See how it looks" sits on the square's bottom edge. Narrow phones
+  wrap the note onto an extra line, so the square grows there to stay at least as tall as the text.
+*/
 .gift-wrap-option__row {
+  --gift-wrap-thumb: 7rem;
   display: flex;
   align-items: stretch;
   gap: 1.2rem;
 }
 
+@media (max-width: 399px) {
+  .gift-wrap-option__row {
+    --gift-wrap-thumb: 8.5rem;
+  }
+}
+
 .gift-wrap-option__thumb {
   flex-shrink: 0;
-  align-self: stretch;
-  width: 7.2rem;
-  height: auto;
-  min-height: 5.6rem;
+  align-self: flex-start;
+  width: var(--gift-wrap-thumb);
+  height: var(--gift-wrap-thumb);
   padding: 0;
   overflow: hidden;
   border: 1px solid rgba(var(--color-foreground), 0.15);
@@ -38,7 +48,14 @@
 }
 
 .gift-wrap-option__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-width: 0;
+}
+
+.gift-wrap-option__thumb + .gift-wrap-option__body {
+  min-height: var(--gift-wrap-thumb);
 }
 
 .gift-wrap-option__preview {
