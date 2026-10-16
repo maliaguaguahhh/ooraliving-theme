@@ -14,7 +14,7 @@
   if current_variant.inventory_policy == 'continue' and current_variant.inventory_quantity <= 0
     assign is_preorder = true
   endif
-  assign preorder_button_label = buy_button_block.settings.preorder_button_label | default: 'Pre-order'
+  assign preorder_button_label = settings.product_preorder_button_label | default: 'Pre-order'
 %}
 
 <div class="xo-sticky-variant-modal">

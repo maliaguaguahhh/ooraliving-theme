@@ -1182,6 +1182,175 @@
     ]
   },
   {
+    "name": "Product purchase",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Shared by the product page and the homepage featured product. Per-product text (limited edition colors, restock note) is set on each product's metafields."
+      },
+      {
+        "type": "header",
+        "content": "Color groups"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_color_groups_enabled",
+        "label": "Group color swatches",
+        "info": "Splits colors into Limited Edition and Classic Shades using the product's Limited edition colors.",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "product_limited_edition_label",
+        "label": "Limited edition label",
+        "default": "Limited Edition"
+      },
+      {
+        "type": "text",
+        "id": "product_classic_shades_label",
+        "label": "Classic shades label",
+        "default": "Classic Shades"
+      },
+      {
+        "type": "header",
+        "content": "Stock status"
+      },
+      {
+        "type": "range",
+        "id": "product_low_inventory_threshold",
+        "label": "t:sections.main_product.blocks.inventory_status.settings.low_inventory_threshold.label",
+        "info": "t:sections.main_product.blocks.inventory_status.settings.low_inventory_threshold.info",
+        "min": 0,
+        "max": 25,
+        "step": 1,
+        "default": 25
+      },
+      {
+        "type": "select",
+        "id": "product_show_inventory_count",
+        "label": "t:sections.main_product.blocks.inventory_status.settings.show_inventory_count.label",
+        "options": [
+          {
+            "value": "none",
+            "label": "t:sections.main_product.blocks.inventory_status.settings.show_inventory_count.option__1.label"
+          },
+          {
+            "value": "low-inventory-threshold",
+            "label": "t:sections.main_product.blocks.inventory_status.settings.show_inventory_count.option__2.label"
+          },
+          {
+            "value": "always",
+            "label": "t:sections.main_product.blocks.inventory_status.settings.show_inventory_count.option__3.label"
+          }
+        ],
+        "default": "low-inventory-threshold"
+      },
+      {
+        "type": "color",
+        "id": "product_color_in_stock",
+        "label": "t:sections.main_product.blocks.inventory_status.settings.color_in_stock.label",
+        "default": "#4f8068"
+      },
+      {
+        "type": "color",
+        "id": "product_color_out_stock",
+        "label": "t:sections.main_product.blocks.inventory_status.settings.color_out_stock.label",
+        "default": "#da1e28"
+      },
+      {
+        "type": "header",
+        "content": "Pre-order"
+      },
+      {
+        "type": "text",
+        "id": "product_preorder_status_text",
+        "label": "Pre-order stock status",
+        "default": "Available for pre-order"
+      },
+      {
+        "type": "text",
+        "id": "product_preorder_button_label",
+        "label": "Pre-order button label",
+        "default": "Pre-order"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_restock_note_enabled",
+        "label": "Show restock note",
+        "info": "Text comes from the product's Restock note metafield.",
+        "default": true
+      },
+      {
+        "type": "color",
+        "id": "product_restock_note_color",
+        "label": "Restock note color",
+        "default": "#4f8068"
+      },
+      {
+        "type": "header",
+        "content": "Shipping card"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_shipping_promise_enabled",
+        "label": "Show shipping card",
+        "info": "Content comes from the shop metafields Shipping promise heading, Shipping options and Shipping promise note.",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Bundle offer"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_bundle_offer_enabled",
+        "label": "Show bundle offer",
+        "info": "Shows on products that have a Bundle offer metafield. Product, discount and image are set on that offer.",
+        "default": true
+      },
+      {
+        "type": "paragraph",
+        "content": "Default card text, used when a product's offer leaves a field empty. [discount] = the offer's percentage, [price] = discounted price."
+      },
+      {
+        "type": "text",
+        "id": "product_bundle_offer_summary",
+        "label": "Collapsed text",
+        "default": "Add another and save [discount]%"
+      },
+      {
+        "type": "text",
+        "id": "product_bundle_offer_badge",
+        "label": "Badge",
+        "default": "Bundle offer"
+      },
+      {
+        "type": "text",
+        "id": "product_bundle_offer_heading",
+        "label": "Heading",
+        "default": "Add another for [discount]% off?"
+      },
+      {
+        "type": "textarea",
+        "id": "product_bundle_offer_body",
+        "label": "Body",
+        "default": "Another room, another color, or a gift."
+      },
+      {
+        "type": "text",
+        "id": "product_bundle_offer_selector_label",
+        "label": "Variant selector label",
+        "default": "Choose your second item"
+      },
+      {
+        "type": "text",
+        "id": "product_bundle_offer_cta_text",
+        "label": "Button text",
+        "default": "+ Add a second - [price]"
+      }
+    ]
+  },
+  {
     "name": "Gift wrapping",
     "settings": [
       {

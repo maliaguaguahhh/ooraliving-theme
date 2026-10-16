@@ -2,11 +2,11 @@
 Renders the store-wide shipping promise card.
 Content comes from shop metafields so it is shared by every product and theme:
 custom.shipping_promise_heading, custom.shipping_options (shipping_option metaobjects)
-and custom.shipping_promise_note. The block's heading setting is only a fallback.
+and custom.shipping_promise_note. Shown when Theme settings > Product purchase > Show shipping card is on.
 
-@param {string} [heading] - Fallback heading when the shop metafield is empty.
+@param {string} [heading] - Optional fallback heading when the shop metafield is empty.
 @example
-{% render 'product-shipping-promise', heading: block.settings.shipping_promise_heading %}
+{% render 'product-shipping-promise' %}
 {% enddoc %}
 
 {% liquid

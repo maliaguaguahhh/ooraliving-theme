@@ -20,7 +20,7 @@
 {% assign limited_edition_label = limited_edition_label | default: 'Limited Edition' %}
 {% assign classic_shades_label = classic_shades_label | default: 'Classic Shades' %}
 {% assign normalized_limited_edition_colors = '' %}
-{% assign limited_edition_colors_raw = limited_edition_colors | default: 'Dust Rose' %}
+{% assign limited_edition_colors_raw = limited_edition_colors %}
 
 {% if limited_edition_colors_raw != blank %}
   {% assign limited_edition_colors_list = limited_edition_colors_raw | split: ',' %}

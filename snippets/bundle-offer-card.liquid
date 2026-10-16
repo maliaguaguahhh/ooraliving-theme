@@ -1,13 +1,13 @@
 {% doc %}
 Renders an optional bundle offer card for product and featured product buy buttons.
 The offer (product to add, discount, image, text) comes from the product's custom.bundle_offer
-metaobject; empty text fields fall back to the buy button block's settings.
+metaobject; empty text fields fall back to Theme settings > Product purchase.
 [discount] in any text is replaced with the offer's percentage, [price] in the button text
 with the discounted price.
 
 @param {product} product - The primary product.
 @param {object} offer - The product's bundle_offer metaobject.
-@param {block} block - The buy button block containing default bundle text.
+@param {block} block - The buy button block (used for element ids).
 @param {string} section_id - The section id used by XO cart components.
 @example
 {% render 'bundle-offer-card', product: product, offer: product.metafields.custom.bundle_offer.value, block: block, section_id: section.id %}
@@ -30,15 +30,15 @@ with the discounted price.
 
   assign discounted_price = offer_variant.price | times: discount_multiplier | divided_by: 100
   assign discounted_price_money = discounted_price | money
-  assign cta_template = offer.cta_text.value | default: block.settings.bundle_offer_cta_text | default: '+ Add a second - [price]'
+  assign cta_template = offer.cta_text.value | default: settings.product_bundle_offer_cta_text | default: '+ Add a second - [price]'
   assign cta_template = cta_template | replace: '[discount]', discount_label
   assign cta_text = cta_template | replace: '[price]', discounted_price_money
   assign cta_text = cta_text | replace: '{{ price }}', discounted_price_money
-  assign summary_text = offer.summary.value | default: block.settings.bundle_offer_summary | default: 'Add another and save [discount]%' | replace: '[discount]', discount_label
-  assign heading = offer.heading.value | default: block.settings.bundle_offer_heading | default: 'Add another for [discount]% off?' | replace: '[discount]', discount_label
-  assign body = offer.body.value | default: block.settings.bundle_offer_body | default: 'Another room, another color, or a gift.' | replace: '[discount]', discount_label
-  assign selector_label = offer.selector_label.value | default: block.settings.bundle_offer_selector_label | default: 'Choose your second item' | replace: '[discount]', discount_label
-  assign badge_text = offer.badge.value | default: block.settings.bundle_offer_badge | default: 'Bundle offer' | replace: '[discount]', discount_label
+  assign summary_text = offer.summary.value | default: settings.product_bundle_offer_summary | default: 'Add another and save [discount]%' | replace: '[discount]', discount_label
+  assign heading = offer.heading.value | default: settings.product_bundle_offer_heading | default: 'Add another for [discount]% off?' | replace: '[discount]', discount_label
+  assign body = offer.body.value | default: settings.product_bundle_offer_body | default: 'Another room, another color, or a gift.' | replace: '[discount]', discount_label
+  assign selector_label = offer.selector_label.value | default: settings.product_bundle_offer_selector_label | default: 'Choose your second item' | replace: '[discount]', discount_label
+  assign badge_text = offer.badge.value | default: settings.product_bundle_offer_badge | default: 'Bundle offer' | replace: '[discount]', discount_label
   assign current_option_label = offer_variant.option1 | default: offer_variant.title
   if offer_variant.title == 'Default Title'
     assign current_option_label = offer_product.title

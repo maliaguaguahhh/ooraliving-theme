@@ -76,42 +76,18 @@
           "type": "variants",
           "settings": {
             "variant_style": "select",
-            "variant_color_style": "color",
-            "enable_color_groups": true,
-            "limited_edition_label": "Limited Edition",
-            "limited_edition_colors": "Dust Rose",
-            "classic_shades_label": "Classic Shades"
+            "variant_color_style": "color"
           }
         },
         "inventory_status_homepage": {
           "type": "inventory_status",
-          "settings": {
-            "low_inventory_threshold": 25,
-            "show_inventory_count": "low-inventory-threshold",
-            "preorder_status_text": "Available for pre-order",
-            "color_in_stock": "#4f8068",
-            "color_out_stock": "#da1e28"
-          }
+          "settings": {}
         },
         "buy_button_88TAkd": {
           "type": "buy_button",
           "settings": {
             "show_dynamic_checkout": true,
-            "show_gift_card_recipient": false,
-            "show_shipping_promise": true,
-            "shipping_promise_heading": "Ships out within 24–48 hours when inventory is available",
-            "enable_preorder_message": true,
-            "preorder_status_text": "Available for pre-order",
-            "preorder_button_label": "Pre-order",
-            "preorder_arrival_text": "Expected to restock around October 14. Pre-orders will ship as soon as inventory arrives.",
-            "preorder_color": "#4f8068",
-            "enable_bundle_offer": true,
-            "bundle_offer_summary": "Add another and save [discount]%",
-            "bundle_offer_badge": "Bundle offer",
-            "bundle_offer_heading": "Add another for [discount]% off?",
-            "bundle_offer_body": "Another room, another color, or a gift.",
-            "bundle_offer_selector_label": "Choose your second item",
-            "bundle_offer_cta_text": "+ Add a second - [price]"
+            "show_gift_card_recipient": false
           }
         },
         "quantity_picker_B4YTyH": {

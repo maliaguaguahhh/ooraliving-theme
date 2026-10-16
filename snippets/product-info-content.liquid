@@ -102,6 +102,7 @@
 
           <!-- variants -->
         {% when 'variants' %}
+          {% assign limited_edition_colors = product.metafields.custom.limited_edition_colors.value | join: ',' %}
           {% unless product.has_only_default_variant %}
             <xo-animate xo-cascade>
               <xo-product-variants>
@@ -112,10 +113,10 @@
                         option: option,
                         style: block.settings.variant_color_style,
                         product: product,
-                        enable_color_groups: block.settings.enable_color_groups,
-                        limited_edition_colors: block.settings.limited_edition_colors,
-                        limited_edition_label: block.settings.limited_edition_label,
-                        classic_shades_label: block.settings.classic_shades_label
+                        enable_color_groups: settings.product_color_groups_enabled,
+                        limited_edition_colors: limited_edition_colors,
+                        limited_edition_label: settings.product_limited_edition_label,
+                        classic_shades_label: settings.product_classic_shades_label
                       %}
                     {% else %}
                       {% render 'product-variant', option: option, style: block.settings.variant_style, product: product %}
@@ -157,7 +158,7 @@
                         {% endif %}
                       >
                         {% if is_preorder %}
-                          {% assign button_text = block.settings.preorder_button_label | default: 'Pre-order' %}
+                          {% assign button_text = settings.product_preorder_button_label | default: 'Pre-order' %}
                           {% assign button_text_unavailable = 'products.product.unavailable' | t %}
                           {% render 'button', style: 'secondary', text: button_text, size: 'md', block: true, text_unavailable: button_text_unavailable %}
                         {% elsif current_variant.available %}
@@ -174,7 +175,7 @@
                   {% endform %}
                 </xo-animate>
                 {% assign bundle_offer = product.metafields.custom.bundle_offer.value %}
-                {% if block.settings.enable_bundle_offer and bundle_offer != blank %}
+                {% if settings.product_bundle_offer_enabled and bundle_offer != blank %}
                   <xo-animate xo-cascade class="xo-product-info-content__bundle-offer">
                     <xo-product-will-change xo-unique-id="bundle-offer-card-{{ section.id }}">
                       {% render 'bundle-offer-card', product: product, offer: bundle_offer, block: block, section_id: section.id %}
@@ -190,20 +191,20 @@
                 </xo-animate>
               </div>
               <xo-product-will-change xo-unique-id="product-preorder-message-{{ section.id }}">
-                {% if is_preorder and block.settings.enable_preorder_message and block.settings.preorder_arrival_text != blank %}
+                {% if is_preorder and settings.product_restock_note_enabled and product.metafields.custom.restock_note != blank %}
                   <div
                     class="xo-product-info-content__preorder-note"
-                    style="--preorder-color: {{ block.settings.preorder_color | default: '#4f8068' }}"
+                    style="--preorder-color: {{ settings.product_restock_note_color | default: '#4f8068' }}"
                   >
                     <span class="xo-product-info-content__preorder-note-dot" aria-hidden="true"></span>
-                    <span>{{ block.settings.preorder_arrival_text | escape }}</span>
+                    <span>{{ product.metafields.custom.restock_note.value | escape }}</span>
                   </div>
                 {% endif %}
               </xo-product-will-change>
             </div>
           </div>
-          {% if block.settings.show_shipping_promise %}
-            {% render 'product-shipping-promise', heading: block.settings.shipping_promise_heading %}
+          {% if settings.product_shipping_promise_enabled %}
+            {% render 'product-shipping-promise' %}
           {% endif %}
 
           <!-- line -->

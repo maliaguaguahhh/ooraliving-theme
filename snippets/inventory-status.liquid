@@ -1,8 +1,8 @@
 {% liquid
-  assign low_inventory_threshold = block.settings.low_inventory_threshold
-  assign show_inventory_count = block.settings.show_inventory_count
-  assign color_in_stock = block.settings.color_in_stock
-  assign color_out_stock = block.settings.color_out_stock
+  assign low_inventory_threshold = settings.product_low_inventory_threshold
+  assign show_inventory_count = settings.product_show_inventory_count
+  assign color_in_stock = settings.product_color_in_stock
+  assign color_out_stock = settings.product_color_out_stock
   assign current_variant = product.selected_or_first_available_variant
   assign is_preorder = false
   if current_variant.inventory_policy == 'continue' and current_variant.inventory_quantity <= 0
@@ -25,7 +25,7 @@
       <span class='xo-inventory-status__icon xo-stack' style='--ai: center; --jc: center'>
         {% render 'icon', name: 'inventory', size: 16, color: color_in_stock %}
       </span>
-      <span class='xo-inventory-status__label' style='--color: {{ color_in_stock }}'>{{ block.settings.preorder_status_text | default: 'Available for pre-order' | escape }}</span>
+      <span class='xo-inventory-status__label' style='--color: {{ color_in_stock }}'>{{ settings.product_preorder_status_text | default: 'Available for pre-order' | escape }}</span>
     </div>
   {% elsif current_variant.inventory_quantity <= 0 %}
     <div
@@ -72,7 +72,7 @@
       <span class='xo-inventory-status__icon xo-stack' style='--ai: center; --jc: center'>
         {% render 'icon', name: 'inventory', size: 16, color: color_in_stock %}
       </span>
-      <span class='xo-inventory-status__label' style='--color: {{ color_in_stock }}'>{{ block.settings.preorder_status_text | default: 'Available for pre-order' | escape }}</span>
+      <span class='xo-inventory-status__label' style='--color: {{ color_in_stock }}'>{{ settings.product_preorder_status_text | default: 'Available for pre-order' | escape }}</span>
     </div>
   {% elsif current_variant.inventory_quantity <= 0 %}
     <div
@@ -119,7 +119,7 @@
       <span class='xo-inventory-status__icon xo-stack' style='--ai: center; --jc: center'>
         {% render 'icon', name: 'inventory', size: 16, color: color_in_stock %}
       </span>
-      <span class='xo-inventory-status__label' style='--color: {{ color_in_stock }}'>{{ block.settings.preorder_status_text | default: 'Available for pre-order' | escape }}</span>
+      <span class='xo-inventory-status__label' style='--color: {{ color_in_stock }}'>{{ settings.product_preorder_status_text | default: 'Available for pre-order' | escape }}</span>
     </div>
   {% elsif current_variant.inventory_quantity <= 0 %}
     <div

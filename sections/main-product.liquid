@@ -320,31 +320,6 @@
             }
           ],
           "default": "color"
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_color_groups",
-          "label": "Group color swatches",
-          "default": true
-        },
-        {
-          "type": "text",
-          "id": "limited_edition_label",
-          "label": "Limited edition label",
-          "default": "Limited Edition"
-        },
-        {
-          "type": "textarea",
-          "id": "limited_edition_colors",
-          "label": "Limited edition colors",
-          "info": "Comma-separated color option values, for example: Dust Rose, Stone.",
-          "default": "Dust Rose"
-        },
-        {
-          "type": "text",
-          "id": "classic_shades_label",
-          "label": "Classic shades label",
-          "default": "Classic Shades"
         }
       ]
     },
@@ -366,102 +341,6 @@
           "label": "t:sections.main_product.blocks.buy_button.show_gift_card_recipient.label",
           "info": "t:sections.main_product.blocks.buy_button.show_gift_card_recipient.info",
           "default": false
-        },
-        {
-          "type": "header",
-          "content": "Shipping promise"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_shipping_promise",
-          "label": "Show shipping promise",
-          "default": true
-        },
-        {
-          "type": "text",
-          "id": "shipping_promise_heading",
-          "label": "Shipping promise heading",
-          "default": "Ships out within 24–48 hours when inventory is available"
-        },
-        {
-          "type": "header",
-          "content": "Restock notice"
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_preorder_message",
-          "label": "Show restock notice",
-          "default": true
-        },
-        {
-          "type": "text",
-          "id": "preorder_button_label",
-          "label": "Pre-order button label",
-          "default": "Pre-order"
-        },
-        {
-          "type": "textarea",
-          "id": "preorder_arrival_text",
-          "label": "Restock notice text",
-          "default": "Expected to restock around October 14. Pre-orders will ship as soon as inventory arrives."
-        },
-        {
-          "type": "color",
-          "id": "preorder_color",
-          "label": "Restock notice color",
-          "default": "#4f8068"
-        },
-        {
-          "type": "header",
-          "content": "Bundle offer"
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_bundle_offer",
-          "label": "Enable bundle offer",
-          "info": "Shows on products that have a Bundle offer metafield (custom.bundle_offer). The product to add, discount and image are set on that offer.",
-          "default": false
-        },
-        {
-          "type": "paragraph",
-          "content": "Default card text, used when the product's offer leaves a field empty. [discount] = the offer's percentage."
-        },
-        {
-          "type": "text",
-          "id": "bundle_offer_summary",
-          "label": "Collapsed text",
-          "default": "Add another and save [discount]%"
-        },
-        {
-          "type": "text",
-          "id": "bundle_offer_badge",
-          "label": "Badge",
-          "default": "Bundle offer"
-        },
-        {
-          "type": "text",
-          "id": "bundle_offer_heading",
-          "label": "Heading",
-          "default": "Add another for [discount]% off?"
-        },
-        {
-          "type": "textarea",
-          "id": "bundle_offer_body",
-          "label": "Body",
-          "default": "Another room, another color, or a gift."
-        },
-        {
-          "type": "text",
-          "id": "bundle_offer_selector_label",
-          "label": "Variant selector label",
-          "default": "Choose your second item"
-        },
-        {
-          "type": "text",
-          "id": "bundle_offer_cta_text",
-          "label": "Button text",
-          "info": "Use [price] to show the discounted second item price.",
-          "default": "+ Add a second - [price]"
         }
       ]
     },
@@ -824,56 +703,7 @@
       "type": "inventory_status",
       "name": "t:sections.main_product.blocks.inventory_status.name",
       "limit": 1,
-      "settings": [
-        {
-          "type": "range",
-          "id": "low_inventory_threshold",
-          "label": "t:sections.main_product.blocks.inventory_status.settings.low_inventory_threshold.label",
-          "info": "t:sections.main_product.blocks.inventory_status.settings.low_inventory_threshold.info",
-          "min": 0,
-          "max": 25,
-          "step": 1,
-          "default": 15
-        },
-        {
-          "type": "select",
-          "id": "show_inventory_count",
-          "label": "t:sections.main_product.blocks.inventory_status.settings.show_inventory_count.label",
-          "options": [
-            {
-              "value": "none",
-              "label": "t:sections.main_product.blocks.inventory_status.settings.show_inventory_count.option__1.label"
-            },
-            {
-              "value": "low-inventory-threshold",
-              "label": "t:sections.main_product.blocks.inventory_status.settings.show_inventory_count.option__2.label"
-            },
-            {
-              "value": "always",
-              "label": "t:sections.main_product.blocks.inventory_status.settings.show_inventory_count.option__3.label"
-            }
-          ],
-          "default": "low-inventory-threshold"
-        },
-        {
-          "type": "text",
-          "id": "preorder_status_text",
-          "label": "Pre-order inventory status",
-          "default": "Available for pre-order"
-        },
-        {
-          "type": "color",
-          "id": "color_in_stock",
-          "label": "t:sections.main_product.blocks.inventory_status.settings.color_in_stock.label",
-          "default": "#10A71F"
-        },
-        {
-          "type": "color",
-          "id": "color_out_stock",
-          "label": "t:sections.main_product.blocks.inventory_status.settings.color_out_stock.label",
-          "default": "#DA1E28"
-        }
-      ]
+      "settings": []
     }
   ]
 }
