@@ -2,16 +2,19 @@
   margin: 1.6rem 0 0;
 }
 
+/* The thumbnail stretches to the height of the text next to it, so the two read as one block. */
 .gift-wrap-option__row {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 1.2rem;
 }
 
 .gift-wrap-option__thumb {
   flex-shrink: 0;
-  width: 5.6rem;
-  height: 5.6rem;
+  align-self: stretch;
+  width: 7.2rem;
+  height: auto;
+  min-height: 5.6rem;
   padding: 0;
   overflow: hidden;
   border: 1px solid rgba(var(--color-foreground), 0.15);
