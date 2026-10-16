@@ -74,6 +74,15 @@
         sections: { ...(prev && prev.sections), ...(data.sections || {}) },
       }))('gift-wrap/refresh');
     }
+    // The free shipping bar only recalculates when the cart total changes. Gift wrap changes
+    // can re-render the drawer with the same total, which would leave the bar on its default text.
+    window.setTimeout(() => {
+      document.querySelectorAll('xo-cart-free-shipping-custom').forEach((bar) => {
+        if (typeof bar.handler === 'function') {
+          bar.handler();
+        }
+      });
+    }, 100);
   };
 
   // Keeps the Gift Wrap line quantity equal to the number of wrapped units, and the order note in step.
@@ -144,24 +153,51 @@
     }
   };
 
-  const toggleLine = async (input) => {
-    input.disabled = true;
+  // Sets how many units of one variant are gift wrapped. All cart lines of that variant are
+  // replaced by at most two lines: the wrapped units and the rest. Shopify keeps lines with
+  // different properties apart, and re-applies discounts to the new lines.
+  const setWrapCount = async (control) => {
+    const variantId = Number(control.dataset.giftWrapVariant);
+    const wanted = control.type === 'checkbox' ? (control.checked ? 1 : 0) : Number(control.value);
+    control.disabled = true;
     try {
       const cart = await getCart();
-      const item = cart.items.find((line) => line.key === input.dataset.lineKey);
-      if (!item) {
+      const lines = cart.items.filter((line) => line.variant_id === variantId);
+      if (!lines.length) {
         return;
       }
-      // Shopify ignores an empty properties object, so turning the wrap off sets the value to '' instead.
-      const properties = { ...(item.properties || {}), [PROPERTY]: input.checked ? YES : '' };
-      await request('cart/change.js', { id: item.key, quantity: item.quantity, properties });
+      const total = lines.reduce((sum, line) => sum + line.quantity, 0);
+      const wrapped = Math.min(Math.max(wanted, 0), total);
+      const otherProperties = { ...(lines[0].properties || {}) };
+      delete otherProperties[PROPERTY];
+      Object.keys(otherProperties).forEach((key) => {
+        if (otherProperties[key] === '') {
+          delete otherProperties[key];
+        }
+      });
+      const hasOther = Object.keys(otherProperties).length > 0;
+
+      const updates = {};
+      lines.forEach((line) => {
+        updates[line.key] = 0;
+      });
+      await request('cart/update.js', { updates });
+
+      const items = [];
+      if (wrapped > 0) {
+        items.push({ id: variantId, quantity: wrapped, properties: { ...otherProperties, [PROPERTY]: YES } });
+      }
+      if (total - wrapped > 0) {
+        items.push({ id: variantId, quantity: total - wrapped, ...(hasOther ? { properties: otherProperties } : {}) });
+      }
+      await request('cart/add.js', { items });
       await sync();
       await refresh();
     } catch (error) {
       console.error('[gift-wrap]', error);
-      input.checked = !input.checked;
+      await refresh().catch(() => {});
     } finally {
-      input.disabled = false;
+      control.disabled = false;
     }
   };
 
@@ -204,9 +240,9 @@
       return;
     }
 
-    const lineToggle = event.target.closest('[data-gift-wrap-line]');
-    if (lineToggle) {
-      toggleLine(lineToggle);
+    const wrapControl = event.target.closest('[data-gift-wrap-variant]');
+    if (wrapControl) {
+      setWrapCount(wrapControl);
     }
   });
 

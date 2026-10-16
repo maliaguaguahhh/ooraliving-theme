@@ -1376,7 +1376,20 @@
         "type": "text",
         "id": "gift_wrapping_info",
         "label": "Note under the checkbox",
-        "default": "Each item is wrapped individually."
+        "default": "Each item is wrapped individually. You can change how many to wrap in your cart."
+      },
+      {
+        "type": "text",
+        "id": "gift_wrapping_count_label",
+        "label": "Cart label when several are in the cart",
+        "info": "Shown as: Gift wrap [n] of 3",
+        "default": "Gift wrap"
+      },
+      {
+        "type": "text",
+        "id": "gift_wrapping_of_label",
+        "label": "Word between the count and the total",
+        "default": "of"
       },
       {
         "type": "text",
