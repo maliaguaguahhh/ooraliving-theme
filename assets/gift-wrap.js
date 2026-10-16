@@ -49,10 +49,14 @@
       .filter((line) => !line.startsWith(NOTE_PREFIX))
       .join('\n')
       .trim();
-    const lines = cart.items.filter(isWrapped).map((item) => {
+    // Discounts can split one product into several cart lines, so totals are grouped per product and variant.
+    const totals = new Map();
+    cart.items.filter(isWrapped).forEach((item) => {
       const variant = item.variant_title ? ` - ${item.variant_title}` : '';
-      return `${NOTE_PREFIX}${item.product_title}${variant} x${item.quantity}`;
+      const label = `${item.product_title}${variant}`;
+      totals.set(label, (totals.get(label) || 0) + item.quantity);
     });
+    const lines = [...totals].map(([label, quantity]) => `${NOTE_PREFIX}${label} x${quantity}`);
     if (!lines.length) {
       return own;
     }
@@ -148,11 +152,8 @@
       if (!item) {
         return;
       }
-      const properties = { ...(item.properties || {}) };
-      delete properties[PROPERTY];
-      if (input.checked) {
-        properties[PROPERTY] = YES;
-      }
+      // Shopify ignores an empty properties object, so turning the wrap off sets the value to '' instead.
+      const properties = { ...(item.properties || {}), [PROPERTY]: input.checked ? YES : '' };
       await request('cart/change.js', { id: item.key, quantity: item.quantity, properties });
       await sync();
       await refresh();
