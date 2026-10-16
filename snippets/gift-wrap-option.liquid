@@ -1,12 +1,13 @@
 {% doc %}
-Product page gift wrap checkbox. When checked, the item is added with the "Gift wrap: Yes"
-property and the express checkout button is swapped for a Buy now button that keeps the wrap.
-When the Gift Wrap product has images, a thumbnail and a "See how it looks" link open a dialog
-with up to three of its images and its description. Renders nothing when gift wrapping is off,
-the Gift Wrap product is unavailable, or the product does not ship.
+Product page gift wrap card: a fixed-size block with the Gift Wrap photo (price tag on it), the
+label and a short note, and a round check on the right. When checked, the item is added with the
+"Gift wrap: Yes" property and the express checkout button is swapped for a Buy now button that
+keeps the wrap. When the Gift Wrap product has images, the photo opens a dialog with up to three
+of them and its description; without images a gift icon stands in. Renders nothing when gift
+wrapping is off, the Gift Wrap product is unavailable, or the product does not ship.
 
 @param {product} product - The product being bought.
-@param {string} section_id - Section id, used to keep the dialog id unique on the page.
+@param {string} section_id - Section id, used to keep the dialog and checkbox ids unique on the page.
 @example
 {% render 'gift-wrap-option', product: product, section_id: section.id %}
 {% enddoc %}
@@ -22,6 +23,7 @@ the Gift Wrap product is unavailable, or the product does not ship.
   endif
   assign gift_wrap_images = gift_wrap_product.images
   assign dialog_id = 'GiftWrapPreview-' | append: section_id
+  assign check_id = 'GiftWrapCheck-' | append: section_id
   assign preview_label = settings.gift_wrapping_preview_label | default: 'See how it looks'
   assign dialog_title = settings.gift_wrapping_dialog_title | default: 'Our gift wrap'
 %}
@@ -29,59 +31,63 @@ the Gift Wrap product is unavailable, or the product does not ship.
 {% if show_gift_wrap %}
   {{ 'gift-wrap.css' | asset_url | stylesheet_tag }}
   <div class="gift-wrap-option">
-    <div class="gift-wrap-option__row">
-      {% if gift_wrap_images.size > 0 %}
-        <button
-          type="button"
-          class="gift-wrap-option__thumb"
-          aria-haspopup="dialog"
-          aria-label="{{ preview_label | escape }}"
-          data-gift-wrap-dialog-open="{{ dialog_id }}"
-        >
-          {{
-            gift_wrap_images.first
-            | image_url: width: 160
-            | image_tag: loading: 'lazy', width: 56, height: 56, widths: '56, 112, 160', sizes: '56px', alt: ''
-          }}
-        </button>
-      {% endif %}
-      <div class="gift-wrap-option__body">
-        <label class="gift-wrap-option__label">
-          <input
-            type="checkbox"
-            class="gift-wrap-option__input"
-            name="properties[Gift wrap]"
-            value="Yes"
-            data-gift-wrap-product
+    <div class="gift-wrap-card">
+      <div class="gift-wrap-card__media{% if gift_wrap_images.size == 0 %} gift-wrap-card__media--placeholder{% endif %}">
+        {% if gift_wrap_images.size > 0 %}
+          <button
+            type="button"
+            class="gift-wrap-card__preview"
+            aria-haspopup="dialog"
+            aria-label="{{ preview_label | escape }}"
+            data-gift-wrap-dialog-open="{{ dialog_id }}"
           >
-          <span class="gift-wrap-option__text">
-            {{ settings.gift_wrapping_label | default: 'Gift wrap this item' | escape }}
-            <span class="gift-wrap-option__price">
-              {%- if gift_wrap_variant.price > 0 -%}
-                (+{{ gift_wrap_variant.price | money }} {{ settings.gift_wrapping_each_label | default: 'each' | escape }})
-              {%- else -%}
-                ({{ settings.gift_wrapping_free_label | default: 'Free' | escape }})
-              {%- endif -%}
+            {{
+              gift_wrap_images.first
+              | image_url: width: 300
+              | image_tag: loading: 'lazy', width: 96, height: 96, widths: '100, 200, 300', sizes: '96px', alt: ''
+            }}
+            <span class="gift-wrap-card__zoom" aria-hidden="true">
+              <svg viewBox="0 0 16 16" width="12" height="12" focusable="false">
+                <circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M10.4 10.4L14 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
             </span>
-          </span>
-        </label>
-        {% if settings.gift_wrapping_info != blank or gift_wrap_images.size > 0 %}
-          <p class="gift-wrap-option__info">
-            {{ settings.gift_wrapping_info | escape }}
-            {% if gift_wrap_images.size > 0 %}
-              <button
-                type="button"
-                class="gift-wrap-option__preview"
-                aria-haspopup="dialog"
-                data-gift-wrap-dialog-open="{{ dialog_id }}"
-              >
-                {{ preview_label | escape }}
-              </button>
-            {% endif %}
-          </p>
+          </button>
+        {% else %}
+          <svg class="gift-wrap-card__icon" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true" focusable="false">
+            <rect x="3.5" y="9" width="17" height="11.5" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+            <rect x="2.5" y="6" width="19" height="3.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.4"/>
+            <path d="M12 6v14.5M12 6c-1.5-3-5-3.5-5-1.2C7 6 9.5 6 12 6zm0 0c1.5-3 5-3.5 5-1.2C17 6 14.5 6 12 6z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+          </svg>
         {% endif %}
+        {% render 'gift-wrap-price-tag', variant: gift_wrap_variant %}
       </div>
+      <label class="gift-wrap-card__body" for="{{ check_id }}">
+        <span class="gift-wrap-card__title">
+          {{ settings.gift_wrapping_label | default: 'Gift wrap this item' | escape }}
+        </span>
+        {% if settings.gift_wrapping_description != blank or settings.gift_wrapping_info != blank %}
+          <span class="gift-wrap-card__info" id="{{ check_id }}-info">
+            {% if settings.gift_wrapping_description != blank %}
+              {{ settings.gift_wrapping_description | escape }}
+            {% endif %}
+            {{ settings.gift_wrapping_info | escape }}
+          </span>
+        {% endif %}
+      </label>
+      <input
+        type="checkbox"
+        id="{{ check_id }}"
+        class="gift-wrap-check"
+        name="properties[Gift wrap]"
+        value="Yes"
+        {% if settings.gift_wrapping_description != blank or settings.gift_wrapping_info != blank %}
+          aria-describedby="{{ check_id }}-info"
+        {% endif %}
+        data-gift-wrap-product
+      >
     </div>
+
 
     {% if gift_wrap_images.size > 0 %}
       <dialog class="gift-wrap-dialog" id="{{ dialog_id }}" aria-labelledby="{{ dialog_id }}-title">
@@ -101,14 +107,12 @@ the Gift Wrap product is unavailable, or the product does not ship.
           </div>
           {% if gift_wrap_product.description != blank %}
             <div class="gift-wrap-dialog__text">{{ gift_wrap_product.description }}</div>
+          {% elsif settings.gift_wrapping_description != blank %}
+            <div class="gift-wrap-dialog__text"><p>{{ settings.gift_wrapping_description | escape }}</p></div>
           {% endif %}
           <p class="gift-wrap-dialog__price">
-            {{ settings.gift_wrapping_label | default: 'Gift wrap this item' | escape }}:
-            {% if gift_wrap_variant.price > 0 -%}
-              {{ gift_wrap_variant.price | money }} {{ settings.gift_wrapping_each_label | default: 'each' | escape }}
-            {%- else -%}
-              {{ settings.gift_wrapping_free_label | default: 'Free' | escape }}
-            {%- endif %}
+            {{ settings.gift_wrapping_label | default: 'Gift wrap this item' | escape }}
+            {% render 'gift-wrap-price-tag', variant: gift_wrap_variant %}
           </p>
         </div>
       </dialog>

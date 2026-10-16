@@ -68,9 +68,9 @@
     "cart": {
       "view": "View my cart ({{ count }})",
       "item_added": "Item added to your cart",
-      "free_shipping_notice": "Spend more for FREE shipping in the contiguous U.S.",
-      "free_shipping_notice_2": "Your order now qualifies for FREE shipping in the contiguous U.S.!",
-      "free_shipping_progress": "Spend {{ money }} more for FREE shipping in the contiguous U.S."
+      "free_shipping_notice": "Spend more to get free standard shipping.",
+      "free_shipping_notice_2": "Your order qualifies for free standard shipping!",
+      "free_shipping_progress": "Spend {{ money }} more for free standard shipping."
     },
     "share": {
       "close": "Close share",

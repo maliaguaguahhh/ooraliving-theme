@@ -153,42 +153,43 @@
     }
   };
 
-  // Sets how many units of one variant are gift wrapped. All cart lines of that variant are
-  // replaced by at most two lines: the wrapped units and the rest. Shopify keeps lines with
-  // different properties apart, and re-applies discounts to the new lines.
+  // Sets how many units of one cart line are gift wrapped. The line is replaced by at most two
+  // lines: the wrapped units and the rest. Shopify keeps lines with different properties apart,
+  // merges them with matching lines, and re-applies discounts to the new lines.
   const setWrapCount = async (control) => {
-    const variantId = Number(control.dataset.giftWrapVariant);
+    const key = control.dataset.giftWrapLine;
     const wanted = control.type === 'checkbox' ? (control.checked ? 1 : 0) : Number(control.value);
     control.disabled = true;
     try {
       const cart = await getCart();
-      const lines = cart.items.filter((line) => line.variant_id === variantId);
-      if (!lines.length) {
+      const line = cart.items.find((item) => item.key === key);
+      if (!line) {
+        // The cart changed since the drawer was drawn; redraw it so the controls match again.
+        await refresh();
         return;
       }
-      const total = lines.reduce((sum, line) => sum + line.quantity, 0);
+      const total = line.quantity;
       const wrapped = Math.min(Math.max(wanted, 0), total);
-      const otherProperties = { ...(lines[0].properties || {}) };
+      if (wrapped === (isWrapped(line) ? total : 0)) {
+        return;
+      }
+      const otherProperties = { ...(line.properties || {}) };
       delete otherProperties[PROPERTY];
-      Object.keys(otherProperties).forEach((key) => {
-        if (otherProperties[key] === '') {
-          delete otherProperties[key];
+      Object.keys(otherProperties).forEach((name) => {
+        if (otherProperties[name] === '') {
+          delete otherProperties[name];
         }
       });
       const hasOther = Object.keys(otherProperties).length > 0;
 
-      const updates = {};
-      lines.forEach((line) => {
-        updates[line.key] = 0;
-      });
-      await request('cart/update.js', { updates });
+      await request('cart/update.js', { updates: { [line.key]: 0 } });
 
       const items = [];
       if (wrapped > 0) {
-        items.push({ id: variantId, quantity: wrapped, properties: { ...otherProperties, [PROPERTY]: YES } });
+        items.push({ id: line.variant_id, quantity: wrapped, properties: { ...otherProperties, [PROPERTY]: YES } });
       }
       if (total - wrapped > 0) {
-        items.push({ id: variantId, quantity: total - wrapped, ...(hasOther ? { properties: otherProperties } : {}) });
+        items.push({ id: line.variant_id, quantity: total - wrapped, ...(hasOther ? { properties: otherProperties } : {}) });
       }
       await request('cart/add.js', { items });
       await sync();
@@ -240,7 +241,7 @@
       return;
     }
 
-    const wrapControl = event.target.closest('[data-gift-wrap-variant]');
+    const wrapControl = event.target.closest('[data-gift-wrap-line]');
     if (wrapControl) {
       setWrapCount(wrapControl);
     }

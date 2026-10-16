@@ -1310,30 +1310,25 @@
       },
       {
         "type": "paragraph",
-        "content": "Default card text, used when a product's offer leaves a field empty. [discount] = the offer's percentage, [price] = discounted price."
+        "content": "Default card text, used when a product's offer leaves a field empty. [discount] = the offer's percentage, [price] = discounted price, [product] = the offer product's name. Collapsed text and button text apply to offers for a second unit of the same product; an offer for a different product says \"Add [product]\" unless the offer sets its own text."
+      },
+      {
+        "type": "text",
+        "id": "product_bundle_offer_tab",
+        "label": "Tab label",
+        "info": "Pill on the top edge of the card, used when the offer has no Tab label of its own. Leave both empty to hide it.",
+        "default": "Save [discount]%"
       },
       {
         "type": "text",
         "id": "product_bundle_offer_summary",
         "label": "Collapsed text",
-        "default": "Add another and save [discount]%"
-      },
-      {
-        "type": "text",
-        "id": "product_bundle_offer_badge",
-        "label": "Badge",
-        "default": "Bundle offer"
-      },
-      {
-        "type": "text",
-        "id": "product_bundle_offer_heading",
-        "label": "Heading",
-        "default": "Add another for [discount]% off?"
+        "default": "Add a second [product]"
       },
       {
         "type": "textarea",
         "id": "product_bundle_offer_body",
-        "label": "Body",
+        "label": "Note above the color selector",
         "default": "Another room, another color, or a gift."
       },
       {
@@ -1374,9 +1369,16 @@
       },
       {
         "type": "text",
+        "id": "gift_wrapping_description",
+        "label": "Wrapping description",
+        "info": "One sentence under the checkbox, also used in the preview popup when the Gift Wrap product has no description.",
+        "default": "Hand-wrapped with ribbon, ready to give."
+      },
+      {
+        "type": "text",
         "id": "gift_wrapping_info",
         "label": "Note under the checkbox",
-        "default": "Each item is wrapped individually. You can change how many to wrap in your cart."
+        "default": "Each item is wrapped separately."
       },
       {
         "type": "text",
@@ -1406,14 +1408,9 @@
       },
       {
         "type": "text",
-        "id": "gift_wrapping_each_label",
-        "label": "Price suffix",
-        "default": "each"
-      },
-      {
-        "type": "text",
         "id": "gift_wrapping_free_label",
-        "label": "Text when free",
+        "label": "Price tag when free",
+        "info": "When charged, the tag shows the Gift Wrap product's price, e.g. +$4.",
         "default": "Free"
       },
       {

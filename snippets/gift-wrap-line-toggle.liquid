@@ -1,8 +1,10 @@
 {% doc %}
-Gift wrap control for one product color in the cart (drawer and cart page). It is shown once,
-on the first cart line of that variant, and covers every unit of the variant in the cart:
-a checkbox when there is one unit, otherwise "Gift wrap [n] of N". For the Gift Wrap line itself
-it shows a short explanation instead, since its quantity follows the wrapped items.
+Gift wrap control for one cart line (drawer and cart page), so it always matches the quantity
+shown on that line: a round check when the line has one unit, otherwise "Gift wrap [n] of N"
+for that line's N units. A line is either all wrapped or not; choosing part of it splits it into
+a wrapped line and a plain one. Discounts can split one color into several lines (the bundle's
+second unit is its own line), and each of those lines gets its own control. For the Gift Wrap
+line itself it shows a short explanation instead, since its quantity follows the wrapped items.
 
 @param {object} item - The cart line item.
 @example
@@ -22,62 +24,50 @@ it shows a short explanation instead, since its quantity follows the wrapped ite
     </p>
   {% elsif item.requires_shipping and item.product.gift_card? == false %}
     {% liquid
-      assign variant_total = 0
-      assign wrapped_total = 0
-      assign first_key = ''
-      for line in cart.items
-        if line.variant_id == item.variant_id
-          if first_key == ''
-            assign first_key = line.key
-          endif
-          assign variant_total = variant_total | plus: line.quantity
-          if line.properties['Gift wrap'] == 'Yes'
-            assign wrapped_total = wrapped_total | plus: line.quantity
-          endif
-        endif
-      endfor
+      assign line_wrapped = false
+      if item.properties['Gift wrap'] == 'Yes'
+        assign line_wrapped = true
+      endif
       assign wrap_label = settings.gift_wrapping_label | default: 'Gift wrap this item'
-      assign each_label = settings.gift_wrapping_each_label | default: 'each'
     %}
-    {% if item.key == first_key %}
-      {% if variant_total == 1 %}
-        <label class="gift-wrap-line">
-          <input
-            type="checkbox"
-            class="gift-wrap-line__input"
-            data-gift-wrap-variant="{{ item.variant_id }}"
-            {% if wrapped_total > 0 %}
-              checked
-            {% endif %}
-          >
-          <span>
-            {{ wrap_label | escape }}
-            {%- if gift_wrap_variant.price > 0 %}
-              (+{{ gift_wrap_variant.price | money }} {{ each_label | escape }})
-            {%- endif -%}
-          </span>
-        </label>
-      {% else %}
-        {% assign select_id = 'GiftWrapCount-' | append: item.variant_id | append: '-' | append: item.key | handleize %}
-        <div class="gift-wrap-line gift-wrap-line--count">
-          <label for="{{ select_id }}">{{ settings.gift_wrapping_count_label | default: 'Gift wrap' | escape }}</label>
-          <select
-            id="{{ select_id }}"
-            class="gift-wrap-line__select"
-            data-gift-wrap-variant="{{ item.variant_id }}"
-          >
-            {% for count in (0..variant_total) %}
-              <option value="{{ count }}"{% if count == wrapped_total %} selected{% endif %}>{{ count }}</option>
-            {% endfor %}
-          </select>
-          <span>
-            {{ settings.gift_wrapping_of_label | default: 'of' | escape }} {{ variant_total }}
-            {%- if gift_wrap_variant.price > 0 %}
-              (+{{ gift_wrap_variant.price | money }} {{ each_label | escape }})
-            {%- endif -%}
-          </span>
-        </div>
-      {% endif %}
+    {% if item.quantity == 1 %}
+      <label class="gift-wrap-line gift-wrap-line--check">
+        <span>{{ wrap_label | escape }}</span>
+        {% render 'gift-wrap-price-tag', variant: gift_wrap_variant %}
+        <input
+          type="checkbox"
+          class="gift-wrap-check gift-wrap-check--small"
+          data-gift-wrap-line="{{ item.key }}"
+          {% if line_wrapped %}
+            checked
+          {% endif %}
+        >
+      </label>
+    {% else %}
+      {% assign select_id = 'GiftWrapCount-' | append: item.key | handleize %}
+      <div class="gift-wrap-line gift-wrap-line--count">
+        <label for="{{ select_id }}">{{ settings.gift_wrapping_count_label | default: 'Gift wrap' | escape }}</label>
+        <select
+          id="{{ select_id }}"
+          class="gift-wrap-line__select"
+          data-gift-wrap-line="{{ item.key }}"
+        >
+          {% for count in (0..item.quantity) %}
+            <option
+              value="{{ count }}"
+              {% if line_wrapped and count == item.quantity %}
+                selected
+              {% elsif line_wrapped == false and count == 0 %}
+                selected
+              {% endif %}
+            >
+              {{ count }}
+            </option>
+          {% endfor %}
+        </select>
+        <span>{{ settings.gift_wrapping_of_label | default: 'of' | escape }} {{ item.quantity }}</span>
+        {% render 'gift-wrap-price-tag', variant: gift_wrap_variant %}
+      </div>
     {% endif %}
   {% endif %}
 {% endif %}

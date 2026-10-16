@@ -24,7 +24,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Buy Now: 20% Off + Free Shipping in the Contiguous U.S.</p>",
+            "text": "<p>Buy Now: 20% Off + Free Standard Shipping on Orders $49+</p>",
             "link": "shopify://products/tapnest"
           }
         }

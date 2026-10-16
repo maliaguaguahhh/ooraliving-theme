@@ -79,7 +79,9 @@
     const selector = option.closest('[data-bundle-offer-selector]');
     const field = card ? card.querySelector('[data-bundle-offer-variant]') : null;
     const currentLabel = card ? card.querySelector('[data-bundle-offer-current-label]') : null;
-    const currentSwatch = card ? card.querySelector('[data-bundle-offer-current-swatch]') : null;
+    const currentSwatches = card ? card.querySelectorAll('[data-bundle-offer-current-swatch]') : [];
+    const summaryPrice = card ? card.querySelector('[data-bundle-offer-summary-price]') : null;
+    const summaryCompare = card ? card.querySelector('[data-bundle-offer-summary-compare]') : null;
 
     if (!card || !field) {
       return;
@@ -97,9 +99,17 @@
       currentLabel.textContent = option.dataset.label || '';
     }
 
-    if (currentSwatch) {
-      currentSwatch.dataset.swatchHandle = option.dataset.swatchHandle || '';
-      currentSwatch.setAttribute('style', option.dataset.swatchStyle || '');
+    currentSwatches.forEach((swatch) => {
+      swatch.dataset.swatchHandle = option.dataset.swatchHandle || '';
+      swatch.setAttribute('style', option.dataset.swatchStyle || '');
+    });
+
+    if (summaryPrice && option.dataset.priceText) {
+      summaryPrice.textContent = option.dataset.priceText;
+    }
+
+    if (summaryCompare && option.dataset.compareText) {
+      summaryCompare.textContent = option.dataset.compareText;
     }
 
     closeSelector(selector);

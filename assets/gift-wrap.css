@@ -3,71 +3,177 @@
 }
 
 /*
-  Square thumbnail beside the text. The text column is at least as tall as the square and spreads
-  its content top to bottom, so "See how it looks" sits on the square's bottom edge. Narrow phones
-  wrap the note onto an extra line, so the square grows there to stay at least as tall as the text.
+  One fixed-height card: square photo flush left, text in the middle, round check on the right.
+  The height never follows the text or the image, so long settings text is clipped with an
+  ellipsis instead of stretching the card.
 */
-.gift-wrap-option__row {
-  --gift-wrap-thumb: 7rem;
+.gift-wrap-card {
+  --gift-wrap-card-height: 9.6rem;
   display: flex;
   align-items: stretch;
-  gap: 1.2rem;
-}
-
-@media (max-width: 399px) {
-  .gift-wrap-option__row {
-    --gift-wrap-thumb: 8.5rem;
-  }
-}
-
-.gift-wrap-option__thumb {
-  flex-shrink: 0;
-  align-self: flex-start;
-  width: var(--gift-wrap-thumb);
-  height: var(--gift-wrap-thumb);
-  padding: 0;
+  height: var(--gift-wrap-card-height);
   overflow: hidden;
-  border: 1px solid rgba(var(--color-foreground), 0.15);
-  border-radius: 0.8rem;
-  background: rgba(var(--color-foreground), 0.04);
+  border: 1px solid rgba(var(--color-foreground), 0.12);
+  border-radius: 1.2rem;
+  background: rgb(var(--color-background, 255 255 255));
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.gift-wrap-card:has(.gift-wrap-check:checked),
+[data-gift-wrapped] .gift-wrap-card {
+  border-color: rgb(var(--color-button));
+  background: color-mix(in srgb, rgb(var(--color-button)) 8%, rgb(var(--color-background, 255 255 255)));
+}
+
+.gift-wrap-card__media {
+  position: relative;
+  /* Inner height is the card height minus its 1px top and bottom borders. */
+  flex: 0 0 calc(var(--gift-wrap-card-height) - 2px);
+  width: calc(var(--gift-wrap-card-height) - 2px);
+  height: 100%;
+  background: color-mix(in srgb, rgb(var(--color-button)) 14%, rgb(var(--color-background, 255 255 255)));
+}
+
+.gift-wrap-card__media--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1.6rem;
+  color: rgb(var(--color-button));
+}
+
+.gift-wrap-card__preview {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
   cursor: zoom-in;
 }
 
-.gift-wrap-option__thumb img {
+.gift-wrap-card__preview img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.gift-wrap-option__thumb:focus-visible,
-.gift-wrap-option__preview:focus-visible,
+.gift-wrap-card__zoom {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: rgb(var(--color-button));
+  pointer-events: none;
+}
+
+.gift-wrap-card__media .gift-wrap-tag {
+  position: absolute;
+  left: 0.6rem;
+  bottom: 0.6rem;
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+}
+
+.gift-wrap-card__media--placeholder .gift-wrap-tag {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gift-wrap-card__body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  min-width: 0;
+  padding: 1rem 0.8rem 1rem 1.4rem;
+  cursor: pointer;
+}
+
+.gift-wrap-card__title {
+  overflow: hidden;
+  font-weight: 600;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gift-wrap-card__info {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 1.3rem;
+  line-height: 1.35;
+  opacity: 0.7;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+.gift-wrap-card > .gift-wrap-check {
+  align-self: center;
+  margin: 0 1.4rem 0 0;
+}
+
+.gift-wrap-card__preview:focus-visible {
+  outline: 2px solid rgb(var(--color-foreground));
+  outline-offset: -3px;
+}
+
 .gift-wrap-dialog__close:focus-visible {
   outline: 2px solid rgb(var(--color-foreground));
   outline-offset: 2px;
 }
 
-.gift-wrap-option__body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-width: 0;
-}
-
-.gift-wrap-option__thumb + .gift-wrap-option__body {
-  min-height: var(--gift-wrap-thumb);
-}
-
-.gift-wrap-option__preview {
-  padding: 0;
-  border: 0;
-  background: none;
-  color: inherit;
-  font: inherit;
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
+/* A real checkbox drawn as a round check, so the product form still sends its property. */
+.gift-wrap-check {
+  -webkit-appearance: none;
+  appearance: none;
+  flex-shrink: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+  margin: 0;
+  border: 1.5px solid rgba(var(--color-foreground), 0.35);
+  border-radius: 50%;
+  background: #fff no-repeat center / 1.4rem;
   cursor: pointer;
-  white-space: nowrap;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.gift-wrap-check:checked {
+  border-color: rgb(var(--color-button));
+  background-color: rgb(var(--color-button));
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-6.5' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.gift-wrap-check:focus-visible {
+  outline: 2px solid rgb(var(--color-foreground));
+  outline-offset: 2px;
+}
+
+.gift-wrap-check:disabled {
+  cursor: progress;
+  opacity: 0.6;
+}
+
+.gift-wrap-check--small {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-size: 1.2rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gift-wrap-card,
+  .gift-wrap-check {
+    transition: none;
+  }
 }
 
 .gift-wrap-dialog {
@@ -154,6 +260,10 @@
 }
 
 .gift-wrap-dialog__price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.8rem;
   margin: 1.2rem 0 0;
   font-weight: 600;
 }
@@ -164,47 +274,36 @@
   }
 }
 
-.gift-wrap-option__label,
+/* Same look as the product page SAVE badge. */
+.gift-wrap-tag {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  flex-shrink: 0;
+  padding: 0.3rem 0.9rem;
+  border-radius: 99rem;
+  background: rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .gift-wrap-line {
   display: inline-flex;
-  align-items: flex-start;
-  gap: 0.8rem;
-  cursor: pointer;
-  line-height: 1.4;
-}
-
-.gift-wrap-option__input,
-.gift-wrap-line__input {
-  flex-shrink: 0;
-  width: 1.8rem;
-  height: 1.8rem;
-  margin: 0.1rem 0 0;
-  accent-color: rgb(var(--color-foreground));
-  cursor: pointer;
-}
-
-.gift-wrap-option__text {
-  font-weight: 600;
-}
-
-.gift-wrap-option__price {
-  font-weight: 400;
-  opacity: 0.75;
-}
-
-.gift-wrap-option__info {
-  margin: 0.4rem 0 0 2.6rem;
-  font-size: 1.3rem;
-  opacity: 0.7;
-}
-
-.gift-wrap-line {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.8rem;
   margin-top: 0.8rem;
   font-size: 1.3rem;
+  line-height: 1.4;
+  cursor: pointer;
 }
 
 .gift-wrap-line--count {
-  align-items: center;
   cursor: default;
 }
 
@@ -230,8 +329,14 @@
   opacity: 0.7;
 }
 
-.gift-wrap-line__input:disabled {
-  cursor: progress;
+.gift-wrap-line--check {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.gift-wrap-line--check .gift-wrap-check {
+  margin-left: auto;
 }
 
 .gift-wrap-buy-now {

@@ -20,7 +20,7 @@
 
 .tapnest-product-hero__eyebrow {
   margin: 0 0 1.5rem;
-  color: #a46f78;
+  color: rgb(var(--color-button));
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -47,7 +47,7 @@
 }
 
 .tapnest-product-hero__stars {
-  color: #a46f78;
+  color: rgb(var(--color-button));
   font-size: 1.85rem;
   letter-spacing: 0.08em;
   line-height: 1;
@@ -96,8 +96,8 @@
   min-height: 3.6rem;
   padding: 0.65rem 1.45rem;
   border-radius: 999px;
-  background: #a46f78;
-  color: #fff;
+  background: rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
   font-size: 1.45rem;
   font-weight: 700;
   letter-spacing: 0.08em;

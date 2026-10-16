@@ -1,0 +1,15 @@
+{% doc %}
+Small pill with the gift wrap price: "+$4" when charged, the Theme setting's free text when $0.
+
+@param {variant} variant - The Gift Wrap variant.
+@example
+{% render 'gift-wrap-price-tag', variant: gift_wrap_variant %}
+{% enddoc %}
+
+<span class="gift-wrap-tag">
+  {%- if variant.price > 0 -%}
+    +{{ variant.price | money_without_trailing_zeros }}
+  {%- else -%}
+    {{ settings.gift_wrapping_free_label | default: 'Free' | escape }}
+  {%- endif -%}
+</span>
