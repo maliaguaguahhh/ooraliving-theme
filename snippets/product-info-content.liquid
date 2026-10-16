@@ -172,10 +172,11 @@
                     </xo-product-will-change>
                   {% endform %}
                 </xo-animate>
-                {% if block.settings.enable_bundle_offer and product.metafields.custom.bundle_offer_enabled == true %}
+                {% assign bundle_offer = product.metafields.custom.bundle_offer.value %}
+                {% if block.settings.enable_bundle_offer and bundle_offer != blank %}
                   <xo-animate xo-cascade class="xo-product-info-content__bundle-offer">
                     <xo-product-will-change xo-unique-id="bundle-offer-card-{{ section.id }}">
-                      {% render 'bundle-offer-card', product: product, block: block, section_id: section.id %}
+                      {% render 'bundle-offer-card', product: product, offer: bundle_offer, block: block, section_id: section.id %}
                     </xo-product-will-change>
                   </xo-animate>
                 {% endif %}

@@ -419,34 +419,18 @@
           "type": "checkbox",
           "id": "enable_bundle_offer",
           "label": "Enable bundle offer",
+          "info": "Shows on products that have a Bundle offer metafield (custom.bundle_offer). The product to add, discount and image are set on that offer.",
           "default": false
         },
         {
-          "type": "product",
-          "id": "bundle_offer_product",
-          "label": "Bundle product",
-          "info": "Leave blank to add another of the current product."
-        },
-        {
-          "type": "image_picker",
-          "id": "bundle_offer_image",
-          "label": "Bundle image"
-        },
-        {
-          "type": "range",
-          "id": "bundle_offer_discount_percent",
-          "min": 0,
-          "max": 50,
-          "step": 1,
-          "unit": "%",
-          "label": "Displayed discount",
-          "default": 15
+          "type": "paragraph",
+          "content": "Default card text, used when the product's offer leaves a field empty. [discount] = the offer's percentage."
         },
         {
           "type": "text",
           "id": "bundle_offer_summary",
           "label": "Collapsed text",
-          "default": "Add another and save 15%"
+          "default": "Add another and save [discount]%"
         },
         {
           "type": "text",
@@ -458,7 +442,7 @@
           "type": "text",
           "id": "bundle_offer_heading",
           "label": "Heading",
-          "default": "Add another for 15% off?"
+          "default": "Add another for [discount]% off?"
         },
         {
           "type": "textarea",
