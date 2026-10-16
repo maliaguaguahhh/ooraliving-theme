@@ -1,0 +1,49 @@
+{% doc %}
+Product page gift wrap checkbox. When checked, the item is added with the "Gift wrap: Yes"
+property and the express checkout button is swapped for a Buy now button that keeps the wrap.
+Renders nothing when gift wrapping is off, the Gift Wrap product is unavailable, or the
+product does not ship.
+
+@param {product} product - The product being bought.
+@example
+{% render 'gift-wrap-option', product: product %}
+{% enddoc %}
+
+{% liquid
+  assign gift_wrap_product = settings.gift_wrapping_product
+  assign gift_wrap_variant = gift_wrap_product.selected_or_first_available_variant
+  assign show_gift_wrap = false
+  if settings.gift_wrapping_enabled and gift_wrap_variant != blank and product != blank
+    if product.id != gift_wrap_product.id and product.gift_card? == false and product.selected_or_first_available_variant.requires_shipping
+      assign show_gift_wrap = true
+    endif
+  endif
+%}
+
+{% if show_gift_wrap %}
+  {{ 'gift-wrap.css' | asset_url | stylesheet_tag }}
+  <div class="gift-wrap-option">
+    <label class="gift-wrap-option__label">
+      <input
+        type="checkbox"
+        class="gift-wrap-option__input"
+        name="properties[Gift wrap]"
+        value="Yes"
+        data-gift-wrap-product
+      >
+      <span class="gift-wrap-option__text">
+        {{ settings.gift_wrapping_label | default: 'Gift wrap this item' | escape }}
+        <span class="gift-wrap-option__price">
+          {%- if gift_wrap_variant.price > 0 -%}
+            (+{{ gift_wrap_variant.price | money }} {{ settings.gift_wrapping_each_label | default: 'each' | escape }})
+          {%- else -%}
+            ({{ settings.gift_wrapping_free_label | default: 'Free' | escape }})
+          {%- endif -%}
+        </span>
+      </span>
+    </label>
+    {% if settings.gift_wrapping_info != blank %}
+      <p class="gift-wrap-option__info">{{ settings.gift_wrapping_info | escape }}</p>
+    {% endif %}
+  </div>
+{% endif %}

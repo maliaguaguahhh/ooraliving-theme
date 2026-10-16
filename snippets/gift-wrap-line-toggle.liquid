@@ -1,0 +1,44 @@
+{% doc %}
+Gift wrap switch for one cart line (drawer and cart page). For the Gift Wrap line itself it
+shows a short explanation instead, since its quantity follows the wrapped items.
+
+@param {object} item - The cart line item.
+@example
+{% render 'gift-wrap-line-toggle', item: item %}
+{% enddoc %}
+
+{% liquid
+  assign gift_wrap_product = settings.gift_wrapping_product
+  assign gift_wrap_variant = gift_wrap_product.selected_or_first_available_variant
+%}
+
+{% if settings.gift_wrapping_enabled and gift_wrap_variant != blank %}
+  {{ 'gift-wrap.css' | asset_url | stylesheet_tag }}
+  {% if item.variant_id == gift_wrap_variant.id %}
+    <p class="gift-wrap-line gift-wrap-line--info">
+      {{ settings.gift_wrapping_line_info | default: 'One wrap for each gift-wrapped item.' | escape }}
+    </p>
+  {% elsif item.requires_shipping and item.product.gift_card? == false %}
+    {% assign is_wrapped = false %}
+    {% if item.properties['Gift wrap'] == 'Yes' %}
+      {% assign is_wrapped = true %}
+    {% endif %}
+    <label class="gift-wrap-line">
+      <input
+        type="checkbox"
+        class="gift-wrap-line__input"
+        data-gift-wrap-line
+        data-line-key="{{ item.key }}"
+        {% if is_wrapped %}
+          checked
+        {% endif %}
+      >
+      <span>
+        {{ settings.gift_wrapping_label | default: 'Gift wrap this item' | escape }}
+        {%- if gift_wrap_variant.price > 0 %}
+          (+{{ gift_wrap_variant.price | money }} {{ settings.gift_wrapping_each_label | default: 'each' | escape }})
+        {%- endif -%}
+      </span>
+    </label>
+  {% endif %}
+{% endif %}

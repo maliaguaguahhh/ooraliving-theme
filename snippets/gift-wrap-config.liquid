@@ -1,0 +1,21 @@
+{% doc %}
+Loads the gift wrap script and its settings when gift wrapping is enabled in Theme settings
+and the chosen Gift Wrap product is published. Renders nothing otherwise.
+
+@example
+{% render 'gift-wrap-config' %}
+{% enddoc %}
+
+{% assign gift_wrap_variant = settings.gift_wrapping_product.selected_or_first_available_variant %}
+
+{% if settings.gift_wrapping_enabled and gift_wrap_variant != blank %}
+  <script>
+    window.ooraGiftWrap = {
+      variantId: {{ gift_wrap_variant.id | json }},
+      property: 'Gift wrap',
+      value: 'Yes',
+      notePrefix: '[GIFT WRAP] '
+    };
+  </script>
+  <script src="{{ 'gift-wrap.js' | asset_url }}" defer="defer"></script>
+{% endif %}

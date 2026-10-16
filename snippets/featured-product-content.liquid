@@ -145,7 +145,7 @@
       {% case block.type %}
         {%- when 'quantity_picker' -%}
           <xo-animate xo-cascade>
-            <div class="xo-featured-product-content__quantity">
+            <div class="xo-featured-product-content__quantity" data-gift-wrap-quantity>
               {%- render 'quantity', size: 'md', variant: product.selected_or_first_available_variant, product: product, is_cart: false %}
             </div>
           </xo-animate>
@@ -164,6 +164,7 @@
             endif
           %}
           <div class="xo-featured-product-content__buy-form" {{ block.shopify_attributes }}>
+            {% render 'gift-wrap-option', product: product %}
             <div class="xo-featured-product-content__group">
               <xo-animate xo-cascade class="xo-featured-product-content__buy-now {{ style_button_buy }}">
                 {% if product != blank %}
@@ -172,6 +173,7 @@
                     show_dynamic_checkout: block.settings.show_dynamic_checkout,
                     product: product
                   %}
+                  {% render 'gift-wrap-buy-now', product: product, section_id: section.id %}
                 {%- else -%}
                   {% assign button_text_buy_now = 'products.product.buy_now' | t %}
                   {% render 'button', style: 'primary', text: button_text_buy_now, size: 'md', block: true %}

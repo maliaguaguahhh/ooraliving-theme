@@ -66,7 +66,11 @@
           {% if item.properties.size != 0 %}
             {%- for property in item.properties -%}
               {%- assign property_first_char = property.first | slice: 0 -%}
-              {%- if property.last != blank and property_first_char != '_' -%}
+              {%- assign hide_property = false -%}
+              {%- if property.first == 'Gift wrap' and settings.gift_wrapping_enabled and for_notification != true -%}
+                {%- assign hide_property = true -%}
+              {%- endif -%}
+              {%- if property.last != blank and property_first_char != '_' and hide_property == false -%}
                 <div class="xo-cart-mini-item__option">
                   <span>{{ property.first }}: </span>
                   <span>
@@ -96,6 +100,9 @@
           </li>
         {%- endfor -%}
       </ul>
+      {%- unless for_notification -%}
+        {% render 'gift-wrap-line-toggle', item: item %}
+      {%- endunless -%}
     </div>
     {%- unless for_notification -%}
       <div class="xo-cart-mini-item__quantity">
@@ -115,8 +122,9 @@
   </div>
 {% endcapture %}
 
+{%- assign gift_wrap_variant = settings.gift_wrapping_product.selected_or_first_available_variant -%}
 <xo-product
-  class="xo-cart-mini-item"
+  class="xo-cart-mini-item{% if gift_wrap_variant != blank and item.variant_id == gift_wrap_variant.id %} gift-wrap-cart-line-locked{% endif %}"
   xo-section-id="mini-cart"
   xo-product-id="{{ item.product_id }}"
   xo-line="{{ index }}"

@@ -136,9 +136,10 @@
             endif
           %}
           <div {{ block.shopify_attributes }}>
+            {% render 'gift-wrap-option', product: product %}
             <div class="xo-product-info-content__buy-form">
               <xo-animate xo-cascade>
-                <div class="xo-product-info-content__quantity">
+                <div class="xo-product-info-content__quantity" data-gift-wrap-quantity>
                   {%- render 'quantity', size: 'md', variant: product.selected_or_first_available_variant, product: product, is_cart: false %}
                 </div>
               </xo-animate>
@@ -182,6 +183,7 @@
                 {% endif %}
                 <xo-animate xo-cascade class="xo-product-info-content__buy-now {{ style_button_buy }}">
                   {% render 'buy-button', show_gift_card_recipient: block.settings.show_gift_card_recipient, show_dynamic_checkout: block.settings.show_dynamic_checkout %}
+                  {% render 'gift-wrap-buy-now', product: product, section_id: section.id %}
                   {% if block.settings.show_gift_card_recipient == false %}
                     {% render 'cart-add-error' %}
                   {% endif %}

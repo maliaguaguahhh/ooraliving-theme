@@ -1,0 +1,77 @@
+.gift-wrap-option {
+  margin: 1.6rem 0 0;
+}
+
+.gift-wrap-option__label,
+.gift-wrap-line {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.gift-wrap-option__input,
+.gift-wrap-line__input {
+  flex-shrink: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0.1rem 0 0;
+  accent-color: rgb(var(--color-foreground));
+  cursor: pointer;
+}
+
+.gift-wrap-option__text {
+  font-weight: 600;
+}
+
+.gift-wrap-option__price {
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.gift-wrap-option__info {
+  margin: 0.4rem 0 0 2.6rem;
+  font-size: 1.3rem;
+  opacity: 0.7;
+}
+
+.gift-wrap-line {
+  margin-top: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.gift-wrap-line--info {
+  display: block;
+  cursor: default;
+  opacity: 0.7;
+}
+
+.gift-wrap-line__input:disabled {
+  cursor: progress;
+}
+
+.gift-wrap-buy-now {
+  display: none;
+}
+
+[data-gift-wrapped] .gift-wrap-buy-now {
+  display: block;
+}
+
+[data-gift-wrapped] .shopify-payment-button__buy {
+  display: none;
+}
+
+.gift-wrap-buy-now__error {
+  margin: 0.8rem 0 0;
+  font-size: 1.3rem;
+  color: rgb(var(--color-error, 218 30 40));
+}
+
+.gift-wrap-cart-line-locked .xo-cart-mini-item__quantity,
+.gift-wrap-cart-line-locked .xo-cart-mini-item__remove,
+.gift-wrap-cart-line-locked .xo-cart-item__quantity-item,
+.gift-wrap-cart-line-locked .xo-cart-item__remove {
+  display: none;
+}

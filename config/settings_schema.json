@@ -1195,7 +1195,44 @@
         "type": "product",
         "id": "gift_wrapping_product",
         "label": "Gift wrapping product",
-        "info": "Choose a product with one variant per wrapping tier. One wrapping variant is charged once per order."
+        "info": "The Gift Wrap product (SKU GW-STD). Its price is charged once per wrapped item; it must be Active or Unlisted to show."
+      },
+      {
+        "type": "text",
+        "id": "gift_wrapping_label",
+        "label": "Checkbox text",
+        "default": "Gift wrap this item"
+      },
+      {
+        "type": "text",
+        "id": "gift_wrapping_info",
+        "label": "Note under the checkbox",
+        "default": "Each item is wrapped individually."
+      },
+      {
+        "type": "text",
+        "id": "gift_wrapping_each_label",
+        "label": "Price suffix",
+        "default": "each"
+      },
+      {
+        "type": "text",
+        "id": "gift_wrapping_free_label",
+        "label": "Text when free",
+        "default": "Free"
+      },
+      {
+        "type": "text",
+        "id": "gift_wrapping_buy_now_label",
+        "label": "Buy now button text",
+        "info": "Replaces the express checkout button while gift wrap is checked.",
+        "default": "Buy it now"
+      },
+      {
+        "type": "text",
+        "id": "gift_wrapping_line_info",
+        "label": "Cart text on the Gift Wrap line",
+        "default": "One wrap for each gift-wrapped item."
       }
     ]
   },

@@ -10,7 +10,8 @@
   %}
 {% endcomment %}
 
-<div class="xo-cart-item">
+{%- assign gift_wrap_variant = settings.gift_wrapping_product.selected_or_first_available_variant -%}
+<div class="xo-cart-item{% if gift_wrap_variant != blank and item.variant_id == gift_wrap_variant.id %} gift-wrap-cart-line-locked{% endif %}">
   {% if item.image != blank %}
     <a href="{{ item.url }}" class="xo-cart-item__img" aria-label="Product URL">
       {% render 'image', image: item.image, disable_alt: true %}
@@ -62,7 +63,11 @@
           {% if item.properties.size != 0 %}
             {%- for property in item.properties -%}
               {%- assign property_first_char = property.first | slice: 0 -%}
-              {%- if property.last != blank and property_first_char != '_' -%}
+              {%- assign hide_property = false -%}
+              {%- if property.first == 'Gift wrap' and settings.gift_wrapping_enabled -%}
+                {%- assign hide_property = true -%}
+              {%- endif -%}
+              {%- if property.last != blank and property_first_char != '_' and hide_property == false -%}
                 <div class="xo-cart-item__options-item">
                   <span class="xo-cart-item__options-name">{{ property.first }}: </span>
                   <span class="xo-cart-item__options-value">
@@ -92,6 +97,7 @@
           </ul>
         </div>
       {% endif %}
+      {% render 'gift-wrap-line-toggle', item: item %}
     </div>
     <div class="xo-cart-item__quantity-item">
       {% render 'quantity', value: item.quantity, variant: item.variant, product: item.product, is_cart: true %}

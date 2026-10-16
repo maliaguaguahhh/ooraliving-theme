@@ -409,7 +409,9 @@
           "shadow": "#121212"
         }
       }
-    }
+    },
+    "gift_wrapping_enabled": true,
+    "gift_wrapping_product": "gift-wrap"
   },
   "installed_preset_name": "Basser",
   "presets": {

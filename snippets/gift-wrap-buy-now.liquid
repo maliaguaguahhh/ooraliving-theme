@@ -1,0 +1,36 @@
+{% doc %}
+Buy now button shown in place of the express checkout button while "Gift wrap this item" is
+checked. It adds the item (with the wrap) to the cart and goes straight to checkout, where
+Shop Pay and other express options are still offered.
+
+@param {product} product - The product being bought.
+@param {string} section_id - Section id, so the button re-renders with the selected variant.
+@example
+{% render 'gift-wrap-buy-now', product: product, section_id: section.id %}
+{% enddoc %}
+
+{% liquid
+  assign gift_wrap_product = settings.gift_wrapping_product
+  assign gift_wrap_variant = gift_wrap_product.selected_or_first_available_variant
+  assign current_variant = product.selected_or_first_available_variant
+%}
+
+{% if settings.gift_wrapping_enabled and gift_wrap_variant != blank and product != blank and product.id != gift_wrap_product.id %}
+  <div class="gift-wrap-buy-now">
+    <xo-product-will-change xo-unique-id="gift-wrap-buy-now-{{ section_id }}">
+      {% liquid
+        assign buy_now_text = settings.gift_wrapping_buy_now_label | default: 'Buy it now'
+        capture buy_now_attrs
+          echo 'data-gift-wrap-buy-now data-variant-id="'
+          echo current_variant.id
+          echo '"'
+          if current_variant.available == false
+            echo ' disabled'
+          endif
+        endcapture
+      %}
+      {% render 'button', style: 'primary', text: buy_now_text, size: 'md', block: true, attrs: buy_now_attrs %}
+    </xo-product-will-change>
+    <p class="gift-wrap-buy-now__error" role="alert" data-gift-wrap-error hidden></p>
+  </div>
+{% endif %}
