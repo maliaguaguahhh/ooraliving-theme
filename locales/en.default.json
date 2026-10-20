@@ -651,5 +651,25 @@
       "print_gift_card": "Print",
       "expiration_date": "This gift card expires on {{ expires_on }}"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "contact": {
+        "address2_label": "Apt, suite, building access code",
+        "optional_address2_label": "Apt, suite, building access code (optional)"
+      },
+      "field_errors": {
+        "address_line2_blank": "Enter an apt, suite, building access code",
+        "address_address2_blank": "Enter an apt, suite, building access code"
+      },
+      "wallets": {
+        "errors": {
+          "missing": {
+            "address2": "Enter an apt, suite, building access code",
+            "billing_address2": "Enter an apt, suite, building access code"
+          }
+        }
+      }
+    }
   }
 }
