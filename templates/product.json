@@ -20,12 +20,6 @@
           "type": "price",
           "settings": {}
         },
-        "custom_liquid_nckBpb": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div class=\"free-shipping-label\">\n  Free Shipping in the Contiguous U.S.\n</div>\n\n<style>\n  .free-shipping-label {\n    margin-top: 6px;\n    color: #999999;\n    font-size: 18px;\n    font-weight: 400;\n    line-height: 1.3;\n  }\n\n  @media screen and (max-width: 749px) {\n    .free-shipping-label {\n      font-size: 14px;\n    }\n  }\n</style>"
-          }
-        },
         "ca89121c-8974-4f5c-852d-875abeb6041c": {
           "type": "variants",
           "settings": {
@@ -82,11 +76,10 @@
             "collapse_content": "{{ product.metafields.custom.main_features | metafield_tag }}"
           }
         },
-        "collapse_Q7Fhxe": {
-          "type": "collapse",
+        "shipping_returns_v12": {
+          "type": "shipping_returns",
           "settings": {
-            "collapse_text": "Shipping & Returns",
-            "collapse_content": "<p><strong>Contiguous U.S. Standard Shipping:</strong></p><p>Free on orders of $49 or more to the 48 contiguous U.S. states and Washington, D.C. Estimated delivery is 5–10 business days.<br/><br/><strong>Other Destinations:</strong><br/>Shipping charges apply to orders under $49 and to Alaska, Hawaii, U.S. territories, and APO/FPO addresses. Rates are shown at checkout. We are expanding shipping zones actively. Follow our social media to get the latest information.<br/><br/><strong>U.S. Express Shipping:</strong><br/>4–7 business day delivery where available.<br/><br/><strong>Shipping Email Notice:</strong><br/>We’ll send you an email with tracking information once your order has shipped. Please allow 24–72 hours for tracking updates.<br/><br/>See the detailed <a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Shipping</a> & <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">Refund</a> policies here.</p>"
+            "heading": "Shipping & Returns"
           }
         },
         "collapse_cRztXf": {
@@ -103,7 +96,6 @@
       "block_order": [
         "bedc5e2d-642d-4448-8569-c7fcfd527042",
         "b1d95bc4-490b-4b8c-914a-89b1323d2a43",
-        "custom_liquid_nckBpb",
         "ca89121c-8974-4f5c-852d-875abeb6041c",
         "inventory_status_PjEGiM",
         "buy_button_Hgeb3z",
@@ -111,7 +103,7 @@
         "volume_discount_nNQCrE",
         "countdown_timer_gRAAct",
         "ebe1dbeb-d8fc-4f0c-9d34-fc7892bde207",
-        "collapse_Q7Fhxe",
+        "shipping_returns_v12",
         "collapse_cRztXf",
         "line_nB8MEt"
       ],

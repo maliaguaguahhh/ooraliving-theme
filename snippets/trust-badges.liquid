@@ -1,0 +1,69 @@
+{% doc %}
+Renders the seal-style trust badges under the buy buttons.
+
+Badges come from the shop metafield custom.trust_badges (trust_badge metaobjects), in order.
+Shown when Theme settings > Product purchase > Show trust badges is on. Renders nothing when
+the metafield is empty.
+
+@example
+{% render 'trust-badges' %}
+{% enddoc %}
+
+{% assign badges = shop.metafields.custom.trust_badges.value %}
+
+{%- if settings.product_trust_badges_enabled and badges != blank -%}
+  {{ 'trust-badges.css' | asset_url | stylesheet_tag }}
+
+  <ul class="oora-trust-badges" role="list">
+    {%- for badge in badges -%}
+      {% liquid
+        assign link = badge.link.value
+        if link != blank
+          assign tag = 'a'
+        else
+          assign tag = 'div'
+        endif
+      %}
+      <li class="oora-trust-badges__item">
+        <{{ tag }}
+          class="oora-trust-badges__inner"
+          {% if link != blank %}
+            href="{{ link }}"
+            {% if link contains 'http' %}
+              target="_blank" rel="noopener"
+            {% endif %}
+          {% endif %}
+        >
+          <span class="oora-trust-badges__seal" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              {%- case badge.icon.value -%}
+                {%- when 'tracking' -%}
+                  <path d="M12 21s-6-5.3-6-10a6 6 0 1 1 12 0c0 4.7-6 10-6 10Z"/><path d="m9.5 11 1.8 1.8 3.2-3.3"/>
+                {%- when 'shield' -%}
+                  <path d="M12 3 5 6v5c0 4.4 3 8.3 7 10 4-1.7 7-5.6 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/>
+                {%- when 'returns' -%}
+                  <path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/>
+                {%- when 'support' -%}
+                  <path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/><path d="M19 20a3 3 0 0 1-3 2h-2"/>
+                {%- when 'lock' -%}
+                  <rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+                {%- when 'package' -%}
+                  <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="m4 7.5 8 4.5 8-4.5"/><path d="M12 12v9"/>
+                {%- when 'truck' -%}
+                  <path d="M3 6.5h11v10H3zM14 10h3.5l3.5 3.5v3H14z"/><circle cx="7.25" cy="16.75" r="2.25"/><circle cx="17.75" cy="16.75" r="2.25"/>
+                {%- else -%}
+                  <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/>
+              {%- endcase -%}
+            </svg>
+          </span>
+          <span class="oora-trust-badges__text">
+            <strong class="oora-trust-badges__title">{{ badge.title.value | escape }}</strong>
+            {%- if badge.description != blank -%}
+              <span class="oora-trust-badges__description">{{ badge.description.value | escape }}</span>
+            {%- endif -%}
+          </span>
+        </{{ tag }}>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}

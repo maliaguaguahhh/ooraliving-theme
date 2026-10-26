@@ -417,7 +417,7 @@
         }
       }
     },
-    "gift_wrapping_enabled": true,
+    "gift_wrapping_enabled": false,
     "gift_wrapping_product": "gift-wrap",
     "gift_wrapping_dialog_title": "A little something extra 🎁"
   },

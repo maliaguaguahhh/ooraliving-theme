@@ -1,0 +1,80 @@
+.oora-trust-badges {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oora-trust-badges__item {
+  min-width: 0;
+}
+
+.oora-trust-badges__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  height: 100%;
+  padding: 1.2rem 0.6rem 1.1rem;
+  color: rgb(var(--color-foreground));
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid rgba(var(--color-foreground), 0.1);
+  border-radius: 1.2rem;
+  transition: border-color 0.2s ease;
+}
+
+a.oora-trust-badges__inner:hover {
+  border-color: rgb(var(--color-button));
+}
+
+.oora-trust-badges__seal {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 4.4rem;
+  height: 4.4rem;
+  color: rgb(var(--color-button));
+  background: color-mix(in srgb, rgb(var(--color-button)) 9%, rgb(var(--color-background, 255 255 255)));
+  border-radius: 50%;
+}
+
+.oora-trust-badges__seal::before {
+  content: '';
+  position: absolute;
+  inset: 0.3rem;
+  border: 1px dashed color-mix(in srgb, rgb(var(--color-button)) 55%, transparent);
+  border-radius: 50%;
+}
+
+.oora-trust-badges__seal svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.oora-trust-badges__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.oora-trust-badges__title {
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.oora-trust-badges__description {
+  color: rgba(var(--color-foreground), 0.65);
+  font-size: 1.1rem;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 749px) {
+  .oora-trust-badges {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

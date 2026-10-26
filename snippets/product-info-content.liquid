@@ -96,7 +96,7 @@
                   <span>{{ 'products.product.price.include_tax' | t }}</span>
                 {% endif %}
               </xo-product-will-change>
-              {% render 'product-free-shipping-label' %}
+              {% render 'shipping-region', part: 'label' %}
             </div>
           </xo-animate>
 
@@ -204,8 +204,9 @@
             </div>
           </div>
           {% if settings.product_shipping_promise_enabled %}
-            {% render 'product-shipping-promise' %}
+            {% render 'shipping-region', part: 'card' %}
           {% endif %}
+          {% render 'trust-badges' %}
 
           <!-- line -->
         {% when 'line' %}
@@ -228,6 +229,16 @@
             {% assign name = block.settings.heading | append: forloop.index %}
             <xo-animate xo-cascade class="xo-product-info-content__collapse" {{ block.shopify_attributes }}>
               {% render 'collapse', title: block.settings.heading, content: faq_content, name: name %}
+            </xo-animate>
+          {% endif %}
+
+          <!-- shipping and returns -->
+        {% when 'shipping_returns' %}
+          {% capture shipping_details %}{% render 'shipping-region', part: 'details' %}{% endcapture %}
+          {% if shipping_details != blank %}
+            {% assign name = block.settings.heading | append: forloop.index %}
+            <xo-animate xo-cascade class="xo-product-info-content__collapse" {{ block.shopify_attributes }}>
+              {% render 'collapse', title: block.settings.heading, content: shipping_details, name: name %}
             </xo-animate>
           {% endif %}
 

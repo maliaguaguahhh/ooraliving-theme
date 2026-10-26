@@ -24,7 +24,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Buy Now: 20% Off + Free Standard Shipping on Orders $49+</p>",
+            "text": "<p>Buy Now: 20% Off + Free Shipping to the US, UK, Canada, NZ & Asia</p>",
             "link": "shopify://products/tapnest"
           }
         }

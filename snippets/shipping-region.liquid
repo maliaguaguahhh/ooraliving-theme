@@ -1,0 +1,132 @@
+{% doc %}
+Renders shipping copy for the visitor's country.
+
+Regions come from the shop metafield custom.shipping_regions (shipping_region metaobjects).
+The first region whose country codes include the visitor's country is used; a region with no
+country codes is the fallback for everyone else. Without any regions, the older shop metafields
+(custom.free_shipping_label, custom.shipping_options, custom.shipping_promise_note) are used.
+
+Text fields can contain [threshold], replaced by the free-shipping amount (Theme settings >
+Cart > free shipping amount, in the store currency, converted to the visitor's currency by
+shipping-region.js), and [country], replaced by the visitor's country name.
+
+@param {string} part - 'label' (line under the price), 'card' (shipping card) or 'details' (Shipping & Returns text)
+@example
+{% render 'shipping-region', part: 'card' %}
+{% enddoc %}
+
+{% liquid
+  assign country_code = localization.country.iso_code
+  assign country_name = localization.country.name
+  assign regions = shop.metafields.custom.shipping_regions.value
+  assign region = blank
+  assign fallback_region = blank
+
+  for r in regions
+    assign r_countries = r.countries.value
+    if r_countries == blank or r_countries.size == 0
+      if fallback_region == blank
+        assign fallback_region = r
+      endif
+      continue
+    endif
+    if r_countries contains country_code
+      assign region = r
+      break
+    endif
+  endfor
+
+  if region == blank
+    assign region = fallback_region
+  endif
+
+  assign threshold = settings.cart_free_shipping_min_amount | default: 0
+  assign threshold_cents = threshold | times: 100
+  if cart.currency.iso_code == shop.currency
+    assign threshold_text = threshold_cents | money_without_trailing_zeros
+  else
+    assign threshold_text = threshold | append: ' ' | append: shop.currency
+  endif
+  capture threshold_html
+    echo '<span class="oora-threshold" data-oora-threshold="' | append: threshold | append: '" data-oora-base-currency="' | append: shop.currency | append: '">' | append: threshold_text | append: '</span>'
+  endcapture
+%}
+
+{%- case part -%}
+  {%- when 'label' -%}
+    {% liquid
+      if regions != blank
+        assign label = region.free_shipping_label.value
+      else
+        assign label = shop.metafields.custom.free_shipping_label.value
+      endif
+    %}
+    {%- if label != blank -%}
+      <div class="tapnest-product-hero__free-shipping">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+          <path d="M3 6.5h11v10H3zM14 10h3.5l3.5 3.5v3H14zM7.25 19a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5ZM17.75 19a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+        </svg>
+        <strong>{{ label | escape | replace: '[threshold]', threshold_html | replace: '[country]', country_name }}</strong>
+      </div>
+      <script src="{{ 'shipping-region.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+
+  {%- when 'card' -%}
+    {% liquid
+      assign heading = shop.metafields.custom.shipping_promise_heading.value
+      if regions != blank
+        assign options = region.options.value
+        assign note = region.note.value
+      else
+        assign options = shop.metafields.custom.shipping_options.value
+        assign note = shop.metafields.custom.shipping_promise_note.value
+      endif
+    %}
+    {%- if heading != blank or options != blank -%}
+      {{ 'product-shipping-promise.css' | asset_url | stylesheet_tag }}
+      <div class="oora-shipping-promise" aria-label="Shipping to {{ country_name | escape }}">
+        {%- if heading != blank -%}
+          <div class="oora-shipping-promise__guarantee">
+            <span class="oora-shipping-promise__clock" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <circle cx="12" cy="12" r="8"></circle>
+                <path d="M12 7v5l3 2"></path>
+              </svg>
+            </span>
+            <strong>{{ heading | escape }}</strong>
+          </div>
+        {%- endif -%}
+
+        {%- if options != blank -%}
+          <div class="oora-shipping-promise__options">
+            {%- for option in options -%}
+              {% assign price_label = option.price_label.value | escape | replace: '[threshold]', threshold_html %}
+              {% assign price_label_check = option.price_label.value | downcase | slice: 0, 4 %}
+              <div class="oora-shipping-promise__option">
+                <div class="oora-shipping-promise__topline">
+                  <strong>{{ option.name.value | escape }}</strong>
+                  <b{% if price_label_check == 'free' %} class="oora-shipping-promise__free"{% endif %}>
+                    {{- price_label -}}
+                  </b>
+                </div>
+                <span>{{ option.delivery_time.value | escape }}</span>
+              </div>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+
+        {%- if note != blank -%}
+          <small>{{ note | escape | replace: '[country]', country_name }}</small>
+        {%- endif -%}
+      </div>
+      <script src="{{ 'shipping-region.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+
+  {%- when 'details' -%}
+    {%- if region.details != blank -%}
+      <div class="oora-shipping-details">
+        {{ region.details | metafield_tag | replace: '[threshold]', threshold_html | replace: '[country]', country_name }}
+      </div>
+      <script src="{{ 'shipping-region.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+{%- endcase -%}

@@ -126,7 +126,7 @@
       "set_up_discount": "Set up discount"
     },
     "inventory_status": {
-      "ready_to_ship": "In stock, ready to ship",
+      "ready_to_ship": "In stock",
       "left_in_stock": "Hurry, only {{ count }} items left in stock!",
       "low_stock": "Low stock",
       "out_of_stock": "Out of stock",

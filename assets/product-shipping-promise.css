@@ -101,3 +101,19 @@
     padding: 1rem;
   }
 }
+
+.oora-shipping-promise__option:only-child {
+  grid-column: 1 / -1;
+}
+
+.oora-threshold {
+  white-space: nowrap;
+}
+
+.oora-shipping-details p {
+  margin: 0 0 0.8rem;
+}
+
+.oora-shipping-details p:last-child {
+  margin-bottom: 0;
+}

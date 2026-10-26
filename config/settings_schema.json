@@ -1294,7 +1294,14 @@
         "type": "checkbox",
         "id": "product_shipping_promise_enabled",
         "label": "Show shipping card",
-        "info": "Content comes from the shop metafields Shipping promise heading, Shipping options and Shipping promise note.",
+        "info": "Heading comes from the shop metafield Shipping promise heading. Options and note come from the shipping region that matches the visitor's country (shop metafield Shipping regions).",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "product_trust_badges_enabled",
+        "label": "Show trust badges",
+        "info": "Badges come from the shop metafield Trust badges.",
         "default": true
       },
       {

@@ -92,7 +92,7 @@
                   <span>{{ 'products.product.price.include_tax' | t }}</span>
                 {% endif %}
               </xo-product-will-change>
-              {% render 'product-free-shipping-label' %}
+              {% render 'shipping-region', part: 'label' %}
             </div>
           </xo-animate>
 
@@ -226,7 +226,10 @@
             </xo-product-will-change>
           </div>
           {% if product != blank and settings.product_shipping_promise_enabled %}
-            {% render 'product-shipping-promise' %}
+            {% render 'shipping-region', part: 'card' %}
+          {% endif %}
+          {% if product != blank %}
+            {% render 'trust-badges' %}
           {% endif %}
       {% endcase %}
     {% endfor %}
