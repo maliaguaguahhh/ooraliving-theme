@@ -2,6 +2,8 @@
 Renders the seal-style trust badges under the buy buttons.
 
 Badges come from the shop metafield custom.trust_badges (trust_badge metaobjects), in order.
+[return_days] in a title or description becomes the return window of the visitor's shipping
+region; a badge that uses it is hidden when the region has no return window.
 Shown when Theme settings > Product purchase > Show trust badges is on. Renders nothing when
 the metafield is empty.
 
@@ -10,6 +12,8 @@ the metafield is empty.
 {% enddoc %}
 
 {% assign badges = shop.metafields.custom.trust_badges.value %}
+{% capture return_days %}{% render 'shipping-region', part: 'return_days' %}{% endcapture %}
+{% assign return_days = return_days | strip %}
 
 {%- if settings.product_trust_badges_enabled and badges != blank -%}
   {{ 'trust-badges.css' | asset_url | stylesheet_tag }}
@@ -18,6 +22,10 @@ the metafield is empty.
   <ul class="oora-trust-badges" role="list">
     {%- for badge in badges -%}
       {% liquid
+        assign badge_text = badge.title.value | append: badge.description.value
+        if return_days == blank and badge_text contains '[return_days]'
+          continue
+        endif
         assign link = badge.link.value
         if link != blank
           assign tag = 'a'
@@ -58,9 +66,9 @@ the metafield is empty.
             </svg>
           </span>
           <span class="oora-trust-badges__text">
-            <strong class="oora-trust-badges__title">{{ badge.title.value | escape }}</strong>
+            <strong class="oora-trust-badges__title">{{ badge.title.value | escape | replace: '[return_days]', return_days }}</strong>
             {%- if badge.description != blank -%}
-              <span class="oora-trust-badges__description">{{ badge.description.value | escape }}</span>
+              <span class="oora-trust-badges__description">{{ badge.description.value | escape | replace: '[return_days]', return_days }}</span>
             {%- endif -%}
           </span>
         </{{ tag }}>

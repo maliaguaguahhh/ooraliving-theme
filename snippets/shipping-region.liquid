@@ -8,9 +8,11 @@ country codes is the fallback for everyone else. Without any regions, the older 
 
 Text fields can contain [threshold], replaced by the free-shipping amount (Theme settings >
 Cart > free shipping amount, in the store currency, converted to the visitor's currency by
-shipping-region.js), and [country], replaced by the visitor's country name.
+shipping-region.js), [country], replaced by the visitor's country name, and [return_days],
+replaced by the region's return window.
 
-@param {string} part - 'label' (line under the price), 'card' (shipping card) or 'details' (Shipping & Returns text)
+@param {string} part - 'label' (line under the price), 'card' (shipping card), 'details' (Shipping & Returns text)
+  or 'return_days' (the region's return window as a bare number, for other snippets to capture)
 @example
 {% render 'shipping-region', part: 'card' %}
 {% enddoc %}
@@ -40,6 +42,8 @@ shipping-region.js), and [country], replaced by the visitor's country name.
     assign region = fallback_region
   endif
 
+  assign return_days = region.return_days.value | append: ''
+
   assign threshold = settings.cart_free_shipping_min_amount | default: 0
   assign threshold_cents = threshold | times: 100
   if cart.currency.iso_code == shop.currency
@@ -66,7 +70,7 @@ shipping-region.js), and [country], replaced by the visitor's country name.
         <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
           <path d="M3 6.5h11v10H3zM14 10h3.5l3.5 3.5v3H14zM7.25 19a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5ZM17.75 19a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
         </svg>
-        <strong>{{ label | escape | replace: '[threshold]', threshold_html | replace: '[country]', country_name }}</strong>
+        <strong>{{ label | escape | replace: '[threshold]', threshold_html | replace: '[country]', country_name | replace: '[return_days]', return_days }}</strong>
       </div>
       <script src="{{ 'shipping-region.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
@@ -116,16 +120,19 @@ shipping-region.js), and [country], replaced by the visitor's country name.
         {%- endif -%}
 
         {%- if note != blank -%}
-          <small>{{ note | escape | replace: '[country]', country_name }}</small>
+          <small>{{ note | escape | replace: '[country]', country_name | replace: '[return_days]', return_days }}</small>
         {%- endif -%}
       </div>
       <script src="{{ 'shipping-region.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+  {%- when 'return_days' -%}
+    {{- return_days -}}
+
   {%- when 'details' -%}
     {%- if region.details != blank -%}
       <div class="oora-shipping-details">
-        {{ region.details | metafield_tag | replace: '[threshold]', threshold_html | replace: '[country]', country_name }}
+        {{ region.details | metafield_tag | replace: '[threshold]', threshold_html | replace: '[country]', country_name | replace: '[return_days]', return_days }}
       </div>
       <script src="{{ 'shipping-region.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
