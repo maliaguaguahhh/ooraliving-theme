@@ -180,24 +180,45 @@
         "tutorial_troubleshooting": {
           "type": "tutorial",
           "settings": {
-            "title": "Quick Guide to Make it Work",
-            "video": "shopify://files/videos/1151_raw.MP4",
+            "title": "iOS 26 + older: Quick Setup Guide",
+            "video": "shopify://files/videos/26 download + tips.mov",
             "video_url": "",
-            "cover_image": "shopify://shop_images/1147_0d1d2349-bebd-496e-aea1-f616b7a85b47.png"
+            "cover_image": "shopify://shop_images/Instagram_story_-_29.png"
           }
         },
         "tutorial_setup": {
           "type": "tutorial",
           "settings": {
-            "title": "Full Guide: DIY Shortcut to Finish",
-            "video": "shopify://files/videos/Setting up TapNest Tutorial V2.mp4",
-            "video_url": ""
+            "title": "iOS 27: Quick Setup Guide",
+            "video": "shopify://files/videos/27 download + tips_1bf88763-e880-4eb1-b6ca-3fb9c1476e9d.mov",
+            "video_url": "",
+            "cover_image": "shopify://shop_images/Instagram_story_-_30.png"
+          }
+        },
+        "tutorial_hB7KRP": {
+          "type": "tutorial",
+          "settings": {
+            "title": "iOS 26 + older: Create Your Own Shortcut",
+            "video": "shopify://files/videos/26 diy(2).mov",
+            "video_url": "",
+            "cover_image": "shopify://shop_images/Instagram_story_-_28.png"
+          }
+        },
+        "tutorial_VjqrgM": {
+          "type": "tutorial",
+          "settings": {
+            "title": "iOS 27: Create Your Own Shortcut",
+            "video": "shopify://files/videos/27 diy.mov",
+            "video_url": "",
+            "cover_image": "shopify://shop_images/Instagram_story_-_31.png"
           }
         }
       },
       "block_order": [
         "tutorial_troubleshooting",
-        "tutorial_setup"
+        "tutorial_setup",
+        "tutorial_hB7KRP",
+        "tutorial_VjqrgM"
       ],
       "settings": {
         "heading": "Video Tutorials",
