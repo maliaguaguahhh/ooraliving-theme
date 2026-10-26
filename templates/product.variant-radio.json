@@ -53,17 +53,33 @@
         },
         "inventory_status_PjEGiM": {
           "type": "inventory_status",
-          "settings": {
-            "low_inventory_threshold": 15,
-            "show_inventory_count": "low-inventory-threshold",
-            "color_in_stock": "#10a71f",
-            "color_out_stock": "#da1e28"
-          }
+          "settings": {}
         },
         "volume_discount_nNQCrE": {
           "type": "volume_discount",
           "settings": {
-            "product_list": ["active-strap","airpod-case-3rd-gen","airpod-case-4th-gen","aramid","limone-case","civilian","coloros","hills-1","essential-galaxy-s25","keva-copy","banahills","matte-case","kevlar","limone","limone-case-1","limone-plyo","limone-pro","limone-styla","lion","hills"],
+            "product_list": [
+              "active-strap",
+              "airpod-case-3rd-gen",
+              "airpod-case-4th-gen",
+              "aramid",
+              "limone-case",
+              "civilian",
+              "coloros",
+              "hills-1",
+              "essential-galaxy-s25",
+              "keva-copy",
+              "banahills",
+              "matte-case",
+              "kevlar",
+              "limone",
+              "limone-case-1",
+              "limone-plyo",
+              "limone-pro",
+              "limone-styla",
+              "lion",
+              "hills"
+            ],
             "label": "Buy 1 items",
             "quantity": 1,
             "discount_value": 10,
@@ -77,7 +93,28 @@
         "volume_discount_QEyyDr": {
           "type": "volume_discount",
           "settings": {
-            "product_list": ["active-strap","airpod-case-3rd-gen","airpod-case-4th-gen","aramid","limone-case","civilian","coloros","hills-1","essential-galaxy-s25","keva-copy","banahills","matte-case","kevlar","limone","limone-case-1","limone-plyo","limone-pro","limone-styla","lion","hills"],
+            "product_list": [
+              "active-strap",
+              "airpod-case-3rd-gen",
+              "airpod-case-4th-gen",
+              "aramid",
+              "limone-case",
+              "civilian",
+              "coloros",
+              "hills-1",
+              "essential-galaxy-s25",
+              "keva-copy",
+              "banahills",
+              "matte-case",
+              "kevlar",
+              "limone",
+              "limone-case-1",
+              "limone-plyo",
+              "limone-pro",
+              "limone-styla",
+              "lion",
+              "hills"
+            ],
             "label": "Buy 2, save 20%",
             "quantity": 2,
             "discount_value": 20,
@@ -91,7 +128,28 @@
         "volume_discount_UarJ87": {
           "type": "volume_discount",
           "settings": {
-            "product_list": ["active-strap","airpod-case-3rd-gen","airpod-case-4th-gen","aramid","limone-case","civilian","coloros","hills-1","essential-galaxy-s25","keva-copy","banahills","matte-case","kevlar","limone","limone-case-1","limone-plyo","limone-pro","limone-styla","lion","hills"],
+            "product_list": [
+              "active-strap",
+              "airpod-case-3rd-gen",
+              "airpod-case-4th-gen",
+              "aramid",
+              "limone-case",
+              "civilian",
+              "coloros",
+              "hills-1",
+              "essential-galaxy-s25",
+              "keva-copy",
+              "banahills",
+              "matte-case",
+              "kevlar",
+              "limone",
+              "limone-case-1",
+              "limone-plyo",
+              "limone-pro",
+              "limone-styla",
+              "lion",
+              "hills"
+            ],
             "label": "Buy 3, save 30%",
             "quantity": 3,
             "discount_value": 30,
@@ -224,8 +282,8 @@
         "text_tag_name": "h2",
         "text_heading": "Extreme Cases MagSafe Compatible",
         "font_size_heading": "h5",
-        "text_duration": 1000,
         "text_effect": "split",
+        "text_duration": 1000,
         "text_heading_width_desktop": 34,
         "text_heading_width_mobile": 80,
         "color_scheme": "",
@@ -263,8 +321,7 @@
         },
         "image_Kw3CmA": {
           "type": "image",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [

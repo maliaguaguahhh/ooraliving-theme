@@ -59,12 +59,7 @@
         },
         "inventory_status_grV483": {
           "type": "inventory_status",
-          "settings": {
-            "low_inventory_threshold": 15,
-            "show_inventory_count": "low-inventory-threshold",
-            "color_in_stock": "#10a71f",
-            "color_out_stock": "#da1e28"
-          }
+          "settings": {}
         },
         "ebe1dbeb-d8fc-4f0c-9d34-fc7892bde207": {
           "type": "collapse",
@@ -186,8 +181,8 @@
         "text_tag_name": "h2",
         "text_heading": "Extreme Cases MagSafe Compatible",
         "font_size_heading": "h5",
-        "text_duration": 1000,
         "text_effect": "split",
+        "text_duration": 1000,
         "text_heading_width_desktop": 34,
         "text_heading_width_mobile": 80,
         "color_scheme": "",
@@ -225,8 +220,7 @@
         },
         "image_Kw3CmA": {
           "type": "image",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
