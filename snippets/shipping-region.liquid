@@ -11,6 +11,10 @@ Cart > free shipping amount, in the store currency, converted to the visitor's c
 shipping-region.js), [country], replaced by the visitor's country name, and [return_days],
 replaced by the region's return window.
 
+When the shop metafield custom.shipping_unavailable_notice is set, the card also carries a hidden
+notice. shipping-region.js shows it, and hides the regular shipping lines, when the visitor's
+detected location is outside every country the store sells to (localization.available_countries).
+
 @param {string} part - 'label' (line under the price), 'card' (shipping card), 'details' (Shipping & Returns text)
   or 'return_days' (the region's return window as a bare number, for other snippets to capture)
 @example
@@ -89,6 +93,18 @@ replaced by the region's return window.
     {%- if heading != blank or options != blank -%}
       {{ 'product-shipping-promise.css' | asset_url | stylesheet_tag }}
       <div class="oora-shipping-promise" aria-label="Shipping to {{ country_name | escape }}">
+        {%- assign unavailable_notice = shop.metafields.custom.shipping_unavailable_notice.value -%}
+        {%- if unavailable_notice != blank -%}
+          <p
+            class="oora-shipping-promise__unavailable"
+            role="status"
+            data-oora-unavailable
+            data-countries="{{ localization.available_countries | map: 'iso_code' | join: ',' }}"
+            hidden
+          >
+            {{ unavailable_notice | escape | replace: '[country]', '<span data-oora-detected-country></span>' }}
+          </p>
+        {%- endif -%}
         {%- if heading != blank -%}
           <div class="oora-shipping-promise__guarantee">
             <span class="oora-shipping-promise__clock" aria-hidden="true">

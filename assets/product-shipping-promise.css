@@ -117,3 +117,22 @@
 .oora-shipping-details p:last-child {
   margin-bottom: 0;
 }
+
+.oora-shipping-promise__unavailable {
+  margin: 0;
+  padding: 1rem 1.2rem;
+  color: rgb(var(--color-foreground));
+  background: rgba(var(--color-foreground), 0.04);
+  border: 1px solid rgba(var(--color-foreground), 0.14);
+  border-radius: 1.2rem;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.oora-shipping-promise__unavailable[hidden],
+.oora-ships-unavailable .oora-shipping-promise__guarantee,
+.oora-ships-unavailable .oora-shipping-promise__options,
+.oora-ships-unavailable .oora-shipping-promise > small,
+.oora-ships-unavailable .tapnest-product-hero__free-shipping {
+  display: none;
+}
