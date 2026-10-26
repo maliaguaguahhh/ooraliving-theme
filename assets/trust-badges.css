@@ -1,6 +1,10 @@
+.oora-trust-badges-wrap {
+  container-type: inline-size;
+}
+
 .oora-trust-badges {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.8rem;
   margin: 1.6rem 0 0;
   padding: 0;
@@ -70,11 +74,11 @@ a.oora-trust-badges__inner:hover {
   color: rgba(var(--color-foreground), 0.65);
   font-size: 1.1rem;
   line-height: 1.3;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
-@media (max-width: 749px) {
+@container (min-width: 560px) {
   .oora-trust-badges {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }

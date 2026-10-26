@@ -14,6 +14,7 @@ the metafield is empty.
 {%- if settings.product_trust_badges_enabled and badges != blank -%}
   {{ 'trust-badges.css' | asset_url | stylesheet_tag }}
 
+  <div class="oora-trust-badges-wrap">
   <ul class="oora-trust-badges" role="list">
     {%- for badge in badges -%}
       {% liquid
@@ -66,4 +67,5 @@ the metafield is empty.
       </li>
     {%- endfor -%}
   </ul>
+  </div>
 {%- endif -%}
