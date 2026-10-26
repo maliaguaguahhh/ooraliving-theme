@@ -17,21 +17,29 @@
         "announcement_HHnFyX": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Explore Now: Setup Guides and<br/> Shortcut Gallery</p>",
+            "text": "<p>Explore Now: Setup Guides and Shortcut Gallery</p>",
             "link": "shopify://pages/nfc-shortcut-gallery"
           }
         },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Buy Now: 20% Off + Free Shipping to the US, UK, Canada, NZ & Asia</p>",
+            "text": "<p>Limited Time: 20% Off TapNest</p>",
+            "link": "shopify://products/tapnest"
+          }
+        },
+        "announcement_free_shipping": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Free Shipping: US, UK, Canada, NZ & Asia</p>",
             "link": "shopify://products/tapnest"
           }
         }
       },
       "block_order": [
-        "announcement_HHnFyX",
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_free_shipping",
+        "announcement_HHnFyX"
       ],
       "custom_css": [
         ".xo-announcement-bar__prev,.xo-announcement-bar__next {color: #fff;}"
