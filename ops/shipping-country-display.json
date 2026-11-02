@@ -1,0 +1,807 @@
+{
+  "version": "2026-11-02-country-shipping-v1",
+  "source": "Shopify approved applied-market-plan review-v2",
+  "progress_enabled": false,
+  "copy": {
+    "standard_name": "Standard",
+    "express_name": "Express",
+    "free_label": "Free",
+    "unavailable_label": "Temporarily unavailable",
+    "card_label": "Shipping to [country]",
+    "unknown_notice": "Shipping options and delivery estimates will be confirmed at checkout.",
+    "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+    "us_note": "Contiguous U.S. estimates shown. Alaska, Hawaii and other U.S. destinations: Standard US$6; Express temporarily unavailable. Final eligibility and rates are confirmed at checkout.",
+    "free_label_template": "Free standard shipping to [country]",
+    "paid_label_template": "Standard shipping to [country]: [price]",
+    "us_label": "Free standard shipping in the contiguous U.S.",
+    "transit_label": "Estimated transit time",
+    "tracking_label": "Tracking",
+    "tracking_text": "We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.",
+    "refund_link_text": "Read our refund policy",
+    "refund_link": "/policies/refund-policy"
+  },
+  "countries": {
+    "IN": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "8–14 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 8–14 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "CL": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "9–19 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 9–19 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "MX": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "7–15 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 7–15 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "CO": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "12–18 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 12–18 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "NG": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "8–17 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 8–17 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "ES": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "5–10 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "US$7",
+          "delivery_time": "4–7 business days"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 5–10 business days.</p><p><strong>Express:</strong> US$7. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "FR": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "5–10 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "US$7",
+          "delivery_time": "4–7 business days"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 5–10 business days.</p><p><strong>Express:</strong> US$7. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "DE": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "5–10 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "US$7",
+          "delivery_time": "4–7 business days"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 5–10 business days.</p><p><strong>Express:</strong> US$7. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "IT": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "5–10 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "US$7",
+          "delivery_time": "4–7 business days"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 5–10 business days.</p><p><strong>Express:</strong> US$7. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "BE": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "5–10 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "US$13",
+          "delivery_time": "4–7 business days"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 5–10 business days.</p><p><strong>Express:</strong> US$13. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "AT": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "5–10 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "US$13",
+          "delivery_time": "4–7 business days"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 5–10 business days.</p><p><strong>Express:</strong> US$13. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "PL": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "5–10 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "US$7",
+          "delivery_time": "4–7 business days"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 5–10 business days.</p><p><strong>Express:</strong> US$7. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "NL": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "5–10 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "US$13",
+          "delivery_time": "4–7 business days"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 5–10 business days.</p><p><strong>Express:</strong> US$13. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "PT": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "6–13 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "CH": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "6–13 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "NO": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "6–13 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "HU": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "6–13 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "SK": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "6–13 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "GR": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "6–13 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "CZ": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "6–13 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "SE": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "6–13 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "SI": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "6–13 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "BG": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "6–13 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "LV": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "6–13 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "EE": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "6–13 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "LT": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "6–13 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "VN": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "5–9 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 5–9 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "PH": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "5–12 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 5–12 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "BH": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "5–9 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 5–9 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "LB": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "4–8 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 4–8 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "ID": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "7–13 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 7–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "OM": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "5–10 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 5–10 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "PE": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "5–12 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 5–12 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "SA": {
+      "label": "Standard shipping to [country]: US$6",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "US$6",
+          "delivery_time": "4–8 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> US$6. 4–8 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "CA": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "5–12 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "US$7",
+          "delivery_time": "4–10 business days"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 5–12 business days.</p><p><strong>Express:</strong> US$7. 4–10 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "GB": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "8–11 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "US$7",
+          "delivery_time": "4–6 business days"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 8–11 business days.</p><p><strong>Express:</strong> US$7. 4–6 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "JP": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "7–11 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 7–11 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "KR": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "6–10 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 6–10 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "MY": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "7–11 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 7–11 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "NZ": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "5–9 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 5–9 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "HK": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "3–5 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 3–5 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "MO": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "2–4 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 2–4 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "TW": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "3–6 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 3–6 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "SG": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "5–9 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 5–9 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "TH": {
+      "label": "Free standard shipping to [country]",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "5–12 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "—",
+          "delivery_time": "Temporarily unavailable"
+        }
+      ],
+      "note": "Delivery estimates for [country]. Shipping prices are shown in USD; final rates appear at checkout.",
+      "details_html": "<p><strong>Standard:</strong> Free. 5–12 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    },
+    "US": {
+      "label": "Free standard shipping in the contiguous U.S.",
+      "options": [
+        {
+          "name": "Standard",
+          "price_label": "Free",
+          "delivery_time": "5–10 business days"
+        },
+        {
+          "name": "Express",
+          "price_label": "US$7",
+          "delivery_time": "4–7 business days"
+        }
+      ],
+      "note": "Contiguous U.S. estimates shown. Alaska, Hawaii and other U.S. destinations: Standard US$6; Express temporarily unavailable. Final eligibility and rates are confirmed at checkout.",
+      "details_html": "<p><strong>U.S. destinations:</strong> Contiguous U.S. estimates shown. Alaska, Hawaii and other U.S. destinations: Standard US$6; Express temporarily unavailable. Final eligibility and rates are confirmed at checkout.</p><p><strong>Standard:</strong> Free. 5–10 business days.</p><p><strong>Express:</strong> US$7. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>"
+    }
+  }
+}

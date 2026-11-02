@@ -9,9 +9,14 @@
 
 {% liquid
   assign total_amount = cart.total_price | divided_by: 100.0
+  assign display_config = shop.metafields.custom.shipping_country_display.value
+  assign show_progress = settings.show_cart_free_shipping
+  if display_config != blank and display_config.progress_enabled == false
+    assign show_progress = false
+  endif
 %}
 
-{% if settings.show_cart_free_shipping %}
+{% if show_progress %}
   <xo-cart-free-shipping-custom
     xo-free-shipping-notice="{{ 'general.cart.free_shipping_notice_2' | t }}"
     xo-free-shipping-progress="{{ 'general.cart.free_shipping_progress' | t }}"

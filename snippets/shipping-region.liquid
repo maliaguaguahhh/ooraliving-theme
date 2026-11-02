@@ -24,6 +24,8 @@ detected location is outside every country the store sells to (localization.avai
 {% liquid
   assign country_code = localization.country.iso_code
   assign country_name = localization.country.name
+  assign display_config = shop.metafields.custom.shipping_country_display.value
+  assign country_display = display_config.countries[country_code]
   assign regions = shop.metafields.custom.shipping_regions.value
   assign region = blank
   assign fallback_region = blank
@@ -68,6 +70,9 @@ detected location is outside every country the store sells to (localization.avai
       else
         assign label = shop.metafields.custom.free_shipping_label.value
       endif
+      if display_config != blank
+        assign label = country_display.label
+      endif
     %}
     {%- if label != blank -%}
       <div class="tapnest-product-hero__free-shipping">
@@ -89,10 +94,15 @@ detected location is outside every country the store sells to (localization.avai
         assign options = shop.metafields.custom.shipping_options.value
         assign note = shop.metafields.custom.shipping_promise_note.value
       endif
+      if display_config != blank
+        assign options = country_display.options
+        assign note = country_display.note | default: display_config.copy.unknown_notice
+      endif
+      assign card_label = display_config.copy.card_label | default: country_name
     %}
     {%- if heading != blank or options != blank -%}
       {{ 'product-shipping-promise.css' | asset_url | stylesheet_tag }}
-      <div class="oora-shipping-promise" aria-label="Shipping to {{ country_name | escape }}">
+      <div class="oora-shipping-promise" aria-label="{{ card_label | escape | replace: '[country]', country_name }}" data-oora-shipping-country="{{ country_code }}">
         {%- assign unavailable_notice = shop.metafields.custom.shipping_unavailable_notice.value -%}
         {%- if unavailable_notice != blank -%}
           <p
@@ -120,16 +130,21 @@ detected location is outside every country the store sells to (localization.avai
         {%- if options != blank -%}
           <div class="oora-shipping-promise__options">
             {%- for option in options -%}
-              {% assign price_label = option.price_label.value | escape | replace: '[threshold]', threshold_html %}
-              {% assign price_label_check = option.price_label.value | downcase | slice: 0, 4 %}
+              {% liquid
+                assign option_name = option.name.value | default: option.name
+                assign option_price = option.price_label.value | default: option.price_label
+                assign option_time = option.delivery_time.value | default: option.delivery_time
+                assign price_label = option_price | escape | replace: '[threshold]', threshold_html
+                assign price_label_check = option_price | downcase | slice: 0, 4
+              %}
               <div class="oora-shipping-promise__option">
                 <div class="oora-shipping-promise__topline">
-                  <strong>{{ option.name.value | escape }}</strong>
+                  <strong>{{ option_name | escape }}</strong>
                   <b{% if price_label_check == 'free' %} class="oora-shipping-promise__free"{% endif %}>
                     {{- price_label -}}
                   </b>
                 </div>
-                <span>{{ option.delivery_time.value | escape }}</span>
+                <span>{{ option_time | escape }}</span>
               </div>
             {%- endfor -%}
           </div>
@@ -146,7 +161,13 @@ detected location is outside every country the store sells to (localization.avai
     {{- return_days -}}
 
   {%- when 'details' -%}
-    {%- if region.details != blank -%}
+    {%- if display_config != blank and country_display.details_html != blank -%}
+      <div class="oora-shipping-details">
+        {{ country_display.details_html | replace: '[country]', country_name }}
+      </div>
+    {%- elsif display_config != blank -%}
+      <div class="oora-shipping-details"><p>{{ display_config.copy.unknown_notice | escape }}</p></div>
+    {%- elsif region.details != blank -%}
       <div class="oora-shipping-details">
         {{ region.details | metafield_tag | replace: '[threshold]', threshold_html | replace: '[country]', country_name | replace: '[return_days]', return_days }}
       </div>

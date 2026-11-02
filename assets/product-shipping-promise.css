@@ -72,7 +72,7 @@
 }
 
 .oora-shipping-promise__free {
-  color: #527c63;
+  color: rgb(var(--color-button));
 }
 
 .oora-shipping-promise__option > span {
