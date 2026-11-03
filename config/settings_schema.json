@@ -1197,6 +1197,13 @@
       },
       {
         "type": "text",
+        "id": "country_copy_now_shipping_us",
+        "label": "[now_shipping] for the United States",
+        "info": "The country alone cannot tell the contiguous U.S. from Alaska, Hawaii and U.S. territories, so U.S. visitors see this instead. Keep the price in step with Shipping and delivery. Leave empty to use the line above.",
+        "default": "Free shipping in the contiguous U.S. US$6 to AK, HI & territories"
+      },
+      {
+        "type": "text",
         "id": "country_copy_availability",
         "label": "[availability]",
         "info": "[more_destinations] is the number of other destinations.",

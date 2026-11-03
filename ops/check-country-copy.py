@@ -22,6 +22,7 @@ STORE = "https://ooraliving.com"
 THEME_ID = sys.argv[1] if len(sys.argv) > 1 else "189428760670"
 ONLY = set(sys.argv[2:])
 THE = {"GB", "NL", "PH", "US"}
+SHORT = {"GB": "UK"}
 STALE = ["Free Shipping: US, UK, Canada", "orders $49", "$49 or more", "One daily ritual"]
 
 config = json.loads((Path(__file__).parent / "shipping-country-display.json").read_text("utf-8"))
@@ -61,7 +62,7 @@ def text_of(page):
 
 def display_name(page, code):
     match = re.search(rf'flags/{code.lower()}\.svg[^>]*alt="([^"]+)"', page)
-    name = match.group(1) if match else code
+    name = SHORT.get(code) or (match.group(1) if match else code)
     return f"the {name}" if code in THE else name
 
 
@@ -71,8 +72,12 @@ def expected_home(code, name):
         benefit = label if label.endswith(".") else f"{label}."
     else:
         benefit = f"Tracked delivery to {name}."
+    if code == "US":
+        now_shipping = "Free shipping in the contiguous U.S. US$6 to AK, HI & territories"
+    else:
+        now_shipping = f"Now shipping to {name} and {total - 1} more countries & regions"
     return [
-        f"Now shipping to {name} and {total - 1} more countries & regions",
+        now_shipping,
         f"Shipping to {total} countries & regions.",
         f"Available in {name} + {total - 1} more destinations.",
         benefit,
