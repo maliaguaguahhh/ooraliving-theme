@@ -1,0 +1,821 @@
+{
+  "date": "2026-11-02",
+  "currencySource": "Shopify storefront country selector actually offered currency",
+  "policy": {
+    "USD": {
+      "standard": 6,
+      "upgrade": 7
+    },
+    "EUR": {
+      "standard": 5,
+      "upgrade": 6
+    },
+    "GBP": {
+      "standard": 5,
+      "upgrade": 5
+    },
+    "CAD": {
+      "standard": 8,
+      "upgrade": 10
+    },
+    "PLN": {
+      "standard": 25,
+      "upgrade": 30
+    },
+    "SEK": {
+      "standard": 60,
+      "upgrade": 70
+    },
+    "IDR": {
+      "standard": 110000,
+      "upgrade": 130000
+    },
+    "LBP": {
+      "standard": 550000,
+      "upgrade": 650000
+    },
+    "NGN": {
+      "standard": 8000,
+      "upgrade": 9500
+    },
+    "PEN": {
+      "standard": 20,
+      "upgrade": 25
+    },
+    "SAR": {
+      "standard": 25,
+      "upgrade": 25
+    }
+  },
+  "countries": [
+    {
+      "code": "IN",
+      "country": "印度",
+      "currency": "INR",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        8,
+        14
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/21711028318",
+      "newMarketName": "Asia | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "CL",
+      "country": "智利",
+      "currency": "USD",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        9,
+        19
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200802398",
+      "newMarketName": "South America | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "MX",
+      "country": "墨西哥",
+      "currency": "USD",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        7,
+        15
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/21605056606",
+      "newMarketName": "North America | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "CO",
+      "country": "哥伦比亚",
+      "currency": "USD",
+      "standard": 6,
+      "express": null,
+      "standardBusinessDays": [
+        12,
+        18
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200835166",
+      "newMarketName": "South America | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "NG",
+      "country": "尼日利亚",
+      "currency": "NGN",
+      "standard": 8000,
+      "express": null,
+      "standardBusinessDays": [
+        8,
+        17
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200867934",
+      "newMarketName": "Africa | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "ES",
+      "country": "西班牙",
+      "currency": "EUR",
+      "standard": 0,
+      "express": 6,
+      "standardBusinessDays": [
+        5,
+        10
+      ],
+      "expressBusinessDays": [
+        4,
+        7
+      ],
+      "shopifyMarketId": "gid://shopify/Market/64045645918",
+      "newMarketName": "Europe | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": 7
+    },
+    {
+      "code": "FR",
+      "country": "法国",
+      "currency": "EUR",
+      "standard": 0,
+      "express": 6,
+      "standardBusinessDays": [
+        5,
+        10
+      ],
+      "expressBusinessDays": [
+        4,
+        7
+      ],
+      "shopifyMarketId": "gid://shopify/Market/64045645918",
+      "newMarketName": "Europe | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": 7
+    },
+    {
+      "code": "DE",
+      "country": "德国",
+      "currency": "EUR",
+      "standard": 0,
+      "express": 6,
+      "standardBusinessDays": [
+        5,
+        10
+      ],
+      "expressBusinessDays": [
+        4,
+        7
+      ],
+      "shopifyMarketId": "gid://shopify/Market/64045645918",
+      "newMarketName": "Europe | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": 7
+    },
+    {
+      "code": "IT",
+      "country": "意大利",
+      "currency": "EUR",
+      "standard": 0,
+      "express": 6,
+      "standardBusinessDays": [
+        5,
+        10
+      ],
+      "expressBusinessDays": [
+        4,
+        7
+      ],
+      "shopifyMarketId": "gid://shopify/Market/64045645918",
+      "newMarketName": "Europe | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": 7
+    },
+    {
+      "code": "BE",
+      "country": "比利时",
+      "currency": "EUR",
+      "standard": 5,
+      "express": 11,
+      "standardBusinessDays": [
+        5,
+        10
+      ],
+      "expressBusinessDays": [
+        4,
+        7
+      ],
+      "shopifyMarketId": "gid://shopify/Market/64200769630",
+      "newMarketName": "Europe | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": 13
+    },
+    {
+      "code": "AT",
+      "country": "奥地利",
+      "currency": "EUR",
+      "standard": 5,
+      "express": 11,
+      "standardBusinessDays": [
+        5,
+        10
+      ],
+      "expressBusinessDays": [
+        4,
+        7
+      ],
+      "shopifyMarketId": "gid://shopify/Market/64200769630",
+      "newMarketName": "Europe | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": 13
+    },
+    {
+      "code": "PL",
+      "country": "波兰",
+      "currency": "PLN",
+      "standard": 0,
+      "express": 30,
+      "standardBusinessDays": [
+        5,
+        10
+      ],
+      "expressBusinessDays": [
+        4,
+        7
+      ],
+      "shopifyMarketId": "gid://shopify/Market/64045645918",
+      "newMarketName": "Europe | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": 7
+    },
+    {
+      "code": "NL",
+      "country": "荷兰",
+      "currency": "EUR",
+      "standard": 5,
+      "express": 11,
+      "standardBusinessDays": [
+        5,
+        10
+      ],
+      "expressBusinessDays": [
+        4,
+        7
+      ],
+      "shopifyMarketId": "gid://shopify/Market/64200769630",
+      "newMarketName": "Europe | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": 13
+    },
+    {
+      "code": "PT",
+      "country": "葡萄牙",
+      "currency": "EUR",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        6,
+        13
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64045645918",
+      "newMarketName": "Europe | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "CH",
+      "country": "瑞士",
+      "currency": "CHF",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        6,
+        13
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64045645918",
+      "newMarketName": "Europe | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "NO",
+      "country": "挪威",
+      "currency": "USD",
+      "standard": 6,
+      "express": null,
+      "standardBusinessDays": [
+        6,
+        13
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200769630",
+      "newMarketName": "Europe | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "HU",
+      "country": "匈牙利",
+      "currency": "HUF",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        6,
+        13
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64045645918",
+      "newMarketName": "Europe | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "SK",
+      "country": "斯洛伐克",
+      "currency": "EUR",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        6,
+        13
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64045645918",
+      "newMarketName": "Europe | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "GR",
+      "country": "希腊",
+      "currency": "EUR",
+      "standard": 5,
+      "express": null,
+      "standardBusinessDays": [
+        6,
+        13
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200769630",
+      "newMarketName": "Europe | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "CZ",
+      "country": "捷克",
+      "currency": "CZK",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        6,
+        13
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64045645918",
+      "newMarketName": "Europe | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "SE",
+      "country": "瑞典",
+      "currency": "SEK",
+      "standard": 60,
+      "express": null,
+      "standardBusinessDays": [
+        6,
+        13
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200769630",
+      "newMarketName": "Europe | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "SI",
+      "country": "斯洛文尼亚",
+      "currency": "EUR",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        6,
+        13
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64045645918",
+      "newMarketName": "Europe | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "BG",
+      "country": "保加利亚",
+      "currency": "EUR",
+      "standard": 5,
+      "express": null,
+      "standardBusinessDays": [
+        6,
+        13
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200769630",
+      "newMarketName": "Europe | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "LV",
+      "country": "拉脱维亚",
+      "currency": "EUR",
+      "standard": 5,
+      "express": null,
+      "standardBusinessDays": [
+        6,
+        13
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200769630",
+      "newMarketName": "Europe | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "EE",
+      "country": "爱沙尼亚",
+      "currency": "EUR",
+      "standard": 5,
+      "express": null,
+      "standardBusinessDays": [
+        6,
+        13
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200769630",
+      "newMarketName": "Europe | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "LT",
+      "country": "立陶宛",
+      "currency": "EUR",
+      "standard": 5,
+      "express": null,
+      "standardBusinessDays": [
+        6,
+        13
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200769630",
+      "newMarketName": "Europe | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "VN",
+      "country": "越南",
+      "currency": "VND",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        5,
+        9
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/21711028318",
+      "newMarketName": "Asia | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "PH",
+      "country": "菲律宾",
+      "currency": "PHP",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        5,
+        12
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/21711028318",
+      "newMarketName": "Asia | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "BH",
+      "country": "巴林",
+      "currency": "USD",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        5,
+        9
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/21711028318",
+      "newMarketName": "Asia | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "LB",
+      "country": "黎巴嫩",
+      "currency": "LBP",
+      "standard": 550000,
+      "express": null,
+      "standardBusinessDays": [
+        4,
+        8
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200736862",
+      "newMarketName": "Asia | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "ID",
+      "country": "印度尼西亚",
+      "currency": "IDR",
+      "standard": 110000,
+      "express": null,
+      "standardBusinessDays": [
+        7,
+        13
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200736862",
+      "newMarketName": "Asia | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "OM",
+      "country": "阿曼",
+      "currency": "USD",
+      "standard": 6,
+      "express": null,
+      "standardBusinessDays": [
+        5,
+        10
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200736862",
+      "newMarketName": "Asia | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "PE",
+      "country": "秘鲁",
+      "currency": "PEN",
+      "standard": 20,
+      "express": null,
+      "standardBusinessDays": [
+        5,
+        12
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200835166",
+      "newMarketName": "South America | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "SA",
+      "country": "沙特阿拉伯",
+      "currency": "SAR",
+      "standard": 25,
+      "express": null,
+      "standardBusinessDays": [
+        4,
+        8
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200736862",
+      "newMarketName": "Asia | Paid Standard",
+      "sourceStandardUsd": 6,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "CA",
+      "country": "加拿大",
+      "currency": "CAD",
+      "standard": 0,
+      "express": 10,
+      "standardBusinessDays": [
+        5,
+        12
+      ],
+      "expressBusinessDays": [
+        4,
+        10
+      ],
+      "shopifyMarketId": "gid://shopify/Market/21605056606",
+      "newMarketName": "North America | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": 7
+    },
+    {
+      "code": "GB",
+      "country": "英国",
+      "currency": "GBP",
+      "standard": 0,
+      "express": 5,
+      "standardBusinessDays": [
+        8,
+        11
+      ],
+      "expressBusinessDays": [
+        4,
+        6
+      ],
+      "shopifyMarketId": "gid://shopify/Market/64045645918",
+      "newMarketName": "Europe | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": 7
+    },
+    {
+      "code": "JP",
+      "country": "日本",
+      "currency": "JPY",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        7,
+        11
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/21711028318",
+      "newMarketName": "Asia | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "KR",
+      "country": "韩国",
+      "currency": "KRW",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        6,
+        10
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/21711028318",
+      "newMarketName": "Asia | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "MY",
+      "country": "马来西亚",
+      "currency": "MYR",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        7,
+        11
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/21711028318",
+      "newMarketName": "Asia | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "NZ",
+      "country": "新西兰",
+      "currency": "NZD",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        5,
+        9
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/64200704094",
+      "newMarketName": "Oceania | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "HK",
+      "country": "香港",
+      "currency": "HKD",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        3,
+        5
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/21711028318",
+      "newMarketName": "Asia | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "MO",
+      "country": "澳门",
+      "currency": "MOP",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        2,
+        4
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/21711028318",
+      "newMarketName": "Asia | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "TW",
+      "country": "台湾",
+      "currency": "TWD",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        3,
+        6
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/21711028318",
+      "newMarketName": "Asia | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "SG",
+      "country": "新加坡",
+      "currency": "SGD",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        5,
+        9
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/21711028318",
+      "newMarketName": "Asia | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "TH",
+      "country": "泰国",
+      "currency": "THB",
+      "standard": 0,
+      "express": null,
+      "standardBusinessDays": [
+        5,
+        12
+      ],
+      "expressBusinessDays": null,
+      "shopifyMarketId": "gid://shopify/Market/21711028318",
+      "newMarketName": "Asia | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": null
+    },
+    {
+      "code": "US",
+      "country": "美国本土",
+      "currency": "USD",
+      "standard": 0,
+      "express": 7,
+      "standardBusinessDays": [
+        5,
+        10
+      ],
+      "expressBusinessDays": [
+        4,
+        7
+      ],
+      "shopifyMarketId": "gid://shopify/Market/21605056606",
+      "newMarketName": "North America | Free",
+      "sourceStandardUsd": 0,
+      "sourceExpressUsd": 7
+    }
+  ]
+}

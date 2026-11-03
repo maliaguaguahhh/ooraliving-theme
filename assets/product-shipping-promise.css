@@ -59,6 +59,8 @@
 
 .oora-shipping-promise__topline {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.3rem;
   justify-content: space-between;
   gap: 0.7rem;
   align-items: baseline;
