@@ -14,6 +14,10 @@ the metafield is empty.
 {% assign badges = shop.metafields.custom.trust_badges.value %}
 {% capture return_days %}{% render 'shipping-region', part: 'return_days' %}{% endcapture %}
 {% assign return_days = return_days | strip %}
+{% liquid
+  assign shipping_display = shop.metafields.custom.shipping_country_display.value
+  assign country_display = shipping_display.countries[localization.country.iso_code]
+%}
 
 {%- if settings.product_trust_badges_enabled and badges != blank -%}
   {{ 'trust-badges.css' | asset_url | stylesheet_tag }}
@@ -23,6 +27,10 @@ the metafield is empty.
     {%- for badge in badges -%}
       {% liquid
         assign badge_text = badge.title.value | append: badge.description.value
+        assign badge_description = badge.description.value
+        if badge_text contains '[return_days]' and country_display.statutory_returns
+          assign badge_description = shipping_display.copy.statutory_returns_description
+        endif
         if return_days == blank and badge_text contains '[return_days]'
           continue
         endif
@@ -67,8 +75,8 @@ the metafield is empty.
           </span>
           <span class="oora-trust-badges__text">
             <strong class="oora-trust-badges__title">{{ badge.title.value | escape | replace: '[return_days]', return_days }}</strong>
-            {%- if badge.description != blank -%}
-              <span class="oora-trust-badges__description">{{ badge.description.value | escape | replace: '[return_days]', return_days }}</span>
+            {%- if badge_description != blank -%}
+              <span class="oora-trust-badges__description">{{ badge_description | escape | replace: '[return_days]', return_days }}</span>
             {%- endif -%}
           </span>
         </{{ tag }}>

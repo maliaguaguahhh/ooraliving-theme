@@ -49,6 +49,9 @@ detected location is outside every country the store sells to (localization.avai
   endif
 
   assign return_days = region.return_days.value | append: ''
+  if country_display.return_days != blank
+    assign return_days = country_display.return_days | append: ''
+  endif
 
   assign threshold = settings.cart_free_shipping_min_amount | default: 0
   assign threshold_cents = threshold | times: 100

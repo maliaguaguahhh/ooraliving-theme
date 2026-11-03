@@ -1,0 +1,107 @@
+--- Current Shopify policy
++++ Minimal revision draft
+@@ -1,16 +1,18 @@
+ <p>At oora, we take pride in designing high-quality products and want you to shop with confidence. If you’re not completely satisfied with your purchase, please review our Return &amp; Refund Policy below.</p>
+ <hr>
+-<p><strong>7-Day Return Window</strong></p>
++<p><strong>Return Window</strong></p>
+ <p>You may request a return within<span>&nbsp;</span><strong>7 calendar days</strong><span>&nbsp;</span>of receiving your order.</p>
+-<p>To qualify for a return, the item must:</p>
++<p>For our voluntary 7-day return policy, the item must:</p>
+ <ul>
+ <li>Be unused and in its original condition.</li>
+ <li>Include all original packaging, accessories, manuals, and inserts.</li>
+ <li>Be free from signs of misuse, damage, or unauthorized modification.</li>
+ <li>Be accompanied by proof of purchase (order number or receipt).</li>
+ </ul>
+-<p>Returns requested after 7 days from the delivery date will not be accepted.</p>
+-<p><strong>Customers in the United Kingdom</strong><span>&nbsp;</span>have 14 calendar days from delivery to request a return, in line with UK consumer law.</p>
++<p>Our voluntary return window is 7 calendar days from delivery, except where the statutory withdrawal period below or other mandatory consumer rights apply.</p>
++<p><strong>Customers in the European Union, the United Kingdom and Norway</strong> have 14 calendar days from delivery to notify us that they wish to withdraw from an online purchase, without giving a reason. You must then send the goods back within 14 calendar days after notifying us.</p>
++<p>For statutory withdrawal, you may inspect the product as you would in a shop. Unopened packaging and an entirely unused product are not conditions for exercising this right. Please return the product with its accessories and packaging where possible. We may make a lawful deduction only for diminished value caused by handling beyond what is necessary to establish the product’s nature, characteristics and functioning.</p>
++<p>These periods do not limit your statutory rights for faulty, damaged, incorrect or misdescribed products. Any more protective mandatory local consumer rights continue to apply.</p>
+ <hr>
+ <p><strong>How to Start a Return</strong></p>
+ <p>To initiate a return, please contact our Customer Support team before sending your item back.</p>
+@@ -18,10 +20,10 @@
+ <p>Please include:</p>
+ <ul>
+ <li>Your order number</li>
+-<li>The reason for your return</li>
++<li>The reason for your return, if you wish to provide one (no reason is required for statutory withdrawal)</li>
+ <li>Photos or videos (if the item is damaged or defective)</li>
+ </ul>
+-<p>Returns sent without prior authorization may not be accepted.</p>
++<p>We will provide return instructions and the correct return address. Please do not send a return to the address on the shipping label without checking with us. For statutory withdrawal, a clear notice sent within the applicable period is sufficient; you do not need our approval to exercise that right.</p>
+ <hr>
+ <p><strong>Return Shipping Costs</strong></p>
+ <p>If you are returning an item because:</p>
+@@ -31,14 +33,14 @@
+ <li>You no longer need the item</li>
+ <li>There are compatibility limitations (see Compatibility Disclaimer below)</li>
+ </ul>
+-<p>You are responsible for the return shipping costs.</p>
++<p>You are responsible for the direct return shipping costs for change-of-mind returns, including statutory withdrawal where permitted by law.</p>
+ <p>If the return is approved because:</p>
+ <ul>
+ <li>The product has a verified manufacturing defect</li>
+ <li>The product arrived damaged during shipping</li>
+ <li>You received the wrong item due to our error</li>
+ </ul>
+-<p>oora will provide an appropriate solution, which may include a replacement, a partial, or a full refund.</p>
++<p>oora will provide an appropriate solution in accordance with applicable consumer law, which may include a replacement, a partial or a full refund. Where a return is required for a verified defect, damage in transit or our error, we will arrange or cover reasonable return shipping costs.</p>
+ <hr>
+ <p><strong>Compatibility Disclaimer</strong></p>
+ <p>TapNest is designed to work with iPhones. However, NFC performance and magnetic functionality may vary depending on factors including, but not limited to:</p>
+@@ -52,11 +54,11 @@
+ </ul>
+ <p>Performance differences resulting from these factors are considered<span>&nbsp;</span><strong>compatibility limitations</strong>, not manufacturing defects.</p>
+ <p>Issues arising solely from device compatibility—including but not limited to inconsistent NFC detection, slower response times, reduced magnetic performance, or limitations caused by device settings or accessories—do<span>&nbsp;</span><strong>not</strong><span>&nbsp;</span>constitute product defects or product quality issues.</p>
+-<p>Returns requested solely due to compatibility limitations will be handled as standard returns under this policy and are not considered warranty claims.</p>
++<p>Returns requested solely due to compatibility limitations will be handled as standard returns under this policy and are not considered warranty claims. This disclaimer does not exclude your statutory rights if the product is faulty, does not match its description or fails to meet applicable conformity requirements.</p>
+ <p>If you are unsure whether your device is compatible, we encourage you to contact us before placing your order.</p>
+ <hr>
+ <p><strong>Damaged or Defective Products</strong></p>
+-<p>If your order arrives damaged, defective, or incorrect, please contact us within<span>&nbsp;</span><strong>7 days</strong><span>&nbsp;</span>of delivery.</p>
++<p>If your order arrives damaged, defective, or incorrect, please contact us as soon as possible, preferably within <strong>7 days</strong> of delivery, so we can help promptly. This request does not shorten any statutory claim period.</p>
+ <p>Please provide:</p>
+ <ul>
+ <li>Your order number</li>
+@@ -86,7 +88,7 @@
+ <p><strong>Return Inspection</strong></p>
+ <p>All returned products are inspected upon arrival.</p>
+ <p>To be eligible for a full refund, returned items must meet the return conditions stated in this policy.</p>
+-<p>We reserve the right to refuse a refund or deduct an appropriate amount from the refund if the returned product:</p>
++<p>For voluntary returns, we reserve the right to refuse a refund or deduct an appropriate amount, where lawful, if the returned product:</p>
+ <ul>
+ <li>Shows signs of use beyond reasonable inspection</li>
+ <li>Is damaged due to misuse, improper installation, or negligence</li>
+@@ -94,10 +96,10 @@
+ <li>Has been modified or repaired without authorization</li>
+ <li>Cannot be resold as new due to its condition</li>
+ </ul>
+-<p>If a return does not meet these requirements, we will notify you before processing the return.</p>
++<p>If a return does not meet these requirements, we will notify you before processing the return. For statutory withdrawal, the inspection and diminished-value rules in the Return Window section apply instead; a missing box or the fact that an item cannot be resold as new does not automatically remove your right of withdrawal.</p>
+ <hr>
+ <p><strong>Non-Returnable Items</strong></p>
+-<p>The following items are not eligible for return:</p>
++<p>The following exclusions apply to our voluntary return policy, subject to your statutory rights:</p>
+ <ul>
+ <li>Used or intentionally damaged products</li>
+ <li>Products damaged by misuse, accidents, or unauthorized repairs</li>
+@@ -106,7 +108,7 @@
+ </ul>
+ <hr>
+ <p><strong>Refused Delivery</strong></p>
+-<p>If an order is refused by the recipient, returned due to an incorrect or incomplete shipping address provided by the customer, or returned because required customs duties or import taxes were not paid, any shipping costs, return shipping charges, customs fees, or other related expenses incurred by oora may be deducted from the refund.</p>
++<p>If an order is refused or returned because the customer supplied an incorrect or incomplete address, we may deduct actual, lawfully recoverable costs where permitted by applicable law. Refusing delivery alone is not a clear notice of withdrawal; please also contact us. If a carrier requests an unexpected import payment for an order shipped with duties-paid service, contact us before paying or refusing delivery so we can investigate. This section does not limit statutory withdrawal or faulty-goods rights.</p>
+ <hr>
+ <p><strong>Refund Process</strong></p>
+ <p>Once your returned item has been received and inspected, we will notify you of the outcome.</p>
+@@ -115,4 +117,6 @@
+ <li>Your refund will be issued to the original payment method.</li>
+ <li>Please allow<span>&nbsp;</span><strong>5–10 business days</strong><span>&nbsp;</span>for the refund to appear, depending on your payment provider.</li>
+ </ul>
+-<p>Original shipping charges are non-refundable unless the return is due to our error or a verified manufacturing defect.</p>+<p>For voluntary change-of-mind returns, original shipping charges are non-refundable unless required by law. For statutory withdrawal from the whole order in the European Union, the United Kingdom or Norway, we will also refund the cost of our least expensive Standard delivery option paid for that order. Any additional charge for choosing Express over Standard is not refundable under the withdrawal right. If Standard delivery was free, there is no original Standard shipping charge to refund.</p>
++<p>For statutory withdrawal, we will issue the refund without undue delay and within 14 calendar days of receiving your withdrawal notice. We may withhold it until we receive the goods back or you provide evidence of sending them back, whichever occurs first. Refunds use your original payment method without a refund fee. The 5–10 business days above describe payment-provider processing after a refund is issued and do not extend statutory refund deadlines.</p>
++<p>Nothing in this policy excludes or limits your mandatory consumer rights.</p>
