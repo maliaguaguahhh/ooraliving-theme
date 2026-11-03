@@ -79,7 +79,7 @@
           "type": "collapse",
           "settings": {
             "collapse_text": "Shipping & returns",
-            "collapse_content": "<p>- Free standard shipping on all orders<br/>- Express shipping options available at an additional cost<br/>- Orders processed and shipped within 2-3 business days<br/>- 30-day return policy for a full refund or exchange<br/>- Return shipping covered for defective or damaged items</p>"
+            "collapse_content": "<p>Shipping rates and delivery estimates vary by destination. See our <a href=\"/policies/shipping-policy\">shipping policy</a> for details. Returns follow our <a href=\"/policies/refund-policy\">refund policy</a>.</p>"
           }
         },
         "collapse_mdKxAA": {

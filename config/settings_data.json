@@ -62,7 +62,7 @@
     "show_vendor": false,
     "cart_drawer_placement": "right",
     "cart_color_scheme": "scheme-03428998-7e9c-4555-b6bc-46cd881f610c",
-    "show_cart_free_shipping": true,
+    "show_cart_free_shipping": false,
     "cart_free_shipping_min_amount": 49,
     "media_border_thickness": 0,
     "media_border_opacity": 5,

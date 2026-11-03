@@ -60,7 +60,7 @@
           "type": "collapse",
           "settings": {
             "collapse_text": "Shipping & returns",
-            "collapse_content": "<p>Free Standard Shipping: On all orders with no minimum purchase required.<br/>Quick Dispatch: Orders shipped within 1-2 business days.<br/>Express Delivery: Available for an additional charge.<br/>30-Day Return Policy: Easy returns for a full refund or exchange.<br/>Return Shipping: Complimentary for defective or damaged items.</p>"
+            "collapse_content": "<p>Shipping rates and delivery estimates vary by destination. See our <a href=\"/policies/shipping-policy\">shipping policy</a> for details. Returns follow our <a href=\"/policies/refund-policy\">refund policy</a>.</p>"
           }
         },
         "collapse_mdKxAA": {

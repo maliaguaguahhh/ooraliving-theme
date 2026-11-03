@@ -1,0 +1,58 @@
+{% doc %}
+Replaces the country shipping tokens in merchant-written text (announcement bar, promo popup).
+
+Tokens: [now_shipping], [availability] and [shipping_benefit] become the phrases set in
+Theme settings > Country shipping copy, for the visitor's country; [destinations] becomes the
+number of countries in the shop metafield custom.shipping_country_display. Free-shipping
+countries use their own label from that metafield as [shipping_benefit].
+
+Each country phrase is rendered with the "outside the shipping countries" phrase next to it,
+hidden. shipping-region.js swaps them when the visitor's detected location is outside
+localization.available_countries (Shopify then shows the default market's country).
+
+@param {string} text - Text or HTML that may contain the tokens
+@example
+{% render 'country-shipping-copy', text: block.settings.text %}
+{% enddoc %}
+
+{%- liquid
+  assign display_config = shop.metafields.custom.shipping_country_display.value
+  assign country_display = display_config.countries[localization.country.iso_code]
+  assign destinations = display_config.countries.size
+  assign more_destinations = destinations | minus: 1
+  assign countries = localization.available_countries | map: 'iso_code' | join: ','
+  capture country_name
+    render 'country-display-name'
+  endcapture
+  assign country_name = country_name | strip | escape
+
+  assign global = settings.country_copy_global | escape | replace: '[destinations]', destinations
+  assign now_shipping = settings.country_copy_now_shipping | escape | replace: '[country]', country_name
+  assign availability = settings.country_copy_availability | escape | replace: '[country]', country_name | replace: '[more_destinations]', more_destinations
+  if country_display.label != blank
+    assign benefit = country_display.label | escape | replace: '[country]', country_name
+    assign benefit_end = benefit | slice: -1
+    if benefit_end != '.'
+      assign benefit = benefit | append: '.'
+    endif
+  else
+    assign benefit = settings.country_copy_paid_benefit | escape | replace: '[country]', country_name
+  endif
+
+  assign local_open = '<span data-oora-local-copy data-countries="' | append: countries | append: '">'
+  assign global_html = '<span data-oora-global-copy hidden>' | append: global | append: '</span>'
+  if country_display == blank
+    assign now_shipping_html = global
+    assign availability_html = global
+    assign benefit_html = ''
+  else
+    assign now_shipping_html = local_open | append: now_shipping | append: '</span>' | append: global_html
+    assign availability_html = local_open | append: availability | append: '</span>' | append: global_html
+    assign benefit_html = local_open | append: benefit | append: '</span>'
+  endif
+
+  echo text | replace: '[now_shipping]', now_shipping_html | replace: '[availability]', availability_html | replace: '[shipping_benefit]', benefit_html | replace: '[destinations]', destinations
+-%}
+{%- if text contains '[now_shipping]' or text contains '[availability]' or text contains '[shipping_benefit]' -%}
+  <script src="{{ 'shipping-region.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}

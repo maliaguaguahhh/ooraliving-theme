@@ -11,6 +11,8 @@
  * It also shows the "not shipping to your country" notice inside the shipping card
  * when the visitor's detected location (Shopify browsing context suggestions) is
  * outside the store's countries. Add ?oora_country=DE to a URL to preview it.
+ * For the same visitors, country phrases from country-shipping-copy.liquid
+ * ([data-oora-local-copy]) are hidden and their global phrase is shown instead.
  */
 (() => {
   if (window.ooraShippingRegion) return;
@@ -51,10 +53,17 @@
       el.hidden = false;
       document.documentElement.classList.add('oora-ships-unavailable');
     });
+    root.querySelectorAll('[data-oora-local-copy]').forEach((el) => {
+      const allowed = (el.dataset.countries || '').split(',').filter(Boolean);
+      if (!allowed.length || allowed.includes(detected.code)) return;
+      el.hidden = true;
+      const global = el.nextElementSibling;
+      if (global && global.hasAttribute('data-oora-global-copy')) global.hidden = false;
+    });
   };
 
   const detectCountry = async () => {
-    if (!document.querySelector('[data-oora-unavailable]')) return null;
+    if (!document.querySelector('[data-oora-unavailable], [data-oora-local-copy]')) return null;
     const override = new URLSearchParams(location.search).get('oora_country');
     const nameOf = (code) => {
       try { return new Intl.DisplayNames([locale], { type: 'region' }).of(code); } catch (e) { return code; }

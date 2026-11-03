@@ -1,0 +1,15 @@
+{% doc %}
+Renders the visitor's country name as it reads inside a sentence, adding "the" where English
+needs it ("the United Kingdom", "the Netherlands"). Used for every [country] in shipping copy.
+
+@example
+{% capture country_name %}{% render 'country-display-name' %}{% endcapture %}
+{% enddoc %}
+
+{%- liquid
+  assign takes_the = 'GB,NL,PH,US' | split: ','
+  if takes_the contains localization.country.iso_code
+    echo 'the '
+  endif
+  echo localization.country.name
+-%}

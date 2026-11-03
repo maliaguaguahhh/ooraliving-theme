@@ -23,7 +23,10 @@ detected location is outside every country the store sells to (localization.avai
 
 {% liquid
   assign country_code = localization.country.iso_code
-  assign country_name = localization.country.name
+  capture country_name
+    render 'country-display-name'
+  endcapture
+  assign country_name = country_name | strip
   assign display_config = shop.metafields.custom.shipping_country_display.value
   assign country_display = display_config.countries[country_code]
   assign regions = shop.metafields.custom.shipping_regions.value

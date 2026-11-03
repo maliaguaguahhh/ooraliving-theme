@@ -1182,6 +1182,43 @@
     ]
   },
   {
+    "name": "Country shipping copy",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Phrases for the announcement bar and promo popup. Type [now_shipping], [availability], [shipping_benefit] or [destinations] in their text. Countries, the destination count and free shipping come from the shop metafield Country shipping display."
+      },
+      {
+        "type": "text",
+        "id": "country_copy_now_shipping",
+        "label": "[now_shipping]",
+        "info": "[country] is the visitor's country.",
+        "default": "Now shipping to [country]"
+      },
+      {
+        "type": "text",
+        "id": "country_copy_availability",
+        "label": "[availability]",
+        "info": "[more_destinations] is the number of other destinations.",
+        "default": "Available in [country] + [more_destinations] more destinations."
+      },
+      {
+        "type": "text",
+        "id": "country_copy_paid_benefit",
+        "label": "[shipping_benefit] for paid-shipping countries",
+        "info": "Free-shipping countries show their free shipping line from Country shipping display.",
+        "default": "Tracked delivery to [country]."
+      },
+      {
+        "type": "text",
+        "id": "country_copy_global",
+        "label": "Visitors outside the shipping countries",
+        "info": "Replaces [now_shipping] and [availability]; [shipping_benefit] is left out.",
+        "default": "Shipping to [destinations] countries & regions."
+      }
+    ]
+  },
+  {
     "name": "Product purchase",
     "settings": [
       {

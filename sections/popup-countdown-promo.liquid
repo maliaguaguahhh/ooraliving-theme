@@ -100,17 +100,17 @@
           <div class='xo-popup-countdown-promo__content'>
             {% if section.settings.subheading %}
               <xo-animate xo-type='fade-up' xo-delay='300' xo-cascade>
-                <div class='xo-popup-countdown-promo__subheading'>{{ section.settings.subheading }}</div>
+                <div class='xo-popup-countdown-promo__subheading'>{% render 'country-shipping-copy', text: section.settings.subheading %}</div>
               </xo-animate>
             {% endif %}
             {% if section.settings.heading != blank %}
               <xo-animate xo-type='fade-up' xo-delay='300' xo-cascade>
-                <h2 class='xo-popup-countdown-promo__heading {{ class }}'>{{ section.settings.heading }}</h2>
+                <h2 class='xo-popup-countdown-promo__heading {{ class }}'>{% render 'country-shipping-copy', text: section.settings.heading %}</h2>
               </xo-animate>
             {% endif %}
             {% if section.settings.body != blank %}
               <xo-animate xo-type='fade-up' xo-delay='300' xo-cascade>
-                <div class='xo-popup-countdown-promo__body'>{{ section.settings.body }}</div>
+                <div class='xo-popup-countdown-promo__body'>{% render 'country-shipping-copy', text: section.settings.body %}</div>
               </xo-animate>
             {% endif %}
             <xo-animate xo-cascade>
@@ -157,7 +157,7 @@
             </div>
             {% if section.settings.disclaimer != blank %}
               <xo-animate xo-type='fade-up' xo-delay='300' xo-cascade style='width: 100%;'>
-                <div class='xo-popup-countdown-promo__disclaimer'>{{ section.settings.disclaimer }}</div>
+                <div class='xo-popup-countdown-promo__disclaimer'>{% render 'country-shipping-copy', text: section.settings.disclaimer %}</div>
               </xo-animate>
             {% endif %}
           </div>

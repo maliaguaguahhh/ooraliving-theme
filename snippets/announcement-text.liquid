@@ -9,7 +9,7 @@
       <a href='{{ block.settings.link }}' class='xo-announcement-text__link link focus-inset'>
     {%- endif -%}
     <div class='xo-announcement-text__message'>
-      {{ block.settings.text }}
+      {% render 'country-shipping-copy', text: block.settings.text %}
     </div>
     {%- if block.settings.link != blank -%}
       </a>
