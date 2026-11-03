@@ -23,7 +23,7 @@ THEME_ID = sys.argv[1] if len(sys.argv) > 1 else "189428760670"
 ONLY = set(sys.argv[2:])
 THE = {"GB", "NL", "PH", "US"}
 SHORT = {"GB": "UK"}
-STALE = ["Free Shipping: US, UK, Canada", "orders $49", "$49 or more", "One daily ritual"]
+STALE = ["Free Shipping: US, UK, Canada", "orders $49", "$49 or more", "One daily ritual", "US$6 to AK"]
 
 config = json.loads((Path(__file__).parent / "shipping-country-display.json").read_text("utf-8"))
 countries = config["countries"]
@@ -73,7 +73,7 @@ def expected_home(code, name):
     else:
         benefit = f"Tracked delivery to {name}."
     if code == "US":
-        now_shipping = "Free shipping in the contiguous U.S. US$6 to AK, HI & territories"
+        now_shipping = "Free shipping in the contiguous U.S."
     else:
         now_shipping = f"Now shipping to {name} and {total - 1} more countries & regions"
     return [
@@ -94,6 +94,9 @@ def check(code):
     label = countries[code]["label"].replace("[country]", name)
     if label and label not in product:
         problems.append(f"product label missing: {label}")
+    note = countries[code]["note"].replace("[country]", name)
+    if note not in product:
+        problems.append(f"shipping card note missing: {note}")
     return code, problems
 
 
