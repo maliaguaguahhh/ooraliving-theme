@@ -1192,8 +1192,8 @@
         "type": "text",
         "id": "country_copy_now_shipping",
         "label": "[now_shipping]",
-        "info": "[country] is the visitor's country.",
-        "default": "Now shipping to [country]"
+        "info": "[country] is the visitor's country; [more_destinations] is the number of other destinations.",
+        "default": "Now shipping to [country] and [more_destinations] more countries & regions"
       },
       {
         "type": "text",

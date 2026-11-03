@@ -34,19 +34,11 @@
             "text": "<p>[now_shipping]</p>",
             "link": "shopify://products/tapnest"
           }
-        },
-        "announcement_global_reach": {
-          "type": "announcement",
-          "settings": {
-            "text": "<p>[destinations] countries & regions. One daily ritual.</p>",
-            "link": "shopify://products/tapnest"
-          }
         }
       },
       "block_order": [
         "announcement-bar-0",
         "announcement_free_shipping",
-        "announcement_global_reach",
         "announcement_HHnFyX"
       ],
       "custom_css": [

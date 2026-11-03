@@ -22,7 +22,7 @@ STORE = "https://ooraliving.com"
 THEME_ID = sys.argv[1] if len(sys.argv) > 1 else "189428760670"
 ONLY = set(sys.argv[2:])
 THE = {"GB", "NL", "PH", "US"}
-STALE = ["Free Shipping: US, UK, Canada", "orders $49", "$49 or more"]
+STALE = ["Free Shipping: US, UK, Canada", "orders $49", "$49 or more", "One daily ritual"]
 
 config = json.loads((Path(__file__).parent / "shipping-country-display.json").read_text("utf-8"))
 countries = config["countries"]
@@ -72,8 +72,7 @@ def expected_home(code, name):
     else:
         benefit = f"Tracked delivery to {name}."
     return [
-        f"Now shipping to {name}",
-        f"{total} countries & regions. One daily ritual.",
+        f"Now shipping to {name} and {total - 1} more countries & regions",
         f"Shipping to {total} countries & regions.",
         f"Available in {name} + {total - 1} more destinations.",
         benefit,

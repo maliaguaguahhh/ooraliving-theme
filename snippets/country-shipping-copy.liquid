@@ -27,7 +27,7 @@ localization.available_countries (Shopify then shows the default market's countr
   assign country_name = country_name | strip | escape
 
   assign global = settings.country_copy_global | escape | replace: '[destinations]', destinations
-  assign now_shipping = settings.country_copy_now_shipping | escape | replace: '[country]', country_name
+  assign now_shipping = settings.country_copy_now_shipping | escape | replace: '[country]', country_name | replace: '[more_destinations]', more_destinations
   assign availability = settings.country_copy_availability | escape | replace: '[country]', country_name | replace: '[more_destinations]', more_destinations
   if country_display.label != blank
     assign benefit = country_display.label | escape | replace: '[country]', country_name
