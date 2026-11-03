@@ -4,6 +4,19 @@ At oora, we take pride in designing high-quality products and want you to shop w
 
 ---
 
+**Order Cancellations**
+
+
+You may request cancellation of unfulfilled items in your order at any time before those items are fulfilled. Submit your request through your customer account, where available, or email [support@ooraliving.com](mailto:support@ooraliving.com) with your order number.
+
+
+For partially fulfilled orders, this cancellation process applies only to the unfulfilled items. Once an item has been fulfilled, please follow our Return & Refund Policy. This does not affect your statutory withdrawal or other mandatory consumer rights.
+
+
+
+
+---
+
 **Return Window**
 
 
@@ -26,7 +39,7 @@ For our voluntary 7-day return policy, the item must:
 Our voluntary return window is 7 calendar days from delivery, except where the statutory withdrawal period below or other mandatory consumer rights apply.
 
 
-**Customers in the European Union, the United Kingdom and Norway** have 14 calendar days from delivery to notify us that they wish to withdraw from an online purchase, without giving a reason. You must then send the goods back within 14 calendar days after notifying us.
+**Customers in the European Union, the United Kingdom and Norway** have 14 calendar days after receiving the last item in their order to notify us that they wish to withdraw from an online purchase, without giving a reason. You must then send the goods back within 14 calendar days after notifying us. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day.
 
 
 For statutory withdrawal, you may inspect the product as you would in a shop. Unopened packaging and an entirely unused product are not conditions for exercising this right. Please return the product with its accessories and packaging where possible. We may make a lawful deduction only for diminished value caused by handling beyond what is necessary to establish the product’s nature, characteristics and functioning.

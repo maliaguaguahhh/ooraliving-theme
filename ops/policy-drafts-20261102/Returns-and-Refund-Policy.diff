@@ -1,9 +1,14 @@
---- Current Shopify policy
-+++ Minimal revision draft
-@@ -1,16 +1,18 @@
+--- Original Shopify policy
++++ Revised draft with cancellation and statutory returns
+@@ -1,16 +1,23 @@
  <p>At oora, we take pride in designing high-quality products and want you to shop with confidence. If you’re not completely satisfied with your purchase, please review our Return &amp; Refund Policy below.</p>
  <hr>
 -<p><strong>7-Day Return Window</strong></p>
++<p><strong>Order Cancellations</strong></p>
++<p>You may request cancellation of unfulfilled items in your order at any time before those items are fulfilled. Submit your request through your customer account, where available, or email <a href="mailto:support@ooraliving.com">support@ooraliving.com</a> with your order number.</p>
++<p>For partially fulfilled orders, this cancellation process applies only to the unfulfilled items. Once an item has been fulfilled, please follow our Return &amp; Refund Policy. This does not affect your statutory withdrawal or other mandatory consumer rights.</p>
++
++<hr>
 +<p><strong>Return Window</strong></p>
  <p>You may request a return within<span>&nbsp;</span><strong>7 calendar days</strong><span>&nbsp;</span>of receiving your order.</p>
 -<p>To qualify for a return, the item must:</p>
@@ -17,13 +22,13 @@
 -<p>Returns requested after 7 days from the delivery date will not be accepted.</p>
 -<p><strong>Customers in the United Kingdom</strong><span>&nbsp;</span>have 14 calendar days from delivery to request a return, in line with UK consumer law.</p>
 +<p>Our voluntary return window is 7 calendar days from delivery, except where the statutory withdrawal period below or other mandatory consumer rights apply.</p>
-+<p><strong>Customers in the European Union, the United Kingdom and Norway</strong> have 14 calendar days from delivery to notify us that they wish to withdraw from an online purchase, without giving a reason. You must then send the goods back within 14 calendar days after notifying us.</p>
++<p><strong>Customers in the European Union, the United Kingdom and Norway</strong> have 14 calendar days after receiving the last item in their order to notify us that they wish to withdraw from an online purchase, without giving a reason. You must then send the goods back within 14 calendar days after notifying us. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day.</p>
 +<p>For statutory withdrawal, you may inspect the product as you would in a shop. Unopened packaging and an entirely unused product are not conditions for exercising this right. Please return the product with its accessories and packaging where possible. We may make a lawful deduction only for diminished value caused by handling beyond what is necessary to establish the product’s nature, characteristics and functioning.</p>
 +<p>These periods do not limit your statutory rights for faulty, damaged, incorrect or misdescribed products. Any more protective mandatory local consumer rights continue to apply.</p>
  <hr>
  <p><strong>How to Start a Return</strong></p>
  <p>To initiate a return, please contact our Customer Support team before sending your item back.</p>
-@@ -18,10 +20,10 @@
+@@ -18,10 +25,10 @@
  <p>Please include:</p>
  <ul>
  <li>Your order number</li>
@@ -36,7 +41,7 @@
  <hr>
  <p><strong>Return Shipping Costs</strong></p>
  <p>If you are returning an item because:</p>
-@@ -31,14 +33,14 @@
+@@ -31,14 +38,14 @@
  <li>You no longer need the item</li>
  <li>There are compatibility limitations (see Compatibility Disclaimer below)</li>
  </ul>
@@ -53,7 +58,7 @@
  <hr>
  <p><strong>Compatibility Disclaimer</strong></p>
  <p>TapNest is designed to work with iPhones. However, NFC performance and magnetic functionality may vary depending on factors including, but not limited to:</p>
-@@ -52,11 +54,11 @@
+@@ -52,11 +59,11 @@
  </ul>
  <p>Performance differences resulting from these factors are considered<span>&nbsp;</span><strong>compatibility limitations</strong>, not manufacturing defects.</p>
  <p>Issues arising solely from device compatibility—including but not limited to inconsistent NFC detection, slower response times, reduced magnetic performance, or limitations caused by device settings or accessories—do<span>&nbsp;</span><strong>not</strong><span>&nbsp;</span>constitute product defects or product quality issues.</p>
@@ -67,7 +72,7 @@
  <p>Please provide:</p>
  <ul>
  <li>Your order number</li>
-@@ -86,7 +88,7 @@
+@@ -86,7 +93,7 @@
  <p><strong>Return Inspection</strong></p>
  <p>All returned products are inspected upon arrival.</p>
  <p>To be eligible for a full refund, returned items must meet the return conditions stated in this policy.</p>
@@ -76,7 +81,7 @@
  <ul>
  <li>Shows signs of use beyond reasonable inspection</li>
  <li>Is damaged due to misuse, improper installation, or negligence</li>
-@@ -94,10 +96,10 @@
+@@ -94,10 +101,10 @@
  <li>Has been modified or repaired without authorization</li>
  <li>Cannot be resold as new due to its condition</li>
  </ul>
@@ -89,7 +94,7 @@
  <ul>
  <li>Used or intentionally damaged products</li>
  <li>Products damaged by misuse, accidents, or unauthorized repairs</li>
-@@ -106,7 +108,7 @@
+@@ -106,7 +113,7 @@
  </ul>
  <hr>
  <p><strong>Refused Delivery</strong></p>
@@ -98,7 +103,7 @@
  <hr>
  <p><strong>Refund Process</strong></p>
  <p>Once your returned item has been received and inspected, we will notify you of the outcome.</p>
-@@ -115,4 +117,6 @@
+@@ -115,4 +122,6 @@
  <li>Your refund will be issued to the original payment method.</li>
  <li>Please allow<span>&nbsp;</span><strong>5–10 business days</strong><span>&nbsp;</span>for the refund to appear, depending on your payment provider.</li>
  </ul>

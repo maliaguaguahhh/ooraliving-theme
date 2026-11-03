@@ -91,6 +91,13 @@ Our selected shipping services use duties-paid (DDP) arrangements. Applicable im
 
 
 
+## Order Cancellations
+
+You may request cancellation of unfulfilled items in your order at any time before those items are fulfilled. Submit your request through your customer account, where available, or email [support@ooraliving.com](mailto:support@ooraliving.com) with your order number.
+
+
+For partially fulfilled orders, this cancellation process applies only to the unfulfilled items. Once an item has been fulfilled, please follow our Return & Refund Policy. This does not affect your statutory withdrawal or other mandatory consumer rights.
+
 ## Address Changes, Undeliverable or Missing Orders
 
 Please check your delivery address before placing an order. If you need to correct it, email us as soon as possible. We cannot guarantee changes once an order has been dispatched. For a delivery problem or missing parcel, contact us with your order number so we can help.

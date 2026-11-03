@@ -282,8 +282,8 @@
         13
       ],
       "expressBusinessDays": null,
-      "shopifyMarketId": "gid://shopify/Market/64200769630",
-      "newMarketName": "Europe | Paid Standard",
+      "shopifyMarketId": "gid://shopify/Market/64213745758",
+      "newMarketName": "Europe | Switzerland | Paid Standard",
       "sourceStandardUsd": 0,
       "sourceExpressUsd": null,
       "returnDays": 7
@@ -825,5 +825,5 @@
       "returnDays": 7
     }
   ],
-  "appliedVersion": "2026-11-02-country-shipping-v4-local-floors"
+  "appliedVersion": "2026-11-02-country-shipping-v5-return-rules"
 }

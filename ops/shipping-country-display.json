@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-02-country-shipping-v4-local-floors",
+  "version": "2026-11-02-country-shipping-v5-return-rules",
   "source": "Applied active-market local-floor plan; no additional USD1 reserve; EUR paid Standard floor5",
   "progress_enabled": false,
   "copy": {
@@ -21,7 +21,7 @@
     "refund_link": "/policies/refund-policy",
     "statutory_returns_description": "See our return policy",
     "returns_label": "Returns",
-    "statutory_returns_text": "Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.",
+    "statutory_returns_text": "Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.",
     "voluntary_returns_text": "Request a return within 7 calendar days of delivery. Items must meet our return conditions. Your statutory rights are not affected."
   },
   "countries": {
@@ -32,7 +32,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "8–14 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "INR"
         },
         {
@@ -56,7 +56,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "9–19 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "USD"
         },
         {
@@ -80,7 +80,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "7–15 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "USD"
         },
         {
@@ -104,7 +104,7 @@
           "name": "Standard",
           "price_label": "US$6",
           "delivery_time": "12–18 business days",
-          "amount": 6.0,
+          "amount": 6,
           "currency": "USD"
         },
         {
@@ -128,7 +128,7 @@
           "name": "Standard",
           "price_label": "₦8,000",
           "delivery_time": "8–17 business days",
-          "amount": 8000.0,
+          "amount": 8000,
           "currency": "NGN"
         },
         {
@@ -152,19 +152,19 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "5–10 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "EUR"
         },
         {
           "name": "Express",
           "price_label": "€8",
           "delivery_time": "4–7 business days",
-          "amount": 8.0,
+          "amount": 8,
           "currency": "EUR"
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> Free. 5–10 business days.</p><p><strong>Express:</strong> €8. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> Free. 5–10 business days.</p><p><strong>Express:</strong> €8. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -183,12 +183,12 @@
           "name": "Express",
           "price_label": "€10",
           "delivery_time": "4–7 business days",
-          "amount": 10.0,
+          "amount": 10,
           "currency": "EUR"
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> €5. 5–10 business days.</p><p><strong>Express:</strong> €10. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> €5. 5–10 business days.</p><p><strong>Express:</strong> €10. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -207,12 +207,12 @@
           "name": "Express",
           "price_label": "€9",
           "delivery_time": "4–7 business days",
-          "amount": 9.0,
+          "amount": 9,
           "currency": "EUR"
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> €5. 5–10 business days.</p><p><strong>Express:</strong> €9. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> €5. 5–10 business days.</p><p><strong>Express:</strong> €9. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -231,12 +231,12 @@
           "name": "Express",
           "price_label": "€11",
           "delivery_time": "4–7 business days",
-          "amount": 11.0,
+          "amount": 11,
           "currency": "EUR"
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> €5. 5–10 business days.</p><p><strong>Express:</strong> €11. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> €5. 5–10 business days.</p><p><strong>Express:</strong> €11. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -248,19 +248,19 @@
           "name": "Standard",
           "price_label": "€5",
           "delivery_time": "5–10 business days",
-          "amount": 5.0,
+          "amount": 5,
           "currency": "EUR"
         },
         {
           "name": "Express",
           "price_label": "€12",
           "delivery_time": "4–7 business days",
-          "amount": 12.0,
+          "amount": 12,
           "currency": "EUR"
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> €5. 5–10 business days.</p><p><strong>Express:</strong> €12. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> €5. 5–10 business days.</p><p><strong>Express:</strong> €12. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -272,19 +272,19 @@
           "name": "Standard",
           "price_label": "€5",
           "delivery_time": "5–10 business days",
-          "amount": 5.0,
+          "amount": 5,
           "currency": "EUR"
         },
         {
           "name": "Express",
           "price_label": "€12",
           "delivery_time": "4–7 business days",
-          "amount": 12.0,
+          "amount": 12,
           "currency": "EUR"
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> €5. 5–10 business days.</p><p><strong>Express:</strong> €12. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> €5. 5–10 business days.</p><p><strong>Express:</strong> €12. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -303,12 +303,12 @@
           "name": "Express",
           "price_label": "45 zł",
           "delivery_time": "4–7 business days",
-          "amount": 45.0,
+          "amount": 45,
           "currency": "PLN"
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> 15 zł. 5–10 business days.</p><p><strong>Express:</strong> 45 zł. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> 15 zł. 5–10 business days.</p><p><strong>Express:</strong> 45 zł. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "PLN",
       "return_days": 14,
       "statutory_returns": true
@@ -320,19 +320,19 @@
           "name": "Standard",
           "price_label": "€5",
           "delivery_time": "5–10 business days",
-          "amount": 5.0,
+          "amount": 5,
           "currency": "EUR"
         },
         {
           "name": "Express",
           "price_label": "€11",
           "delivery_time": "4–7 business days",
-          "amount": 11.0,
+          "amount": 11,
           "currency": "EUR"
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> €5. 5–10 business days.</p><p><strong>Express:</strong> €11. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> €5. 5–10 business days.</p><p><strong>Express:</strong> €11. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -356,7 +356,7 @@
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> €5. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> €5. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -392,7 +392,7 @@
           "name": "Standard",
           "price_label": "US$8",
           "delivery_time": "6–13 business days",
-          "amount": 8.0,
+          "amount": 8,
           "currency": "USD"
         },
         {
@@ -404,7 +404,7 @@
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> US$8. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> US$8. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "USD",
       "return_days": 14,
       "statutory_returns": true
@@ -416,7 +416,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "6–13 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "HUF"
         },
         {
@@ -428,7 +428,7 @@
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> Free. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> Free. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "HUF",
       "return_days": 14,
       "statutory_returns": true
@@ -452,7 +452,7 @@
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> €5. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> €5. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -464,7 +464,7 @@
           "name": "Standard",
           "price_label": "€5",
           "delivery_time": "6–13 business days",
-          "amount": 5.0,
+          "amount": 5,
           "currency": "EUR"
         },
         {
@@ -476,7 +476,7 @@
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> €5. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> €5. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -500,7 +500,7 @@
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> 99 Kč. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> 99 Kč. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "CZK",
       "return_days": 14,
       "statutory_returns": true
@@ -512,7 +512,7 @@
           "name": "Standard",
           "price_label": "60 kr",
           "delivery_time": "6–13 business days",
-          "amount": 60.0,
+          "amount": 60,
           "currency": "SEK"
         },
         {
@@ -524,7 +524,7 @@
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> 60 kr. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> 60 kr. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "SEK",
       "return_days": 14,
       "statutory_returns": true
@@ -548,7 +548,7 @@
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> €5. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> €5. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -560,7 +560,7 @@
           "name": "Standard",
           "price_label": "€6",
           "delivery_time": "6–13 business days",
-          "amount": 6.0,
+          "amount": 6,
           "currency": "EUR"
         },
         {
@@ -572,7 +572,7 @@
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> €6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> €6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -584,7 +584,7 @@
           "name": "Standard",
           "price_label": "€6",
           "delivery_time": "6–13 business days",
-          "amount": 6.0,
+          "amount": 6,
           "currency": "EUR"
         },
         {
@@ -596,7 +596,7 @@
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> €6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> €6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -608,7 +608,7 @@
           "name": "Standard",
           "price_label": "€6",
           "delivery_time": "6–13 business days",
-          "amount": 6.0,
+          "amount": 6,
           "currency": "EUR"
         },
         {
@@ -620,7 +620,7 @@
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> €6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> €6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -632,7 +632,7 @@
           "name": "Standard",
           "price_label": "€6",
           "delivery_time": "6–13 business days",
-          "amount": 6.0,
+          "amount": 6,
           "currency": "EUR"
         },
         {
@@ -644,7 +644,7 @@
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> €6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> €6. 6–13 business days.</p><p><strong>Express:</strong> —. Temporarily unavailable.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "EUR",
       "return_days": 14,
       "statutory_returns": true
@@ -656,7 +656,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "5–9 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "VND"
         },
         {
@@ -680,7 +680,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "5–12 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "PHP"
         },
         {
@@ -704,7 +704,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "5–9 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "USD"
         },
         {
@@ -728,7 +728,7 @@
           "name": "Standard",
           "price_label": "LBP 550,000",
           "delivery_time": "4–8 business days",
-          "amount": 550000.0,
+          "amount": 550000,
           "currency": "LBP"
         },
         {
@@ -752,7 +752,7 @@
           "name": "Standard",
           "price_label": "Rp110.000",
           "delivery_time": "7–13 business days",
-          "amount": 110000.0,
+          "amount": 110000,
           "currency": "IDR"
         },
         {
@@ -776,7 +776,7 @@
           "name": "Standard",
           "price_label": "US$6",
           "delivery_time": "5–10 business days",
-          "amount": 6.0,
+          "amount": 6,
           "currency": "USD"
         },
         {
@@ -800,7 +800,7 @@
           "name": "Standard",
           "price_label": "S/20",
           "delivery_time": "5–12 business days",
-          "amount": 20.0,
+          "amount": 20,
           "currency": "PEN"
         },
         {
@@ -824,7 +824,7 @@
           "name": "Standard",
           "price_label": "SAR 25",
           "delivery_time": "4–8 business days",
-          "amount": 25.0,
+          "amount": 25,
           "currency": "SAR"
         },
         {
@@ -848,14 +848,14 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "5–12 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "CAD"
         },
         {
           "name": "Express",
           "price_label": "CA$10",
           "delivery_time": "4–10 business days",
-          "amount": 10.0,
+          "amount": 10,
           "currency": "CAD"
         }
       ],
@@ -872,19 +872,19 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "8–11 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "GBP"
         },
         {
           "name": "Express",
           "price_label": "£5",
           "delivery_time": "4–6 business days",
-          "amount": 5.0,
+          "amount": 5,
           "currency": "GBP"
         }
       ],
       "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-      "details_html": "<p><strong>Standard:</strong> Free. 8–11 business days.</p><p><strong>Express:</strong> £5. 4–6 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days of delivery to exercise your right of withdrawal. Return the goods within a further 14 days. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "details_html": "<p><strong>Standard:</strong> Free. 8–11 business days.</p><p><strong>Express:</strong> £5. 4–6 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Notify us within 14 calendar days after you receive the last item in your order to exercise your right of withdrawal. Return the goods within a further 14 days. Where applicable, a deadline falling on a weekend or public holiday extends to the next business day. See our refund policy for conditions and statutory rights.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "GBP",
       "return_days": 14,
       "statutory_returns": true
@@ -896,7 +896,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "7–11 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "JPY"
         },
         {
@@ -920,7 +920,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "6–10 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "KRW"
         },
         {
@@ -944,7 +944,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "7–11 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "MYR"
         },
         {
@@ -968,7 +968,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "5–9 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "NZD"
         },
         {
@@ -992,7 +992,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "3–5 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "HKD"
         },
         {
@@ -1016,7 +1016,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "2–4 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "MOP"
         },
         {
@@ -1040,7 +1040,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "3–6 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "TWD"
         },
         {
@@ -1064,7 +1064,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "5–9 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "SGD"
         },
         {
@@ -1088,7 +1088,7 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "5–12 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "THB"
         },
         {
@@ -1112,14 +1112,14 @@
           "name": "Standard",
           "price_label": "Free",
           "delivery_time": "5–10 business days",
-          "amount": 0.0,
+          "amount": 0,
           "currency": "USD"
         },
         {
           "name": "Express",
           "price_label": "US$7",
           "delivery_time": "4–7 business days",
-          "amount": 7.0,
+          "amount": 7,
           "currency": "USD"
         }
       ],
