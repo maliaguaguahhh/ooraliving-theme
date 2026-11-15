@@ -25,6 +25,7 @@
         "sub_heading_style": "body",
         "sub_heading": "",
         "align": "left",
+        "background_image_desktop": "shopify://shop_images/Tap.png",
         "background_image_mobile": "shopify://shop_images/Tap.png",
         "image_overlay_opacity": 0,
         "image_overlay_color": "#000000",
