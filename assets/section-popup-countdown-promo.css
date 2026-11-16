@@ -23,6 +23,9 @@
   border-radius: 1.2rem;
   overflow: hidden;
 }
+.oora-popup-image:not([hidden]) {
+  display: contents;
+}
 .xo-popup-countdown-promo__media {
   position: absolute;
   top: 1.4rem;

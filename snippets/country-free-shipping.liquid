@@ -1,0 +1,17 @@
+{%- comment -%}
+  Outputs "true" when the visitor's country has free shipping, nothing otherwise.
+
+  A country has free shipping when it has a free shipping label in the shop metafield
+  custom.shipping_country_display (the same data that shows the free shipping line on the
+  product page).
+
+  Usage:
+  {% capture free_shipping %}{% render 'country-free-shipping' %}{% endcapture %}
+  {% if free_shipping contains 'true' %}...{% endif %}
+{%- endcomment -%}
+{%- liquid
+  assign display_config = shop.metafields.custom.shipping_country_display.value
+  if display_config.countries[localization.country.iso_code].label != blank
+    echo 'true'
+  endif
+-%}

@@ -90,7 +90,25 @@
             {% if section.settings.video != blank %}
               {{ section.settings.video | video_tag: image_size: '1100x', autoplay: true, loop: true, controls: false, muted: true }}
             {% elsif section.settings.image != blank %}
-              {% render 'image', image: section.settings.image, class: 'xo-popup-countdown-promo__image' %}
+              {%- comment -%}
+                An image with a free shipping claim gets a second version for everyone else:
+                paid-shipping countries get it from the server, visitors outside the shipping
+                countries get it swapped in by shipping-region.js.
+              {%- endcomment -%}
+              {%- capture free_shipping -%}{% render 'country-free-shipping' %}{%- endcapture -%}
+              {% if section.settings.image_paid_shipping == blank %}
+                {% render 'image', image: section.settings.image, class: 'xo-popup-countdown-promo__image' %}
+              {% elsif free_shipping contains 'true' %}
+                <div class="oora-popup-image" data-oora-local-copy data-countries="{{ localization.available_countries | map: 'iso_code' | join: ',' }}">
+                  {%- render 'image', image: section.settings.image, class: 'xo-popup-countdown-promo__image' -%}
+                </div>
+                <div class="oora-popup-image" data-oora-global-copy hidden>
+                  {%- render 'image', image: section.settings.image_paid_shipping, class: 'xo-popup-countdown-promo__image' -%}
+                </div>
+                <script src="{{ 'shipping-region.js' | asset_url }}" defer="defer"></script>
+              {% else %}
+                {% render 'image', image: section.settings.image_paid_shipping, class: 'xo-popup-countdown-promo__image' %}
+              {% endif %}
             {% endif %}
             {% assign overlay_opacity = section.settings.overlay_opacity | divided_by: 100.00 %}
             <div class='xo-popup-countdown-promo__media-overlay' style='background-color: rgba(var(--color-shadow), {{ overlay_opacity }});'></div>
@@ -1127,6 +1145,12 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.popup_countdown_promo.settings.media.image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_paid_shipping",
+      "label": "Image for countries without free shipping",
+      "info": "Optional. Use it when the main image mentions free shipping. Leave empty to show the main image everywhere."
     },
     {
       "type": "video",

@@ -29,6 +29,12 @@ config = json.loads((Path(__file__).parent / "shipping-country-display.json").re
 countries = config["countries"]
 total = len(countries)
 
+# The homepage popup can have a second image for countries without free shipping.
+popup_json = re.sub(r"^/\*.*?\*/", "", (Path(__file__).parent.parent / "sections/popup-group.json").read_text("utf-8"), flags=re.S)
+popup_settings = json.loads(popup_json)["sections"]["popup_countdown_promo_7kcnyd"]["settings"]
+POPUP_FREE = popup_settings.get("image", "").rsplit("/", 1)[-1].rsplit(".", 1)[0]
+POPUP_PAID = popup_settings.get("image_paid_shipping", "").rsplit("/", 1)[-1].rsplit(".", 1)[0]
+
 
 def get(url):
     for wait in (5, 15, 45, 0):
@@ -84,11 +90,24 @@ def expected_home(code, name):
     ]
 
 
+def popup_image_problems(home, code):
+    """Free-shipping countries see the main popup image, with the paid one waiting hidden for
+    visitors outside the shipping countries; everyone else gets only the paid one."""
+    if not POPUP_PAID:
+        return []
+    hidden_paid = re.search(rf'data-oora-global-copy hidden>(?:(?!</div>).)*{re.escape(POPUP_PAID)}', home, re.S)
+    if countries[code]["label"]:
+        return [] if POPUP_FREE in home and hidden_paid else ["popup: free-shipping image or hidden fallback missing"]
+    problems = [] if POPUP_PAID in home else ["popup: paid-shipping image missing"]
+    return problems + (["popup: shows the free-shipping image"] if POPUP_FREE in home else [])
+
+
 def check(code):
     home = fetch("/", code)
     name = display_name(home, code)
     words = text_of(home)
     problems = [f"missing: {s}" for s in expected_home(code, name) if s not in words]
+    problems += popup_image_problems(home, code)
     problems += [f"stale: {s}" for s in STALE if s in words]
     product = text_of(fetch("/products/tapnest", code))
     label = countries[code]["label"].replace("[country]", name)
