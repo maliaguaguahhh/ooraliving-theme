@@ -1,0 +1,30 @@
+{%- comment -%}
+  The badge next to a discounted price, e.g. "Black Friday · 25% OFF".
+
+  Text and colors come from the shop metafield custom.price_badge (a price_badge
+  metaobject). No active badge, or no discount on the variant, renders nothing.
+  [percent] in the text is the discount, rounded to the nearest 5.
+  Colors left empty fall back to the theme's button colors.
+  The same metaobject's shipping_color colors the free shipping line (snippets/shipping-region.liquid).
+
+  Accepts:
+  - variant: {Object} The variant whose price is shown
+
+  Usage:
+  {% render 'price-savings-badge', variant: product.selected_or_first_available_variant %}
+{%- endcomment -%}
+{%- liquid
+  assign badge = shop.metafields.custom.price_badge.value
+  if badge and variant.compare_at_price > variant.price
+    assign percent = variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | divided_by: 5.0 | round | times: 5
+    assign label = badge.label.value | replace: '[percent]', percent
+  endif
+-%}
+{%- if label != blank -%}
+  {%- capture colors -%}
+    {%- if badge.background.value %}--badge-background: {{ badge.background.value }};{% endif -%}
+    {%- if badge.text_color.value %}--badge-text: {{ badge.text_color.value }};{% endif -%}
+    {%- if badge.shadow.value %}--badge-shadow: {{ badge.shadow.value }};{% endif -%}
+  {%- endcapture -%}
+  <span class="tapnest-product-hero__save" style="{{ colors | strip }}">{{ label | escape }}</span>
+{%- endif -%}

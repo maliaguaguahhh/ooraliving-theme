@@ -96,8 +96,9 @@
   min-height: 3.6rem;
   padding: 0.65rem 1.45rem;
   border-radius: 999px;
-  background: rgb(var(--color-button));
-  color: rgb(var(--color-button-text));
+  background: var(--badge-background, rgb(var(--color-button)));
+  box-shadow: 0.4rem 0.3rem 0 var(--badge-shadow, transparent);
+  color: var(--badge-text, rgb(var(--color-button-text)));
   font-size: 1.45rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -110,7 +111,7 @@
   align-items: center;
   gap: 0.9rem;
   margin-top: 1.6rem;
-  color: #4f8068;
+  color: var(--shipping-line-color, #4f8068);
   font-size: 1.75rem;
   line-height: 1.3;
 }

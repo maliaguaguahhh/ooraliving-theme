@@ -75,18 +75,7 @@
               <xo-product-will-change xo-unique-id="product-price-{{ section.id }}" {{ block.shopify_attributes }} xo-morph-selector="[xo-price]">
                 <div class="tapnest-product-hero__price-row">
                   {% render 'price', product: product, use_variant: true %}
-                  {% assign savings_variant = product.selected_or_first_available_variant %}
-                  {% if savings_variant.compare_at_price > savings_variant.price %}
-                    {% assign savings_percent = savings_variant.compare_at_price
-                      | minus: savings_variant.price
-                      | times: 100.0
-                      | divided_by: savings_variant.compare_at_price
-                      | divided_by: 10.0
-                      | round
-                      | times: 10
-                    %}
-                    <span class="tapnest-product-hero__save">Save {{ savings_percent }}%</span>
-                  {% endif %}
+                  {% render 'price-savings-badge', variant: product.selected_or_first_available_variant %}
                 </div>
                 {% if cart.taxes_included == true %}
                   <span>{{ 'products.product.price.include_tax' | t }}</span>
