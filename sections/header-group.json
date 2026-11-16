@@ -24,7 +24,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Limited Time: 20% Off TapNest</p>",
+            "text": "<p>Black Friday: 25% Off TapNest</p>",
             "link": "shopify://products/tapnest"
           }
         },
