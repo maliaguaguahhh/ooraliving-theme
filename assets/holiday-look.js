@@ -239,10 +239,11 @@
         if (tries++ < 40) setTimeout(subscribe, 250);
         return;
       }
-      window.xoStore.subscribe('xo-cart', ({ data }) => {
-        const added = Boolean(data && data.isAdded);
-        if (added && !wasAdded && data.item) {
-          const badge = document.querySelector(`[data-hl-variant="${data.item.variant_id}"]`);
+      // The theme's store passes the cart state itself to the listener.
+      window.xoStore.subscribe('xo-cart', (cart) => {
+        const added = Boolean(cart && cart.isAdded);
+        if (added && !wasAdded && cart.item) {
+          const badge = document.querySelector(`[data-hl-variant="${cart.item.variant_id}"]`);
           const each = badge ? Number(badge.dataset.hlCompare) - Number(badge.dataset.hlPrice) : 0;
           const text = savedMessage(config.savedText, each, quantity, config.moneyFormat);
           if (text) showSaved(text);
@@ -316,15 +317,26 @@
     };
   }
 
-  function heroSection() {
+  // Where the canvas goes in the homepage hero: right after the hero's background layer (the
+  // absolutely positioned element with a negative z-index) and on the same z-index, so it paints
+  // over the photo but under the text and buttons. Without such a layer it sits on top of the section.
+  function heroLayer() {
     const main = document.querySelector('main') || document.getElementById('xo-main-content');
-    return main && main.querySelector('.shopify-section');
+    const section = main && main.querySelector('.shopify-section');
+    if (!section) return null;
+    const background = Array.from(section.querySelectorAll('*')).find((el) => {
+      const style = getComputedStyle(el);
+      return style.position === 'absolute' && parseInt(style.zIndex, 10) < 0;
+    });
+    if (background) return { parent: background.parentElement, before: background.nextSibling, zIndex: getComputedStyle(background).zIndex };
+    section.classList.add('hl-ambient-host');
+    return { parent: section, before: section.firstChild, zIndex: '1' };
   }
 
   function setupAmbient(config) {
     const kind = choiceKey(config.ambient);
-    const section = config.template === 'index' && heroSection();
-    if (kind === 'none' || !section || reducedMotion()) return;
+    const layer = config.template === 'index' && kind !== 'none' && !reducedMotion() && heroLayer();
+    if (!layer) return;
     const colors = {
       white: resolveColor('#ffffff'),
       main: resolveColor('var(--hl-main-light)'),
@@ -339,12 +351,12 @@
     const canvas = document.createElement('canvas');
     canvas.className = 'hl-ambient';
     canvas.setAttribute('aria-hidden', 'true');
-    section.classList.add('hl-ambient-host');
-    section.prepend(canvas);
+    canvas.style.zIndex = layer.zIndex;
+    layer.parent.insertBefore(canvas, layer.before);
     const ctx = canvas.getContext('2d');
     const ratio = Math.min(window.devicePixelRatio || 1, 2);
-    const width = section.clientWidth;
-    const height = Math.min(section.clientHeight, window.innerHeight);
+    const width = layer.parent.clientWidth;
+    const height = Math.min(layer.parent.clientHeight, window.innerHeight);
     canvas.style.height = height + 'px';
     canvas.width = width * ratio;
     canvas.height = height * ratio;
