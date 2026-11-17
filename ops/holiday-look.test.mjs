@@ -18,13 +18,6 @@ test('choiceKey turns an admin choice into a code key', () => {
   assert.equal(H.choiceKey(undefined), 'none');
 });
 
-test('formatMoney follows the shop money format', () => {
-  assert.equal(H.formatMoney(1500, '${{amount}}'), '$15.00');
-  assert.equal(H.formatMoney(123456, '${{amount}}'), '$1,234.56');
-  assert.equal(H.formatMoney(1500, '{{amount_no_decimals}} kr'), '15 kr');
-  assert.equal(H.formatMoney(123456, '€{{amount_with_comma_separator}}'), '€1.234,56');
-});
-
 test('priceText swaps the number inside a rendered price and keeps the rest', () => {
   assert.equal(H.priceText('$44.99 USD', 5999), '$59.99 USD');
   assert.equal(H.priceText('$1,044.99', 105999), '$1,059.99');
@@ -41,10 +34,12 @@ test('rollCents eases from the old price to the new one', () => {
   assert.ok(middle > 4499);
 });
 
-test('savedMessage multiplies by quantity and fills [amount]', () => {
-  assert.equal(H.savedMessage('You saved [amount]', 1500, 2, '${{amount}}'), 'You saved $30.00');
-  assert.equal(H.savedMessage('', 1500, 1, '${{amount}}'), '');
-  assert.equal(H.savedMessage('You saved [amount]', 0, 1, '${{amount}}'), '');
+// The sample is "{{ 123456 | money }}" in the shopper's currency, so the message uses their format.
+test('savedMessage multiplies by quantity and formats like the money sample', () => {
+  assert.equal(H.savedMessage('You saved [amount]', 1500, 2, '$1,234.56'), 'You saved $30.00');
+  assert.equal(H.savedMessage('Du sparst [amount]', 1013, 1, '1.234,56 €'), 'Du sparst 10,13 €');
+  assert.equal(H.savedMessage('', 1500, 1, '$1,234.56'), '');
+  assert.equal(H.savedMessage('You saved [amount]', 0, 1, '$1,234.56'), '');
 });
 
 test('ringLeaves lays leaves evenly around a circle, tangent plus a tilt', () => {

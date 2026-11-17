@@ -41,7 +41,7 @@
       "ambient": {{ look.ambient_effect.value | json }},
       "seconds": {{ settings.holiday_ambient_seconds | default: 10 | json }},
       "template": {{ template.name | json }},
-      "moneyFormat": {{ shop.money_format | json }}
+      "moneySample": {{ 123456 | money | strip_html | json }}
     }
   </script>
   <script src="{{ 'holiday-look.js' | asset_url }}" defer></script>

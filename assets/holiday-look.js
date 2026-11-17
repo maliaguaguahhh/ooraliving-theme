@@ -26,23 +26,8 @@
     return fraction ? grouped + decimal + fraction : grouped;
   }
 
-  const MONEY_STYLES = {
-    amount: [2, ',', '.'],
-    amount_no_decimals: [0, ',', '.'],
-    amount_with_comma_separator: [2, '.', ','],
-    amount_no_decimals_with_comma_separator: [0, '.', ','],
-    amount_with_apostrophe_separator: [2, "'", '.'],
-  };
-
-  function formatMoney(cents, format) {
-    return String(format || '${{amount}}').replace(/\{\{\s*(\w+)\s*\}\}/, (_, key) => {
-      const [decimals, thousands, decimal] = MONEY_STYLES[key] || MONEY_STYLES.amount;
-      return formatNumber(cents, decimals, thousands, decimal);
-    });
-  }
-
-  // Replaces the number inside an already formatted price ("$44.99 USD") with another
-  // amount in the same style, so the currency symbol and code never change.
+  // Replaces the number inside an already formatted price ("$44.99 USD", "10,13 €") with
+  // another amount in the same style, so the currency symbol and code never change.
   function priceText(original, cents) {
     return String(original).replace(/\d(?:[\d.,'\s]*\d)?/, (number) => {
       const decimalMatch = number.match(/([.,])(\d{2})$/);
@@ -59,9 +44,10 @@
     return Math.round(from + (to - from) * eased);
   }
 
-  function savedMessage(template, centsEach, quantity, format) {
+  // moneySample is any amount Liquid formatted in the shopper's currency ({{ 123456 | money }}).
+  function savedMessage(template, centsEach, quantity, moneySample) {
     if (!template || !(centsEach > 0)) return '';
-    return template.replace('[amount]', formatMoney(centsEach * quantity, format));
+    return template.replace('[amount]', priceText(moneySample, centsEach * quantity));
   }
 
   function ringLeaves({ cx, cy, r, count, tilt, offset = 0 }) {
@@ -71,7 +57,7 @@
     });
   }
 
-  window.HolidayLook = { choiceKey, formatMoney, priceText, rollCents, savedMessage, ringLeaves };
+  window.HolidayLook = { choiceKey, priceText, rollCents, savedMessage, ringLeaves };
 
   if (typeof document === 'undefined') return;
 
@@ -245,7 +231,7 @@
         if (added && !wasAdded && cart.item) {
           const badge = document.querySelector(`[data-hl-variant="${cart.item.variant_id}"]`);
           const each = badge ? Number(badge.dataset.hlCompare) - Number(badge.dataset.hlPrice) : 0;
-          const text = savedMessage(config.savedText, each, quantity, config.moneyFormat);
+          const text = savedMessage(config.savedText, each, quantity, config.moneySample);
           if (text) showSaved(text);
         }
         wasAdded = added;

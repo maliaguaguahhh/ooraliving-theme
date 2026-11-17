@@ -40,7 +40,8 @@ def page_of(path):
 
 
 def badges(page):
-    found = re.findall(r'<span class="tapnest-product-hero__save"([^>]*)>(.*?)</span>', page, re.S)
+    # Extra classes (e.g. hl-sheen from a holiday look) may follow the badge class.
+    found = re.findall(r'<span\s+class="tapnest-product-hero__save[^"]*"([^>]*)>(.*?)</span>', page, re.S)
     return [(html.unescape(attrs), html.unescape(re.sub(r"\s+", " ", text).strip())) for attrs, text in found]
 
 
