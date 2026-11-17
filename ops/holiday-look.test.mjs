@@ -34,14 +34,6 @@ test('rollCents eases from the old price to the new one', () => {
   assert.ok(middle > 4499);
 });
 
-// The sample is "{{ 123456 | money }}" in the shopper's currency, so the message uses their format.
-test('savedMessage multiplies by quantity and formats like the money sample', () => {
-  assert.equal(H.savedMessage('You saved [amount]', 1500, 2, '$1,234.56'), 'You saved $30.00');
-  assert.equal(H.savedMessage('Du sparst [amount]', 1013, 1, '1.234,56 €'), 'Du sparst 10,13 €');
-  assert.equal(H.savedMessage('', 1500, 1, '$1,234.56'), '');
-  assert.equal(H.savedMessage('You saved [amount]', 0, 1, '$1,234.56'), '');
-});
-
 test('ringLeaves lays leaves evenly around a circle, tangent plus a tilt', () => {
   const leaves = H.ringLeaves({ cx: 0, cy: 0, r: 10, count: 4, tilt: 0 });
   assert.equal(leaves.length, 4);

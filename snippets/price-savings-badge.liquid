@@ -8,7 +8,7 @@
   Colors left empty fall back to the theme's button colors.
   The same metaobject's shipping_color colors the free shipping line (snippets/shipping-region.liquid).
   When the holiday look turns on "Badge sheen" the badge gets a passing highlight. The data-hl-*
-  attributes give assets/holiday-look.js the prices for the price roll and the "You saved" message.
+  attributes give assets/holiday-look.js the prices for the price roll.
 
   Accepts:
   - variant: {Object} The variant whose price is shown
@@ -35,7 +35,6 @@
   <span
     class="tapnest-product-hero__save{% if look.badge_sheen.value %} hl-sheen{% endif %}"
     style="{{ colors | strip }}"
-    data-hl-variant="{{ variant.id }}"
     data-hl-price="{{ variant.price }}"
     data-hl-compare="{{ variant.compare_at_price }}"
   >

@@ -44,12 +44,6 @@
     return Math.round(from + (to - from) * eased);
   }
 
-  // moneySample is any amount Liquid formatted in the shopper's currency ({{ 123456 | money }}).
-  function savedMessage(template, centsEach, quantity, moneySample) {
-    if (!template || !(centsEach > 0)) return '';
-    return template.replace('[amount]', priceText(moneySample, centsEach * quantity));
-  }
-
   function ringLeaves({ cx, cy, r, count, tilt, offset = 0 }) {
     return Array.from({ length: count }, (_, k) => {
       const a = offset + (k / count) * Math.PI * 2;
@@ -57,7 +51,7 @@
     });
   }
 
-  window.HolidayLook = { choiceKey, priceText, rollCents, savedMessage, ringLeaves };
+  window.HolidayLook = { choiceKey, priceText, rollCents, ringLeaves };
 
   if (typeof document === 'undefined') return;
 
@@ -193,51 +187,6 @@
       }, { threshold: 0.6 });
       observer.observe(row);
     });
-  }
-
-  function showSaved(text) {
-    let chip = document.querySelector('.hl-saved');
-    if (!chip) {
-      chip = document.createElement('div');
-      chip.className = 'hl-saved';
-      chip.setAttribute('role', 'status');
-      document.body.appendChild(chip);
-    }
-    chip.textContent = text;
-    chip.classList.add('is-on');
-    clearTimeout(showSaved.timer);
-    showSaved.timer = setTimeout(() => chip.classList.remove('is-on'), 2200);
-  }
-
-  function setupSavedMessage(config) {
-    if (!config.savedText) return;
-    let quantity = 1;
-    document.addEventListener('click', (event) => {
-      const section = event.target.closest('.shopify-section');
-      const input = section && section.querySelector('input[name="quantity"]');
-      quantity = Math.max(1, Number(input && input.value) || 1);
-    }, true);
-
-    let wasAdded = false;
-    let tries = 0;
-    const subscribe = () => {
-      if (!window.xoStore) {
-        if (tries++ < 40) setTimeout(subscribe, 250);
-        return;
-      }
-      // The theme's store passes the cart state itself to the listener.
-      window.xoStore.subscribe('xo-cart', (cart) => {
-        const added = Boolean(cart && cart.isAdded);
-        if (added && !wasAdded && cart.item) {
-          const badge = document.querySelector(`[data-hl-variant="${cart.item.variant_id}"]`);
-          const each = badge ? Number(badge.dataset.hlCompare) - Number(badge.dataset.hlPrice) : 0;
-          const text = savedMessage(config.savedText, each, quantity, config.moneySample);
-          if (text) showSaved(text);
-        }
-        wasAdded = added;
-      });
-    };
-    subscribe();
   }
 
   /* ---------- Hero effect ---------- */
@@ -407,7 +356,6 @@
   const config = readConfig();
   if (!config) return;
   decorate(config);
-  setupSavedMessage(config);
   setupAmbient(config);
   document.addEventListener('shopify:section:load', () => decorate(config));
 })();
