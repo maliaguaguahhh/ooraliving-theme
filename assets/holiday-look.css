@@ -17,7 +17,7 @@
 .hl-paper { fill: var(--hl-paper); }
 .hl-badge-bg { fill: var(--hl-badge-bg); }
 .hl-badge-sh { fill: var(--hl-badge-shadow); }
-.hl-badge-line { fill: none; stroke: var(--hl-badge-shadow); stroke-linecap: round; }
+.hl-badge-text { fill: var(--hl-badge-text); }
 .hl-string { fill: none; stroke: var(--hl-badge-bg); stroke-linecap: round; }
 
 /* Logo: the overlay uses the logo image's own coordinates, so it scales with the logo. */
@@ -34,6 +34,14 @@
   height: 100%;
   overflow: visible;
   pointer-events: none;
+}
+
+/* The sideways price tag uses the space right of the logo; on very narrow phones that space
+   belongs to the header icons, so the tag is left out there. */
+@media (max-width: 359px) {
+  .hl-logo-orn--wide {
+    display: none;
+  }
 }
 
 .hl-swing {

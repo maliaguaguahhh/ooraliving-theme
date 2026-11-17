@@ -51,7 +51,22 @@
     });
   }
 
-  window.HolidayLook = { choiceKey, priceText, rollCents, ringLeaves };
+  // The logo tag's text area is 112 units wide; a bold uppercase character is about 0.68 em.
+  const TAG_TEXT_WIDTH = 112;
+  const TAG_FONT_SIZE = 36;
+
+  function tagFontSize(text) {
+    const length = String(text || '').length;
+    if (!length) return TAG_FONT_SIZE;
+    return Math.min(TAG_FONT_SIZE, Math.floor(TAG_TEXT_WIDTH / (length * 0.68)));
+  }
+
+  function escapeXml(value) {
+    const entities = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' };
+    return String(value == null ? '' : value).replace(/[&<>"]/g, (ch) => entities[ch]);
+  }
+
+  window.HolidayLook = { choiceKey, priceText, rollCents, ringLeaves, tagFontSize, escapeXml };
 
   if (typeof document === 'undefined') return;
 
@@ -99,13 +114,43 @@
   // Logo ornaments: viewBox 0 0 291 64 = the logo image. The first "o" is centered at
   // (31.5, 31.5) with radius 32; the period at (282.5, 55.5) with radius 8.
   const PERIOD = [282.5, 55.5];
+
+  // Sideways price tag hung from the period into the space right of the logo. Every point
+  // comes from TAG, so the pointed end stays an isosceles point on the tag's center line.
+  const TAG = { tipX: 306, top: 6, bottom: 74, tipLength: 34, bodyWidth: 128, corner: 8, tilt: -8 };
+
+  function priceTag(text) {
+    const { tipX, top, bottom, tipLength, bodyWidth, corner, tilt } = TAG;
+    const mid = (top + bottom) / 2;
+    const bodyX = tipX + tipLength;
+    const endX = bodyX + bodyWidth;
+    const bodyHeight = bottom - top;
+    const round = 3.2; // how far the rounded point starts from the tip
+    const outline =
+      `M${tipX + 2.5} ${mid - round}L${bodyX} ${top}H${endX - corner}` +
+      `a${corner} ${corner} 0 0 1 ${corner} ${corner}v${bodyHeight - corner * 2}` +
+      `a${corner} ${corner} 0 0 1 -${corner} ${corner}H${bodyX}` +
+      `L${tipX + 2.5} ${mid + round}Q${tipX - 1} ${mid} ${tipX + 2.5} ${mid - round}z`;
+    const hole = { x: bodyX + 1, y: mid };
+    const angle = (tilt * Math.PI) / 180;
+    const holeOnPage = {
+      x: tipX + (hole.x - tipX) * Math.cos(angle),
+      y: mid + (hole.x - tipX) * Math.sin(angle),
+    };
+    const size = tagFontSize(text);
+    const label = text
+      ? `<text x="${(hole.x + 6 + endX) / 2}" y="${mid + size * 0.35}" text-anchor="middle" font-size="${size}" font-weight="700" letter-spacing="2" font-family="inherit" class="hl-badge-text">${escapeXml(text)}</text>`
+      : '';
+    return hanging(...PERIOD,
+      `<path class="hl-string" d="M${PERIOD[0]} ${PERIOD[1]}C292 50 304 ${holeOnPage.y + 6} ${holeOnPage.x - 3} ${holeOnPage.y + 1}" stroke-width="3"/>` +
+      `<g transform="rotate(${tilt} ${tipX} ${mid})"><path class="hl-badge-bg" d="${outline}"/>` +
+      `<circle class="hl-badge-sh" cx="${hole.x}" cy="${hole.y}" r="5"/>${label}</g>`);
+  }
+
+  const WIDE_LOGO_ORNAMENTS = ['price-tag'];
+
   const LOGO = {
-    'price-tag': () =>
-      hanging(...PERIOD,
-        '<path class="hl-string" d="M282.5 56v12" stroke-width="2.2"/>' +
-        '<path class="hl-badge-bg" d="M274 76l8.5-7 8.5 7v28h-17z"/>' +
-        '<circle class="hl-badge-sh" cx="282.5" cy="77.5" r="2.3"/>' +
-        '<path class="hl-badge-line" d="M277.5 87h10M277.5 94h10" stroke-width="2.4"/>'),
+    'price-tag': (config) => priceTag(config.logoText),
     wreath: () =>
       leaves({ cx: 31.5, cy: 31.5, r: 33, count: 14, tilt: 28 }, 7.5, 3.4, 'hl-acc-l') +
       leaves({ cx: 31.5, cy: 31.5, r: 25, count: 10, tilt: 28, offset: 0.3 }, 6.5, 3, 'hl-acc-d') +
@@ -139,11 +184,13 @@
   /* ---------- Decorations ---------- */
 
   function decorateLogo(config) {
-    const draw = LOGO[choiceKey(config.logo)];
+    const key = choiceKey(config.logo);
+    const draw = LOGO[key];
     if (!draw) return;
+    const className = 'hl-logo-orn hl-pop' + (WIDE_LOGO_ORNAMENTS.includes(key) ? ' hl-logo-orn--wide' : '');
     document.querySelectorAll('[data-holiday-logo]').forEach((link) => {
       if (link.querySelector('.hl-logo-orn')) return;
-      link.appendChild(ornamentSvg('0 0 291 64', 'hl-logo-orn hl-pop', draw()));
+      link.appendChild(ornamentSvg('0 0 291 64', className, draw(config)));
     });
   }
 

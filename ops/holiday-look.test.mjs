@@ -34,6 +34,19 @@ test('rollCents eases from the old price to the new one', () => {
   assert.ok(middle > 4499);
 });
 
+test('tagFontSize keeps short words full size and shrinks long ones to fit the tag', () => {
+  assert.equal(H.tagFontSize('SALE'), 36);
+  assert.equal(H.tagFontSize('-25%'), 36);
+  const six = H.tagFontSize('XXXXXX');
+  assert.ok(six < 36, 'six characters must shrink');
+  assert.ok(6 * 0.68 * six <= 112, 'six characters must fit the 112-unit text area');
+});
+
+test('escapeXml makes admin text safe inside SVG markup', () => {
+  assert.equal(H.escapeXml('<b>&"x"'), '&lt;b&gt;&amp;&quot;x&quot;');
+  assert.equal(H.escapeXml(undefined), '');
+});
+
 test('ringLeaves lays leaves evenly around a circle, tangent plus a tilt', () => {
   const leaves = H.ringLeaves({ cx: 0, cy: 0, r: 10, count: 4, tilt: 0 });
   assert.equal(leaves.length, 4);
