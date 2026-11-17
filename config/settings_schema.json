@@ -2144,6 +2144,38 @@
     ]
   },
   {
+    "name": "Holiday look",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "节日装扮：在 Content > Metaobjects > Holiday look 里建每个节日，再把它们加到 Settings > Custom data > Shop 的 Holiday looks 列表。到开始时间自动生效，过结束时间自动下线。"
+      },
+      {
+        "type": "checkbox",
+        "id": "holiday_enabled",
+        "label": "Show holiday looks / 启用节日装扮",
+        "default": true
+      },
+      {
+        "type": "metaobject",
+        "id": "holiday_preview",
+        "metaobject_type": "holiday_look",
+        "label": "Preview a look / 强制预览某条装扮",
+        "info": "Only works in the theme editor and on unpublished themes, so shoppers on the live theme never see it. 只在主题编辑器和未发布主题里生效。"
+      },
+      {
+        "type": "range",
+        "id": "holiday_ambient_seconds",
+        "label": "Hero effect length / 首屏效果时长",
+        "min": 5,
+        "max": 20,
+        "step": 1,
+        "unit": "s",
+        "default": 10
+      }
+    ]
+  },
+  {
   "name": "Performance",
   "settings": [
     {

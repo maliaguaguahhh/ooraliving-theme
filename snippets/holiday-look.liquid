@@ -1,0 +1,48 @@
+{%- comment -%}
+  Holiday look: loads the decorations for the look in effect (see holiday-look-active).
+  Rendered once in layout/theme.liquid. Prints nothing when no look is on.
+
+  - CSS colors --hl-*: ornament colors from the look, badge colors from the price badge in
+    effect. Empty ornament colors fall back to the badge shadow and the theme button color.
+  - #HolidayLookConfig: what assets/holiday-look.js should decorate.
+{%- endcomment -%}
+{%- capture look_handle -%}{% render 'holiday-look-active' %}{%- endcapture -%}
+{%- assign look = metaobjects.holiday_look[look_handle] -%}
+{%- if look -%}
+  {%- capture badge_handle -%}{% render 'price-badge-active' %}{%- endcapture -%}
+  {%- liquid
+    assign badge = metaobjects.price_badge[badge_handle]
+    assign badge_bg = badge.background.value | default: 'rgb(var(--color-button))'
+    assign badge_text = badge.text_color.value | default: 'rgb(var(--color-button-text))'
+    assign main_light = look.ornament_main_light.value | default: badge.shadow.value | default: 'rgb(var(--color-button))'
+    assign main_dark = look.ornament_main_dark.value | default: 'color-mix(in srgb, var(--hl-main-light) 78%, #000)'
+    assign badge_shadow = badge.shadow.value | default: 'var(--hl-main-light)'
+    assign accent_light = look.ornament_accent_light.value | default: '#6E8C77'
+    assign accent_dark = look.ornament_accent_dark.value | default: '#4F6E5A'
+  -%}
+  <style>
+    :root {
+      --hl-main-light: {{ main_light }};
+      --hl-main-dark: {{ main_dark }};
+      --hl-accent-light: {{ accent_light }};
+      --hl-accent-dark: {{ accent_dark }};
+      --hl-badge-bg: {{ badge_bg }};
+      --hl-badge-text: {{ badge_text }};
+      --hl-badge-shadow: {{ badge_shadow }};
+    }
+  </style>
+  {{ 'holiday-look.css' | asset_url | stylesheet_tag }}
+  <script type="application/json" id="HolidayLookConfig">
+    {
+      "logo": {{ look.logo_ornament.value | json }},
+      "giftWrap": {{ look.gift_wrap_ornament.value | json }},
+      "priceRoll": {{ look.price_roll.value | default: false | json }},
+      "savedText": {{ look.saved_text.value | json }},
+      "ambient": {{ look.ambient_effect.value | json }},
+      "seconds": {{ settings.holiday_ambient_seconds | default: 10 | json }},
+      "template": {{ template.name | json }},
+      "moneyFormat": {{ shop.money_format | json }}
+    }
+  </script>
+  <script src="{{ 'holiday-look.js' | asset_url }}" defer></script>
+{%- endif -%}

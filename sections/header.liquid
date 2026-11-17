@@ -57,7 +57,8 @@
     <a
       href='{{ routes.root_url }}'
       aria-label="Logo image"
-      title="Logo image">
+      title="Logo image"
+      {% if logo_transparent != blank %}data-holiday-logo{% endif %}>
       {%- if logo_transparent != blank -%}
         <img
           class='xo-header__logo-img xo-header__logo-img--transparent'

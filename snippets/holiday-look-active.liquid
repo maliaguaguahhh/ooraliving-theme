@@ -1,0 +1,38 @@
+{%- comment -%}
+  Prints the handle of the holiday look in effect, or nothing. This is the only place that
+  decides which look is on; other snippets capture its output:
+
+    {%- capture look_handle -%}{% render 'holiday-look-active' %}{%- endcapture -%}
+    {%- assign look = metaobjects.holiday_look[look_handle] -%}
+
+  - Theme settings "Holiday look" off: nothing.
+  - "Preview a look" set: that look, but only in the theme editor or on an unpublished
+    theme, so a forgotten preview never reaches shoppers on the live theme.
+  - Otherwise the first look in shop metafield custom.holiday_looks whose
+    starts_at <= now < ends_at. Shopify caches pages, so a switch can lag by a few minutes.
+{%- endcomment -%}
+{%- liquid
+  if settings.holiday_enabled
+    assign preview = settings.holiday_preview
+    assign previewing = false
+    if preview != blank
+      if request.design_mode or theme.role == 'unpublished' or theme.role == 'development'
+        assign previewing = true
+      endif
+    endif
+
+    if previewing
+      echo preview.system.handle
+    else
+      assign now = 'now' | date: '%s' | plus: 0
+      for look in shop.metafields.custom.holiday_looks.value
+        assign starts = look.starts_at.value | date: '%s' | plus: 0
+        assign ends = look.ends_at.value | date: '%s' | plus: 0
+        if starts <= now and now < ends
+          echo look.system.handle
+          break
+        endif
+      endfor
+    endif
+  endif
+-%}

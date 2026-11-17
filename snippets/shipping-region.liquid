@@ -81,7 +81,8 @@ detected location is outside every country the store sells to (localization.avai
       endif
     %}
     {%- if label != blank -%}
-      {%- assign line_color = shop.metafields.custom.price_badge.value.shipping_color.value -%}
+      {%- capture badge_handle -%}{% render 'price-badge-active' %}{%- endcapture -%}
+      {%- assign line_color = metaobjects.price_badge[badge_handle].shipping_color.value -%}
       <div class="tapnest-product-hero__free-shipping"{% if line_color %} style="--shipping-line-color: {{ line_color }};"{% endif %}>
         <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
           <path d="M3 6.5h11v10H3zM14 10h3.5l3.5 3.5v3H14zM7.25 19a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5ZM17.75 19a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>

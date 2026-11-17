@@ -1,0 +1,19 @@
+{%- comment -%}
+  Prints the handle of the price_badge in effect: the active holiday look's badge when it has
+  one, otherwise the shop's "Active price badge" (shop metafield custom.price_badge).
+  Used by price-savings-badge, shipping-region and holiday-look so they always agree:
+
+    {%- capture badge_handle -%}{% render 'price-badge-active' %}{%- endcapture -%}
+    {%- assign badge = metaobjects.price_badge[badge_handle] -%}
+{%- endcomment -%}
+{%- liquid
+  capture look_handle
+    render 'holiday-look-active'
+  endcapture
+  assign look = metaobjects.holiday_look[look_handle]
+  assign badge = shop.metafields.custom.price_badge.value
+  if look.price_badge.value
+    assign badge = look.price_badge.value
+  endif
+  echo badge.system.handle
+-%}

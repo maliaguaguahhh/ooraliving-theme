@@ -1,0 +1,175 @@
+/*
+  Holiday look decorations (snippets/holiday-look.liquid prints the --hl-* colors,
+  assets/holiday-look.js adds the ornaments). Everything here is decoration only:
+  overlays ignore the pointer and nothing changes layout.
+*/
+:root {
+  --hl-main-pale: color-mix(in srgb, var(--hl-main-light) 45%, #fff);
+  --hl-paper: color-mix(in srgb, var(--hl-main-light) 18%, #fff);
+  --hl-berry: color-mix(in srgb, var(--hl-main-dark) 55%, #c0392b);
+}
+
+.hl-main-l { fill: var(--hl-main-light); }
+.hl-main-d { fill: var(--hl-main-dark); }
+.hl-acc-l { fill: var(--hl-accent-light); }
+.hl-acc-d { fill: var(--hl-accent-dark); }
+.hl-berry { fill: var(--hl-berry); }
+.hl-paper { fill: var(--hl-paper); }
+.hl-badge-bg { fill: var(--hl-badge-bg); }
+.hl-badge-sh { fill: var(--hl-badge-shadow); }
+.hl-badge-line { fill: none; stroke: var(--hl-badge-shadow); stroke-linecap: round; }
+.hl-string { fill: none; stroke: var(--hl-badge-bg); stroke-linecap: round; }
+
+/* Logo: the overlay uses the logo image's own coordinates, so it scales with the logo. */
+[data-holiday-logo] {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+}
+
+.hl-logo-orn {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.hl-swing {
+  transform-box: view-box;
+  animation: hl-swing 2.8s ease-in-out infinite;
+}
+
+.hl-pop {
+  transform-origin: center;
+  animation: hl-pop 0.5s cubic-bezier(0.3, 1.7, 0.5, 1) both;
+}
+
+/* Gift wrap: top-left corner of the photo (the zoom icon is top-right, the price tag bottom-left). */
+.hl-gw-orn {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+  z-index: 1;
+  width: 3.6rem;
+  height: 3.6rem;
+  pointer-events: none;
+  transform: scale(0);
+  transition: transform 0.4s cubic-bezier(0.3, 1.7, 0.5, 1);
+}
+
+.gift-wrap-card:has(.gift-wrap-check:checked) .hl-gw-orn,
+[data-gift-wrapped] .hl-gw-orn {
+  transform: scale(1);
+}
+
+/* Price badge sheen */
+.tapnest-product-hero__save.hl-sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.tapnest-product-hero__save.hl-sheen::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -60%;
+  width: 40%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  animation: hl-sheen 3.4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Price roll: the old price gets a drawn line instead of the static strike. */
+.hl-roll .xo-price__item {
+  font-variant-numeric: tabular-nums;
+}
+
+.hl-roll .xo-price__item--del {
+  position: relative;
+  text-decoration: none;
+}
+
+.hl-roll .xo-price__item--del::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 52%;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+}
+
+.hl-roll.hl-struck .xo-price__item--del::after {
+  width: 100%;
+  transition: width 0.6s ease-out;
+}
+
+/* "You saved" message: above the cart drawer, which opens right after adding. */
+.hl-saved {
+  position: fixed;
+  top: calc(env(safe-area-inset-top, 0px) + 1.6rem);
+  left: 50%;
+  z-index: 2147483000;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  background: var(--hl-badge-bg);
+  box-shadow: 0.3rem 0.2rem 0 var(--hl-badge-shadow);
+  color: var(--hl-badge-text);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -1rem);
+  transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.3, 1.4, 0.5, 1);
+}
+
+.hl-saved.is-on {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+/* Hero effect canvas: under the hero text and buttons. */
+.hl-ambient-host {
+  position: relative;
+}
+
+.hl-ambient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  pointer-events: none;
+}
+
+@keyframes hl-swing {
+  0%, 100% { transform: rotate(8deg); }
+  50% { transform: rotate(-10deg); }
+}
+
+@keyframes hl-pop {
+  from { transform: scale(0); }
+}
+
+@keyframes hl-sheen {
+  0%, 70% { left: -60%; }
+  100% { left: 130%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hl-swing,
+  .hl-pop,
+  .tapnest-product-hero__save.hl-sheen::after {
+    animation: none;
+  }
+
+  .hl-gw-orn,
+  .hl-saved {
+    transition: none;
+  }
+}
