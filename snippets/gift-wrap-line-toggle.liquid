@@ -16,7 +16,7 @@ line itself it shows a short explanation instead, since its quantity follows the
   assign gift_wrap_variant = gift_wrap_product.selected_or_first_available_variant
 %}
 
-{% if settings.gift_wrapping_enabled and gift_wrap_variant != blank %}
+{% if settings.gift_wrapping_enabled and gift_wrap_variant != blank and gift_wrap_variant.available %}
   {{ 'gift-wrap.css' | asset_url | stylesheet_tag }}
   {% if item.variant_id == gift_wrap_variant.id %}
     <p class="gift-wrap-line gift-wrap-line--info">

@@ -15,7 +15,7 @@ Shop Pay and other express options are still offered.
   assign current_variant = product.selected_or_first_available_variant
 %}
 
-{% if settings.gift_wrapping_enabled and gift_wrap_variant != blank and product != blank and product.id != gift_wrap_product.id %}
+{% if settings.gift_wrapping_enabled and gift_wrap_variant != blank and gift_wrap_variant.available and product != blank and product.id != gift_wrap_product.id %}
   <div class="gift-wrap-buy-now">
     <xo-product-will-change xo-unique-id="gift-wrap-buy-now-{{ section_id }}">
       {% liquid
