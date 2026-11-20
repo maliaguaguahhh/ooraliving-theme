@@ -14,13 +14,6 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_HHnFyX": {
-          "type": "announcement",
-          "settings": {
-            "text": "<p>New: Gift Wrap for $3. Ready to Give.</p>",
-            "link": "shopify://products/tapnest"
-          }
-        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
@@ -32,6 +25,13 @@
           "type": "announcement",
           "settings": {
             "text": "<p>[now_shipping]</p>",
+            "link": "shopify://products/tapnest"
+          }
+        },
+        "announcement_HHnFyX": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Add a little holiday magic. Gift wrap for $3🎁</p>",
             "link": "shopify://products/tapnest"
           }
         }
