@@ -1,6 +1,8 @@
 {% doc %}
 Product page gift wrap card: a fixed-size block with the Gift Wrap photo (price tag on it), the
-label and a short note, and a round check on the right. When checked, the item is added with the
+label and a short note, and a round check on the right. The note is the Gift Wrap product's
+description (the same text as the dialog); only when that is empty does it fall back to the
+Theme settings "Wrapping description" and "Note under the checkbox". When checked, the item is added with the
 "Gift wrap: Yes" property and the express checkout button is swapped for a Buy now button that
 keeps the wrap. When the Gift Wrap product has images, the photo opens a dialog with up to three
 of them and its description; without images a gift icon stands in. Renders nothing when gift
@@ -26,6 +28,15 @@ wrapping is off, the Gift Wrap product is unavailable, or the product does not s
   assign check_id = 'GiftWrapCheck-' | append: section_id
   assign preview_label = settings.gift_wrapping_preview_label | default: 'See how it looks'
   assign dialog_title = settings.gift_wrapping_dialog_title | default: 'Our gift wrap'
+
+  comment
+    card_note is trusted HTML text: the product description is merchant HTML with its tags
+    stripped (entities kept), the settings fallback is escaped here.
+  endcomment
+  assign card_note = gift_wrap_product.description | strip_html | strip
+  if card_note == blank
+    assign card_note = settings.gift_wrapping_description | append: ' ' | append: settings.gift_wrapping_info | strip | escape
+  endif
 %}
 
 {% if show_gift_wrap %}
@@ -66,13 +77,8 @@ wrapping is off, the Gift Wrap product is unavailable, or the product does not s
         <span class="gift-wrap-card__title">
           {{ settings.gift_wrapping_label | default: 'Gift wrap this item' | escape }}
         </span>
-        {% if settings.gift_wrapping_description != blank or settings.gift_wrapping_info != blank %}
-          <span class="gift-wrap-card__info" id="{{ check_id }}-info">
-            {% if settings.gift_wrapping_description != blank %}
-              {{ settings.gift_wrapping_description | escape }}
-            {% endif %}
-            {{ settings.gift_wrapping_info | escape }}
-          </span>
+        {% if card_note != blank %}
+          <span class="gift-wrap-card__info" id="{{ check_id }}-info">{{ card_note }}</span>
         {% endif %}
       </label>
       <input
@@ -81,7 +87,7 @@ wrapping is off, the Gift Wrap product is unavailable, or the product does not s
         class="gift-wrap-check"
         name="properties[Gift wrap]"
         value="Yes"
-        {% if settings.gift_wrapping_description != blank or settings.gift_wrapping_info != blank %}
+        {% if card_note != blank %}
           aria-describedby="{{ check_id }}-info"
         {% endif %}
         data-gift-wrap-product

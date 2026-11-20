@@ -1422,13 +1422,14 @@
         "type": "text",
         "id": "gift_wrapping_description",
         "label": "Wrapping description",
-        "info": "One sentence under the checkbox, also used in the preview popup when the Gift Wrap product has no description.",
+        "info": "Fallback only. The card and the preview popup show the Gift Wrap product's description; this sentence is used when that description is empty. 卡片和弹窗文字来自 Gift Wrap 商品描述，描述为空时才用这里。",
         "default": "Hand-wrapped with ribbon, ready to give."
       },
       {
         "type": "text",
         "id": "gift_wrapping_info",
         "label": "Note under the checkbox",
+        "info": "Fallback only, shown after the sentence above when the Gift Wrap product has no description. 仅在 Gift Wrap 商品没有描述时显示。",
         "default": "Each item is wrapped separately."
       },
       {
