@@ -69,7 +69,7 @@ Prices are shown in each destination’s configured checkout currency. Some dest
 
 ## United States: Non-Contiguous Destinations
 
-The U.S. rates and estimates above apply to the contiguous United States. Standard shipping to Alaska, Hawaii and supported U.S. territories, freely associated states and military addresses is US$6. Express is temporarily unavailable for these addresses. Eligibility and destination-specific estimates are confirmed at checkout.
+The U.S. rates and estimates above apply to the contiguous United States. Standard shipping to Alaska, Hawaii and supported U.S. territories, freely associated states and military addresses is US$8. Express is temporarily unavailable for these addresses. Eligibility and destination-specific estimates are confirmed at checkout.
 
 
 

@@ -10,7 +10,7 @@
     "card_label": "Shipping to [country]",
     "unknown_notice": "Shipping options and delivery estimates will be confirmed at checkout.",
     "note": "Delivery estimates for [country]. Final shipping rates are confirmed at checkout.",
-    "us_note": "Contiguous U.S. estimates shown. Alaska, Hawaii and other U.S. destinations: Standard US$6; Express temporarily unavailable. Final eligibility and rates are confirmed at checkout.",
+    "us_note": "Contiguous U.S. estimates shown. Alaska, Hawaii and other U.S. destinations: Standard US$8; Express temporarily unavailable. Final eligibility and rates are confirmed at checkout.",
     "free_label_template": "Free standard shipping to [country]",
     "paid_label_template": "Standard shipping to [country]: [price]",
     "us_label": "Free standard shipping in the contiguous U.S.",
@@ -1123,8 +1123,8 @@
           "currency": "USD"
         }
       ],
-      "note": "Contiguous U.S. estimates shown. Alaska, Hawaii and other U.S. destinations: Standard US$6; Express temporarily unavailable. Final eligibility and rates are confirmed at checkout.",
-      "details_html": "<p>Contiguous U.S. estimates shown. Alaska, Hawaii and other U.S. destinations: Standard US$6; Express temporarily unavailable. Final eligibility and rates are confirmed at checkout.</p><p><strong>Standard:</strong> Free. 5–10 business days.</p><p><strong>Express:</strong> US$7. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Request a return within 7 calendar days of delivery. Items must meet our return conditions. Your statutory rights are not affected.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
+      "note": "Contiguous U.S. estimates shown. Alaska, Hawaii and other U.S. destinations: Standard US$8; Express temporarily unavailable. Final eligibility and rates are confirmed at checkout.",
+      "details_html": "<p>Contiguous U.S. estimates shown. Alaska, Hawaii and other U.S. destinations: Standard US$8; Express temporarily unavailable. Final eligibility and rates are confirmed at checkout.</p><p><strong>Standard:</strong> Free. 5–10 business days.</p><p><strong>Express:</strong> US$7. 4–7 business days.</p><p><strong>Tracking:</strong> We’ll email your tracking number as soon as your order ships. Please allow 24–72 hours for tracking to update.</p><p><strong>Returns:</strong> Request a return within 7 calendar days of delivery. Items must meet our return conditions. Your statutory rights are not affected.</p><p><a href=\"/policies/refund-policy\">Read our refund policy</a></p>",
       "currency": "USD",
       "return_days": 7,
       "statutory_returns": false
