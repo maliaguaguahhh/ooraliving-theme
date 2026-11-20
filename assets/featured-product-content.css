@@ -242,6 +242,10 @@
   gap: 2.4rem;
 }
 
+.xo-featured-product-content__view-full-detail {
+  margin-top: 2.4rem;
+}
+
 .xo-featured-product-content__view-full-detail a {
   color: rgba(var(--color-button), 0.8);
   font-size: calc(var(--font-body-scale) * 1.6rem);
@@ -409,6 +413,11 @@
 .xo-featured-product-content__buy-form {
   width: 100%;
   padding: 1rem 0 2.4rem 0;
+}
+
+/* Gift wrap sits directly above the buttons here (no quantity picker in between, unlike the product page). */
+.xo-featured-product-content__buy-form > .gift-wrap-option {
+  margin-bottom: 1.6rem;
 }
 
 .xo-featured-product-content__preorder-note-dot {
